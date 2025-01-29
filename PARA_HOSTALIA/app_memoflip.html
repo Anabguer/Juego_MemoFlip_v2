@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MemoFlip Neo - No es un Memory cualquiera</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    
+    <!-- PWA -->
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#0b132b">
+    <meta name="description" content="MemoFlip Neo - Un juego de memoria único con 1000 niveles, mecánicas especiales y múltiples temas">
+    
+    <!-- Preload critical resources -->
+    <link rel="preload" href="_next/static/css/app/layout.css" as="style">
+    <link rel="preload" href="_next/static/chunks/webpack.js" as="script">
+    <link rel="preload" href="_next/static/chunks/main-app.js" as="script">
+    
+    <!-- Critical CSS inline -->
+    <style>
+        /* Critical CSS for initial load */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: white;
+            min-height: 100vh;
+            overflow: hidden;
+        }
+        
+        .loading-screen {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            z-index: 9999;
+        }
+        
+        .loading-logo {
+            width: 80px;
+            height: 80px;
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 40px;
+            margin-bottom: 20px;
+            animation: pulse 2s infinite;
+        }
+        
+        .loading-text {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        
+        .loading-subtitle {
+            font-size: 16px;
+            opacity: 0.8;
+        }
+        
+        .loading-spinner {
+            width: 40px;
+            height: 40px;
+            border: 4px solid rgba(255, 255, 255, 0.3);
+            border-top: 4px solid white;
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+            margin-top: 20px;
+        }
+        
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.1); }
+        }
+        
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        
+        .hidden {
+            display: none !important;
+        }
+    </style>
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div id="loading-screen" class="loading-screen">
+        <div class="loading-logo">🎮</div>
+        <div class="loading-text">MemoFlip Neo</div>
+        <div class="loading-subtitle">Cargando...</div>
+        <div class="loading-spinner"></div>
+    </div>
+    
+    <!-- Main App Container -->
+    <div id="app-root" class="hidden">
+        <!-- Next.js app will be mounted here -->
+    </div>
+    
+    <!-- Scripts -->
+    <script>
+        // Hide loading screen when app is ready
+        window.addEventListener('load', function() {
+            setTimeout(function() {
+                const loadingScreen = document.getElementById('loading-screen');
+                const appRoot = document.getElementById('app-root');
+                
+                if (loadingScreen && appRoot) {
+                    loadingScreen.classList.add('hidden');
+                    appRoot.classList.remove('hidden');
+                }
+            }, 2000); // Show loading for 2 seconds minimum
+        });
+        
+        // Error handling
+        window.addEventListener('error', function(e) {
+            console.error('App Error:', e.error);
+            const loadingScreen = document.getElementById('loading-screen');
+            if (loadingScreen) {
+                loadingScreen.innerHTML = `
+                    <div class="loading-logo">⚠️</div>
+                    <div class="loading-text">Error de Carga</div>
+                    <div class="loading-subtitle">Por favor, recarga la página</div>
+                    <button onclick="window.location.reload()" style="
+                        margin-top: 20px;
+                        padding: 10px 20px;
+                        background: rgba(255, 255, 255, 0.2);
+                        border: 2px solid rgba(255, 255, 255, 0.3);
+                        border-radius: 10px;
+                        color: white;
+                        cursor: pointer;
+                        font-size: 16px;
+                    ">Recargar</button>
+                `;
+            }
+        });
+    </script>
+    
+    <!-- Next.js Scripts -->
+    <script src="_next/static/chunks/webpack.js"></script>
+    <script src="_next/static/chunks/main-app.js"></script>
+    <script src="_next/static/chunks/pages/_app.js"></script>
+    <script src="_next/static/chunks/pages/index.js"></script>
+</body>
+</html>

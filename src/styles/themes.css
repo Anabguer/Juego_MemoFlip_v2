@@ -1,0 +1,298 @@
+/* Temas visuales para MemoFlip Neo */
+
+/* Fase 1: Océano */
+.theme-ocean {
+  --theme-primary: #0ea5e9;
+  --theme-secondary: #0284c7;
+  --theme-accent: #06b6d4;
+  --theme-background: linear-gradient(135deg, #0ea5e9, #0284c7, #0369a1);
+  --theme-card-back: linear-gradient(135deg, #7dd3fc, #38bdf8);
+  --theme-card-front: linear-gradient(135deg, #0ea5e9, #0284c7);
+  --theme-particles: #7dd3fc;
+  --theme-text: #ffffff;
+  --theme-shadow: rgba(14, 165, 233, 0.3);
+}
+
+.theme-ocean .game-background {
+  background: var(--theme-background);
+  position: relative;
+  overflow: hidden;
+}
+
+.theme-ocean .game-background::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: 
+    radial-gradient(circle at 20% 80%, rgba(125, 211, 252, 0.1) 0%, transparent 50%),
+    radial-gradient(circle at 80% 20%, rgba(56, 189, 248, 0.1) 0%, transparent 50%),
+    radial-gradient(circle at 40% 40%, rgba(6, 182, 212, 0.1) 0%, transparent 50%);
+  animation: oceanWaves 20s ease-in-out infinite;
+}
+
+@keyframes oceanWaves {
+  0%, 100% { transform: translateY(0px) rotate(0deg); }
+  50% { transform: translateY(-10px) rotate(1deg); }
+}
+
+/* Fase 2: Golosinas */
+.theme-candy {
+  --theme-primary: #ec4899;
+  --theme-secondary: #be185d;
+  --theme-accent: #f472b6;
+  --theme-background: linear-gradient(135deg, #ec4899, #be185d, #9d174d);
+  --theme-card-back: linear-gradient(135deg, #fce7f3, #f9a8d4);
+  --theme-card-front: linear-gradient(135deg, #ec4899, #be185d);
+  --theme-particles: #fce7f3;
+  --theme-text: #ffffff;
+  --theme-shadow: rgba(236, 72, 153, 0.3);
+}
+
+.theme-candy .game-background {
+  background: var(--theme-background);
+  position: relative;
+  overflow: hidden;
+}
+
+.theme-candy .game-background::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: 
+    radial-gradient(circle at 25% 25%, rgba(252, 231, 243, 0.2) 0%, transparent 50%),
+    radial-gradient(circle at 75% 75%, rgba(249, 168, 212, 0.2) 0%, transparent 50%),
+    radial-gradient(circle at 50% 50%, rgba(244, 114, 182, 0.2) 0%, transparent 50%);
+  animation: candyFloat 15s ease-in-out infinite;
+}
+
+@keyframes candyFloat {
+  0%, 100% { transform: translateY(0px) scale(1); }
+  50% { transform: translateY(-15px) scale(1.05); }
+}
+
+/* Fase 3: Espacio */
+.theme-space {
+  --theme-primary: #8b5cf6;
+  --theme-secondary: #7c3aed;
+  --theme-accent: #a78bfa;
+  --theme-background: linear-gradient(135deg, #1e1b4b, #312e81, #4c1d95);
+  --theme-card-back: linear-gradient(135deg, #c4b5fd, #a78bfa);
+  --theme-card-front: linear-gradient(135deg, #8b5cf6, #7c3aed);
+  --theme-particles: #c4b5fd;
+  --theme-text: #ffffff;
+  --theme-shadow: rgba(139, 92, 246, 0.3);
+}
+
+.theme-space .game-background {
+  background: var(--theme-background);
+  position: relative;
+  overflow: hidden;
+}
+
+.theme-space .game-background::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: 
+    radial-gradient(circle at 10% 20%, rgba(196, 181, 253, 0.1) 0%, transparent 30%),
+    radial-gradient(circle at 90% 80%, rgba(167, 139, 250, 0.1) 0%, transparent 30%),
+    radial-gradient(circle at 50% 50%, rgba(139, 92, 246, 0.1) 0%, transparent 30%);
+  animation: spaceTwinkle 25s linear infinite;
+}
+
+@keyframes spaceTwinkle {
+  0% { transform: rotate(0deg) scale(1); }
+  50% { transform: rotate(180deg) scale(1.1); }
+  100% { transform: rotate(360deg) scale(1); }
+}
+
+/* Fase 4: Bosque */
+.theme-forest {
+  --theme-primary: #16a34a;
+  --theme-secondary: #15803d;
+  --theme-accent: #22c55e;
+  --theme-background: linear-gradient(135deg, #16a34a, #15803d, #166534);
+  --theme-card-back: linear-gradient(135deg, #bbf7d0, #86efac);
+  --theme-card-front: linear-gradient(135deg, #16a34a, #15803d);
+  --theme-particles: #bbf7d0;
+  --theme-text: #ffffff;
+  --theme-shadow: rgba(22, 163, 74, 0.3);
+}
+
+.theme-forest .game-background {
+  background: var(--theme-background);
+  position: relative;
+  overflow: hidden;
+}
+
+.theme-forest .game-background::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: 
+    radial-gradient(circle at 30% 70%, rgba(187, 247, 208, 0.1) 0%, transparent 40%),
+    radial-gradient(circle at 70% 30%, rgba(134, 239, 172, 0.1) 0%, transparent 40%),
+    radial-gradient(circle at 50% 50%, rgba(34, 197, 94, 0.1) 0%, transparent 40%);
+  animation: forestSway 18s ease-in-out infinite;
+}
+
+@keyframes forestSway {
+  0%, 100% { transform: translateX(0px) rotate(0deg); }
+  25% { transform: translateX(5px) rotate(0.5deg); }
+  75% { transform: translateX(-5px) rotate(-0.5deg); }
+}
+
+/* Estilos de cartas por tema */
+.theme-ocean .card {
+  background: var(--theme-card-back);
+  border: 2px solid var(--theme-primary);
+  box-shadow: 0 4px 8px var(--theme-shadow);
+}
+
+.theme-ocean .card.flipped {
+  background: var(--theme-card-front);
+  color: var(--theme-text);
+}
+
+.theme-candy .card {
+  background: var(--theme-card-back);
+  border: 2px solid var(--theme-primary);
+  box-shadow: 0 4px 8px var(--theme-shadow);
+}
+
+.theme-candy .card.flipped {
+  background: var(--theme-card-front);
+  color: var(--theme-text);
+}
+
+.theme-space .card {
+  background: var(--theme-card-back);
+  border: 2px solid var(--theme-primary);
+  box-shadow: 0 4px 8px var(--theme-shadow);
+}
+
+.theme-space .card.flipped {
+  background: var(--theme-card-front);
+  color: var(--theme-text);
+}
+
+.theme-forest .card {
+  background: var(--theme-card-back);
+  border: 2px solid var(--theme-primary);
+  box-shadow: 0 4px 8px var(--theme-shadow);
+}
+
+.theme-forest .card.flipped {
+  background: var(--theme-card-front);
+  color: var(--theme-text);
+}
+
+/* Partículas temáticas */
+.particles-ocean {
+  background-image: 
+    radial-gradient(2px 2px at 20px 30px, var(--theme-particles), transparent),
+    radial-gradient(2px 2px at 40px 70px, var(--theme-particles), transparent),
+    radial-gradient(1px 1px at 90px 40px, var(--theme-particles), transparent),
+    radial-gradient(1px 1px at 130px 80px, var(--theme-particles), transparent);
+  background-repeat: repeat;
+  background-size: 150px 100px;
+  animation: oceanParticles 20s linear infinite;
+}
+
+.particles-candy {
+  background-image: 
+    radial-gradient(3px 3px at 25px 25px, var(--theme-particles), transparent),
+    radial-gradient(2px 2px at 50px 50px, var(--theme-particles), transparent),
+    radial-gradient(1px 1px at 75px 75px, var(--theme-particles), transparent);
+  background-repeat: repeat;
+  background-size: 100px 100px;
+  animation: candyParticles 15s linear infinite;
+}
+
+.particles-space {
+  background-image: 
+    radial-gradient(1px 1px at 20px 20px, var(--theme-particles), transparent),
+    radial-gradient(1px 1px at 40px 40px, var(--theme-particles), transparent),
+    radial-gradient(1px 1px at 60px 60px, var(--theme-particles), transparent),
+    radial-gradient(1px 1px at 80px 80px, var(--theme-particles), transparent);
+  background-repeat: repeat;
+  background-size: 100px 100px;
+  animation: spaceParticles 25s linear infinite;
+}
+
+.particles-forest {
+  background-image: 
+    radial-gradient(2px 2px at 30px 30px, var(--theme-particles), transparent),
+    radial-gradient(1px 1px at 60px 60px, var(--theme-particles), transparent),
+    radial-gradient(1px 1px at 90px 90px, var(--theme-particles), transparent);
+  background-repeat: repeat;
+  background-size: 120px 120px;
+  animation: forestParticles 18s linear infinite;
+}
+
+@keyframes oceanParticles {
+  0% { transform: translateY(0px); }
+  100% { transform: translateY(-100px); }
+}
+
+@keyframes candyParticles {
+  0% { transform: translateY(0px) rotate(0deg); }
+  100% { transform: translateY(-100px) rotate(360deg); }
+}
+
+@keyframes spaceParticles {
+  0% { transform: translateY(0px) scale(1); }
+  50% { transform: translateY(-50px) scale(1.2); }
+  100% { transform: translateY(-100px) scale(1); }
+}
+
+@keyframes forestParticles {
+  0% { transform: translateY(0px) translateX(0px); }
+  50% { transform: translateY(-50px) translateX(10px); }
+  100% { transform: translateY(-100px) translateX(0px); }
+}
+
+/* Transiciones entre temas */
+.theme-transition {
+  transition: all 0.5s ease-in-out;
+}
+
+/* Efectos de partículas en el fondo */
+.particles-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 1;
+}
+
+/* Responsive para móviles */
+@media (max-width: 768px) {
+  .theme-ocean .game-background::before,
+  .theme-candy .game-background::before,
+  .theme-space .game-background::before,
+  .theme-forest .game-background::before {
+    animation-duration: 30s; /* Más lento en móviles */
+  }
+  
+  .particles-ocean,
+  .particles-candy,
+  .particles-space,
+  .particles-forest {
+    background-size: 75px 50px; /* Partículas más pequeñas en móviles */
+  }
+}
