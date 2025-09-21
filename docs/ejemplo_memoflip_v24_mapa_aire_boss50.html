@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>MemoFlip v24 — mapa aire + boss 50 libre</title>
+<style>
+:root{--bg:#0b132b;--ink:#eef;--panel:#111a33;--accent:#ffd447;--ok:#2a9d8f;--muted:#2a355f;--veil:rgba(255,255,255,.15);
+--path:#8da9c4;--node:#ffd447;--nodeb:#caa435;--hud:#16213e}
+/* Temas por capítulo */
+.theme-0{--bg:#0b132b;--panel:#111a33;--hud:#16213e;--path:#8da9c4;--node:#ffd447;--nodeb:#caa435;} /* Océano */
+.theme-1{--bg:#1b2a17;--panel:#253422;--hud:#2b4127;--path:#a5c59a;--node:#f1d86a;--nodeb:#b7a34a;} /* Jungla/Isla */
+.theme-2{--bg:#2b0b0b;--panel:#3a1414;--hud:#451919;--path:#d8a5a5;--node:#ff8f47;--nodeb:#c56b33;} /* Volcán */
+.theme-3{--bg:#0b162b;--panel:#10203d;--hud:#12264a;--path:#9db7e6;--node:#70d6ff;--nodeb:#53a7c0;} /* Cielo */
+.theme-4{--bg:#221b2b;--panel:#2e2436;--hud:#372d42;--path:#c3a9d6;--node:#da77f2;--nodeb:#a85dc0;} /* Noche */
+*{box-sizing:border-box}html,body{margin:0;height:100%;background:var(--bg);color:var(--ink);font-family:Arial,Helvetica,sans-serif}
+header{padding:.6rem 1rem;background:var(--panel);display:flex;justify-content:space-between;align-items:center;position:sticky;top:0;z-index:5}
+.btn{background:#1c2541;border:1px solid #2a355f;color:var(--ink);padding:.5rem .85rem;border-radius:.6rem;cursor:pointer}
+.btn:disabled{opacity:.5;cursor:not-allowed}
+main{height:calc(100vh - 56px)}
+.hidden{display:none}
+#mapWrap{position:relative;height:100%;overflow:auto;background:radial-gradient(120% 80% at 50% 20%, #13315c, var(--bg)); transition: transform .25s ease;}
+#map{position:relative;width:100%;height:180vh;min-height:840px;padding:2rem 0} /* más alto */
+.node{position:absolute;transform:translate(-50%,-50%);width:54px;height:54px;border-radius:50%;display:grid;place-items:center;
+  font-weight:bold;background:var(--node);color:#222;border:2px solid var(--nodeb);box-shadow:0 6px 0 var(--nodeb);cursor:pointer}
+.node.lock{filter:grayscale(.85);opacity:.6;box-shadow:none;cursor:not-allowed}
+.node.current{outline:4px solid #5bc0be;outline-offset:2px}
+.node .icons{position:absolute;bottom:-10px;left:50%;transform:translateX(-50%);font-size:12px;white-space:nowrap}
+.icon{margin:0 1px}
+.node.boss{width:68px;height:68px;background:linear-gradient(180deg,var(--node),#fff2b5); box-shadow:0 10px 0 var(--nodeb),0 0 24px rgba(255,212,71,.5)}
+.node.boss::after{content:"👑"; position:absolute; top:-18px; font-size:18px}
+.node.boss .label{position:absolute; bottom:-26px; left:50%; transform:translateX(-50%); font-size:11px; letter-spacing:.6px; opacity:.9}
+#poly{position:absolute;inset:0}
+.hud{position:sticky;top:56px;padding:.6rem 1rem;background:var(--hud);display:flex;justify-content:space-between;align-items:center;gap:.8rem;flex-wrap:wrap;z-index:4}
+.hudTitle{font-weight:900;font-size:clamp(18px,5vw,26px)}
+.badges{display:flex;gap:.35rem;flex-wrap:wrap;margin-top:.2rem}
+.badge{background:#12233f;border:1px solid #2a355f;border-radius:.5rem;padding:.15rem .4rem;font-size:12px;display:inline-flex;gap:.25rem;align-items:center}
+.timer{font-weight:800;font-size:clamp(14px,4vw,18px)}
+#barWrap{position:relative;height:8px;background:#0f1a33;border:1px solid #223355;border-radius:6px;overflow:hidden;width:46%;min-width:200px}
+#bar{position:absolute;top:0;left:0;height:100%;background:var(--accent)}
+.grid{display:grid;gap:.5rem;max-width:720px;margin:1rem auto;padding:0 1rem}
+.card{aspect-ratio:3/4;background:#243b55;border:1px solid #3b5b8a;border-radius:.6rem;display:grid;place-items:center;
+  font-size:2rem;color:#fff;cursor:pointer;position:relative;overflow:hidden}
+.card.matched{background:var(--ok);border-color:var(--ok)}
+.modal{position:fixed;inset:0;display:grid;place-items:center;background:rgba(0,0,0,.55);z-index:10}
+.modal.hidden{display:none !important}
+.modal .box{background:#0e162b;border:1px solid #223355;border-radius:.7rem;padding:1rem 1.2rem;min-width:260px;text-align:center}
+#veil{position:fixed;left:0;right:0;top:56px;bottom:0;background:rgba(255,255,255,.15);backdrop-filter:blur(2px);opacity:0;pointer-events:none;z-index:8;transition:opacity .25s}
+#veil.show{opacity:1}
+#drawer{position:fixed;right:0;top:56px;bottom:0;width:min(760px,96vw);background:#0b1630;border-left:1px solid #223355;transform:translateX(100%);transition:transform .25s;z-index:20;overflow:auto}
+#drawer.open{transform:none}
+.table{width:100%;border-collapse:collapse;font-size:12px}
+.table th,.table td{border-bottom:1px solid #223355;padding:.35rem .5rem;text-align:left}
+.table th{position:sticky;top:0;background:#0d1d2e}
+.gloss{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:.5rem;margin:.6rem 0}
+.gloss .g{background:#0d1d2e;border:1px solid #223355;border-radius:.5rem;padding:.5rem}
+.g b{display:block;margin-bottom:.2rem}
+@keyframes blink { 0%{filter:brightness(1)} 50%{filter:brightness(1.35)} 100%{filter:brightness(1)} }
+.camaleon { animation: blink .35s linear; }
+.lockturn { pointer-events:none; opacity:.75 }
+#chapNav{display:flex;gap:.5rem;align-items:center;justify-content:center;padding:.4rem 1rem;background:var(--panel);border-top:1px solid #223355}
+.chip{display:inline-flex;gap:.35rem;align-items:center;background:#0f1a33;border:1px solid #223355;border-radius:.5rem;padding:.2rem .5rem;font-size:12px}
+.fadeUp{transform:translateY(16px); opacity:0; animation: enterUp .28s ease forwards}
+@keyframes enterUp{to{transform:translateY(0);opacity:1}}
+</style>
+</head>
+<body class="theme-0">
+<header>
+  <strong>🐠 MemoFlip v24</strong>
+  <div>
+    <button type="button" class="btn" id="btnPlan">Ayuda / Plan</button>
+    <button type="button" class="btn" id="btnMap">Mapa</button>
+  </div>
+</header>
+<main>
+  <section id="MapView">
+    <div id="mapWrap">
+      <svg id="poly" preserveAspectRatio="none"></svg>
+      <div id="map"></div>
+    </div>
+    <div id="chapNav">
+      <button class="btn" id="btnDown">Bajar tramo ⬇︎</button>
+      <span class="chip" id="chipInfo">Tramo 1 · Niveles 1–50</span>
+      <button class="btn" id="btnUp">⬆︎ Subir tramo</button>
+    </div>
+  </section>
+  <section id="GameView" class="hidden">
+    <div class="hud">
+      <div>
+        <div id="hudLevel" class="hudTitle">Nivel</div>
+        <div id="hudBadges" class="badges"></div>
+      </div>
+      <div style="display:flex;gap:.6rem;align-items:center">
+        <div id="barWrap" class="hidden"><div id="bar" style="width:100%"></div></div>
+        <div id="hudTimer" class="timer"></div>
+      </div>
+    </div>
+    <div id="grid" class="grid"></div>
+  </section>
+  <div id="win" class="modal hidden" aria-hidden="true"><div class="box">
+    <h2>¡Nivel completado!</h2>
+    <div style="display:flex;gap:.6rem;justify-content:center">
+      <button type="button" class="btn" id="btnNextLevel">Siguiente</button>
+      <button type="button" class="btn" id="btnMap2">Mapa</button>
+    </div>
+  </div></div>
+  <div id="fail" class="modal hidden" aria-hidden="true"><div class="box">
+    <h2>Tiempo agotado</h2>
+    <div style="display:flex;gap:.6rem;justify-content:center">
+      <button type="button" class="btn" id="btnRetry">Reintentar</button>
+      <button type="button" class="btn" id="btnMap3">Mapa</button>
+    </div>
+  </div></div>
+</main>
+<div id="drawer">
+  <div style="display:flex;justify-content:space-between;align-items:center;padding:.6rem .8rem;border-bottom:1px solid #223355;position:sticky;top:0;background:#0b1630">
+    <strong>Plan de niveles</strong>
+    <button type="button" class="btn" id="btnClosePlan">Cerrar</button>
+  </div>
+  <div style="padding:.6rem .8rem">
+    <div style="display:flex;gap:.5rem;flex-wrap:wrap;align-items:center;margin-bottom:.4rem">
+      <label>Total:&nbsp;<input id="inpTotal" type="number" min="50" max="1000" value="1000" style="width:90px"></label>
+      <label>Semilla:&nbsp;<input id="inpSeed" type="number" value="12345" style="width:120px"></label>
+      <button type="button" class="btn" id="btnRegen">Regenerar</button>
+    </div>
+    <p style="margin:.2rem 0 .6rem 0;font-size:13px;opacity:.9">Tags: ⏱️ crono · 🌫️ niebla · 🔀 barajar · 🔺 triple · 🎭 camaleon · 🚫 trampa · 💣 bomba · 🌟 comodin · 👻 fantasma · 🪞 espejo · 👑 jefe</p>
+    <div class="gloss" id="glossary"></div>
+    <table class="table" id="planTable"><thead><tr><th>#</th><th>Pares</th><th>Cartas</th><th>Tiempo</th><th>Tags</th><th>Nota</th></tr></thead><tbody></tbody></table>
+  </div>
+</div>
+<div id="veil"></div>
+
+<script>
+document.addEventListener('DOMContentLoaded', function(){
+  const CHAPTER_SIZE = 50;
+  let currentChapter = 0; // 0-index
+  let TOTAL_LEVELS = 1000;
+  let SEED = 12345;
+  let unlocked = 45; // progreso normal de ejemplo
+  const SPECIAL_UNLOCK_BOSS_50 = true; // excepción temporal para test
+  const THEMES = ['theme-0','theme-1','theme-2','theme-3','theme-4'];
+  const EMO = {crono:'⏱️', niebla:'🌫️', barajar:'🔀', triple:'🔺', camaleon:'🎭', trampa:'🚫', bomba:'💣', comodin:'🌟', fantasma:'👻', espejo:'🪞', jefe:'👑'};
+
+  function RNG(seed){ let s=seed>>>0; return function(){ s=(s*1664525 + 1013904223)>>>0; return s/4294967296; }; }
+  function $(id){return document.getElementById(id);} function show(el){el.classList.remove('hidden');el.setAttribute('aria-hidden','false');} function hide(el){el.classList.add('hidden');el.setAttribute('aria-hidden','true');}
+
+  const Engine={matchSize:2,time:0,tags:[],hooks:{onStart:[],onFlip:[],onMatch:[],onMismatch:[],onTick:[]},
+    use(p){p&&(p.onStart&&this.hooks.onStart.push(p.onStart),p.onFlip&&this.hooks.onFlip.push(p.onFlip),p.onMatch&&this.hooks.onMatch.push(p.onMatch),p.onMismatch&&this.hooks.onMismatch.push(p.onMismatch),p.onTick&&this.hooks.onTick.push(p.onTick));},
+    reset(){this.matchSize=2;this.time=0;this.tags=[];this.hooks={onStart:[],onFlip:[],onMatch:[],onMismatch:[],onTick:[]};}
+  };
+  const Plugins={
+    crono:{name:'crono',onStart(ctx){if(ctx.lvl.t>0){show($("barWrap"));$("bar").style.width='100%';}else hide($("barWrap"));},onTick(ctx,now,elapsed,rem){if(ctx.lvl.t>0){$("hudTimer").textContent=fmt(rem);$("bar").style.width=(Math.max(0,Math.min(1,rem/ctx.lvl.t))*100).toFixed(1)+'%';if(rem<=0)ctx.fail();}}},
+    niebla:{name:'niebla',onMismatch(ctx){var v=$("veil");v.classList.add('show');setTimeout(()=>v.classList.remove('show'),280);}},
+    barajar:{name:'barajar',onTick(ctx,now,elapsed,rem){if(ctx.lvl.t>0 && !ctx._shuffled && rem<=Math.floor(ctx.lvl.t/2)){ctx._shuffled=true;reshuffleSome(ctx.gridEl,6);}}},
+    triple:{name:'triple',onStart(ctx){ctx.engine.matchSize=3;}},
+    camaleon:{name:'camaleon',onTick(ctx,now,elapsed,rem){if(!ctx._lastCam)ctx._lastCam=0;if(elapsed-ctx._lastCam>=4){ctx._lastCam=elapsed;const icons=ctx.iconsPool,cells=[...ctx.gridEl.children];cells.forEach(c=>{if(c.classList.contains('matched'))return;const id=parseInt(c.getAttribute('data-id'),10);c.classList.add('camaleon');c.dataset.iconOverride=icons[(id+Math.floor(Math.random()*icons.length))%icons.length];if(c.classList.contains('flip'))c.textContent=c.dataset.iconOverride;setTimeout(()=>c.classList.remove('camaleon'),320);});}}},
+    trampa:{name:'trampa',onFlip(ctx,card){const idx=parseInt(card.getAttribute('data-idx'),10);if(idx%8===0 && !card.classList.contains('matched')){ctx.turnLocked=true;document.body.classList.add('lockturn');setTimeout(()=>{ctx.turnLocked=false;document.body.classList.remove('lockturn');},680);}}},
+    bomba:{name:'bomba',onMismatch(ctx){if(ctx.lvl.t>0){ctx._pen=(ctx._pen||0)+4;ctx.timeLeft=Math.max(0,ctx.timeLeft-4);}}},
+    comodin:{name:'comodin',onStart(ctx){const cards=[...ctx.gridEl.children];for(let i=0;i<cards.length && i<2;i++){cards[i].dataset.isWild='1';cards[i].textContent='🌟';}}},
+    fantasma:{name:'fantasma',onStart(ctx){const cells=[...ctx.gridEl.children];cells.forEach(c=>flipUp(c,ctx));setTimeout(()=>cells.forEach(flipDown),1500);}},
+    espejo:{name:'espejo',onStart(ctx){const cells=[...ctx.gridEl.children];cells.forEach(c=>flipUp(c,ctx));let steps=0;ctx.espejoTimer=setInterval(()=>{shuffleIcons(ctx);steps++;if(steps>=6){clearInterval(ctx.espejoTimer);ctx.espejoTimer=null;}},820);}}
+  };
+
+  function buildLevels(N, seed){
+    let LV=[], rng=RNG(seed), lastTimed=0, lastBigRun=0;
+    const plan20 = [
+      [2,0,[]],[3,0,[]],[2,0,[]],[4,0,[]],
+      [6,80,['crono']],[4,0,['niebla']],[6,0,[]],[5,75,['crono','barajar']],
+      [4,0,[]],[10,95,['crono']],[3,0,[]],[5,0,['camaleon']],
+      [4,0,[]],[8,0,[]],[6,78,['crono']],[4,0,['fantasma']],
+      [12,0,[]],[5,0,[]],[6,72,['crono']],[8,76,['crono']]
+    ];
+    for(let i=1;i<=Math.min(20,N);i++){
+      let [pairs,t,tags]=plan20[i-1]; LV.push({id:i,pairs,t,tags:tags.slice(),note:''}); if(t>0) lastTimed++; else lastTimed=0;
+    }
+    for(let i=21;i<=N;i++){
+      let base = Math.min(12, 2 + Math.floor((i-1)/8));
+      let mod = ((i%20===0)?-2 : (i%10===0)?+2 : 0);
+      let pairs = Math.max(2, Math.min(12, base+mod));
+      if(i%6===0) pairs = Math.min(pairs, 4);
+      if((i%13===0) || (i%14===0 && rng()<0.4)) { pairs = Math.min(12, Math.max(pairs, 10)); }
+      if(pairs===12){ lastBigRun++; if(lastBigRun>2) { pairs=10; lastBigRun=0; } } else if(pairs>=10){ /* ok */ } else { lastBigRun=0; }
+      let t = 0;
+      if(pairs>=10) t = 92 + Math.floor(rng()*14);
+      else if(pairs>=8) t = 70 + Math.floor(rng()*12);
+      else if(pairs>=6) t = 60 + Math.floor(rng()*10);
+      else t = 0;
+      if(t>0){ if(lastTimed>=2){ t=0; } else { lastTimed++; } } else { lastTimed=0; }
+      let tags=[]; let note='';
+      if(i%50===0){
+        const variant = (i/50)%4;
+        pairs = 12; t = 110;
+        if(variant===1){ tags=['crono','barajar','camaleon','bomba']; note='👑 Jefe: Tormenta cambiante'; }
+        else if(variant===2){ tags=['crono','triple','trampa']; t=125; pairs=10; note='👑 Jefe: Triada táctica'; }
+        else if(variant===3){ tags=['crono','fantasma','espejo']; t=115; pairs=10; note='👑 Jefe: Memoria viva'; }
+        else { tags=['crono','camaleon','trampa','bomba']; note='👑 Jefe: Marea roja'; }
+        lastTimed=1;
+      }else{
+        if(i<=100){
+          if(i%7===0) tags.push('barajar');
+          if(i%9===0) tags.push('camaleon');
+          if(i%11===0) tags.push('niebla');
+        }else if(i<=300){
+          if(i%5===0) tags.push('triple');
+          if(i%9===0) tags.push('camaleon');
+          if(i%12===0) tags.push('bomba');
+          if(i%15===0) tags.push('fantasma');
+        }else if(i<=600){
+          if(i%4===0) tags.push('crono');
+          if(i%8===0) tags.push('trampa');
+          if(i%10===0) tags.push('comodin');
+        }else{
+          if(i%3===0) tags.push('crono');
+          if(i%7===0) tags.push('bomba');
+          if(i%11===0) tags.push('espejo');
+          if(i%13===0) tags.push('comodin');
+        }
+        if(i%30===0){ note='🔥 pico'; t = Math.max(t, 95); pairs = Math.max(pairs,10); }
+        if(i%30===1){ note='💤 respiro'; t=0; pairs = Math.min(pairs, 4); }
+      }
+      LV.push({id:i,pairs,t,tags,note});
+    }
+    return LV;
+  }
+
+  let LV = buildLevels(TOTAL_LEVELS, SEED);
+
+  // --- UI ---
+  $("btnPlan").onclick=()=>{ $("drawer").classList.add('open'); renderPlanTable(); renderGlossary(); };
+  $("btnClosePlan").onclick=()=>{ $("drawer").classList.remove('open'); };
+  $("btnMap").onclick=()=>{ showMap(true); };
+  $("btnMap2").onclick=()=>{ showMap(true); };
+  $("btnMap3").onclick=()=>{ showMap(true); };
+  $("btnNextLevel").onclick=()=>{ hide($("win")); const nextId=state.lvl?state.lvl.id+1:1; if(unlocked<nextId)unlocked=nextId; const nx=getLevelById(nextId); nx?startLevel(nx):showMap(true); };
+  $("btnRetry").onclick=()=>{ hide($("fail")); startLevel(state.lvl); };
+  $("btnRegen").onclick=()=>{
+    const n = Math.max(50, Math.min(1000, parseInt($("inpTotal").value||"1000",10)));
+    const s = parseInt($("inpSeed").value||"12345",10);
+    LV = buildLevels(n, s);
+    currentChapter = Math.floor((unlocked-1)/CHAPTER_SIZE);
+    showMap(true);
+  };
+  $("btnUp").onclick=()=>{ const maxChap=Math.floor((LV.length-1)/CHAPTER_SIZE); if(currentChapter<maxChap){ currentChapter++; transitionUp(); showMap(true);} };
+  $("btnDown").onclick=()=>{ if(currentChapter>0){ currentChapter--; transitionDown(); showMap(true);} };
+
+  function themeForChapter(ch){ const THEMES = ['theme-0','theme-1','theme-2','theme-3','theme-4']; return THEMES[ch % THEMES.length]; }
+
+  function showMap(scrollToCurrent){
+    hide($("GameView")); show($("MapView")); hide($("win")); hide($("fail")); $("veil").classList.remove('show');
+    document.body.classList.remove('theme-0','theme-1','theme-2','theme-3','theme-4'); document.body.classList.add(themeForChapter(currentChapter));
+    const start = currentChapter*CHAPTER_SIZE + 1;
+    const end = Math.min(LV.length, start + CHAPTER_SIZE - 1);
+    $("chipInfo").textContent = `Tramo ${currentChapter+1} · Niveles ${start}–${end}`;
+    const map=$("map"), svg=$("poly"); map.innerHTML=''; svg.innerHTML='';
+    const nodes=buildNodesLayout(end-start+1);
+    const NS="http://www.w3.org/2000/svg"; const pl=document.createElementNS(NS,'polyline');
+    pl.setAttribute('fill','none'); pl.setAttribute('stroke','var(--path)'); pl.setAttribute('stroke-width','6');
+    pl.setAttribute('stroke-linecap','round'); pl.setAttribute('stroke-linejoin','round'); svg.appendChild(pl);
+    function recalc(){ const w=svg.clientWidth,h=svg.clientHeight; let pts=''; for(let i=0;i<nodes.length;i++){ const n=nodes[i]; pts+=(n.x/100*w)+','+(n.y/100*h)+' '; } pl.setAttribute('points',pts.trim()); }
+    recalc(); window.addEventListener('resize', recalc, {once:true});
+    for(let i=0;i<nodes.length;i++){
+      const meta = LV[(start-1)+i];
+      const n=nodes[i];
+      const b=document.createElement('button'); b.type='button'; b.className='node'; b.style.left=n.x+'%'; b.style.top=n.y+'%';
+      const isBoss = (meta.id%CHAPTER_SIZE===0);
+      const unlockedHere = (meta.id<=unlocked) || (SPECIAL_UNLOCK_BOSS_50 && meta.id===50);
+      if(!unlockedHere) b.classList.add('lock'); if(meta.id===unlocked) b.classList.add('current');
+      if(isBoss){ b.classList.add('boss'); b.innerHTML='<span>'+meta.id+'</span><div class="icons">👑</div><div class="label">BOSS</div>'; }
+      else { b.innerHTML='<span>'+meta.id+'</span><div class="icons">'+iconsFor(meta)+'</div>'; }
+      b.onclick=()=>{ if(unlockedHere){ startLevel(meta); } };
+      map.appendChild(b);
+    }
+    if(scrollToCurrent){ const cur=map.querySelector('.node.current'); cur && cur.scrollIntoView({block:'center',inline:'center',behavior:'smooth'}); }
+    renderPlanTable(); renderGlossary();
+    const maxChap=Math.floor((LV.length-1)/CHAPTER_SIZE);
+    $("btnDown").disabled = currentChapter===0;
+    $("btnUp").disabled = currentChapter>=maxChap;
+  }
+
+  // más aire entre nodos
+  function buildNodesLayout(count){ const arr=[]; let y=94, left=true; for(let i=0;i<count;i++){ arr.push({id:i,x:(left?24:76),y:y}); y -= ((i+1)%5===0?4.2:2.2); left=!left; } return arr; }
+
+  function getLevelById(id){ return LV.find(x=>x.id===id) || null; }
+  function inTag(meta,t){ return meta.tags && meta.tags.indexOf(t)>-1; }
+  function iconsFor(meta){
+    let s=''; if(meta.t>0)s+=EMO.crono; ['niebla','barajar','triple','camaleon','trampa','bomba','comodin','fantasma','espejo'].forEach(t=>{ if(inTag(meta,t)) s+=EMO[t]; });
+    if(meta.note && meta.note.indexOf('🔥')>-1)s+='🔥'; if(meta.note && meta.note.indexOf('💤')>-1)s+='💤'; if(meta.note && meta.note.indexOf('👑')>-1)s+='👑';
+    return s.split('').map(ch=>'<span class="icon">'+ch+'</span>').join('');
+  }
+
+  // Tabla y glosario
+  function renderPlanTable(){
+    const tbody=document.querySelector('#planTable tbody'); tbody.innerHTML='';
+    for(const m of LV){
+      const matchSize = inTag(m,'triple') ? 3 : 2;
+      const r=document.createElement('tr');
+      r.innerHTML='<td>'+m.id+'</td><td>'+m.pairs+'</td><td>'+(m.pairs*matchSize)+'</td><td>'+(m.t>0?m.t+'s':'—')+'</td><td>'+iconsFor(m)+'</td><td>'+(m.note||'')+'</td>';
+      tbody.appendChild(r);
+    }
+  }
+  function renderGlossary(){
+    const g=$("glossary"); g.innerHTML='';
+    const items=[
+      ['⏱️ crono','Nivel con tiempo y barra que se agota.'],
+      ['🌫️ niebla','Al fallar, aparece un velo suave (con blur).'],
+      ['🔀 barajar','A mitad de tiempo, se reordenan algunas cartas.'],
+      ['🔺 triple','En vez de 2, debes emparejar 3 iguales.'],
+      ['🎭 camaleon','Las cartas cambian de icono cada pocos segundos.'],
+      ['🚫 trampa','Algunas cartas bloquean tu siguiente toque un instante.'],
+      ['💣 bomba','Al fallar, pierdes segundos.'],
+      ['🌟 comodin','Un par de cartas sirven para emparejar con cualquiera.'],
+      ['👻 fantasma','Todas se muestran al inicio 1–2 s y vuelven a ocultarse.'],
+      ['🪞 espejo','Durante unos segundos, los iconos “bailan” y puedes clicar.'],
+      ['👑 jefe','Nivel especial cada 50 con mezcla de mecánicas.']
+    ];
+    for(const [k,v] of items){ const d=document.createElement('div'); d.className='g'; d.innerHTML='<b>'+k+'</b><span>'+v+'</span>'; g.appendChild(d); }
+  }
+
+  // Juego
+  const ICONS=['🐠','🐙','🐬','🪸','🐳','🦀','🐢','🦑','🌊','🐟','🪼','⭐️','🦈','🦐','⚓️','🪙','🐚','🌟','🌀','💎'];
+  let state={lvl:null,firsts:[],matches:0,timeLeft:0,raf:null,start:0,iconsPool:null,gridEl:null,turnLocked:false,espejoTimer:null,engine:Engine};
+
+  function startLevel(lvl){
+    Engine.reset(); Engine.time=lvl.t; Engine.tags=lvl.tags.slice();
+    if(lvl.t>0) Engine.use(Plugins.crono);
+    for(const tag of lvl.tags){ if(Plugins[tag]) Engine.use(Plugins[tag]); }
+    hide($("MapView")); show($("GameView")); hide($("win")); hide($("fail")); $("veil").classList.remove('show');
+    const matchSize = lvl.tags.indexOf('triple')>-1 ? 3 : 2;
+    $("hudLevel").textContent="Nivel "+lvl.id+" — "+(lvl.pairs*matchSize)+" cartas";
+    renderBadges(lvl);
+    $("hudTimer").textContent=(lvl.t>0?fmt(lvl.t):"");
+    state={lvl,firsts:[],matches:0,timeLeft:lvl.t,raf:null,start:0,iconsPool:ICONS.slice(),gridEl:$("grid"),turnLocked:false,espejoTimer:null,engine:Engine};
+    state.gridEl.innerHTML='';
+    let ids=[]; for(let u=0;u<lvl.pairs;u++){ for(let k=0;k<matchSize;k++){ ids.push(u);} }
+    shuffle(ids);
+    const cols=Math.ceil(Math.sqrt(ids.length)); state.gridEl.style.gridTemplateColumns='repeat('+cols+',1fr)';
+    for(let i2=0;i2<ids.length;i2++){ const c=document.createElement('button'); c.type='button'; c.className='card'; c.setAttribute('data-id',ids[i2]); c.setAttribute('data-idx',i2); c.textContent='❓'; c.onclick=()=>onCard(c, matchSize); state.gridEl.appendChild(c); }
+    for(const h of Engine.hooks.onStart){ h(ctx()); }
+    if(lvl.t>0){
+      state.start=performance.now(); const start=state.start;
+      function tick(now){ const elapsed=Math.floor((now-start)/1000), rem=Math.max(0,lvl.t - elapsed - (state._pen||0)); state.timeLeft=rem;
+        for(const h of Engine.hooks.onTick){ h(ctx(),now,elapsed,rem); }
+        if(rem<=0){ cancelAnimationFrame(state.raf); return; } state.raf=requestAnimationFrame(tick); }
+      state.raf=requestAnimationFrame(tick);
+    }else hide($("barWrap"));
+  }
+
+  function renderBadges(lvl){
+    const wrap=$("hudBadges"); wrap.innerHTML='';
+    const list=[]; if(lvl.t>0) list.push('crono'); ['niebla','barajar','triple','camaleon','trampa','bomba','comodin','fantasma','espejo'].forEach(t=>{ if(lvl.tags.indexOf(t)>-1) list.push(t); });
+    if(lvl.note && lvl.note.indexOf('👑')>-1) list.push('jefe');
+    list.forEach(t=>{ const b=document.createElement('span'); b.className='badge'; b.innerHTML='<span>'+EMO[t]+'</span><span>'+t+'</span>'; wrap.appendChild(b); });
+  }
+
+  function onCard(card,matchSize){
+    if(state.turnLocked) return;
+    if(card.classList.contains('matched')||card.classList.contains('flip'))return;
+    for(const h of Engine.hooks.onFlip){ h(ctx(),card); }
+    flipUp(card,ctx());
+    state.firsts.push(card);
+    if(state.firsts.length===matchSize){
+      const ok = isMatch(state.firsts);
+      if(ok){
+        for(const c of state.firsts){ c.classList.add('matched'); }
+        state.matches++; state.firsts.length=0;
+        for(const h2 of Engine.hooks.onMatch){ h2(ctx(),card,null,null); }
+        if(state.matches===state.lvl.pairs) return win();
+      }else{
+        const A=state.firsts.slice(); state.firsts.length=0;
+        setTimeout(()=>{ A.forEach(flipDown); for(const h3 of Engine.hooks.onMismatch){ h3(ctx()); } }, 500);
+      }
+    }
+  }
+
+  function isMatch(cards){ for(const c of cards){ if(c.dataset.isWild==='1') return true; } const id0=cards[0].getAttribute('data-id'); for(let j=1;j<cards.length;j++){ if(cards[j].getAttribute('data-id')!==id0) return false; } return true; }
+  function flipUp(c){ c.classList.add('flip'); const id=parseInt(c.getAttribute('data-id'),10); const iconOverride=c.dataset.iconOverride; c.textContent=iconOverride?iconOverride:state.iconsPool[id%state.iconsPool.length]; }
+  function flipDown(c){ c.classList.remove('flip'); c.textContent='❓'; }
+  function reshuffleSome(grid,count){ const nodes=[...grid.children].filter(el=>!el.classList.contains('matched')); if(nodes.length<4)return; shuffle(nodes); const take=nodes.slice(0,Math.min(count,nodes.length)); for(const n of take){ grid.removeChild(n);} shuffle(take); for(const n of take){ grid.appendChild(n);} }
+  function shuffleIcons(ctx){ const cells=[...state.gridEl.children].filter(el=>el.classList.contains('flip') && !el.classList.contains('matched')); shuffle(cells); for(const c of cells){ const id=parseInt(c.getAttribute('data-id'),10); c.textContent=state.iconsPool[(id+Math.floor(Math.random()*state.iconsPool.length))%state.iconsPool.length]; } }
+  function win(){ cancelAnimationFrame(state.raf); $("veil").classList.remove('show'); if(unlocked<state.lvl.id+1) unlocked=state.lvl.id+1;
+    const wasBoss = (state.lvl.id % 50 === 0);
+    const nextId = state.lvl.id+1;
+    if(wasBoss){ currentChapter = Math.floor((nextId-1)/50); transitionUp(); }
+    show($("win")); }
+  function fail(){ $("veil").classList.remove('show'); show($("fail")); }
+  function transitionUp(){ const wrap=document.getElementById('mapWrap'); wrap.classList.add('fadeUp'); setTimeout(()=>wrap.classList.remove('fadeUp'),280); }
+  function transitionDown(){ const wrap=document.getElementById('mapWrap'); wrap.classList.add('fadeUp'); setTimeout(()=>wrap.classList.remove('fadeUp'),280); }
+  function shuffle(a){ for(let i=a.length-1;i>0;i--){ const j=Math.floor(Math.random()*(i+1)),t=a[i]; a[i]=a[j]; a[j]=t; } return a; }
+  function fmt(s){ const m=String(Math.floor(s/60)).padStart(2,'0'); const r=String(s%60).padStart(2,'0'); return m+':'+r; }
+  function ctx(){ return { lvl: state.lvl, gridEl: state.gridEl, iconsPool: state.iconsPool, timeLeft: state.timeLeft, engine: Engine, fail: fail }; }
+
+  // init
+  showMap(true);
+});
+</script>
+</body>
+</html>

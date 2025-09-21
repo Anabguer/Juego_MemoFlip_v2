@@ -1,0 +1,28 @@
+{
+  "name": "Isla",
+  "chapter": 2,
+  "cards": {
+    "count": 36,
+    "prefix": "card_",
+    "ext": ".webp",
+    "digits": 3
+  },
+  "back": "back.webp",
+  "nodes": {
+    "default": "node_default.webp",
+    "boss": "node_boss.webp"
+  },
+  "ui": {
+    "bg_map": "bg_map.webp",
+    "badge_boss": "badge_boss.webp"
+  },
+  "palette": {
+    "bg1": "#1b2a17",
+    "bg2": "#253422",
+    "accent": "#f1d86a",
+    "path": "#a5c59a",
+    "node": "#f1d86a",
+    "nodeb": "#b7a34a"
+  },
+  "recolor": false
+}

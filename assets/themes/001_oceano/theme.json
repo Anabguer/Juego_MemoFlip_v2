@@ -1,0 +1,28 @@
+{
+  "name": "Océano",
+  "chapter": 1,
+  "cards": {
+    "count": 36,
+    "prefix": "card_",
+    "ext": ".webp",
+    "digits": 3
+  },
+  "back": "back.webp",
+  "nodes": {
+    "default": "node_default.webp",
+    "boss": "node_boss.webp"
+  },
+  "ui": {
+    "bg_map": "bg_map.webp",
+    "badge_boss": "badge_boss.webp"
+  },
+  "palette": {
+    "bg1": "#0b132b",
+    "bg2": "#13315c", 
+    "accent": "#ffd447",
+    "path": "#8da9c4",
+    "node": "#ffd447",
+    "nodeb": "#caa435"
+  },
+  "recolor": false
+}

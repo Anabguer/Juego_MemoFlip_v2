@@ -1,0 +1,442 @@
+[
+  {
+    "id": 1,
+    "pairs": 2,
+    "time_sec": 0,
+    "tags": [],
+    "note": "tutorial",
+    "chapter": 1
+  },
+  {
+    "id": 2,
+    "pairs": 2,
+    "time_sec": 0,
+    "tags": [],
+    "note": "tutorial",
+    "chapter": 1
+  },
+  {
+    "id": 3,
+    "pairs": 3,
+    "time_sec": 0,
+    "tags": [],
+    "note": "tutorial",
+    "chapter": 1
+  },
+  {
+    "id": 4,
+    "pairs": 3,
+    "time_sec": 45,
+    "tags": ["crono"],
+    "note": "primer cronómetro",
+    "chapter": 1
+  },
+  {
+    "id": 5,
+    "pairs": 4,
+    "time_sec": 0,
+    "tags": [],
+    "note": "respiro",
+    "chapter": 1
+  },
+  {
+    "id": 6,
+    "pairs": 4,
+    "time_sec": 50,
+    "tags": ["crono"],
+    "note": "",
+    "chapter": 1
+  },
+  {
+    "id": 7,
+    "pairs": 3,
+    "time_sec": 0,
+    "tags": ["niebla"],
+    "note": "primera niebla",
+    "chapter": 1
+  },
+  {
+    "id": 8,
+    "pairs": 5,
+    "time_sec": 0,
+    "tags": [],
+    "note": "",
+    "chapter": 1
+  },
+  {
+    "id": 9,
+    "pairs": 4,
+    "time_sec": 55,
+    "tags": ["crono", "niebla"],
+    "note": "combinación",
+    "chapter": 1
+  },
+  {
+    "id": 10,
+    "pairs": 6,
+    "time_sec": 65,
+    "tags": ["crono"],
+    "note": "nivel pico",
+    "chapter": 1
+  },
+  {
+    "id": 11,
+    "pairs": 3,
+    "time_sec": 0,
+    "tags": ["barajar"],
+    "note": "primer barajar",
+    "chapter": 1
+  },
+  {
+    "id": 12,
+    "pairs": 5,
+    "time_sec": 0,
+    "tags": [],
+    "note": "respiro",
+    "chapter": 1
+  },
+  {
+    "id": 13,
+    "pairs": 4,
+    "time_sec": 50,
+    "tags": ["crono", "barajar"],
+    "note": "",
+    "chapter": 1
+  },
+  {
+    "id": 14,
+    "pairs": 6,
+    "time_sec": 0,
+    "tags": ["niebla"],
+    "note": "",
+    "chapter": 1
+  },
+  {
+    "id": 15,
+    "pairs": 7,
+    "time_sec": 70,
+    "tags": ["crono"],
+    "note": "nivel medio",
+    "chapter": 1
+  },
+  {
+    "id": 16,
+    "pairs": 4,
+    "time_sec": 0,
+    "tags": ["triple"],
+    "note": "primer triple",
+    "chapter": 1
+  },
+  {
+    "id": 17,
+    "pairs": 5,
+    "time_sec": 0,
+    "tags": ["camaleon"],
+    "note": "primer camaleón",
+    "chapter": 1
+  },
+  {
+    "id": 18,
+    "pairs": 6,
+    "time_sec": 65,
+    "tags": ["crono", "camaleon"],
+    "note": "",
+    "chapter": 1
+  },
+  {
+    "id": 19,
+    "pairs": 3,
+    "time_sec": 0,
+    "tags": ["triple", "niebla"],
+    "note": "triple + niebla",
+    "chapter": 1
+  },
+  {
+    "id": 20,
+    "pairs": 8,
+    "time_sec": 80,
+    "tags": ["crono"],
+    "note": "final tutorial",
+    "chapter": 1
+  },
+  {
+    "id": 21,
+    "pairs": 5,
+    "time_sec": 0,
+    "tags": ["trampa"],
+    "note": "primera trampa",
+    "chapter": 1
+  },
+  {
+    "id": 22,
+    "pairs": 6,
+    "time_sec": 0,
+    "tags": ["bomba"],
+    "note": "primera bomba",
+    "chapter": 1
+  },
+  {
+    "id": 23,
+    "pairs": 7,
+    "time_sec": 70,
+    "tags": ["crono", "bomba"],
+    "note": "bomba + crono",
+    "chapter": 1
+  },
+  {
+    "id": 24,
+    "pairs": 4,
+    "time_sec": 0,
+    "tags": ["triple", "camaleon"],
+    "note": "",
+    "chapter": 1
+  },
+  {
+    "id": 25,
+    "pairs": 9,
+    "time_sec": 85,
+    "tags": ["crono"],
+    "note": "nivel grande",
+    "chapter": 1
+  },
+  {
+    "id": 26,
+    "pairs": 6,
+    "time_sec": 0,
+    "tags": ["niebla", "barajar"],
+    "note": "",
+    "chapter": 1
+  },
+  {
+    "id": 27,
+    "pairs": 8,
+    "time_sec": 80,
+    "tags": ["crono", "trampa"],
+    "note": "",
+    "chapter": 1
+  },
+  {
+    "id": 28,
+    "pairs": 5,
+    "time_sec": 0,
+    "tags": ["triple", "bomba"],
+    "note": "",
+    "chapter": 1
+  },
+  {
+    "id": 29,
+    "pairs": 10,
+    "time_sec": 95,
+    "tags": ["crono", "camaleon"],
+    "note": "preparación boss",
+    "chapter": 1
+  },
+  {
+    "id": 30,
+    "pairs": 7,
+    "time_sec": 0,
+    "tags": ["fantasma"],
+    "note": "primer fantasma",
+    "chapter": 1
+  },
+  {
+    "id": 31,
+    "pairs": 8,
+    "time_sec": 0,
+    "tags": ["comodin"],
+    "note": "primer comodín",
+    "chapter": 1
+  },
+  {
+    "id": 32,
+    "pairs": 9,
+    "time_sec": 85,
+    "tags": ["crono", "fantasma"],
+    "note": "",
+    "chapter": 1
+  },
+  {
+    "id": 33,
+    "pairs": 6,
+    "time_sec": 0,
+    "tags": ["espejo"],
+    "note": "primer espejo",
+    "chapter": 1
+  },
+  {
+    "id": 34,
+    "pairs": 11,
+    "time_sec": 100,
+    "tags": ["crono", "comodin"],
+    "note": "",
+    "chapter": 1
+  },
+  {
+    "id": 35,
+    "pairs": 7,
+    "time_sec": 0,
+    "tags": ["triple", "espejo"],
+    "note": "",
+    "chapter": 1
+  },
+  {
+    "id": 36,
+    "pairs": 10,
+    "time_sec": 90,
+    "tags": ["crono", "niebla", "barajar"],
+    "note": "triple mecánica",
+    "chapter": 1
+  },
+  {
+    "id": 37,
+    "pairs": 8,
+    "time_sec": 0,
+    "tags": ["camaleon", "trampa"],
+    "note": "",
+    "chapter": 1
+  },
+  {
+    "id": 38,
+    "pairs": 12,
+    "time_sec": 110,
+    "tags": ["crono", "bomba"],
+    "note": "nivel grande",
+    "chapter": 1
+  },
+  {
+    "id": 39,
+    "pairs": 9,
+    "time_sec": 0,
+    "tags": ["triple", "fantasma", "comodin"],
+    "note": "preparación final",
+    "chapter": 1
+  },
+  {
+    "id": 40,
+    "pairs": 6,
+    "time_sec": 65,
+    "tags": ["crono", "espejo", "camaleon"],
+    "note": "",
+    "chapter": 1
+  },
+  {
+    "id": 41,
+    "pairs": 11,
+    "time_sec": 0,
+    "tags": ["niebla", "trampa"],
+    "note": "",
+    "chapter": 1
+  },
+  {
+    "id": 42,
+    "pairs": 10,
+    "time_sec": 95,
+    "tags": ["crono", "barajar", "bomba"],
+    "note": "",
+    "chapter": 1
+  },
+  {
+    "id": 43,
+    "pairs": 8,
+    "time_sec": 0,
+    "tags": ["triple", "espejo", "fantasma"],
+    "note": "",
+    "chapter": 1
+  },
+  {
+    "id": 44,
+    "pairs": 12,
+    "time_sec": 115,
+    "tags": ["crono", "camaleon", "comodin"],
+    "note": "",
+    "chapter": 1
+  },
+  {
+    "id": 45,
+    "pairs": 9,
+    "time_sec": 0,
+    "tags": ["niebla", "trampa", "bomba"],
+    "note": "",
+    "chapter": 1
+  },
+  {
+    "id": 46,
+    "pairs": 11,
+    "time_sec": 100,
+    "tags": ["crono", "fantasma", "espejo"],
+    "note": "",
+    "chapter": 1
+  },
+  {
+    "id": 47,
+    "pairs": 7,
+    "time_sec": 0,
+    "tags": ["triple", "barajar", "comodin"],
+    "note": "",
+    "chapter": 1
+  },
+  {
+    "id": 48,
+    "pairs": 12,
+    "time_sec": 120,
+    "tags": ["crono", "niebla", "camaleon", "bomba"],
+    "note": "pre-boss",
+    "chapter": 1
+  },
+  {
+    "id": 49,
+    "pairs": 10,
+    "time_sec": 0,
+    "tags": ["triple", "trampa", "fantasma", "espejo"],
+    "note": "pre-boss",
+    "chapter": 1
+  },
+  {
+    "id": 50,
+    "pairs": 12,
+    "time_sec": 150,
+    "tags": ["boss", "crono", "niebla", "barajar", "camaleon", "bomba"],
+    "note": "BOSS OCÉANO",
+    "chapter": 1
+  },
+  {
+    "id": 51,
+    "pairs": 3,
+    "time_sec": 0,
+    "tags": [],
+    "note": "nuevo capítulo",
+    "chapter": 2
+  },
+  {
+    "id": 52,
+    "pairs": 4,
+    "time_sec": 50,
+    "tags": ["crono"],
+    "note": "",
+    "chapter": 2
+  },
+  {
+    "id": 53,
+    "pairs": 5,
+    "time_sec": 0,
+    "tags": ["niebla"],
+    "note": "",
+    "chapter": 2
+  },
+  {
+    "id": 54,
+    "pairs": 6,
+    "time_sec": 65,
+    "tags": ["crono", "barajar"],
+    "note": "",
+    "chapter": 2
+  },
+  {
+    "id": 55,
+    "pairs": 4,
+    "time_sec": 0,
+    "tags": ["triple", "camaleon"],
+    "note": "",
+    "chapter": 2
+  }
+]
