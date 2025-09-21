@@ -29,14 +29,30 @@ try {
     // 1. Registrar la aplicación MemoFlip
     echo "\n📋 Registrando aplicación MemoFlip...\n";
     
-    $stmt = $pdo->prepare("
-        INSERT INTO aplicaciones (app_codigo, app_nombre, app_descripcion, app_version, configuracion) 
-        VALUES ('memoflip', 'MemoFlip - Juego de Memoria', 'Juego de memoria con cartas, 1000 niveles y mecánicas avanzadas', '1.0.0', '{\"max_levels\": 1000, \"lives\": 5, \"lives_regen_hours\": 1}')
-        ON DUPLICATE KEY UPDATE 
-            app_nombre = VALUES(app_nombre),
-            app_descripcion = VALUES(app_descripcion),
-            app_version = VALUES(app_version)
-    ");
+    // Verificar estructura de tabla aplicaciones
+    $stmt = $pdo->prepare("SHOW COLUMNS FROM aplicaciones");
+    $stmt->execute();
+    $columns = $stmt->fetchAll(PDO::FETCH_COLUMN);
+    
+    // Adaptar INSERT según columnas disponibles
+    if (in_array('app_version', $columns)) {
+        $stmt = $pdo->prepare("
+            INSERT INTO aplicaciones (app_codigo, app_nombre, app_descripcion, app_version, configuracion) 
+            VALUES ('memoflip', 'MemoFlip - Juego de Memoria', 'Juego de memoria con cartas, 1000 niveles y mecánicas avanzadas', '1.0.0', '{\"max_levels\": 1000, \"lives\": 5, \"lives_regen_hours\": 1}')
+            ON DUPLICATE KEY UPDATE 
+                app_nombre = VALUES(app_nombre),
+                app_descripcion = VALUES(app_descripcion),
+                app_version = VALUES(app_version)
+        ");
+    } else {
+        $stmt = $pdo->prepare("
+            INSERT INTO aplicaciones (app_codigo, app_nombre, app_descripcion, configuracion) 
+            VALUES ('memoflip', 'MemoFlip - Juego de Memoria', 'Juego de memoria con cartas, 1000 niveles y mecánicas avanzadas', '{\"max_levels\": 1000, \"lives\": 5, \"lives_regen_hours\": 1}')
+            ON DUPLICATE KEY UPDATE 
+                app_nombre = VALUES(app_nombre),
+                app_descripcion = VALUES(app_descripcion)
+        ");
+    }
     $stmt->execute();
     echo "✅ Aplicación MemoFlip registrada\n";
 

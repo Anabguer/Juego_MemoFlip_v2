@@ -1,0 +1,1100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>MemoFlip - Juego de Memoria</title>
+    <link rel="manifest" href="manifest_memoflip.json">
+    <style>
+        :root {
+            --bg: #0b132b;
+            --ink: #eef;
+            --panel: #111a33;
+            --accent: #ffd447;
+            --ok: #2a9d8f;
+            --error: #e63946;
+            --muted: #2a355f;
+            --veil: rgba(255,255,255,.15);
+            --path: #8da9c4;
+            --node: #ffd447;
+            --nodeb: #caa435;
+            --hud: #16213e;
+        }
+
+        /* Temas por capítulo */
+        .theme-1 { --bg: #0b132b; --panel: #111a33; --hud: #16213e; --path: #8da9c4; --node: #ffd447; --nodeb: #caa435; } /* Océano */
+        .theme-2 { --bg: #1b2a17; --panel: #253422; --hud: #2b4127; --path: #a5c59a; --node: #f1d86a; --nodeb: #b7a34a; } /* Isla */
+        .theme-3 { --bg: #2b0b0b; --panel: #3a1414; --hud: #451919; --path: #d8a5a5; --node: #ff8f47; --nodeb: #c56b33; } /* Volcán */
+        .theme-4 { --bg: #0b162b; --panel: #10203d; --hud: #12264a; --path: #9db7e6; --node: #70d6ff; --nodeb: #53a7c0; } /* Cielo */
+        .theme-5 { --bg: #221b2b; --panel: #2e2436; --hud: #372d42; --path: #c3a9d6; --node: #da77f2; --nodeb: #a85dc0; } /* Noche */
+
+        * { box-sizing: border-box; }
+        html, body { margin: 0; height: 100%; background: var(--bg); color: var(--ink); font-family: 'Segoe UI', Arial, sans-serif; }
+        
+        /* Header global */
+        header {
+            padding: .6rem 1rem;
+            background: var(--panel);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 2px 8px rgba(0,0,0,.3);
+        }
+        
+        .logo { font-weight: 900; font-size: 1.4rem; color: var(--accent); }
+        .header-right { display: flex; gap: 1rem; align-items: center; }
+        .coins { display: flex; align-items: center; gap: .3rem; font-weight: bold; }
+        .lives { display: flex; align-items: center; gap: .3rem; }
+        .sound-btn { background: none; border: none; font-size: 1.2rem; cursor: pointer; }
+        
+        /* Botones */
+        .btn {
+            background: linear-gradient(145deg, #1c2541, #0f1a33);
+            border: 1px solid var(--muted);
+            color: var(--ink);
+            padding: .6rem 1.2rem;
+            border-radius: .7rem;
+            cursor: pointer;
+            font-weight: 600;
+            transition: all .2s;
+            text-decoration: none;
+            display: inline-block;
+            text-align: center;
+        }
+        .btn:hover { background: linear-gradient(145deg, #223355, #1a2644); transform: translateY(-1px); }
+        .btn:disabled { opacity: .5; cursor: not-allowed; }
+        .btn-primary { background: linear-gradient(145deg, var(--accent), #caa435); color: #222; }
+        .btn-primary:hover { background: linear-gradient(145deg, #ffdc3a, #b8932f); }
+        .btn-success { background: linear-gradient(145deg, var(--ok), #228b7a); }
+        .btn-danger { background: linear-gradient(145deg, var(--error), #cc2936); }
+        
+        /* Pantallas */
+        .screen { display: none; min-height: calc(100vh - 60px); }
+        .screen.active { display: block; }
+        
+        main { height: calc(100vh - 60px); }
+        .hidden { display: none !important; }
+        
+        /* Pantalla de inicio */
+        #startScreen {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 2rem;
+            background: radial-gradient(circle at center, var(--panel), var(--bg));
+        }
+        
+        .start-logo {
+            font-size: 3rem;
+            font-weight: 900;
+            color: var(--accent);
+            margin-bottom: .5rem;
+            text-shadow: 0 4px 8px rgba(0,0,0,.5);
+        }
+        
+        .start-subtitle {
+            font-size: 1.2rem;
+            margin-bottom: 3rem;
+            opacity: .8;
+        }
+        
+        .start-buttons {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            min-width: 250px;
+        }
+        
+        /* Pantalla de mapa */
+        #mapScreen {
+            position: relative;
+            height: 100%;
+            overflow: auto;
+            background: radial-gradient(120% 80% at 50% 20%, #13315c, var(--bg));
+            transition: transform .25s ease;
+        }
+        
+        #mapWrap {
+            position: relative;
+            width: 100%;
+            min-height: 100%;
+            padding: 2rem 0;
+        }
+        
+        .map-hud {
+            position: sticky;
+            top: 0;
+            padding: .8rem 1rem;
+            background: var(--hud);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: .8rem;
+            flex-wrap: wrap;
+            z-index: 50;
+            box-shadow: 0 2px 8px rgba(0,0,0,.3);
+        }
+        
+        .map-title {
+            font-weight: 900;
+            font-size: clamp(16px, 4vw, 22px);
+        }
+        
+        .map-nav {
+            display: flex;
+            gap: .5rem;
+        }
+        
+        .nav-btn {
+            background: var(--panel);
+            border: 1px solid var(--muted);
+            color: var(--ink);
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            font-size: 1.2rem;
+        }
+        
+        .nav-btn:disabled { opacity: .4; cursor: not-allowed; }
+        
+        /* Nodos del mapa */
+        #mapContainer {
+            position: relative;
+            width: 100%;
+            min-height: 800px;
+            padding: 2rem;
+        }
+        
+        .node {
+            position: absolute;
+            transform: translate(-50%, -50%);
+            width: 54px;
+            height: 54px;
+            border-radius: 50%;
+            display: grid;
+            place-items: center;
+            font-weight: bold;
+            background: var(--node);
+            color: #222;
+            border: 2px solid var(--nodeb);
+            box-shadow: 0 6px 0 var(--nodeb);
+            cursor: pointer;
+            transition: all .2s;
+        }
+        
+        .node:hover { transform: translate(-50%, -50%) scale(1.1); }
+        .node.locked { filter: grayscale(.85); opacity: .6; box-shadow: none; cursor: not-allowed; }
+        .node.current { outline: 4px solid #5bc0be; outline-offset: 2px; animation: pulse 2s infinite; }
+        .node.completed { background: var(--ok); border-color: #228b7a; }
+        
+        .node.boss {
+            width: 68px;
+            height: 68px;
+            background: linear-gradient(180deg, var(--node), #fff2b5);
+            box-shadow: 0 10px 0 var(--nodeb), 0 0 24px rgba(255,212,71,.5);
+        }
+        
+        .node.boss::after {
+            content: "👑";
+            position: absolute;
+            top: -18px;
+            font-size: 18px;
+        }
+        
+        .node .icons {
+            position: absolute;
+            bottom: -12px;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 10px;
+            white-space: nowrap;
+            display: flex;
+            gap: 1px;
+        }
+        
+        .node .label {
+            position: absolute;
+            bottom: -26px;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 11px;
+            letter-spacing: .6px;
+            opacity: .9;
+        }
+        
+        /* Línea de conexión */
+        #pathSvg {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: 1;
+        }
+        
+        .path-line {
+            stroke: var(--path);
+            stroke-width: 3;
+            fill: none;
+            opacity: .6;
+        }
+        
+        /* Pantalla de juego */
+        #gameScreen {
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+        }
+        
+        .game-hud {
+            padding: .8rem 1rem;
+            background: var(--hud);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+        
+        .level-info {
+            display: flex;
+            align-items: center;
+            gap: .5rem;
+        }
+        
+        .level-number {
+            font-weight: 900;
+            font-size: 1.2rem;
+        }
+        
+        .mechanics-icons {
+            display: flex;
+            gap: .2rem;
+        }
+        
+        .game-stats {
+            display: flex;
+            gap: 1rem;
+            font-size: .9rem;
+        }
+        
+        .stat {
+            display: flex;
+            align-items: center;
+            gap: .3rem;
+        }
+        
+        .timer-bar {
+            position: relative;
+            height: 6px;
+            background: rgba(0,0,0,.3);
+            border-radius: 3px;
+            overflow: hidden;
+            flex: 1;
+            min-width: 150px;
+        }
+        
+        .timer-fill {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            background: linear-gradient(90deg, var(--ok), var(--accent), var(--error));
+            transition: width .1s linear;
+        }
+        
+        /* Grid de cartas */
+        .game-area {
+            flex: 1;
+            padding: 1rem;
+            overflow: auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .cards-grid {
+            display: grid;
+            gap: .5rem;
+            max-width: 100%;
+            width: fit-content;
+        }
+        
+        .card {
+            aspect-ratio: 3/4;
+            background: linear-gradient(145deg, #243b55, #1a2d44);
+            border: 2px solid #3b5b8a;
+            border-radius: .8rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2rem;
+            color: #fff;
+            cursor: pointer;
+            position: relative;
+            overflow: hidden;
+            transition: all .3s ease;
+            user-select: none;
+            min-width: 60px;
+            min-height: 80px;
+        }
+        
+        .card:hover { transform: scale(1.05); }
+        .card.flipped { background: linear-gradient(145deg, #fff, #f0f0f0); color: #333; border-color: var(--accent); }
+        .card.matched { background: linear-gradient(145deg, var(--ok), #228b7a); border-color: var(--ok); }
+        .card.wrong { background: linear-gradient(145deg, var(--error), #cc2936); animation: shake .5s; }
+        .card.special { border-color: var(--accent); box-shadow: 0 0 12px rgba(255,212,71,.4); }
+        
+        /* Efectos especiales */
+        .card.fog { opacity: .3; }
+        .card.ghost { opacity: .7; animation: ghostly 1s ease-in-out infinite alternate; }
+        .card.mirror { transform: scaleX(-1); }
+        .card.trap { filter: grayscale(1); }
+        
+        /* Modales */
+        .modal {
+            position: fixed;
+            inset: 0;
+            display: grid;
+            place-items: center;
+            background: rgba(0,0,0,.7);
+            z-index: 200;
+            backdrop-filter: blur(4px);
+        }
+        
+        .modal.hidden { display: none !important; }
+        
+        .modal-box {
+            background: linear-gradient(145deg, var(--panel), var(--bg));
+            border: 2px solid var(--muted);
+            border-radius: 1rem;
+            padding: 2rem;
+            min-width: 300px;
+            max-width: 90vw;
+            text-align: center;
+            box-shadow: 0 20px 40px rgba(0,0,0,.5);
+        }
+        
+        .modal-title {
+            font-size: 1.5rem;
+            font-weight: 900;
+            margin-bottom: 1rem;
+            color: var(--accent);
+        }
+        
+        .modal-content {
+            margin-bottom: 2rem;
+            line-height: 1.5;
+        }
+        
+        .modal-buttons {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        
+        .score-breakdown {
+            background: rgba(0,0,0,.2);
+            border-radius: .5rem;
+            padding: 1rem;
+            margin: 1rem 0;
+            text-align: left;
+        }
+        
+        .score-line {
+            display: flex;
+            justify-content: space-between;
+            margin: .3rem 0;
+        }
+        
+        .score-total {
+            border-top: 1px solid var(--muted);
+            padding-top: .5rem;
+            font-weight: bold;
+            color: var(--accent);
+        }
+        
+        /* Responsive */
+        @media (max-width: 768px) {
+            header { padding: .4rem .8rem; }
+            .header-right { gap: .5rem; }
+            .logo { font-size: 1.2rem; }
+            .coins, .lives { font-size: .9rem; }
+            
+            .game-hud { padding: .6rem .8rem; flex-direction: column; gap: .5rem; }
+            .game-stats { gap: .8rem; }
+            
+            .cards-grid { gap: .3rem; }
+            .card { min-width: 50px; min-height: 67px; font-size: 1.5rem; }
+            
+            .modal-box { padding: 1.5rem; min-width: 280px; }
+            .modal-buttons { flex-direction: column; }
+        }
+        
+        /* Animaciones */
+        @keyframes pulse {
+            0%, 100% { transform: translate(-50%, -50%) scale(1); }
+            50% { transform: translate(-50%, -50%) scale(1.1); }
+        }
+        
+        @keyframes shake {
+            0%, 100% { transform: translateX(0); }
+            25% { transform: translateX(-5px); }
+            75% { transform: translateX(5px); }
+        }
+        
+        @keyframes ghostly {
+            from { opacity: .3; }
+            to { opacity: .8; }
+        }
+        
+        @keyframes flipIn {
+            from { transform: rotateY(-90deg); }
+            to { transform: rotateY(0); }
+        }
+        
+        .card.flip-animation { animation: flipIn .3s ease-out; }
+        
+        /* Grid responsivo para diferentes tamaños */
+        .grid-2 { grid-template-columns: repeat(2, 1fr); }
+        .grid-3 { grid-template-columns: repeat(3, 1fr); }
+        .grid-4 { grid-template-columns: repeat(4, 1fr); }
+        .grid-5 { grid-template-columns: repeat(5, 1fr); }
+        .grid-6 { grid-template-columns: repeat(6, 1fr); }
+        
+        @media (max-width: 480px) {
+            .grid-5, .grid-6 { grid-template-columns: repeat(4, 1fr); }
+        }
+        
+        /* Efectos de partículas */
+        .particles {
+            position: fixed;
+            inset: 0;
+            pointer-events: none;
+            z-index: 150;
+        }
+        
+        .particle {
+            position: absolute;
+            font-size: 1.5rem;
+            animation: particle-float 2s ease-out forwards;
+        }
+        
+        @keyframes particle-float {
+            0% { transform: translateY(0) scale(1); opacity: 1; }
+            100% { transform: translateY(-100px) scale(0.5); opacity: 0; }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header global -->
+    <header>
+        <div class="logo">🎮 MemoFlip</div>
+        <div class="header-right">
+            <div class="coins">
+                <span>🪙</span>
+                <span id="coinsDisplay">0</span>
+            </div>
+            <div class="lives">
+                <span>❤️</span>
+                <span id="livesDisplay">5</span>
+            </div>
+            <button class="sound-btn" id="soundToggle">🔊</button>
+        </div>
+    </header>
+
+    <main>
+        <!-- Pantalla de inicio -->
+        <div id="startScreen" class="screen active">
+            <div class="start-logo">🎮 MemoFlip</div>
+            <div class="start-subtitle">Juego de Memoria Épico</div>
+            <div class="start-buttons">
+                <button class="btn btn-primary" onclick="startAsGuest()">🚀 Jugar como Invitado</button>
+                <button class="btn" onclick="showLogin()">👤 Iniciar Sesión</button>
+                <button class="btn" onclick="showRegister()">📝 Registrarse</button>
+            </div>
+        </div>
+
+        <!-- Pantalla de mapa -->
+        <div id="mapScreen" class="screen">
+            <div class="map-hud">
+                <div class="map-title">Capítulo <span id="currentChapter">1</span>: <span id="chapterName">Océano</span></div>
+                <div class="map-nav">
+                    <button class="nav-btn" id="prevChapterBtn" onclick="changeChapter(-1)">⬆️</button>
+                    <button class="nav-btn" id="nextChapterBtn" onclick="changeChapter(1)">⬇️</button>
+                </div>
+            </div>
+            <div id="mapWrap">
+                <div id="mapContainer">
+                    <svg id="pathSvg"></svg>
+                    <!-- Los nodos se generan dinámicamente -->
+                </div>
+            </div>
+        </div>
+
+        <!-- Pantalla de juego -->
+        <div id="gameScreen" class="screen">
+            <div class="game-hud">
+                <div class="level-info">
+                    <div class="level-number">Nivel <span id="currentLevel">1</span></div>
+                    <div class="mechanics-icons" id="mechanicsIcons"></div>
+                </div>
+                <div class="timer-bar hidden" id="timerBar">
+                    <div class="timer-fill" id="timerFill"></div>
+                </div>
+                <div class="game-stats">
+                    <div class="stat">
+                        <span>⏱️</span>
+                        <span id="timeDisplay">00:00</span>
+                    </div>
+                    <div class="stat">
+                        <span>👆</span>
+                        <span id="movesDisplay">0</span>
+                    </div>
+                    <div class="stat">
+                        <span>❌</span>
+                        <span id="failsDisplay">0</span>
+                    </div>
+                </div>
+            </div>
+            <div class="game-area">
+                <div class="cards-grid" id="cardsGrid">
+                    <!-- Las cartas se generan dinámicamente -->
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Contenedor de partículas -->
+    <div class="particles" id="particles"></div>
+
+    <!-- Modal de victoria -->
+    <div id="victoryModal" class="modal hidden">
+        <div class="modal-box">
+            <div class="modal-title">🎉 ¡Victoria!</div>
+            <div class="modal-content">
+                <p>¡Has completado el nivel <span id="victoryLevel">1</span>!</p>
+                <div class="score-breakdown" id="scoreBreakdown">
+                    <!-- Se llena dinámicamente -->
+                </div>
+            </div>
+            <div class="modal-buttons">
+                <button class="btn" onclick="retryLevel()">🔄 Reintentar</button>
+                <button class="btn btn-primary" onclick="nextLevel()">➡️ Siguiente Nivel</button>
+                <button class="btn" onclick="backToMap()">🗺️ Mapa</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal de derrota -->
+    <div id="defeatModal" class="modal hidden">
+        <div class="modal-box">
+            <div class="modal-title">💔 Game Over</div>
+            <div class="modal-content">
+                <p>¡No has conseguido completar el nivel!</p>
+                <p>Te quedan <span id="remainingLives">4</span> vidas.</p>
+            </div>
+            <div class="modal-buttons">
+                <button class="btn btn-primary" onclick="retryLevel()">🔄 Reintentar</button>
+                <button class="btn" onclick="backToMap()">🗺️ Volver al Mapa</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal de sin vidas -->
+    <div id="noLivesModal" class="modal hidden">
+        <div class="modal-box">
+            <div class="modal-title">⏰ Sin Vidas</div>
+            <div class="modal-content">
+                <p>Te has quedado sin vidas.</p>
+                <p>Regenerarás 1 vida cada hora.</p>
+                <p>Próxima vida en: <span id="nextLifeTimer">59:59</span></p>
+            </div>
+            <div class="modal-buttons">
+                <button class="btn btn-primary" onclick="backToMap()">🗺️ Volver al Mapa</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal de pausa -->
+    <div id="pauseModal" class="modal hidden">
+        <div class="modal-box">
+            <div class="modal-title">⏸️ Pausa</div>
+            <div class="modal-content">
+                <p>Juego pausado</p>
+            </div>
+            <div class="modal-buttons">
+                <button class="btn btn-primary" onclick="resumeGame()">▶️ Continuar</button>
+                <button class="btn" onclick="retryLevel()">🔄 Reiniciar</button>
+                <button class="btn" onclick="backToMap()">🗺️ Mapa</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // =====================================
+        // CONFIGURACIÓN PARA HOSTALIA
+        // =====================================
+        
+        const API_BASE = './sistema_apps_api/memoflip/';
+        const ASSETS_BASE = './sistema_apps_upload/memoflip/';
+        
+        // =====================================
+        // CONFIGURACIÓN Y DATOS GLOBALES
+        // =====================================
+        
+        const MECHANICS_ICONS = {
+            'crono': '⏱️',
+            'niebla': '🌫️',
+            'barajar': '🔀',
+            'triple': '🔺',
+            'camaleon': '🎭',
+            'trampa': '🚫',
+            'bomba': '💣',
+            'comodin': '🌟',
+            'fantasma': '👻',
+            'espejo': '🪞',
+            'boss': '👑'
+        };
+
+        const CARD_EMOJIS = [
+            '🐠', '🐟', '🐡', '🦈', '🐙', '🦑', '🐚', '⭐', '🌊', '🏝️',
+            '🦀', '🦞', '🐢', '🐳', '🐋', '🦭', '🐧', '🦆', '⚓', '🛥️',
+            '🏖️', '🌺', '🥥', '🍍', '🌴', '🦩', '🦜', '🐅', '🦁', '🐘',
+            '🦒', '🦓', '🦏', '🐊', '🐍', '🦎'
+        ];
+
+        let gameState = {
+            currentUser: null,
+            currentLevel: 1,
+            maxLevelUnlocked: 1,
+            coins: 0,
+            lives: 5,
+            soundEnabled: true,
+            isPlaying: false,
+            isPaused: false,
+            isGuest: true,
+            gameData: {
+                pairs: 0,
+                timeLimit: 0,
+                timeUsed: 0,
+                movesUsed: 0,
+                fails: 0,
+                mechanics: [],
+                flippedCards: [],
+                matchedCards: [],
+                gameTimer: null,
+                startTime: null
+            }
+        };
+
+        let levelsData = [];
+        let themesData = {};
+
+        // =====================================
+        // INICIALIZACIÓN
+        // =====================================
+
+        document.addEventListener('DOMContentLoaded', async function() {
+            console.log('🎮 Iniciando MemoFlip en Hostalia...');
+            
+            // Cargar datos del juego
+            await loadGameData();
+            
+            // Cargar datos del usuario
+            loadUserData();
+            
+            // Configurar eventos
+            setupEventListeners();
+            
+            // Actualizar UI
+            updateUI();
+            
+            console.log('✅ MemoFlip iniciado correctamente');
+        });
+
+        async function loadGameData() {
+            try {
+                // Cargar niveles desde API
+                const response = await fetch(API_BASE + 'game.php?action=levels');
+                const result = await response.json();
+                
+                if (result.success) {
+                    levelsData = result.levels;
+                    console.log(`📚 Cargados ${levelsData.length} niveles desde API`);
+                } else {
+                    throw new Error(result.error || 'Error cargando niveles');
+                }
+                
+            } catch (error) {
+                console.warn('⚠️ Error cargando desde API, usando datos locales:', error);
+                // Datos de fallback
+                levelsData = generateFallbackLevels();
+            }
+        }
+
+        function generateFallbackLevels() {
+            const levels = [];
+            for (let i = 1; i <= 100; i++) {
+                levels.push({
+                    id: i,
+                    pairs: Math.min(2 + Math.floor(i / 10), 12),
+                    time_sec: i % 5 === 0 ? 60 + (i * 2) : 0,
+                    tags: i % 10 === 0 ? ['boss'] : [],
+                    note: i % 50 === 0 ? 'BOSS' : '',
+                    chapter: Math.ceil(i / 50)
+                });
+            }
+            return levels;
+        }
+
+        function loadUserData() {
+            const savedData = localStorage.getItem('memoflip_user_hostalia');
+            if (savedData) {
+                const userData = JSON.parse(savedData);
+                gameState.currentUser = userData.userKey || null;
+                gameState.maxLevelUnlocked = userData.maxLevel || 1;
+                gameState.coins = userData.coins || 0;
+                gameState.lives = userData.lives || 5;
+                gameState.soundEnabled = userData.soundEnabled !== false;
+                gameState.isGuest = userData.isGuest !== false;
+            }
+        }
+
+        function saveUserData() {
+            const userData = {
+                userKey: gameState.currentUser,
+                maxLevel: gameState.maxLevelUnlocked,
+                coins: gameState.coins,
+                lives: gameState.lives,
+                soundEnabled: gameState.soundEnabled,
+                isGuest: gameState.isGuest,
+                lastSave: Date.now()
+            };
+            localStorage.setItem('memoflip_user_hostalia', JSON.stringify(userData));
+        }
+
+        function setupEventListeners() {
+            // Botón de sonido
+            document.getElementById('soundToggle').addEventListener('click', toggleSound);
+            
+            // Eventos de teclado
+            document.addEventListener('keydown', handleKeyPress);
+            
+            // Prevenir zoom en móviles
+            document.addEventListener('touchstart', function(e) {
+                if (e.touches.length > 1) {
+                    e.preventDefault();
+                }
+            }, { passive: false });
+        }
+
+        function handleKeyPress(e) {
+            if (e.key === 'Escape') {
+                if (gameState.isPlaying && !gameState.isPaused) {
+                    pauseGame();
+                }
+            }
+        }
+
+        // =====================================
+        // GESTIÓN DE PANTALLAS
+        // =====================================
+
+        function showScreen(screenId) {
+            document.querySelectorAll('.screen').forEach(screen => {
+                screen.classList.remove('active');
+            });
+            document.getElementById(screenId).classList.add('active');
+        }
+
+        async function startAsGuest() {
+            try {
+                const response = await fetch(API_BASE + 'auth.php', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ action: 'guest' })
+                });
+                
+                const result = await response.json();
+                
+                if (result.success) {
+                    gameState.currentUser = result.user_key;
+                    gameState.isGuest = true;
+                    gameState.maxLevelUnlocked = result.game_data.max_level_unlocked;
+                    gameState.coins = result.game_data.coins_total;
+                    gameState.lives = result.game_data.lives_current;
+                    gameState.soundEnabled = result.game_data.sound_enabled;
+                    
+                    saveUserData();
+                    updateUI();
+                    showMap();
+                } else {
+                    throw new Error(result.error);
+                }
+            } catch (error) {
+                console.warn('Error creando usuario invitado, usando modo offline:', error);
+                gameState.currentUser = 'guest_offline_' + Date.now();
+                gameState.isGuest = true;
+                saveUserData();
+                updateUI();
+                showMap();
+            }
+        }
+
+        function showLogin() {
+            const email = prompt('Email:');
+            const password = prompt('Contraseña:');
+            
+            if (!email || !password) return;
+            
+            loginUser(email, password);
+        }
+
+        function showRegister() {
+            const email = prompt('Email:');
+            const nombre = prompt('Nombre:');
+            const password = prompt('Contraseña:');
+            
+            if (!email || !nombre || !password) return;
+            
+            registerUser(email, nombre, password);
+        }
+
+        async function loginUser(email, password) {
+            try {
+                const response = await fetch(API_BASE + 'auth.php', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ 
+                        action: 'login',
+                        email: email,
+                        password: password
+                    })
+                });
+                
+                const result = await response.json();
+                
+                if (result.success) {
+                    gameState.currentUser = result.user_key;
+                    gameState.isGuest = false;
+                    gameState.maxLevelUnlocked = result.game_data.max_level_unlocked;
+                    gameState.coins = result.game_data.coins_total;
+                    gameState.lives = result.game_data.lives_current;
+                    gameState.soundEnabled = result.game_data.sound_enabled;
+                    
+                    saveUserData();
+                    updateUI();
+                    showMap();
+                    showToast('✅ Login exitoso');
+                } else {
+                    throw new Error(result.error);
+                }
+            } catch (error) {
+                showToast('❌ Error en login: ' + error.message);
+            }
+        }
+
+        async function registerUser(email, nombre, password) {
+            try {
+                const response = await fetch(API_BASE + 'auth.php', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ 
+                        action: 'register',
+                        email: email,
+                        nombre: nombre,
+                        password: password
+                    })
+                });
+                
+                const result = await response.json();
+                
+                if (result.success) {
+                    showToast('✅ Usuario registrado correctamente');
+                    loginUser(email, password);
+                } else {
+                    throw new Error(result.error);
+                }
+            } catch (error) {
+                showToast('❌ Error en registro: ' + error.message);
+            }
+        }
+
+        function showMap() {
+            showScreen('mapScreen');
+            generateMap();
+            updateMapTheme();
+        }
+
+        // =====================================
+        // RESTO DEL CÓDIGO DEL JUEGO (BÁSICO)
+        // =====================================
+
+        function generateMap() {
+            const mapContainer = document.getElementById('mapContainer');
+            const pathSvg = document.getElementById('pathSvg');
+            
+            // Limpiar mapa anterior
+            mapContainer.querySelectorAll('.node').forEach(node => node.remove());
+            pathSvg.innerHTML = '';
+            
+            const currentChapter = Math.ceil(gameState.currentLevel / 50);
+            const startLevel = (currentChapter - 1) * 50 + 1;
+            const endLevel = Math.min(currentChapter * 50, levelsData.length);
+            
+            // Generar nodos básicos
+            for (let i = startLevel; i <= Math.min(endLevel, startLevel + 20); i++) {
+                const levelData = levelsData.find(l => l.id === i) || {
+                    id: i, pairs: 2 + Math.floor(i/10), tags: [], chapter: currentChapter
+                };
+                
+                const row = Math.floor((i - startLevel) / 5);
+                const col = (i - startLevel) % 5;
+                const isEvenRow = row % 2 === 0;
+                
+                const x = isEvenRow ? 
+                    20 + (col * 60) : 
+                    20 + ((4 - col) * 60);
+                const y = 100 + (row * 80);
+                
+                const node = createMapNode(levelData, x + '%', y + 'px');
+                mapContainer.appendChild(node);
+            }
+            
+            updateMapNavigation(currentChapter);
+        }
+
+        function createMapNode(levelData, x, y) {
+            const node = document.createElement('div');
+            node.className = 'node';
+            node.style.left = x;
+            node.style.top = y;
+            node.textContent = levelData.id;
+            
+            // Estados del nodo
+            if (levelData.id > gameState.maxLevelUnlocked) {
+                node.classList.add('locked');
+            } else if (levelData.id === gameState.maxLevelUnlocked) {
+                node.classList.add('current');
+            } else {
+                node.classList.add('completed');
+            }
+            
+            // Boss
+            if (levelData.tags.includes('boss') || levelData.id % 50 === 0) {
+                node.classList.add('boss');
+                const label = document.createElement('div');
+                label.className = 'label';
+                label.textContent = 'BOSS';
+                node.appendChild(label);
+            }
+            
+            // Evento click
+            node.addEventListener('click', () => {
+                if (levelData.id <= gameState.maxLevelUnlocked) {
+                    startLevel(levelData.id);
+                } else {
+                    showToast('🔒 Nivel bloqueado');
+                }
+            });
+            
+            return node;
+        }
+
+        function updateMapTheme() {
+            const currentChapter = Math.ceil(gameState.currentLevel / 50);
+            const themeNames = ['', 'Océano', 'Isla', 'Volcán', 'Cielo', 'Noche'];
+            const themeName = themeNames[currentChapter] || 'Desconocido';
+            
+            document.getElementById('currentChapter').textContent = currentChapter;
+            document.getElementById('chapterName').textContent = themeName;
+            
+            // Aplicar tema
+            document.body.className = `theme-${Math.min(currentChapter, 5)}`;
+        }
+
+        function updateMapNavigation(currentChapter) {
+            const prevBtn = document.getElementById('prevChapterBtn');
+            const nextBtn = document.getElementById('nextChapterBtn');
+            
+            prevBtn.disabled = currentChapter <= 1;
+            nextBtn.disabled = currentChapter >= Math.ceil(levelsData.length / 50);
+        }
+
+        function changeChapter(direction) {
+            const currentChapter = Math.ceil(gameState.currentLevel / 50);
+            const newChapter = currentChapter + direction;
+            const maxChapters = Math.ceil(levelsData.length / 50);
+            
+            if (newChapter >= 1 && newChapter <= maxChapters) {
+                gameState.currentLevel = (newChapter - 1) * 50 + 1;
+                generateMap();
+                updateMapTheme();
+            }
+        }
+
+        function updateUI() {
+            document.getElementById('coinsDisplay').textContent = gameState.coins;
+            document.getElementById('livesDisplay').textContent = gameState.lives;
+            document.getElementById('soundToggle').textContent = gameState.soundEnabled ? '🔊' : '🔇';
+        }
+
+        function toggleSound() {
+            gameState.soundEnabled = !gameState.soundEnabled;
+            saveUserData();
+            updateUI();
+        }
+
+        function showToast(message, duration = 3000) {
+            const toast = document.createElement('div');
+            toast.style.cssText = `
+                position: fixed;
+                top: 80px;
+                left: 50%;
+                transform: translateX(-50%);
+                background: var(--panel);
+                color: var(--ink);
+                padding: 0.8rem 1.2rem;
+                border-radius: 0.5rem;
+                border: 1px solid var(--muted);
+                z-index: 1000;
+                font-weight: 600;
+                box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+            `;
+            toast.textContent = message;
+            document.body.appendChild(toast);
+            
+            setTimeout(() => {
+                if (toast.parentNode) {
+                    toast.parentNode.removeChild(toast);
+                }
+            }, duration);
+        }
+
+        // Funciones básicas para demostración
+        function startLevel(levelId) { 
+            showToast(`🎮 Iniciando nivel ${levelId}...`);
+            // Aquí iría la lógica completa del juego
+        }
+        
+        function retryLevel() { showToast('🔄 Reintentando nivel...'); }
+        function nextLevel() { showToast('➡️ Siguiente nivel...'); }
+        function backToMap() { showMap(); }
+        function resumeGame() { showToast('▶️ Reanudando juego...'); }
+
+        console.log('🎮 MemoFlip básico para Hostalia cargado!');
+    </script>
+</body>
+</html>

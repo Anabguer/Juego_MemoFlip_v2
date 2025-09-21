@@ -101,6 +101,21 @@ CREATE TABLE puzzle_partidas (
 
 ## 📁 **3. ESTRUCTURA DE ARCHIVOS ACTUAL**
 
+La estructura en hostalia es:
+directoprio Raiz: sistema_apps_upload
+subdirectorios_ 	sistema_apps_api
+			sistema_apps_upload
+
+En el directorio Raiz están los archivos: app_memory.html	- aplicación  de moemory
+					  app_recetas.html	- aplicación de recetas
+					  
+					  manifest_recetas.json - Icono de la aplicación recetas
+			se debería crear  manifest_memory.json  - Icono de la aplicación memoty
+					  router.html		- Router donde va la información de la aplicación
+					  index.html		- Indice de las aplicaciones existentes
+
+En sistema_apps_api- memory   están los archivos que subiste...examina si están todos correctos y si no utiliza la estructa correcta  sistema_apps_api/memory para organizar tu aplicación.
+
 ### **🎯 Proyecto Principal (mis_recetas)**
 ```
 C:\xampp\htdocs\mis_recetas\
