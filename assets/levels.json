@@ -2,10 +2,12 @@
   {
     "id": 1,
     "pairs": 2,
+    "matchSize": 2,
     "time_sec": 0,
     "tags": [],
-    "note": "tutorial",
-    "chapter": 1
+    "chapter": 1,
+    "seed": 12346,
+    "label": "fácil"
   },
   {
     "id": 2,
@@ -122,10 +124,12 @@
   {
     "id": 16,
     "pairs": 4,
+    "matchSize": 3,
     "time_sec": 0,
     "tags": ["triple"],
-    "note": "primer triple",
-    "chapter": 1
+    "chapter": 1,
+    "seed": 12361,
+    "label": "medio"
   },
   {
     "id": 17,
@@ -394,10 +398,12 @@
   {
     "id": 50,
     "pairs": 12,
+    "matchSize": 2,
     "time_sec": 150,
     "tags": ["boss", "crono", "niebla", "barajar", "camaleon", "bomba"],
-    "note": "BOSS OCÉANO",
-    "chapter": 1
+    "chapter": 1,
+    "seed": 12395,
+    "label": "boss"
   },
   {
     "id": 51,
