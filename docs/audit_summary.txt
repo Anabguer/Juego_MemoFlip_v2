@@ -1,0 +1,96 @@
+Levels file: /mnt/data/MemoFlip_extracted/MemoFlip/assets/levels.json
+Total levels: 55
+Columns: ['id', 'pairs', 'time_sec', 'tags', 'note', 'chapter']
+
+Unique tags/flags found: ['barajar', 'bomba', 'boss', 'camaleon', 'comodin', 'crono', 'espejo', 'fantasma', 'niebla', 'trampa', 'triple']
+
+Time-related columns: ['time_sec']
+Time stats: {'time_sec': {'non_null': 55, 'min': 0.0, 'max': 150.0, 'sample': [0, 0, 0, 45, 0]}}
+
+Number-like columns (pairs/cards/grid): ['pairs']
+Preview numbers: {'pairs': [2, 2, 3, 3, 4, 4, 3, 5]}
+
+Themes (first entries):
+[('.', []), ('001_oceano', ['theme.json']), ('002_isla', ['theme.json'])]
+
+Config preview (first lines of app_config_memoflip.php):
+  <?php
+  /**
+   * Configuración específica para MemoFlip
+   * Integración con sistema multi-aplicación
+   */
+
+  // Configuración de la aplicación
+  define('APP_CODIGO', 'memoflip');
+  define('APP_NOMBRE', 'MemoFlip - Juego de Memoria');
+  define('APP_VERSION', '1.0.0');
+
+  // URLs para producción (Hostalia)
+  define('API_BASE_URL', 'https://colisan.com/sistema_apps_upload/sistema_apps_api/');
+  define('UPLOAD_BASE_URL', 'https://colisan.com/sistema_apps_upload/uploads/');
+  define('ASSETS_BASE_URL', 'https://colisan.com/sistema_apps_upload/assets/memoflip/');
+
+  // URLs para desarrollo local
+  if (isset($_SERVER['HTTP_HOST']) && strpos($_SERVER['HTTP_HOST'], 'localhost') !== false) {
+      define('API_BASE_URL_LOCAL', 'http://localhost/mis_recetas/api/');
+      define('UPLOAD_BASE_URL_LOCAL', 'http://localhost/mis_recetas/uploads/');
+      define('ASSETS_BASE_URL_LOCAL', 'http://localhost/mis_recetas/assets/memoflip/');
+  }
+
+  /**
+   * Genera la clave usuario_aplicacion_key para MemoFlip
+   */
+  function generateMemoFlipUserKey($email) {
+      return $email . '_' . APP_CODIGO;
+  }
+
+  /**
+   * Configuración del juego MemoFlip
+   */
+  class MemoFlipConfig {
+    
+      // Configuración de vidas
+      const MAX_LIVES = 5;
+      const LIVES_REGEN_HOURS = 1;
+    
+      // Configuración de puntuación
+      const SCORE_CONFIG = [
+          'TIME_MAX' => 50,           // Puntos máximos por tiempo
+          'EFF_MAX' => 50,            // Puntos máximos por eficiencia
+          'PEN_FAIL' => 2,            // Penalización por fallo
+          'PEN_BOMB' => 4,            // Penalización por bomba
+          'MECH_MULTS' => [           // Multiplicadores por mecánicas
+              'triple' => 0.10,
+              'camaleon' => 0.05,
+              'barajar' => 0.05,
+              'espejo' => 0.05,
+              'bomba' => 0.05,
+              'trampa' => 0.05,
+              'niebla' => 0.05,
+              'fantasma' => 0.05,
+              'comodin' => 0.05
+          ],
+          'MECH_MULT_CAP' => 1.30,    // Máximo multiplicador
+          'TARGETS' => [              // Tiempos objetivo por número de parejas
+              ['minPairs' => 10, 't' => 100],
+              ['minPairs' => 8,  't' => 80],
+              ['minPairs' => 6,  't' => 65],
+              ['minPairs' => 0,  't' => 50]
+          ],
+          'STAR_THRESHOLDS' => [      // Umbrales para estrellas
+              'small'  => ['one' => 80,  'two' => 120, 'three' => 160],   // <= 5 parejas
+              'medium' => ['one' => 140, 'two' => 190, 'three' => 240],   // 6-9 parejas
+              'large'  => ['one' => 200, 'two' => 260, 'three' => 320]    // >= 10 parejas
+          ]
+      ];
+    
+      // Configuración de niveles
+      const MAX_LEVELS = 1000;
+      const LEVELS_PER_CHAPTER = 50;
+      const BOSS_EVERY = 50;
+      const GLOBAL_SEED = 12345;
+    
+      // Mecánicas disponibles
+      const MECHANICS = [
+          'crono' => '⏱️',      // Cronómetro
+          'niebla' => '🌫️',    // Cartas aparecen/desaparecen

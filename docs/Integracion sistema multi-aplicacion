@@ -1,0 +1,478 @@
+# 🎮 CONTEXTO COMPLETO PARA NUEVO JUEGO
+
+## 📋 **INFORMACIÓN PARA CURSOR**
+
+> "Tengo un sistema multi-aplicación funcionando con recetas, base de datos en Hostalia, sistema de autenticación, etc. Quiero crear un nuevo juego HTML que use la misma infraestructura. Toda la información está en CONTEXTO_NUEVO_JUEGO.md y la estructura SQL en database/estructura_juego_nuevo.sql."
+
+
+Este documento contiene TODO el contexto necesario para crear un nuevo juego que se integre con el sistema multi-aplicación ya existente.
+
+---
+
+## 🏗️ **1. ARQUITECTURA DEL SISTEMA ACTUAL**
+
+### **🎯 Sistema Multi-Aplicación Funcionando**
+- ✅ **App de Recetas**: Completamente funcional con APK nativa
+- ✅ **Base de datos Hostalia**: 303+ recetas, usuarios registrados
+- ✅ **Sistema de autenticación**: Usuario por aplicación
+- ✅ **Uploads**: Sistema de archivos escalable
+- ✅ **APK nativa**: Generada con Android Studio
+
+### **🔑 Concepto Clave: Usuario-Aplicación**
+Cada usuario puede estar en múltiples aplicaciones usando la clave única:
+- **Formato**: `email_appcodigo`
+- **Ejemplo**: `usuario@gmail.com_recetas`, `usuario@gmail.com_puzzle`
+- **Ventaja**: Mismo usuario, diferentes apps, datos separados
+
+---
+
+## 🗄️ **2. BASE DE DATOS HOSTALIA**
+
+### **📡 Conexión Actual**
+```php
+Host: PMYSQL165.dns-servicio.com
+Usuario: sistema_apps_user
+Contraseña: GestionUploadSistemaApps!
+BD: 9606966_sistema_apps_db
+Charset: utf8
+Puerto: 3306
+```
+
+### **📊 Tablas Existentes**
+```sql
+-- TABLA PRINCIPAL (YA EXISTE)
+usuarios_aplicaciones (
+    usuario_aplicacion_id    INT(11)      AUTO_INCREMENT PRIMARY KEY,
+    usuario_aplicacion_key   VARCHAR(150) NOT NULL UNIQUE,  -- email_appcodigo
+    email                    VARCHAR(255) NOT NULL,
+    nombre                   VARCHAR(255) NOT NULL,
+    password_hash            VARCHAR(255) NOT NULL,
+    app_codigo               VARCHAR(50)  NOT NULL,          -- 'recetas', 'puzzle', etc.
+    fecha_registro           TIMESTAMP    DEFAULT CURRENT_TIMESTAMP,
+    ultimo_acceso            TIMESTAMP    DEFAULT CURRENT_TIMESTAMP,
+    activo                   TINYINT(1)   DEFAULT 1,
+    configuracion            LONGTEXT     NULL
+);
+
+-- TABLA APLICACIONES (YA EXISTE)
+aplicaciones (
+    app_id INT AUTO_INCREMENT PRIMARY KEY,
+    app_codigo VARCHAR(50) UNIQUE NOT NULL,    -- 'recetas', 'puzzle', etc.
+    app_nombre VARCHAR(255) NOT NULL,
+    app_descripcion TEXT,
+    app_version VARCHAR(20) DEFAULT '1.0.0',
+    fecha_creacion TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    activo BOOLEAN DEFAULT TRUE,
+    configuracion JSON
+);
+
+-- TABLA RECETAS (YA EXISTE - 303+ registros)
+recetas (
+    receta_id INT AUTO_INCREMENT PRIMARY KEY,
+    usuario_aplicacion_key VARCHAR(150) NOT NULL,
+    receta_nombre VARCHAR(255) NOT NULL,
+    receta_tipo ENUM('Entrante', 'Principal', 'Postre', 'Bebida', 'Extra'),
+    -- ... más campos
+);
+```
+
+### **🆕 Tabla para Nuevo Juego (CREAR)**
+```sql
+-- EJEMPLO PARA JUEGO PUZZLE
+CREATE TABLE puzzle_partidas (
+    partida_id INT AUTO_INCREMENT PRIMARY KEY,
+    usuario_aplicacion_key VARCHAR(150) NOT NULL,  -- OBLIGATORIO: mismo formato
+    puzzle_nombre VARCHAR(255) NOT NULL,
+    puzzle_dificultad ENUM('Fácil', 'Medio', 'Difícil') DEFAULT 'Fácil',
+    puzzle_imagen VARCHAR(500),
+    puzzle_completado BOOLEAN DEFAULT FALSE,
+    tiempo_segundos INT DEFAULT 0,
+    puntuacion INT DEFAULT 0,
+    movimientos INT DEFAULT 0,
+    fecha_creacion TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    fecha_modificacion TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+    
+    INDEX idx_usuario (usuario_aplicacion_key),
+    FOREIGN KEY (usuario_aplicacion_key) REFERENCES usuarios_aplicaciones(usuario_aplicacion_key)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+```
+
+---
+
+## 📁 **3. ESTRUCTURA DE ARCHIVOS ACTUAL**
+
+La estructura en hostalia es:
+directoprio Raiz: sistema_apps_upload
+subdirectorios_ 	sistema_apps_api
+			sistema_apps_upload
+
+En el directorio Raiz están los archivos: app_memory.html	- aplicación  de moemory
+					  app_recetas.html	- aplicación de recetas
+					  
+					  manifest_recetas.json - Icono de la aplicación recetas
+			se debería crear  manifest_memory.json  - Icono de la aplicación memoty
+					  router.html		- Router donde va la información de la aplicación
+					  index.html		- Indice de las aplicaciones existentes
+
+En sistema_apps_api- memory   están los archivos que subiste...examina si están todos correctos y si no utiliza la estructa correcta  sistema_apps_api/memory para organizar tu aplicación.
+
+### **🎯 Proyecto Principal (mis_recetas)**
+```
+C:\xampp\htdocs\mis_recetas\
+├── config/
+│   ├── database.php          # Conexión BD (localhost + Hostalia)
+│   ├── app_config.php        # Config app recetas
+│   └── production_config.php # Config producción
+├── includes/
+│   ├── auth_final.php        # Sistema autenticación
+│   └── security.php          # Funciones seguridad
+├── api/                      # APIs REST
+│   ├── create-recipe.php
+│   ├── get-recipe.php
+│   └── update-recipe.php
+├── PARA_HOSTALIA/           # Para subir a producción
+│   └── sistema_apps_upload/
+│       ├── app_recetas.html  # App web completa
+│       └── sistema_apps_api/ # APIs para Hostalia
+└── database/
+    └── migrate_to_hostalia.php # Migración datos
+```
+
+### **🌐 Hostalia (Producción)**
+```
+https://colisan.com/sistema_apps_upload/
+├── app_recetas.html          # App recetas funcionando
+├── sistema_apps_api/
+│   └── recetas/              # APIs específicas
+└── sistema_apps_upload/
+    └── recetas/              # Uploads específicos
+```
+
+---
+
+## ⚙️ **4. CONFIGURACIÓN DE ARCHIVOS**
+
+### **🔧 config/database.php (YA EXISTE)**
+```php
+// Detección automática localhost vs producción
+$isLocalhost = false; // FORZAR PRODUCCIÓN PARA HOSTALIA
+
+if ($isLocalhost) {
+    // LOCALHOST
+    define('DB_HOST', 'localhost');
+    define('DB_USUARIO', 'root');
+    define('DB_CONTRA', '');
+    define('DB_NOMBRE', 'sistema_apps_db');
+} else {
+    // HOSTALIA
+    define('DB_HOST', 'PMYSQL165.dns-servicio.com');
+    define('DB_USUARIO', 'sistema_apps_user');
+    define('DB_CONTRA', 'GestionUploadSistemaApps!');
+    define('DB_NOMBRE', '9606966_sistema_apps_db');
+}
+```
+
+### **🎮 config/app_config_[JUEGO].php (CREAR)**
+```php
+// Configuración específica del juego
+define('APP_CODIGO', 'puzzle');  // CAMBIAR según el juego
+define('APP_NOMBRE', 'Juego de Puzzle');
+define('APP_VERSION', '1.0.0');
+
+// URLs para Hostalia
+define('API_BASE_URL', 'https://colisan.com/sistema_apps_upload/sistema_apps_api/');
+define('UPLOAD_BASE_URL', 'https://colisan.com/sistema_apps_upload/uploads/');
+
+// Función para generar usuario_key
+function generateUserAppKey($email, $app_codigo = null) {
+    $app_codigo = $app_codigo ?? APP_CODIGO;
+    return $email . '_' . $app_codigo;
+}
+```
+
+---
+
+## 🔐 **5. SISTEMA DE AUTENTICACIÓN**
+
+### **📝 includes/auth_final.php (YA EXISTE)**
+```php
+class AuthFinal {
+    private $app_codigo;
+    
+    public function __construct($pdo, $app_codigo = null) {
+        $this->app_codigo = $app_codigo ?? APP_CODIGO;
+    }
+    
+    // Registrar usuario en aplicación específica
+    public function registerUser($email, $nombre, $password) {
+        $usuario_aplicacion_key = generateUserAppKey($email, $this->app_codigo);
+        // Inserta en usuarios_aplicaciones con app_codigo específico
+    }
+    
+    // Login en aplicación específica
+    public function loginUser($email, $password) {
+        $usuario_aplicacion_key = generateUserAppKey($email, $this->app_codigo);
+        // Busca en usuarios_aplicaciones WHERE app_codigo = 'puzzle'
+    }
+}
+```
+
+### **🔑 Uso en el Juego**
+```php
+// Inicializar auth para el juego específico
+$authPuzzle = new AuthFinal($pdo, 'puzzle');
+
+// Login/registro automáticamente usa la app correcta
+$result = $authPuzzle->loginUser('usuario@email.com', 'password');
+// Genera: usuario@email.com_puzzle
+
+// Verificar sesión
+if ($authPuzzle->isLoggedIn()) {
+    $usuario_key = $authPuzzle->getCurrentUserKey(); // usuario@email.com_puzzle
+}
+```
+
+---
+
+## 📱 **6. ESTRUCTURA PARA NUEVO JUEGO**
+
+### **📂 Archivos a Crear**
+```
+mis_recetas/
+├── config/
+│   └── app_config_[JUEGO].php    # Config específica del juego
+├── api/
+│   ├── create-[JUEGO].php        # Crear partida/datos
+│   ├── get-[JUEGO].php           # Obtener datos
+│   ├── update-[JUEGO].php        # Actualizar progreso
+│   └── delete-[JUEGO].php        # Eliminar datos
+├── PARA_HOSTALIA/
+│   └── sistema_apps_upload/
+│       ├── app_[JUEGO].html      # App web del juego
+│       └── sistema_apps_api/
+│           └── [JUEGO]/          # APIs específicas
+└── database/
+    └── estructura_[JUEGO].sql    # Estructura BD del juego
+```
+
+### **🌐 Para Subir a Hostalia**
+```
+sistema_apps_upload/
+├── app_[JUEGO].html              # App web
+├── sistema_apps_api/
+│   └── [JUEGO]/                  # APIs del juego
+│       ├── config.php            # Config Hostalia
+│       ├── auth.php              # Autenticación
+│       ├── create.php            # Crear datos
+│       ├── get.php               # Obtener datos
+│       └── update.php            # Actualizar datos
+└── sistema_apps_upload/
+    └── [JUEGO]/                  # Uploads del juego
+        └── upload_handler.php    # Manejo uploads
+```
+
+---
+
+## 🚀 **7. PROCESO DE IMPLEMENTACIÓN**
+
+### **📋 Pasos para Crear Nuevo Juego**
+
+1. **🗄️ Crear estructura BD**
+   ```sql
+   -- Ejecutar en Hostalia
+   SOURCE estructura_juego_nuevo.sql;
+   ```
+
+2. **⚙️ Crear configuración**
+   ```php
+   // config/app_config_[JUEGO].php
+   define('APP_CODIGO', '[nombre_juego]');
+   ```
+
+3. **🔐 Configurar autenticación**
+   ```php
+   // Usar AuthFinal con app_codigo específico
+   $auth = new AuthFinal($pdo, '[nombre_juego]');
+   ```
+
+4. **📱 Crear app HTML**
+   ```html
+   <!-- app_[JUEGO].html -->
+   <!-- Usar mismo patrón que app_recetas.html -->
+   ```
+
+5. **🌐 Crear APIs**
+   ```php
+   // api/create-[JUEGO].php, get-[JUEGO].php, etc.
+   // Usar usuario_aplicacion_key para datos
+   ```
+
+6. **📤 Subir a Hostalia**
+   ```
+   sistema_apps_upload/
+   ├── app_[JUEGO].html
+   └── sistema_apps_api/[JUEGO]/
+   ```
+
+7. **📱 Generar APK**
+   ```
+   // Usar Android Studio como con recetas
+   // Cambiar package name y URL
+   ```
+
+---
+
+## 🔗 **8. URLs Y ENDPOINTS**
+
+### **🌐 URLs Base**
+```
+Desarrollo: http://localhost/mis_recetas/
+Producción: https://colisan.com/sistema_apps_upload/
+```
+
+### **📡 APIs**
+```
+GET    /api/get-[JUEGO].php?usuario_key=...
+POST   /api/create-[JUEGO].php
+PUT    /api/update-[JUEGO].php
+DELETE /api/delete-[JUEGO].php
+```
+
+### **📤 Uploads**
+```
+Base: https://colisan.com/sistema_apps_upload/uploads/
+Estructura: uploads/usuario@email.com_[JUEGO]/archivo.jpg
+```
+
+---
+
+## 🎯 **9. EJEMPLOS PRÁCTICOS**
+
+### **📝 Registro de Usuario en Juego**
+```php
+// El usuario ya existe en recetas
+// email: usuario@gmail.com
+// usuario_key recetas: usuario@gmail.com_recetas
+
+// Registrar en nuevo juego
+$authPuzzle = new AuthFinal($pdo, 'puzzle');
+$result = $authPuzzle->registerUser('usuario@gmail.com', 'Usuario', 'password');
+// Crea: usuario@gmail.com_puzzle
+```
+
+### **🎮 Guardar Partida**
+```php
+$usuario_key = 'usuario@gmail.com_puzzle';
+$stmt = $pdo->prepare("
+    INSERT INTO puzzle_partidas 
+    (usuario_aplicacion_key, puzzle_nombre, puntuacion, tiempo_segundos) 
+    VALUES (?, ?, ?, ?)
+");
+$stmt->execute([$usuario_key, 'Puzzle 1', 1500, 120]);
+```
+
+### **📊 Obtener Estadísticas**
+```php
+$stmt = $pdo->prepare("
+    SELECT COUNT(*) as partidas, MAX(puntuacion) as mejor_puntuacion
+    FROM puzzle_partidas 
+    WHERE usuario_aplicacion_key = ?
+");
+$stmt->execute(['usuario@gmail.com_puzzle']);
+```
+
+---
+
+## ⚠️ **10. CONSIDERACIONES IMPORTANTES**
+
+### **🔑 Campo Obligatorio**
+- **SIEMPRE usar `usuario_aplicacion_key`** en todas las tablas del juego
+- **Formato**: `email_appcodigo`
+- **Longitud**: VARCHAR(150)
+- **Índice**: Crear índice en este campo
+
+### **🌐 Compatibilidad**
+- Usar mismo sistema de autenticación que recetas
+- Mantener estructura de archivos similar
+- Reutilizar configuraciones de Hostalia
+
+### **📱 APK**
+- Cambiar package name en Android Studio
+- Actualizar URL base en la app
+- Mantener misma estructura WebView
+
+### **🗄️ Base de Datos**
+- NO tocar tablas existentes (`usuarios_aplicaciones`, `aplicaciones`, `recetas`)
+- Crear solo tablas específicas del juego
+- Usar mismo charset (utf8) y engine (InnoDB)
+
+---
+
+## 🎯 **11. COMANDOS ÚTILES**
+
+### **🔍 Verificar Conexión BD**
+```php
+// Agregar a cualquier archivo
+?debug_db=true
+```
+
+### **⚙️ Ver Configuración**
+```php
+// Agregar a cualquier archivo
+?debug_config=true
+```
+
+### **📊 Ver Usuarios Registrados**
+```sql
+SELECT 
+    app_codigo,
+    COUNT(*) as usuarios,
+    MAX(fecha_registro) as ultimo_registro
+FROM usuarios_aplicaciones 
+GROUP BY app_codigo;
+```
+
+---
+
+## 🎮 **12. TIPOS DE JUEGOS SUGERIDOS**
+
+### **🧩 Puzzle Games**
+- Rompecabezas de imágenes
+- Sudoku
+- Tetris
+- Block Puzzle
+
+### **🎯 Arcade Games**
+- Snake
+- Pac-Man
+- Breakout
+- Space Invaders
+
+### **🧠 Memory Games**
+- Memory cards
+- Simon Says
+- Sequence memory
+
+### **🏃 Action Games**
+- Runner infinito
+- Platformer simple
+- Tower defense básico
+
+---
+
+## 📞 **13. SOPORTE Y REFERENCIAS**
+
+### **📁 Archivos de Referencia**
+- `app_recetas.html` - Estructura completa de app
+- `auth_final.php` - Sistema de autenticación
+- `database.php` - Configuración de BD
+- `migrate_to_hostalia.php` - Ejemplo de migración
+
+### **🔗 URLs de Referencia**
+- Hostalia: https://colisan.com/sistema_apps_upload/
+- App Recetas: https://colisan.com/sistema_apps_upload/app_recetas.html
+- APIs: https://colisan.com/sistema_apps_upload/sistema_apps_api/
+
+---
+
+**✅ Con esta información, Cursor tiene TODO el contexto necesario para crear un nuevo juego que se integre perfectamente con el sistema existente.**
