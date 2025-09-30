@@ -133,6 +133,7 @@ export default function Home() {
 
   return (
     <main className="min-h-screen">
+      {/* 🎮 MEMOFLIP NEXTJS - PÁGINA PRINCIPAL CORRECTA - VERSIÓN COMPLETA */}
       {renderScreen()}
     </main>
   );

@@ -14,6 +14,10 @@ interface IntroScreenProps {
 export default function IntroScreen({
   onStartGame
 }: IntroScreenProps) {
+  // 🎮 MEMOFLIP NEXTJS - PANTALLA DE INICIO CORRECTA - VERSIÓN COMPLETA
+  // ✅ Pantalla principal con animaciones de cartas cayendo
+  // ✅ Sistema de usuarios con modal de identificación
+  // ✅ Botones de juego, configuración y ranking
   const [fallingCards, setFallingCards] = useState<Array<{ id: number; left: string; duration: string }>>([]);
   const [isClient, setIsClient] = useState(false);
   const [showUserModal, setShowUserModal] = useState(false);

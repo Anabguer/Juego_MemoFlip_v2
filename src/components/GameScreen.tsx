@@ -39,6 +39,10 @@ interface GameScreenProps {
 }
 
 export default function GameScreen({ level: propLevel, onBack, onLevelComplete, onLevelFail }: GameScreenProps) {
+  // 🎮 MEMOFLIP NEXTJS - COMPONENTE DE JUEGO CORRECTO - VERSIÓN COMPLETA
+  // ✅ Este es el componente de juego principal con todas las mecánicas
+  // ✅ Incluye: tríos, pares, rotación, peek, frozen, bomb, chameleon
+  // ✅ Sistema completo de vidas, monedas, sonidos y animaciones
   const {
     currentCards,
     setCurrentCards,
