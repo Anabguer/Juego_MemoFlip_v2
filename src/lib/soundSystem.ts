@@ -173,12 +173,21 @@ export class SoundSystem {
     }
 
     try {
+      // Usar basePath configurado o fallback
+      let soundsPath = '/sistema_apps_upload/memoflip_static/sounds';
+      if (typeof window !== 'undefined') {
+        const win = window as unknown as { __MEMOFLIP_CONFIG__?: { soundsPath?: string } };
+        if (win.__MEMOFLIP_CONFIG__?.soundsPath) {
+          soundsPath = win.__MEMOFLIP_CONFIG__.soundsPath;
+        }
+      }
+      
       // Cargar archivos MP3 reales
-      await this.loadAudioFile('acierto', '/sounds/acierto.mp3');
-      await this.loadAudioFile('fallo', '/sounds/fallo.mp3');
-      await this.loadAudioFile('cartavolteada', '/sounds/cartavolteada.mp3');
-      await this.loadAudioFile('matchexitoso', '/sounds/matchexitoso.mp3');
-      await this.loadAudioFile('fondo', '/sounds/fondo.mp3');
+      await this.loadAudioFile('acierto', `${soundsPath}/acierto.mp3`);
+      await this.loadAudioFile('fallo', `${soundsPath}/fallo.mp3`);
+      await this.loadAudioFile('cartavolteada', `${soundsPath}/cartavolteada.mp3`);
+      await this.loadAudioFile('matchexitoso', `${soundsPath}/matchexitoso.mp3`);
+      await this.loadAudioFile('fondo', `${soundsPath}/fondo.mp3`);
       
       // Sonidos sintéticos para acciones menores
       if (this.audioContext) {

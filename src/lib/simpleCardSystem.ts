@@ -54,9 +54,18 @@ export function loadAvailableCards(): SimpleCard[] {
   const cardFiles = generateCardList();
   
   cardFiles.forEach((fileName, index) => {
+    // Usar basePath configurado o fallback a /cards/
+    let basePath = '/sistema_apps_upload/memoflip_static/cards';
+    if (typeof window !== 'undefined') {
+      const win = window as unknown as { __MEMOFLIP_CONFIG__?: { cardsPath?: string } };
+      if (win.__MEMOFLIP_CONFIG__?.cardsPath) {
+        basePath = win.__MEMOFLIP_CONFIG__.cardsPath;
+      }
+    }
+    
     cards.push({
       id: `card_${index + 1}`,
-      image: `/cards/${fileName}`,
+      image: `${basePath}/${fileName}`,
       fileName: fileName
     });
   });
@@ -135,8 +144,16 @@ export function getRandomCards(pairs: number, isTrio: boolean = false): SimpleCa
 
 // Función para obtener la portada (logo con fondo naranja)
 export function getRandomPortada(): string {
-  // Usar el logo como portada única
-  return '/logo.png';
+  // Usar basePath configurado o fallback
+  let basePath = '/sistema_apps_upload/memoflip_static';
+  if (typeof window !== 'undefined') {
+    const win = window as unknown as { __MEMOFLIP_CONFIG__?: { basePath?: string } };
+    if (win.__MEMOFLIP_CONFIG__?.basePath) {
+      basePath = win.__MEMOFLIP_CONFIG__.basePath;
+    }
+  }
+  
+  return `${basePath}/logo.png`;
 }
 
 // Función para obtener estadísticas
