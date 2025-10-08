@@ -1,0 +1,10 @@
+Options -Indexes
+
+<FilesMatch "\.(log|sql|md|example|env|config|ini|bak)$">
+  Require all denied
+</FilesMatch>
+
+<FilesMatch "\.(png|jpg|jpeg|gif|webp|svg|css|js|mp3|ogg|wav|woff|woff2|ico|json|txt)$">
+  Require all granted
+  Satisfy Any
+</FilesMatch>

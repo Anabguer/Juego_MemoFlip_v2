@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    
+    <title>MemoFlip Neo - No es un Memory cualquiera</title>
+    <meta name="description" content="Un juego de memoria único con 1000 niveles, mecánicas especiales y múltiples temas" />
+    
+    <!-- Favicon -->
+    <link rel="icon" href="favicon.ico" />
+    
+    <!-- CSS de Tailwind compilado -->
+    <link rel="stylesheet" href="_next/static/css/e3510fc3d9d30b91.css" />
+    
+    <style>
+        /* Asegurar que el body ocupe toda la pantalla */
+        html, body, #__next {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+        }
+        
+        /* Loader mientras carga React */
+        .loader {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 9999;
+        }
+        
+        .loader-content {
+            text-align: center;
+            color: white;
+        }
+        
+        .spinner {
+            border: 4px solid rgba(255,255,255,0.3);
+            border-top: 4px solid white;
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            animation: spin 1s linear infinite;
+            margin: 0 auto 20px;
+        }
+        
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+    </style>
+</head>
+<body class="font-sans antialiased">
+    <!-- Loader -->
+    <div class="loader" id="loader">
+        <div class="loader-content">
+            <div class="spinner"></div>
+            <h2 style="font-size: 24px; margin: 0;">Cargando MemoFlip...</h2>
+        </div>
+    </div>
+    
+    <!-- Contenedor de la aplicación React -->
+    <div id="__next"></div>
+    
+    <!-- Polyfills primero -->
+    <script src="_next/static/chunks/polyfills-42372ed130431b0a.js"></script>
+    
+    <!-- Scripts de Next.js en orden correcto -->
+    <script src="_next/static/chunks/webpack-dedb69f314dd77b7.js"></script>
+    <script src="_next/static/chunks/framework-acd67e14855de5a2.js"></script>
+    <script src="_next/static/chunks/main-5d78c71148946bd2.js"></script>
+    <script src="_next/static/chunks/4bd1b696-c023c6e3521b1417.js"></script>
+    <script src="_next/static/chunks/dc112a36-3bfa3f7d946c8b41.js"></script>
+    
+    <!-- Chunks de la aplicación -->
+    <script src="_next/static/chunks/733-c7f8b575fc8cc5a3.js"></script>
+    <script src="_next/static/chunks/804-13b436caa5b97e03.js"></script>
+    <script src="_next/static/chunks/364-81b173d45032cd20.js"></script>
+    <script src="_next/static/chunks/615-775cd8d3f7de53a4.js"></script>
+    <script src="_next/static/chunks/255-fe5c522e6d28d73f.js"></script>
+    
+    <!-- App chunks -->
+    <script src="_next/static/chunks/app/layout-348f2bc53f37b2bf.js"></script>
+    <script src="_next/static/chunks/app/page-2f133f8ea78ebb01.js"></script>
+    
+    <!-- Main app - debe ir al final -->
+    <script src="_next/static/chunks/main-app-07d63cda7795b0de.js"></script>
+    
+    <!-- Configuración global -->
+    <script>
+        // Configurar rutas base para assets
+        window.__MEMOFLIP_CONFIG__ = {
+            basePath: '/sistema_apps_upload/memoflip',
+            apiPath: '/sistema_apps_upload/memoflip',
+            assetsPath: '/sistema_apps_upload/memoflip',
+            cardsPath: '/sistema_apps_upload/memoflip/cards',
+            soundsPath: '/sistema_apps_upload/memoflip/sounds'
+        };
+        
+        // Ocultar loader cuando la app cargue
+        window.addEventListener('load', function() {
+            setTimeout(function() {
+                var loader = document.getElementById('loader');
+                if (loader) {
+                    loader.style.opacity = '0';
+                    loader.style.transition = 'opacity 0.5s';
+                    setTimeout(function() {
+                        loader.style.display = 'none';
+                    }, 500);
+                }
+            }, 1000);
+        });
+        
+        // Manejar errores de carga
+        window.addEventListener('error', function(e) {
+            console.error('Error cargando recurso:', e);
+        });
+    </script>
+</body>
+</html>
+
