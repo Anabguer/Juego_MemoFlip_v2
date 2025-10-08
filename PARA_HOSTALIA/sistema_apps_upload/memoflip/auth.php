@@ -59,10 +59,11 @@ function handle_register($pdo, $input) {
     try {
         $email = trim($input['email'] ?? '');
         $nombre = trim($input['nombre'] ?? '');
+        $nick = trim($input['nick'] ?? '');
         $password = $input['password'] ?? '';
         
         // Validaciones
-        if (empty($email) || empty($nombre) || empty($password)) {
+        if (empty($email) || empty($nombre) || empty($nick) || empty($password)) {
             throw new Exception('Todos los campos son obligatorios');
         }
         
@@ -92,10 +93,10 @@ function handle_register($pdo, $input) {
         // Insertar nuevo usuario en usuarios_aplicaciones
         $stmt = $pdo->prepare("
             INSERT INTO usuarios_aplicaciones 
-            (usuario_aplicacion_key, email, nombre, password_hash, app_codigo) 
-            VALUES (?, ?, ?, ?, ?)
+            (usuario_aplicacion_key, email, nombre, nick, password_hash, app_codigo) 
+            VALUES (?, ?, ?, ?, ?, ?)
         ");
-        $stmt->execute([$usuario_aplicacion_key, $email, $nombre, $password_hash, APP_CODIGO]);
+        $stmt->execute([$usuario_aplicacion_key, $email, $nombre, $nick, $password_hash, APP_CODIGO]);
         $user_id = $pdo->lastInsertId();
         
         // Crear usuario en memoflip_usuarios

@@ -26,7 +26,8 @@ export default function UserModal({ isOpen, onClose, onLoginSuccess }: UserModal
   const [formData, setFormData] = useState({
     email: '',
     password: '',
-    nombre: ''
+    nombre: '',
+    nick: ''
   });
   const [errors, setErrors] = useState<Record<string, string>>({});
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -41,8 +42,8 @@ export default function UserModal({ isOpen, onClose, onLoginSuccess }: UserModal
       return;
     }
     
-    if (activeTab === 'register' && !formData.nombre) {
-      setErrors({ general: 'El nombre es obligatorio' });
+    if (activeTab === 'register' && (!formData.nombre || !formData.nick)) {
+      setErrors({ general: 'Todos los campos son obligatorios' });
       return;
     }
 
@@ -61,6 +62,7 @@ export default function UserModal({ isOpen, onClose, onLoginSuccess }: UserModal
       
       if (activeTab === 'register') {
         body.nombre = formData.nombre.trim();
+        body.nick = formData.nick.trim();
       }
 
       const response = await fetch(`${basePath}/auth.php`, {
@@ -162,22 +164,41 @@ export default function UserModal({ isOpen, onClose, onLoginSuccess }: UserModal
             <form onSubmit={handleSubmit} className="space-y-4">
               {/* Nombre (solo en register) */}
               {activeTab === 'register' && (
-                <div className="space-y-2">
-                  <label className="block text-sm font-medium text-gray-300">
-                    Nombre *
-                  </label>
-                  <div className="relative">
-                    <User className="absolute left-3 top-1/2 transform -translate-y-1/2 w-4 h-4 text-gray-400" />
-                    <input
-                      type="text"
-                      value={formData.nombre}
-                      onChange={(e) => handleInputChange('nombre', e.target.value)}
-                      className="w-full pl-10 pr-4 py-3 bg-white/10 border border-white/20 rounded-xl text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all"
-                      placeholder="Tu nombre"
-                      disabled={isSubmitting}
-                    />
+                <>
+                  <div className="space-y-2">
+                    <label className="block text-sm font-medium text-gray-300">
+                      Nombre *
+                    </label>
+                    <div className="relative">
+                      <User className="absolute left-3 top-1/2 transform -translate-y-1/2 w-4 h-4 text-gray-400" />
+                      <input
+                        type="text"
+                        value={formData.nombre}
+                        onChange={(e) => handleInputChange('nombre', e.target.value)}
+                        className="w-full pl-10 pr-4 py-3 bg-white/10 border border-white/20 rounded-xl text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all"
+                        placeholder="Tu nombre completo"
+                        disabled={isSubmitting}
+                      />
+                    </div>
                   </div>
-                </div>
+
+                  <div className="space-y-2">
+                    <label className="block text-sm font-medium text-gray-300">
+                      Nick *
+                    </label>
+                    <div className="relative">
+                      <User className="absolute left-3 top-1/2 transform -translate-y-1/2 w-4 h-4 text-gray-400" />
+                      <input
+                        type="text"
+                        value={formData.nick}
+                        onChange={(e) => handleInputChange('nick', e.target.value)}
+                        className="w-full pl-10 pr-4 py-3 bg-white/10 border border-white/20 rounded-xl text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all"
+                        placeholder="Tu nick de usuario"
+                        disabled={isSubmitting}
+                      />
+                    </div>
+                  </div>
+                </>
               )}
 
               {/* Email */}

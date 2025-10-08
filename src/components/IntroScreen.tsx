@@ -203,25 +203,34 @@ export default function IntroScreen({
               {userInfo ? 'CONTINUAR' : 'JUGAR'}
             </motion.button>
 
-            {/* Botón Entrar/Salir */}
-            <motion.button
-              whileHover={{ scale: 1.02, y: -2 }}
-              whileTap={{ scale: 0.98 }}
-              onClick={() => userInfo ? handleLogout() : setShowUserModal(true)}
-              className="w-full bg-white/10 hover:bg-white/20 text-white font-medium text-lg py-3 px-6 rounded-full border border-white/30 hover:border-white/50 transition-all duration-300 flex items-center justify-center gap-3 backdrop-blur-sm"
-            >
-              {userInfo ? (
-                <>
-                  <LogOut className="w-5 h-5" />
-                  Salir
-                </>
-              ) : (
-                <>
-                  <User className="w-5 h-5" />
+            {/* Separador y texto */}
+            {!userInfo && (
+              <div className="text-center space-y-3">
+                <p className="text-white/70 text-sm">¿Ya tienes cuenta?</p>
+                <motion.button
+                  whileHover={{ scale: 1.02 }}
+                  whileTap={{ scale: 0.98 }}
+                  onClick={() => setShowUserModal(true)}
+                  className="px-6 py-2 bg-white/10 hover:bg-white/20 text-white text-sm font-medium rounded-full border border-white/30 hover:border-white/50 transition-all duration-300 inline-flex items-center gap-2 backdrop-blur-sm"
+                >
+                  <User className="w-4 h-4" />
                   Entrar
-                </>
-              )}
-            </motion.button>
+                </motion.button>
+              </div>
+            )}
+
+            {/* Botón Salir si está logueado */}
+            {userInfo && (
+              <motion.button
+                whileHover={{ scale: 1.02, y: -2 }}
+                whileTap={{ scale: 0.98 }}
+                onClick={handleLogout}
+                className="w-full bg-white/10 hover:bg-white/20 text-white font-medium text-sm py-2 px-6 rounded-full border border-white/30 hover:border-white/50 transition-all duration-300 flex items-center justify-center gap-2 backdrop-blur-sm"
+              >
+                <LogOut className="w-4 h-4" />
+                Salir ({userInfo.nombre || userInfo.email})
+              </motion.button>
+            )}
 
           </motion.div>
 
