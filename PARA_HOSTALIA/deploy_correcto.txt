@@ -1,0 +1,25 @@
+option batch on
+option confirm off
+open ftp://colisan.com_10154268:AmLg13!@ftp.colisan.com/
+
+# TODO va a la carpeta memoflip (NO memoflip_static)
+cd /httpdocs/sistema_apps_upload/memoflip
+
+# Cambiar a directorio local de archivos estáticos
+lcd C:\Proyectos\MemoFlip\PARA_HOSTALIA\sistema_apps_upload\memoflip_static
+
+# Subir archivos HTML y estáticos
+put index.html
+put 404.html
+put logo.png
+
+# Subir directorio _next completo
+synchronize remote -delete _next _next
+
+# Cambiar a directorio local de PHP
+lcd C:\Proyectos\MemoFlip\PARA_HOSTALIA\sistema_apps_upload\memoflip
+
+# Subir auth.php
+put auth.php
+
+exit

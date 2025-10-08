@@ -2,23 +2,17 @@ option batch on
 option confirm off
 open ftp://colisan.com_10154268:AmLg13!@ftp.colisan.com/
 
-# Ir al directorio correcto
+# Subir frontend
 cd /httpdocs/sistema_apps_upload/memoflip_static
-
-# Subir HTML, logo y archivos estáticos
-put sistema_apps_upload\memoflip_static\index.html
-put sistema_apps_upload\memoflip_static\404.html
-put sistema_apps_upload\memoflip_static\logo.png
-
-# Subir directorio _next completo (chunks, css, etc)
-synchronize remote -delete sistema_apps_upload\memoflip_static\_next _next
-
-# Subir favicon si existe
-put sistema_apps_upload\memoflip_static\favicon.ico
+lcd PARA_HOSTALIA\sistema_apps_upload\memoflip_static
+put index.html
+put 404.html
+put logo.png
+synchronize remote -delete _next _next
 
 # Subir auth.php actualizado
 cd /httpdocs/sistema_apps_upload/memoflip
-put sistema_apps_upload\memoflip\auth.php
+lcd PARA_HOSTALIA\sistema_apps_upload\memoflip
+put auth.php
 
 exit
-
