@@ -2,30 +2,39 @@
 
 import { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
-import { Play, User } from 'lucide-react';
+import { Play, User, LogOut } from 'lucide-react';
 import { useGameStore } from '@/store/gameStore';
 import UserModal from './UserModal';
-import { User as UserType } from '@/types/game';
 
 interface IntroScreenProps {
   onStartGame: () => void;
 }
 
+interface SessionUser {
+  email: string;
+  nombre: string;
+  authenticated: boolean;
+  game_data?: {
+    max_level_unlocked: number;
+    coins_total: number;
+    lives_current: number;
+    sound_enabled: boolean;
+  };
+}
+
 export default function IntroScreen({
   onStartGame
 }: IntroScreenProps) {
-  // 🎮 MEMOFLIP NEXTJS - PANTALLA DE INICIO CORRECTA - VERSIÓN COMPLETA
-  // ✅ Pantalla principal con animaciones de cartas cayendo
-  // ✅ Sistema de usuarios con modal de identificación
-  // ✅ Botones de juego, configuración y ranking
   const [fallingCards, setFallingCards] = useState<Array<{ id: number; left: string; duration: string }>>([]);
   const [isClient, setIsClient] = useState(false);
   const [showUserModal, setShowUserModal] = useState(false);
-  const { loadProgress, getProgress, currentUser, setCurrentUser } = useGameStore();
+  const [userInfo, setUserInfo] = useState<SessionUser | null>(null);
+  const { loadProgress, getProgress } = useGameStore();
   const progress = getProgress();
 
   useEffect(() => {
     setIsClient(true);
+    checkSession(); // Verificar sesión al cargar
   }, []);
 
   // Efecto de cartas cayendo (adaptado del código original)
@@ -60,9 +69,60 @@ export default function IntroScreen({
     loadProgress();
   }, [loadProgress]);
 
-  const handleUserSave = (user: UserType) => {
-    setCurrentUser(user);
-    setShowUserModal(false);
+  // Verificar sesión activa
+  const checkSession = async () => {
+    try {
+      const basePath = typeof window !== 'undefined' && 
+        (window as unknown as { __MEMOFLIP_CONFIG__?: { basePath?: string } }).__MEMOFLIP_CONFIG__?.basePath || '/sistema_apps_upload/memoflip_static';
+      
+      const response = await fetch(`${basePath}/auth.php?action=check_session`, {
+        method: 'GET',
+        credentials: 'same-origin'
+      });
+
+      const data = await response.json() as SessionUser & { authenticated: boolean };
+
+      if (data.authenticated) {
+        console.log('🔐 Sesión activa:', data);
+        setUserInfo(data);
+      } else {
+        console.log('👤 Sin sesión activa');
+        setUserInfo(null);
+      }
+    } catch (error) {
+      console.error('❌ Error verificando sesión:', error);
+      setUserInfo(null);
+    }
+  };
+
+  // Cerrar sesión
+  const handleLogout = async () => {
+    try {
+      const basePath = typeof window !== 'undefined' && 
+        (window as unknown as { __MEMOFLIP_CONFIG__?: { basePath?: string } }).__MEMOFLIP_CONFIG__?.basePath || '/sistema_apps_upload/memoflip_static';
+      
+      const response = await fetch(`${basePath}/auth.php`, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        credentials: 'same-origin',
+        body: JSON.stringify({ action: 'logout' })
+      });
+
+      const data = await response.json() as { success: boolean };
+
+      if (data.success) {
+        console.log('👋 Sesión cerrada');
+        setUserInfo(null);
+        window.location.reload(); // Recargar para limpiar todo
+      }
+    } catch (error) {
+      console.error('❌ Error cerrando sesión:', error);
+    }
+  };
+
+  const handleLoginSuccess = (data: SessionUser) => {
+    console.log('✅ Login exitoso, recargando...');
+    setUserInfo(data);
   };
 
   return (
@@ -131,7 +191,7 @@ export default function IntroScreen({
             transition={{ delay: 0.9 }}
             className="space-y-4"
           >
-            {/* Botón principal JUGAR */}
+            {/* Botón principal JUGAR/CONTINUAR */}
             <motion.button
               whileHover={{ scale: 1.05, y: -3 }}
               whileTap={{ scale: 0.95 }}
@@ -140,18 +200,27 @@ export default function IntroScreen({
               style={{ boxShadow: '0 8px 20px rgba(255, 215, 0, 0.4)' }}
             >
               <Play className="w-6 h-6" />
-              JUGAR
+              {userInfo ? 'CONTINUAR' : 'JUGAR'}
             </motion.button>
 
-            {/* Botón Identificarse */}
+            {/* Botón Entrar/Salir */}
             <motion.button
               whileHover={{ scale: 1.02, y: -2 }}
               whileTap={{ scale: 0.98 }}
-              onClick={() => setShowUserModal(true)}
+              onClick={() => userInfo ? handleLogout() : setShowUserModal(true)}
               className="w-full bg-white/10 hover:bg-white/20 text-white font-medium text-lg py-3 px-6 rounded-full border border-white/30 hover:border-white/50 transition-all duration-300 flex items-center justify-center gap-3 backdrop-blur-sm"
             >
-              <User className="w-5 h-5" />
-              {currentUser ? 'Actualizar Perfil' : 'Identificarse'}
+              {userInfo ? (
+                <>
+                  <LogOut className="w-5 h-5" />
+                  Salir
+                </>
+              ) : (
+                <>
+                  <User className="w-5 h-5" />
+                  Entrar
+                </>
+              )}
             </motion.button>
 
           </motion.div>
@@ -179,8 +248,7 @@ export default function IntroScreen({
       <UserModal
         isOpen={showUserModal}
         onClose={() => setShowUserModal(false)}
-        onSave={handleUserSave}
-        currentUser={currentUser}
+        onLoginSuccess={handleLoginSuccess}
       />
 
       {/* CSS para la animación de caída */}

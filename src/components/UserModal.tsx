@@ -1,93 +1,98 @@
 'use client';
 
 import { useState } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
-import { X, User, Mail, UserCheck, Save, UserPlus } from 'lucide-react';
-import { User as UserType, UserFormData } from '@/types/game';
+import { X, User, Mail, Lock, UserPlus, LogIn } from 'lucide-react';
+
+interface SessionUser {
+  email: string;
+  nombre: string;
+  authenticated: boolean;
+  game_data?: {
+    max_level_unlocked: number;
+    coins_total: number;
+    lives_current: number;
+    sound_enabled: boolean;
+  };
+}
 
 interface UserModalProps {
   isOpen: boolean;
   onClose: () => void;
-  onSave: (user: UserType) => void;
-  currentUser?: UserType | null;
+  onLoginSuccess: (userData: SessionUser) => void;
 }
 
-export default function UserModal({ isOpen, onClose, onSave, currentUser }: UserModalProps) {
-  const [formData, setFormData] = useState<UserFormData>({
-    nickname: currentUser?.nickname || '',
-    name: currentUser?.name || '',
-    email: currentUser?.email || ''
+export default function UserModal({ isOpen, onClose, onLoginSuccess }: UserModalProps) {
+  const [activeTab, setActiveTab] = useState<'login' | 'register'>('login');
+  const [formData, setFormData] = useState({
+    email: '',
+    password: '',
+    nombre: ''
   });
-  const [errors, setErrors] = useState<Partial<UserFormData>>({});
+  const [errors, setErrors] = useState<Record<string, string>>({});
   const [isSubmitting, setIsSubmitting] = useState(false);
-
-  const validateForm = (): boolean => {
-    const newErrors: Partial<UserFormData> = {};
-
-    if (!formData.nickname.trim()) {
-      newErrors.nickname = 'El nickname es obligatorio';
-    } else if (formData.nickname.length < 3) {
-      newErrors.nickname = 'El nickname debe tener al menos 3 caracteres';
-    }
-
-    if (!formData.name.trim()) {
-      newErrors.name = 'El nombre es obligatorio';
-    } else if (formData.name.length < 2) {
-      newErrors.name = 'El nombre debe tener al menos 2 caracteres';
-    }
-
-    if (!formData.email.trim()) {
-      newErrors.email = 'El email es obligatorio';
-    } else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(formData.email)) {
-      newErrors.email = 'El email no es válido';
-    }
-
-    setErrors(newErrors);
-    return Object.keys(newErrors).length === 0;
-  };
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+    setErrors({});
     
-    if (!validateForm()) {
+    // Validaciones básicas
+    if (!formData.email || !formData.password) {
+      setErrors({ general: 'Email y contraseña son obligatorios' });
+      return;
+    }
+    
+    if (activeTab === 'register' && !formData.nombre) {
+      setErrors({ general: 'El nombre es obligatorio' });
       return;
     }
 
     setIsSubmitting(true);
 
     try {
-      const user: UserType = {
-        id: currentUser?.id || `user_${Date.now()}`,
-        nickname: formData.nickname.trim(),
-        name: formData.name.trim(),
-        email: formData.email.trim().toLowerCase(),
-        createdAt: currentUser?.createdAt || Date.now(),
-        lastLogin: Date.now(),
-        isGuest: false,
-        progress: currentUser?.progress || {
-          level: 1,
-          coins: 0,
-          lives: 3,
-          lastPlayed: Date.now(),
-          totalScore: 0,
-          phase: 1
-        }
+      const basePath = typeof window !== 'undefined' && 
+        (window as unknown as { __MEMOFLIP_CONFIG__?: { basePath?: string } }).__MEMOFLIP_CONFIG__?.basePath || '/sistema_apps_upload/memoflip_static';
+      
+      const action = activeTab === 'login' ? 'login' : 'register';
+      const body: Record<string, string> = {
+        action,
+        email: formData.email.trim(),
+        password: formData.password
       };
+      
+      if (activeTab === 'register') {
+        body.nombre = formData.nombre.trim();
+      }
 
-      onSave(user);
-      onClose();
+      const response = await fetch(`${basePath}/auth.php`, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        credentials: 'same-origin',
+        body: JSON.stringify(body)
+      });
+
+      const data = await response.json() as SessionUser & { success?: boolean; error?: string; message?: string };
+
+      if (data.success) {
+        console.log('✅ Autenticación exitosa:', data);
+        onLoginSuccess(data);
+        onClose();
+        // Recargar página para actualizar sesión
+        window.location.reload();
+      } else {
+        setErrors({ general: data.error || data.message || 'Error en autenticación' });
+      }
     } catch (error) {
-      // Error al guardar usuario
+      console.error('❌ Error en autenticación:', error);
+      setErrors({ general: 'Error de conexión. Intenta de nuevo.' });
     } finally {
       setIsSubmitting(false);
     }
   };
 
-  const handleInputChange = (field: keyof UserFormData, value: string) => {
+  const handleInputChange = (field: string, value: string) => {
     setFormData(prev => ({ ...prev, [field]: value }));
-    // Limpiar error cuando el usuario empiece a escribir
-    if (errors[field]) {
-      setErrors(prev => ({ ...prev, [field]: undefined }));
+    if (errors.general) {
+      setErrors({});
     }
   };
 
@@ -108,14 +113,14 @@ export default function UserModal({ isOpen, onClose, onSave, currentUser }: User
           <div className="flex items-center justify-between p-6 border-b border-white/10">
             <div className="flex items-center gap-3">
               <div className="p-2 rounded-xl bg-white/10 border border-white/20">
-                {currentUser ? (
-                  <UserCheck className="w-6 h-6 text-white" />
+                {activeTab === 'login' ? (
+                  <LogIn className="w-6 h-6 text-white" />
                 ) : (
                   <UserPlus className="w-6 h-6 text-white" />
                 )}
               </div>
               <h2 className="text-2xl font-bold text-white">
-                {currentUser ? 'Actualizar Perfil' : 'Identificarse'}
+                Identificación
               </h2>
             </div>
             <button
@@ -126,55 +131,54 @@ export default function UserModal({ isOpen, onClose, onSave, currentUser }: User
             </button>
           </div>
 
-          {/* Content */}
-          <div className="p-6 space-y-6">
-            {/* Form */}
-            <form onSubmit={handleSubmit} className="space-y-4">
-              {/* Nickname */}
-              <div className="space-y-2">
-                <label className="block text-sm font-medium text-gray-300">
-                  Nickname *
-                </label>
-                <div className="relative">
-                  <User className="absolute left-3 top-1/2 transform -translate-y-1/2 w-4 h-4 text-gray-400" />
-                  <input
-                    type="text"
-                    value={formData.nickname}
-                    onChange={(e) => handleInputChange('nickname', e.target.value)}
-                    className={`w-full pl-10 pr-4 py-3 bg-white/10 border rounded-xl text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all ${
-                      errors.nickname ? 'border-red-500' : 'border-white/20'
-                    }`}
-                    placeholder="Tu nickname único"
-                    disabled={isSubmitting}
-                  />
-                </div>
-                {errors.nickname && (
-                  <p className="text-red-400 text-sm">{errors.nickname}</p>
-                )}
-              </div>
+          {/* Tabs */}
+          <div className="flex border-b border-white/10">
+            <button
+              onClick={() => setActiveTab('login')}
+              className={`flex-1 px-4 py-3 text-sm font-medium transition-all ${
+                activeTab === 'login'
+                  ? 'bg-white/10 text-white border-b-2 border-blue-500'
+                  : 'text-gray-400 hover:text-white hover:bg-white/5'
+              }`}
+            >
+              <LogIn className="w-4 h-4 inline mr-2" />
+              Entrar
+            </button>
+            <button
+              onClick={() => setActiveTab('register')}
+              className={`flex-1 px-4 py-3 text-sm font-medium transition-all ${
+                activeTab === 'register'
+                  ? 'bg-white/10 text-white border-b-2 border-blue-500'
+                  : 'text-gray-400 hover:text-white hover:bg-white/5'
+              }`}
+            >
+              <UserPlus className="w-4 h-4 inline mr-2" />
+              Crear cuenta
+            </button>
+          </div>
 
-              {/* Nombre */}
-              <div className="space-y-2">
-                <label className="block text-sm font-medium text-gray-300">
-                  Nombre Completo *
-                </label>
-                <div className="relative">
-                  <UserCheck className="absolute left-3 top-1/2 transform -translate-y-1/2 w-4 h-4 text-gray-400" />
-                  <input
-                    type="text"
-                    value={formData.name}
-                    onChange={(e) => handleInputChange('name', e.target.value)}
-                    className={`w-full pl-10 pr-4 py-3 bg-white/10 border rounded-xl text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all ${
-                      errors.name ? 'border-red-500' : 'border-white/20'
-                    }`}
-                    placeholder="Tu nombre completo"
-                    disabled={isSubmitting}
-                  />
+          {/* Content */}
+          <div className="p-6">
+            <form onSubmit={handleSubmit} className="space-y-4">
+              {/* Nombre (solo en register) */}
+              {activeTab === 'register' && (
+                <div className="space-y-2">
+                  <label className="block text-sm font-medium text-gray-300">
+                    Nombre *
+                  </label>
+                  <div className="relative">
+                    <User className="absolute left-3 top-1/2 transform -translate-y-1/2 w-4 h-4 text-gray-400" />
+                    <input
+                      type="text"
+                      value={formData.nombre}
+                      onChange={(e) => handleInputChange('nombre', e.target.value)}
+                      className="w-full pl-10 pr-4 py-3 bg-white/10 border border-white/20 rounded-xl text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all"
+                      placeholder="Tu nombre"
+                      disabled={isSubmitting}
+                    />
+                  </div>
                 </div>
-                {errors.name && (
-                  <p className="text-red-400 text-sm">{errors.name}</p>
-                )}
-              </div>
+              )}
 
               {/* Email */}
               <div className="space-y-2">
@@ -187,55 +191,66 @@ export default function UserModal({ isOpen, onClose, onSave, currentUser }: User
                     type="email"
                     value={formData.email}
                     onChange={(e) => handleInputChange('email', e.target.value)}
-                    className={`w-full pl-10 pr-4 py-3 bg-white/10 border rounded-xl text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all ${
-                      errors.email ? 'border-red-500' : 'border-white/20'
-                    }`}
+                    className="w-full pl-10 pr-4 py-3 bg-white/10 border border-white/20 rounded-xl text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all"
                     placeholder="tu@email.com"
                     disabled={isSubmitting}
                   />
                 </div>
-                {errors.email && (
-                  <p className="text-red-400 text-sm">{errors.email}</p>
-                )}
               </div>
 
-              {/* Botones */}
-              <div className="flex gap-3 pt-4">
-                <button
-                  type="button"
-                  onClick={onClose}
-                  className="flex-1 px-4 py-3 bg-white/10 hover:bg-white/20 text-white font-medium rounded-xl transition-colors border border-white/20"
-                  disabled={isSubmitting}
-                >
-                  Cancelar
-                </button>
-                <button
-                  type="submit"
-                  disabled={isSubmitting}
-                  className="flex-1 px-4 py-3 bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white font-semibold rounded-xl transition-all flex items-center justify-center gap-2 disabled:opacity-50 disabled:cursor-not-allowed shadow-lg"
-                >
-                  {isSubmitting ? (
-                    <>
-                      <div className="w-4 h-4 border-2 border-white/30 border-t-white rounded-full animate-spin" />
-                      Guardando...
-                    </>
-                  ) : (
-                    <>
-                      <Save className="w-4 h-4" />
-                      {currentUser ? 'Actualizar' : 'Guardar'}
-                    </>
-                  )}
-                </button>
+              {/* Contraseña */}
+              <div className="space-y-2">
+                <label className="block text-sm font-medium text-gray-300">
+                  Contraseña *
+                </label>
+                <div className="relative">
+                  <Lock className="absolute left-3 top-1/2 transform -translate-y-1/2 w-4 h-4 text-gray-400" />
+                  <input
+                    type="password"
+                    value={formData.password}
+                    onChange={(e) => handleInputChange('password', e.target.value)}
+                    className="w-full pl-10 pr-4 py-3 bg-white/10 border border-white/20 rounded-xl text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all"
+                    placeholder={activeTab === 'register' ? 'Mínimo 6 caracteres' : 'Tu contraseña'}
+                    disabled={isSubmitting}
+                  />
+                </div>
               </div>
+
+              {/* Error general */}
+              {errors.general && (
+                <div className="p-3 bg-red-500/10 border border-red-500/20 rounded-xl">
+                  <p className="text-red-400 text-sm">{errors.general}</p>
+                </div>
+              )}
+
+              {/* Botón submit */}
+              <button
+                type="submit"
+                disabled={isSubmitting}
+                className="w-full px-4 py-3 bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white font-semibold rounded-xl transition-all flex items-center justify-center gap-2 disabled:opacity-50 disabled:cursor-not-allowed shadow-lg"
+              >
+                {isSubmitting ? (
+                  <>
+                    <div className="w-4 h-4 border-2 border-white/30 border-t-white rounded-full animate-spin" />
+                    {activeTab === 'login' ? 'Entrando...' : 'Registrando...'}
+                  </>
+                ) : (
+                  <>
+                    {activeTab === 'login' ? <LogIn className="w-4 h-4" /> : <UserPlus className="w-4 h-4" />}
+                    {activeTab === 'login' ? 'Entrar' : 'Crear cuenta'}
+                  </>
+                )}
+              </button>
             </form>
           </div>
 
-          {/* Footer */}
+          {/* Footer info */}
           <div className="p-6 border-t border-white/10 bg-white/5">
             <div className="p-3 bg-blue-500/10 rounded-xl border border-blue-500/20">
               <p className="text-blue-300 text-sm">
-                💡 <strong>Información:</strong> Tus datos se guardan localmente en tu dispositivo. 
-                {currentUser ? ' Actualiza tu información cuando quieras.' : ' Puedes identificarte más tarde si cambias de opinión.'}
+                💡 <strong>Info:</strong> {activeTab === 'login' 
+                  ? 'Tu progreso se sincroniza entre dispositivos.' 
+                  : 'Crea tu cuenta para guardar tu progreso en la nube.'}
               </p>
             </div>
           </div>

@@ -1,11 +1,8 @@
 'use client';
 
 import { useState, useEffect } from 'react';
-import { X, Volume2, VolumeX, UserPlus, Settings } from 'lucide-react';
+import { X, Volume2, VolumeX, Settings } from 'lucide-react';
 import { soundSystem } from '@/lib/soundSystem';
-import UserModal from './UserModal';
-import { useGameStore } from '@/store/gameStore';
-import { User as UserType } from '@/types/game';
 
 interface SettingsModalProps {
   isOpen: boolean;
@@ -14,8 +11,6 @@ interface SettingsModalProps {
 
 export default function SettingsModal({ isOpen, onClose }: SettingsModalProps) {
   const [soundEnabled, setSoundEnabled] = useState(true);
-  const [showUserModal, setShowUserModal] = useState(false);
-  const { currentUser, setCurrentUser } = useGameStore();
 
   // Cargar estado de sonido al abrir
   useEffect(() => {
@@ -34,17 +29,6 @@ export default function SettingsModal({ isOpen, onClose }: SettingsModalProps) {
     if (newSoundState) {
       soundSystem.play('cartavolteada');
     }
-  };
-
-  // Función para manejar registro
-  const handleRegister = () => {
-    setShowUserModal(true);
-  };
-
-  // Función para guardar usuario
-  const handleUserSave = (user: UserType) => {
-    setCurrentUser(user);
-    setShowUserModal(false);
   };
 
   if (!isOpen) return null;
@@ -114,37 +98,6 @@ export default function SettingsModal({ isOpen, onClose }: SettingsModalProps) {
               </div>
             </div>
 
-            {/* Separador */}
-            <div className="border-t border-white/10" />
-
-            {/* Cuenta de Usuario */}
-            <div className="space-y-4">
-              <h3 className="text-lg font-semibold text-white flex items-center gap-2">
-                👤 Cuenta
-              </h3>
-              
-              <div className="p-4 rounded-xl bg-white/5 border border-white/10">
-                <div className="flex items-center gap-3 mb-4">
-                  <div className="p-2 rounded-xl bg-blue-500/20 border border-blue-400/30">
-                    <UserPlus className="w-6 h-6 text-blue-400" />
-                  </div>
-                  <div>
-                    <p className="text-white font-medium">Registro de Usuario</p>
-                    <p className="text-sm text-gray-400">
-                      Guarda tu progreso y compite con otros jugadores
-                    </p>
-                  </div>
-                </div>
-                
-                <button
-                  onClick={handleRegister}
-                  className="w-full px-4 py-3 rounded-xl bg-gradient-to-r from-blue-600 to-purple-600 text-white font-semibold hover:from-blue-700 hover:to-purple-700 transition shadow-lg"
-                >
-                  {currentUser ? 'Actualizar Perfil' : 'Crear Cuenta'}
-                </button>
-              </div>
-            </div>
-
           </div>
 
           {/* Footer */}
@@ -155,14 +108,6 @@ export default function SettingsModal({ isOpen, onClose }: SettingsModalProps) {
           </div>
         </div>
       </div>
-
-      {/* Modal de Usuario */}
-      <UserModal
-        isOpen={showUserModal}
-        onClose={() => setShowUserModal(false)}
-        onSave={handleUserSave}
-        currentUser={currentUser}
-      />
     </div>
   );
 }
