@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test de Assets - MemoFlip</title>
+    <base href="/sistema_apps_upload/">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 20px;
+            min-height: 100vh;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        h1 {
+            text-align: center;
+            margin-bottom: 30px;
+            font-size: 2.5rem;
+            text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+        }
+        
+        .section {
+            background: rgba(255,255,255,0.1);
+            backdrop-filter: blur(10px);
+            border-radius: 15px;
+            padding: 25px;
+            margin-bottom: 20px;
+            border: 1px solid rgba(255,255,255,0.2);
+        }
+        
+        h2 {
+            font-size: 1.8rem;
+            margin-bottom: 20px;
+            border-bottom: 2px solid rgba(255,255,255,0.3);
+            padding-bottom: 10px;
+        }
+        
+        .test-item {
+            margin-bottom: 15px;
+            padding: 10px;
+            background: rgba(0,0,0,0.2);
+            border-radius: 8px;
+        }
+        
+        .status {
+            display: inline-block;
+            padding: 5px 10px;
+            border-radius: 5px;
+            font-weight: bold;
+            margin-left: 10px;
+        }
+        
+        .status.ok { background: #10b981; }
+        .status.error { background: #ef4444; }
+        .status.loading { background: #f59e0b; }
+        
+        .cards-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
+            gap: 10px;
+            margin-top: 20px;
+        }
+        
+        .card-test {
+            width: 80px;
+            height: 80px;
+            border: 2px solid white;
+            border-radius: 8px;
+            overflow: hidden;
+            background: white;
+        }
+        
+        .card-test img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        
+        .audio-test {
+            margin: 10px 0;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        button {
+            background: rgba(255,255,255,0.2);
+            color: white;
+            border: 2px solid white;
+            padding: 8px 16px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 14px;
+            transition: all 0.3s;
+        }
+        
+        button:hover {
+            background: rgba(255,255,255,0.3);
+            transform: translateY(-2px);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🧪 Test de Assets - MemoFlip</h1>
+        
+        <!-- Test de logo y favicon -->
+        <div class="section">
+            <h2>📌 Logo y Favicon</h2>
+            <div class="test-item">
+                <strong>Logo:</strong>
+                <img src="memoflip/logo.png" alt="Logo" style="max-width: 150px; vertical-align: middle; margin-left: 15px;">
+                <span class="status loading" id="logo-status">Cargando...</span>
+            </div>
+            <div class="test-item">
+                <strong>Favicon:</strong>
+                <img src="memoflip/favicon.ico" alt="Favicon" style="width: 32px; height: 32px; vertical-align: middle; margin-left: 15px;">
+                <span class="status loading" id="favicon-status">Cargando...</span>
+            </div>
+        </div>
+        
+        <!-- Test de cartas -->
+        <div class="section">
+            <h2>🃏 Cartas (Primeras 20)</h2>
+            <div id="cards-container" class="cards-grid"></div>
+        </div>
+        
+        <!-- Test de sonidos -->
+        <div class="section">
+            <h2>🔊 Sonidos</h2>
+            <div id="sounds-container"></div>
+        </div>
+        
+        <!-- Test de archivos JavaScript -->
+        <div class="section">
+            <h2>📦 Archivos JavaScript</h2>
+            <div class="test-item">
+                <strong>webpack:</strong>
+                <span class="status loading" id="webpack-status">Cargando...</span>
+            </div>
+            <div class="test-item">
+                <strong>main-app:</strong>
+                <span class="status loading" id="main-status">Cargando...</span>
+            </div>
+            <div class="test-item">
+                <strong>CSS:</strong>
+                <span class="status loading" id="css-status">Cargando...</span>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        // Test de logo
+        const logo = new Image();
+        logo.onload = () => {
+            document.getElementById('logo-status').textContent = '✓ OK';
+            document.getElementById('logo-status').className = 'status ok';
+        };
+        logo.onerror = () => {
+            document.getElementById('logo-status').textContent = '✗ Error';
+            document.getElementById('logo-status').className = 'status error';
+        };
+        logo.src = 'memoflip/logo.png';
+        
+        // Test de favicon
+        const favicon = new Image();
+        favicon.onload = () => {
+            document.getElementById('favicon-status').textContent = '✓ OK';
+            document.getElementById('favicon-status').className = 'status ok';
+        };
+        favicon.onerror = () => {
+            document.getElementById('favicon-status').textContent = '✗ Error';
+            document.getElementById('favicon-status').className = 'status error';
+        };
+        favicon.src = 'memoflip/favicon.ico';
+        
+        // Test de cartas (primeras 20)
+        const cardsContainer = document.getElementById('cards-container');
+        for (let i = 1; i <= 20; i++) {
+            const cardNum = String(i).padStart(3, '0');
+            const cardDiv = document.createElement('div');
+            cardDiv.className = 'card-test';
+            
+            const img = document.createElement('img');
+            img.src = `memoflip/cards/card_${cardNum}.png`;
+            img.alt = `Card ${cardNum}`;
+            img.title = `card_${cardNum}.png`;
+            
+            img.onerror = () => {
+                cardDiv.style.background = 'red';
+                cardDiv.innerHTML = `<div style="color:white;text-align:center;padding-top:30px;">✗</div>`;
+            };
+            
+            cardDiv.appendChild(img);
+            cardsContainer.appendChild(cardDiv);
+        }
+        
+        // Test de sonidos
+        const sounds = [
+            { name: 'Acierto', file: 'acierto.mp3' },
+            { name: 'Carta volteada', file: 'cartavolteada.mp3' },
+            { name: 'Fallo', file: 'fallo.mp3' },
+            { name: 'Match exitoso', file: 'matchexitoso.mp3' },
+            { name: 'Fondo 1', file: 'fondo.mp3' },
+            { name: 'Fondo 2', file: 'fondo2.mp3' }
+        ];
+        
+        const soundsContainer = document.getElementById('sounds-container');
+        sounds.forEach(sound => {
+            const div = document.createElement('div');
+            div.className = 'audio-test';
+            div.innerHTML = `
+                <strong>${sound.name}:</strong>
+                <button onclick="playSound('${sound.file}')">▶️ Play</button>
+                <span class="status loading" id="sound-${sound.file}">Testing...</span>
+            `;
+            soundsContainer.appendChild(div);
+            
+            // Test de existencia del archivo
+            fetch(`memoflip/sounds/${sound.file}`, { method: 'HEAD' })
+                .then(res => {
+                    const status = document.getElementById(`sound-${sound.file}`);
+                    if (res.ok) {
+                        status.textContent = '✓ OK';
+                        status.className = 'status ok';
+                    } else {
+                        status.textContent = '✗ Error';
+                        status.className = 'status error';
+                    }
+                })
+                .catch(() => {
+                    const status = document.getElementById(`sound-${sound.file}`);
+                    status.textContent = '✗ Error';
+                    status.className = 'status error';
+                });
+        });
+        
+        function playSound(file) {
+            const audio = new Audio(`memoflip/sounds/${file}`);
+            audio.play();
+        }
+        
+        // Test de archivos JavaScript
+        fetch('memoflip/_next/static/chunks/webpack-dedb69f314dd77b7.js', { method: 'HEAD' })
+            .then(res => {
+                const status = document.getElementById('webpack-status');
+                if (res.ok) {
+                    status.textContent = '✓ OK';
+                    status.className = 'status ok';
+                } else {
+                    status.textContent = '✗ Error';
+                    status.className = 'status error';
+                }
+            });
+        
+        fetch('memoflip/_next/static/chunks/main-app-07d63cda7795b0de.js', { method: 'HEAD' })
+            .then(res => {
+                const status = document.getElementById('main-status');
+                if (res.ok) {
+                    status.textContent = '✓ OK';
+                    status.className = 'status ok';
+                } else {
+                    status.textContent = '✗ Error';
+                    status.className = 'status error';
+                }
+            });
+        
+        fetch('memoflip/_next/static/css/e3510fc3d9d30b91.css', { method: 'HEAD' })
+            .then(res => {
+                const status = document.getElementById('css-status');
+                if (res.ok) {
+                    status.textContent = '✓ OK';
+                    status.className = 'status ok';
+                } else {
+                    status.textContent = '✗ Error';
+                    status.className = 'status error';
+                }
+            });
+    </script>
+</body>
+</html>
+

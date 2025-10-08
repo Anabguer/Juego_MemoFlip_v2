@@ -1,0 +1,129 @@
+# ========================================
+# .htaccess para MemoFlip
+# Protege archivos sensibles sin romper assets
+# ========================================
+
+# Deshabilitar listado de directorios
+Options -Indexes
+
+# ========================================
+# BLOQUEAR ARCHIVOS SENSIBLES
+# ========================================
+<FilesMatch "\.(log|sql|md|example|env|config|ini|bak|old|backup|git|gitignore|htaccess_backup)$">
+    Require all denied
+</FilesMatch>
+
+# Proteger _common.php (no debe ser accesible directamente)
+<Files "_common.php">
+    Require all denied
+</Files>
+
+# ========================================
+# PERMITIR ARCHIVOS ESTÁTICOS
+# ========================================
+<FilesMatch "\.(png|jpg|jpeg|gif|webp|svg|css|js|mp3|ogg|wav|woff|woff2|ttf|eot|json|ico|txt|html)$">
+    Require all granted
+    Satisfy Any
+</FilesMatch>
+
+# ========================================
+# TIPOS MIME
+# ========================================
+<IfModule mod_mime.c>
+    AddType image/svg+xml .svg
+    AddType audio/mpeg .mp3
+    AddType audio/ogg .ogg
+    AddType font/woff2 .woff2
+    AddType font/woff .woff
+    AddType application/json .json
+</IfModule>
+
+# ========================================
+# COMPRESIÓN GZIP
+# ========================================
+<IfModule mod_deflate.c>
+    AddOutputFilterByType DEFLATE text/html text/plain text/css application/json
+    AddOutputFilterByType DEFLATE application/javascript text/javascript
+    AddOutputFilterByType DEFLATE text/xml application/xml application/xhtml+xml
+    AddOutputFilterByType DEFLATE image/svg+xml
+</IfModule>
+
+# ========================================
+# CACHE DE NAVEGADOR
+# ========================================
+<IfModule mod_expires.c>
+    ExpiresActive On
+    
+    # Imágenes - cache largo (1 año)
+    ExpiresByType image/jpeg "access plus 1 year"
+    ExpiresByType image/png "access plus 1 year"
+    ExpiresByType image/gif "access plus 1 year"
+    ExpiresByType image/webp "access plus 1 year"
+    ExpiresByType image/svg+xml "access plus 1 year"
+    ExpiresByType image/x-icon "access plus 1 year"
+    
+    # Audio - cache largo (1 año)
+    ExpiresByType audio/mpeg "access plus 1 year"
+    ExpiresByType audio/ogg "access plus 1 year"
+    
+    # CSS y JS - cache medio (1 mes)
+    ExpiresByType text/css "access plus 1 month"
+    ExpiresByType application/javascript "access plus 1 month"
+    ExpiresByType text/javascript "access plus 1 month"
+    
+    # Fonts - cache largo (1 año)
+    ExpiresByType font/woff2 "access plus 1 year"
+    ExpiresByType font/woff "access plus 1 year"
+    
+    # HTML - sin cache
+    ExpiresByType text/html "access plus 0 seconds"
+    
+    # JSON - sin cache
+    ExpiresByType application/json "access plus 0 seconds"
+</IfModule>
+
+# ========================================
+# HEADERS DE SEGURIDAD
+# ========================================
+<IfModule mod_headers.c>
+    # Evitar clickjacking
+    Header set X-Frame-Options "SAMEORIGIN"
+    
+    # Protección XSS
+    Header set X-XSS-Protection "1; mode=block"
+    
+    # No sniffing de MIME
+    Header set X-Content-Type-Options "nosniff"
+    
+    # Cache control para archivos estáticos
+    <FilesMatch "\.(png|jpg|jpeg|gif|webp|svg|mp3|ogg|woff2|woff)$">
+        Header set Cache-Control "public, max-age=31536000, immutable"
+    </FilesMatch>
+    
+    # Sin cache para PHP
+    <FilesMatch "\.php$">
+        Header set Cache-Control "no-store, no-cache, must-revalidate, max-age=0"
+        Header set Pragma "no-cache"
+    </FilesMatch>
+</IfModule>
+
+# ========================================
+# REWRITE RULES (si es necesario)
+# ========================================
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    
+    # Forzar HTTPS
+    RewriteCond %{HTTPS} off
+    RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+</IfModule>
+
+# ========================================
+# SEGURIDAD ADICIONAL
+# ========================================
+# Deshabilitar firma del servidor
+ServerSignature Off
+
+# Limitar tamaño de request (100MB para assets grandes)
+LimitRequestBody 104857600
+

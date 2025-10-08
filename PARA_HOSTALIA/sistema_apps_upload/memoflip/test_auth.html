@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test de Autenticación - MemoFlip</title>
+    <base href="/sistema_apps_upload/">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 20px;
+            min-height: 100vh;
+        }
+        
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        
+        h1 {
+            text-align: center;
+            margin-bottom: 30px;
+            font-size: 2.5rem;
+            text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+        }
+        
+        .section {
+            background: rgba(255,255,255,0.1);
+            backdrop-filter: blur(10px);
+            border-radius: 15px;
+            padding: 25px;
+            margin-bottom: 20px;
+            border: 1px solid rgba(255,255,255,0.2);
+        }
+        
+        h2 {
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+            border-bottom: 2px solid rgba(255,255,255,0.3);
+            padding-bottom: 10px;
+        }
+        
+        .form-group {
+            margin-bottom: 15px;
+        }
+        
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: 600;
+        }
+        
+        input {
+            width: 100%;
+            padding: 10px;
+            border-radius: 8px;
+            border: 2px solid rgba(255,255,255,0.3);
+            background: rgba(255,255,255,0.1);
+            color: white;
+            font-size: 16px;
+        }
+        
+        input::placeholder {
+            color: rgba(255,255,255,0.5);
+        }
+        
+        button {
+            background: rgba(255,255,255,0.2);
+            color: white;
+            border: 2px solid white;
+            padding: 12px 24px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 16px;
+            font-weight: 600;
+            transition: all 0.3s;
+            margin-right: 10px;
+        }
+        
+        button:hover {
+            background: rgba(255,255,255,0.3);
+            transform: translateY(-2px);
+        }
+        
+        button.primary {
+            background: linear-gradient(135deg, #f59e0b, #d97706);
+            border-color: #f59e0b;
+        }
+        
+        button.danger {
+            background: linear-gradient(135deg, #ef4444, #dc2626);
+            border-color: #ef4444;
+        }
+        
+        .response {
+            margin-top: 20px;
+            padding: 15px;
+            border-radius: 8px;
+            background: rgba(0,0,0,0.3);
+            white-space: pre-wrap;
+            font-family: 'Courier New', monospace;
+            font-size: 14px;
+            max-height: 300px;
+            overflow-y: auto;
+        }
+        
+        .status-box {
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 15px;
+        }
+        
+        .status-box.success {
+            background: rgba(16, 185, 129, 0.3);
+            border: 2px solid #10b981;
+        }
+        
+        .status-box.error {
+            background: rgba(239, 68, 68, 0.3);
+            border: 2px solid #ef4444;
+        }
+        
+        .status-box.info {
+            background: rgba(59, 130, 246, 0.3);
+            border: 2px solid #3b82f6;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🔐 Test de Autenticación - MemoFlip</h1>
+        
+        <!-- Estado de sesión -->
+        <div class="section">
+            <h2>📊 Estado de Sesión</h2>
+            <div id="session-status" class="status-box info">
+                <p>Cargando estado de sesión...</p>
+            </div>
+            <button onclick="checkSession()">🔄 Verificar Sesión</button>
+            <button onclick="logout()" class="danger">🚪 Cerrar Sesión</button>
+        </div>
+        
+        <!-- Registro -->
+        <div class="section">
+            <h2>📝 Registro de Usuario</h2>
+            <div class="form-group">
+                <label for="reg-email">Email:</label>
+                <input type="email" id="reg-email" placeholder="usuario@ejemplo.com">
+            </div>
+            <div class="form-group">
+                <label for="reg-nombre">Nombre:</label>
+                <input type="text" id="reg-nombre" placeholder="Tu nombre">
+            </div>
+            <div class="form-group">
+                <label for="reg-password">Contraseña:</label>
+                <input type="password" id="reg-password" placeholder="Mínimo 6 caracteres">
+            </div>
+            <button onclick="register()" class="primary">✨ Registrar</button>
+            <div id="register-response" class="response" style="display:none;"></div>
+        </div>
+        
+        <!-- Login -->
+        <div class="section">
+            <h2>🔑 Inicio de Sesión</h2>
+            <div class="form-group">
+                <label for="login-email">Email:</label>
+                <input type="email" id="login-email" placeholder="usuario@ejemplo.com">
+            </div>
+            <div class="form-group">
+                <label for="login-password">Contraseña:</label>
+                <input type="password" id="login-password" placeholder="Tu contraseña">
+            </div>
+            <button onclick="login()" class="primary">🚀 Iniciar Sesión</button>
+            <div id="login-response" class="response" style="display:none;"></div>
+        </div>
+        
+        <!-- Modo invitado -->
+        <div class="section">
+            <h2>👤 Modo Invitado</h2>
+            <p>Juega sin registro (progreso no se guarda en servidor)</p>
+            <button onclick="guestMode()" class="primary">🎮 Jugar como Invitado</button>
+            <div id="guest-response" class="response" style="display:none;"></div>
+        </div>
+        
+        <!-- Test de ranking -->
+        <div class="section">
+            <h2>🏆 Test de Ranking</h2>
+            <button onclick="getGlobalRanking()">🌍 Ver Ranking Global (Top 10)</button>
+            <button onclick="getPersonalRanking()">👤 Ver Mi Ranking</button>
+            <div id="ranking-response" class="response" style="display:none;"></div>
+        </div>
+    </div>
+    
+    <script>
+        const API_BASE = '/sistema_apps_upload/memoflip';
+        
+        // Verificar sesión al cargar
+        window.addEventListener('load', () => {
+            checkSession();
+        });
+        
+        // === FUNCIONES DE AUTENTICACIÓN ===
+        
+        async function register() {
+            const email = document.getElementById('reg-email').value;
+            const nombre = document.getElementById('reg-nombre').value;
+            const password = document.getElementById('reg-password').value;
+            
+            if (!email || !nombre || !password) {
+                alert('Completa todos los campos');
+                return;
+            }
+            
+            try {
+                const response = await fetch(`${API_BASE}/auth.php`, {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    credentials: 'same-origin',
+                    body: JSON.stringify({
+                        action: 'register',
+                        email,
+                        nombre,
+                        password
+                    })
+                });
+                
+                const data = await response.json();
+                showResponse('register-response', data, response.ok);
+                
+                if (data.success) {
+                    setTimeout(() => checkSession(), 1000);
+                }
+            } catch (error) {
+                showResponse('register-response', { error: error.message }, false);
+            }
+        }
+        
+        async function login() {
+            const email = document.getElementById('login-email').value;
+            const password = document.getElementById('login-password').value;
+            
+            if (!email || !password) {
+                alert('Completa todos los campos');
+                return;
+            }
+            
+            try {
+                const response = await fetch(`${API_BASE}/auth.php`, {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    credentials: 'same-origin',
+                    body: JSON.stringify({
+                        action: 'login',
+                        email,
+                        password
+                    })
+                });
+                
+                const data = await response.json();
+                showResponse('login-response', data, response.ok);
+                
+                if (data.success) {
+                    setTimeout(() => checkSession(), 1000);
+                }
+            } catch (error) {
+                showResponse('login-response', { error: error.message }, false);
+            }
+        }
+        
+        async function guestMode() {
+            try {
+                const response = await fetch(`${API_BASE}/auth.php`, {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    credentials: 'same-origin',
+                    body: JSON.stringify({ action: 'guest' })
+                });
+                
+                const data = await response.json();
+                showResponse('guest-response', data, response.ok);
+            } catch (error) {
+                showResponse('guest-response', { error: error.message }, false);
+            }
+        }
+        
+        async function checkSession() {
+            try {
+                const response = await fetch(`${API_BASE}/auth.php?action=check_session`, {
+                    method: 'GET',
+                    credentials: 'same-origin'
+                });
+                
+                const data = await response.json();
+                const statusBox = document.getElementById('session-status');
+                
+                if (data.authenticated) {
+                    statusBox.className = 'status-box success';
+                    statusBox.innerHTML = `
+                        <p><strong>✅ Sesión activa</strong></p>
+                        <p>Email: ${data.email || 'N/A'}</p>
+                        <p>Nombre: ${data.nombre || 'N/A'}</p>
+                        <hr style="margin: 10px 0; border-color: rgba(255,255,255,0.3);">
+                        <p>Nivel máximo: ${data.game_data?.max_level_unlocked || 1}</p>
+                        <p>Monedas: ${data.game_data?.coins_total || 0}</p>
+                        <p>Vidas: ${data.game_data?.lives_current || 5}</p>
+                    `;
+                } else {
+                    statusBox.className = 'status-box info';
+                    statusBox.innerHTML = '<p>❌ No hay sesión activa. Inicia sesión o regístrate.</p>';
+                }
+            } catch (error) {
+                const statusBox = document.getElementById('session-status');
+                statusBox.className = 'status-box error';
+                statusBox.innerHTML = `<p>⚠️ Error: ${error.message}</p>`;
+            }
+        }
+        
+        async function logout() {
+            try {
+                const response = await fetch(`${API_BASE}/auth.php`, {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    credentials: 'same-origin',
+                    body: JSON.stringify({ action: 'logout' })
+                });
+                
+                const data = await response.json();
+                
+                if (data.success) {
+                    alert('Sesión cerrada correctamente');
+                    setTimeout(() => checkSession(), 500);
+                }
+            } catch (error) {
+                alert('Error al cerrar sesión: ' + error.message);
+            }
+        }
+        
+        // === FUNCIONES DE RANKING ===
+        
+        async function getGlobalRanking() {
+            try {
+                const response = await fetch(`${API_BASE}/ranking.php?action=global&limit=10`, {
+                    method: 'GET',
+                    credentials: 'same-origin'
+                });
+                
+                const data = await response.json();
+                showResponse('ranking-response', data, response.ok);
+            } catch (error) {
+                showResponse('ranking-response', { error: error.message }, false);
+            }
+        }
+        
+        async function getPersonalRanking() {
+            try {
+                const response = await fetch(`${API_BASE}/ranking.php?action=personal`, {
+                    method: 'GET',
+                    credentials: 'same-origin'
+                });
+                
+                const data = await response.json();
+                showResponse('ranking-response', data, response.ok);
+            } catch (error) {
+                showResponse('ranking-response', { error: error.message }, false);
+            }
+        }
+        
+        // === UTILIDADES ===
+        
+        function showResponse(elementId, data, success) {
+            const element = document.getElementById(elementId);
+            element.style.display = 'block';
+            element.textContent = JSON.stringify(data, null, 2);
+            element.style.borderLeft = success ? '4px solid #10b981' : '4px solid #ef4444';
+        }
+    </script>
+</body>
+</html>
+

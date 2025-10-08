@@ -596,7 +596,7 @@ export function initFrozenMechanic(now: number, opts?: { intervalMs?: number; du
 // Logs con muestreo para evitar spam
 const LOG_SAMPLE = 0.05; // 5%
 
-function logSampled(...args: any[]) {
+function logSampled(...args: unknown[]) {
   if (Math.random() < LOG_SAMPLE) console.log('[frozen]', ...args);
 }
 
@@ -620,15 +620,15 @@ export function updateFrozenMechanic(
       [pool[i], pool[j]] = [pool[j], pool[i]];
     }
     
-    let a: any, b: any;
+    let a: typeof pool[0] | undefined, b: typeof pool[0] | undefined;
     for (let i = 0; i < pool.length; i++) {
       if (!a) { 
         a = pool[i]; 
         continue; 
       }
       if (!b && pool[i].value !== a.value) { 
-        b = pool[i]; 
-        break; 
+        b = pool[i];
+        break;
       }
     }
     
