@@ -166,15 +166,23 @@ export default function IntroScreen({
       if (data.success) {
         console.log('👋 Sesión cerrada');
         
-        // Limpiar credenciales de auto-login
+        // 🗑️ LIMPIAR TODO EL PROGRESO LOCAL
         localStorage.removeItem('memoflip_user_email');
         localStorage.removeItem('memoflip_user_token');
-        console.log('🗑️ Credenciales eliminadas');
+        localStorage.removeItem('memoflip_progress'); // ✅ Limpiar progreso
+        localStorage.removeItem('memoflip_pending_sync');
+        console.log('🗑️ Credenciales y progreso eliminados');
         
         setUserInfo(null);
-        // Limpiar currentUser del store
-        const { setCurrentUser } = useGameStore.getState();
+        
+        // Limpiar currentUser y resetear progreso en el store
+        const { setCurrentUser, setCurrentLevel, setCoins, setLives } = useGameStore.getState();
         setCurrentUser(null);
+        setCurrentLevel(1); // ✅ Resetear a nivel 1
+        setCoins(0);        // ✅ Resetear monedas
+        setLives(3);        // ✅ Resetear vidas
+        
+        console.log('✅ Progreso reseteado a inicial');
         window.location.reload(); // Recargar para limpiar todo
       }
     } catch (error) {

@@ -35,12 +35,35 @@ export default function SettingsModal({ isOpen, onClose, onLogout }: SettingsMod
   };
 
   // Función para cerrar sesión
-  const handleLogout = () => {
+  const handleLogout = async () => {
     if (confirm('¿Estás seguro de que quieres cerrar sesión?')) {
       onClose();
+      
+      // 🗑️ LIMPIAR TODO EL PROGRESO LOCAL
+      localStorage.removeItem('memoflip_user_email');
+      localStorage.removeItem('memoflip_user_token');
+      localStorage.removeItem('memoflip_progress');
+      localStorage.removeItem('memoflip_pending_sync');
+      console.log('🗑️ Logout: Credenciales y progreso eliminados');
+      
+      // Resetear el store a valores iniciales
+      const { setCurrentUser, setCurrentLevel, setCoins, setLives } = useGameStore.getState();
+      setCurrentUser(null);
+      setCurrentLevel(1);
+      setCoins(0);
+      setLives(3);
+      
+      console.log('✅ Progreso reseteado a inicial');
+      
+      // Volver al inicio
       if (onLogout) {
         onLogout();
       }
+      
+      // Recargar la página para asegurar limpieza total
+      setTimeout(() => {
+        window.location.reload();
+      }, 100);
     }
   };
 

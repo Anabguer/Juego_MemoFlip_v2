@@ -3,6 +3,7 @@
 import { useState } from 'react';
 import { X, User, Mail, Lock, UserPlus, LogIn } from 'lucide-react';
 import { memoflipApi } from '@/lib/capacitorApi';
+import VerificationModal from './VerificationModal';
 
 interface SessionUser {
   email: string;
@@ -32,6 +33,8 @@ export default function UserModal({ isOpen, onClose, onLoginSuccess }: UserModal
   });
   const [errors, setErrors] = useState<Record<string, string>>({});
   const [isSubmitting, setIsSubmitting] = useState(false);
+  const [showVerification, setShowVerification] = useState(false);
+  const [registeredEmail, setRegisteredEmail] = useState('');
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -66,14 +69,33 @@ export default function UserModal({ isOpen, onClose, onLoginSuccess }: UserModal
       const data = await memoflipApi('auth.php', {
         method: 'POST',
         body: body
-      }) as SessionUser & { success?: boolean; error?: string; message?: string };
+      }) as SessionUser & { 
+        success?: boolean; 
+        error?: string; 
+        message?: string;
+        requires_verification?: boolean;
+        email_sent?: boolean;
+      };
 
       if (data.success) {
-        console.log('✅ Autenticación exitosa:', data);
-        onLoginSuccess(data, formData.email, formData.password);
-        onClose();
-        // Recargar página para actualizar sesión
-        window.location.reload();
+        // Si es registro y requiere verificación
+        if (activeTab === 'register' && data.requires_verification) {
+          console.log('📧 Registro exitoso, se requiere verificación');
+          setRegisteredEmail(formData.email);
+          setShowVerification(true);
+          setErrors({ 
+            general: data.email_sent 
+              ? '✅ Te hemos enviado un código de verificación a tu email' 
+              : '⚠️ Registro exitoso. Por favor, verifica tu email.'
+          });
+        } else {
+          // Login normal
+          console.log('✅ Autenticación exitosa:', data);
+          onLoginSuccess(data, formData.email, formData.password);
+          onClose();
+          // Recargar página para actualizar sesión
+          window.location.reload();
+        }
       } else {
         setErrors({ general: data.error || data.message || 'Error en autenticación' });
       }
@@ -83,6 +105,15 @@ export default function UserModal({ isOpen, onClose, onLoginSuccess }: UserModal
     } finally {
       setIsSubmitting(false);
     }
+  };
+
+  const handleVerificationSuccess = () => {
+    console.log('✅ Verificación exitosa, cerrando modales');
+    setShowVerification(false);
+    onClose();
+    // Opcional: auto-login después de verificación
+    // o mostrar mensaje de éxito
+    alert('¡Cuenta verificada! Ya puedes iniciar sesión.');
   };
 
   const handleInputChange = (field: string, value: string) => {
@@ -271,6 +302,14 @@ export default function UserModal({ isOpen, onClose, onLoginSuccess }: UserModal
           </div>
         </div>
       </div>
+
+      {/* Modal de Verificación */}
+      <VerificationModal
+        isOpen={showVerification}
+        onClose={() => setShowVerification(false)}
+        email={registeredEmail}
+        onVerificationSuccess={handleVerificationSuccess}
+      />
     </div>
   );
 }
