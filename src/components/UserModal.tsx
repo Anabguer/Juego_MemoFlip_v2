@@ -28,6 +28,7 @@ export default function UserModal({ isOpen, onClose, onLoginSuccess }: UserModal
   const [formData, setFormData] = useState({
     email: '',
     password: '',
+    confirmPassword: '',
     nombre: '',
     nick: ''
   });
@@ -46,9 +47,26 @@ export default function UserModal({ isOpen, onClose, onLoginSuccess }: UserModal
       return;
     }
     
-    if (activeTab === 'register' && (!formData.nombre || !formData.nick)) {
-      setErrors({ general: 'Todos los campos son obligatorios' });
-      return;
+    if (activeTab === 'register') {
+      if (!formData.nombre || !formData.nick) {
+        setErrors({ general: 'Todos los campos son obligatorios' });
+        return;
+      }
+      
+      if (!formData.confirmPassword) {
+        setErrors({ general: 'Debes confirmar tu contraseña' });
+        return;
+      }
+      
+      if (formData.password !== formData.confirmPassword) {
+        setErrors({ general: 'Las contraseñas no coinciden' });
+        return;
+      }
+      
+      if (formData.password.length < 6) {
+        setErrors({ general: 'La contraseña debe tener al menos 6 caracteres' });
+        return;
+      }
     }
 
     setIsSubmitting(true);
@@ -261,6 +279,26 @@ export default function UserModal({ isOpen, onClose, onLoginSuccess }: UserModal
                   />
                 </div>
               </div>
+
+              {/* Confirmar Contraseña (solo en register) */}
+              {activeTab === 'register' && (
+                <div className="space-y-2">
+                  <label className="block text-sm font-medium text-gray-300">
+                    Confirmar Contraseña *
+                  </label>
+                  <div className="relative">
+                    <Lock className="absolute left-3 top-1/2 transform -translate-y-1/2 w-4 h-4 text-gray-400" />
+                    <input
+                      type="password"
+                      value={formData.confirmPassword}
+                      onChange={(e) => handleInputChange('confirmPassword', e.target.value)}
+                      className="w-full pl-10 pr-4 py-3 bg-white/10 border border-white/20 rounded-xl text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all"
+                      placeholder="Repite tu contraseña"
+                      disabled={isSubmitting}
+                    />
+                  </div>
+                </div>
+              )}
 
               {/* Error general */}
               {errors.general && (
