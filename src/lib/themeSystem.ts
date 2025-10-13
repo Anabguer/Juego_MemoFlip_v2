@@ -1,3 +1,5 @@
+import { getAssetPath } from './capacitorApi';
+
 export interface ThemeConfig {
   name: string;
   chapter: number;

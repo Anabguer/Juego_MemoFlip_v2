@@ -1,28 +1,57 @@
 'use client';
 
-import React from 'react';
-import { X, Trophy, Medal, Crown, Star } from 'lucide-react';
+import React, { useEffect, useState } from 'react';
+import { X, Trophy, Medal, Crown, Star, Loader2 } from 'lucide-react';
+import { memoflipApi } from '@/lib/capacitorApi';
 
 interface RankingModalProps {
   isOpen: boolean;
   onClose: () => void;
 }
 
-// Datos de ejemplo para el ranking
-const mockRankingData = [
-  { position: 1, name: 'MemoMaster', level: 847, coins: 12500, avatar: '👑' },
-  { position: 2, name: 'CardWizard', level: 623, coins: 9800, avatar: '🧙‍♂️' },
-  { position: 3, name: 'FlipChamp', level: 445, coins: 7200, avatar: '🏆' },
-  { position: 4, name: 'MemoryPro', level: 389, coins: 6500, avatar: '🎯' },
-  { position: 5, name: 'BrainTrainer', level: 312, coins: 5200, avatar: '🧠' },
-  { position: 6, name: 'QuickMatch', level: 298, coins: 4800, avatar: '⚡' },
-  { position: 7, name: 'CardHunter', level: 267, coins: 4200, avatar: '🎴' },
-  { position: 8, name: 'PuzzleSolver', level: 234, coins: 3800, avatar: '🧩' },
-  { position: 9, name: 'SpeedRunner', level: 198, coins: 3200, avatar: '🏃‍♂️' },
-  { position: 10, name: 'You', level: 156, coins: 2800, avatar: '👤' },
-];
+interface RankingPlayer {
+  ranking_position: number;
+  nombre: string;
+  email: string;
+  max_level_unlocked: number;
+  coins_total: number;
+  total_score: number;
+}
 
 export default function RankingModal({ isOpen, onClose }: RankingModalProps) {
+  const [rankingData, setRankingData] = useState<RankingPlayer[]>([]);
+  const [isLoading, setIsLoading] = useState(true);
+  const [error, setError] = useState<string | null>(null);
+
+  useEffect(() => {
+    if (isOpen) {
+      loadRanking();
+    }
+  }, [isOpen]);
+
+  const loadRanking = async () => {
+    setIsLoading(true);
+    setError(null);
+
+    try {
+      const data = await memoflipApi('ranking.php?action=global&limit=20', {
+        method: 'GET'
+      });
+
+      if (data.success && data.ranking) {
+        setRankingData(data.ranking);
+        console.log('🏆 Ranking cargado:', data.ranking);
+      } else {
+        setError(data.message || 'Error cargando ranking');
+        console.error('❌ Error en ranking:', data);
+      }
+    } catch (err) {
+      setError('Error de conexión');
+      console.error('❌ Error cargando ranking:', err);
+    } finally {
+      setIsLoading(false);
+    }
+  };
 
   if (!isOpen) return null;
 
@@ -82,56 +111,83 @@ export default function RankingModal({ isOpen, onClose }: RankingModalProps) {
 
           {/* Content */}
           <div className="p-6 flex-1 overflow-y-auto">
-            <div className="space-y-2">
-              {mockRankingData.map((player) => (
-                <div
-                  key={player.position}
-                  className={`flex items-center gap-3 p-3 rounded-lg border ${getPositionColor(player.position)}`}
+            {isLoading ? (
+              <div className="flex items-center justify-center py-12">
+                <Loader2 className="w-8 h-8 text-purple-400 animate-spin" />
+              </div>
+            ) : error ? (
+              <div className="text-center py-12">
+                <p className="text-red-400 text-sm">{error}</p>
+                <button 
+                  onClick={loadRanking}
+                  className="mt-4 px-4 py-2 bg-purple-600 hover:bg-purple-700 text-white rounded-lg text-sm"
                 >
-                  {/* Posición */}
-                  <div className="flex-shrink-0">
-                    {getPositionIcon(player.position)}
-                  </div>
+                  Reintentar
+                </button>
+              </div>
+            ) : rankingData.length === 0 ? (
+              <div className="text-center py-12">
+                <p className="text-gray-400 text-sm">No hay datos de ranking aún</p>
+              </div>
+            ) : (
+              <div className="space-y-2">
+                {rankingData.map((player) => {
+                  const displayName = player.nombre || player.email.split('@')[0];
+                  const avatar = ['👑', '🧙‍♂️', '🏆', '🎯', '🧠', '⚡', '🎴', '🧩', '🏃‍♂️', '👤'][player.ranking_position - 1] || '🎮';
+                  
+                  return (
+                    <div
+                      key={player.ranking_position}
+                      className={`flex items-center gap-3 p-3 rounded-lg border ${getPositionColor(player.ranking_position)}`}
+                    >
+                      {/* Posición */}
+                      <div className="flex-shrink-0">
+                        {getPositionIcon(player.ranking_position)}
+                      </div>
 
-                  {/* Avatar */}
-                  <div className="flex-shrink-0">
-                    <div className="w-10 h-10 rounded-full bg-white/10 border border-white/20 flex items-center justify-center text-lg">
-                      {player.avatar}
+                      {/* Avatar */}
+                      <div className="flex-shrink-0">
+                        <div className="w-10 h-10 rounded-full bg-white/10 border border-white/20 flex items-center justify-center text-lg">
+                          {avatar}
+                        </div>
+                      </div>
+
+                      {/* Info del jugador */}
+                      <div className="flex-1 min-w-0">
+                        <h3 className="text-white font-semibold text-sm truncate">
+                          {displayName}
+                        </h3>
+                        <p className="text-xs text-gray-400">
+                          Nivel {player.max_level_unlocked}
+                        </p>
+                      </div>
+
+                      {/* Puntos */}
+                      <div className="flex-shrink-0 text-right">
+                        <p className="text-yellow-400 font-semibold text-sm">
+                          {player.total_score.toLocaleString()}
+                        </p>
+                        <p className="text-xs text-gray-400">puntos</p>
+                      </div>
                     </div>
-                  </div>
-
-                  {/* Info del jugador */}
-                  <div className="flex-1 min-w-0">
-                    <h3 className="text-white font-semibold text-sm truncate">
-                      {player.name}
-                    </h3>
-                    <p className="text-xs text-gray-400">
-                      Nivel {player.level}
-                    </p>
-                  </div>
-
-                  {/* Monedas */}
-                  <div className="flex-shrink-0 text-right">
-                    <p className="text-yellow-400 font-semibold text-sm">
-                      {player.coins.toLocaleString()}
-                    </p>
-                    <p className="text-xs text-gray-400">monedas</p>
-                  </div>
-                </div>
-              ))}
-            </div>
+                  );
+                })}
+              </div>
+            )}
           </div>
 
           {/* Footer */}
           <div className="p-4 border-t border-white/10 bg-white/5 flex-shrink-0">
             <div className="flex items-center justify-between">
               <p className="text-xs text-gray-400">
-                Actualizado hace 2 minutos
+                Top {rankingData.length} jugadores
               </p>
-              <div className="flex items-center gap-1 text-xs text-gray-400">
-                <Star className="w-3 h-3" />
-                Tu posición: #10
-              </div>
+              <button 
+                onClick={loadRanking}
+                className="text-xs text-purple-400 hover:text-purple-300"
+              >
+                Actualizar
+              </button>
             </div>
           </div>
         </div>

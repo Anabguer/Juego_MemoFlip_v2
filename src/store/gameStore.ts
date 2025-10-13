@@ -1,6 +1,7 @@
 import { create } from 'zustand';
 import { persist } from 'zustand/middleware';
 import { GameState, LevelConfig, Card, UserProgress, GameEvent, User } from '@/types/game';
+import { memoflipApi } from '@/lib/capacitorApi';
 
 interface GameStore extends GameState {
   // Usuario actual
@@ -28,11 +29,14 @@ interface GameStore extends GameState {
   checkLifeRegeneration: () => void;
   getTimeUntilNextLife: () => number;
   
-  // Progreso del usuario
-  updateProgress: (progress: Partial<UserProgress>) => void;
-  getProgress: () => UserProgress;
-  saveProgress: () => void;
-  loadProgress: () => void;
+      // Progreso del usuario
+      updateProgress: (progress: Partial<UserProgress>) => void;
+      getProgress: () => UserProgress;
+      saveProgress: () => void;
+      saveProgressToServer: () => Promise<void>;
+      loadProgress: () => void;
+      loadProgressFromServer: () => Promise<void>;
+      syncWhenOnline: () => Promise<void>;
   
   // Sistema de eventos
   events: GameEvent[];
@@ -222,6 +226,118 @@ export const useGameStore = create<GameStore>()(
           }
         } catch (error) {
           // Error loading progress
+        }
+      },
+
+      // Guardar progreso en el servidor (híbrido offline/online)
+      saveProgressToServer: async () => {
+        const state = get();
+        const user = state.currentUser;
+        
+        // SIEMPRE guardar localmente primero (funciona offline)
+        get().saveProgress();
+        
+        if (!user || user.isGuest) {
+          console.log('🔒 Solo guardando local: usuario invitado');
+          return;
+        }
+
+        // Verificar conexión a internet
+        if (!navigator.onLine) {
+          console.log('📴 Sin internet: guardado solo local');
+          // Marcar para sincronizar cuando vuelva la conexión
+          localStorage.setItem('memoflip_pending_sync', 'true');
+          return;
+        }
+
+        try {
+          const data = await memoflipApi('game.php', {
+            method: 'POST',
+            body: {
+              action: 'update_progress',
+              user_key: user.id,
+              max_level_unlocked: state.currentLevel,
+              coins_total: state.coins,
+              lives_current: state.lives,
+              sound_enabled: !state.isMuted
+            }
+          });
+          
+          if (data.success) {
+            console.log('✅ Progreso guardado en servidor');
+            localStorage.removeItem('memoflip_pending_sync'); // Ya sincronizado
+          } else {
+            console.warn('⚠️ Error guardando progreso:', data.message);
+            localStorage.setItem('memoflip_pending_sync', 'true');
+          }
+        } catch (error) {
+          console.error('❌ Error guardando progreso en servidor:', error);
+          localStorage.setItem('memoflip_pending_sync', 'true');
+        }
+      },
+
+      // Cargar progreso (híbrido offline/online)
+      loadProgressFromServer: async () => {
+        const state = get();
+        const user = state.currentUser;
+        
+        // SIEMPRE cargar datos locales primero (funciona offline)
+        get().loadProgress();
+        
+        if (!user || user.isGuest) {
+          console.log('🔒 Solo cargando local: usuario invitado');
+          return;
+        }
+
+        // Verificar conexión a internet
+        if (!navigator.onLine) {
+          console.log('📴 Sin internet: usando datos locales');
+          return;
+        }
+
+        try {
+          const data = await memoflipApi(`game.php?action=get_progress&user_key=${user.id}`, {
+            method: 'GET'
+          });
+          
+          if (data.success && data.progress) {
+            const serverProgress = data.progress;
+            const localProgress = get().getProgress();
+            
+            // Usar el progreso más avanzado (local vs servidor)
+            const bestLevel = Math.max(
+              serverProgress.max_level_unlocked || 1,
+              localProgress.level
+            );
+            const bestCoins = Math.max(
+              serverProgress.coins_total || 0,
+              localProgress.coins
+            );
+            
+            set({
+              currentLevel: bestLevel,
+              coins: bestCoins,
+              lives: serverProgress.lives_current || 3,
+              currentPhase: Math.ceil(bestLevel / 50)
+            });
+            
+            console.log('✅ Progreso sincronizado (local + servidor):', {
+              level: bestLevel,
+              coins: bestCoins,
+              lives: serverProgress.lives_current
+            });
+          }
+        } catch (error) {
+          console.error('❌ Error cargando progreso del servidor, usando datos locales:', error);
+        }
+      },
+
+      // Sincronizar cuando vuelve la conexión
+      syncWhenOnline: async () => {
+        const pendingSync = localStorage.getItem('memoflip_pending_sync');
+        if (pendingSync === 'true' && navigator.onLine) {
+          console.log('🔄 Sincronizando datos pendientes...');
+          await get().saveProgressToServer();
         }
       },
 

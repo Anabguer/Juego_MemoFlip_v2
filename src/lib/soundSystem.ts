@@ -1,4 +1,6 @@
 // Sistema de sonidos para el juego
+import { getAssetPath } from './capacitorApi';
+
 export class SoundSystem {
   private static instance: SoundSystem;
   private audioContext: AudioContext | null = null;
@@ -174,7 +176,7 @@ export class SoundSystem {
 
     try {
       // Usar basePath configurado o fallback
-      let soundsPath = '/sistema_apps_upload/memoflip_static/sounds';
+      let soundsPath = '/sistema_apps_upload/memoflip/sounds';
       if (typeof window !== 'undefined') {
         const win = window as unknown as { __MEMOFLIP_CONFIG__?: { soundsPath?: string } };
         if (win.__MEMOFLIP_CONFIG__?.soundsPath) {
@@ -183,11 +185,11 @@ export class SoundSystem {
       }
       
       // Cargar archivos MP3 reales
-      await this.loadAudioFile('acierto', `${soundsPath}/acierto.mp3`);
-      await this.loadAudioFile('fallo', `${soundsPath}/fallo.mp3`);
-      await this.loadAudioFile('cartavolteada', `${soundsPath}/cartavolteada.mp3`);
-      await this.loadAudioFile('matchexitoso', `${soundsPath}/matchexitoso.mp3`);
-      await this.loadAudioFile('fondo', `${soundsPath}/fondo.mp3`);
+      await this.loadAudioFile('acierto', getAssetPath(`${soundsPath}/acierto.mp3`));
+      await this.loadAudioFile('fallo', getAssetPath(`${soundsPath}/fallo.mp3`));
+      await this.loadAudioFile('cartavolteada', getAssetPath(`${soundsPath}/cartavolteada.mp3`));
+      await this.loadAudioFile('matchexitoso', getAssetPath(`${soundsPath}/matchexitoso.mp3`));
+      await this.loadAudioFile('fondo', getAssetPath(`${soundsPath}/fondo.mp3`));
       
       // Sonidos sintéticos para acciones menores
       if (this.audioContext) {
@@ -234,8 +236,19 @@ export class SoundSystem {
       
       const audio = new Audio(url);
       audio.preload = 'auto';
+      audio.load(); // Forzar carga completa
+      
+      // Esperar a que el audio esté listo
+      await new Promise((resolve, reject) => {
+        audio.addEventListener('canplaythrough', resolve, { once: true });
+        audio.addEventListener('error', reject, { once: true });
+        
+        // Timeout de 10 segundos
+        setTimeout(() => resolve(null), 10000);
+      });
+      
       this.audioElements.set(name, audio);
-      console.log(`🔊 Cargado: ${name} desde ${url}`);
+      console.log(`🔊 Cargado: ${name} desde ${url} (duración: ${audio.duration}s)`);
     } catch (error) {
       console.warn(`⚠️ Error cargando ${name}:`, error);
     }
@@ -273,6 +286,11 @@ export class SoundSystem {
     }
   }
 
+  // Obtener referencia al audio de fondo (para useAppState)
+  public getBackgroundAudioElement(): HTMLAudioElement | undefined {
+    return this.audioElements.get('fondo');
+  }
+
   // Reproducir sonido de fondo con bucle
   public playBackgroundMusic(): void {
     if (!this.isEnabled) return;
@@ -282,9 +300,22 @@ export class SoundSystem {
       if (audio) {
         audio.loop = true;
         audio.volume = 0.3; // Volumen más bajo para música de fondo
+        
+        // Debug: listener para cuando termina (no debería pasar si loop=true)
+        audio.addEventListener('ended', () => {
+          console.log('🔁 [AUDIO FONDO] Ended event - Duración:', audio.duration, 'Loop:', audio.loop);
+        });
+        
+        // Debug: listener para cuando se pausa
+        audio.addEventListener('pause', () => {
+          console.log('⏸️ [AUDIO FONDO] Pausado en:', audio.currentTime);
+        });
+        
         audio.play().catch(error => {
           console.warn('⚠️ Error reproduciendo música de fondo:', error);
         });
+        
+        console.log('🎵 [AUDIO FONDO] Iniciado - Duración total:', audio.duration);
       }
     } catch (error) {
       console.warn('⚠️ Error al intentar reproducir música de fondo:', error);

@@ -1,16 +1,19 @@
 'use client';
 
 import { useState, useEffect } from 'react';
-import { X, Volume2, VolumeX, Settings } from 'lucide-react';
+import { X, Volume2, VolumeX, Settings, LogOut, Trash2 } from 'lucide-react';
 import { soundSystem } from '@/lib/soundSystem';
+import { useGameStore } from '@/store/gameStore';
 
 interface SettingsModalProps {
   isOpen: boolean;
   onClose: () => void;
+  onLogout?: () => void;
 }
 
-export default function SettingsModal({ isOpen, onClose }: SettingsModalProps) {
+export default function SettingsModal({ isOpen, onClose, onLogout }: SettingsModalProps) {
   const [soundEnabled, setSoundEnabled] = useState(true);
+  const { currentUser } = useGameStore();
 
   // Cargar estado de sonido al abrir
   useEffect(() => {
@@ -28,6 +31,41 @@ export default function SettingsModal({ isOpen, onClose }: SettingsModalProps) {
     // Reproducir sonido de confirmación
     if (newSoundState) {
       soundSystem.play('cartavolteada');
+    }
+  };
+
+  // Función para cerrar sesión
+  const handleLogout = () => {
+    if (confirm('¿Estás seguro de que quieres cerrar sesión?')) {
+      onClose();
+      if (onLogout) {
+        onLogout();
+      }
+    }
+  };
+
+  // Función para eliminar cuenta
+  const handleDeleteAccount = () => {
+    if (!currentUser) {
+      alert('No hay ninguna sesión activa');
+      return;
+    }
+
+    if (confirm('¿Estás seguro de que quieres solicitar la eliminación de tu cuenta? Se enviará un correo a nuestro equipo.')) {
+      const email = currentUser.email;
+      const subject = encodeURIComponent('MemoFlip - Solicitud de baja de cuenta');
+      const body = encodeURIComponent(
+        `Solicito la baja de mi cuenta en la aplicación MemoFlip.\n\n` +
+        `Email de la cuenta: ${email}\n\n` +
+        `Por favor, eliminen todos mis datos personales y progreso del juego.\n\n` +
+        `Gracias.`
+      );
+      
+      // Abrir cliente de correo
+      window.location.href = `mailto:info@intocables13.com?subject=${subject}&body=${body}`;
+      
+      alert('Se ha abierto tu cliente de correo. Por favor, envía el mensaje para completar la solicitud.');
+      onClose();
     }
   };
 
@@ -97,6 +135,41 @@ export default function SettingsModal({ isOpen, onClose }: SettingsModalProps) {
                 </button>
               </div>
             </div>
+
+            {/* Cuenta - Solo si hay usuario logueado */}
+            {currentUser && (
+              <div className="space-y-4">
+                <h3 className="text-lg font-semibold text-white flex items-center gap-2">
+                  👤 Cuenta
+                </h3>
+                
+                <div className="space-y-3">
+                  {/* Usuario actual */}
+                  <div className="p-4 rounded-xl bg-white/5 border border-white/10">
+                    <p className="text-sm text-gray-400">Usuario:</p>
+                    <p className="text-white font-medium">{currentUser.email}</p>
+                  </div>
+                  
+                  {/* Botón Cerrar sesión */}
+                  <button
+                    onClick={handleLogout}
+                    className="w-full flex items-center justify-center gap-2 p-4 rounded-xl bg-orange-500/20 text-orange-400 border border-orange-400/30 hover:bg-orange-500/30 transition font-medium"
+                  >
+                    <LogOut className="w-5 h-5" />
+                    Cerrar sesión
+                  </button>
+                  
+                  {/* Botón Eliminar cuenta */}
+                  <button
+                    onClick={handleDeleteAccount}
+                    className="w-full flex items-center justify-center gap-2 p-4 rounded-xl bg-red-500/20 text-red-400 border border-red-400/30 hover:bg-red-500/30 transition font-medium"
+                  >
+                    <Trash2 className="w-5 h-5" />
+                    Eliminar cuenta
+                  </button>
+                </div>
+              </div>
+            )}
 
           </div>
 

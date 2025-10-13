@@ -1,4 +1,6 @@
 // Sistema simple de cartas - lee automáticamente todas las cartas disponibles
+import { getAssetPath } from './capacitorApi';
+
 export interface SimpleCard {
   id: string;
   image: string;
@@ -10,33 +12,15 @@ const availableCards: SimpleCard[] = [];
 
 // Función para generar automáticamente la lista de cartas disponibles
 function generateCardList(): string[] {
-  // SOLO las cartas que realmente existen en public/cards/ (sin subcarpetas)
-  // Basado en el listado real del directorio - solo las que existen
-  const existingCards = [
-    'card_001.png',
-    'card_002.png',
-    'card_003.png',
-    'card_004.png',
-    'card_005.png',
-    'card_006.png',
-    'card_007.png',
-    'card_008.png',
-    'card_009.png',
-    'card_010.png',
-    'card_011.png',
-    'card_012.png',
-    'card_013.png',
-    'card_014.png',
-    'card_015.png',
-    'card_016.png',
-    'card_017.png',
-    'card_018.png',
-    'card_019.png',
-    'card_020.png',
-    'card_021.png'
-  ];
+  // Generar lista de 117 cartas disponibles (card_001.png a card_117.png)
+  const existingCards: string[] = [];
   
-  console.log(`🎴 Cartas reales encontradas: ${existingCards.length}`, existingCards);
+  for (let i = 1; i <= 117; i++) {
+    const cardNumber = i.toString().padStart(3, '0');
+    existingCards.push(`card_${cardNumber}.png`);
+  }
+  
+  console.log(`🎴 Cartas reales encontradas: ${existingCards.length}`, existingCards.length);
   return existingCards;
 }
 
@@ -55,7 +39,7 @@ export function loadAvailableCards(): SimpleCard[] {
   
   cardFiles.forEach((fileName, index) => {
     // Usar basePath configurado o fallback a /cards/
-    let basePath = '/sistema_apps_upload/memoflip_static/cards';
+    let basePath = '/sistema_apps_upload/memoflip/cards';
     if (typeof window !== 'undefined') {
       const win = window as unknown as { __MEMOFLIP_CONFIG__?: { cardsPath?: string } };
       if (win.__MEMOFLIP_CONFIG__?.cardsPath) {
@@ -65,7 +49,7 @@ export function loadAvailableCards(): SimpleCard[] {
     
     cards.push({
       id: `card_${index + 1}`,
-      image: `${basePath}/${fileName}`,
+      image: getAssetPath(`${basePath}/${fileName}`),
       fileName: fileName
     });
   });
@@ -145,7 +129,7 @@ export function getRandomCards(pairs: number, isTrio: boolean = false): SimpleCa
 // Función para obtener la portada (logo con fondo naranja)
 export function getRandomPortada(): string {
   // Usar basePath configurado o fallback
-  let basePath = '/sistema_apps_upload/memoflip_static';
+  let basePath = '/sistema_apps_upload/memoflip';
   if (typeof window !== 'undefined') {
     const win = window as unknown as { __MEMOFLIP_CONFIG__?: { basePath?: string } };
     if (win.__MEMOFLIP_CONFIG__?.basePath) {
@@ -153,7 +137,7 @@ export function getRandomPortada(): string {
     }
   }
   
-  return `${basePath}/logo.png`;
+  return '/logo.png';
 }
 
 // Función para obtener estadísticas

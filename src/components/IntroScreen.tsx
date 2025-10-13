@@ -5,6 +5,7 @@ import { motion } from 'framer-motion';
 import { Play, User, LogOut } from 'lucide-react';
 import { useGameStore } from '@/store/gameStore';
 import UserModal from './UserModal';
+import { memoflipApi, getAssetPath } from '@/lib/capacitorApi';
 
 interface IntroScreenProps {
   onStartGame: () => void;
@@ -35,6 +36,30 @@ export default function IntroScreen({
   useEffect(() => {
     setIsClient(true);
     checkSession(); // Verificar sesión al cargar
+    loadProgress(); // Cargar progreso local
+    
+    // Detectar conexión online/offline para sincronizar silenciosamente
+    const updateOnlineStatus = async () => {
+      const online = navigator.onLine;
+      
+      // Si vuelve internet, sincronizar progreso (silencioso, sin logs visibles)
+      if (online) {
+        try {
+          const { syncWhenOnline } = useGameStore.getState();
+          await syncWhenOnline();
+        } catch (error) {
+          console.error('❌ Error sincronizando:', error);
+        }
+      }
+    };
+    
+    window.addEventListener('online', updateOnlineStatus);
+    window.addEventListener('offline', updateOnlineStatus);
+    
+    return () => {
+      window.removeEventListener('online', updateOnlineStatus);
+      window.removeEventListener('offline', updateOnlineStatus);
+    };
   }, []);
 
   // Efecto de cartas cayendo (adaptado del código original)
@@ -72,22 +97,57 @@ export default function IntroScreen({
   // Verificar sesión activa
   const checkSession = async () => {
     try {
-      const basePath = typeof window !== 'undefined' && 
-        (window as unknown as { __MEMOFLIP_CONFIG__?: { basePath?: string } }).__MEMOFLIP_CONFIG__?.basePath || '/sistema_apps_upload/memoflip_static';
-      
-      const response = await fetch(`${basePath}/auth.php?action=check_session`, {
-        method: 'GET',
-        credentials: 'same-origin'
-      });
-
-      const data = await response.json() as SessionUser & { authenticated: boolean };
+      const data = await memoflipApi('auth.php?action=check_session', {
+        method: 'GET'
+      }) as SessionUser & { authenticated: boolean };
 
       if (data.authenticated) {
         console.log('🔐 Sesión activa:', data);
-        setUserInfo(data);
+        await handleLoginSuccess(data);
       } else {
-        console.log('👤 Sin sesión activa');
-        setUserInfo(null);
+        console.log('👤 Sin sesión activa, intentando auto-login...');
+        
+        // ❌ No hay sesión → Intentar AUTO-LOGIN con credenciales guardadas
+        const savedEmail = localStorage.getItem('memoflip_user_email');
+        const savedToken = localStorage.getItem('memoflip_user_token');
+        
+        if (savedEmail && savedToken) {
+          console.log('🔑 Credenciales encontradas, intentando auto-login...');
+          try {
+            const savedPassword = atob(savedToken);
+            const loginResult = await memoflipApi('auth.php', {
+              method: 'POST',
+              body: {
+                action: 'login',
+                email: savedEmail,
+                password: savedPassword
+              }
+            }) as SessionUser & { success?: boolean };
+            
+            if (loginResult && loginResult.success) {
+              console.log('✅ Auto-login exitoso');
+              await handleLoginSuccess(loginResult, savedEmail, savedPassword);
+            } else {
+              // Credenciales inválidas, limpiar
+              console.log('❌ Auto-login falló, limpiando credenciales');
+              localStorage.removeItem('memoflip_user_email');
+              localStorage.removeItem('memoflip_user_token');
+              setUserInfo(null);
+              const { setCurrentUser } = useGameStore.getState();
+              setCurrentUser(null);
+            }
+          } catch (e) {
+            console.log('❌ Error en auto-login:', e);
+            setUserInfo(null);
+            const { setCurrentUser } = useGameStore.getState();
+            setCurrentUser(null);
+          }
+        } else {
+          console.log('🔓 No hay credenciales guardadas');
+          setUserInfo(null);
+          const { setCurrentUser } = useGameStore.getState();
+          setCurrentUser(null);
+        }
       }
     } catch (error) {
       console.error('❌ Error verificando sesión:', error);
@@ -98,21 +158,23 @@ export default function IntroScreen({
   // Cerrar sesión
   const handleLogout = async () => {
     try {
-      const basePath = typeof window !== 'undefined' && 
-        (window as unknown as { __MEMOFLIP_CONFIG__?: { basePath?: string } }).__MEMOFLIP_CONFIG__?.basePath || '/sistema_apps_upload/memoflip_static';
-      
-      const response = await fetch(`${basePath}/auth.php`, {
+      const data = await memoflipApi('auth.php', {
         method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        credentials: 'same-origin',
-        body: JSON.stringify({ action: 'logout' })
-      });
-
-      const data = await response.json() as { success: boolean };
+        body: { action: 'logout' }
+      }) as { success: boolean };
 
       if (data.success) {
         console.log('👋 Sesión cerrada');
+        
+        // Limpiar credenciales de auto-login
+        localStorage.removeItem('memoflip_user_email');
+        localStorage.removeItem('memoflip_user_token');
+        console.log('🗑️ Credenciales eliminadas');
+        
         setUserInfo(null);
+        // Limpiar currentUser del store
+        const { setCurrentUser } = useGameStore.getState();
+        setCurrentUser(null);
         window.location.reload(); // Recargar para limpiar todo
       }
     } catch (error) {
@@ -120,9 +182,94 @@ export default function IntroScreen({
     }
   };
 
-  const handleLoginSuccess = (data: SessionUser) => {
-    console.log('✅ Login exitoso, recargando...');
+  const handleLoginSuccess = async (data: SessionUser, email?: string, password?: string) => {
+    console.log('✅ Login exitoso:', data);
     setUserInfo(data);
+    
+    // 🔐 GUARDAR CREDENCIALES PARA AUTO-LOGIN (solo en APK)
+    if (email && password) {
+      localStorage.setItem('memoflip_user_email', email);
+      localStorage.setItem('memoflip_user_token', btoa(password)); // Base64
+      console.log('🔑 Credenciales guardadas para auto-login');
+    }
+    
+    // Establecer currentUser en el store
+    const { useGameStore } = await import('@/store/gameStore');
+    const { setCurrentUser, setCurrentLevel, setCoins, setLives, getProgress } = useGameStore.getState();
+    
+    // Obtener datos del servidor
+    const serverLevel = data.game_data?.max_level_unlocked || 1;
+    const serverCoins = data.game_data?.coins_total || 0;
+    const serverLives = data.game_data?.lives_current || 3;
+    
+    // Obtener progreso local (por si jugó offline)
+    const localProgress = getProgress();
+    
+    // 🔀 MERGE INTELIGENTE: Usar el progreso más avanzado
+    const finalLevel = Math.max(serverLevel, localProgress.level);
+    const finalCoins = Math.max(serverCoins, localProgress.coins);
+    const finalLives = serverLives; // Vidas siempre del servidor
+    
+    console.log('📊 Merge progreso:', { 
+      servidor: { level: serverLevel, coins: serverCoins },
+      local: { level: localProgress.level, coins: localProgress.coins },
+      final: { level: finalLevel, coins: finalCoins }
+    });
+    
+    // Crear objeto User para el store
+    const user = {
+      id: data.email,
+      nickname: data.nombre || data.email.split('@')[0],
+      name: data.nombre || data.email.split('@')[0],
+      email: data.email,
+      createdAt: Date.now(),
+      lastLogin: Date.now(),
+      isGuest: false,
+      progress: {
+        level: finalLevel,
+        coins: finalCoins,
+        lives: finalLives,
+        lastPlayed: Date.now(),
+        totalScore: finalCoins,
+        phase: Math.ceil(finalLevel / 50)
+      }
+    };
+    
+    // Establecer usuario Y progreso en el store
+    setCurrentUser(user);
+    setCurrentLevel(finalLevel);
+    setCoins(finalCoins);
+    setLives(finalLives);
+    
+    console.log('✅ Progreso establecido en store:', { 
+      level: finalLevel, 
+      coins: finalCoins, 
+      lives: finalLives 
+    });
+    
+    // Guardar en localStorage
+    localStorage.setItem('memoflip_progress', JSON.stringify({
+      level: finalLevel,
+      coins: finalCoins,
+      lives: finalLives,
+      lastPlayed: Date.now(),
+      totalScore: finalCoins,
+      phase: Math.ceil(finalLevel / 50)
+    }));
+    
+    // Si el progreso local es mayor, sincronizar al servidor
+    if (finalLevel > serverLevel || finalCoins > serverCoins) {
+      console.log('📤 Progreso local más avanzado, sincronizando al servidor...');
+      try {
+        const { saveProgressToServer } = useGameStore.getState();
+        await saveProgressToServer();
+        console.log('✅ Progreso offline sincronizado al servidor');
+      } catch (error) {
+        console.error('❌ Error sincronizando progreso:', error);
+      }
+    }
+    
+    console.log('💾 Login y sincronización completos');
   };
 
   return (
@@ -165,7 +312,7 @@ export default function IntroScreen({
             {/* Logo */}
             <div className="flex justify-center mb-6">
               <img 
-                src="/logo.png" 
+                src="/logo.png"
                 alt="MemoFlip" 
                 className="max-w-48 h-auto drop-shadow-lg"
                 style={{ filter: 'drop-shadow(0 4px 8px rgba(0,0,0,0.3))' }}
@@ -202,7 +349,7 @@ export default function IntroScreen({
               <Play className="w-6 h-6" />
               {userInfo ? 'CONTINUAR' : 'JUGAR'}
             </motion.button>
-
+            
             {/* Separador y texto */}
             {!userInfo && (
               <div className="text-center space-y-3">

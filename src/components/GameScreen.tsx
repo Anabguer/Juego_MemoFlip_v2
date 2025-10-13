@@ -30,6 +30,7 @@ import { getColorThemeForLevel, getBossColorTheme, isBossLevel, ColorTheme } fro
 import LevelCompleteModal from './LevelCompleteModal';
 import NoLivesModal from './NoLivesModal';
 import { adService, showRewardNotification } from '@/lib/adService';
+import { useAppState } from '@/hooks/useAppState';
 
 interface GameScreenProps {
   level: number;
@@ -38,7 +39,7 @@ interface GameScreenProps {
   onLevelFail: () => void;
 }
 
-export default function GameScreen({ level: propLevel, onBack, onLevelComplete, onLevelFail }: GameScreenProps) {
+export default function GameScreen({ level: propLevel, onBack, onLevelComplete }: GameScreenProps) {
   // 🎮 MEMOFLIP NEXTJS - COMPONENTE DE JUEGO CORRECTO - VERSIÓN COMPLETA
   // ✅ Este es el componente de juego principal con todas las mecánicas
   // ✅ Incluye: tríos, pares, rotación, peek, frozen, bomb, chameleon
@@ -124,7 +125,7 @@ export default function GameScreen({ level: propLevel, onBack, onLevelComplete, 
   const [showLevelFailedModal, setShowLevelFailedModal] = useState(false);
   const [showGameOverModal, setShowGameOverModal] = useState(false);
   const [themeConfig, setThemeConfig] = useState<Record<string, unknown> | null>(null);
-  const [themeBackImage, setThemeBackImage] = useState<string>('/logo.png');
+  const [themeBackImage, setThemeBackImage] = useState<string>('/sistema_apps_upload/memoflip/logo.png');
   const [colorTheme, setColorTheme] = useState<ColorTheme | null>(null);
   const [hasStarted, setHasStarted] = useState(false);
   const [earnedCoins, setEarnedCoins] = useState(0);
@@ -305,9 +306,18 @@ export default function GameScreen({ level: propLevel, onBack, onLevelComplete, 
     }
   }, [lives, showGameOverModal, showNoLivesModal]);
 
+  // Ref para el audio de fondo (para useAppState)
+  const bgAudioRef = useRef<HTMLAudioElement | null>(null);
+
+  // Usar hook para pausar audio al minimizar app (solo en APK)
+  useAppState(bgAudioRef);
+
   // Inicializar sistema de sonidos
   useEffect(() => {
     soundSystem.initialize().then(() => {
+      // Obtener referencia al audio de fondo
+      bgAudioRef.current = soundSystem.getBackgroundAudioElement() || null;
+      
       // Iniciar música de fondo cuando se inicializa el juego
       soundSystem.playBackgroundMusic();
     });
@@ -1183,14 +1193,26 @@ export default function GameScreen({ level: propLevel, onBack, onLevelComplete, 
   };
 
   // Manejar acciones del modal
-  const handleNextLevel = () => {
+  const handleNextLevel = async () => {
     // Avanzando al siguiente nivel
     
     // Añadir las monedas ya calculadas
     addCoins(earnedCoins);
     
     setShowLevelCompleteModal(false);
-    onLevelComplete(); // Esto debería actualizar el nivel en el componente padre
+    onLevelComplete(); // Esto actualiza el nivel en el componente padre
+    
+    // Esperar un tick para que el nivel se actualice en el store
+    await new Promise(resolve => setTimeout(resolve, 100));
+    
+    // Guardar progreso en el servidor DESPUÉS de actualizar el nivel
+    try {
+      const { saveProgressToServer } = useGameStore.getState();
+      await saveProgressToServer();
+      console.log('💾 Progreso guardado en servidor (nivel actualizado)');
+    } catch (error) {
+      console.error('❌ Error guardando progreso:', error);
+    }
   };
 
   const handlePlayAgain = () => {
@@ -1364,7 +1386,7 @@ export default function GameScreen({ level: propLevel, onBack, onLevelComplete, 
          }
       `}</style>
       <div 
-        className="min-h-screen relative overflow-hidden"
+        className="relative"
         style={{
           background: 'linear-gradient(135deg, #312e81, #581c87, #0f172a)',
           color: '#e5e7eb',
@@ -1372,17 +1394,23 @@ export default function GameScreen({ level: propLevel, onBack, onLevelComplete, 
           display: 'flex',
           alignItems: 'flex-start',
           justifyContent: 'center',
-          paddingTop: '0.5rem'
+          paddingTop: '0.5rem',
+          height: '100vh',
+          width: '100vw',
+          overflow: 'hidden',
+          position: 'fixed',
+          top: 0,
+          left: 0
         }}
       >
-      <div className="w-full p-4">
-        <div className="max-w-4xl mx-auto w-full">
+      <div className="w-full h-full overflow-y-auto" style={{ padding: '0.5rem 1rem' }}>
+        <div className="max-w-4xl mx-auto w-full" style={{ maxHeight: '100%' }}>
           {/* Fila 1: Logo centrado + controles a la derecha */}
           <div className="flex justify-between items-start mb-3 -mt-3">
             {/* Espacio vacío a la izquierda para centrar el logo */}
             <div className="w-16"></div>
             
-            {/* Logo centrado y más grande */}
+            {/* Logo centrado 128x128 */}
             <img 
               src="/logo.png" 
               alt="MemoFlip" 
@@ -1390,7 +1418,7 @@ export default function GameScreen({ level: propLevel, onBack, onLevelComplete, 
             />
             
          {/* Trofeo, sonido y engranaje a la derecha */}
-        <div className="flex items-center gap-2">
+        <div className="flex items-center gap-2" style={{ marginTop: '2rem' }}>
            <button
              onClick={() => setShowRankingModal(true)}
              className="p-2 rounded-xl bg-white/10 border border-white/20 hover:bg-white/20 transition"
@@ -1652,8 +1680,8 @@ export default function GameScreen({ level: propLevel, onBack, onLevelComplete, 
                               src={themeBackImage} 
                               alt="MemoFlip" 
                         style={{
-                                width: '64px',
-                                height: '64px',
+                                width: '90%',
+                                height: '90%',
                                 objectFit: 'contain',
                                 display: 'block',
                                 userSelect: 'none',
@@ -1781,38 +1809,32 @@ export default function GameScreen({ level: propLevel, onBack, onLevelComplete, 
             />
             
             {/* Modal */}
-            <div className="relative z-10 w-full max-w-md mx-4">
+            <div className="relative z-10 w-full max-w-sm mx-4">
               <div className="bg-gradient-to-br from-slate-800 via-purple-900 to-slate-900 rounded-2xl border border-white/20 shadow-2xl overflow-hidden">
                 {/* Header */}
-                <div className="flex items-center justify-between p-4 border-b border-white/10">
+                <div className="flex items-center justify-center p-3 border-b border-white/10">
                   <div className="flex items-center gap-2">
                     <div className="p-1.5 rounded-lg bg-white/10 border border-white/20">
-                      <Trophy className="w-5 h-5 text-yellow-400" />
+                      <Trophy className="w-4 h-4 text-yellow-400" />
                     </div>
-                    <h2 className="text-xl font-bold text-white">¡Nivel Superado!</h2>
+                    <h2 className="text-lg font-bold text-white">¡Nivel Superado!</h2>
                   </div>
-                  <button
-                    onClick={() => setShowLevelCompleteModal(false)}
-                    className="p-1.5 rounded-lg bg-white/10 border border-white/20 hover:bg-white/20 transition"
-                  >
-                    <X className="w-4 h-4 text-white" />
-                  </button>
       </div>
 
                 {/* Content */}
-                <div className="p-6 text-center">
+                <div className="p-4 text-center">
                   {/* Animación Lottie */}
                   <div className="flex justify-center mb-4">
                     <Lottie 
                       animationData={partidaGanadaAnimation}
                       loop={false}
                       autoplay={true}
-                      style={{ width: '150px', height: '150px' }}
+                      style={{ width: '120px', height: '120px' }}
                     />
           </div>
                   
                   {/* Estadísticas */}
-                  <div className="space-y-3 mb-6">
+                  <div className="space-y-2 mb-4">
                     <div className="flex items-center justify-center gap-2 text-sm text-gray-300">
                       <Clock className="w-4 h-4" />
                       <span>Tiempo: <span className="font-semibold text-white">{formatTime(actualGameTime)}</span></span>
@@ -1852,32 +1874,26 @@ export default function GameScreen({ level: propLevel, onBack, onLevelComplete, 
             />
             
             {/* Modal */}
-            <div className="relative z-10 w-full max-w-md mx-4">
+            <div className="relative z-10 w-full max-w-sm mx-4">
               <div className="bg-gradient-to-br from-slate-800 via-red-900 to-slate-900 rounded-2xl border border-white/20 shadow-2xl overflow-hidden">
                 {/* Header */}
-                <div className="flex items-center justify-between p-3 border-b border-white/10">
+                <div className="flex items-center justify-center p-2 border-b border-white/10">
                   <div className="flex items-center gap-2">
                     <div className="p-1 rounded-lg bg-white/10 border border-white/20">
                       <Heart className="w-4 h-4 text-red-400" />
                     </div>
-                    <h2 className="text-lg font-bold text-white">¡Tiempo Agotado!</h2>
+                    <h2 className="text-base font-bold text-white">¡Tiempo Agotado!</h2>
                   </div>
-                  <button
-                    onClick={() => setShowLevelFailedModal(false)}
-                    className="p-1 rounded-lg bg-white/10 border border-white/20 hover:bg-white/20 transition"
-                  >
-                    <X className="w-3 h-3 text-white" />
-                  </button>
                 </div>
 
                 {/* Content */}
-                <div className="p-4 text-center">
+                <div className="p-3 text-center">
                   {/* Corazón roto con temblor */}
                   <div className="flex justify-center mb-3">
                     <div 
                       className="text-red-500"
                       style={{
-                        fontSize: '80px',
+                        fontSize: '60px',
                         animation: 'shake 0.5s ease-in-out infinite alternate',
                         filter: 'drop-shadow(0 0 10px rgba(239, 68, 68, 0.5))'
                       }}
@@ -1967,7 +1983,8 @@ export default function GameScreen({ level: propLevel, onBack, onLevelComplete, 
       {/* Modales */}
       <SettingsModal 
         isOpen={showSettingsModal} 
-        onClose={() => setShowSettingsModal(false)} 
+        onClose={() => setShowSettingsModal(false)}
+        onLogout={onBack}
       />
       
       <RankingModal 

@@ -1,11 +1,18 @@
 import { CapacitorConfig } from '@capacitor/cli';
 
 const config: CapacitorConfig = {
-  appId: 'com.intocables13.memoflip',
-  appName: 'MemoFlip Neo',
+  appId: 'com.memoflip.app',
+  appName: 'MemoFlip',
   webDir: 'out',
   server: {
     androidScheme: 'https'
+  },
+  plugins: {
+    SplashScreen: {
+      launchShowDuration: 2000,
+      backgroundColor: "#1a1a2e",
+      showSpinner: false
+    }
   }
 };
 

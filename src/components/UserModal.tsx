@@ -2,6 +2,7 @@
 
 import { useState } from 'react';
 import { X, User, Mail, Lock, UserPlus, LogIn } from 'lucide-react';
+import { memoflipApi } from '@/lib/capacitorApi';
 
 interface SessionUser {
   email: string;
@@ -18,7 +19,7 @@ interface SessionUser {
 interface UserModalProps {
   isOpen: boolean;
   onClose: () => void;
-  onLoginSuccess: (userData: SessionUser) => void;
+  onLoginSuccess: (userData: SessionUser, email: string, password: string) => void;
 }
 
 export default function UserModal({ isOpen, onClose, onLoginSuccess }: UserModalProps) {
@@ -50,9 +51,6 @@ export default function UserModal({ isOpen, onClose, onLoginSuccess }: UserModal
     setIsSubmitting(true);
 
     try {
-      const basePath = typeof window !== 'undefined' && 
-        (window as unknown as { __MEMOFLIP_CONFIG__?: { basePath?: string } }).__MEMOFLIP_CONFIG__?.basePath || '/sistema_apps_upload/memoflip_static';
-      
       const action = activeTab === 'login' ? 'login' : 'register';
       const body: Record<string, string> = {
         action,
@@ -65,18 +63,14 @@ export default function UserModal({ isOpen, onClose, onLoginSuccess }: UserModal
         body.nick = formData.nick.trim();
       }
 
-      const response = await fetch(`${basePath}/auth.php`, {
+      const data = await memoflipApi('auth.php', {
         method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        credentials: 'same-origin',
-        body: JSON.stringify(body)
-      });
-
-      const data = await response.json() as SessionUser & { success?: boolean; error?: string; message?: string };
+        body: body
+      }) as SessionUser & { success?: boolean; error?: string; message?: string };
 
       if (data.success) {
         console.log('✅ Autenticación exitosa:', data);
-        onLoginSuccess(data);
+        onLoginSuccess(data, formData.email, formData.password);
         onClose();
         // Recargar página para actualizar sesión
         window.location.reload();

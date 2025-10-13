@@ -43,10 +43,10 @@ const NoLivesModal: React.FC<NoLivesModalProps> = ({ isOpen, onClose, onWatchAd 
       />
       
       {/* Modal */}
-      <div className="relative z-10 w-full max-w-md mx-4">
+      <div className="relative z-10 w-full max-w-sm mx-4">
         <div className="bg-gradient-to-br from-slate-800 via-red-900 to-slate-900 rounded-2xl border border-white/20 shadow-2xl overflow-hidden">
           {/* Header */}
-          <div className="flex items-center justify-between p-3 border-b border-white/10">
+          <div className="flex items-center justify-between p-2 border-b border-white/10">
             <div className="flex items-center gap-2">
               <div className="p-1 rounded-lg bg-white/10 border border-white/20">
                 <Heart className="w-4 h-4 text-red-400" />
@@ -62,13 +62,13 @@ const NoLivesModal: React.FC<NoLivesModalProps> = ({ isOpen, onClose, onWatchAd 
           </div>
 
           {/* Content */}
-          <div className="p-4 text-center">
+          <div className="p-3 text-center">
             {/* Corazón roto con temblor */}
             <div className="flex justify-center mb-3">
               <div 
                 className="text-red-500"
                 style={{
-                  fontSize: '80px',
+                  fontSize: '60px',
                   animation: 'shake 0.5s ease-in-out infinite alternate',
                   filter: 'drop-shadow(0 0 10px rgba(239, 68, 68, 0.5))'
                 }}
@@ -78,18 +78,18 @@ const NoLivesModal: React.FC<NoLivesModalProps> = ({ isOpen, onClose, onWatchAd 
             </div>
             
             {/* Información */}
-            <div className="space-y-2 mb-4">
-              <p className="text-gray-300 text-sm">
+            <div className="space-y-2 mb-3">
+                <p className="text-gray-300 text-xs">
                 Te has quedado sin vidas. Puedes esperar o ver un anuncio.
               </p>
               
               {/* Información de regeneración */}
-              <div className="bg-white/10 rounded-lg p-3">
+              <div className="bg-white/10 rounded-lg p-2">
                 <div className="flex items-center justify-center gap-2 mb-1">
                   <span className="text-lg">⏰</span>
-                  <span className="font-semibold text-white text-sm">Próxima vida en:</span>
+                  <span className="font-semibold text-white text-xs">Próxima vida en:</span>
                 </div>
-                <div className="text-xl font-bold text-blue-400">
+                <div className="text-lg font-bold text-blue-400">
                   {formatTime(timeUntilNextLife)}
                 </div>
                 <p className="text-xs text-gray-400 mt-1">
