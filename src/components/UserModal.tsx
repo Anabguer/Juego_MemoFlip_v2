@@ -95,19 +95,19 @@ export default function UserModal({ isOpen, onClose, onLoginSuccess }: UserModal
         email_sent?: boolean;
       };
 
+      console.log('🔍 Respuesta completa del servidor:', data);
+      console.log('🔍 success:', data.success);
+      console.log('🔍 requires_verification:', data.requires_verification);
+
       if (data.success) {
         // Si es registro y requiere verificación
         if (activeTab === 'register' && data.requires_verification) {
           console.log('📧 Registro exitoso, se requiere verificación');
           setRegisteredEmail(formData.email);
           setShowVerification(true);
-          setErrors({ 
-            general: data.email_sent 
-              ? '✅ Te hemos enviado un código de verificación a tu email' 
-              : '⚠️ Registro exitoso. Por favor, verifica tu email.'
-          });
+          // NO mostrar mensaje de éxito aquí, se mostrará en el modal de verificación
         } else {
-          // Login normal
+          // Login normal o registro sin verificación
           console.log('✅ Autenticación exitosa:', data);
           onLoginSuccess(data, formData.email, formData.password);
           onClose();
@@ -125,13 +125,38 @@ export default function UserModal({ isOpen, onClose, onLoginSuccess }: UserModal
     }
   };
 
-  const handleVerificationSuccess = () => {
-    console.log('✅ Verificación exitosa, cerrando modales');
+  const handleVerificationSuccess = async () => {
+    console.log('✅ Verificación exitosa, haciendo auto-login...');
     setShowVerification(false);
-    onClose();
-    // Opcional: auto-login después de verificación
-    // o mostrar mensaje de éxito
-    alert('¡Cuenta verificada! Ya puedes iniciar sesión.');
+    
+    // AUTO-LOGIN automático después de verificación
+    try {
+      const loginData = await memoflipApi('auth.php', {
+        method: 'POST',
+        body: {
+          action: 'login',
+          email: registeredEmail,
+          password: formData.password
+        }
+      }) as SessionUser & { success?: boolean; error?: string };
+      
+      if (loginData.success) {
+        console.log('✅ Auto-login exitoso después de verificación');
+        onLoginSuccess(loginData, registeredEmail, formData.password);
+        onClose();
+        window.location.reload();
+      } else {
+        // Si falla auto-login, mostrar mensaje y dejar que entre manualmente
+        alert('¡Cuenta verificada! Ya puedes iniciar sesión.');
+        setActiveTab('login');
+        onClose();
+      }
+    } catch (error) {
+      console.error('❌ Error en auto-login:', error);
+      alert('¡Cuenta verificada! Ya puedes iniciar sesión.');
+      setActiveTab('login');
+      onClose();
+    }
   };
 
   const handleInputChange = (field: string, value: string) => {

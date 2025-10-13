@@ -45,11 +45,11 @@ export default function VerificationModal({
       }) as { success: boolean; message?: string; error?: string };
 
       if (data.success) {
-        setSuccess('¡Cuenta verificada correctamente!');
+        setSuccess('¡Cuenta verificada! Iniciando sesión...');
+        setCodigo(''); // Limpiar código
         setTimeout(() => {
           onVerificationSuccess();
-          onClose();
-        }, 1500);
+        }, 1000);
       } else {
         setError(data.error || 'Código incorrecto');
       }
