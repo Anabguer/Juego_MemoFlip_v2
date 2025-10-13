@@ -6,29 +6,27 @@ Sistema completo de verificación de cuentas por email con código de 6 dígitos
 
 ---
 
-## 🗄️ **1. CAMBIOS EN LA BASE DE DATOS**
+## 🗄️ **1. ESTRUCTURA DE BASE DE DATOS (YA EXISTENTE)**
 
-### **Archivo:** `PARA_HOSTALIA/agregar_verificacion_email.sql`
+### **Columnas de verificación en `usuarios_aplicaciones`:**
+
+La tabla **YA TIENE** las columnas necesarias para verificación:
 
 ```sql
--- Agregar columnas a usuarios_aplicaciones
-ALTER TABLE usuarios_aplicaciones 
-ADD COLUMN email_verificado TINYINT(1) DEFAULT 0,
-ADD COLUMN codigo_verificacion VARCHAR(10) DEFAULT NULL,
-ADD COLUMN tiempo_verificacion TIMESTAMP NULL DEFAULT NULL,
-ADD COLUMN intentos_verificacion INT DEFAULT 0;
+-- COLUMNAS EXISTENTES (NO crear nuevas)
+verification_code      VARCHAR(6)    -- Código de 6 dígitos
+verification_expiry    DATETIME      -- Fecha/hora de expiración
+verified_at           TIMESTAMP     -- Timestamp cuando se verificó
 ```
 
-### **Ejecutar en Hostalia:**
-1. Subir el archivo SQL a phpMyAdmin
-2. Ejecutar el script
-3. Verificar que las columnas se crearon correctamente
+### **NO ES NECESARIO ejecutar ningún SQL**
+Las columnas ya existen en la tabla. Solo usar las existentes.
 
 ---
 
 ## 📧 **2. SISTEMA DE ENVÍO DE EMAILS**
 
-### **Archivo:** `PARA_HOSTALIA/sistema_apps_api/memoflip/enviar_email.php`
+### **Archivo:** `api/enviar_email.php`
 
 **Funciones principales:**
 
@@ -41,9 +39,9 @@ ADD COLUMN intentos_verificacion INT DEFAULT 0;
 - Genera código aleatorio de 6 dígitos
 - Formato: `123456`
 
-#### `codigoEsValido($tiempo_verificacion, $horas_validez = 24)`
+#### `codigoEsValido($verification_expiry)`
 - Verifica si un código ha expirado
-- Por defecto: 24 horas de validez
+- Compara `verification_expiry` (datetime) con el timestamp actual
 
 ---
 
@@ -209,11 +207,11 @@ interface VerificationModalProps {
 
 ## 📊 **6. ESTADOS DE USUARIO**
 
-| Estado | `activo` | `email_verificado` | ¿Puede login? |
-|--------|----------|-------------------|---------------|
-| **Recién registrado** | 0 | 0 | ❌ No |
-| **Email verificado** | 1 | 1 | ✅ Sí |
-| **Usuario antiguo** | 1 | 1 | ✅ Sí |
+| Estado | `activo` | `verified_at` | `verification_code` | ¿Puede login? |
+|--------|----------|---------------|-------------------|---------------|
+| **Recién registrado** | 0 | NULL | 123456 | ❌ No |
+| **Email verificado** | 1 | 2024-10-13 10:30:00 | NULL | ✅ Sí |
+| **Usuario antiguo** | 1 | 2024-01-01 00:00:00 | NULL | ✅ Sí |
 
 ---
 
@@ -321,7 +319,7 @@ El email enviado incluye:
 - Revisar campo `codigo_verificacion` en BD
 
 ### **Usuario no puede hacer login:**
-- Verificar campo `email_verificado = 1`
+- Verificar campo `verified_at` NO es NULL
 - Verificar campo `activo = 1`
 - Comprobar que la contraseña sea correcta
 
@@ -329,13 +327,19 @@ El email enviado incluye:
 
 ## 📝 **12. NOTAS IMPORTANTES**
 
+⚠️ **Columnas usadas:**
+El sistema usa las columnas EXISTENTES en la tabla:
+- `verification_code` (varchar 6) - Código de 6 dígitos
+- `verification_expiry` (datetime) - Fecha/hora de expiración
+- `verified_at` (timestamp) - Cuándo se verificó
+
 ⚠️ **Usuarios existentes:**
-Los usuarios que ya estaban registrados se marcan automáticamente como `email_verificado = 1` al ejecutar el script SQL.
+Los usuarios que ya estaban registrados tienen `verified_at` con una fecha, por lo que pueden hacer login sin problemas.
 
 ⚠️ **Seguridad:**
 - Los códigos se guardan en texto plano (no es crítico, solo son válidos 24h)
-- Se registran los intentos fallidos en `intentos_verificacion`
-- Posible mejora: limitar intentos (ej: 5 intentos máximo)
+- El código expira automáticamente según `verification_expiry`
+- Posible mejora futura: limitar intentos de verificación
 
 ⚠️ **Modo desarrollo:**
 Si el email falla al enviarse, el código se devuelve en la respuesta JSON (solo para testing).
@@ -344,20 +348,20 @@ Si el email falla al enviarse, el código se devuelve en la respuesta JSON (solo
 
 ## ✅ **13. CHECKLIST DE IMPLEMENTACIÓN**
 
-- [ ] Ejecutar SQL en Hostalia
-- [ ] Subir `enviar_email.php`
-- [ ] Reemplazar `auth.php` con versión nueva
-- [ ] Añadir `VerificationModal.tsx`
-- [ ] Modificar `UserModal.tsx`
-- [ ] Compilar React
-- [ ] Subir a Hostalia
-- [ ] Probar registro completo
-- [ ] Verificar envío de email
-- [ ] Probar código correcto
-- [ ] Probar código incorrecto
-- [ ] Probar código expirado
-- [ ] Probar reenvío de código
-- [ ] Verificar que login requiere verificación
+- [x] ✅ Columnas existentes verificadas (`verification_code`, `verification_expiry`, `verified_at`)
+- [x] ✅ Columnas duplicadas eliminadas
+- [x] ✅ `enviar_email.php` corregido y subido
+- [x] ✅ `auth.php` corregido y subido
+- [x] ✅ `VerificationModal.tsx` creado
+- [x] ✅ `UserModal.tsx` modificado
+- [x] ✅ Build React compilado y subido
+- [ ] 🧪 Probar registro completo
+- [ ] 🧪 Verificar envío de email
+- [ ] 🧪 Probar código correcto
+- [ ] 🧪 Probar código incorrecto
+- [ ] 🧪 Probar código expirado
+- [ ] 🧪 Probar reenvío de código
+- [ ] 🧪 Verificar que login requiere verificación
 
 ---
 

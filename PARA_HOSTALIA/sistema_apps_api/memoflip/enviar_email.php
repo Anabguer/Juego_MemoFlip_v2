@@ -85,21 +85,18 @@ function generarCodigoVerificacion() {
 
 /**
  * Verificar si un código es válido (no expirado)
- * @param string $tiempo_verificacion - Timestamp cuando se generó el código
- * @param int $horas_validez - Horas de validez del código (default: 24)
+ * @param string $verification_expiry - DateTime cuando expira el código
  * @return bool
  */
-function codigoEsValido($tiempo_verificacion, $horas_validez = 24) {
-    if (empty($tiempo_verificacion)) {
+function codigoEsValido($verification_expiry) {
+    if (empty($verification_expiry)) {
         return false;
     }
     
-    $timestamp_generacion = strtotime($tiempo_verificacion);
+    $timestamp_expiracion = strtotime($verification_expiry);
     $timestamp_actual = time();
-    $segundos_transcurridos = $timestamp_actual - $timestamp_generacion;
-    $segundos_validez = $horas_validez * 3600;
     
-    return $segundos_transcurridos <= $segundos_validez;
+    return $timestamp_actual < $timestamp_expiracion;
 }
 ?>
 

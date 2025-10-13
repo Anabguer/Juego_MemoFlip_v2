@@ -61,3 +61,7 @@ next-env.d.ts
 
 # Cache
 .cache/
+
+# APK files (too large for GitHub)
+*.apk
+android/app/build/
