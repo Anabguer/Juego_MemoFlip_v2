@@ -30,8 +30,10 @@ export default function IntroScreen({
   const [isClient, setIsClient] = useState(false);
   const [showUserModal, setShowUserModal] = useState(false);
   const [userInfo, setUserInfo] = useState<SessionUser | null>(null);
-  const { loadProgress, getProgress } = useGameStore();
-  const progress = getProgress();
+  
+  // ✅ Usar valores REACTIVOS del store en vez de getProgress()
+  const { loadProgress, currentLevel, coins } = useGameStore();
+  const progress = { level: currentLevel, coins }; // ← REACTIVO a cambios del store
 
   useEffect(() => {
     setIsClient(true);
