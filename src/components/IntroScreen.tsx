@@ -172,20 +172,27 @@ export default function IntroScreen({
         } else {
           console.log('🔓 No hay credenciales guardadas - Modo invitado');
           setUserInfo(null);
-          const { setCurrentUser } = useGameStore.getState();
+          const { setCurrentUser, setCurrentLevel, setCoins, setLives } = useGameStore.getState();
           setCurrentUser(null);
           
-          // 🎮 CARGAR PROGRESO LOCAL para modo invitado
-          loadProgress();
-          console.log('📊 Progreso local cargado para invitado');
+          // ✅ RESETEAR a valores iniciales limpios (NO cargar localStorage viejo)
+          setCurrentLevel(1);
+          setCoins(0);
+          setLives(3);
+          console.log('🔄 Modo invitado - progreso limpio desde nivel 1');
         }
       }
     } catch (error) {
       console.error('❌ Error verificando sesión:', error);
       setUserInfo(null);
       
-      // 🎮 En caso de error, cargar progreso local
-      loadProgress();
+      // ✅ En caso de error, resetear a limpio (NO cargar localStorage viejo)
+      const { setCurrentUser, setCurrentLevel, setCoins, setLives } = useGameStore.getState();
+      setCurrentUser(null);
+      setCurrentLevel(1);
+      setCoins(0);
+      setLives(3);
+      console.log('🔄 Error de sesión - progreso reseteado');
     }
   };
 
