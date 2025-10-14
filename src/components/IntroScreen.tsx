@@ -242,7 +242,7 @@ export default function IntroScreen({
     
     // Crear objeto User para el store
     const user = {
-      id: data.email,
+      id: `${data.email}_memoflip`, // ✅ IMPORTANTE: añadir sufijo _memoflip para coincidir con BD
       nickname: data.nombre || data.email.split('@')[0],
       name: data.nombre || data.email.split('@')[0],
       email: data.email,
