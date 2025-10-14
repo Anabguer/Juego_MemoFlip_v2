@@ -115,7 +115,17 @@ export default function UserModal({ isOpen, onClose, onLoginSuccess }: UserModal
           window.location.reload();
         }
       } else {
-        setErrors({ general: data.error || data.message || 'Error en autenticación' });
+        // ✅ DETECTAR si el error es por email no verificado
+        const errorMsg = data.error || data.message || 'Error en autenticación';
+        
+        if (errorMsg.toLowerCase().includes('verificar') || errorMsg.toLowerCase().includes('verify')) {
+          console.log('📧 Login bloqueado: email no verificado. Abriendo modal de verificación...');
+          setRegisteredEmail(formData.email);
+          setShowVerification(true);
+          setErrors({}); // Limpiar errores
+        } else {
+          setErrors({ general: errorMsg });
+        }
       }
     } catch (error) {
       console.error('❌ Error en autenticación:', error);
