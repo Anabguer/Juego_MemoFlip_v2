@@ -29,7 +29,7 @@ import { getRandomCards, getRandomPortada, loadAvailableCards } from '@/lib/simp
 import { getColorThemeForLevel, getBossColorTheme, isBossLevel, ColorTheme } from '@/data/colorThemes';
 import LevelCompleteModal from './LevelCompleteModal';
 import NoLivesModal from './NoLivesModal';
-import { showRewardedAd } from '@/lib/adService';
+import { showRewardedAd, showBottomBanner } from '@/lib/adService';
 import { useAppState } from '@/hooks/useAppState';
 
 interface GameScreenProps {
@@ -91,6 +91,11 @@ export default function GameScreen({ level: propLevel, onBack, onLevelComplete }
     }, 60000); // Cada minuto
 
     return () => clearInterval(interval);
+  }, []);
+
+  // 🎯 Mostrar banner de AdMob cuando se monta GameScreen
+  useEffect(() => {
+    showBottomBanner().catch(err => console.warn('[GameScreen] Banner no disponible:', err));
   }, []);
 
   // Actualizar levelConfig cuando cambie el nivel

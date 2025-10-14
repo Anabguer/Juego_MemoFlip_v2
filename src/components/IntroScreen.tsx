@@ -141,19 +141,31 @@ export default function IntroScreen({
               console.log('✅ Auto-login exitoso');
               await handleLoginSuccess(loginResult, savedEmail, savedPassword);
             } else {
-              // Credenciales inválidas, limpiar
-              console.log('❌ Auto-login falló, limpiando credenciales');
+              // Credenciales inválidas, limpiar TODO
+              console.log('❌ Auto-login falló, limpiando TODO');
               localStorage.removeItem('memoflip_user_email');
               localStorage.removeItem('memoflip_user_token');
+              localStorage.removeItem('memoflip_progress'); // ✅ Limpiar progreso viejo
               setUserInfo(null);
-              const { setCurrentUser } = useGameStore.getState();
+              const { setCurrentUser, setCurrentLevel, setCoins, setLives } = useGameStore.getState();
               setCurrentUser(null);
+              setCurrentLevel(1); // ✅ Resetear a inicial
+              setCoins(0);
+              setLives(3);
+              console.log('🔄 Progreso reseteado - usuario no existe en BD');
             }
           } catch (e) {
             console.log('❌ Error en auto-login:', e);
+            localStorage.removeItem('memoflip_user_email');
+            localStorage.removeItem('memoflip_user_token');
+            localStorage.removeItem('memoflip_progress'); // ✅ Limpiar progreso viejo
             setUserInfo(null);
-            const { setCurrentUser } = useGameStore.getState();
+            const { setCurrentUser, setCurrentLevel, setCoins, setLives } = useGameStore.getState();
             setCurrentUser(null);
+            setCurrentLevel(1); // ✅ Resetear a inicial
+            setCoins(0);
+            setLives(3);
+            console.log('🔄 Progreso reseteado - error de conexión');
           }
         } else {
           console.log('🔓 No hay credenciales guardadas - Modo invitado');
