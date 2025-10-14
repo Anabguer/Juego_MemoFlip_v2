@@ -1,6 +1,6 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { getAllLevels, getLevelFromJson, LevelData } from '@/data/levels';
 import { getMechanicIcon } from '@/lib/mechanics';
 
@@ -12,7 +12,11 @@ interface LevelSelectorProps {
 export default function LevelSelector({ onLevelSelect, onBack }: LevelSelectorProps) {
   const [selectedLevel, setSelectedLevel] = useState<number | null>(null);
   const [currentPhase, setCurrentPhase] = useState(1);
-  const allLevels = getAllLevels();
+  const [allLevels, setAllLevels] = useState<LevelData[]>([]);
+  
+  useEffect(() => {
+    getAllLevels().then(setAllLevels);
+  }, []);
   
   // Filtrar niveles por fase actual
   const levelsInCurrentPhase = allLevels.filter(level => level.phase === currentPhase);
@@ -118,9 +122,9 @@ export default function LevelSelector({ onLevelSelect, onBack }: LevelSelectorPr
 
           {/* Level Details */}
           <div className="lg:col-span-1">
-            {selectedLevel ? (
+            {selectedLevel && allLevels.length > 0 ? (
               <LevelDetails 
-                level={getLevelFromJson(selectedLevel)} 
+                level={allLevels.find(l => l.id === selectedLevel)!} 
                 onPlay={() => onLevelSelect(selectedLevel)}
               />
             ) : (

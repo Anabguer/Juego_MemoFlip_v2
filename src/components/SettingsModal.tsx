@@ -9,6 +9,7 @@ interface SettingsModalProps {
   isOpen: boolean;
   onClose: () => void;
   onLogout?: () => void;
+  onShowLogin?: () => void; // Para mostrar modal de login
 }
 
 export default function SettingsModal({ isOpen, onClose, onLogout }: SettingsModalProps) {

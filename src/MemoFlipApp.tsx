@@ -43,22 +43,34 @@ export default function Home() {
     setCurrentScreen('game');
   };
 
-  const handleLevelComplete = () => {
+  const handleLevelComplete = async () => {
     // Avanzar al siguiente nivel
     const nextLevel = selectedLevel + 1;
     
     // Verificar que no exceda el máximo de niveles (1000)
     if (nextLevel <= 1000) {
+      // ✅ IMPORTANTE: Actualizar el nivel en el Zustand store
       setCurrentLevel(nextLevel);
       setSelectedLevel(nextLevel);
+      
+      // ✅ Guardar progreso local
+      saveProgress();
+      
+      // ✅ Guardar en el servidor INMEDIATAMENTE
+      console.log(`💾 Guardando nivel ${nextLevel} en servidor...`);
+      try {
+        const { saveProgressToServer } = useGameStore.getState();
+        await saveProgressToServer();
+        console.log(`✅ Nivel ${nextLevel} guardado en servidor correctamente`);
+      } catch (error) {
+        console.error('❌ Error guardando nivel en servidor:', error);
+      }
+      
       // Permanecer en la pantalla de juego con el nuevo nivel
     } else {
       // Si llegamos al nivel 1000, volver al menú
       setCurrentScreen('intro');
     }
-    
-    // Guardar progreso
-    saveProgress();
   };
 
   const handleLevelFail = () => {

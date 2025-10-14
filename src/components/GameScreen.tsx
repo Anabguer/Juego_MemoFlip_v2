@@ -23,13 +23,13 @@ import {
 } from 'lucide-react';
 import { useGameStore } from '@/store/gameStore';
 import { Card } from '@/types/game';
-import { getLevelFromJson } from '@/data/levels';
+import { getLevelFromJson, LevelData } from '@/data/levels';
 import { applyMechanic, updateMechanics, canFlipCard, getMechanicVisualEffects, getMechanicIcon, getMechanicTransform, MECHANIC_CONFIGS, initFrozenMechanic, updateFrozenMechanic } from '@/lib/mechanics';
 import { getRandomCards, getRandomPortada, loadAvailableCards } from '@/lib/simpleCardSystem';
 import { getColorThemeForLevel, getBossColorTheme, isBossLevel, ColorTheme } from '@/data/colorThemes';
 import LevelCompleteModal from './LevelCompleteModal';
 import NoLivesModal from './NoLivesModal';
-import { adService, showRewardNotification } from '@/lib/adService';
+import { showRewardedAd } from '@/lib/adService';
 import { useAppState } from '@/hooks/useAppState';
 
 interface GameScreenProps {
@@ -74,7 +74,7 @@ export default function GameScreen({ level: propLevel, onBack, onLevelComplete }
 
   const [flippedCards, setFlippedCards] = useState<(string | number)[]>([]);
   const [isProcessing, setIsProcessing] = useState(false);
-  const [levelConfig, setLevelConfig] = useState(getLevelFromJson(level));
+  const [levelConfig, setLevelConfig] = useState<LevelData | null>(null);
   const [showNoLivesModal, setShowNoLivesModal] = useState(false);
   const [timeUpHandled, setTimeUpHandled] = useState(false);
   const timeUpHandledRef = useRef(false);
@@ -95,20 +95,21 @@ export default function GameScreen({ level: propLevel, onBack, onLevelComplete }
 
   // Actualizar levelConfig cuando cambie el nivel
   useEffect(() => {
-    const newLevelConfig = getLevelFromJson(level);
-    // Actualizando levelConfig para nivel
-    setLevelConfig(newLevelConfig);
-    // Nivel cambiado - reinicializando
-    
-    // Reinicializar el estado frozen si el nivel tiene mecánica frozen
-    if (newLevelConfig?.mechanics?.includes('frozen')) {
-      frozenRef.current = initFrozenMechanic(Date.now(), { intervalMs: 6000, durationMs: 3000 });
-    }
-    
-    // Reinicializar el nivel cuando cambie
-    if (newLevelConfig) {
-      initializeLevel();
-    }
+    getLevelFromJson(level).then(newLevelConfig => {
+      // Actualizando levelConfig para nivel
+      setLevelConfig(newLevelConfig);
+      // Nivel cambiado - reinicializando
+      
+      // Reinicializar el estado frozen si el nivel tiene mecánica frozen
+      if (newLevelConfig?.mechanics?.includes('frozen')) {
+        frozenRef.current = initFrozenMechanic(Date.now(), { intervalMs: 6000, durationMs: 3000 });
+      }
+      
+      // Reinicializar el nivel cuando cambie
+      if (newLevelConfig) {
+        initializeLevel();
+      }
+    });
   }, [level]);
 
   // Sincronizar store con prop cuando sea necesario (solo al inicio)
@@ -141,7 +142,7 @@ export default function GameScreen({ level: propLevel, onBack, onLevelComplete }
   // Removed useTheme hook - using colorTheme instead
 
   // Función para inicializar nivel (disponible globalmente) - memoizada
-  const initializeLevel = useCallback(() => {
+  const initializeLevel = useCallback(async () => {
     if (typeof window === 'undefined') return; // Solo en cliente
     
     // Resetear modales cuando cambie el nivel
@@ -156,7 +157,7 @@ export default function GameScreen({ level: propLevel, onBack, onLevelComplete }
     setActualGameTime(0); // Resetear el tiempo real de juego
     setTotalFlips(0); // Resetear el contador de giros
     
-    const config = getLevelFromJson(level);
+    const config = await getLevelFromJson(level);
     setLevelConfig(config);
     setCurrentLevelConfig(config);
       setLocalTimeLeft(0); // Resetear tiempo transcurrido
@@ -349,7 +350,7 @@ export default function GameScreen({ level: propLevel, onBack, onLevelComplete }
       return;
     }
     // Solo crear timer si el nivel tiene cronómetro
-    if (levelConfig.timeSec > 0) {
+    if (levelConfig && levelConfig.timeSec > 0) {
       // Iniciando timer
       const timer = setInterval(() => {
         setLocalTimeLeft(prev => {
@@ -371,7 +372,7 @@ export default function GameScreen({ level: propLevel, onBack, onLevelComplete }
 
       return () => clearInterval(timer);
     }
-  }, [isPaused, hasStarted, showLevelCompleteModal, showLevelFailedModal, levelConfig.timeSec]);
+  }, [isPaused, hasStarted, showLevelCompleteModal, showLevelFailedModal, levelConfig?.timeSec]);
 
   // Timer para tiempo real de juego (independiente del cronómetro del nivel)
   useEffect(() => {
@@ -440,20 +441,25 @@ export default function GameScreen({ level: propLevel, onBack, onLevelComplete }
   // Función para manejar ver video para conseguir vida
   const handleWatchAdForLife = useCallback(async () => {
     try {
-      const result = await adService.showLifeAd();
+      console.log('🎬 Iniciando anuncio de vida...');
+      const result = await showRewardedAd();
+      
+      console.log('📺 Resultado del anuncio:', result);
       
       if (result.success && result.reward) {
+        // ✅ RECOMPENSA OBTENIDA
+        console.log('🎁 ¡Recompensa recibida! Dando vida...');
+        
         // Dar la vida
         gainLife();
         
         // Mostrar notificación
-        showRewardNotification(result.reward);
+        // Vida otorgada (no se necesita notificación extra)
         
         // Cerrar modal
         setShowNoLivesModal(false);
         
         // Reiniciar el nivel actual para jugar inmediatamente
-        // Reiniciando nivel después de conseguir vida
         setHasStarted(false);
         setLocalTimeLeft(0);
         setActualGameTime(0);
@@ -474,8 +480,17 @@ export default function GameScreen({ level: propLevel, onBack, onLevelComplete }
           timestamp: Date.now()
         });
       } else {
-        // Mostrar error
-        alert(result.error || 'No se pudo completar el video');
+        // ❌ NO SE OBTUVO RECOMPENSA
+        console.log('❌ No se obtuvo recompensa:', result.error);
+        
+        // Mostrar mensaje claro
+        const errorMsg = result.error === 'El video no se completó' 
+          ? '⚠️ Debes ver el anuncio completo para obtener la vida.\n\nNo cierres el anuncio antes de tiempo.'
+          : result.error || 'No se pudo cargar el anuncio en este momento.\n\nIntenta de nuevo en unos segundos.';
+        
+        alert(errorMsg);
+        
+        // NO cerrar el modal para que pueda intentar de nuevo
       }
     } catch (error) {
       // Error al mostrar video
@@ -677,7 +692,7 @@ export default function GameScreen({ level: propLevel, onBack, onLevelComplete }
 
   // Efecto para rotación automática cada 2 segundos
   useEffect(() => {
-    if (!levelConfig.mechanics || !levelConfig.mechanics.includes('rotation')) {
+    if (!levelConfig || !levelConfig.mechanics || !levelConfig.mechanics.includes('rotation')) {
       return;
     }
 
@@ -686,7 +701,7 @@ export default function GameScreen({ level: propLevel, onBack, onLevelComplete }
     }, 2000);
 
     return () => clearInterval(interval);
-  }, [levelConfig.mechanics, currentCards]);
+  }, [levelConfig?.mechanics, currentCards]);
 
   // Manejar clic en carta
   // Función para rotar todas las cartas con mecánica rotation - memoizada
@@ -730,8 +745,8 @@ export default function GameScreen({ level: propLevel, onBack, onLevelComplete }
     setLastClickTime(now);
     
     // Para tríos permitir hasta 3 cartas, para pares solo 2
-    const maxFlipped = levelConfig.mechanics && levelConfig.mechanics.includes('trio') ? 3 : 2;
-    const isTrioLevel = levelConfig.mechanics && levelConfig.mechanics.includes('trio');
+    const maxFlipped = levelConfig?.mechanics && levelConfig.mechanics.includes('trio') ? 3 : 2;
+    const isTrioLevel = levelConfig?.mechanics && levelConfig.mechanics.includes('trio');
     
     // Contar cartas volteadas manualmente de dos formas para mayor seguridad:
     // 1. Desde flippedCards (estado local)
@@ -928,21 +943,21 @@ export default function GameScreen({ level: propLevel, onBack, onLevelComplete }
         const matchedCards = storeState.currentCards.filter(c => c.isMatched);
         
         // Verificar si el nivel tiene mecánica trio
-        const hasTrioMechanic = levelConfig.mechanics && levelConfig.mechanics.includes('trio');
+        const hasTrioMechanic = levelConfig?.mechanics && levelConfig.mechanics.includes('trio');
         
         let isLevelComplete = false;
         
         if (hasTrioMechanic) {
           // Para niveles con tríos: contar tríos completados (3 cartas = 1 trío)
           const completedTrios = Math.floor(matchedCards.length / 3);
-          const expectedTrios = levelConfig.pairs;
+          const expectedTrios = levelConfig?.pairs || 0;
           isLevelComplete = completedTrios === expectedTrios;
           
           // Verificando tríos después del match
         } else {
           // Para niveles normales: contar pares completados (2 cartas = 1 par)
           const completedPairs = Math.floor(matchedCards.length / 2);
-          const expectedPairs = levelConfig.pairs;
+          const expectedPairs = levelConfig?.pairs || 0;
           isLevelComplete = completedPairs === expectedPairs;
           
           // Verificando pares después del match
@@ -1030,7 +1045,7 @@ export default function GameScreen({ level: propLevel, onBack, onLevelComplete }
         
         // Para tríos: contar tríos completados (3 cartas = 1 trío)
         const completedTrios = Math.floor(matchedCards.length / 3);
-        const expectedTrios = levelConfig.pairs;
+        const expectedTrios = levelConfig?.pairs || 0;
         const isLevelComplete = completedTrios === expectedTrios;
         
         // Verificando tríos después del match
@@ -1055,14 +1070,14 @@ export default function GameScreen({ level: propLevel, onBack, onLevelComplete }
     const matchedCards = storeState.currentCards.filter(c => c.isMatched);
     
     // Verificar si el nivel tiene mecánica trio
-    const hasTrioMechanic = levelConfig.mechanics && levelConfig.mechanics.includes('trio');
+    const hasTrioMechanic = levelConfig?.mechanics && levelConfig.mechanics.includes('trio');
     
     let isLevelComplete = false;
     
     if (hasTrioMechanic) {
       // Para niveles con tríos: contar tríos completados (3 cartas = 1 trío)
       const completedTrios = Math.floor(matchedCards.length / 3);
-      const expectedTrios = levelConfig.pairs;
+      const expectedTrios = levelConfig?.pairs || 0;
       isLevelComplete = completedTrios === expectedTrios;
       
       // Verificando nivel completo (tríos)
@@ -1080,7 +1095,7 @@ export default function GameScreen({ level: propLevel, onBack, onLevelComplete }
       // Nivel completado
       
       // Añadir monedas por completar el nivel
-      const coinsEarned = levelConfig.rewards.coins || (10 * levelConfig.pairs);
+      const coinsEarned = levelConfig?.rewards?.coins || (10 * (levelConfig?.pairs || 0));
       addCoins(coinsEarned);
       
       addEvent({
@@ -1150,7 +1165,7 @@ export default function GameScreen({ level: propLevel, onBack, onLevelComplete }
     
     const timeUsed = actualGameTime; // Tiempo real de juego
     const flipsUsed = totalFlips; // Total de giros realizados
-    const totalPairs = levelConfig.pairs;
+    const totalPairs = levelConfig?.pairs || 0;
     
     // Reglas de puntuación:
     // - Base: 50 puntos por par completado
@@ -1200,26 +1215,18 @@ export default function GameScreen({ level: propLevel, onBack, onLevelComplete }
     addCoins(earnedCoins);
     
     setShowLevelCompleteModal(false);
-    onLevelComplete(); // Esto actualiza el nivel en el componente padre
     
-    // Esperar un tick para que el nivel se actualice en el store
-    await new Promise(resolve => setTimeout(resolve, 100));
-    
-    // Guardar progreso en el servidor DESPUÉS de actualizar el nivel
-    try {
-      const { saveProgressToServer } = useGameStore.getState();
-      await saveProgressToServer();
-      console.log('💾 Progreso guardado en servidor (nivel actualizado)');
-    } catch (error) {
-      console.error('❌ Error guardando progreso:', error);
-    }
+    // ✅ El padre (MemoFlipApp.tsx) se encarga de:
+    // - Actualizar el nivel en el store
+    // - Guardar en servidor
+    await onLevelComplete();
   };
 
-  const handlePlayAgain = () => {
+  const handlePlayAgain = async () => {
     setShowLevelCompleteModal(false);
     
     // Reinicializar el nivel actual
-    const config = getLevelFromJson(level);
+    const config = await getLevelFromJson(level);
     setLevelConfig(config);
     setCurrentLevelConfig(config);
     setLocalTimeLeft(0); // Resetear tiempo transcurrido
@@ -1505,7 +1512,7 @@ export default function GameScreen({ level: propLevel, onBack, onLevelComplete }
           </header>
 
           {/* Barra de cronómetro */}
-          {levelConfig.timeSec > 0 && (
+          {levelConfig && levelConfig.timeSec > 0 && (
             <div className="mb-4 flex justify-center">
               <div 
                 className="rounded-full overflow-hidden"
@@ -1592,7 +1599,7 @@ export default function GameScreen({ level: propLevel, onBack, onLevelComplete }
                         ).length;
                         
                         const manuallyFlippedForButton = Math.max(manuallyFlippedFromState, manuallyFlippedFromCards);
-                        const maxFlippedForButton = levelConfig.mechanics && levelConfig.mechanics.includes('trio') ? 3 : 2;
+                        const maxFlippedForButton = levelConfig?.mechanics && levelConfig.mechanics.includes('trio') ? 3 : 2;
 
                         const isAutoPeekCard =
                           card.mechanic === 'peeked_card' &&
@@ -1629,7 +1636,7 @@ export default function GameScreen({ level: propLevel, onBack, onLevelComplete }
           ).length;
           
           const manuallyFlippedForCursor = Math.max(manuallyFlippedFromState, manuallyFlippedFromCards);
-          const maxFlippedForCursor = levelConfig.mechanics && levelConfig.mechanics.includes('trio') ? 3 : 2;
+          const maxFlippedForCursor = levelConfig?.mechanics && levelConfig.mechanics.includes('trio') ? 3 : 2;
 
           const isAutoPeekCard =
             card.mechanic === 'peeked_card' &&
@@ -1645,7 +1652,7 @@ export default function GameScreen({ level: propLevel, onBack, onLevelComplete }
 
           return isDisabled ? 'not-allowed' : 'pointer';
         })(),
-                        transform: levelConfig.mechanics?.includes('rotation') && globalRotation[card.id] !== undefined
+                        transform: levelConfig?.mechanics?.includes('rotation') && globalRotation[card.id] !== undefined
                           ? `rotate(${globalRotation[card.id]}deg)`
                           : getMechanicTransform(card)
                       }}
@@ -1738,7 +1745,7 @@ export default function GameScreen({ level: propLevel, onBack, onLevelComplete }
           </section>
 
           {/* Información de Mecánica - Rectángulo pequeño como estaba originalmente */}
-          {levelConfig.mechanics && levelConfig.mechanics.length > 0 && (
+          {levelConfig && levelConfig.mechanics && levelConfig.mechanics.length > 0 && (
             <div className="mt-3 flex justify-center">
               <div className="px-3 py-2 rounded-lg bg-white/5 border border-white/10 backdrop-blur-sm">
                 <div className="flex items-center gap-2">
@@ -1911,7 +1918,7 @@ export default function GameScreen({ level: propLevel, onBack, onLevelComplete }
                     {/* Tiempo del nivel */}
                     <div className="flex items-center justify-center gap-2 text-sm">
                       <Clock className="w-4 h-4 text-blue-400" />
-                      <span className="text-blue-400">Tiempo límite: {formatTime(levelConfig.timeSec)}</span>
+                      <span className="text-blue-400">Tiempo límite: {formatTime(levelConfig?.timeSec || 0)}</span>
                     </div>
                     
                     {/* Monedas ganadas */}
@@ -2067,7 +2074,7 @@ export default function GameScreen({ level: propLevel, onBack, onLevelComplete }
             </div>
             
             <div className="space-y-4">
-              {levelConfig.mechanics.map(mechanic => {
+              {levelConfig?.mechanics?.map(mechanic => {
                 const getMechanicInfo = (mech: string) => {
                   switch(mech) {
                     case 'basic':

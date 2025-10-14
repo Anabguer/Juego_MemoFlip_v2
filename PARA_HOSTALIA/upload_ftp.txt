@@ -1,0 +1,7 @@
+open colisan.com
+user colisan Lugati67
+cd /memoflip/
+binary
+put sistema_apps_api\memoflip\save_progress.php save_progress.php
+bye
+

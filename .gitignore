@@ -65,3 +65,7 @@ next-env.d.ts
 # APK files (too large for GitHub)
 *.apk
 android/app/build/
+
+# Card backups (local only, don't deploy)
+public/cards_backup/
+**/cards_backup/

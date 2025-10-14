@@ -1,4 +1,3 @@
-import data from './levels.json';
 import { MechanicName } from '@/types/game';
 
 export type LevelData = {
@@ -15,7 +14,21 @@ export type LevelData = {
   seed: number; // Añadido para compatibilidad con LevelConfig
 };
 
-export function getLevelFromJson(level: number): LevelData {
+// Cache global
+let levelsCache: { levels: LevelData[] } | null = null;
+
+async function loadLevels(): Promise<{ levels: LevelData[] }> {
+  if (levelsCache) return levelsCache;
+  
+  const response = await fetch('/levels.json');
+  if (!response.ok) throw new Error('No se pudo cargar levels.json');
+  
+  levelsCache = await response.json();
+  return levelsCache!;
+}
+
+export async function getLevelFromJson(level: number): Promise<LevelData> {
+  const data = await loadLevels();
   const found = (data.levels as LevelData[]).find(l => l.id === level);
   if (!found) {
     throw new Error(`Nivel ${level} no encontrado en levels.json`);
@@ -23,14 +36,17 @@ export function getLevelFromJson(level: number): LevelData {
   return found;
 }
 
-export function getAllLevels(): LevelData[] {
+export async function getAllLevels(): Promise<LevelData[]> {
+  const data = await loadLevels();
   return data.levels as LevelData[];
 }
 
-export function getLevelsByPhase(phase: number): LevelData[] {
+export async function getLevelsByPhase(phase: number): Promise<LevelData[]> {
+  const data = await loadLevels();
   return (data.levels as LevelData[]).filter(l => l.phase === phase);
 }
 
-export function getBossLevels(): LevelData[] {
+export async function getBossLevels(): Promise<LevelData[]> {
+  const data = await loadLevels();
   return (data.levels as LevelData[]).filter(l => l.isBoss);
 }

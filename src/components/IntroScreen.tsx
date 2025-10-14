@@ -35,8 +35,21 @@ export default function IntroScreen({
 
   useEffect(() => {
     setIsClient(true);
-    checkSession(); // Verificar sesión al cargar
-    loadProgress(); // Cargar progreso local
+    
+    // 🔧 ORDEN CORRECTO: Primero verificar sesión, luego cargar progreso
+    checkSession(); // Esto cargará del servidor si hay sesión
+    // loadProgress() ya NO se llama aquí - checkSession lo hace automáticamente
+    
+    // 🎯 Inicializar AdMob - SIMPLIFICADO para evitar crashes
+    if (typeof window !== 'undefined') {
+      import('@/lib/adService')
+        .then(({ initAds, showBottomBanner }) => {
+          initAds()
+            .then(() => showBottomBanner())
+            .catch(err => console.warn('[AdMob] No disponible:', err));
+        })
+        .catch(err => console.warn('[AdMob] Import error:', err));
+    }
     
     // Detectar conexión online/offline para sincronizar silenciosamente
     const updateOnlineStatus = async () => {
@@ -59,6 +72,10 @@ export default function IntroScreen({
     return () => {
       window.removeEventListener('online', updateOnlineStatus);
       window.removeEventListener('offline', updateOnlineStatus);
+      // Ocultar banner al desmontar (sin causar errores)
+      import('@/lib/adService')
+        .then(({ hideBanner }) => hideBanner())
+        .catch(() => {});
     };
   }, []);
 
@@ -89,10 +106,6 @@ export default function IntroScreen({
 
     return () => clearInterval(interval);
   }, []);
-
-  useEffect(() => {
-    loadProgress();
-  }, [loadProgress]);
 
   // Verificar sesión activa
   const checkSession = async () => {
@@ -143,15 +156,22 @@ export default function IntroScreen({
             setCurrentUser(null);
           }
         } else {
-          console.log('🔓 No hay credenciales guardadas');
+          console.log('🔓 No hay credenciales guardadas - Modo invitado');
           setUserInfo(null);
           const { setCurrentUser } = useGameStore.getState();
           setCurrentUser(null);
+          
+          // 🎮 CARGAR PROGRESO LOCAL para modo invitado
+          loadProgress();
+          console.log('📊 Progreso local cargado para invitado');
         }
       }
     } catch (error) {
       console.error('❌ Error verificando sesión:', error);
       setUserInfo(null);
+      
+      // 🎮 En caso de error, cargar progreso local
+      loadProgress();
     }
   };
 
@@ -190,7 +210,7 @@ export default function IntroScreen({
     }
   };
 
-  const handleLoginSuccess = async (data: SessionUser, email?: string, password?: string) => {
+  const handleLoginSuccess = (data: SessionUser, email?: string, password?: string) => {
     console.log('✅ Login exitoso:', data);
     setUserInfo(data);
     
@@ -202,26 +222,22 @@ export default function IntroScreen({
     }
     
     // Establecer currentUser en el store
-    const { useGameStore } = await import('@/store/gameStore');
     const { setCurrentUser, setCurrentLevel, setCoins, setLives, getProgress } = useGameStore.getState();
     
-    // Obtener datos del servidor
+    // 🔄 COMPARAR progreso local vs servidor y usar el MAYOR
+    const localProgress = getProgress();
     const serverLevel = data.game_data?.max_level_unlocked || 1;
     const serverCoins = data.game_data?.coins_total || 0;
     const serverLives = data.game_data?.lives_current || 3;
     
-    // Obtener progreso local (por si jugó offline)
-    const localProgress = getProgress();
+    // ✅ Usar el nivel más avanzado (local o servidor)
+    const bestLevel = Math.max(localProgress.level, serverLevel);
+    const bestCoins = Math.max(localProgress.coins, serverCoins);
     
-    // 🔀 MERGE INTELIGENTE: Usar el progreso más avanzado
-    const finalLevel = Math.max(serverLevel, localProgress.level);
-    const finalCoins = Math.max(serverCoins, localProgress.coins);
-    const finalLives = serverLives; // Vidas siempre del servidor
-    
-    console.log('📊 Merge progreso:', { 
-      servidor: { level: serverLevel, coins: serverCoins },
+    console.log('📊 Comparando progreso:', { 
       local: { level: localProgress.level, coins: localProgress.coins },
-      final: { level: finalLevel, coins: finalCoins }
+      servidor: { level: serverLevel, coins: serverCoins },
+      mejor: { level: bestLevel, coins: bestCoins }
     });
     
     // Crear objeto User para el store
@@ -234,50 +250,38 @@ export default function IntroScreen({
       lastLogin: Date.now(),
       isGuest: false,
       progress: {
-        level: finalLevel,
-        coins: finalCoins,
-        lives: finalLives,
+        level: bestLevel,
+        coins: bestCoins,
+        lives: serverLives,
         lastPlayed: Date.now(),
-        totalScore: finalCoins,
-        phase: Math.ceil(finalLevel / 50)
+        totalScore: bestCoins,
+        phase: Math.ceil(bestLevel / 50)
       }
     };
     
-    // Establecer usuario Y progreso en el store
+    // ✅ Establecer usuario Y progreso en el store CON EL MEJOR PROGRESO
     setCurrentUser(user);
-    setCurrentLevel(finalLevel);
-    setCoins(finalCoins);
-    setLives(finalLives);
+    setCurrentLevel(bestLevel);
+    setCoins(bestCoins);
+    setLives(serverLives);
     
-    console.log('✅ Progreso establecido en store:', { 
-      level: finalLevel, 
-      coins: finalCoins, 
-      lives: finalLives 
+    console.log('✅ Progreso establecido (mejor de local/servidor):', { 
+      level: bestLevel, 
+      coins: bestCoins, 
+      lives: serverLives 
     });
     
-    // Guardar en localStorage
+    // ✅ Actualizar localStorage con los datos CORRECTOS
     localStorage.setItem('memoflip_progress', JSON.stringify({
-      level: finalLevel,
-      coins: finalCoins,
-      lives: finalLives,
+      level: bestLevel,
+      coins: bestCoins,
+      lives: serverLives,
       lastPlayed: Date.now(),
-      totalScore: finalCoins,
-      phase: Math.ceil(finalLevel / 50)
+      totalScore: bestCoins,
+      phase: Math.ceil(bestLevel / 50)
     }));
     
-    // Si el progreso local es mayor, sincronizar al servidor
-    if (finalLevel > serverLevel || finalCoins > serverCoins) {
-      console.log('📤 Progreso local más avanzado, sincronizando al servidor...');
-      try {
-        const { saveProgressToServer } = useGameStore.getState();
-        await saveProgressToServer();
-        console.log('✅ Progreso offline sincronizado al servidor');
-      } catch (error) {
-        console.error('❌ Error sincronizando progreso:', error);
-      }
-    }
-    
-    console.log('💾 Login y sincronización completos');
+    console.log('💾 Login completado - Progreso sincronizado desde servidor');
   };
 
   return (

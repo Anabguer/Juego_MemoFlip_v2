@@ -15,7 +15,7 @@ function generateCardList(): string[] {
   // Generar lista de 117 cartas disponibles (card_001.png a card_117.png)
   const existingCards: string[] = [];
   
-  for (let i = 1; i <= 117; i++) {
+  for (let i = 1; i <= 151; i++) {
     const cardNumber = i.toString().padStart(3, '0');
     existingCards.push(`card_${cardNumber}.png`);
   }
@@ -38,14 +38,8 @@ export function loadAvailableCards(): SimpleCard[] {
   const cardFiles = generateCardList();
   
   cardFiles.forEach((fileName, index) => {
-    // Usar basePath configurado o fallback a /cards/
-    let basePath = '/sistema_apps_upload/memoflip/cards';
-    if (typeof window !== 'undefined') {
-      const win = window as unknown as { __MEMOFLIP_CONFIG__?: { cardsPath?: string } };
-      if (win.__MEMOFLIP_CONFIG__?.cardsPath) {
-        basePath = win.__MEMOFLIP_CONFIG__.cardsPath;
-      }
-    }
+    // Usar ruta relativa para APK, absoluta para web
+    const basePath = '/cards';  // Relativo por defecto (funciona en APK y web)
     
     cards.push({
       id: `card_${index + 1}`,
