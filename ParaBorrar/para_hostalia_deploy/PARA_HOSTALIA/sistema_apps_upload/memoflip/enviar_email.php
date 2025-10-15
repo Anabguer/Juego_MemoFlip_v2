@@ -1,10 +1,22 @@
 <?php
 /**
- * SISTEMA DE ENVÍO DE EMAILS
- * Envía emails de verificación con código
+ * SISTEMA DE ENVÍO DE EMAILS CON PHPMailer
+ * Envía emails de verificación con código usando SMTP
  */
 
+// Incluir PHPMailer (si está disponible)
+if (file_exists(__DIR__ . '/../includes/PHPMailer/PHPMailer.php')) {
+    require_once __DIR__ . '/../includes/PHPMailer/PHPMailer.php';
+    require_once __DIR__ . '/../includes/PHPMailer/SMTP.php';
+    require_once __DIR__ . '/../includes/PHPMailer/Exception.php';
+    $phpmailer_available = true;
+} else {
+    $phpmailer_available = false;
+}
+
 function enviarEmailVerificacion($email, $nombre, $codigo) {
+    global $phpmailer_available;
+    
     $asunto = "MemoFlip - Verifica tu cuenta";
     
     $mensaje = "
@@ -61,13 +73,51 @@ function enviarEmailVerificacion($email, $nombre, $codigo) {
     </html>
     ";
     
-    // Cabeceras para HTML
+    // Intentar con PHPMailer primero
+    if ($phpmailer_available) {
+        try {
+            $mail = new PHPMailer\PHPMailer\PHPMailer(true);
+            
+            // Configuración SMTP
+            $mail->isSMTP();
+            $mail->Host = 'smtp.colisan.com';
+            $mail->SMTPAuth = true;
+            $mail->Username = 'info@colisan.com';
+            $mail->Password = 'IgdAmg19521954';
+            $mail->SMTPSecure = PHPMailer\PHPMailer\PHPMailer::ENCRYPTION_STARTTLS;
+            $mail->Port = 587;
+            $mail->CharSet = 'UTF-8';
+            
+            // Remitente y destinatario
+            $mail->setFrom('info@intocables.com', 'MemoFlip');
+            $mail->addAddress($email, $nombre);
+            $mail->addReplyTo('info@intocables13.com', 'MemoFlip Support');
+            
+            // Contenido
+            $mail->isHTML(true);
+            $mail->Subject = $asunto;
+            $mail->Body = $mensaje;
+            $mail->AltBody = "¡Hola $nombre!\n\nTu código de verificación para MemoFlip es: $codigo\n\nEste código expira en 24 horas.\n\n© 2024 MemoFlip - @intocables13";
+            
+            // Enviar
+            $mail->send();
+            
+            // Log del envío exitoso
+            error_log("[MEMOFLIP EMAIL SMTP] Enviado a: $email | Código: $codigo | Status: OK");
+            return true;
+            
+        } catch (Exception $e) {
+            // Si PHPMailer falla, intentar con mail() nativo
+            error_log("[MEMOFLIP EMAIL SMTP] Error: " . $e->getMessage() . " - Intentando con mail() nativo");
+        }
+    }
+    
+    // Fallback: usar mail() nativo
     $headers = "MIME-Version: 1.0\r\n";
     $headers .= "Content-type: text/html; charset=UTF-8\r\n";
-    $headers .= "From: MemoFlip <noreply@colisan.com>\r\n";
+    $headers .= "From: MemoFlip <info@intocables.com>\r\n";
     $headers .= "Reply-To: info@intocables13.com\r\n";
     
-    // Enviar email
     $enviado = mail($email, $asunto, $mensaje, $headers);
     
     // Log del envío

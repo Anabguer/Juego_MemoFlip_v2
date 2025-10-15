@@ -33,8 +33,21 @@ Restaurar el sistema de verificación por email que estaba funcionando antes de 
 # Ruta: /sistema_apps_upload/memoflip/
 
 1. auth.php (REEMPLAZAR el existente)
-2. enviar_email.php (NUEVO archivo)
+2. enviar_email.php (NUEVO archivo - con SMTP configurado)
+3. descargar_phpmailer.php (NUEVO archivo - para instalar PHPMailer)
 ```
+
+### PASO 1.5: Instalar PHPMailer (IMPORTANTE)
+
+**Opción A: Automático (Recomendado)**
+1. Sube `descargar_phpmailer.php` a Hostalia
+2. Ejecuta en el navegador: `https://colisan.com/sistema_apps_upload/memoflip/descargar_phpmailer.php`
+3. Debería crear la carpeta `../includes/PHPMailer/` con los archivos necesarios
+
+**Opción B: Manual**
+Si la opción A no funciona, descarga PHPMailer manualmente:
+1. Descarga: https://github.com/PHPMailer/PHPMailer/archive/master.zip
+2. Extrae y sube la carpeta `src/` como `../includes/PHPMailer/`
 
 ### PASO 2: Ejecutar SQL en phpMyAdmin
 
@@ -66,6 +79,39 @@ Debe mostrar las nuevas columnas:
 5. Revisar email (o spam)
 6. Introducir el código de 6 dígitos
 7. Debe hacer auto-login
+
+---
+
+## 📧 CONFIGURACIÓN SMTP ACTIVADA
+
+### **Datos SMTP Configurados:**
+
+```php
+Servidor SMTP: smtp.colisan.com
+Puerto: 587
+Seguridad: TLS
+Usuario: info@colisan.com
+Contraseña: IgdAmg19521954
+Remitente: info@intocables.com
+```
+
+### **Cómo Funciona:**
+
+1. **PHPMailer disponible:** Usa SMTP automáticamente
+2. **PHPMailer NO disponible:** Usa `mail()` nativo como fallback
+3. **Logs detallados:** Revisa `/var/log/mail.log` o error_log de PHP
+
+### **Verificar SMTP:**
+
+Si los emails no llegan, revisa los logs:
+
+```bash
+# En Hostalia, buscar en error_log de PHP:
+grep "MEMOFLIP EMAIL" /path/to/error_log
+
+# Deberías ver:
+[MEMOFLIP EMAIL SMTP] Enviado a: email@ejemplo.com | Código: 123456 | Status: OK
+```
 
 ---
 
