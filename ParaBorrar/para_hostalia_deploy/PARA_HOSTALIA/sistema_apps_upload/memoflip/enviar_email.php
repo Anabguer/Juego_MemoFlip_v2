@@ -78,14 +78,14 @@ function enviarEmailVerificacion($email, $nombre, $codigo) {
         try {
             $mail = new PHPMailer\PHPMailer\PHPMailer(true);
             
-            // Configuración SMTP
+            // Configuración SMTP (configuración real de Lumetrix)
             $mail->isSMTP();
             $mail->Host = 'smtp.colisan.com';
             $mail->SMTPAuth = true;
             $mail->Username = 'info@colisan.com';
             $mail->Password = 'IgdAmg19521954';
-            $mail->SMTPSecure = PHPMailer\PHPMailer\PHPMailer::ENCRYPTION_STARTTLS;
-            $mail->Port = 587;
+            $mail->SMTPSecure = false; // 'none' = sin SSL/TLS
+            $mail->Port = 25; // Puerto 25 sin SSL
             $mail->CharSet = 'UTF-8';
             
             // Remitente y destinatario

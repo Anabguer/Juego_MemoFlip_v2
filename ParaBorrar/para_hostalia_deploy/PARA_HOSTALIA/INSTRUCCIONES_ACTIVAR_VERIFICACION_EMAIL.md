@@ -88,8 +88,8 @@ Debe mostrar las nuevas columnas:
 
 ```php
 Servidor SMTP: smtp.colisan.com
-Puerto: 587
-Seguridad: TLS
+Puerto: 25
+Seguridad: none (sin SSL/TLS)
 Usuario: info@colisan.com
 Contraseña: IgdAmg19521954
 Remitente: info@intocables.com
