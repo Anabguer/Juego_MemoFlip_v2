@@ -337,8 +337,24 @@ export default function UserModal({ isOpen, onClose, onLoginSuccess }: UserModal
 
               {/* Error general */}
               {errors.general && (
-                <div className="p-3 bg-red-500/10 border border-red-500/20 rounded-xl">
+                <div className="p-3 bg-red-500/10 border border-red-500/20 rounded-xl space-y-2">
                   <p className="text-red-400 text-sm">{errors.general}</p>
+                  
+                  {/* Botón para abrir verificación manualmente */}
+                  {activeTab === 'login' && (
+                    <button
+                      type="button"
+                      onClick={() => {
+                        console.log('📧 Abriendo modal de verificación manualmente...');
+                        setRegisteredEmail(formData.email);
+                        setShowVerification(true);
+                        setErrors({});
+                      }}
+                      className="w-full text-xs text-yellow-400 hover:text-yellow-300 underline transition"
+                    >
+                      ¿Necesitas verificar tu email? Haz clic aquí
+                    </button>
+                  )}
                 </div>
               )}
 
