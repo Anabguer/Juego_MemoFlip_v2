@@ -32,11 +32,15 @@ export default function IntroScreen({
   const [userInfo, setUserInfo] = useState<SessionUser | null>(null);
   
   // ✅ Usar valores REACTIVOS del store en vez de getProgress()
-  const { loadProgress, currentLevel, coins } = useGameStore();
+  const { loadProgress, currentLevel, coins, checkLifeRegeneration } = useGameStore();
   const progress = { level: currentLevel, coins }; // ← REACTIVO a cambios del store
 
   useEffect(() => {
     setIsClient(true);
+    
+    // ✅ VERIFICAR REGENERACIÓN DE VIDAS AL INICIAR LA APP
+    console.log('🔄 Verificando regeneración de vidas...');
+    checkLifeRegeneration();
     
     // 🔧 ORDEN CORRECTO: Primero verificar sesión, luego cargar progreso
     checkSession(); // Esto cargará del servidor si hay sesión
@@ -71,13 +75,17 @@ export default function IntroScreen({
     window.addEventListener('online', updateOnlineStatus);
     window.addEventListener('offline', updateOnlineStatus);
     
+    // ✅ VERIFICAR REGENERACIÓN DE VIDAS CADA 30 SEGUNDOS
+    const lifeRegenInterval = setInterval(() => {
+      console.log('🔄 Verificando regeneración de vidas (intervalo)...');
+      checkLifeRegeneration();
+    }, 30000); // Cada 30 segundos
+    
     return () => {
       window.removeEventListener('online', updateOnlineStatus);
       window.removeEventListener('offline', updateOnlineStatus);
-      // Ocultar banner al desmontar (sin causar errores)
-      import('@/lib/adService')
-        .then(({ hideBanner }) => hideBanner())
-        .catch(() => {});
+      clearInterval(lifeRegenInterval);
+      // ✅ NO ocultar banner al ir al juego - debe permanecer visible
     };
   }, []);
 
@@ -263,7 +271,7 @@ export default function IntroScreen({
     
     // Crear objeto User para el store
     const user = {
-      id: `${data.email}_memoflip`, // ✅ IMPORTANTE: añadir sufijo _memoflip para coincidir con BD
+      id: data.email, // ✅ CORREGIDO: usar email sin sufijo para coincidir con BD
       nickname: data.nombre || data.email.split('@')[0],
       name: data.nombre || data.email.split('@')[0],
       email: data.email,
@@ -274,6 +282,7 @@ export default function IntroScreen({
         level: bestLevel,
         coins: bestCoins,
         lives: serverLives,
+        lastLifeLost: 0, // ✅ TIMESTAMP PARA REGENERACIÓN
         lastPlayed: Date.now(),
         totalScore: bestCoins,
         phase: Math.ceil(bestLevel / 50)
@@ -306,7 +315,7 @@ export default function IntroScreen({
   };
 
   return (
-    <div className="min-h-screen relative overflow-hidden" style={{
+    <div className="h-screen w-full fixed top-0 left-0 overflow-hidden" style={{
       background: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',
       fontFamily: 'Arial, sans-serif'
     }}>
@@ -328,7 +337,7 @@ export default function IntroScreen({
       </div>
 
       {/* Contenedor principal */}
-      <div className="flex items-center justify-center min-h-screen p-4 relative z-10">
+      <div className="flex items-center justify-center h-full p-4 relative z-10">
         <motion.div
           initial={{ opacity: 0, y: 50 }}
           animate={{ opacity: 1, y: 0 }}
@@ -428,9 +437,9 @@ export default function IntroScreen({
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ delay: 1.5 }}
-        className="fixed bottom-5 left-1/2 transform -translate-x-1/2 text-white/70 text-sm text-center z-20"
+        className="fixed bottom-2 left-1/2 transform -translate-x-1/2 text-white/50 text-xs text-center z-20"
       >
-        © 2024 @intocables13 - Todos los derechos reservados
+        © 2024 @intocables13
       </motion.div>
 
       {/* Modal de Usuario */}
