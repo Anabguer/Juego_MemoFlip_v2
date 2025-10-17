@@ -183,12 +183,12 @@ export default function SettingsModal({ isOpen, onClose, onLogout }: SettingsMod
                     Cerrar sesión
                   </button>
                   
-                  {/* Botón Eliminar cuenta */}
+                  {/* Botón Eliminar cuenta - MÁS PEQUEÑO */}
                   <button
                     onClick={handleDeleteAccount}
-                    className="w-full flex items-center justify-center gap-2 p-4 rounded-xl bg-red-500/20 text-red-400 border border-red-400/30 hover:bg-red-500/30 transition font-medium"
+                    className="w-full flex items-center justify-center gap-2 p-2 rounded-lg bg-red-500/15 text-red-400 border border-red-400/20 hover:bg-red-500/25 transition text-sm"
                   >
-                    <Trash2 className="w-5 h-5" />
+                    <Trash2 className="w-4 h-4" />
                     Eliminar cuenta
                   </button>
                 </div>

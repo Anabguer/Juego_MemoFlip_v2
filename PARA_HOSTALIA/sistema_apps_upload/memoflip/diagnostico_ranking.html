@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🔍 Diagnóstico Ranking MemoFlip</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+        }
+        .container {
+            background: rgba(255,255,255,0.1);
+            border-radius: 10px;
+            padding: 20px;
+            margin: 10px 0;
+            backdrop-filter: blur(10px);
+        }
+        .test-button {
+            background: #39ff14;
+            color: #000;
+            border: none;
+            padding: 15px 30px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            font-weight: bold;
+            margin: 10px;
+        }
+        .test-button:hover {
+            background: #00e5ff;
+        }
+        .result {
+            background: rgba(0,0,0,0.3);
+            border-radius: 5px;
+            padding: 15px;
+            margin: 10px 0;
+            font-family: monospace;
+            white-space: pre-wrap;
+            max-height: 400px;
+            overflow-y: auto;
+        }
+        .success { border-left: 5px solid #39ff14; }
+        .error { border-left: 5px solid #ff4444; }
+        .warning { border-left: 5px solid #ffaa00; }
+        h1, h2 { text-align: center; }
+        .status {
+            display: inline-block;
+            padding: 5px 10px;
+            border-radius: 15px;
+            font-weight: bold;
+            margin: 5px;
+        }
+        .status.ok { background: #39ff14; color: #000; }
+        .status.error { background: #ff4444; color: #fff; }
+        .status.warning { background: #ffaa00; color: #000; }
+    </style>
+</head>
+<body>
+    <h1>🔍 Diagnóstico Ranking MemoFlip</h1>
+    <p style="text-align: center;">Herramienta para diagnosticar problemas del ranking</p>
+
+    <div class="container">
+        <h2>📊 Tests del Ranking</h2>
+        <button class="test-button" onclick="testRanking()">🏆 Probar Ranking</button>
+        <button class="test-button" onclick="testSaveProgress()">💾 Probar Guardar Progreso</button>
+        <button class="test-button" onclick="testDebugRanking()">🔍 Debug Ranking</button>
+        <button class="test-button" onclick="testAll()">🚀 Probar Todo</button>
+        
+        <div id="results"></div>
+    </div>
+
+    <div class="container">
+        <h2>📋 Información del Sistema</h2>
+        <div id="systemInfo"></div>
+    </div>
+
+    <script>
+        const baseUrl = 'https://colisan.com/sistema_apps_upload/memoflip';
+        
+        function addResult(title, content, type = 'info') {
+            const results = document.getElementById('results');
+            const div = document.createElement('div');
+            div.className = `result ${type}`;
+            div.innerHTML = `<strong>${title}</strong>\n${content}`;
+            results.appendChild(div);
+        }
+
+        function showSystemInfo() {
+            const info = document.getElementById('systemInfo');
+            info.innerHTML = `
+                <p><strong>URL Base:</strong> ${baseUrl}</p>
+                <p><strong>User Agent:</strong> ${navigator.userAgent}</p>
+                <p><strong>Timestamp:</strong> ${new Date().toLocaleString()}</p>
+                <p><strong>Online:</strong> <span class="status ${navigator.onLine ? 'ok' : 'error'}">${navigator.onLine ? 'SÍ' : 'NO'}</span></p>
+            `;
+        }
+
+        async function testRanking() {
+            addResult('🏆 PROBANDO RANKING', 'Probando endpoint ranking.php...', 'info');
+            
+            try {
+                const response = await fetch(`${baseUrl}/ranking.php?action=global&limit=20`);
+                const text = await response.text();
+                
+                if (response.ok) {
+                    try {
+                        const data = JSON.parse(text);
+                        if (data.success) {
+                            addResult('✅ RANKING OK', `Ranking funciona correctamente!\nTotal jugadores: ${data.total || 0}\nDatos: ${JSON.stringify(data, null, 2)}`, 'success');
+                        } else {
+                            addResult('❌ RANKING ERROR', `Error en ranking: ${data.error}\nRespuesta: ${JSON.stringify(data, null, 2)}`, 'error');
+                        }
+                    } catch (e) {
+                        addResult('❌ JSON ERROR', `No se pudo parsear JSON: ${text}`, 'error');
+                    }
+                } else {
+                    addResult('❌ HTTP ERROR', `Error HTTP ${response.status}: ${response.statusText}\nRespuesta: ${text}`, 'error');
+                }
+            } catch (error) {
+                addResult('❌ CONEXIÓN ERROR', `Error de conexión: ${error.message}`, 'error');
+            }
+        }
+
+        async function testSaveProgress() {
+            addResult('💾 PROBANDO SAVE PROGRESS', 'Probando endpoint save_progress.php...', 'info');
+            
+            const testData = {
+                user_key: 'test@ejemplo.com_memoflip',
+                level: 15,
+                coins: 1500,
+                lives: 3,
+                total_score: 1500
+            };
+            
+            try {
+                const response = await fetch(`${baseUrl}/api/save_progress.php`, {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify(testData)
+                });
+                
+                const text = await response.text();
+                
+                if (response.ok) {
+                    try {
+                        const data = JSON.parse(text);
+                        if (data.success) {
+                            addResult('✅ SAVE PROGRESS OK', `Guardado funciona correctamente!\nRespuesta: ${JSON.stringify(data, null, 2)}`, 'success');
+                        } else {
+                            addResult('❌ SAVE PROGRESS ERROR', `Error en guardado: ${data.error}\nRespuesta: ${JSON.stringify(data, null, 2)}`, 'error');
+                        }
+                    } catch (e) {
+                        addResult('❌ JSON ERROR', `No se pudo parsear JSON: ${text}`, 'error');
+                    }
+                } else {
+                    addResult('❌ HTTP ERROR', `Error HTTP ${response.status}: ${response.statusText}\nRespuesta: ${text}`, 'error');
+                }
+            } catch (error) {
+                addResult('❌ CONEXIÓN ERROR', `Error de conexión: ${error.message}`, 'error');
+            }
+        }
+
+        async function testDebugRanking() {
+            addResult('🔍 PROBANDO DEBUG RANKING', 'Probando endpoint debug_ranking.php...', 'info');
+            
+            try {
+                const response = await fetch(`${baseUrl}/debug_ranking.php`);
+                const text = await response.text();
+                
+                if (response.ok) {
+                    try {
+                        const data = JSON.parse(text);
+                        addResult('🔍 DEBUG INFO', `Información de debug:\n${JSON.stringify(data, null, 2)}`, data.success ? 'success' : 'error');
+                    } catch (e) {
+                        addResult('❌ JSON ERROR', `No se pudo parsear JSON: ${text}`, 'error');
+                    }
+                } else {
+                    addResult('❌ HTTP ERROR', `Error HTTP ${response.status}: ${response.statusText}\nRespuesta: ${text}`, 'error');
+                }
+            } catch (error) {
+                addResult('❌ CONEXIÓN ERROR', `Error de conexión: ${error.message}`, 'error');
+            }
+        }
+
+        async function testAll() {
+            document.getElementById('results').innerHTML = '';
+            addResult('🚀 INICIANDO TESTS COMPLETOS', 'Ejecutando todos los tests...', 'info');
+            
+            await testDebugRanking();
+            await new Promise(resolve => setTimeout(resolve, 1000));
+            await testSaveProgress();
+            await new Promise(resolve => setTimeout(resolve, 1000));
+            await testRanking();
+            
+            addResult('✅ TESTS COMPLETADOS', 'Todos los tests han terminado. Revisa los resultados arriba.', 'success');
+        }
+
+        // Mostrar información del sistema al cargar
+        showSystemInfo();
+    </script>
+</body>
+</html>

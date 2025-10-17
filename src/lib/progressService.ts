@@ -6,10 +6,11 @@ export interface SaveProgressData {
   level: number;
   coins: number;
   lives: number;
+  total_score?: number;
 }
 
-export async function saveProgressToServer({ user_key, level, coins, lives }: SaveProgressData) {
-  const payload = { user_key, level, coins, lives };
+export async function saveProgressToServer({ user_key, level, coins, lives, total_score }: SaveProgressData) {
+  const payload = { user_key, level, coins, lives, total_score };
   
   console.log('💾 [SAVE] payload =>', payload);
 

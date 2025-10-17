@@ -119,88 +119,115 @@ export default function IntroScreen({
 
   // Verificar sesión activa
   const checkSession = async () => {
-    try {
-      const data = await memoflipApi('auth.php?action=check_session', {
-        method: 'GET'
-      }) as SessionUser & { authenticated: boolean };
+    // 🔑 PRIMERO: Intentar auto-login con credenciales guardadas (funciona offline)
+    const savedEmail = localStorage.getItem('memoflip_user_email');
+    const savedToken = localStorage.getItem('memoflip_user_token');
 
-      if (data.authenticated) {
-        console.log('🔐 Sesión activa:', data);
-        await handleLoginSuccess(data);
-      } else {
-        console.log('👤 Sin sesión activa, intentando auto-login...');
-        
-        // ❌ No hay sesión → Intentar AUTO-LOGIN con credenciales guardadas
-        const savedEmail = localStorage.getItem('memoflip_user_email');
-        const savedToken = localStorage.getItem('memoflip_user_token');
-        
-        if (savedEmail && savedToken) {
-          console.log('🔑 Credenciales encontradas, intentando auto-login...');
-          try {
-            const savedPassword = atob(savedToken);
-            const loginResult = await memoflipApi('auth.php', {
-              method: 'POST',
-              body: {
-                action: 'login',
-                email: savedEmail,
-                password: savedPassword
-              }
-            }) as SessionUser & { success?: boolean };
-            
-            if (loginResult && loginResult.success) {
-              console.log('✅ Auto-login exitoso');
-              await handleLoginSuccess(loginResult, savedEmail, savedPassword);
-            } else {
-              // Credenciales inválidas, limpiar TODO
-              console.log('❌ Auto-login falló, limpiando TODO');
-              localStorage.removeItem('memoflip_user_email');
-              localStorage.removeItem('memoflip_user_token');
-              localStorage.removeItem('memoflip_progress'); // ✅ Limpiar progreso viejo
-              setUserInfo(null);
-              const { setCurrentUser, setCurrentLevel, setCoins, setLives } = useGameStore.getState();
-              setCurrentUser(null);
-              setCurrentLevel(1); // ✅ Resetear a inicial
-              setCoins(0);
-              setLives(3);
-              console.log('🔄 Progreso reseteado - usuario no existe en BD');
+    if (savedEmail && savedToken) {
+      console.log('🔑 Credenciales encontradas, intentando auto-login...');
+
+      // Si hay internet, intentar login al servidor
+      if (navigator.onLine) {
+        try {
+          const savedPassword = atob(savedToken);
+          const loginResult = await memoflipApi('auth.php', {
+            method: 'POST',
+            body: {
+              action: 'login',
+              email: savedEmail,
+              password: savedPassword
             }
-          } catch (e) {
-            console.log('❌ Error en auto-login:', e);
+          }) as SessionUser & { success?: boolean };
+
+          if (loginResult && loginResult.success) {
+            console.log('✅ Auto-login exitoso (online)');
+            await handleLoginSuccess(loginResult, savedEmail, savedPassword);
+            return;
+          } else {
+            console.log('❌ Auto-login fallido, limpiando credenciales...');
             localStorage.removeItem('memoflip_user_email');
             localStorage.removeItem('memoflip_user_token');
-            localStorage.removeItem('memoflip_progress'); // ✅ Limpiar progreso viejo
+            localStorage.removeItem('memoflip_progress');
             setUserInfo(null);
             const { setCurrentUser, setCurrentLevel, setCoins, setLives } = useGameStore.getState();
             setCurrentUser(null);
-            setCurrentLevel(1); // ✅ Resetear a inicial
+            setCurrentLevel(1);
             setCoins(0);
             setLives(3);
-            console.log('🔄 Progreso reseteado - error de conexión');
+            return;
           }
-        } else {
-          console.log('🔓 No hay credenciales guardadas - Modo invitado');
-          setUserInfo(null);
-          const { setCurrentUser, setCurrentLevel, setCoins, setLives } = useGameStore.getState();
-          setCurrentUser(null);
-          
-          // ✅ RESETEAR a valores iniciales limpios (NO cargar localStorage viejo)
-          setCurrentLevel(1);
-          setCoins(0);
-          setLives(3);
-          console.log('🔄 Modo invitado - progreso limpio desde nivel 1');
+        } catch (e) {
+          console.log('❌ Error en auto-login online:', e);
+          // Continuar con modo offline
         }
       }
-    } catch (error) {
-      console.error('❌ Error verificando sesión:', error);
-      setUserInfo(null);
-      
-      // ✅ En caso de error, resetear a limpio (NO cargar localStorage viejo)
-      const { setCurrentUser, setCurrentLevel, setCoins, setLives } = useGameStore.getState();
-      setCurrentUser(null);
-      setCurrentLevel(1);
-      setCoins(0);
-      setLives(3);
-      console.log('🔄 Error de sesión - progreso reseteado');
+
+      // 🔄 MODO OFFLINE: Usar credenciales guardadas sin verificar servidor
+      console.log('📴 Modo offline: usando credenciales guardadas');
+      const { setCurrentUser, setCurrentLevel, setCoins, setLives, getProgress } = useGameStore.getState();
+
+      // Cargar progreso local
+      const localProgress = getProgress();
+
+      // Crear usuario offline
+      const user = {
+        id: `${savedEmail}_memoflip`,
+        nickname: savedEmail.split('@')[0],
+        name: savedEmail.split('@')[0],
+        email: savedEmail,
+        createdAt: Date.now(),
+        lastLogin: Date.now(),
+        isGuest: false,
+        progress: {
+          level: localProgress.level,
+          coins: localProgress.coins,
+          lives: localProgress.lives,
+          lastLifeLost: localProgress.lastLifeLost,
+          lastPlayed: Date.now(),
+          totalScore: localProgress.coins,
+          phase: Math.ceil(localProgress.level / 50)
+        }
+      };
+
+      setCurrentUser(user);
+      setCurrentLevel(localProgress.level);
+      setCoins(localProgress.coins);
+      setLives(localProgress.lives);
+
+      setUserInfo({
+        email: savedEmail,
+        nombre: savedEmail.split('@')[0],
+        authenticated: true,
+        game_data: {
+          max_level_unlocked: localProgress.level,
+          coins_total: localProgress.coins,
+          lives_current: localProgress.lives,
+          sound_enabled: true
+        }
+      });
+
+      console.log('✅ Usuario cargado en modo offline:', user);
+      return;
+    }
+
+    // Si no hay credenciales guardadas, intentar verificar sesión en servidor
+    if (navigator.onLine) {
+      try {
+        const data = await memoflipApi('auth.php?action=check_session', {
+          method: 'GET'
+        }) as SessionUser & { authenticated: boolean };
+
+        if (data.authenticated) {
+          console.log('🔐 Sesión activa:', data);
+          await handleLoginSuccess(data);
+        } else {
+          console.log('👤 Sin sesión activa');
+        }
+      } catch (error) {
+        console.error('❌ Error verificando sesión:', error);
+      }
+    } else {
+      console.log('📴 Sin internet y sin credenciales guardadas');
     }
   };
 
@@ -271,7 +298,7 @@ export default function IntroScreen({
     
     // Crear objeto User para el store
     const user = {
-      id: data.email, // ✅ CORREGIDO: usar email sin sufijo para coincidir con BD
+      id: `${data.email}_memoflip`, // ✅ IMPORTANTE: añadir sufijo _memoflip para coincidir con BD
       nickname: data.nombre || data.email.split('@')[0],
       name: data.nombre || data.email.split('@')[0],
       email: data.email,

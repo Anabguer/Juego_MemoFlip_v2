@@ -1,9 +1,10 @@
 'use client';
 
 import { useState } from 'react';
-import { X, User, Mail, Lock, UserPlus, LogIn } from 'lucide-react';
+import { X, User, Mail, Lock, UserPlus, LogIn, Key } from 'lucide-react';
 import { memoflipApi } from '@/lib/capacitorApi';
 import VerificationModal from './VerificationModal';
+import ForgotPasswordModal from './ForgotPasswordModal';
 
 interface SessionUser {
   email: string;
@@ -35,6 +36,7 @@ export default function UserModal({ isOpen, onClose, onLoginSuccess }: UserModal
   const [errors, setErrors] = useState<Record<string, string>>({});
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [showVerification, setShowVerification] = useState(false);
+  const [showForgotPassword, setShowForgotPassword] = useState(false);
   const [registeredEmail, setRegisteredEmail] = useState('');
 
   const handleSubmit = async (e: React.FormEvent) => {
@@ -313,6 +315,21 @@ export default function UserModal({ isOpen, onClose, onLoginSuccess }: UserModal
                     disabled={isSubmitting}
                   />
                 </div>
+                
+                {/* Botón recuperar contraseña (solo en login) */}
+                {activeTab === 'login' && (
+                  <button
+                    type="button"
+                    onClick={() => {
+                      setShowForgotPassword(true);
+                      setErrors({});
+                    }}
+                    className="text-sm text-blue-400 hover:text-blue-300 underline transition flex items-center gap-1"
+                  >
+                    <Key className="w-3 h-3" />
+                    ¿Olvidaste tu contraseña?
+                  </button>
+                )}
               </div>
 
               {/* Confirmar Contraseña (solo en register) */}
@@ -398,6 +415,13 @@ export default function UserModal({ isOpen, onClose, onLoginSuccess }: UserModal
         onClose={() => setShowVerification(false)}
         email={registeredEmail}
         onVerificationSuccess={handleVerificationSuccess}
+      />
+
+      {/* Modal de Recuperar Contraseña */}
+      <ForgotPasswordModal
+        isOpen={showForgotPassword}
+        onClose={() => setShowForgotPassword(false)}
+        initialEmail={formData.email}
       />
     </div>
   );

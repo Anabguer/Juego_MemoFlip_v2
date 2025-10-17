@@ -29,7 +29,7 @@ import { getRandomCards, getRandomPortada, loadAvailableCards } from '@/lib/simp
 import { getColorThemeForLevel, getBossColorTheme, isBossLevel, ColorTheme } from '@/data/colorThemes';
 import LevelCompleteModal from './LevelCompleteModal';
 import NoLivesModal from './NoLivesModal';
-import { showRewardedAd, showBottomBanner } from '@/lib/adService';
+import { showRewardedAd, showBottomBanner, hideBanner, forceShowBanner, showInterstitialAd } from '@/lib/adService';
 import { useAppState } from '@/hooks/useAppState';
 
 interface GameScreenProps {
@@ -93,9 +93,26 @@ export default function GameScreen({ level: propLevel, onBack, onLevelComplete }
     return () => clearInterval(interval);
   }, []);
 
-  // 🎯 Mostrar banner de AdMob cuando se monta GameScreen
+  // 🎯 FORZAR BANNER CADA SEGUNDO - SIN COMPLICACIONES
   useEffect(() => {
-    showBottomBanner().catch(err => console.warn('[GameScreen] Banner no disponible:', err));
+    console.log('[GameScreen] 🎯 INICIANDO BANNER FORZADO');
+    
+    const forceBanner = async () => {
+      try {
+        await forceShowBanner();
+        console.log('[GameScreen] ✅ BANNER FORZADO');
+      } catch (e) {
+        console.warn('[GameScreen] ❌ Error:', e);
+      }
+    };
+
+    // ✅ FORZAR INMEDIATAMENTE
+    forceBanner();
+    
+    // ✅ FORZAR CADA SEGUNDO
+    const interval = setInterval(forceBanner, 1000);
+    
+    return () => clearInterval(interval);
   }, []);
 
   // Actualizar levelConfig cuando cambie el nivel
@@ -304,11 +321,18 @@ export default function GameScreen({ level: propLevel, onBack, onLevelComplete }
 
   // Efecto para detectar Game Over - solo si no hay modal de vidas abierto
   useEffect(() => {
-    // Verificando estado de vidas
+    console.log('🔍 Verificando vidas:', { lives, showGameOverModal, showNoLivesModal });
+    
+    // ✅ MOSTRAR MODAL DE VIDAS cuando se queden sin vidas
     if (lives === 0 && !showGameOverModal && !showNoLivesModal) {
-      // Mostrando modal de vidas
-      // Mostrar modal de vidas primero, no Game Over directamente
+      console.log('💔 Sin vidas - mostrando modal de vidas');
       setShowNoLivesModal(true);
+    }
+    
+    // ✅ OCULTAR MODAL DE VIDAS si recuperan vidas
+    if (lives > 0 && showNoLivesModal) {
+      console.log('❤️ Vidas recuperadas - ocultando modal');
+      setShowNoLivesModal(false);
     }
   }, [lives, showGameOverModal, showNoLivesModal]);
 
@@ -447,6 +471,8 @@ export default function GameScreen({ level: propLevel, onBack, onLevelComplete }
   const handleWatchAdForLife = useCallback(async () => {
     try {
       console.log('🎬 Iniciando anuncio de vida...');
+      console.log('📊 Estado actual:', { lives, showNoLivesModal });
+      
       const result = await showRewardedAd();
       
       console.log('📺 Resultado del anuncio:', result);
@@ -458,22 +484,32 @@ export default function GameScreen({ level: propLevel, onBack, onLevelComplete }
         // Dar la vida
         gainLife();
         
-        // Mostrar notificación
-        // Vida otorgada (no se necesita notificación extra)
-        
-        // Cerrar modal
-        setShowNoLivesModal(false);
-        
-        // Reiniciar el nivel actual para jugar inmediatamente
-        setHasStarted(false);
-        setLocalTimeLeft(0);
-        setActualGameTime(0);
-        setTotalFlips(0);
-        setFlippedCards([]);
-        setIsProcessing(false);
-        setTimeUpHandled(false);
-        timeUpHandledRef.current = false;
-        initializeLevel();
+        // Verificar que la vida se otorgó correctamente
+        setTimeout(() => {
+          const currentLives = useGameStore.getState().lives;
+          console.log('📊 Vidas después del anuncio:', currentLives);
+          
+          if (currentLives > 0) {
+            // Cerrar modal
+            setShowNoLivesModal(false);
+            
+            // Reiniciar el nivel actual para jugar inmediatamente
+            setHasStarted(false);
+            setLocalTimeLeft(0);
+            setActualGameTime(0);
+            setTotalFlips(0);
+            setFlippedCards([]);
+            setIsProcessing(false);
+            setTimeUpHandled(false);
+            timeUpHandledRef.current = false;
+            initializeLevel();
+            
+            console.log('✅ Modal cerrado y nivel reiniciado');
+          } else {
+            console.error('❌ Error: No se otorgó la vida correctamente');
+            alert('Error al otorgar la vida. Intenta de nuevo.');
+          }
+        }, 100);
         
         // Agregar evento
         addEvent({
@@ -489,19 +525,21 @@ export default function GameScreen({ level: propLevel, onBack, onLevelComplete }
         console.log('❌ No se obtuvo recompensa:', result.error);
         
         // Mostrar mensaje claro
-        const errorMsg = result.error === 'El video no se completó' 
+        const errorMsg = result.error === 'Debes ver el anuncio completo para obtener la vida.' 
           ? '⚠️ Debes ver el anuncio completo para obtener la vida.\n\nNo cierres el anuncio antes de tiempo.'
           : result.error || 'No se pudo cargar el anuncio en este momento.\n\nIntenta de nuevo en unos segundos.';
         
         alert(errorMsg);
         
         // NO cerrar el modal para que pueda intentar de nuevo
+        console.log('🔄 Manteniendo modal abierto para reintento');
       }
     } catch (error) {
       // Error al mostrar video
-      alert('Error al cargar el video');
+      console.error('❌ Error en handleWatchAdForLife:', error);
+      alert('Error al cargar el video. Intenta de nuevo.');
     }
-  }, [gainLife, addEvent, initializeLevel]);
+  }, [gainLife, addEvent, initializeLevel, lives, showNoLivesModal]);
 
   // Función para cerrar modal de vidas
   const handleCloseNoLivesModal = useCallback(() => {
@@ -1216,10 +1254,25 @@ export default function GameScreen({ level: propLevel, onBack, onLevelComplete }
   const handleNextLevel = async () => {
     // Avanzando al siguiente nivel
     
+    // ✅ Incrementar contador de niveles completados
+    const { incrementLevelCompleted, shouldShowInterstitial } = useGameStore.getState();
+    incrementLevelCompleted();
+    
     // Añadir las monedas ya calculadas
     addCoins(earnedCoins);
     
     setShowLevelCompleteModal(false);
+    
+    // ✅ Verificar si mostrar anuncio intersticial (cada 5 niveles)
+    if (shouldShowInterstitial()) {
+      console.log('🎯 Mostrando anuncio intersticial (cada 5 niveles)');
+      try {
+        await showInterstitialAd();
+        console.log('✅ Anuncio intersticial completado');
+      } catch (error) {
+        console.warn('❌ Error mostrando anuncio intersticial:', error);
+      }
+    }
     
     // ✅ El padre (MemoFlipApp.tsx) se encarga de:
     // - Actualizar el nivel en el store
@@ -1415,7 +1468,7 @@ export default function GameScreen({ level: propLevel, onBack, onLevelComplete }
           left: 0
         }}
       >
-      <div className="w-full h-full overflow-y-auto" style={{ padding: '0.5rem 1rem' }}>
+      <div className="w-full h-full overflow-y-auto" style={{ padding: '0.5rem 1rem 0.2rem 1rem' }}>
         <div className="max-w-4xl mx-auto w-full" style={{ maxHeight: '100%' }}>
           {/* Fila 1: Logo centrado + controles a la derecha */}
           <div className="flex justify-between items-start mb-3 -mt-3">
@@ -1459,11 +1512,12 @@ export default function GameScreen({ level: propLevel, onBack, onLevelComplete }
              <Settings className="w-5 h-5 text-white" />
            </button>
            
+           
         </div>
       </div>
 
           {/* Fila 2: Corazón izquierda + monedas derecha (compacta) */}
-          <div className="flex justify-between items-center mb-4 pb-4 border-b border-white/20 -mt-8">
+          <div className="flex justify-between items-center mb-3 pb-3 border-b border-white/20" style={{ marginTop: '-50px' }}>
             <div className="flex items-center gap-2 px-3 py-2 rounded-full bg-white/10 border border-white/20 h-10">
               <Heart className="w-5 h-5 text-white" />
               <span className="text-base font-semibold">{lives}</span>

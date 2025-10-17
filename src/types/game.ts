@@ -46,6 +46,7 @@ export interface GameState {
   gameEnded: boolean;
   lastLifeLost: number;
   lifeRegenTime: number;
+  levelsCompleted: number; // ✅ Contador para anuncios intersticiales
 }
 
 export interface Card {
@@ -79,9 +80,11 @@ export interface UserProgress {
   level: number;
   coins: number;
   lives: number;
+  lastLifeLost: number; // ✅ TIMESTAMP PARA REGENERACIÓN OFFLINE
   lastPlayed: number;
   totalScore: number;
   phase: number;
+  levelsCompleted?: number; // ✅ Contador para anuncios intersticiales
 }
 
 export interface User {

@@ -1,0 +1,23 @@
+@echo off
+setlocal
+set "HOST=82.194.68.83"
+set "USER=sistema_apps_user"
+set "PASS=GestionUploadSistemaApps!"
+set "WINSCP=C:\Users\agl03\AppData\Local\Programs\WinSCP\WinSCP.com"
+set "LOCAL=%~dp0PARA_HOSTALIA\sistema_apps_upload\memoflip"
+set "REMOTE=/sistema_apps_upload/memoflip"
+
+echo 🚨 Subiendo debug de comunicación APK...
+echo 📁 Local: %LOCAL%
+echo 📁 Remote: %REMOTE%
+echo.
+
+"%WINSCP%" /ini=nul /log:"%LOCAL%\deploy_debug_apk.log" /command "open ftps://%USER%:%PASS%@%HOST%/ -explicit -certificate=*" "option batch on" "option confirm off" "lcd %LOCAL%" "put debug_apk_communication.php memoflip/" "exit"
+
+echo.
+echo ✅ Deploy del debug APK completado
+echo 📄 Archivo subido: debug_apk_communication.php
+echo 🌐 URL: https://colisan.com/sistema_apps_upload/memoflip/debug_apk_communication.php
+echo 📊 Log: %LOCAL%\deploy_debug_apk.log
+echo.
+pause

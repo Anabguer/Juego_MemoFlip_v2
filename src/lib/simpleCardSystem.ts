@@ -113,9 +113,6 @@ export function getRandomCards(pairs: number, isTrio: boolean = false): SimpleCa
   
   const groupType = isTrio ? 'tríos' : 'pares';
   const multiplier = isTrio ? 3 : 2;
-  console.log(`🎴 Generando ${pairs} ${groupType} (${finalCards.length} cartas total) - SELECCIÓN ALEATORIA:`, 
-    selectedCards.map(c => c.fileName));
-  console.log(`🎴 Cartas disponibles: ${availableCards.length}, Seleccionadas: ${selectedCards.length}, Finales: ${finalCards.length}`);
   
   return finalCards;
 }

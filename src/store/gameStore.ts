@@ -10,6 +10,11 @@ interface GameStore extends GameState {
   setCurrentUser: (user: User | null) => void;
   createGuestUser: () => User;
   
+  // Sistema de anuncios intersticiales
+  levelsCompleted: number;
+  incrementLevelCompleted: () => void;
+  shouldShowInterstitial: () => boolean;
+  
   // Acciones del juego
   setCurrentLevel: (level: number) => void;
   setCoins: (coins: number) => void;
@@ -73,6 +78,7 @@ const initialState: GameState = {
   totalTime: 0,
   timeLeft: 0,
   attempts: 0,
+  levelsCompleted: 0, // ✅ Inicializar contador de niveles completados
   matches: 0,
   totalPairs: 0,
   gameEnded: false,
@@ -104,6 +110,7 @@ export const useGameStore = create<GameStore>()(
             level: 1,
             coins: 0,
             lives: 3,
+            lastLifeLost: 0, // ✅ TIMESTAMP PARA REGENERACIÓN
             lastPlayed: Date.now(),
             totalScore: 0,
             phase: 1
@@ -117,6 +124,15 @@ export const useGameStore = create<GameStore>()(
       setCurrentLevel: (level) => set({ currentLevel: level }),
       setCoins: (coins) => set({ coins }),
       addCoins: (amount) => set((state) => ({ coins: state.coins + amount })),
+      
+      // ✅ Sistema de anuncios intersticiales
+      incrementLevelCompleted: () => set((state) => ({ 
+        levelsCompleted: state.levelsCompleted + 1 
+      })),
+      shouldShowInterstitial: () => {
+        const state = get();
+        return state.levelsCompleted > 0 && state.levelsCompleted % 10 === 0;
+      },
       setLives: (lives) => set({ lives: Math.min(lives, get().maxLives) }),
       loseLife: () => {
         const state = get();
@@ -133,10 +149,19 @@ export const useGameStore = create<GameStore>()(
           data: { remainingLives: newLives },
           timestamp: Date.now()
         });
+        
+        // ✅ GUARDAR VIDAS INMEDIATAMENTE EN EL SERVIDOR
+        console.log('💾 [LIVES] Guardando vidas después de perder vida...');
+        get().saveProgressToServer();
       },
-      gainLife: () => set((state) => ({ 
-        lives: Math.min(state.lives + 1, state.maxLives) 
-      })),
+      gainLife: () => {
+        const newLives = Math.min(get().lives + 1, get().maxLives);
+        set({ lives: newLives });
+        
+        // ✅ GUARDAR VIDAS INMEDIATAMENTE EN EL SERVIDOR
+        console.log('💾 [LIVES] Guardando vidas después de ganar vida...');
+        get().saveProgressToServer();
+      },
       setPaused: (paused) => set({ isPaused: paused }),
       setMuted: (muted) => set({ isMuted: muted }),
       setTimeLeft: (time) => set({ timeLeft: time }),
@@ -146,42 +171,45 @@ export const useGameStore = create<GameStore>()(
       setGameEnded: (ended) => set({ gameEnded: ended }),
       setLastLifeLost: (timestamp) => set({ lastLifeLost: timestamp }),
 
-      // Sistema de regeneración de vidas
-      checkLifeRegeneration: () => {
-        const state = get();
-        const now = Date.now();
+    // Sistema de regeneración de vidas
+    checkLifeRegeneration: () => {
+      const state = get();
+      const now = Date.now();
+      
+      // Si ya tiene todas las vidas, no hacer nada
+      if (state.lives >= state.maxLives) {
+        return;
+      }
+      
+      // Calcular cuántas vidas se pueden regenerar
+      const timeSinceLastLifeLost = now - state.lastLifeLost;
+      const livesToRegenerate = Math.floor(timeSinceLastLifeLost / state.lifeRegenTime);
+      
+      if (livesToRegenerate > 0) {
+        const newLives = Math.min(state.lives + livesToRegenerate, state.maxLives);
+        const newLastLifeLost = state.lastLifeLost + (livesToRegenerate * state.lifeRegenTime);
         
-        // Si ya tiene todas las vidas, no hacer nada
-        if (state.lives >= state.maxLives) {
-          return;
-        }
+        set({ 
+          lives: newLives, 
+          lastLifeLost: newLastLifeLost,
+          gameEnded: false // Si se regeneró una vida, el juego ya no terminó
+        });
         
-        // Calcular cuántas vidas se pueden regenerar
-        const timeSinceLastLifeLost = now - state.lastLifeLost;
-        const livesToRegenerate = Math.floor(timeSinceLastLifeLost / state.lifeRegenTime);
+        // ✅ GUARDAR VIDAS REGENERADAS EN EL SERVIDOR
+        get().saveProgressToServer();
         
-        if (livesToRegenerate > 0) {
-          const newLives = Math.min(state.lives + livesToRegenerate, state.maxLives);
-          const newLastLifeLost = state.lastLifeLost + (livesToRegenerate * state.lifeRegenTime);
-          
-          set({ 
-            lives: newLives, 
-            lastLifeLost: newLastLifeLost,
-            gameEnded: false // Si se regeneró una vida, el juego ya no terminó
-          });
-          
-          // Agregar evento de regeneración
-          get().addEvent({
-            type: 'LIFE_REGENERATED',
-            data: { 
-              newLives, 
-              regeneratedCount: livesToRegenerate,
-              timeSinceLastLost: timeSinceLastLifeLost
-            },
-            timestamp: now
-          });
-        }
-      },
+        // Agregar evento de regeneración
+        get().addEvent({
+          type: 'LIFE_REGENERATED',
+          data: { 
+            newLives, 
+            regeneratedCount: livesToRegenerate,
+            timeSinceLastLost: timeSinceLastLifeLost
+          },
+          timestamp: now
+        });
+      }
+    },
       
       getTimeUntilNextLife: () => {
         const state = get();
@@ -200,6 +228,7 @@ export const useGameStore = create<GameStore>()(
           currentLevel: newProgress.level,
           coins: newProgress.coins,
           lives: newProgress.lives,
+          lastLifeLost: newProgress.lastLifeLost || get().lastLifeLost, // ✅ CARGAR TIMESTAMP
           currentPhase: newProgress.phase,
         });
       },
@@ -209,9 +238,11 @@ export const useGameStore = create<GameStore>()(
           level: state.currentLevel,
           coins: state.coins,
           lives: state.lives,
+          lastLifeLost: state.lastLifeLost, // ✅ GUARDAR TIMESTAMP DE REGENERACIÓN
           lastPlayed: Date.now(),
           totalScore: state.coins, // Por ahora usamos coins como score
           phase: state.currentPhase,
+          levelsCompleted: state.levelsCompleted, // ✅ Incluir contador de anuncios
         };
       },
       saveProgress: () => {
@@ -224,6 +255,11 @@ export const useGameStore = create<GameStore>()(
           if (saved) {
             const progress: UserProgress = JSON.parse(saved);
             get().updateProgress(progress);
+            
+            // ✅ Cargar contador de niveles completados
+            if (progress.levelsCompleted !== undefined) {
+              set({ levelsCompleted: progress.levelsCompleted });
+            }
           }
         } catch (error) {
           // Error loading progress
@@ -255,7 +291,8 @@ export const useGameStore = create<GameStore>()(
             user_key: user.id,
             level: state.currentLevel,
             coins: state.coins,
-            lives: state.lives
+            lives: state.lives,
+            total_score: state.coins // ✅ AGREGAR total_score para el ranking
           });
           
           console.log('✅ [SAVE] Progreso guardado CORRECTAMENTE');
