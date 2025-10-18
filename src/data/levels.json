@@ -995,7 +995,7 @@
             "id": 56,
             "phase": 2,
             "theme": "candyland",
-            "pairs": 12,
+            "pairs": 8,
             "timeSec": 0,
             "mechanics": [
                 "trio"
@@ -1211,7 +1211,7 @@
             "id": 68,
             "phase": 2,
             "theme": "candyland",
-            "pairs": 12,
+            "pairs": 8,
             "timeSec": 0,
             "mechanics": [
                 "trio"
@@ -1373,13 +1373,13 @@
             "id": 77,
             "phase": 2,
             "theme": "candyland",
-            "pairs": 9,
+            "pairs": 7,
             "timeSec": 0,
             "mechanics": [
                 "trio"
             ],
             "difficulty": "hard",
-            "description": "Encuentra tríos idénticos. Sin cronómetro. 18 cartas.",
+            "description": "Encuentra tríos idénticos. Sin cronómetro. 21 cartas.",
             "isBoss": false,
             "rewards": {
                 "coins": 135
@@ -2040,7 +2040,7 @@
             "id": 114,
             "phase": 3,
             "theme": "space",
-            "pairs": 12,
+            "pairs": 8,
             "timeSec": 0,
             "mechanics": [
                 "trio"
@@ -2076,7 +2076,7 @@
             "id": 116,
             "phase": 3,
             "theme": "space",
-            "pairs": 12,
+            "pairs": 8,
             "timeSec": 0,
             "mechanics": [
                 "trio"
@@ -2112,7 +2112,7 @@
             "id": 118,
             "phase": 3,
             "theme": "space",
-            "pairs": 12,
+            "pairs": 8,
             "timeSec": 0,
             "mechanics": [
                 "trio"
@@ -2346,7 +2346,7 @@
             "id": 131,
             "phase": 3,
             "theme": "space",
-            "pairs": 12,
+            "pairs": 8,
             "timeSec": 0,
             "mechanics": [
                 "trio"
@@ -4076,7 +4076,7 @@
             "id": 227,
             "phase": 5,
             "theme": "city",
-            "pairs": 12,
+            "pairs": 8,
             "timeSec": 0,
             "mechanics": [
                 "trio"
@@ -4274,7 +4274,7 @@
             "id": 238,
             "phase": 5,
             "theme": "city",
-            "pairs": 12,
+            "pairs": 8,
             "timeSec": 0,
             "mechanics": [
                 "trio"
@@ -4545,13 +4545,13 @@
             "id": 253,
             "phase": 6,
             "theme": "desert",
-            "pairs": 9,
+            "pairs": 7,
             "timeSec": 0,
             "mechanics": [
                 "trio"
             ],
             "difficulty": "hard",
-            "description": "Encuentra tríos idénticos. Sin cronómetro. 18 cartas.",
+            "description": "Encuentra tríos idénticos. Sin cronómetro. 21 cartas.",
             "isBoss": false,
             "rewards": {
                 "coins": 135
@@ -4815,7 +4815,7 @@
             "id": 268,
             "phase": 6,
             "theme": "desert",
-            "pairs": 12,
+            "pairs": 8,
             "timeSec": 0,
             "mechanics": [
                 "trio"
@@ -5446,7 +5446,7 @@
             "id": 303,
             "phase": 7,
             "theme": "arctic",
-            "pairs": 12,
+            "pairs": 8,
             "timeSec": 0,
             "mechanics": [
                 "trio"
@@ -5824,13 +5824,13 @@
             "id": 324,
             "phase": 7,
             "theme": "arctic",
-            "pairs": 9,
+            "pairs": 7,
             "timeSec": 0,
             "mechanics": [
                 "trio"
             ],
             "difficulty": "hard",
-            "description": "Encuentra tríos idénticos. Sin cronómetro. 18 cartas.",
+            "description": "Encuentra tríos idénticos. Sin cronómetro. 21 cartas.",
             "isBoss": false,
             "rewards": {
                 "coins": 135
@@ -6581,13 +6581,13 @@
             "id": 366,
             "phase": 8,
             "theme": "jungle",
-            "pairs": 9,
+            "pairs": 7,
             "timeSec": 0,
             "mechanics": [
                 "trio"
             ],
             "difficulty": "hard",
-            "description": "Encuentra tríos idénticos. Sin cronómetro. 18 cartas.",
+            "description": "Encuentra tríos idénticos. Sin cronómetro. 21 cartas.",
             "isBoss": false,
             "rewards": {
                 "coins": 135
@@ -7410,7 +7410,7 @@
             "id": 412,
             "phase": 9,
             "theme": "volcano",
-            "pairs": 12,
+            "pairs": 8,
             "timeSec": 0,
             "mechanics": [
                 "trio"
@@ -7662,13 +7662,13 @@
             "id": 426,
             "phase": 9,
             "theme": "volcano",
-            "pairs": 9,
+            "pairs": 7,
             "timeSec": 0,
             "mechanics": [
                 "trio"
             ],
             "difficulty": "hard",
-            "description": "Encuentra tríos idénticos. Sin cronómetro. 18 cartas.",
+            "description": "Encuentra tríos idénticos. Sin cronómetro. 21 cartas.",
             "isBoss": false,
             "rewards": {
                 "coins": 135
@@ -8886,13 +8886,13 @@
             "id": 494,
             "phase": 10,
             "theme": "crystal",
-            "pairs": 9,
+            "pairs": 7,
             "timeSec": 0,
             "mechanics": [
                 "trio"
             ],
             "difficulty": "hard",
-            "description": "Encuentra tríos idénticos. Sin cronómetro. 18 cartas.",
+            "description": "Encuentra tríos idénticos. Sin cronómetro. 21 cartas.",
             "isBoss": false,
             "rewards": {
                 "coins": 135
@@ -8976,7 +8976,7 @@
             "id": 499,
             "phase": 10,
             "theme": "crystal",
-            "pairs": 12,
+            "pairs": 8,
             "timeSec": 0,
             "mechanics": [
                 "trio"
@@ -9390,7 +9390,7 @@
             "id": 522,
             "phase": 11,
             "theme": "nebula",
-            "pairs": 12,
+            "pairs": 8,
             "timeSec": 0,
             "mechanics": [
                 "trio"
@@ -10201,13 +10201,13 @@
             "id": 567,
             "phase": 12,
             "theme": "underwater",
-            "pairs": 9,
+            "pairs": 7,
             "timeSec": 0,
             "mechanics": [
                 "trio"
             ],
             "difficulty": "hard",
-            "description": "Encuentra tríos idénticos. Sin cronómetro. 18 cartas.",
+            "description": "Encuentra tríos idénticos. Sin cronómetro. 21 cartas.",
             "isBoss": false,
             "rewards": {
                 "coins": 135
@@ -10255,7 +10255,7 @@
             "id": 570,
             "phase": 12,
             "theme": "underwater",
-            "pairs": 12,
+            "pairs": 8,
             "timeSec": 0,
             "mechanics": [
                 "trio"
@@ -10597,7 +10597,7 @@
             "id": 589,
             "phase": 12,
             "theme": "underwater",
-            "pairs": 12,
+            "pairs": 8,
             "timeSec": 0,
             "mechanics": [
                 "trio"
@@ -10723,7 +10723,7 @@
             "id": 596,
             "phase": 12,
             "theme": "underwater",
-            "pairs": 12,
+            "pairs": 8,
             "timeSec": 0,
             "mechanics": [
                 "trio"
@@ -13227,13 +13227,13 @@
             "id": 735,
             "phase": 15,
             "theme": "palace",
-            "pairs": 9,
+            "pairs": 7,
             "timeSec": 0,
             "mechanics": [
                 "trio"
             ],
             "difficulty": "hard",
-            "description": "Encuentra tríos idénticos. Sin cronómetro. 18 cartas.",
+            "description": "Encuentra tríos idénticos. Sin cronómetro. 21 cartas.",
             "isBoss": false,
             "rewards": {
                 "coins": 135
@@ -13443,7 +13443,7 @@
             "id": 747,
             "phase": 15,
             "theme": "palace",
-            "pairs": 12,
+            "pairs": 8,
             "timeSec": 0,
             "mechanics": [
                 "trio"
@@ -13498,13 +13498,13 @@
             "phase": 15,
             "theme": "palace",
             "pairs": 12,
-            "timeSec": 113,
+            "timeSec": 120,
             "mechanics": [
                 "bomb",
                 "fog"
             ],
             "difficulty": "hard",
-            "description": "Boss: 24 cartas, bomb + fog, crono 113s.",
+            "description": "Boss: 24 cartas, bomb + fog, crono 120s.",
             "isBoss": true,
             "rewards": {
                 "coins": 180
@@ -14146,13 +14146,13 @@
             "id": 786,
             "phase": 16,
             "theme": "mine",
-            "pairs": 9,
+            "pairs": 7,
             "timeSec": 0,
             "mechanics": [
                 "trio"
             ],
             "difficulty": "hard",
-            "description": "Encuentra tríos idénticos. Sin cronómetro. 18 cartas.",
+            "description": "Encuentra tríos idénticos. Sin cronómetro. 21 cartas.",
             "isBoss": false,
             "rewards": {
                 "coins": 135
@@ -15047,7 +15047,7 @@
             "id": 836,
             "phase": 17,
             "theme": "temple",
-            "pairs": 12,
+            "pairs": 8,
             "timeSec": 0,
             "mechanics": [
                 "trio"
@@ -15300,13 +15300,13 @@
             "phase": 17,
             "theme": "temple",
             "pairs": 12,
-            "timeSec": 113,
+            "timeSec": 120,
             "mechanics": [
                 "rotation",
                 "bomb"
             ],
             "difficulty": "hard",
-            "description": "Boss: 24 cartas, rotation + bomb, crono 113s.",
+            "description": "Boss: 24 cartas, rotation + bomb, crono 120s.",
             "isBoss": true,
             "rewards": {
                 "coins": 180
@@ -15678,7 +15678,7 @@
             "id": 871,
             "phase": 18,
             "theme": "castle",
-            "pairs": 12,
+            "pairs": 8,
             "timeSec": 0,
             "mechanics": [
                 "trio"
@@ -16110,7 +16110,7 @@
             "id": 895,
             "phase": 18,
             "theme": "castle",
-            "pairs": 12,
+            "pairs": 8,
             "timeSec": 0,
             "mechanics": [
                 "trio"
@@ -16201,13 +16201,13 @@
             "phase": 18,
             "theme": "castle",
             "pairs": 12,
-            "timeSec": 113,
+            "timeSec": 120,
             "mechanics": [
                 "ghost",
                 "darkness"
             ],
             "difficulty": "hard",
-            "description": "Boss: 24 cartas, ghost + darkness, crono 113s.",
+            "description": "Boss: 24 cartas, ghost + darkness, crono 120s.",
             "isBoss": true,
             "rewards": {
                 "coins": 180
@@ -16579,7 +16579,7 @@
             "id": 921,
             "phase": 19,
             "theme": "dimension",
-            "pairs": 12,
+            "pairs": 8,
             "timeSec": 0,
             "mechanics": [
                 "trio"
@@ -17624,13 +17624,13 @@
             "id": 979,
             "phase": 20,
             "theme": "final",
-            "pairs": 9,
+            "pairs": 7,
             "timeSec": 0,
             "mechanics": [
                 "trio"
             ],
             "difficulty": "hard",
-            "description": "Encuentra tríos idénticos. Sin cronómetro. 18 cartas.",
+            "description": "Encuentra tríos idénticos. Sin cronómetro. 21 cartas.",
             "isBoss": false,
             "rewards": {
                 "coins": 135
@@ -17858,13 +17858,13 @@
             "id": 992,
             "phase": 20,
             "theme": "final",
-            "pairs": 9,
+            "pairs": 7,
             "timeSec": 0,
             "mechanics": [
                 "trio"
             ],
             "difficulty": "hard",
-            "description": "Encuentra tríos idénticos. Sin cronómetro. 18 cartas.",
+            "description": "Encuentra tríos idénticos. Sin cronómetro. 21 cartas.",
             "isBoss": false,
             "rewards": {
                 "coins": 135
@@ -18003,13 +18003,13 @@
             "phase": 20,
             "theme": "final",
             "pairs": 12,
-            "timeSec": 113,
+            "timeSec": 120,
             "mechanics": [
                 "rotation",
                 "darkness"
             ],
             "difficulty": "hard",
-            "description": "Boss: 24 cartas, rotation + darkness, crono 113s.",
+            "description": "Boss: 24 cartas, rotation + darkness, crono 120s.",
             "isBoss": true,
             "rewards": {
                 "coins": 180

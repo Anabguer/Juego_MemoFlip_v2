@@ -3,8 +3,11 @@ import { AdMob, BannerAdOptions, BannerAdSize, BannerAdPosition, RewardAdPluginE
 import { Capacitor } from '@capacitor/core';
 
 const isTesting = false; // ← EN PRODUCCIÓN: false
-const TEST_BANNER = 'ca-app-pub-3940256099942544/6300978111';
-const TEST_REWARDED = 'ca-app-pub-3940256099942544/5224354917';
+
+// IDs REALES de AdMob para MemoFlip
+const BANNER_ID = 'ca-app-pub-1338301235950360/7622882916';
+const INTERSTITIAL_ID = 'ca-app-pub-1338301235950360/4053951805';
+const REWARDED_ID = 'ca-app-pub-1338301235950360/3008850481';
 
 export async function initAds() {
   if (!Capacitor.isNativePlatform()) {
@@ -21,7 +24,7 @@ export async function initAds() {
       try {
         // Forzar banner cada 2 segundos para mantenerlo visible
         await AdMob.showBanner({
-          adId: TEST_BANNER,
+          adId: BANNER_ID,
           adSize: BannerAdSize.BANNER,
           position: BannerAdPosition.BOTTOM_CENTER,
           margin: 0,
@@ -47,7 +50,7 @@ export async function showBottomBanner(adId?: string) {
   try {
     // ✅ NO ocultar banner anterior - solo mostrar directamente
     const opts: BannerAdOptions = {
-      adId: adId || TEST_BANNER,
+      adId: adId || BANNER_ID,
       adSize: BannerAdSize.BANNER,
       position: BannerAdPosition.BOTTOM_CENTER,
       margin: 0,
@@ -64,7 +67,7 @@ export async function showBottomBanner(adId?: string) {
       console.log('[Banner] 🔄 Reintentando...');
       await new Promise(resolve => setTimeout(resolve, 500));
       await AdMob.showBanner({
-        adId: adId || TEST_BANNER,
+        adId: adId || BANNER_ID,
         adSize: BannerAdSize.BANNER,
         position: BannerAdPosition.BOTTOM_CENTER,
         margin: 0,
@@ -86,7 +89,7 @@ export async function hideBanner() {
     
     // ✅ En lugar de ocultar, volver a mostrar el banner
     await AdMob.showBanner({
-      adId: TEST_BANNER,
+      adId: BANNER_ID,
       adSize: BannerAdSize.BANNER,
       position: BannerAdPosition.BOTTOM_CENTER,
       margin: 0,
@@ -109,7 +112,7 @@ export async function forceShowBanner(adId?: string) {
     console.log('[Banner] 🔥 FORZANDO BANNER - Sin ocultar anterior');
     
     const opts: BannerAdOptions = {
-      adId: adId || TEST_BANNER,
+      adId: adId || BANNER_ID,
       adSize: BannerAdSize.BANNER,
       position: BannerAdPosition.BOTTOM_CENTER,
       margin: 0,
@@ -140,7 +143,7 @@ export async function showInterstitialAd() {
     
     // Crear el anuncio intersticial
     await AdMob.prepareInterstitial({
-      adId: TEST_REWARDED, // Usar el mismo ID de test por ahora
+      adId: INTERSTITIAL_ID,
       isTesting
     });
     
@@ -221,7 +224,7 @@ export async function showRewardedAd(): Promise<AdResult> {
     }, 60000);
 
     // Preparar y mostrar anuncio
-    AdMob.prepareRewardVideoAd({ adId: TEST_REWARDED, isTesting: isTesting })
+    AdMob.prepareRewardVideoAd({ adId: REWARDED_ID, isTesting: isTesting })
       .then(() => {
         console.log('[Rewarded] Anuncio preparado, mostrando...');
         return AdMob.showRewardVideoAd();

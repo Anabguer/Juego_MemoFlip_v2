@@ -175,7 +175,7 @@ export function applyMechanic(card: Card, mechanic: MechanicName): Card {
         mechanic,
         mechanicData: {
           darknessLevel: 0, // Empezar completamente normal
-          darknessSpeed: 0.03, // Velocidad más lenta (era 0.1)
+          darknessSpeed: 0.07, // Velocidad reducida (tarda más en oscurecerse)
           lastDarkness: 0,
         },
       };
@@ -347,8 +347,8 @@ export function updateMechanics(cards: Card[], dt: number): Card[] {
       case 'darkness':
         // Aumentar oscuridad gradualmente en segundos reales
         const currentDarkness = (mechanicData.darknessLevel as number) ?? 0;
-        const darknessSpeed = (mechanicData.darknessSpeed as number) ?? 0.03; // Velocidad más lenta
-        const newDarkness = Math.min(0.6, currentDarkness + darknessSpeed * dt); // Máximo 60% oscuridad
+        const darknessSpeed = (mechanicData.darknessSpeed as number) ?? 0.07; // Velocidad reducida (tarda más en oscurecerse)
+        const newDarkness = Math.min(0.8, currentDarkness + darknessSpeed * dt); // Máximo 80% oscuridad
         
         mechanicData.darknessLevel = newDarkness;
         
@@ -357,9 +357,9 @@ export function updateMechanics(cards: Card[], dt: number): Card[] {
           console.log(`🌑 Darkness update - card: ${card.id}, level: ${newDarkness.toFixed(2)}`);
         }
         
-        // Si llega al máximo, reiniciar gradualmente (más lento)
-        if (newDarkness >= 0.6) {
-          mechanicData.darknessLevel = Math.max(0, newDarkness - 0.02 * dt); // Reducir gradualmente
+        // Si llega al máximo, reiniciar más rápido
+        if (newDarkness >= 0.8) {
+          mechanicData.darknessLevel = Math.max(0, newDarkness - 0.15 * dt); // Reducir más rápido
           console.log(`🌑 Darkness reducing - card: ${card.id}, level: ${(mechanicData.darknessLevel as number).toFixed(2)}`);
         }
         break;
@@ -485,20 +485,20 @@ export function getMechanicVisualEffects(card: Card): string {
       const darknessData = card.mechanicData as Record<string, unknown>;
       const darknessLevel = (darknessData.darknessLevel as number) || 0;
       
-      // Solo aplicar efectos si hay oscuridad significativa (más suave)
-      if (darknessLevel > 0.2) {
-        // Efectos más suaves basados en el nivel de oscuridad
-        if (darknessLevel > 0.5) {
-          effects.push('opacity-70', 'brightness-60', 'contrast-125'); // Máximo 50% oscuridad
+      // Aplicar efectos graduales sin el nivel extremo
+      if (darknessLevel > 0.1) {
+        // Efectos graduales basados en el nivel de oscuridad (sin nivel extremo)
+        if (darknessLevel > 0.6) {
+          effects.push('opacity-50', 'brightness-40', 'contrast-140', 'grayscale-30'); // 70% oscuridad (máximo)
         } else if (darknessLevel > 0.4) {
-          effects.push('opacity-80', 'brightness-70', 'contrast-110'); // 40% oscuridad
-        } else if (darknessLevel > 0.3) {
-          effects.push('opacity-85', 'brightness-75', 'contrast-105'); // 30% oscuridad
+          effects.push('opacity-60', 'brightness-50', 'contrast-130', 'grayscale-20'); // 50% oscuridad
+        } else if (darknessLevel > 0.2) {
+          effects.push('opacity-70', 'brightness-60', 'contrast-125'); // 30% oscuridad
         } else {
-          effects.push('opacity-90', 'brightness-80', 'contrast-102'); // 20% oscuridad
+          effects.push('opacity-80', 'brightness-70', 'contrast-115'); // 20% oscuridad
         }
       }
-      // Si darknessLevel es 0.2 o menor, no aplicar ningún efecto (carta completamente normal)
+      // Si darknessLevel es 0.1 o menor, no aplicar ningún efecto (carta completamente normal)
       break;
 
     case 'combo':

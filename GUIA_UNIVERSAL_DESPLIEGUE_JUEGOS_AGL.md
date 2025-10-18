@@ -1248,29 +1248,146 @@ WHERE email_verificado = 0 AND fecha_registro < NOW();
 
 ---
 
-### 📧 **2. Sistema de Envío de Emails**
+### 📧 **2. Sistema de Envío de Emails con PHPMailer**
 
-#### **Archivo:** `lumetrix/enviar_email.php`
+#### **Configuración PHPMailer (OBLIGATORIO)**
+
+**Descargar archivos PHPMailer desde GitHub:**
+```bash
+# Crear carpeta PHPMailer al mismo nivel que api/
+mkdir PHPMailer
+
+# Descargar archivos específicos (NO el repositorio completo)
+curl -o "PHPMailer/DSNConfigurator.php" "https://raw.githubusercontent.com/PHPMailer/PHPMailer/master/src/DSNConfigurator.php"
+curl -o "PHPMailer/Exception.php" "https://raw.githubusercontent.com/PHPMailer/PHPMailer/master/src/Exception.php"
+curl -o "PHPMailer/OAuth.php" "https://raw.githubusercontent.com/PHPMailer/PHPMailer/master/src/OAuth.php"
+curl -o "PHPMailer/OAuthTokenProvider.php" "https://raw.githubusercontent.com/PHPMailer/PHPMailer/master/src/OAuthTokenProvider.php"
+curl -o "PHPMailer/PHPMailer.php" "https://raw.githubusercontent.com/PHPMailer/PHPMailer/master/src/PHPMailer.php"
+curl -o "PHPMailer/POP3.php" "https://raw.githubusercontent.com/PHPMailer/PHPMailer/master/src/POP3.php"
+curl -o "PHPMailer/SMTP.php" "https://raw.githubusercontent.com/PHPMailer/PHPMailer/master/src/SMTP.php"
+```
+
+#### **Archivo:** `{juego}/enviar_email.php`
+
+**Configuración SMTP de Hostalia:**
+```php
+<?php
+use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\Exception;
+
+require 'PHPMailer/Exception.php';
+require 'PHPMailer/PHPMailer.php';
+require 'PHPMailer/SMTP.php';
+
+/**
+ * Envía email de verificación usando PHPMailer
+ */
+function enviarEmailVerificacion($email, $nombre, $codigo) {
+    // Configuración SMTP de Hostalia
+    $mail_host = 'smtp.colisan.com';
+    $mail_user = 'info@colisan.com';
+    $mail_pass = 'IgdAmg19521954';
+    
+    $asunto = "✅ Verificar cuenta - {Juego}";
+    $html = generarTemplateEmailVerificacion($nombre, $codigo);
+    
+    $mail = new PHPMailer(true);
+    
+    try {
+        // Configuración SSL para evitar problemas de certificados
+        $mail->SMTPOptions = array(
+            'ssl' => array(
+                'verify_peer' => false,
+                'verify_peer_name' => false,
+                'allow_self_signed' => true
+            )
+        );
+        
+        // Server settings
+        $mail->SMTPDebug = 0; // 0 = off, 1 = client, 2 = client y server
+        $mail->isSMTP();
+        $mail->Host = $mail_host;
+        $mail->SMTPAuth = true;
+        $mail->Username = $mail_user;
+        $mail->Password = $mail_pass;
+        $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
+        $mail->Port = 587;
+        
+        // Recipients
+        $mail->setFrom('info@colisan.com', '{Juego}');
+        $mail->addAddress($email, $nombre);
+        
+        // Content
+        $mail->isHTML(true);
+        $mail->Subject = $asunto;
+        $mail->Body = $html;
+        $mail->AltBody = 'Tu código de verificación es: ' . $codigo . '. Este código expira en 15 minutos.';
+        $mail->CharSet = 'UTF-8';
+        
+        $mail->send();
+        
+        error_log("✅ [PHPMailer] Email de verificación enviado a: " . $email);
+        return true;
+        
+    } catch (Exception $e) {
+        error_log("❌ [PHPMailer] Error enviando email a " . $email . ": " . $e->getMessage());
+        return false;
+    }
+}
+
+/**
+ * Envía email de recuperación de contraseña
+ */
+function enviarEmailRecuperacion($email, $nombre, $codigo) {
+    // Misma configuración SMTP que arriba
+    // ... (código similar)
+}
+
+/**
+ * Genera código aleatorio de 6 dígitos
+ */
+function generarCodigoVerificacion() {
+    return str_pad(rand(100000, 999999), 6, '0', STR_PAD_LEFT);
+}
+
+/**
+ * Verifica si un código ha expirado (15 minutos)
+ */
+function codigoEsValido($verification_expiry) {
+    if (!$verification_expiry) {
+        return false;
+    }
+    
+    $expiry_timestamp = strtotime($verification_expiry);
+    $current_timestamp = time();
+    
+    return $expiry_timestamp > $current_timestamp;
+}
+?>
+```
 
 **Funciones disponibles:**
 
 ##### `enviarEmailVerificacion($email, $nombre, $codigo)`
-- Envía email HTML con diseño Lumetrix (gradientes neón)
-- Template con código destacado en grande
-- Advertencia de expiración de 24 horas
-- Retorna `true` si el email se envió correctamente
+- ✅ **PHPMailer con SMTP** de Hostalia
+- ✅ **Entrega rápida** (segundos en lugar de minutos)
+- ✅ **Email HTML** con diseño del juego
+- ✅ **Código destacado** en grande
+- ✅ **Expiración 15 minutos** (configurable)
+- ✅ **Retorna `true`** si se envió correctamente
+
+##### `enviarEmailRecuperacion($email, $nombre, $codigo)`
+- ✅ **Misma configuración** SMTP
+- ✅ **Template específico** para recuperación
+- ✅ **Entrega confiable**
 
 ##### `generarCodigoVerificacion()`
-- Genera código aleatorio de 6 dígitos numéricos
-- Formato: `123456`
+- ✅ **Código de 6 dígitos** numéricos
+- ✅ **Formato:** `123456`
 
-##### `codigoEsValido($tiempo_verificacion, $horas_validez = 24)`
-- Verifica si un código ha expirado
-- Por defecto: 24 horas de validez
-
-##### `limpiarCodigosExpirados($pdo)`
-- Limpia códigos expirados de la base de datos
-- Ejecutar periódicamente con cron (opcional)
+##### `codigoEsValido($verification_expiry)`
+- ✅ **Verifica expiración** del código
+- ✅ **15 minutos** de validez (configurable)
 
 ---
 
@@ -1475,18 +1592,70 @@ WHERE email_verificado = 0 AND fecha_registro < NOW();
 5. Verificar mensaje: "4 columnas agregadas"
 ```
 
-#### **Paso 2: Subir archivos PHP**
+#### **Paso 2: Subir archivos PHP con PHPMailer**
 ```bash
 # Subir a Hostalia vía FTP/WinSCP
-/sistema_apps_upload/lumetrix/
-├── enviar_email.php (NUEVO)
+/sistema_apps_upload/{juego}/
+├── PHPMailer/ (NUEVA CARPETA)
+│   ├── DSNConfigurator.php
+│   ├── Exception.php
+│   ├── OAuth.php
+│   ├── OAuthTokenProvider.php
+│   ├── PHPMailer.php
+│   ├── POP3.php
+│   └── SMTP.php
+├── enviar_email.php (ACTUALIZADO con PHPMailer)
 └── auth.php (REEMPLAZAR con auth_con_verificacion.php)
 ```
+
+**⚠️ IMPORTANTE:** La carpeta `PHPMailer/` debe estar al mismo nivel que `api/`, NO dentro de ninguna subcarpeta.
 
 ⚠️ **IMPORTANTE:** Hacer backup del `auth.php` original antes de reemplazarlo.
 
 #### **Paso 3: Verificar configuración de email**
-- Servidor SMTP debe estar configurado en Hostalia
+- ✅ **Servidor SMTP:** `smtp.colisan.com` (Hostalia)
+- ✅ **Usuario:** `info@colisan.com`
+- ✅ **Puerto:** `587` (TLS)
+- ✅ **Archivos PHPMailer:** 7 archivos en carpeta `PHPMailer/`
+
+#### **Paso 4: Test de PHPMailer**
+```php
+// Crear archivo: test_phpmailer.php
+<?php
+require_once 'enviar_email.php';
+
+// Test básico
+$resultado = enviarEmailVerificacion('tu@email.com', 'Test', '123456');
+if ($resultado) {
+    echo "✅ PHPMailer funcionando correctamente";
+} else {
+    echo "❌ Error en PHPMailer - revisar configuración";
+}
+?>
+```
+
+**Acceder a:** `https://tudominio.com/sistema_apps_upload/{juego}/test_phpmailer.php`
+
+#### **Troubleshooting PHPMailer**
+
+**❌ Error: "Class 'PHPMailer\PHPMailer\PHPMailer' not found"**
+- ✅ Verificar que la carpeta `PHPMailer/` esté en la raíz del juego
+- ✅ Verificar que los 7 archivos estén presentes
+- ✅ Verificar que `require` apunte a la ruta correcta
+
+**❌ Error: "SMTP Error: Could not connect to SMTP host"**
+- ✅ Verificar que `smtp.colisan.com` sea accesible
+- ✅ Verificar credenciales: `info@colisan.com` / `IgdAmg19521954`
+- ✅ Verificar puerto `587` (TLS)
+
+**❌ Error: "SSL certificate problem"**
+- ✅ La configuración `SMTPOptions` ya incluye `verify_peer => false`
+- ✅ No debería aparecer este error con la configuración actual
+
+**❌ Emails no llegan**
+- ✅ Verificar carpeta de spam
+- ✅ Verificar que `info@colisan.com` no esté en lista negra
+- ✅ Probar con email diferente (Gmail, Outlook, etc.)
 - Email `noreply@colisan.com` debe existir
 - Verificar que no se bloqueen emails como spam
 
@@ -1650,6 +1819,393 @@ El email que recibe el usuario tiene:
 ```
 
 **Colores:** Gradiente verde neón (#39ff14) y cian (#00e5ff) - Estilo Lumetrix
+
+---
+
+## 📱 GENERACIÓN DE APK/AAB (Capacitor)
+
+### 🎯 **Configuración Inicial**
+
+#### **1. Instalar Capacitor:**
+```bash
+# Instalar Capacitor CLI
+npm install -g @capacitor/cli
+
+# Inicializar Capacitor en el proyecto
+npx cap init "Mi Juego" "com.tudominio.mijuego"
+```
+
+#### **2. Configurar capacitor.config.ts:**
+```typescript
+import { CapacitorConfig } from '@capacitor/cli';
+
+const config: CapacitorConfig = {
+  appId: 'com.tudominio.mijuego',
+  appName: 'Mi Juego',
+  webDir: 'out', // Carpeta de build (Next.js)
+  server: {
+    androidScheme: 'https'
+  },
+  plugins: {
+    AdMob: {
+      appId: 'ca-app-pub-XXXXXXXXXXXXXXXX~YYYYYYYYYY',
+      bannerAdId: 'ca-app-pub-XXXXXXXXXXXXXXXX/YYYYYYYYYY',
+      interstitialAdId: 'ca-app-pub-XXXXXXXXXXXXXXXX/YYYYYYYYYY',
+      rewardedAdId: 'ca-app-pub-XXXXXXXXXXXXXXXX/YYYYYYYYYY'
+    }
+  }
+};
+
+export default config;
+```
+
+#### **3. Añadir plataforma Android:**
+```bash
+# Añadir plataforma Android
+npx cap add android
+
+# Sincronizar archivos
+npx cap sync android
+```
+
+---
+
+### 🔧 **Configuración de Android**
+
+#### **1. Configurar android/app/build.gradle:**
+```gradle
+android {
+    compileSdk rootProject.ext.compileSdkVersion
+
+    defaultConfig {
+        applicationId "com.tudominio.mijuego"
+        minSdkVersion rootProject.ext.minSdkVersion
+        targetSdkVersion rootProject.ext.targetSdkVersion
+        versionCode 1
+        versionName "1.0.0"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+    
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+```
+
+#### **2. Configurar android/app/src/main/AndroidManifest.xml:**
+```xml
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme">
+        
+        <activity
+            android:name="com.getcapacitor.BridgeActivity"
+            android:label="@string/title_activity_main"
+            android:theme="@style/AppTheme.NoActionBarLaunch"
+            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|locale|smallestScreenSize|screenLayout|uiMode"
+            android:resizeableActivity="false"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+</manifest>
+```
+
+---
+
+### 🚀 **Proceso de Build**
+
+#### **1. Build del Frontend:**
+```bash
+# Build de Next.js
+npm run build
+
+# Sincronizar con Capacitor
+npx cap sync android
+```
+
+#### **2. Generar APK (Debug):**
+```bash
+# Abrir Android Studio
+npx cap open android
+
+# O generar APK directamente
+cd android
+./gradlew assembleDebug
+```
+
+#### **3. Generar AAB (Release):**
+```bash
+# Generar AAB firmado
+cd android
+./gradlew bundleRelease
+
+# El AAB se genera en:
+# android/app/build/outputs/bundle/release/app-release.aab
+```
+
+---
+
+### 🔐 **Firmado de APK/AAB**
+
+#### **1. Generar Keystore:**
+```bash
+# Generar keystore
+keytool -genkey -v -keystore mi-juego-release.keystore -alias mi-juego -keyalg RSA -keysize 2048 -validity 10000
+```
+
+#### **2. Configurar android/app/key.properties:**
+```properties
+storePassword=tu_password_del_keystore
+keyPassword=tu_password_del_keystore
+keyAlias=mi-juego
+storeFile=../mi-juego-release.keystore
+```
+
+#### **3. Configurar android/app/build.gradle para firmado:**
+```gradle
+android {
+    signingConfigs {
+        release {
+            if (project.hasProperty('MYAPP_RELEASE_STORE_FILE')) {
+                storeFile file(MYAPP_RELEASE_STORE_FILE)
+                storePassword MYAPP_RELEASE_STORE_PASSWORD
+                keyAlias MYAPP_RELEASE_KEY_ALIAS
+                keyPassword MYAPP_RELEASE_KEY_PASSWORD
+            }
+        }
+    }
+    buildTypes {
+        release {
+            signingConfig signingConfigs.release
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+```
+
+---
+
+### 📋 **Scripts de Automatización**
+
+#### **build_apk.bat:**
+```batch
+@echo off
+echo 🚀 GENERANDO APK/AAB
+echo ===================
+
+echo 📦 Building frontend...
+call npm run build
+if %errorlevel% neq 0 (
+    echo ❌ Error en build frontend
+    pause
+    exit /b 1
+)
+
+echo 🔄 Sincronizando con Capacitor...
+call npx cap sync android
+if %errorlevel% neq 0 (
+    echo ❌ Error sincronizando Capacitor
+    pause
+    exit /b 1
+)
+
+echo 📱 Generando APK...
+cd android
+call gradlew assembleDebug
+if %errorlevel% neq 0 (
+    echo ❌ Error generando APK
+    pause
+    exit /b 1
+)
+
+echo ✅ APK generado en android/app/build/outputs/apk/debug/app-debug.apk
+pause
+```
+
+#### **build_aab.bat:**
+```batch
+@echo off
+echo 🚀 GENERANDO AAB PARA GOOGLE PLAY
+echo =================================
+
+echo 📦 Building frontend...
+call npm run build
+if %errorlevel% neq 0 (
+    echo ❌ Error en build frontend
+    pause
+    exit /b 1
+)
+
+echo 🔄 Sincronizando con Capacitor...
+call npx cap sync android
+if %errorlevel% neq 0 (
+    echo ❌ Error sincronizando Capacitor
+    pause
+    exit /b 1
+)
+
+echo 📱 Generando AAB...
+cd android
+call gradlew bundleRelease
+if %errorlevel% neq 0 (
+    echo ❌ Error generando AAB
+    pause
+    exit /b 1
+)
+
+echo ✅ AAB generado en android/app/build/outputs/bundle/release/app-release.aab
+pause
+```
+
+---
+
+### 🔄 **Versionado Automático**
+
+#### **increment_version.bat:**
+```batch
+@echo off
+setlocal enabledelayedexpansion
+
+echo 🔢 INCREMENTANDO VERSIÓN
+echo ========================
+
+REM Leer versión actual
+for /f "tokens=*" %%i in ('findstr "versionCode" android\app\build.gradle') do set CURRENT_VERSION=%%i
+for /f "tokens=3" %%i in ("!CURRENT_VERSION!") do set VERSION_CODE=%%i
+
+REM Incrementar versión
+set /a NEW_VERSION_CODE=!VERSION_CODE!+1
+
+echo 📊 Versión actual: !VERSION_CODE!
+echo 📊 Nueva versión: !NEW_VERSION_CODE!
+
+REM Actualizar build.gradle
+powershell -Command "(Get-Content android\app\build.gradle) -replace 'versionCode !VERSION_CODE!', 'versionCode !NEW_VERSION_CODE!' | Set-Content android\app\build.gradle"
+
+echo ✅ Versión incrementada a !NEW_VERSION_CODE!
+pause
+```
+
+---
+
+### 📱 **Configuración de AdMob en APK**
+
+#### **1. Instalar plugin AdMob:**
+```bash
+npm install @capacitor-community/admob
+npx cap sync android
+```
+
+#### **2. Configurar en capacitor.config.ts:**
+```typescript
+plugins: {
+  AdMob: {
+    appId: 'ca-app-pub-XXXXXXXXXXXXXXXX~YYYYYYYYYY',
+    bannerAdId: 'ca-app-pub-XXXXXXXXXXXXXXXX/YYYYYYYYYY',
+    interstitialAdId: 'ca-app-pub-XXXXXXXXXXXXXXXX/YYYYYYYYYY',
+    rewardedAdId: 'ca-app-pub-XXXXXXXXXXXXXXXX/YYYYYYYYYY'
+  }
+}
+```
+
+#### **3. Inicializar en el código:**
+```javascript
+import { AdMob } from '@capacitor-community/admob';
+
+// Inicializar AdMob
+await AdMob.initialize({
+  requestTrackingAuthorization: true,
+  testingDevices: ['TEST_DEVICE_ID'],
+  initializeForTesting: true
+});
+```
+
+---
+
+### 🧪 **Testing de APK**
+
+#### **1. Instalar APK en dispositivo:**
+```bash
+# Instalar APK via ADB
+adb install android/app/build/outputs/apk/debug/app-debug.apk
+
+# O copiar APK al dispositivo e instalarlo manualmente
+```
+
+#### **2. Verificar funcionalidades:**
+- ✅ App se abre correctamente
+- ✅ Conexión a internet funciona
+- ✅ APIs responden correctamente
+- ✅ AdMob funciona (banner, interstitial, rewarded)
+- ✅ Audio funciona sin cortes
+- ✅ Auto-login funciona
+- ✅ Sincronización offline/online funciona
+
+---
+
+### 📋 **Checklist de APK/AAB**
+
+#### **Antes de generar:**
+- [ ] ✅ Frontend compilado sin errores
+- [ ] ✅ Capacitor sincronizado
+- [ ] ✅ VersionCode incrementado
+- [ ] ✅ AdMob configurado
+- [ ] ✅ Keystore configurado (para release)
+
+#### **Después de generar:**
+- [ ] ✅ APK/AAB se genera sin errores
+- [ ] ✅ Tamaño del archivo es razonable
+- [ ] ✅ APK se instala en dispositivo
+- [ ] ✅ App funciona correctamente
+- [ ] ✅ Todas las funcionalidades operativas
+
+#### **Para Google Play:**
+- [ ] ✅ AAB firmado correctamente
+- [ ] ✅ VersionCode único
+- [ ] ✅ AdMob en modo producción
+- [ ] ✅ Testing completo realizado
+- [ ] ✅ Screenshots y descripción preparados
+
+---
+
+### 🔍 **Troubleshooting APK/AAB**
+
+#### **Error: "Could not find method compile()":**
+```gradle
+// Cambiar 'compile' por 'implementation' en build.gradle
+implementation 'com.android.support:appcompat-v7:28.0.0'
+```
+
+#### **Error: "SDK location not found":**
+```bash
+# Configurar ANDROID_HOME
+set ANDROID_HOME=C:\Users\%USERNAME%\AppData\Local\Android\Sdk
+set PATH=%PATH%;%ANDROID_HOME%\tools;%ANDROID_HOME%\platform-tools
+```
+
+#### **Error: "Keystore not found":**
+```bash
+# Verificar ruta del keystore en key.properties
+storeFile=../mi-juego-release.keystore
+```
+
+#### **APK muy grande:**
+```bash
+# Habilitar minificación
+minifyEnabled true
+shrinkResources true
+```
 
 ---
 

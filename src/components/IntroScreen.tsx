@@ -233,11 +233,15 @@ export default function IntroScreen({
 
   // Cerrar sesión
   const handleLogout = async () => {
+    console.log('🔴 LOGOUT: Iniciando proceso de logout...');
     try {
+      console.log('🔴 LOGOUT: Llamando al backend...');
       const data = await memoflipApi('auth.php', {
         method: 'POST',
         body: { action: 'logout' }
       }) as { success: boolean };
+      
+      console.log('🔴 LOGOUT: Respuesta del backend:', data);
 
       if (data.success) {
         console.log('👋 Sesión cerrada');
@@ -262,7 +266,7 @@ export default function IntroScreen({
         window.location.reload(); // Recargar para limpiar todo
       }
     } catch (error) {
-      console.error('❌ Error cerrando sesión:', error);
+      console.error('🔴 LOGOUT: Error al cerrar sesión:', error);
     }
   };
 
@@ -440,7 +444,10 @@ export default function IntroScreen({
               <motion.button
                 whileHover={{ scale: 1.02, y: -2 }}
                 whileTap={{ scale: 0.98 }}
-                onClick={handleLogout}
+                onClick={() => {
+                  console.log('🔴 BOTÓN LOGOUT: Click detectado');
+                  handleLogout();
+                }}
                 className="w-full bg-white/10 hover:bg-white/20 text-white font-medium text-sm py-2 px-6 rounded-full border border-white/30 hover:border-white/50 transition-all duration-300 flex items-center justify-center gap-2 backdrop-blur-sm"
               >
                 <LogOut className="w-4 h-4" />

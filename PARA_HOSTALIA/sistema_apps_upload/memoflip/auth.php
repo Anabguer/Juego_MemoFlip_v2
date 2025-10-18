@@ -33,6 +33,12 @@ try {
         case 'reset_password':
             handleResetPassword();
             break;
+        case 'register':
+            handleRegister();
+            break;
+        case 'logout':
+            handleLogout();
+            break;
         default:
             http_response_code(400);
             echo json_encode(['success' => false, 'error' => 'Acción no válida: ' . $action]);
@@ -289,6 +295,144 @@ function handleResetPassword() {
         'success' => true,
         'message' => 'Contraseña actualizada correctamente. Ya puedes iniciar sesión.',
         'password_updated' => true
+    ]);
+}
+
+function handleRegister() {
+    if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
+        throw new Exception('Método no permitido para registro');
+    }
+    
+    $data = $GLOBALS['json_data'];
+    
+    if (!$data) {
+        $data = $_POST;
+    }
+    
+    if (!$data) {
+        throw new Exception('Datos JSON inválidos');
+    }
+    
+    $email = $data['email'] ?? '';
+    $password = $data['password'] ?? '';
+    $nombre = $data['nombre'] ?? '';
+    $nick = $data['nick'] ?? '';
+    
+    // ✅ VALIDACIONES OBLIGATORIAS
+    if (!$email || !$password || !$nombre || !$nick) {
+        throw new Exception('Todos los campos son obligatorios (email, contraseña, nombre, nick)');
+    }
+    
+    if (strlen($password) < 6) {
+        throw new Exception('La contraseña debe tener al menos 6 caracteres');
+    }
+    
+    if (strlen($nick) < 3) {
+        throw new Exception('El nick debe tener al menos 3 caracteres');
+    }
+    
+    // 🔥 CONECTAR A LA BASE DE DATOS
+    require_once 'config_hostalia.php';
+    
+    $pdo = new PDO("mysql:host=$host;dbname=$dbname;charset=utf8mb4", $username, $password);
+    $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+    
+    // Verificar si el email ya existe
+    $check_sql = "SELECT usuario_aplicacion_id FROM usuarios_aplicaciones WHERE email = :email";
+    $check_stmt = $pdo->prepare($check_sql);
+    $check_stmt->execute([':email' => $email]);
+    
+    if ($check_stmt->fetch()) {
+        throw new Exception('Este email ya está registrado');
+    }
+    
+    // Verificar si el nick ya existe
+    $check_nick_sql = "SELECT usuario_aplicacion_id FROM usuarios_aplicaciones WHERE nick = :nick";
+    $check_nick_stmt = $pdo->prepare($check_nick_sql);
+    $check_nick_stmt->execute([':nick' => $nick]);
+    
+    if ($check_nick_stmt->fetch()) {
+        throw new Exception('Este nick ya está en uso');
+    }
+    
+    // Generar usuario_aplicacion_key
+    $usuario_aplicacion_key = $email . '_memoflip';
+    
+    // Hash de la contraseña
+    $hashed_password = password_hash($password, PASSWORD_DEFAULT);
+    
+    // Generar código de verificación (6 dígitos)
+    $verification_code = sprintf('%06d', mt_rand(0, 999999));
+    
+    // Insertar en usuarios_aplicaciones
+    $insert_sql = "INSERT INTO usuarios_aplicaciones (
+        usuario_aplicacion_key, 
+        email, 
+        nombre, 
+        nick, 
+        password_hash,
+        app_codigo,
+        verification_code,
+        verification_expiry,
+        created_at
+    ) VALUES (
+        :usuario_aplicacion_key, 
+        :email, 
+        :nombre, 
+        :nick, 
+        :password_hash,
+        'memoflip',
+        :verification_code,
+        DATE_ADD(NOW(), INTERVAL 1 HOUR),
+        NOW()
+    )";
+    
+    $insert_stmt = $pdo->prepare($insert_sql);
+    $insert_stmt->execute([
+        ':usuario_aplicacion_key' => $usuario_aplicacion_key,
+        ':email' => $email,
+        ':nombre' => $nombre,
+        ':nick' => $nick,
+        ':password_hash' => $hashed_password,
+        ':verification_code' => $verification_code
+    ]);
+    
+    // Crear registro inicial en memoflip_usuarios
+    $game_sql = "INSERT INTO memoflip_usuarios (
+        usuario_aplicacion_key, 
+        max_level_unlocked, 
+        coins_total, 
+        total_score, 
+        lives_current, 
+        fecha_modificacion
+    ) VALUES (
+        :usuario_aplicacion_key, 
+        1, 
+        0, 
+        0, 
+        3, 
+        NOW()
+    )";
+    
+    $game_stmt = $pdo->prepare($game_sql);
+    $game_stmt->execute([':usuario_aplicacion_key' => $usuario_aplicacion_key]);
+    
+    echo json_encode([
+        'success' => true,
+        'requires_verification' => true,
+        'email_sent' => true,
+        'message' => 'Cuenta creada exitosamente. Se ha enviado un email de verificación.',
+        'verification_code' => $verification_code // Solo para testing
+    ]);
+}
+
+function handleLogout() {
+    // Para logout, simplemente devolvemos éxito
+    // El frontend se encarga de limpiar la sesión local
+    echo json_encode([
+        'success' => true,
+        'message' => 'Sesión cerrada correctamente',
+        'authenticated' => false
     ]);
 }
 ?>

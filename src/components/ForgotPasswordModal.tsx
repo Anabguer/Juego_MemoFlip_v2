@@ -112,12 +112,12 @@ export default function ForgotPasswordModal({ isOpen, onClose, initialEmail = ''
 
   const handleResetPassword = async () => {
     if (!nuevaPassword.trim()) {
-      setErrors({ password: 'Nueva contraseña es obligatoria' });
+      setErrors({ nuevaPassword: 'Nueva contraseña es obligatoria' });
       return;
     }
 
     if (nuevaPassword.length < 6) {
-      setErrors({ password: 'La contraseña debe tener al menos 6 caracteres' });
+      setErrors({ nuevaPassword: 'La contraseña debe tener al menos 6 caracteres' });
       return;
     }
 
@@ -274,7 +274,10 @@ export default function ForgotPasswordModal({ isOpen, onClose, initialEmail = ''
                     <p className="text-green-400 text-sm">{success}</p>
                   </div>
                   <p className="text-gray-300">
-                    Introduce el código de 6 dígitos que recibiste
+                    Introduce el código de 6 dígitos que recibiste y tu nueva contraseña
+                  </p>
+                  <p className="text-gray-400 text-sm mt-2">
+                    Email: <span className="text-blue-400">{email}</span>
                   </p>
                 </div>
 
@@ -303,6 +306,52 @@ export default function ForgotPasswordModal({ isOpen, onClose, initialEmail = ''
                   )}
                 </div>
 
+                <div className="space-y-2">
+                  <label className="block text-sm font-medium text-gray-300">
+                    Nueva contraseña *
+                  </label>
+                  <div className="relative">
+                    <Lock className="absolute left-3 top-1/2 transform -translate-y-1/2 w-4 h-4 text-gray-400" />
+                    <input
+                      type="password"
+                      value={nuevaPassword}
+                      onChange={(e) => {
+                        setNuevaPassword(e.target.value);
+                        if (errors.nuevaPassword) setErrors({});
+                      }}
+                      className="w-full pl-10 pr-4 py-3 bg-white/10 border border-white/20 rounded-xl text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all"
+                      placeholder="Mínimo 6 caracteres"
+                      disabled={isSubmitting}
+                    />
+                  </div>
+                  {errors.nuevaPassword && (
+                    <p className="text-red-400 text-sm">{errors.nuevaPassword}</p>
+                  )}
+                </div>
+
+                <div className="space-y-2">
+                  <label className="block text-sm font-medium text-gray-300">
+                    Confirmar nueva contraseña *
+                  </label>
+                  <div className="relative">
+                    <Lock className="absolute left-3 top-1/2 transform -translate-y-1/2 w-4 h-4 text-gray-400" />
+                    <input
+                      type="password"
+                      value={confirmPassword}
+                      onChange={(e) => {
+                        setConfirmPassword(e.target.value);
+                        if (errors.confirmPassword) setErrors({});
+                      }}
+                      className="w-full pl-10 pr-4 py-3 bg-white/10 border border-white/20 rounded-xl text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all"
+                      placeholder="Repite tu nueva contraseña"
+                      disabled={isSubmitting}
+                    />
+                  </div>
+                  {errors.confirmPassword && (
+                    <p className="text-red-400 text-sm">{errors.confirmPassword}</p>
+                  )}
+                </div>
+
                 {errors.general && (
                   <div className="p-3 bg-red-500/10 border border-red-500/20 rounded-xl">
                     <p className="text-red-400 text-sm">{errors.general}</p>
@@ -317,19 +366,19 @@ export default function ForgotPasswordModal({ isOpen, onClose, initialEmail = ''
                     Volver
                   </button>
                   <button
-                    onClick={handleVerifyCode}
-                    disabled={isSubmitting || codigo.length !== 6}
-                    className="flex-1 px-4 py-3 bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white font-semibold rounded-xl transition-all flex items-center justify-center gap-2 disabled:opacity-50 disabled:cursor-not-allowed shadow-lg"
+                    onClick={handleResetPassword}
+                    disabled={isSubmitting || codigo.length !== 6 || !nuevaPassword || !confirmPassword}
+                    className="flex-1 px-4 py-3 bg-gradient-to-r from-green-600 to-emerald-600 hover:from-green-700 hover:to-emerald-700 text-white font-semibold rounded-xl transition-all flex items-center justify-center gap-2 disabled:opacity-50 disabled:cursor-not-allowed shadow-lg"
                   >
                     {isSubmitting ? (
                       <>
                         <div className="w-4 h-4 border-2 border-white/30 border-t-white rounded-full animate-spin" />
-                        Verificando...
+                        Actualizando...
                       </>
                     ) : (
                       <>
                         <CheckCircle className="w-4 h-4" />
-                        Verificar
+                        Actualizar contraseña
                       </>
                     )}
                   </button>
