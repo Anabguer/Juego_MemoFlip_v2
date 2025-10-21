@@ -995,13 +995,13 @@
             "id": 56,
             "phase": 2,
             "theme": "candyland",
-            "pairs": 12,
+            "pairs": 6,
             "timeSec": 0,
             "mechanics": [
                 "trio"
             ],
             "difficulty": "hard",
-            "description": "Encuentra tríos idénticos. Sin cronómetro. 24 cartas.",
+            "description": "Encuentra tríos idénticos. Sin cronómetro. 18 cartas.",
             "isBoss": false,
             "rewards": {
                 "coins": 180

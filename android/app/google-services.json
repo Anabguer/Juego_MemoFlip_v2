@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "989954746255",
+    "project_id": "juegosintocables13",
+    "storage_bucket": "juegosintocables13.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:989954746255:android:1234567890abcdef",
+        "android_client_info": {
+          "package_name": "com.memoflip.app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "989954746255-rljkvtei3sjnlvmbtq43vkd0d7j2sp6c.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDummyKeyForDevelopment123456789"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "989954746255-rljkvtei3sjnlvmbtq43vkd0d7j2sp6c.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -38,6 +38,8 @@ export interface GameState {
   currentTheme: string;
   isPaused: boolean;
   isMuted: boolean;
+  vibrationEnabled: boolean;
+  gameMode: 'beginner' | 'normal' | 'extreme';
   totalTime: number;
   timeLeft: number;
   attempts: number;

@@ -28,6 +28,9 @@ try {
         case 'verify_email':
             handleVerifyEmail();
             break;
+        case 'google_signin':
+            handleGoogleSignIn();
+            break;
         default:
             http_response_code(400);
             echo json_encode(['success' => false, 'error' => 'Acción no válida: ' . $action]);
@@ -290,6 +293,172 @@ function handleVerifyEmail() {
     echo json_encode([
         'success' => true,
         'message' => 'Email verificado exitosamente'
+    ]);
+}
+
+function handleGoogleSignIn() {
+    if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
+        throw new Exception('Método no permitido para Google Sign-In');
+    }
+    
+    $input = file_get_contents('php://input');
+    $data = json_decode($input, true);
+    
+    if (!$data) {
+        throw new Exception('Datos JSON inválidos');
+    }
+    
+    $email = $data['email'] ?? '';
+    $nombre = $data['nombre'] ?? '';
+    $nick = $data['nick'] ?? '';
+    $google_id = $data['google_id'] ?? '';
+    $id_token = $data['id_token'] ?? '';
+    
+    // ✅ VALIDACIONES MEJORADAS
+    if (!$email || !$nombre || !$nick || !$google_id) {
+        throw new Exception('Datos de Google Sign-In incompletos. Faltan: ' . 
+            (!$email ? 'email ' : '') . 
+            (!$nombre ? 'nombre ' : '') . 
+            (!$nick ? 'nick ' : '') . 
+            (!$google_id ? 'google_id' : ''));
+    }
+    
+    // ✅ VALIDAR EMAIL
+    if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+        throw new Exception('Email de Google no válido: ' . $email);
+    }
+    
+    // 🔥 CONECTAR A LA BASE DE DATOS
+    require_once 'config_hostalia.php';
+    
+    $pdo = new PDO("mysql:host=$host;dbname=$dbname;charset=utf8mb4", $username, $password);
+    $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+    
+    // Buscar usuario existente por usuario_aplicacion_key
+    $usuario_aplicacion_key = $email . '_memoflip';
+    $sql = "SELECT * FROM usuarios_aplicaciones WHERE usuario_aplicacion_key = :key";
+    $stmt = $pdo->prepare($sql);
+    $stmt->execute([':key' => $usuario_aplicacion_key]);
+    $user = $stmt->fetch(PDO::FETCH_ASSOC);
+    
+    if (!$user) {
+        // ✅ CREAR NUEVO USUARIO GOOGLE
+        $insert_sql = "INSERT INTO usuarios_aplicaciones (
+            usuario_aplicacion_key, 
+            email, 
+            nombre, 
+            nick, 
+            password_hash,
+            app_codigo,
+            verified_at,
+            created_at,
+            last_login
+        ) VALUES (
+            :usuario_aplicacion_key, 
+            :email, 
+            :nombre, 
+            :nick, 
+            :password_hash,
+            'memoflip',
+            NOW(),
+            NOW(),
+            NOW()
+        )";
+        
+        // Usar google_id + id_token como contraseña (más seguro)
+        $password_hash = password_hash($google_id . '_' . $id_token, PASSWORD_DEFAULT);
+        
+        $insert_stmt = $pdo->prepare($insert_sql);
+        $insert_stmt->execute([
+            ':usuario_aplicacion_key' => $usuario_aplicacion_key,
+            ':email' => $email,
+            ':nombre' => $nombre,
+            ':nick' => $nick,
+            ':password_hash' => $password_hash
+        ]);
+        
+        // Crear registro inicial en memoflip_usuarios
+        $game_sql = "INSERT INTO memoflip_usuarios (
+            usuario_aplicacion_key, 
+            max_level_unlocked, 
+            coins_total, 
+            total_score, 
+            lives_current, 
+            fecha_modificacion
+        ) VALUES (
+            :usuario_aplicacion_key, 
+            1, 
+            0, 
+            0, 
+            3, 
+            NOW()
+        )";
+        
+        $game_stmt = $pdo->prepare($game_sql);
+        $game_stmt->execute([':usuario_aplicacion_key' => $usuario_aplicacion_key]);
+        
+        // Obtener datos del juego recién creados
+        $game_data = [
+            'max_level_unlocked' => 1,
+            'coins_total' => 0,
+            'lives_current' => 3,
+            'sound_enabled' => true
+        ];
+        
+        error_log("✅ [GOOGLE SIGN-IN] Nuevo usuario creado: " . $email);
+    } else {
+        // ✅ USUARIO EXISTENTE - obtener datos del juego
+        $game_sql = "SELECT * FROM memoflip_usuarios WHERE usuario_aplicacion_key = :key";
+        $game_stmt = $pdo->prepare($game_sql);
+        $game_stmt->execute([':key' => $usuario_aplicacion_key]);
+        $game_data = $game_stmt->fetch(PDO::FETCH_ASSOC);
+        
+        if (!$game_data) {
+            // Si no tiene datos de juego, crearlos
+            $game_sql = "INSERT INTO memoflip_usuarios (
+                usuario_aplicacion_key, 
+                max_level_unlocked, 
+                coins_total, 
+                total_score, 
+                lives_current, 
+                fecha_modificacion
+            ) VALUES (
+                :usuario_aplicacion_key, 
+                1, 
+                0, 
+                0, 
+                3, 
+                NOW()
+            )";
+            
+            $game_stmt = $pdo->prepare($game_sql);
+            $game_stmt->execute([':usuario_aplicacion_key' => $usuario_aplicacion_key]);
+            
+            $game_data = [
+                'max_level_unlocked' => 1,
+                'coins_total' => 0,
+                'lives_current' => 3,
+                'sound_enabled' => true
+            ];
+        } else {
+            $game_data['sound_enabled'] = true;
+        }
+        
+        // Actualizar último acceso
+        $update_sql = "UPDATE usuarios_aplicaciones SET last_login = NOW() WHERE usuario_aplicacion_key = :key";
+        $update_stmt = $pdo->prepare($update_sql);
+        $update_stmt->execute([':key' => $usuario_aplicacion_key]);
+        
+        error_log("✅ [GOOGLE SIGN-IN] Usuario existente: " . $email);
+    }
+    
+    echo json_encode([
+        'success' => true,
+        'authenticated' => true,
+        'email' => $email,
+        'nombre' => $nombre,
+        'nick' => $nick,
+        'game_data' => $game_data
     ]);
 }
 ?>

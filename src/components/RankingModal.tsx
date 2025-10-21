@@ -1,25 +1,16 @@
 'use client';
 
 import React, { useEffect, useState } from 'react';
-import { X, Trophy, Medal, Crown, Star, Loader2 } from 'lucide-react';
-import { memoflipApi } from '@/lib/capacitorApi';
+import { X, Trophy, Loader2 } from 'lucide-react';
+import { PGSNative } from '@/services/PGSNative';
 
 interface RankingModalProps {
   isOpen: boolean;
   onClose: () => void;
 }
 
-interface RankingPlayer {
-  ranking_position: number;
-  nombre: string;
-  email: string;
-  max_level_unlocked: number;
-  coins_total: number;
-  total_score: number;
-}
 
 export default function RankingModal({ isOpen, onClose }: RankingModalProps) {
-  const [rankingData, setRankingData] = useState<RankingPlayer[]>([]);
   const [isLoading, setIsLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
 
@@ -34,19 +25,28 @@ export default function RankingModal({ isOpen, onClose }: RankingModalProps) {
     setError(null);
 
     try {
-      const data = await memoflipApi('ranking.php?action=global&limit=20', {
-        method: 'GET'
-      });
+          // Verificar si el usuario está autenticado con Google Play Games
+          const isSignedIn = await PGSNative.getInstance().isAuthenticated();
+          
+          if (!isSignedIn) {
+            setError('Debes iniciar sesión con Google para ver el ranking');
+            setIsLoading(false);
+            return;
+          }
 
-      if (data.success && data.ranking) {
-        setRankingData(data.ranking);
-        console.log('🏆 Ranking cargado:', data.ranking);
+          // Mostrar el leaderboard nativo de Google Play Games
+          const result = await PGSNative.getInstance().showLeaderboard();
+      
+      if (result.success) {
+        console.log('🏆 Leaderboard de Google Play Games mostrado');
+        // El leaderboard se muestra en una ventana nativa
       } else {
-        setError(data.message || 'Error cargando ranking');
-        console.error('❌ Error en ranking:', data);
+        // En localhost/web, esto es normal - PGS solo funciona en APK
+        setError('El ranking solo funciona en la versión APK de Android. En localhost/web no está disponible.');
+        console.log('ℹ️ PGS no disponible en web - normal en localhost');
       }
     } catch (err) {
-      setError('Error de conexión');
+      setError('Error accediendo al ranking');
       console.error('❌ Error cargando ranking:', err);
     } finally {
       setIsLoading(false);
@@ -55,31 +55,6 @@ export default function RankingModal({ isOpen, onClose }: RankingModalProps) {
 
   if (!isOpen) return null;
 
-  const getPositionIcon = (position: number) => {
-    switch (position) {
-      case 1:
-        return <Crown className="w-6 h-6 text-yellow-400" />;
-      case 2:
-        return <Medal className="w-6 h-6 text-gray-300" />;
-      case 3:
-        return <Medal className="w-6 h-6 text-amber-600" />;
-      default:
-        return <span className="text-white font-bold text-lg">#{position}</span>;
-    }
-  };
-
-  const getPositionColor = (position: number) => {
-    switch (position) {
-      case 1:
-        return 'bg-gradient-to-r from-yellow-500/20 to-yellow-600/20 border-yellow-400/30';
-      case 2:
-        return 'bg-gradient-to-r from-gray-400/20 to-gray-500/20 border-gray-400/30';
-      case 3:
-        return 'bg-gradient-to-r from-amber-500/20 to-amber-600/20 border-amber-400/30';
-      default:
-        return 'bg-white/5 border-white/10';
-    }
-  };
 
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center">
@@ -125,69 +100,37 @@ export default function RankingModal({ isOpen, onClose }: RankingModalProps) {
                   Reintentar
                 </button>
               </div>
-            ) : rankingData.length === 0 ? (
-              <div className="text-center py-12">
-                <p className="text-gray-400 text-sm">No hay datos de ranking aún</p>
-              </div>
             ) : (
-              <div className="space-y-2">
-                {rankingData.map((player) => {
-                  const displayName = player.nombre || player.email.split('@')[0];
-                  const avatar = ['👑', '🧙‍♂️', '🏆', '🎯', '🧠', '⚡', '🎴', '🧩', '🏃‍♂️', '👤'][player.ranking_position - 1] || '🎮';
-                  
-                  return (
-                    <div
-                      key={player.ranking_position}
-                      className={`flex items-center gap-3 p-3 rounded-lg border ${getPositionColor(player.ranking_position)}`}
-                    >
-                      {/* Posición */}
-                      <div className="flex-shrink-0">
-                        {getPositionIcon(player.ranking_position)}
-                      </div>
-
-                      {/* Avatar */}
-                      <div className="flex-shrink-0">
-                        <div className="w-10 h-10 rounded-full bg-white/10 border border-white/20 flex items-center justify-center text-lg">
-                          {avatar}
-                        </div>
-                      </div>
-
-                      {/* Info del jugador */}
-                      <div className="flex-1 min-w-0">
-                        <h3 className="text-white font-semibold text-sm truncate">
-                          {displayName}
-                        </h3>
-                        <p className="text-xs text-gray-400">
-                          Nivel {player.max_level_unlocked}
-                        </p>
-                      </div>
-
-                      {/* Puntos */}
-                      <div className="flex-shrink-0 text-right">
-                        <p className="text-yellow-400 font-semibold text-sm">
-                          {player.total_score.toLocaleString()}
-                        </p>
-                        <p className="text-xs text-gray-400">puntos</p>
-                      </div>
-                    </div>
-                  );
-                })}
+              <div className="text-center py-12">
+                <div className="mb-6">
+                  <div className="w-16 h-16 mx-auto mb-4 rounded-full bg-gradient-to-br from-yellow-400 to-orange-500 flex items-center justify-center">
+                    <Trophy className="w-8 h-8 text-white" />
+                  </div>
+                  <h3 className="text-lg font-semibold text-white mb-2">Ranking de Google Play Games</h3>
+                  <p className="text-gray-300 text-sm mb-4">
+                    El ranking se muestra en la interfaz nativa de Google Play Games
+                  </p>
+                  <p className="text-gray-400 text-xs">
+                    Si no se abrió automáticamente, verifica que tengas Google Play Games instalado
+                  </p>
+                </div>
+                
+                <button 
+                  onClick={loadRanking}
+                  className="px-6 py-3 bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700 text-white rounded-full font-medium transition-all duration-200"
+                >
+                  Abrir Ranking
+                </button>
               </div>
             )}
           </div>
 
           {/* Footer */}
           <div className="p-4 border-t border-white/10 bg-white/5 flex-shrink-0">
-            <div className="flex items-center justify-between">
+            <div className="flex items-center justify-center">
               <p className="text-xs text-gray-400">
-                Top {rankingData.length} jugadores
+                Ranking de Google Play Games
               </p>
-              <button 
-                onClick={loadRanking}
-                className="text-xs text-purple-400 hover:text-purple-300"
-              >
-                Actualizar
-              </button>
             </div>
           </div>
         </div>

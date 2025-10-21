@@ -2,10 +2,13 @@
 
 import { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
-import { Play, User, LogOut } from 'lucide-react';
-import { useGameStore } from '@/store/gameStore';
+import { Play, User, LogOut, Settings } from 'lucide-react';
+import { useGameStore, GameMode } from '@/store/gameStore';
 import UserModal from './UserModal';
-import { memoflipApi, getAssetPath } from '@/lib/capacitorApi';
+import DiagnosticButton from './DiagnosticButton';
+import { getAssetPath } from '@/lib/capacitorApi';
+import { PGSNative } from '@/services/PGSNative';
+import { CombinedGoogleService } from '@/services/CombinedGoogleService';
 
 interface IntroScreenProps {
   onStartGame: () => void;
@@ -30,9 +33,25 @@ export default function IntroScreen({
   const [isClient, setIsClient] = useState(false);
   const [showUserModal, setShowUserModal] = useState(false);
   const [userInfo, setUserInfo] = useState<SessionUser | null>(null);
+  const [pgsDisplayName, setPgsDisplayName] = useState<string>('');
+  const [debugLogs, setDebugLogs] = useState<string[]>([]);
+  const [showDebug, setShowDebug] = useState(false);
   
   // ✅ Usar valores REACTIVOS del store en vez de getProgress()
-  const { loadProgress, currentLevel, coins, checkLifeRegeneration } = useGameStore();
+  const { loadProgress, currentLevel, coins, checkLifeRegeneration, loadProgressFromCloud, syncWithCloud, gameMode, setGameMode, showLeaderboard, submitScore } = useGameStore();
+
+  // 🔍 Función para añadir logs de debug
+  const addDebugLog = (message: string) => {
+    const timestamp = new Date().toLocaleTimeString();
+    const logMessage = `[${timestamp}] ${message}`;
+    console.log(logMessage);
+    setDebugLogs(prev => [...prev.slice(-9), logMessage]); // Mantener solo los últimos 10 logs
+  };
+
+  // Conectar el sistema de debug con PGSNative
+  useEffect(() => {
+    PGSNative.getInstance().setDebugCallback(addDebugLog);
+  }, []);
   const progress = { level: currentLevel, coins }; // ← REACTIVO a cambios del store
 
   useEffect(() => {
@@ -46,15 +65,29 @@ export default function IntroScreen({
     checkSession(); // Esto cargará del servidor si hay sesión
     // loadProgress() ya NO se llama aquí - checkSession lo hace automáticamente
     
+    // 🎮 PGS: Intentar silent sign-in
+    trySilentPGS();
+    
+    // ☁️ Cargar progreso desde la nube si está autenticado con Google Play Games
+    loadProgressFromCloud();
+    
     // 🎯 Inicializar AdMob - SIMPLIFICADO para evitar crashes
     if (typeof window !== 'undefined') {
+      console.log('🎯 [AdMob] Iniciando carga del servicio...');
       import('@/lib/adService')
         .then(({ initAds, showBottomBanner }) => {
+          console.log('🎯 [AdMob] Servicio cargado, inicializando...');
           initAds()
-            .then(() => showBottomBanner())
-            .catch(err => console.warn('[AdMob] No disponible:', err));
+            .then(() => {
+              console.log('🎯 [AdMob] Inicializado, mostrando banner...');
+              return showBottomBanner();
+            })
+            .then(() => {
+              console.log('✅ [AdMob] Banner mostrado correctamente');
+            })
+            .catch(err => console.error('❌ [AdMob] Error:', err));
         })
-        .catch(err => console.warn('[AdMob] Import error:', err));
+        .catch(err => console.error('❌ [AdMob] Import error:', err));
     }
     
     // Detectar conexión online/offline para sincronizar silenciosamente
@@ -126,42 +159,6 @@ export default function IntroScreen({
     if (savedEmail && savedToken) {
       console.log('🔑 Credenciales encontradas, intentando auto-login...');
 
-      // Si hay internet, intentar login al servidor
-      if (navigator.onLine) {
-        try {
-          const savedPassword = atob(savedToken);
-          const loginResult = await memoflipApi('auth.php', {
-            method: 'POST',
-            body: {
-              action: 'login',
-              email: savedEmail,
-              password: savedPassword
-            }
-          }) as SessionUser & { success?: boolean };
-
-          if (loginResult && loginResult.success) {
-            console.log('✅ Auto-login exitoso (online)');
-            await handleLoginSuccess(loginResult, savedEmail, savedPassword);
-            return;
-          } else {
-            console.log('❌ Auto-login fallido, limpiando credenciales...');
-            localStorage.removeItem('memoflip_user_email');
-            localStorage.removeItem('memoflip_user_token');
-            localStorage.removeItem('memoflip_progress');
-            setUserInfo(null);
-            const { setCurrentUser, setCurrentLevel, setCoins, setLives } = useGameStore.getState();
-            setCurrentUser(null);
-            setCurrentLevel(1);
-            setCoins(0);
-            setLives(3);
-            return;
-          }
-        } catch (e) {
-          console.log('❌ Error en auto-login online:', e);
-          // Continuar con modo offline
-        }
-      }
-
       // 🔄 MODO OFFLINE: Usar credenciales guardadas sin verificar servidor
       console.log('📴 Modo offline: usando credenciales guardadas');
       const { setCurrentUser, setCurrentLevel, setCoins, setLives, getProgress } = useGameStore.getState();
@@ -210,64 +207,121 @@ export default function IntroScreen({
       return;
     }
 
-    // Si no hay credenciales guardadas, intentar verificar sesión en servidor
-    if (navigator.onLine) {
-      try {
-        const data = await memoflipApi('auth.php?action=check_session', {
-          method: 'GET'
-        }) as SessionUser & { authenticated: boolean };
+    // Sin credenciales guardadas - modo invitado
+    console.log('👤 Sin credenciales guardadas - modo invitado');
+  };
 
-        if (data.authenticated) {
-          console.log('🔐 Sesión activa:', data);
-          await handleLoginSuccess(data);
-        } else {
-          console.log('👤 Sin sesión activa');
-        }
-      } catch (error) {
-        console.error('❌ Error verificando sesión:', error);
+  // 🎮 COMBINED Functions
+  const trySilentPGS = async () => {
+    try {
+      console.log('🔄 COMBINED: Intentando auto-login...');
+      const authResult = await CombinedGoogleService.getInstance().isAuthenticated();
+      
+      if (authResult.authenticated && authResult.user) {
+        const displayName = authResult.user.displayName || authResult.user.name || 'Usuario Google';
+        const email = authResult.user.email || 'playgames@google.com';
+        
+        setPgsDisplayName(displayName);
+        console.log('✅ COMBINED: Auto-login exitoso:', displayName);
+        console.log('📧 COMBINED: Email real:', email);
+        
+        // Sincronizar con la nube
+        await CombinedGoogleService.getInstance().syncWithCloud();
+      } else {
+        console.log('ℹ️ COMBINED: No hay sesión activa');
       }
-    } else {
-      console.log('📴 Sin internet y sin credenciales guardadas');
+    } catch (error) {
+      console.log('❌ COMBINED: Error en auto-login:', error);
+    }
+  };
+
+  // 🏆 Ranking Functions
+  const handleShowRanking = async () => {
+    console.log('🏆 Mostrando ranking para modo:', gameMode);
+    await showLeaderboard(gameMode);
+  };
+
+  const handleSubmitScore = async () => {
+    console.log('📊 Enviando puntuación para modo:', gameMode);
+    const score = coins + (currentLevel * 100); // Puntuación basada en monedas y nivel
+    await submitScore(gameMode, score);
+  };
+
+  const handlePGSSignIn = async () => {
+    addDebugLog('🔄 COMBINED: Iniciando login combinado (Google Sign-In + Play Games)...');
+    
+    // Verificar si ya está autenticado
+    if (pgsDisplayName) {
+      addDebugLog('✅ COMBINED: Usuario ya autenticado: ' + pgsDisplayName);
+      return;
+    }
+    
+    try {
+      addDebugLog('🔄 COMBINED: Llamando a CombinedGoogleService.signIn()...');
+      const result = await CombinedGoogleService.getInstance().signIn();
+      addDebugLog('📥 COMBINED: Resultado recibido: ' + JSON.stringify(result));
+      
+      if (result.success && result.user) {
+        const displayName = result.user.displayName || result.user.name || 'Usuario Google';
+        const email = result.user.email || 'playgames@google.com';
+        
+        setPgsDisplayName(displayName);
+        localStorage.setItem('pgs_display', displayName);
+        addDebugLog('✅ COMBINED: Login combinado exitoso: ' + displayName);
+        addDebugLog('📧 COMBINED: Email real: ' + email);
+        
+        // ☁️ Sincronizar con la nube después del login exitoso
+        addDebugLog('☁️ COMBINED: Iniciando sincronización con la nube...');
+        await CombinedGoogleService.getInstance().syncWithCloud();
+        
+        addDebugLog(`✅ Login exitoso con Google! Usuario: ${displayName}, Email: ${email}`);
+      } else {
+        addDebugLog('❌ COMBINED: Error en login combinado: ' + (result.error || 'Error desconocido'));
+        alert(`❌ Error en login: ${result.error || 'No se pudo conectar con Google'}`);
+      }
+    } catch (error) {
+      addDebugLog('❌ COMBINED: Error en login combinado: ' + error);
+      alert(`❌ Error técnico: ${error}`);
     }
   };
 
   // Cerrar sesión
   const handleLogout = async () => {
     console.log('🔴 LOGOUT: Iniciando proceso de logout...');
+    
     try {
-      console.log('🔴 LOGOUT: Llamando al backend...');
-      const data = await memoflipApi('auth.php', {
-        method: 'POST',
-        body: { action: 'logout' }
-      }) as { success: boolean };
-      
-      console.log('🔴 LOGOUT: Respuesta del backend:', data);
-
-      if (data.success) {
-        console.log('👋 Sesión cerrada');
-        
-        // 🗑️ LIMPIAR TODO EL PROGRESO LOCAL
-        localStorage.removeItem('memoflip_user_email');
-        localStorage.removeItem('memoflip_user_token');
-        localStorage.removeItem('memoflip_progress'); // ✅ Limpiar progreso
-        localStorage.removeItem('memoflip_pending_sync');
-        console.log('🗑️ Credenciales y progreso eliminados');
-        
-        setUserInfo(null);
-        
-        // Limpiar currentUser y resetear progreso en el store
-        const { setCurrentUser, setCurrentLevel, setCoins, setLives } = useGameStore.getState();
-        setCurrentUser(null);
-        setCurrentLevel(1); // ✅ Resetear a nivel 1
-        setCoins(0);        // ✅ Resetear monedas
-        setLives(3);        // ✅ Resetear vidas
-        
-        console.log('✅ Progreso reseteado a inicial');
-        window.location.reload(); // Recargar para limpiar todo
-      }
+      // Cerrar sesión en ambos servicios
+      await CombinedGoogleService.getInstance().signOut();
+      console.log('✅ LOGOUT: Servicios Google cerrados');
     } catch (error) {
-      console.error('🔴 LOGOUT: Error al cerrar sesión:', error);
+      console.error('❌ LOGOUT: Error cerrando servicios:', error);
     }
+    
+    // 🗑️ LIMPIAR TODO EL PROGRESO LOCAL
+    localStorage.removeItem('memoflip_user_email');
+    localStorage.removeItem('memoflip_user_token');
+    localStorage.removeItem('memoflip_progress');
+    localStorage.removeItem('memoflip_pending_sync');
+    
+    // 🗑️ LIMPIAR PGS DATA
+    localStorage.removeItem('pgs_display');
+    localStorage.removeItem('pgs_player_id');
+    localStorage.removeItem('google_user_info');
+    setPgsDisplayName('');
+    
+    console.log('🗑️ Credenciales y progreso eliminados');
+    
+    setUserInfo(null);
+    
+    // Limpiar currentUser y resetear progreso en el store
+    const { setCurrentUser, setCurrentLevel, setCoins, setLives } = useGameStore.getState();
+    setCurrentUser(null);
+    setCurrentLevel(1); // ✅ Resetear a nivel 1
+    setCoins(0);        // ✅ Resetear monedas
+    setLives(3);        // ✅ Resetear vidas
+    
+    console.log('✅ Progreso reseteado a inicial');
+    window.location.reload(); // Recargar para limpiar todo
   };
 
   const handleLoginSuccess = (data: SessionUser, email?: string, password?: string) => {
@@ -411,30 +465,158 @@ export default function IntroScreen({
             transition={{ delay: 0.9 }}
             className="space-y-4"
           >
-            {/* Botón principal JUGAR/CONTINUAR */}
+            {/* Botón principal JUGAR/CONTINUAR con efecto burbujas */}
             <motion.button
               whileHover={{ scale: 1.05, y: -3 }}
               whileTap={{ scale: 0.95 }}
               onClick={onStartGame}
-              className="w-full bg-gradient-to-r from-yellow-400 to-yellow-500 text-black font-bold text-xl md:text-2xl py-4 px-8 rounded-full shadow-xl border-3 border-white hover:shadow-2xl transition-all duration-300 flex items-center justify-center gap-3"
+              className="relative w-full bg-gradient-to-r from-yellow-400 to-yellow-500 text-white font-black text-xl md:text-2xl py-4 px-8 rounded-full shadow-xl border-3 border-white hover:shadow-2xl transition-all duration-300 flex items-center justify-center gap-3 overflow-hidden"
               style={{ boxShadow: '0 8px 20px rgba(255, 215, 0, 0.4)' }}
             >
-              <Play className="w-6 h-6" />
-              {userInfo ? 'CONTINUAR' : 'JUGAR'}
+              {/* Efecto de burbujas animadas */}
+              <div className="absolute inset-0 overflow-hidden rounded-full">
+                {/* Burbuja 1 */}
+                <motion.div
+                  className="absolute w-3 h-3 bg-white/30 rounded-full"
+                  animate={{
+                    x: [0, 100, 0],
+                    y: [0, -20, 0],
+                    scale: [0.8, 1.2, 0.8],
+                    opacity: [0.3, 0.7, 0.3]
+                  }}
+                  transition={{
+                    duration: 3,
+                    repeat: Infinity,
+                    ease: "easeInOut"
+                  }}
+                  style={{ left: '10%', top: '30%' }}
+                />
+                {/* Burbuja 2 */}
+                <motion.div
+                  className="absolute w-2 h-2 bg-white/40 rounded-full"
+                  animate={{
+                    x: [0, -80, 0],
+                    y: [0, 15, 0],
+                    scale: [1, 0.6, 1],
+                    opacity: [0.4, 0.8, 0.4]
+                  }}
+                  transition={{
+                    duration: 2.5,
+                    repeat: Infinity,
+                    ease: "easeInOut",
+                    delay: 0.5
+                  }}
+                  style={{ right: '15%', top: '60%' }}
+                />
+                {/* Burbuja 3 */}
+                <motion.div
+                  className="absolute w-4 h-4 bg-white/20 rounded-full"
+                  animate={{
+                    x: [0, 60, 0],
+                    y: [0, -25, 0],
+                    scale: [0.5, 1.5, 0.5],
+                    opacity: [0.2, 0.6, 0.2]
+                  }}
+                  transition={{
+                    duration: 4,
+                    repeat: Infinity,
+                    ease: "easeInOut",
+                    delay: 1
+                  }}
+                  style={{ left: '20%', bottom: '20%' }}
+                />
+                {/* Burbuja 4 */}
+                <motion.div
+                  className="absolute w-2.5 h-2.5 bg-white/35 rounded-full"
+                  animate={{
+                    x: [0, -70, 0],
+                    y: [0, 10, 0],
+                    scale: [1.2, 0.4, 1.2],
+                    opacity: [0.5, 0.9, 0.5]
+                  }}
+                  transition={{
+                    duration: 3.5,
+                    repeat: Infinity,
+                    ease: "easeInOut",
+                    delay: 1.5
+                  }}
+                  style={{ right: '25%', top: '40%' }}
+                />
+                {/* Burbuja 5 */}
+                <motion.div
+                  className="absolute w-1.5 h-1.5 bg-white/50 rounded-full"
+                  animate={{
+                    x: [0, 90, 0],
+                    y: [0, -15, 0],
+                    scale: [0.8, 1.8, 0.8],
+                    opacity: [0.3, 0.7, 0.3]
+                  }}
+                  transition={{
+                    duration: 2.8,
+                    repeat: Infinity,
+                    ease: "easeInOut",
+                    delay: 2
+                  }}
+                  style={{ left: '60%', top: '70%' }}
+                />
+              </div>
+              
+              {/* Contenido del botón */}
+              <div className="relative z-10 flex items-center gap-3">
+                <Play className="w-6 h-6 text-white" />
+                {userInfo ? 'CONTINUAR' : 'JUGAR'}
+              </div>
             </motion.button>
+            
+
+            {/* Botones de Ranking (solo si está conectado con PGS) */}
+            {pgsDisplayName && (
+              <div className="w-full space-y-2">
+                <motion.button
+                  whileHover={{ scale: 1.02 }}
+                  whileTap={{ scale: 0.98 }}
+                  onClick={handleShowRanking}
+                  className="w-full bg-green-500/20 hover:bg-green-500/30 text-green-400 font-medium text-sm py-2.5 px-6 rounded-full border border-green-400/30 hover:border-green-400/50 transition-all duration-300 flex items-center justify-center gap-2 backdrop-blur-sm"
+                >
+                  <svg className="w-4 h-4" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                  </svg>
+                  Ver Ranking {gameMode === 'beginner' ? 'Principiante' : gameMode === 'extreme' ? 'Extremo' : 'Normal'}
+                </motion.button>
+                
+                <motion.button
+                  whileHover={{ scale: 1.02 }}
+                  whileTap={{ scale: 0.98 }}
+                  onClick={handleSubmitScore}
+                  className="w-full bg-blue-500/20 hover:bg-blue-500/30 text-blue-400 font-medium text-sm py-2.5 px-6 rounded-full border border-blue-400/30 hover:border-blue-400/50 transition-all duration-300 flex items-center justify-center gap-2 backdrop-blur-sm"
+                >
+                  <svg className="w-4 h-4" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                  </svg>
+                  Enviar Puntuación
+                </motion.button>
+              </div>
+            )}
             
             {/* Separador y texto */}
             {!userInfo && (
               <div className="text-center space-y-3">
-                <p className="text-white/70 text-sm">¿Ya tienes cuenta?</p>
+                <p className="text-white/70 text-sm">Inicia sesión para guardar tu progreso</p>
                 <motion.button
-                  whileHover={{ scale: 1.02 }}
-                  whileTap={{ scale: 0.98 }}
-                  onClick={() => setShowUserModal(true)}
-                  className="px-6 py-2 bg-white/10 hover:bg-white/20 text-white text-sm font-medium rounded-full border border-white/30 hover:border-white/50 transition-all duration-300 inline-flex items-center gap-2 backdrop-blur-sm"
+                  whileHover={{ scale: pgsDisplayName ? 1 : 1.02 }}
+                  whileTap={{ scale: pgsDisplayName ? 1 : 0.98 }}
+                  onClick={handlePGSSignIn}
+                  disabled={!!pgsDisplayName}
+                  className={`px-6 py-2.5 text-sm font-medium rounded-full border transition-all duration-200 inline-flex items-center gap-2 backdrop-blur-sm ${
+                    pgsDisplayName 
+                      ? 'bg-green-500/20 text-green-400 border-green-400/50 cursor-not-allowed' 
+                      : 'bg-transparent hover:bg-white/10 text-white border-white/30 hover:border-white/50'
+                  }`}
                 >
-                  <User className="w-4 h-4" />
-                  Entrar
+                  <svg className="w-4 h-4" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                  </svg>
+                  {pgsDisplayName ? `Conectado como ${pgsDisplayName}` : 'Entrar con Google Play Juegos'}
                 </motion.button>
               </div>
             )}
@@ -457,10 +639,80 @@ export default function IntroScreen({
 
           </motion.div>
 
-          {/* Información del progreso */}
-          {isClient && progress.level > 1 && (
-            <div className="mt-8 text-white/70 text-sm">
-              Nivel: {progress.level} | Monedas: {progress.coins}
+
+          {/* Indicadores de estado */}
+          <div className="mt-4 text-center space-y-1">
+            {/* Indicador PGS si está conectado */}
+            {pgsDisplayName && (
+              <p className="text-green-400 text-xs">
+                🎮 Conectado como: {pgsDisplayName}
+              </p>
+            )}
+            
+            {/* Selector de modo de juego */}
+            <div className="flex gap-2 justify-center">
+              <button
+                onClick={() => setGameMode('beginner')}
+                className={`px-3 py-1 text-xs rounded-full transition-all ${
+                  gameMode === 'beginner' 
+                    ? 'bg-yellow-500/20 text-yellow-400 border border-yellow-400/50' 
+                    : 'bg-white/10 text-white/60 border border-white/20'
+                }`}
+              >
+                🌟 Principiante
+              </button>
+              <button
+                onClick={() => setGameMode('normal')}
+                className={`px-3 py-1 text-xs rounded-full transition-all ${
+                  gameMode === 'normal' 
+                    ? 'bg-blue-500/20 text-blue-400 border border-blue-400/50' 
+                    : 'bg-white/10 text-white/60 border border-white/20'
+                }`}
+              >
+                🎯 Normal
+              </button>
+              <button
+                onClick={() => setGameMode('extreme')}
+                className={`px-3 py-1 text-xs rounded-full transition-all ${
+                  gameMode === 'extreme' 
+                    ? 'bg-red-500/20 text-red-400 border border-red-400/50' 
+                    : 'bg-white/10 text-white/60 border border-white/20'
+                }`}
+              >
+                ⚡ Extremo
+              </button>
+            </div>
+            
+            {/* Botón de debug */}
+            <button
+              onClick={() => setShowDebug(!showDebug)}
+              className="mt-2 px-2 py-1 text-xs bg-purple-500/20 text-purple-400 border border-purple-400/50 rounded-full hover:bg-purple-500/30 transition-all"
+            >
+              🔍 {showDebug ? 'Ocultar' : 'Mostrar'} Debug
+            </button>
+          </div>
+
+          {/* Panel de Debug */}
+          {showDebug && (
+            <div className="mt-4 p-3 bg-black/50 rounded-lg border border-white/20">
+              <h3 className="text-white text-sm font-medium mb-2">🔍 Debug Logs</h3>
+              <div className="space-y-1 max-h-32 overflow-y-auto">
+                {debugLogs.length === 0 ? (
+                  <p className="text-white/60 text-xs">No hay logs aún...</p>
+                ) : (
+                  debugLogs.map((log, index) => (
+                    <div key={index} className="text-xs text-white/80 font-mono">
+                      {log}
+                    </div>
+                  ))
+                )}
+              </div>
+              <button
+                onClick={() => setDebugLogs([])}
+                className="mt-2 px-2 py-1 text-xs bg-red-500/20 text-red-400 border border-red-400/50 rounded hover:bg-red-500/30 transition-all"
+              >
+                🗑️ Limpiar Logs
+              </button>
             </div>
           )}
         </motion.div>
@@ -482,6 +734,10 @@ export default function IntroScreen({
         onClose={() => setShowUserModal(false)}
         onLoginSuccess={handleLoginSuccess}
       />
+
+      {/* Botón de Megadiagnóstico */}
+      <DiagnosticButton />
+
 
       {/* CSS para la animación de caída */}
       <style jsx>{`

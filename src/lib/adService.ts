@@ -2,7 +2,7 @@
 import { AdMob, BannerAdOptions, BannerAdSize, BannerAdPosition, RewardAdPluginEvents, AdMobRewardItem } from '@capacitor-community/admob';
 import { Capacitor } from '@capacitor/core';
 
-const isTesting = false; // ← EN PRODUCCIÓN: false
+const isTesting = false; // ← PRODUCCIÓN: false para anuncios reales
 
 // IDs REALES de AdMob para MemoFlip
 const BANNER_ID = 'ca-app-pub-1338301235950360/7622882916';
@@ -10,14 +10,20 @@ const INTERSTITIAL_ID = 'ca-app-pub-1338301235950360/4053951805';
 const REWARDED_ID = 'ca-app-pub-1338301235950360/3008850481';
 
 export async function initAds() {
+  console.log('🎯 [AdMob] initAds() llamado');
+  console.log('🎯 [AdMob] isTesting:', isTesting);
+  console.log('🎯 [AdMob] Capacitor.isNativePlatform():', Capacitor.isNativePlatform());
+  
   if (!Capacitor.isNativePlatform()) {
     console.log('[AdMob] Modo web - simulación activada');
     return;
   }
   
   try {
+    console.log('🎯 [AdMob] Inicializando AdMob...');
+    console.log('🎯 [AdMob] initializeForTesting:', isTesting);
     await AdMob.initialize({ initializeForTesting: isTesting });
-    // AdMob inicializado
+    console.log('✅ [AdMob] AdMob inicializado correctamente');
     
     // ✅ MONITOR BANNER - Verificar cada 2 segundos que esté visible
     setInterval(async () => {
@@ -42,12 +48,17 @@ export async function initAds() {
 }
 
 export async function showBottomBanner(adId?: string) {
+  console.log('🎯 [Banner] showBottomBanner() llamado');
+  console.log('🎯 [Banner] adId:', adId || BANNER_ID);
+  console.log('🎯 [Banner] isTesting:', isTesting);
+  
   if (!Capacitor.isNativePlatform()) {
     console.log('[Banner] Web - simulado');
     return;
   }
   
   try {
+    console.log('🎯 [Banner] Mostrando banner...');
     // ✅ NO ocultar banner anterior - solo mostrar directamente
     const opts: BannerAdOptions = {
       adId: adId || BANNER_ID,
@@ -57,8 +68,9 @@ export async function showBottomBanner(adId?: string) {
       isTesting,
     };
     
+    console.log('🎯 [Banner] Opciones:', JSON.stringify(opts, null, 2));
     await AdMob.showBanner(opts);
-    // Banner mostrado correctamente
+    console.log('✅ [Banner] Banner mostrado correctamente');
   } catch (e) {
     console.error('[Banner] ❌ Error mostrando banner:', e);
     

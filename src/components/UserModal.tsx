@@ -1,10 +1,8 @@
 'use client';
 
 import { useState } from 'react';
-import { X, User, Mail, Lock, UserPlus, LogIn, Key } from 'lucide-react';
-import { memoflipApi } from '@/lib/capacitorApi';
-import VerificationModal from './VerificationModal';
-import ForgotPasswordModal from './ForgotPasswordModal';
+import { X, Gamepad2 } from 'lucide-react';
+import { PGSNative } from '@/services/PGSNative';
 
 interface SessionUser {
   email: string;
@@ -25,156 +23,57 @@ interface UserModalProps {
 }
 
 export default function UserModal({ isOpen, onClose, onLoginSuccess }: UserModalProps) {
-  const [activeTab, setActiveTab] = useState<'login' | 'register'>('login');
-  const [formData, setFormData] = useState({
-    email: '',
-    password: '',
-    confirmPassword: '',
-    nombre: '',
-    nick: ''
-  });
   const [errors, setErrors] = useState<Record<string, string>>({});
   const [isSubmitting, setIsSubmitting] = useState(false);
-  const [showVerification, setShowVerification] = useState(false);
-  const [showForgotPassword, setShowForgotPassword] = useState(false);
-  const [registeredEmail, setRegisteredEmail] = useState('');
 
-  const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault();
-    setErrors({});
-    
-    // Validaciones básicas
-    if (!formData.email || !formData.password) {
-      setErrors({ general: 'Email y contraseña son obligatorios' });
-      return;
-    }
-    
-    if (activeTab === 'register') {
-      if (!formData.nombre || !formData.nick) {
-        setErrors({ general: 'Todos los campos son obligatorios' });
-        return;
-      }
-      
-      if (!formData.confirmPassword) {
-        setErrors({ general: 'Debes confirmar tu contraseña' });
-        return;
-      }
-      
-      if (formData.password !== formData.confirmPassword) {
-        setErrors({ general: 'Las contraseñas no coinciden' });
-        return;
-      }
-      
-      if (formData.password.length < 6) {
-        setErrors({ general: 'La contraseña debe tener al menos 6 caracteres' });
-        return;
-      }
-    }
-
-    setIsSubmitting(true);
-
+  const handlePlayGamesSignIn = async () => {
     try {
-      const action = activeTab === 'login' ? 'login' : 'register';
-      const body: Record<string, string> = {
-        action,
-        email: formData.email.trim(),
-        password: formData.password
-      };
+      setIsSubmitting(true);
+      setErrors({});
       
-      if (activeTab === 'register') {
-        body.nombre = formData.nombre.trim();
-        body.nick = formData.nick.trim();
-      }
-
-      const data = await memoflipApi('auth.php', {
-        method: 'POST',
-        body: body
-      }) as SessionUser & { 
-        success?: boolean; 
-        error?: string; 
-        message?: string;
-        requires_verification?: boolean;
-        email_sent?: boolean;
-      };
-
-      console.log('🔍 Respuesta completa del servidor:', data);
-      console.log('🔍 success:', data.success);
-      console.log('🔍 requires_verification:', data.requires_verification);
-
-      if (data.success) {
-        // Si es registro y requiere verificación
-        if (activeTab === 'register' && data.requires_verification) {
-          console.log('📧 Registro exitoso, se requiere verificación');
-          setRegisteredEmail(formData.email);
-          setShowVerification(true);
-          // NO mostrar mensaje de éxito aquí, se mostrará en el modal de verificación
-        } else {
-          // Login normal o registro sin verificación
-          console.log('✅ Autenticación exitosa:', data);
-          onLoginSuccess(data, formData.email, formData.password);
-          onClose();
-          // Recargar página para actualizar sesión
-          window.location.reload();
-        }
-      } else {
-        // ✅ DETECTAR si el error es por email no verificado
-        const errorMsg = data.error || data.message || 'Error en autenticación';
+      console.log('🎮 UserModal: Iniciando login con Google Play Juegos...');
+      
+      // Usar Play Games v2 para login
+      const result = await PGSNative.getInstance().signIn();
+      
+      if (result.success && result.displayName) {
+        console.log('✅ UserModal: Login con Play Juegos exitoso:', result);
         
-        if (errorMsg.toLowerCase().includes('verificar') || errorMsg.toLowerCase().includes('verify')) {
-          console.log('📧 Login bloqueado: email no verificado. Abriendo modal de verificación...');
-          setRegisteredEmail(formData.email);
-          setShowVerification(true);
-          setErrors({}); // Limpiar errores
-        } else {
-          setErrors({ general: errorMsg });
-        }
+        // Crear usuario de Play Games
+        const playGamesUser = {
+          email: result.email || 'playgames@google.com',
+          nombre: result.displayName || 'Jugador Play Games',
+          nick: result.displayName || 'Jugador Play Games',
+          playerId: result.playerId || 'playgames_user'
+        };
+        
+        console.log('🎮 UserModal: Datos del jugador:', playGamesUser);
+        
+        // Crear datos de sesión para Play Games
+        const sessionData: SessionUser = {
+          email: playGamesUser.email,
+          nombre: playGamesUser.nombre,
+          authenticated: true,
+          game_data: {
+            max_level_unlocked: 1,
+            coins_total: 0,
+            lives_current: 3,
+            sound_enabled: true
+          }
+        };
+        
+        console.log('✅ UserModal: Login exitoso con Play Juegos');
+        onLoginSuccess(sessionData, playGamesUser.email, '');
+        onClose();
+      } else {
+        console.log('❌ UserModal: Login con Play Juegos falló:', result.error);
+        setErrors({ general: result.error || 'No se pudo autenticar con Google Play Juegos' });
       }
     } catch (error) {
-      console.error('❌ Error en autenticación:', error);
-      setErrors({ general: 'Error de conexión. Intenta de nuevo.' });
+      console.error('❌ UserModal: Error en login con Play Juegos:', error);
+      setErrors({ general: 'Error de conexión: ' + error });
     } finally {
       setIsSubmitting(false);
-    }
-  };
-
-  const handleVerificationSuccess = async () => {
-    console.log('✅ Verificación exitosa, haciendo auto-login...');
-    setShowVerification(false);
-    
-    // AUTO-LOGIN automático después de verificación
-    try {
-      const loginData = await memoflipApi('auth.php', {
-        method: 'POST',
-        body: {
-          action: 'login',
-          email: registeredEmail,
-          password: formData.password
-        }
-      }) as SessionUser & { success?: boolean; error?: string };
-      
-      if (loginData.success) {
-        console.log('✅ Auto-login exitoso después de verificación');
-        onLoginSuccess(loginData, registeredEmail, formData.password);
-        onClose();
-        window.location.reload();
-      } else {
-        // Si falla auto-login, mostrar mensaje y dejar que entre manualmente
-        alert('¡Cuenta verificada! Ya puedes iniciar sesión.');
-        setActiveTab('login');
-        onClose();
-      }
-    } catch (error) {
-      console.error('❌ Error en auto-login:', error);
-      alert('¡Cuenta verificada! Ya puedes iniciar sesión.');
-      setActiveTab('login');
-      onClose();
-    }
-  };
-
-  const handleInputChange = (field: string, value: string) => {
-    setFormData(prev => ({ ...prev, [field]: value }));
-    if (errors.general) {
-      setErrors({});
     }
   };
 
@@ -182,28 +81,19 @@ export default function UserModal({ isOpen, onClose, onLoginSuccess }: UserModal
 
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center">
-      {/* Backdrop */}
       <div 
         className="absolute inset-0 bg-black/60 backdrop-blur-sm"
         onClick={onClose}
       />
       
-      {/* Modal */}
       <div className="relative z-10 w-full max-w-md mx-4">
         <div className="bg-gradient-to-br from-slate-800 via-purple-900 to-slate-900 rounded-2xl border border-white/20 shadow-2xl overflow-hidden">
-          {/* Header */}
           <div className="flex items-center justify-between p-6 border-b border-white/10">
             <div className="flex items-center gap-3">
               <div className="p-2 rounded-xl bg-white/10 border border-white/20">
-                {activeTab === 'login' ? (
-                  <LogIn className="w-6 h-6 text-white" />
-                ) : (
-                  <UserPlus className="w-6 h-6 text-white" />
-                )}
+                <Gamepad2 className="w-6 h-6 text-white" />
               </div>
-              <h2 className="text-2xl font-bold text-white">
-                Identificación
-              </h2>
+              <h2 className="text-2xl font-bold text-white">Iniciar Sesión</h2>
             </div>
             <button
               onClick={onClose}
@@ -213,216 +103,31 @@ export default function UserModal({ isOpen, onClose, onLoginSuccess }: UserModal
             </button>
           </div>
 
-          {/* Tabs */}
-          <div className="flex border-b border-white/10">
+          <div className="p-6 space-y-6">
+            {errors.general && (
+              <p className="text-red-400 text-center text-sm">{errors.general}</p>
+            )}
+
             <button
-              onClick={() => setActiveTab('login')}
-              className={`flex-1 px-4 py-3 text-sm font-medium transition-all ${
-                activeTab === 'login'
-                  ? 'bg-white/10 text-white border-b-2 border-blue-500'
-                  : 'text-gray-400 hover:text-white hover:bg-white/5'
-              }`}
+              onClick={handlePlayGamesSignIn}
+              disabled={isSubmitting}
+              className="w-full flex items-center justify-center gap-3 p-4 rounded-full bg-gradient-to-r from-green-600 to-green-500 hover:from-green-700 hover:to-green-600 text-white text-lg font-semibold transition-all duration-200 shadow-lg hover:shadow-xl transform hover:scale-105"
             >
-              <LogIn className="w-4 h-4 inline mr-2" />
-              Entrar
-            </button>
-            <button
-              onClick={() => setActiveTab('register')}
-              className={`flex-1 px-4 py-3 text-sm font-medium transition-all ${
-                activeTab === 'register'
-                  ? 'bg-white/10 text-white border-b-2 border-blue-500'
-                  : 'text-gray-400 hover:text-white hover:bg-white/5'
-              }`}
-            >
-              <UserPlus className="w-4 h-4 inline mr-2" />
-              Crear cuenta
+              <Gamepad2 className="w-6 h-6" />
+              {isSubmitting ? 'Iniciando sesión...' : 'Entrar con Google Play Juegos'}
             </button>
           </div>
 
-          {/* Content */}
-          <div className="p-6">
-            <form onSubmit={handleSubmit} className="space-y-4">
-              {/* Nombre (solo en register) */}
-              {activeTab === 'register' && (
-                <>
-                  <div className="space-y-2">
-                    <label className="block text-sm font-medium text-gray-300">
-                      Nombre *
-                    </label>
-                    <div className="relative">
-                      <User className="absolute left-3 top-1/2 transform -translate-y-1/2 w-4 h-4 text-gray-400" />
-                      <input
-                        type="text"
-                        value={formData.nombre}
-                        onChange={(e) => handleInputChange('nombre', e.target.value)}
-                        className="w-full pl-10 pr-4 py-3 bg-white/10 border border-white/20 rounded-xl text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all"
-                        placeholder="Tu nombre completo"
-                        disabled={isSubmitting}
-                      />
-                    </div>
-                  </div>
-
-                  <div className="space-y-2">
-                    <label className="block text-sm font-medium text-gray-300">
-                      Nick *
-                    </label>
-                    <div className="relative">
-                      <User className="absolute left-3 top-1/2 transform -translate-y-1/2 w-4 h-4 text-gray-400" />
-                      <input
-                        type="text"
-                        value={formData.nick}
-                        onChange={(e) => handleInputChange('nick', e.target.value)}
-                        className="w-full pl-10 pr-4 py-3 bg-white/10 border border-white/20 rounded-xl text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all"
-                        placeholder="Tu nick de usuario"
-                        disabled={isSubmitting}
-                      />
-                    </div>
-                  </div>
-                </>
-              )}
-
-              {/* Email */}
-              <div className="space-y-2">
-                <label className="block text-sm font-medium text-gray-300">
-                  Email *
-                </label>
-                <div className="relative">
-                  <Mail className="absolute left-3 top-1/2 transform -translate-y-1/2 w-4 h-4 text-gray-400" />
-                  <input
-                    type="email"
-                    value={formData.email}
-                    onChange={(e) => handleInputChange('email', e.target.value)}
-                    className="w-full pl-10 pr-4 py-3 bg-white/10 border border-white/20 rounded-xl text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all"
-                    placeholder="tu@email.com"
-                    disabled={isSubmitting}
-                  />
-                </div>
-              </div>
-
-              {/* Contraseña */}
-              <div className="space-y-2">
-                <label className="block text-sm font-medium text-gray-300">
-                  Contraseña *
-                </label>
-                <div className="relative">
-                  <Lock className="absolute left-3 top-1/2 transform -translate-y-1/2 w-4 h-4 text-gray-400" />
-                  <input
-                    type="password"
-                    value={formData.password}
-                    onChange={(e) => handleInputChange('password', e.target.value)}
-                    className="w-full pl-10 pr-4 py-3 bg-white/10 border border-white/20 rounded-xl text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all"
-                    placeholder={activeTab === 'register' ? 'Mínimo 6 caracteres' : 'Tu contraseña'}
-                    disabled={isSubmitting}
-                  />
-                </div>
-                
-                {/* Botón recuperar contraseña (solo en login) */}
-                {activeTab === 'login' && (
-                  <button
-                    type="button"
-                    onClick={() => {
-                      setShowForgotPassword(true);
-                      setErrors({});
-                    }}
-                    className="text-sm text-blue-400 hover:text-blue-300 underline transition flex items-center gap-1"
-                  >
-                    <Key className="w-3 h-3" />
-                    ¿Olvidaste tu contraseña?
-                  </button>
-                )}
-              </div>
-
-              {/* Confirmar Contraseña (solo en register) */}
-              {activeTab === 'register' && (
-                <div className="space-y-2">
-                  <label className="block text-sm font-medium text-gray-300">
-                    Confirmar Contraseña *
-                  </label>
-                  <div className="relative">
-                    <Lock className="absolute left-3 top-1/2 transform -translate-y-1/2 w-4 h-4 text-gray-400" />
-                    <input
-                      type="password"
-                      value={formData.confirmPassword}
-                      onChange={(e) => handleInputChange('confirmPassword', e.target.value)}
-                      className="w-full pl-10 pr-4 py-3 bg-white/10 border border-white/20 rounded-xl text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all"
-                      placeholder="Repite tu contraseña"
-                      disabled={isSubmitting}
-                    />
-                  </div>
-                </div>
-              )}
-
-              {/* Error general */}
-              {errors.general && (
-                <div className="p-3 bg-red-500/10 border border-red-500/20 rounded-xl space-y-2">
-                  <p className="text-red-400 text-sm">{errors.general}</p>
-                  
-                  {/* Botón para abrir verificación manualmente */}
-                  {activeTab === 'login' && (
-                    <button
-                      type="button"
-                      onClick={() => {
-                        console.log('📧 Abriendo modal de verificación manualmente...');
-                        setRegisteredEmail(formData.email);
-                        setShowVerification(true);
-                        setErrors({});
-                      }}
-                      className="w-full text-xs text-yellow-400 hover:text-yellow-300 underline transition"
-                    >
-                      ¿Necesitas verificar tu email? Haz clic aquí
-                    </button>
-                  )}
-                </div>
-              )}
-
-              {/* Botón submit */}
-              <button
-                type="submit"
-                disabled={isSubmitting}
-                className="w-full px-4 py-3 bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white font-semibold rounded-xl transition-all flex items-center justify-center gap-2 disabled:opacity-50 disabled:cursor-not-allowed shadow-lg"
-              >
-                {isSubmitting ? (
-                  <>
-                    <div className="w-4 h-4 border-2 border-white/30 border-t-white rounded-full animate-spin" />
-                    {activeTab === 'login' ? 'Entrando...' : 'Registrando...'}
-                  </>
-                ) : (
-                  <>
-                    {activeTab === 'login' ? <LogIn className="w-4 h-4" /> : <UserPlus className="w-4 h-4" />}
-                    {activeTab === 'login' ? 'Entrar' : 'Crear cuenta'}
-                  </>
-                )}
-              </button>
-            </form>
-          </div>
-
-          {/* Footer info */}
           <div className="p-6 border-t border-white/10 bg-white/5">
-            <div className="p-3 bg-blue-500/10 rounded-xl border border-blue-500/20">
-              <p className="text-blue-300 text-sm">
-                💡 <strong>Info:</strong> {activeTab === 'login' 
-                  ? 'Tu progreso se sincroniza entre dispositivos.' 
-                  : 'Crea tu cuenta para guardar tu progreso en la nube.'}
-              </p>
-            </div>
+            <p className="text-center text-sm text-gray-400">
+              Tu progreso se guardará automáticamente con tu cuenta de Google Play Juegos.
+            </p>
+            <p className="text-center text-xs text-gray-500 mt-2">
+              Accede a rankings, logros y sincronización en la nube.
+            </p>
           </div>
         </div>
       </div>
-
-      {/* Modal de Verificación */}
-      <VerificationModal
-        isOpen={showVerification}
-        onClose={() => setShowVerification(false)}
-        email={registeredEmail}
-        onVerificationSuccess={handleVerificationSuccess}
-      />
-
-      {/* Modal de Recuperar Contraseña */}
-      <ForgotPasswordModal
-        isOpen={showForgotPassword}
-        onClose={() => setShowForgotPassword(false)}
-        initialEmail={formData.email}
-      />
     </div>
   );
 }

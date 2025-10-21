@@ -1,4 +1,5 @@
 import { MechanicName } from '@/types/game';
+import { GameMode } from '@/store/gameStore';
 
 export type LevelData = {
   id: number;
@@ -14,39 +15,59 @@ export type LevelData = {
   seed: number; // Añadido para compatibilidad con LevelConfig
 };
 
-// Cache global
-let levelsCache: { levels: LevelData[] } | null = null;
+// Cache global por modo
+const levelsCache: Map<GameMode, { levels: LevelData[] }> = new Map();
 
-async function loadLevels(): Promise<{ levels: LevelData[] }> {
-  if (levelsCache) return levelsCache;
+async function loadLevels(mode: GameMode = 'normal'): Promise<{ levels: LevelData[] }> {
+  if (levelsCache.has(mode)) return levelsCache.get(mode)!;
   
-  const response = await fetch('/levels.json');
-  if (!response.ok) throw new Error('No se pudo cargar levels.json');
+  let fileName: string;
+  switch (mode) {
+    case 'beginner':
+      fileName = '/levels_beginner.json';
+      break;
+    case 'extreme':
+      fileName = '/levels_extreme.json';
+      break;
+    case 'normal':
+    default:
+      fileName = '/levels.json';
+      break;
+  }
   
-  levelsCache = await response.json();
-  return levelsCache!;
+  const response = await fetch(fileName);
+  if (!response.ok) throw new Error(`No se pudo cargar ${fileName}`);
+  
+  const data = await response.json();
+  levelsCache.set(mode, data);
+  return data;
 }
 
-export async function getLevelFromJson(level: number): Promise<LevelData> {
-  const data = await loadLevels();
+export async function getLevelFromJson(level: number, mode: GameMode = 'normal'): Promise<LevelData> {
+  const data = await loadLevels(mode);
   const found = (data.levels as LevelData[]).find(l => l.id === level);
   if (!found) {
-    throw new Error(`Nivel ${level} no encontrado en levels.json`);
+    throw new Error(`Nivel ${level} no encontrado en modo ${mode}`);
   }
   return found;
 }
 
-export async function getAllLevels(): Promise<LevelData[]> {
-  const data = await loadLevels();
+export async function getAllLevels(mode: GameMode = 'normal'): Promise<LevelData[]> {
+  const data = await loadLevels(mode);
   return data.levels as LevelData[];
 }
 
-export async function getLevelsByPhase(phase: number): Promise<LevelData[]> {
-  const data = await loadLevels();
+export async function getLevelsByPhase(phase: number, mode: GameMode = 'normal'): Promise<LevelData[]> {
+  const data = await loadLevels(mode);
   return (data.levels as LevelData[]).filter(l => l.phase === phase);
 }
 
-export async function getBossLevels(): Promise<LevelData[]> {
-  const data = await loadLevels();
+export async function getBossLevels(mode: GameMode = 'normal'): Promise<LevelData[]> {
+  const data = await loadLevels(mode);
   return (data.levels as LevelData[]).filter(l => l.isBoss);
+}
+
+// Función para limpiar caché (útil para testing)
+export function clearLevelsCache(): void {
+  levelsCache.clear();
 }

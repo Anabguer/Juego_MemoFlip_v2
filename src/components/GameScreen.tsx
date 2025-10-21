@@ -66,7 +66,11 @@ export default function GameScreen({ level: propLevel, onBack, onLevelComplete }
     setCurrentLevel,
     checkLifeRegeneration,
     currentLevel,
-    getTimeUntilNextLife
+    getTimeUntilNextLife,
+    vibrationEnabled,
+    saveProgressToCloud,
+    gameMode,
+    submitScore
   } = useGameStore();
 
   // Sincronizar nivel: priorizar store, pero usar prop como fallback
@@ -93,31 +97,26 @@ export default function GameScreen({ level: propLevel, onBack, onLevelComplete }
     return () => clearInterval(interval);
   }, []);
 
-  // 🎯 FORZAR BANNER CADA SEGUNDO - SIN COMPLICACIONES
+  // 🎯 MOSTRAR BANNER UNA SOLA VEZ AL INICIAR
   useEffect(() => {
-    console.log('[GameScreen] 🎯 INICIANDO BANNER FORZADO');
+    console.log('[GameScreen] 🎯 INICIANDO BANNER');
     
-    const forceBanner = async () => {
+    const showBanner = async () => {
       try {
         await forceShowBanner();
-        console.log('[GameScreen] ✅ BANNER FORZADO');
+        console.log('[GameScreen] ✅ BANNER MOSTRADO');
       } catch (e) {
         console.warn('[GameScreen] ❌ Error:', e);
       }
     };
 
-    // ✅ FORZAR INMEDIATAMENTE
-    forceBanner();
-    
-    // ✅ FORZAR CADA SEGUNDO
-    const interval = setInterval(forceBanner, 1000);
-    
-    return () => clearInterval(interval);
+    // ✅ MOSTRAR UNA SOLA VEZ
+    showBanner();
   }, []);
 
-  // Actualizar levelConfig cuando cambie el nivel
+  // Actualizar levelConfig cuando cambie el nivel o el modo
   useEffect(() => {
-    getLevelFromJson(level).then(newLevelConfig => {
+    getLevelFromJson(level, gameMode).then(newLevelConfig => {
       // Actualizando levelConfig para nivel
       setLevelConfig(newLevelConfig);
       // Nivel cambiado - reinicializando
@@ -132,7 +131,7 @@ export default function GameScreen({ level: propLevel, onBack, onLevelComplete }
         initializeLevel();
       }
     });
-  }, [level]);
+  }, [level, gameMode]);
 
   // Sincronizar store con prop cuando sea necesario (solo al inicio)
   useEffect(() => {
@@ -179,7 +178,7 @@ export default function GameScreen({ level: propLevel, onBack, onLevelComplete }
     setActualGameTime(0); // Resetear el tiempo real de juego
     setTotalFlips(0); // Resetear el contador de giros
     
-    const config = await getLevelFromJson(level);
+    const config = await getLevelFromJson(level, gameMode);
     setLevelConfig(config);
     setCurrentLevelConfig(config);
       setLocalTimeLeft(0); // Resetear tiempo transcurrido
@@ -484,6 +483,9 @@ export default function GameScreen({ level: propLevel, onBack, onLevelComplete }
         // Dar la vida
         gainLife();
         
+        // Guardar progreso en la nube después de ganar vida
+        saveProgressToCloud();
+        
         // Verificar que la vida se otorgó correctamente
         setTimeout(() => {
           const currentLives = useGameStore.getState().lives;
@@ -773,6 +775,38 @@ export default function GameScreen({ level: propLevel, onBack, onLevelComplete }
   const handleCardClick = (cardId: string | number) => {
     // Click en carta
     
+    // 🌟 VIBRACIÓN SUTIL al presionar carta (solo si está habilitada)
+    if (vibrationEnabled) {
+      try {
+        // Verificar si estamos en Android nativo (Capacitor)
+        // eslint-disable-next-line @typescript-eslint/no-explicit-any
+        if (typeof window !== 'undefined' && (window as any).Capacitor?.getPlatform?.() === 'android') {
+          // Usar Capacitor Haptics para Android
+          import('@capacitor/haptics').then(({ Haptics }) => {
+            Haptics.vibrate({ duration: 50 });
+            console.log('📳 Vibración enviada (Capacitor Haptics)');
+          }).catch((error) => {
+            console.log('⚠️ Error con Capacitor Haptics, usando fallback:', error);
+            // Fallback a navigator.vibrate
+            if (navigator.vibrate) {
+              navigator.vibrate(50);
+              console.log('📳 Vibración enviada (navigator.vibrate fallback)');
+            }
+          });
+        } else if (navigator.vibrate) {
+          // Fallback para navegadores que soportan vibrate
+          navigator.vibrate(50);
+          console.log('📳 Vibración enviada (navigator.vibrate)');
+        } else {
+          console.log('🔇 Vibración no soportada en este dispositivo');
+        }
+      } catch (error) {
+        console.log('🔇 Error en vibración:', error);
+      }
+    } else {
+      console.log('🔇 Vibración deshabilitada por el usuario');
+    }
+    
     // Verificar si el juego está pausado
     if (isPaused) {
       // Click bloqueado - juego pausado
@@ -960,6 +994,9 @@ export default function GameScreen({ level: propLevel, onBack, onLevelComplete }
       matchCards(cardId1, cardId2);
       addCoins(10);
       
+      // Guardar progreso en la nube después de ganar monedas
+      saveProgressToCloud();
+      
       // Sonidos de match exitoso y moneda
       soundSystem.play('matchexitoso');
       soundSystem.play('coin');
@@ -1066,6 +1103,9 @@ export default function GameScreen({ level: propLevel, onBack, onLevelComplete }
       }
       addCoins(15); // Más monedas por trío
       
+      // Guardar progreso en la nube después de ganar monedas por trío
+      saveProgressToCloud();
+      
       // Sonidos de match exitoso y moneda
       soundSystem.play('matchexitoso');
       soundSystem.play('coin');
@@ -1141,6 +1181,13 @@ export default function GameScreen({ level: propLevel, onBack, onLevelComplete }
       const coinsEarned = levelConfig?.rewards?.coins || (10 * (levelConfig?.pairs || 0));
       addCoins(coinsEarned);
       
+      // Guardar progreso en la nube después de completar nivel
+      saveProgressToCloud();
+      
+      // 🏆 Enviar puntuación al ranking del modo específico
+      const totalScore = coins + coinsEarned + (level * 100); // Puntuación basada en monedas y nivel
+      submitScore(gameMode, totalScore);
+      
       addEvent({
         type: 'LEVEL_COMPLETE',
         data: { level, coinsEarned },
@@ -1172,6 +1219,9 @@ export default function GameScreen({ level: propLevel, onBack, onLevelComplete }
     
     // PERDER VIDA PRIMERO
     loseLife();
+    
+    // Guardar progreso en la nube después de perder vida
+    saveProgressToCloud();
     
     // Sonido de fallo (MP3 real)
     soundSystem.play('fallo');
@@ -1261,6 +1311,9 @@ export default function GameScreen({ level: propLevel, onBack, onLevelComplete }
     // Añadir las monedas ya calculadas
     addCoins(earnedCoins);
     
+    // Guardar progreso en la nube después de añadir monedas finales
+    saveProgressToCloud();
+    
     setShowLevelCompleteModal(false);
     
     // ✅ Verificar si mostrar anuncio intersticial (cada 5 niveles)
@@ -1284,7 +1337,7 @@ export default function GameScreen({ level: propLevel, onBack, onLevelComplete }
     setShowLevelCompleteModal(false);
     
     // Reinicializar el nivel actual
-    const config = await getLevelFromJson(level);
+    const config = await getLevelFromJson(level, gameMode);
     setLevelConfig(config);
     setCurrentLevelConfig(config);
     setLocalTimeLeft(0); // Resetear tiempo transcurrido
@@ -1363,6 +1416,13 @@ export default function GameScreen({ level: propLevel, onBack, onLevelComplete }
           transform-style: preserve-3d;
           perspective: 1000px;
           transition: transform 0.6s ease;
+        }
+        
+        @media (min-width: 768px) {
+          .card {
+            border-radius: 18px;
+            min-height: 80px;
+          }
         }
         
         .card-inner {
@@ -1469,7 +1529,7 @@ export default function GameScreen({ level: propLevel, onBack, onLevelComplete }
         }}
       >
       <div className="w-full h-full overflow-y-auto" style={{ padding: '0.5rem 1rem 0.2rem 1rem' }}>
-        <div className="max-w-4xl mx-auto w-full" style={{ maxHeight: '100%' }}>
+        <div className="max-w-4xl lg:max-w-6xl mx-auto w-full" style={{ maxHeight: '100%' }}>
           {/* Fila 1: Logo centrado + controles a la derecha */}
           <div className="flex justify-between items-start mb-3 -mt-3">
             {/* Espacio vacío a la izquierda para centrar el logo */}
@@ -1604,7 +1664,7 @@ export default function GameScreen({ level: propLevel, onBack, onLevelComplete }
               background: 'rgba(255,255,255,0.05)',
               border: '1px solid rgba(255,255,255,0.10)',
               borderRadius: '20px',
-              padding: '16px',
+              padding: window.innerWidth >= 768 ? '24px' : '16px',
               boxShadow: '0 25px 50px -12px rgba(0,0,0,0.5)'
             }}
           >
@@ -1618,12 +1678,12 @@ export default function GameScreen({ level: propLevel, onBack, onLevelComplete }
               }`}
             style={{
                 display: 'grid',
-                gridTemplateColumns: 'repeat(4, 1fr)',
-                gap: '12px'
+                gridTemplateColumns: window.innerWidth >= 768 ? 'repeat(6, 1fr)' : 'repeat(4, 1fr)',
+                gap: window.innerWidth >= 768 ? '16px' : '12px'
               }}
             >
-              {/* Crear 24 slots visibles como en el JS */}
-              {Array.from({ length: 24 }, (_, slotIndex) => {
+              {/* Crear slots visibles como en el JS - responsive */}
+              {Array.from({ length: window.innerWidth >= 768 ? 30 : 24 }, (_, slotIndex) => {
                 // Encontrar la carta que corresponde a este slot
                 const card = currentCards.find(c => c.slot === slotIndex);
                 
@@ -1761,8 +1821,8 @@ export default function GameScreen({ level: propLevel, onBack, onLevelComplete }
                               src={card.image} 
                               alt={`Carta ${card.value}`} 
                         style={{
-                                width: '64px',
-                                height: '64px',
+                                width: window.innerWidth >= 768 ? '100px' : '64px',
+                                height: window.innerWidth >= 768 ? '100px' : '64px',
                                 objectFit: 'contain',
                                 display: 'block',
                                 userSelect: 'none',
@@ -2051,6 +2111,28 @@ export default function GameScreen({ level: propLevel, onBack, onLevelComplete }
         isOpen={showSettingsModal} 
         onClose={() => setShowSettingsModal(false)}
         onLogout={onBack}
+        onShowLogin={async () => {
+          setShowSettingsModal(false);
+          console.log('🔵 PGS: Iniciando sign-in desde configuración...');
+          try {
+            const { PGSNative } = await import('@/services/PGSNative');
+            const result = await PGSNative.getInstance().signIn();
+            console.log('🔵 PGS: Resultado desde configuración:', result);
+            
+            if (result.success && result.displayName) {
+              const displayName = result.displayName || 'Usuario Google';
+              localStorage.setItem('pgs_display', displayName);
+              console.log('✅ PGS: Sign-in exitoso desde configuración:', displayName);
+              alert(`✅ Login exitoso con Google!\nUsuario: ${displayName}\nEmail: ${result.email || 'No disponible'}`);
+            } else {
+              console.log('❌ PGS: Error desde configuración:', result.error);
+              alert(`❌ Error en login: ${result.error || 'Usuario canceló'}`);
+            }
+          } catch (error) {
+            console.log('❌ PGS: Error técnico desde configuración:', error);
+            alert(`❌ Error técnico: ${error}`);
+          }
+        }}
       />
       
       <RankingModal 

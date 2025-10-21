@@ -3,12 +3,20 @@ import { persist } from 'zustand/middleware';
 import { GameState, LevelConfig, Card, UserProgress, GameEvent, User } from '@/types/game';
 import { memoflipApi } from '@/lib/capacitorApi';
 import { saveProgressToServer as saveProgressAPI } from '@/lib/progressService';
+import { CloudSaveService } from '@/services/cloudSaveService';
+import { RankingService } from '@/services/rankingService';
+
+export type GameMode = 'beginner' | 'normal' | 'extreme';
 
 interface GameStore extends GameState {
   // Usuario actual
   currentUser: User | null;
   setCurrentUser: (user: User | null) => void;
   createGuestUser: () => User;
+  
+  // Modo de juego
+  gameMode: GameMode;
+  setGameMode: (mode: GameMode) => void;
   
   // Sistema de anuncios intersticiales
   levelsCompleted: number;
@@ -24,6 +32,7 @@ interface GameStore extends GameState {
   gainLife: () => void;
   setPaused: (paused: boolean) => void;
   setMuted: (muted: boolean) => void;
+  setVibrationEnabled: (enabled: boolean) => void;
   setTimeLeft: (time: number) => void;
   setTotalTime: (time: number) => void;
   setCurrentPhase: (phase: number) => void;
@@ -43,6 +52,15 @@ interface GameStore extends GameState {
       loadProgress: () => void;
       loadProgressFromServer: () => Promise<void>;
       syncWhenOnline: () => Promise<void>;
+      
+      // Guardado en la nube (Google Play Games)
+      saveProgressToCloud: () => Promise<void>;
+      loadProgressFromCloud: () => Promise<void>;
+      syncWithCloud: () => Promise<void>;
+      
+      // Rankings por modo (Google Play Games)
+      showLeaderboard: (gameMode: GameMode) => Promise<void>;
+      submitScore: (gameMode: GameMode, score: number) => Promise<void>;
   
   // Sistema de eventos
   events: GameEvent[];
@@ -75,6 +93,8 @@ const initialState: GameState = {
   currentTheme: 'ocean',
   isPaused: false,
   isMuted: false,
+  vibrationEnabled: true,
+  gameMode: 'normal' as GameMode,
   totalTime: 0,
   timeLeft: 0,
   attempts: 0,
@@ -164,6 +184,8 @@ export const useGameStore = create<GameStore>()(
       },
       setPaused: (paused) => set({ isPaused: paused }),
       setMuted: (muted) => set({ isMuted: muted }),
+      setVibrationEnabled: (enabled) => set({ vibrationEnabled: enabled }),
+      setGameMode: (mode) => set({ gameMode: mode }),
       setTimeLeft: (time) => set({ timeLeft: time }),
       setTotalTime: (time) => set({ totalTime: time, timeLeft: time }),
       setCurrentPhase: (phase) => set({ currentPhase: phase }),
@@ -368,6 +390,108 @@ export const useGameStore = create<GameStore>()(
         }
       },
 
+      // ===== GUARDADO EN LA NUBE (GOOGLE PLAY GAMES) =====
+      
+      // Guardar progreso en la nube
+      saveProgressToCloud: async () => {
+        const state = get();
+        const user = state.currentUser;
+        
+        // Solo guardar en la nube si el usuario está autenticado con Google Play Games
+        if (!user || user.isGuest) {
+          console.log('🔒 No guardando en la nube: usuario invitado');
+          return;
+        }
+        
+        try {
+          // Convertir datos del store a formato de guardado en nube
+          const cloudData = CloudSaveService.convertStoreToCloudData(state);
+          
+          // Guardar en la nube
+          const cloudSaveService = CloudSaveService.getInstance();
+          const result = await cloudSaveService.saveProgress(cloudData);
+          
+          if (result.success) {
+            console.log('✅ Progreso guardado en la nube correctamente');
+          } else {
+            console.error('❌ Error guardando en la nube:', result.error);
+          }
+        } catch (error) {
+          console.error('❌ Error inesperado guardando en la nube:', error);
+        }
+      },
+      
+      // Cargar progreso desde la nube
+      loadProgressFromCloud: async () => {
+        const state = get();
+        const user = state.currentUser;
+        
+        // Solo cargar desde la nube si el usuario está autenticado con Google Play Games
+        if (!user || user.isGuest) {
+          console.log('🔒 No cargando desde la nube: usuario invitado');
+          return;
+        }
+        
+        try {
+          const cloudSaveService = CloudSaveService.getInstance();
+          const result = await cloudSaveService.loadProgress();
+          
+          if (result.success && result.data) {
+            // Convertir datos de la nube a formato del store
+            const storeData = CloudSaveService.convertCloudToStoreData(result.data);
+            
+            // Actualizar el store con los datos de la nube
+            get().updateProgress(storeData);
+            
+            console.log('✅ Progreso cargado desde la nube correctamente');
+          } else if (result.success && !result.data) {
+            console.log('📂 No hay datos en la nube');
+          } else {
+            console.error('❌ Error cargando desde la nube:', result.error);
+          }
+        } catch (error) {
+          console.error('❌ Error inesperado cargando desde la nube:', error);
+        }
+      },
+      
+      // Sincronizar con la nube (resolver conflictos)
+      syncWithCloud: async () => {
+        const state = get();
+        const user = state.currentUser;
+        
+        // Solo sincronizar si el usuario está autenticado con Google Play Games
+        if (!user || user.isGuest) {
+          console.log('🔒 No sincronizando con la nube: usuario invitado');
+          return;
+        }
+        
+        try {
+          // Obtener datos locales actuales
+          const localData = CloudSaveService.convertStoreToCloudData(state);
+          
+          // Resolver conflicto con la nube
+          const cloudSaveService = CloudSaveService.getInstance();
+          const result = await cloudSaveService.resolveConflict(localData);
+          
+          if (result.success) {
+            if (result.useLocal) {
+              console.log('⚖️ Usando datos locales (más recientes)');
+              // Guardar datos locales en la nube
+              await cloudSaveService.saveProgress(localData);
+            } else if (result.data) {
+              console.log('⚖️ Usando datos de la nube (más recientes)');
+              // Actualizar store con datos de la nube
+              const storeData = CloudSaveService.convertCloudToStoreData(result.data);
+              get().updateProgress(storeData);
+            }
+          } else {
+            console.error('❌ Error sincronizando con la nube:', result.error);
+          }
+        } catch (error) {
+          console.error('❌ Error inesperado sincronizando con la nube:', error);
+        }
+      },
+
       // Sistema de eventos
       addEvent: (event) => set((state) => ({ 
         events: [...state.events, event].slice(-100) // Mantener solo los últimos 100 eventos
@@ -439,6 +563,46 @@ export const useGameStore = create<GameStore>()(
         timeLeft: config.timeSec || 0
       }),
 
+      // ===== RANKINGS POR MODO (GOOGLE PLAY GAMES) =====
+      
+      // Mostrar leaderboard del modo específico
+      showLeaderboard: async (gameMode: GameMode) => {
+        console.log('🏆 Mostrando leaderboard para modo:', gameMode);
+        
+        try {
+          const rankingService = RankingService.getInstance();
+          const result = await rankingService.showLeaderboard(gameMode);
+          
+          if (result.success) {
+            console.log('✅ Leaderboard mostrado correctamente para modo', gameMode);
+          } else {
+            console.error('❌ Error mostrando leaderboard:', result.error);
+            alert(`Error mostrando ranking: ${result.error}`);
+          }
+        } catch (error) {
+          console.error('❌ Error inesperado mostrando leaderboard:', error);
+          alert(`Error técnico: ${error}`);
+        }
+      },
+      
+      // Enviar puntuación al leaderboard del modo específico
+      submitScore: async (gameMode: GameMode, score: number) => {
+        console.log('📊 Enviando puntuación', score, 'para modo:', gameMode);
+        
+        try {
+          const rankingService = RankingService.getInstance();
+          const result = await rankingService.submitScore(gameMode, score);
+          
+          if (result.success) {
+            console.log('✅ Puntuación enviada correctamente para modo', gameMode);
+          } else {
+            console.error('❌ Error enviando puntuación:', result.error);
+          }
+        } catch (error) {
+          console.error('❌ Error inesperado enviando puntuación:', error);
+        }
+      },
+
       // Reset del juego
       resetGame: () => set({
         ...initialState,
@@ -456,6 +620,8 @@ export const useGameStore = create<GameStore>()(
         currentPhase: state.currentPhase,
         currentTheme: state.currentTheme,
         isMuted: state.isMuted,
+        vibrationEnabled: state.vibrationEnabled,
+        gameMode: state.gameMode, // ✅ Guardar modo de juego
         lastLifeLost: state.lastLifeLost,
       }),
     }

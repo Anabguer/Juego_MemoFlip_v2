@@ -425,7 +425,9 @@ export function getMechanicVisualEffects(card: Card): string {
     case 'fog':
       // Efecto de niebla: super borroso y semi-transparente (solo si no está acertada)
       if (!card.isMatched) {
-        effects.push('opacity-60', 'blur-md', 'brightness-75');
+        const fogLevel = (card.mechanicData as Record<string, unknown>)?.fogLevel || 0.5;
+        const opacity = Math.max(0.3, Number(fogLevel));
+        effects.push(`opacity-${Math.round(opacity * 100)}`, 'blur-md', 'brightness-75');
       }
       break;
 
