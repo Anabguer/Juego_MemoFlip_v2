@@ -1,0 +1,18021 @@
+﻿window.levels = {
+    "levels": [
+        {
+            "id": 1,
+            "phase": 1,
+            "theme": "ocean",
+            "pairs": 2,
+            "timeSec": 0,
+            "mechanics": [
+                "basic"
+            ],
+            "difficulty": "easy",
+            "description": "Tutorial: Â¡Bienvenido! Sin cronÃ³metro. 4 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 10
+            },
+            "seed": 1001020,
+            "setSize": 2
+        },
+        {
+            "id": 2,
+            "phase": 1,
+            "theme": "ocean",
+            "pairs": 3,
+            "timeSec": 0,
+            "mechanics": [
+                "basic"
+            ],
+            "difficulty": "easy",
+            "description": "Aprende lo bÃ¡sico. Sin cronÃ³metro. 6 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 15
+            },
+            "seed": 1002030,
+            "setSize": 2
+        },
+        {
+            "id": 3,
+            "phase": 1,
+            "theme": "ocean",
+            "pairs": 4,
+            "timeSec": 0,
+            "mechanics": [
+                "basic"
+            ],
+            "difficulty": "easy",
+            "description": "MÃ¡s cartas para practicar. Sin cronÃ³metro. 8 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 20
+            },
+            "seed": 1003040,
+            "setSize": 2
+        },
+        {
+            "id": 4,
+            "phase": 1,
+            "theme": "ocean",
+            "pairs": 5,
+            "timeSec": 0,
+            "mechanics": [
+                "basic"
+            ],
+            "difficulty": "easy",
+            "description": "Sigue practicando. Sin cronÃ³metro. 10 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 25
+            },
+            "seed": 1004050,
+            "setSize": 2
+        },
+        {
+            "id": 5,
+            "phase": 1,
+            "theme": "ocean",
+            "pairs": 6,
+            "timeSec": 0,
+            "mechanics": [
+                "basic"
+            ],
+            "difficulty": "easy",
+            "description": "Domina la memoria bÃ¡sica. Sin cronÃ³metro. 12 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 30
+            },
+            "seed": 1005060,
+            "setSize": 2
+        },
+        {
+            "id": 6,
+            "phase": 1,
+            "theme": "ocean",
+            "pairs": 4,
+            "timeSec": 0,
+            "mechanics": [
+                "fog"
+            ],
+            "difficulty": "easy",
+            "description": "Primera mecÃ¡nica: Niebla suave. Sin cronÃ³metro. 8 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 40
+            },
+            "seed": 1006040,
+            "setSize": 2
+        },
+        {
+            "id": 7,
+            "phase": 1,
+            "theme": "ocean",
+            "pairs": 6,
+            "timeSec": 0,
+            "mechanics": [
+                "basic"
+            ],
+            "difficulty": "easy",
+            "description": "Descanso despuÃ©s de niebla. Sin cronÃ³metro. 12 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 30
+            },
+            "seed": 1007060,
+            "setSize": 2
+        },
+        {
+            "id": 8,
+            "phase": 1,
+            "theme": "ocean",
+            "pairs": 5,
+            "timeSec": 0,
+            "mechanics": [
+                "ghost"
+            ],
+            "difficulty": "easy",
+            "description": "Cartas fantasma aparecen y desaparecen. Sin cronÃ³metro. 10 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 50
+            },
+            "seed": 1008050,
+            "setSize": 2
+        },
+        {
+            "id": 9,
+            "phase": 1,
+            "theme": "ocean",
+            "pairs": 7,
+            "timeSec": 0,
+            "mechanics": [
+                "basic"
+            ],
+            "difficulty": "easy",
+            "description": "Nivel de descanso. Sin cronÃ³metro. 14 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 35
+            },
+            "seed": 1009070,
+            "setSize": 2
+        },
+        {
+            "id": 10,
+            "phase": 1,
+            "theme": "ocean",
+            "pairs": 6,
+            "timeSec": 0,
+            "mechanics": [
+                "basic"
+            ],
+            "difficulty": "easy",
+            "description": "Nivel bÃ¡sico: juega normalmente. Sin cronÃ³metro. 12 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 60
+            },
+            "seed": 1010060,
+            "setSize": 2
+        },
+        {
+            "id": 11,
+            "phase": 1,
+            "theme": "ocean",
+            "pairs": 6,
+            "timeSec": 0,
+            "mechanics": [
+                "basic"
+            ],
+            "difficulty": "easy",
+            "description": "Nivel de descanso. Sin cronÃ³metro. 12 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 30
+            },
+            "seed": 1011060,
+            "setSize": 2
+        },
+        {
+            "id": 12,
+            "phase": 1,
+            "theme": "ocean",
+            "pairs": 3,
+            "timeSec": 0,
+            "mechanics": [
+                "trio"
+            ],
+            "difficulty": "easy",
+            "description": "Encuentra trÃ­os en lugar de pares. Sin cronÃ³metro. 9 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 45
+            },
+            "seed": 1012030,
+            "setSize": 3
+        },
+        {
+            "id": 13,
+            "phase": 1,
+            "theme": "ocean",
+            "pairs": 6,
+            "timeSec": 60,
+            "mechanics": [
+                "basic"
+            ],
+            "difficulty": "medium",
+            "description": "Â¡Primer cronÃ³metro! Tienes 60 segundos. 12 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 60
+            },
+            "seed": 1013060,
+            "setSize": 2
+        },
+        {
+            "id": 14,
+            "phase": 1,
+            "theme": "ocean",
+            "pairs": 6,
+            "timeSec": 0,
+            "mechanics": [
+                "fog"
+            ],
+            "difficulty": "medium",
+            "description": "Niebla de nuevo. Sin cronÃ³metro. 12 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 60
+            },
+            "seed": 1014060,
+            "setSize": 2
+        },
+        {
+            "id": 15,
+            "phase": 1,
+            "theme": "ocean",
+            "pairs": 7,
+            "timeSec": 70,
+            "mechanics": [
+                "basic"
+            ],
+            "difficulty": "medium",
+            "description": "MÃ¡s cartas con cronÃ³metro. 70 segundos. 14 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 70
+            },
+            "seed": 1015070,
+            "setSize": 2
+        },
+        {
+            "id": 16,
+            "phase": 1,
+            "theme": "ocean",
+            "pairs": 6,
+            "timeSec": 55,
+            "mechanics": [
+                "ghost"
+            ],
+            "difficulty": "medium",
+            "description": "Fantasma con cronÃ³metro. 55 segundos. 12 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 80
+            },
+            "seed": 1016060,
+            "setSize": 2
+        },
+        {
+            "id": 17,
+            "phase": 1,
+            "theme": "ocean",
+            "pairs": 8,
+            "timeSec": 0,
+            "mechanics": [
+                "basic"
+            ],
+            "difficulty": "medium",
+            "description": "Nivel de descanso. Sin cronÃ³metro. 16 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 40
+            },
+            "seed": 1017080,
+            "setSize": 2
+        },
+        {
+            "id": 18,
+            "phase": 1,
+            "theme": "ocean",
+            "pairs": 5,
+            "timeSec": 0,
+            "mechanics": [
+                "frozen"
+            ],
+            "difficulty": "medium",
+            "description": "Cartas congeladas temporalmente. Sin cronÃ³metro. 10 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 70
+            },
+            "seed": 1018050,
+            "setSize": 2
+        },
+        {
+            "id": 19,
+            "phase": 1,
+            "theme": "ocean",
+            "pairs": 6,
+            "timeSec": 65,
+            "mechanics": [
+                "basic"
+            ],
+            "difficulty": "medium",
+            "description": "Descanso con cronÃ³metro. 65 segundos. 12 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 60
+            },
+            "seed": 1019060,
+            "setSize": 2
+        },
+        {
+            "id": 20,
+            "phase": 1,
+            "theme": "ocean",
+            "pairs": 6,
+            "timeSec": 0,
+            "mechanics": [
+                "darkness"
+            ],
+            "difficulty": "medium",
+            "description": "La oscuridad cubre el tablero poco a poco. Sin cronÃ³metro. 12 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 80
+            },
+            "seed": 1020060,
+            "setSize": 2
+        },
+        {
+            "id": 21,
+            "phase": 1,
+            "theme": "ocean",
+            "pairs": 12,
+            "timeSec": 0,
+            "mechanics": [
+                "bomb"
+            ],
+            "difficulty": "hard",
+            "description": "Evita bombas: piensa rÃ¡pido. Sin cronÃ³metro. 24 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 180
+            },
+            "seed": 1021120,
+            "setSize": 2
+        },
+        {
+            "id": 22,
+            "phase": 1,
+            "theme": "ocean",
+            "pairs": 7,
+            "timeSec": 64,
+            "mechanics": [
+                "basic"
+            ],
+            "difficulty": "medium",
+            "description": "Nivel clÃ¡sico sin trucos. CronÃ³metro: 64s. 14 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 70
+            },
+            "seed": 1022134,
+            "setSize": 2
+        },
+        {
+            "id": 23,
+            "phase": 1,
+            "theme": "ocean",
+            "pairs": 5,
+            "timeSec": 45,
+            "mechanics": [
+                "ghost"
+            ],
+            "difficulty": "medium",
+            "description": "Cartas fantasma aparecen y desaparecen. CronÃ³metro: 45s. 10 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 50
+            },
+            "seed": 1023095,
+            "setSize": 2
+        },
+        {
+            "id": 24,
+            "phase": 1,
+            "theme": "ocean",
+            "pairs": 7,
+            "timeSec": 0,
+            "mechanics": [
+                "fog"
+            ],
+            "difficulty": "medium",
+            "description": "Niebla ligera: observa con atenciÃ³n. Sin cronÃ³metro. 14 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 70
+            },
+            "seed": 1024070,
+            "setSize": 2
+        },
+        {
+            "id": 25,
+            "phase": 1,
+            "theme": "ocean",
+            "pairs": 9,
+            "timeSec": 85,
+            "mechanics": [
+                "basic"
+            ],
+            "difficulty": "hard",
+            "description": "Nivel clÃ¡sico sin trucos. CronÃ³metro: 85s. 18 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 135
+            },
+            "seed": 1025175,
+            "setSize": 2
+        },
+        {
+            "id": 26,
+            "phase": 1,
+            "theme": "ocean",
+            "pairs": 8,
+            "timeSec": 0,
+            "mechanics": [
+                "darkness"
+            ],
+            "difficulty": "medium",
+            "description": "La oscuridad cubre el tablero poco a poco. Sin cronÃ³metro. 16 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 80
+            },
+            "seed": 1026080,
+            "setSize": 2
+        },
+        {
+            "id": 27,
+            "phase": 1,
+            "theme": "ocean",
+            "pairs": 3,
+            "timeSec": 0,
+            "mechanics": [
+                "rotation"
+            ],
+            "difficulty": "medium",
+            "description": "El tablero rota de vez en cuando. Sin cronÃ³metro. 6 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 30
+            },
+            "seed": 1027030,
+            "setSize": 2
+        },
+        {
+            "id": 28,
+            "phase": 1,
+            "theme": "ocean",
+            "pairs": 10,
+            "timeSec": 101,
+            "mechanics": [
+                "darkness"
+            ],
+            "difficulty": "hard",
+            "description": "La oscuridad cubre el tablero poco a poco. CronÃ³metro: 101s. 20 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 150
+            },
+            "seed": 1028201,
+            "setSize": 2
+        },
+        {
+            "id": 29,
+            "phase": 1,
+            "theme": "ocean",
+            "pairs": 8,
+            "timeSec": 81,
+            "mechanics": [
+                "chameleon"
+            ],
+            "difficulty": "hard",
+            "description": "Las cartas cambian de valor. CronÃ³metro: 81s. 16 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 120
+            },
+            "seed": 1029161,
+            "setSize": 2
+        },
+        {
+            "id": 30,
+            "phase": 1,
+            "theme": "ocean",
+            "pairs": 8,
+            "timeSec": 0,
+            "mechanics": [
+                "basic"
+            ],
+            "difficulty": "medium",
+            "description": "juega normalmente. Sin cronÃ³metro. 16 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 80
+            },
+            "seed": 1030080,
+            "setSize": 2
+        },
+        {
+            "id": 31,
+            "phase": 1,
+            "theme": "ocean",
+            "pairs": 6,
+            "timeSec": 67,
+            "mechanics": [
+                "basic"
+            ],
+            "difficulty": "medium",
+            "description": "Nivel clÃ¡sico sin trucos. CronÃ³metro: 67s. 12 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 60
+            },
+            "seed": 1031127,
+            "setSize": 2
+        },
+        {
+            "id": 32,
+            "phase": 1,
+            "theme": "ocean",
+            "pairs": 8,
+            "timeSec": 0,
+            "mechanics": [
+                "ghost"
+            ],
+            "difficulty": "medium",
+            "description": "Cartas fantasma aparecen y desaparecen. Sin cronÃ³metro. 16 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 80
+            },
+            "seed": 1032080,
+            "setSize": 2
+        },
+        {
+            "id": 33,
+            "phase": 1,
+            "theme": "ocean",
+            "pairs": 10,
+            "timeSec": 89,
+            "mechanics": [
+                "rotation"
+            ],
+            "difficulty": "hard",
+            "description": "las cartas pueden rotar. CronÃ³metro: 89s. 20 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 150
+            },
+            "seed": 1033189,
+            "setSize": 2
+        },
+        {
+            "id": 34,
+            "phase": 1,
+            "theme": "ocean",
+            "pairs": 12,
+            "timeSec": 106,
+            "mechanics": [
+                "darkness"
+            ],
+            "difficulty": "hard",
+            "description": "La oscuridad cubre el tablero poco a poco. CronÃ³metro: 106s. 24 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 180
+            },
+            "seed": 1034226,
+            "setSize": 2
+        },
+        {
+            "id": 35,
+            "phase": 1,
+            "theme": "ocean",
+            "pairs": 5,
+            "timeSec": 0,
+            "mechanics": [
+                "frozen"
+            ],
+            "difficulty": "medium",
+            "description": "Cartas que se congelan temporalmente. Sin cronÃ³metro. 10 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 50
+            },
+            "seed": 1035050,
+            "setSize": 2
+        },
+        {
+            "id": 36,
+            "phase": 1,
+            "theme": "ocean",
+            "pairs": 6,
+            "timeSec": 53,
+            "mechanics": [
+                "basic"
+            ],
+            "difficulty": "medium",
+            "description": "Nivel clÃ¡sico sin trucos. CronÃ³metro: 53s. 12 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 60
+            },
+            "seed": 1036113,
+            "setSize": 2
+        },
+        {
+            "id": 37,
+            "phase": 1,
+            "theme": "ocean",
+            "pairs": 5,
+            "timeSec": 0,
+            "mechanics": [
+                "basic"
+            ],
+            "difficulty": "easy",
+            "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 10 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 25
+            },
+            "seed": 1037050,
+            "setSize": 2
+        },
+        {
+            "id": 38,
+            "phase": 1,
+            "theme": "ocean",
+            "pairs": 3,
+            "timeSec": 0,
+            "mechanics": [
+                "frozen"
+            ],
+            "difficulty": "medium",
+            "description": "Cartas que se congelan temporalmente. Sin cronÃ³metro. 6 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 30
+            },
+            "seed": 1038030,
+            "setSize": 2
+        },
+        {
+            "id": 39,
+            "phase": 1,
+            "theme": "ocean",
+            "pairs": 10,
+            "timeSec": 0,
+            "mechanics": [
+                "basic"
+            ],
+            "difficulty": "medium",
+            "description": "juega normalmente. Sin cronÃ³metro. 20 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 100
+            },
+            "seed": 1039100,
+            "setSize": 2
+        },
+        {
+            "id": 40,
+            "phase": 1,
+            "theme": "ocean",
+            "pairs": 4,
+            "timeSec": 0,
+            "mechanics": [
+                "frozen"
+            ],
+            "difficulty": "medium",
+            "description": "Cartas que se congelan temporalmente. Sin cronÃ³metro. 8 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 40
+            },
+            "seed": 1040040,
+            "setSize": 2
+        },
+        {
+            "id": 41,
+            "phase": 1,
+            "theme": "ocean",
+            "pairs": 6,
+            "timeSec": 52,
+            "mechanics": [
+                "fog"
+            ],
+            "difficulty": "medium",
+            "description": "Niebla ligera: observa con atenciÃ³n. CronÃ³metro: 52s. 12 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 60
+            },
+            "seed": 1041112,
+            "setSize": 2
+        },
+        {
+            "id": 42,
+            "phase": 1,
+            "theme": "ocean",
+            "pairs": 6,
+            "timeSec": 0,
+            "mechanics": [
+                "basic"
+            ],
+            "difficulty": "easy",
+            "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 12 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 30
+            },
+            "seed": 1042060,
+            "setSize": 2
+        },
+        {
+            "id": 43,
+            "phase": 1,
+            "theme": "ocean",
+            "pairs": 9,
+            "timeSec": 0,
+            "mechanics": [
+                "basic"
+            ],
+            "difficulty": "medium",
+            "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 18 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 90
+            },
+            "seed": 1043090,
+            "setSize": 2
+        },
+        {
+            "id": 44,
+            "phase": 1,
+            "theme": "ocean",
+            "pairs": 9,
+            "timeSec": 0,
+            "mechanics": [
+                "frozen"
+            ],
+            "difficulty": "hard",
+            "description": "Cartas que se congelan temporalmente. Sin cronÃ³metro. 18 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 135
+            },
+            "seed": 1044090,
+            "setSize": 2
+        },
+        {
+            "id": 45,
+            "phase": 1,
+            "theme": "ocean",
+            "pairs": 10,
+            "timeSec": 0,
+            "mechanics": [
+                "basic"
+            ],
+            "difficulty": "medium",
+            "description": "juega normalmente. Sin cronÃ³metro. 20 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 100
+            },
+            "seed": 1045100,
+            "setSize": 2
+        },
+        {
+            "id": 46,
+            "phase": 1,
+            "theme": "ocean",
+            "pairs": 3,
+            "timeSec": 0,
+            "mechanics": [
+                "basic"
+            ],
+            "difficulty": "easy",
+            "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 6 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 15
+            },
+            "seed": 1046030,
+            "setSize": 2
+        },
+        {
+            "id": 47,
+            "phase": 1,
+            "theme": "ocean",
+            "pairs": 3,
+            "timeSec": 0,
+            "mechanics": [
+                "fog"
+            ],
+            "difficulty": "easy",
+            "description": "Niebla ligera: observa con atenciÃ³n. Sin cronÃ³metro. 6 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 15
+            },
+            "seed": 1047030,
+            "setSize": 2
+        },
+        {
+            "id": 48,
+            "phase": 1,
+            "theme": "ocean",
+            "pairs": 3,
+            "timeSec": 0,
+            "mechanics": [
+                "ghost"
+            ],
+            "difficulty": "easy",
+            "description": "Cartas fantasma aparecen y desaparecen. Sin cronÃ³metro. 6 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 15
+            },
+            "seed": 1048030,
+            "setSize": 2
+        },
+        {
+            "id": 49,
+            "phase": 1,
+            "theme": "ocean",
+            "pairs": 8,
+            "timeSec": 0,
+            "mechanics": [
+                "basic"
+            ],
+            "difficulty": "medium",
+            "description": "juega normalmente. Sin cronÃ³metro. 16 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 80
+            },
+            "seed": 1049080,
+            "setSize": 2
+        },
+        {
+            "id": 50,
+            "phase": 1,
+            "theme": "ocean",
+            "pairs": 12,
+            "timeSec": 112,
+            "mechanics": [
+                "chameleon",
+                "rotation"
+            ],
+            "difficulty": "hard",
+            "description": "Boss: 24 cartas, chameleon + rotation, crono 112s.",
+            "isBoss": true,
+            "rewards": {
+                "coins": 180
+            },
+            "seed": 1050232,
+            "setSize": 2
+        },
+        {
+            "id": 51,
+            "phase": 2,
+            "theme": "candyland",
+            "pairs": 3,
+            "timeSec": 0,
+            "mechanics": [
+                "bomb"
+            ],
+            "difficulty": "medium",
+            "description": "Evita bombas: piensa rÃ¡pido. Sin cronÃ³metro. 6 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 30
+            },
+            "seed": 1051030,
+            "setSize": 2
+        },
+        {
+            "id": 52,
+            "phase": 2,
+            "theme": "candyland",
+            "pairs": 6,
+            "timeSec": 0,
+            "mechanics": [
+                "chameleon"
+            ],
+            "difficulty": "medium",
+            "description": "Las cartas cambian de valor. Sin cronÃ³metro. 12 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 60
+            },
+            "seed": 1052060,
+            "setSize": 2
+        },
+        {
+            "id": 53,
+            "phase": 2,
+            "theme": "candyland",
+            "pairs": 8,
+            "timeSec": 0,
+            "mechanics": [
+                "fog"
+            ],
+            "difficulty": "medium",
+            "description": "Niebla ligera: observa con atenciÃ³n. Sin cronÃ³metro. 16 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 80
+            },
+            "seed": 1053080,
+            "setSize": 2
+        },
+        {
+            "id": 54,
+            "phase": 2,
+            "theme": "candyland",
+            "pairs": 8,
+            "timeSec": 0,
+            "mechanics": [
+                "basic"
+            ],
+            "difficulty": "medium",
+            "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 16 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 80
+            },
+            "seed": 1054080,
+            "setSize": 2
+        },
+        {
+            "id": 55,
+            "phase": 2,
+            "theme": "candyland",
+            "pairs": 6,
+            "timeSec": 0,
+            "mechanics": [
+                "chameleon"
+            ],
+            "difficulty": "medium",
+            "description": "Las cartas cambian de valor. Sin cronÃ³metro. 12 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 60
+            },
+            "seed": 1055060,
+            "setSize": 2
+        },
+        {
+            "id": 56,
+            "phase": 2,
+            "theme": "candyland",
+            "pairs": 6,
+            "timeSec": 0,
+            "mechanics": [
+                "trio"
+            ],
+            "difficulty": "hard",
+            "description": "Encuentra trÃ­os idÃ©nticos. Sin cronÃ³metro. 18 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 180
+            },
+            "seed": 1056120,
+            "setSize": 3
+        },
+        {
+            "id": 57,
+            "phase": 2,
+            "theme": "candyland",
+            "pairs": 6,
+            "timeSec": 52,
+            "mechanics": [
+                "chameleon"
+            ],
+            "difficulty": "medium",
+            "description": "Las cartas cambian de valor. CronÃ³metro: 52s. 12 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 60
+            },
+            "seed": 1057112,
+            "setSize": 2
+        },
+        {
+            "id": 58,
+            "phase": 2,
+            "theme": "candyland",
+            "pairs": 10,
+            "timeSec": 98,
+            "mechanics": [
+                "darkness"
+            ],
+            "difficulty": "hard",
+            "description": "La oscuridad cubre el tablero poco a poco. CronÃ³metro: 98s. 20 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 150
+            },
+            "seed": 1058198,
+            "setSize": 2
+        },
+        {
+            "id": 59,
+            "phase": 2,
+            "theme": "candyland",
+            "pairs": 3,
+            "timeSec": 0,
+            "mechanics": [
+                "rotation"
+            ],
+            "difficulty": "medium",
+            "description": "El tablero rota de vez en cuando. Sin cronÃ³metro. 6 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 30
+            },
+            "seed": 1059030,
+            "setSize": 2
+        },
+        {
+            "id": 60,
+            "phase": 2,
+            "theme": "candyland",
+            "pairs": 8,
+            "timeSec": 83,
+            "mechanics": [
+                "darkness"
+            ],
+            "difficulty": "hard",
+            "description": "La oscuridad cubre el tablero poco a poco. CronÃ³metro: 83s. 16 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 120
+            },
+            "seed": 1060163,
+            "setSize": 2
+        },
+        {
+            "id": 61,
+            "phase": 2,
+            "theme": "candyland",
+            "pairs": 8,
+            "timeSec": 78,
+            "mechanics": [
+                "ghost"
+            ],
+            "difficulty": "medium",
+            "description": "Cartas fantasma aparecen y desaparecen. CronÃ³metro: 78s. 16 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 80
+            },
+            "seed": 1061158,
+            "setSize": 2
+        },
+        {
+            "id": 62,
+            "phase": 2,
+            "theme": "candyland",
+            "pairs": 6,
+            "timeSec": 64,
+            "mechanics": [
+                "chameleon"
+            ],
+            "difficulty": "medium",
+            "description": "Las cartas cambian de valor. CronÃ³metro: 64s. 12 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 60
+            },
+            "seed": 1062124,
+            "setSize": 2
+        },
+        {
+            "id": 63,
+            "phase": 2,
+            "theme": "candyland",
+            "pairs": 8,
+            "timeSec": 0,
+            "mechanics": [
+                "ghost"
+            ],
+            "difficulty": "medium",
+            "description": "Cartas fantasma aparecen y desaparecen. Sin cronÃ³metro. 16 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 80
+            },
+            "seed": 1063080,
+            "setSize": 2
+        },
+        {
+            "id": 64,
+            "phase": 2,
+            "theme": "candyland",
+            "pairs": 4,
+            "timeSec": 0,
+            "mechanics": [
+                "basic"
+            ],
+            "difficulty": "easy",
+            "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 8 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 20
+            },
+            "seed": 1064040,
+            "setSize": 2
+        },
+        {
+            "id": 65,
+            "phase": 2,
+            "theme": "candyland",
+            "pairs": 8,
+            "timeSec": 0,
+            "mechanics": [
+                "basic"
+            ],
+            "difficulty": "medium",
+            "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 16 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 80
+            },
+            "seed": 1065080,
+            "setSize": 2
+        },
+        {
+            "id": 66,
+            "phase": 2,
+            "theme": "candyland",
+            "pairs": 12,
+            "timeSec": 0,
+            "mechanics": [
+                "darkness"
+            ],
+            "difficulty": "hard",
+            "description": "La oscuridad cubre el tablero poco a poco. Sin cronÃ³metro. 24 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 180
+            },
+            "seed": 1066120,
+            "setSize": 2
+        },
+        {
+            "id": 67,
+            "phase": 2,
+            "theme": "candyland",
+            "pairs": 6,
+            "timeSec": 0,
+            "mechanics": [
+                "ghost"
+            ],
+            "difficulty": "easy",
+            "description": "Cartas fantasma aparecen y desaparecen. Sin cronÃ³metro. 12 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 30
+            },
+            "seed": 1067060,
+            "setSize": 2
+        },
+        {
+            "id": 68,
+            "phase": 2,
+            "theme": "candyland",
+            "pairs": 12,
+            "timeSec": 0,
+            "mechanics": [
+                "trio"
+            ],
+            "difficulty": "hard",
+            "description": "Encuentra trÃ­os idÃ©nticos. Sin cronÃ³metro. 24 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 180
+            },
+            "seed": 1068120,
+            "setSize": 3
+        },
+        {
+            "id": 69,
+            "phase": 2,
+            "theme": "candyland",
+            "pairs": 8,
+            "timeSec": 83,
+            "mechanics": [
+                "fog"
+            ],
+            "difficulty": "medium",
+            "description": "las cartas estÃ¡n parcialmente ocultas. CronÃ³metro: 83s. 16 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 80
+            },
+            "seed": 1069163,
+            "setSize": 2
+        },
+        {
+            "id": 70,
+            "phase": 2,
+            "theme": "candyland",
+            "pairs": 8,
+            "timeSec": 76,
+            "mechanics": [
+                "frozen"
+            ],
+            "difficulty": "hard",
+            "description": "Cartas que se congelan temporalmente. CronÃ³metro: 76s. 16 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 120
+            },
+            "seed": 1070156,
+            "setSize": 2
+        },
+        {
+            "id": 71,
+            "phase": 2,
+            "theme": "candyland",
+            "pairs": 9,
+            "timeSec": 0,
+            "mechanics": [
+                "fog"
+            ],
+            "difficulty": "medium",
+            "description": "Niebla ligera: observa con atenciÃ³n. Sin cronÃ³metro. 18 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 90
+            },
+            "seed": 1071090,
+            "setSize": 2
+        },
+        {
+            "id": 72,
+            "phase": 2,
+            "theme": "candyland",
+            "pairs": 4,
+            "timeSec": 0,
+            "mechanics": [
+                "chameleon"
+            ],
+            "difficulty": "medium",
+            "description": "Las cartas cambian de valor. Sin cronÃ³metro. 8 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 40
+            },
+            "seed": 1072040,
+            "setSize": 2
+        },
+        {
+            "id": 73,
+            "phase": 2,
+            "theme": "candyland",
+            "pairs": 10,
+            "timeSec": 0,
+            "mechanics": [
+                "basic"
+            ],
+            "difficulty": "medium",
+            "description": "juega normalmente. Sin cronÃ³metro. 20 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 100
+            },
+            "seed": 1073100,
+            "setSize": 2
+        },
+        {
+            "id": 74,
+            "phase": 2,
+            "theme": "candyland",
+            "pairs": 7,
+            "timeSec": 65,
+            "mechanics": [
+                "basic"
+            ],
+            "difficulty": "medium",
+            "description": "Nivel clÃ¡sico sin trucos. CronÃ³metro: 65s. 14 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 70
+            },
+            "seed": 1074135,
+            "setSize": 2
+        },
+        {
+            "id": 75,
+            "phase": 2,
+            "theme": "candyland",
+            "pairs": 8,
+            "timeSec": 88,
+            "mechanics": [
+                "darkness"
+            ],
+            "difficulty": "hard",
+            "description": "La oscuridad cubre el tablero poco a poco. CronÃ³metro: 88s. 16 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 120
+            },
+            "seed": 1075168,
+            "setSize": 2
+        },
+        {
+            "id": 76,
+            "phase": 2,
+            "theme": "candyland",
+            "pairs": 7,
+            "timeSec": 0,
+            "mechanics": [
+                "chameleon"
+            ],
+            "difficulty": "medium",
+            "description": "Las cartas cambian de valor. Sin cronÃ³metro. 14 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 70
+            },
+            "seed": 1076070,
+            "setSize": 2
+        },
+        {
+            "id": 77,
+            "phase": 2,
+            "theme": "candyland",
+            "pairs": 9,
+            "timeSec": 0,
+            "mechanics": [
+                "trio"
+            ],
+            "difficulty": "hard",
+            "description": "Encuentra trÃ­os idÃ©nticos. Sin cronÃ³metro. 18 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 135
+            },
+            "seed": 1077090,
+            "setSize": 3
+        },
+        {
+            "id": 78,
+            "phase": 2,
+            "theme": "candyland",
+            "pairs": 8,
+            "timeSec": 86,
+            "mechanics": [
+                "chameleon"
+            ],
+            "difficulty": "hard",
+            "description": "Las cartas cambian de valor. CronÃ³metro: 86s. 16 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 120
+            },
+            "seed": 1078166,
+            "setSize": 2
+        },
+        {
+            "id": 79,
+            "phase": 2,
+            "theme": "candyland",
+            "pairs": 6,
+            "timeSec": 0,
+            "mechanics": [
+                "trio"
+            ],
+            "difficulty": "easy",
+            "description": "Encuentra trÃ­os idÃ©nticos. Sin cronÃ³metro. 12 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 30
+            },
+            "seed": 1079060,
+            "setSize": 3
+        },
+        {
+            "id": 80,
+            "phase": 2,
+            "theme": "candyland",
+            "pairs": 9,
+            "timeSec": 0,
+            "mechanics": [
+                "ghost"
+            ],
+            "difficulty": "medium",
+            "description": "Cartas fantasma aparecen y desaparecen. Sin cronÃ³metro. 18 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 90
+            },
+            "seed": 1080090,
+            "setSize": 2
+        },
+        {
+            "id": 81,
+            "phase": 2,
+            "theme": "candyland",
+            "pairs": 5,
+            "timeSec": 0,
+            "mechanics": [
+                "chameleon"
+            ],
+            "difficulty": "medium",
+            "description": "Las cartas cambian de valor. Sin cronÃ³metro. 10 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 50
+            },
+            "seed": 1081050,
+            "setSize": 2
+        },
+        {
+            "id": 82,
+            "phase": 2,
+            "theme": "candyland",
+            "pairs": 6,
+            "timeSec": 0,
+            "mechanics": [
+                "ghost"
+            ],
+            "difficulty": "easy",
+            "description": "Cartas fantasma aparecen y desaparecen. Sin cronÃ³metro. 12 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 30
+            },
+            "seed": 1082060,
+            "setSize": 2
+        },
+        {
+            "id": 83,
+            "phase": 2,
+            "theme": "candyland",
+            "pairs": 7,
+            "timeSec": 0,
+            "mechanics": [
+                "chameleon"
+            ],
+            "difficulty": "medium",
+            "description": "Las cartas cambian de valor. Sin cronÃ³metro. 14 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 70
+            },
+            "seed": 1083070,
+            "setSize": 2
+        },
+        {
+            "id": 84,
+            "phase": 2,
+            "theme": "candyland",
+            "pairs": 8,
+            "timeSec": 86,
+            "mechanics": [
+                "fog"
+            ],
+            "difficulty": "medium",
+            "description": "las cartas estÃ¡n parcialmente ocultas. CronÃ³metro: 86s. 16 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 80
+            },
+            "seed": 1084166,
+            "setSize": 2
+        },
+        {
+            "id": 85,
+            "phase": 2,
+            "theme": "candyland",
+            "pairs": 6,
+            "timeSec": 0,
+            "mechanics": [
+                "fog"
+            ],
+            "difficulty": "easy",
+            "description": "Niebla ligera: observa con atenciÃ³n. Sin cronÃ³metro. 12 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 30
+            },
+            "seed": 1085060,
+            "setSize": 2
+        },
+        {
+            "id": 86,
+            "phase": 2,
+            "theme": "candyland",
+            "pairs": 11,
+            "timeSec": 0,
+            "mechanics": [
+                "bomb"
+            ],
+            "difficulty": "hard",
+            "description": "Evita bombas: piensa rÃ¡pido. Sin cronÃ³metro. 22 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 165
+            },
+            "seed": 1086110,
+            "setSize": 2
+        },
+        {
+            "id": 87,
+            "phase": 2,
+            "theme": "candyland",
+            "pairs": 12,
+            "timeSec": 0,
+            "mechanics": [
+                "basic"
+            ],
+            "difficulty": "medium",
+            "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 24 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 120
+            },
+            "seed": 1087120,
+            "setSize": 2
+        },
+        {
+            "id": 88,
+            "phase": 2,
+            "theme": "candyland",
+            "pairs": 8,
+            "timeSec": 0,
+            "mechanics": [
+                "bomb"
+            ],
+            "difficulty": "medium",
+            "description": "Evita bombas: piensa rÃ¡pido. Sin cronÃ³metro. 16 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 80
+            },
+            "seed": 1088080,
+            "setSize": 2
+        },
+        {
+            "id": 89,
+            "phase": 2,
+            "theme": "candyland",
+            "pairs": 4,
+            "timeSec": 0,
+            "mechanics": [
+                "frozen"
+            ],
+            "difficulty": "medium",
+            "description": "Cartas que se congelan temporalmente. Sin cronÃ³metro. 8 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 40
+            },
+            "seed": 1089040,
+            "setSize": 2
+        },
+        {
+            "id": 90,
+            "phase": 2,
+            "theme": "candyland",
+            "pairs": 5,
+            "timeSec": 0,
+            "mechanics": [
+                "ghost"
+            ],
+            "difficulty": "easy",
+            "description": "Cartas fantasma aparecen y desaparecen. Sin cronÃ³metro. 10 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 25
+            },
+            "seed": 1090050,
+            "setSize": 2
+        },
+        {
+            "id": 91,
+            "phase": 2,
+            "theme": "candyland",
+            "pairs": 10,
+            "timeSec": 0,
+            "mechanics": [
+                "rotation"
+            ],
+            "difficulty": "hard",
+            "description": "El tablero rota de vez en cuando. Sin cronÃ³metro. 20 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 150
+            },
+            "seed": 1091100,
+            "setSize": 2
+        },
+        {
+            "id": 92,
+            "phase": 2,
+            "theme": "candyland",
+            "pairs": 12,
+            "timeSec": 0,
+            "mechanics": [
+                "basic"
+            ],
+            "difficulty": "medium",
+            "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 24 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 120
+            },
+            "seed": 1092120,
+            "setSize": 2
+        },
+        {
+            "id": 93,
+            "phase": 2,
+            "theme": "candyland",
+            "pairs": 11,
+            "timeSec": 0,
+            "mechanics": [
+                "rotation"
+            ],
+            "difficulty": "hard",
+            "description": "El tablero rota de vez en cuando. Sin cronÃ³metro. 22 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 165
+            },
+            "seed": 1093110,
+            "setSize": 2
+        },
+        {
+            "id": 94,
+            "phase": 2,
+            "theme": "candyland",
+            "pairs": 6,
+            "timeSec": 57,
+            "mechanics": [
+                "fog"
+            ],
+            "difficulty": "medium",
+            "description": "Niebla ligera: observa con atenciÃ³n. CronÃ³metro: 57s. 12 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 60
+            },
+            "seed": 1094117,
+            "setSize": 2
+        },
+        {
+            "id": 95,
+            "phase": 2,
+            "theme": "candyland",
+            "pairs": 4,
+            "timeSec": 0,
+            "mechanics": [
+                "chameleon"
+            ],
+            "difficulty": "medium",
+            "description": "Las cartas cambian de valor. Sin cronÃ³metro. 8 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 40
+            },
+            "seed": 1095040,
+            "setSize": 2
+        },
+        {
+            "id": 96,
+            "phase": 2,
+            "theme": "candyland",
+            "pairs": 6,
+            "timeSec": 52,
+            "mechanics": [
+                "rotation"
+            ],
+            "difficulty": "medium",
+            "description": "El tablero rota de vez en cuando. CronÃ³metro: 52s. 12 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 60
+            },
+            "seed": 1096112,
+            "setSize": 2
+        },
+        {
+            "id": 97,
+            "phase": 2,
+            "theme": "candyland",
+            "pairs": 2,
+            "timeSec": 0,
+            "mechanics": [
+                "fog"
+            ],
+            "difficulty": "easy",
+            "description": "Niebla ligera: observa con atenciÃ³n. Sin cronÃ³metro. 4 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 10
+            },
+            "seed": 1097020,
+            "setSize": 2
+        },
+        {
+            "id": 98,
+            "phase": 2,
+            "theme": "candyland",
+            "pairs": 6,
+            "timeSec": 65,
+            "mechanics": [
+                "basic"
+            ],
+            "difficulty": "medium",
+            "description": "Nivel clÃ¡sico sin trucos. CronÃ³metro: 65s. 12 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 60
+            },
+            "seed": 1098125,
+            "setSize": 2
+        },
+        {
+            "id": 99,
+            "phase": 2,
+            "theme": "candyland",
+            "pairs": 8,
+            "timeSec": 78,
+            "mechanics": [
+                "darkness"
+            ],
+            "difficulty": "hard",
+            "description": "La oscuridad cubre el tablero poco a poco. CronÃ³metro: 78s. 16 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 120
+            },
+            "seed": 1099158,
+            "setSize": 2
+        },
+        {
+            "id": 100,
+            "phase": 2,
+            "theme": "candyland",
+            "pairs": 12,
+            "timeSec": 103,
+            "mechanics": [
+                "ghost",
+                "chameleon"
+            ],
+            "difficulty": "hard",
+            "description": "Boss: 24 cartas, ghost + chameleon, crono 103s.",
+            "isBoss": true,
+            "rewards": {
+                "coins": 180
+            },
+            "seed": 1100223,
+            "setSize": 2
+        },
+        {
+            "id": 101,
+            "phase": 3,
+            "theme": "space",
+            "pairs": 6,
+            "timeSec": 0,
+            "mechanics": [
+                "bomb"
+            ],
+            "difficulty": "medium",
+            "description": "Evita bombas: piensa rÃ¡pido. Sin cronÃ³metro. 12 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 60
+            },
+            "seed": 1101060,
+            "setSize": 2
+        },
+        {
+            "id": 102,
+            "phase": 3,
+            "theme": "space",
+            "pairs": 3,
+            "timeSec": 0,
+            "mechanics": [
+                "basic"
+            ],
+            "difficulty": "easy",
+            "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 6 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 15
+            },
+            "seed": 1102030,
+            "setSize": 2
+        },
+        {
+            "id": 103,
+            "phase": 3,
+            "theme": "space",
+            "pairs": 2,
+            "timeSec": 0,
+            "mechanics": [
+                "bomb"
+            ],
+            "difficulty": "medium",
+            "description": "Evita bombas: piensa rÃ¡pido. Sin cronÃ³metro. 4 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 20
+            },
+            "seed": 1103020,
+            "setSize": 2
+        },
+        {
+            "id": 104,
+            "phase": 3,
+            "theme": "space",
+            "pairs": 7,
+            "timeSec": 67,
+            "mechanics": [
+                "rotation"
+            ],
+            "difficulty": "hard",
+            "description": "El tablero rota de vez en cuando. CronÃ³metro: 67s. 14 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 105
+            },
+            "seed": 1104137,
+            "setSize": 2
+        },
+        {
+            "id": 105,
+            "phase": 3,
+            "theme": "space",
+            "pairs": 6,
+            "timeSec": 0,
+            "mechanics": [
+                "basic"
+            ],
+            "difficulty": "easy",
+            "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 12 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 30
+            },
+            "seed": 1105060,
+            "setSize": 2
+        },
+        {
+            "id": 106,
+            "phase": 3,
+            "theme": "space",
+            "pairs": 12,
+            "timeSec": 0,
+            "mechanics": [
+                "darkness"
+            ],
+            "difficulty": "hard",
+            "description": "La oscuridad cubre el tablero poco a poco. Sin cronÃ³metro. 24 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 180
+            },
+            "seed": 1106120,
+            "setSize": 2
+        },
+        {
+            "id": 107,
+            "phase": 3,
+            "theme": "space",
+            "pairs": 4,
+            "timeSec": 0,
+            "mechanics": [
+                "basic"
+            ],
+            "difficulty": "easy",
+            "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 8 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 20
+            },
+            "seed": 1107040,
+            "setSize": 2
+        },
+        {
+            "id": 108,
+            "phase": 3,
+            "theme": "space",
+            "pairs": 5,
+            "timeSec": 44,
+            "mechanics": [
+                "chameleon"
+            ],
+            "difficulty": "medium",
+            "description": "Las cartas cambian de valor. CronÃ³metro: 44s. 10 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 50
+            },
+            "seed": 1108094,
+            "setSize": 2
+        },
+        {
+            "id": 109,
+            "phase": 3,
+            "theme": "space",
+            "pairs": 7,
+            "timeSec": 69,
+            "mechanics": [
+                "basic"
+            ],
+            "difficulty": "medium",
+            "description": "Nivel clÃ¡sico sin trucos. CronÃ³metro: 69s. 14 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 70
+            },
+            "seed": 1109139,
+            "setSize": 2
+        },
+        {
+            "id": 110,
+            "phase": 3,
+            "theme": "space",
+            "pairs": 10,
+            "timeSec": 99,
+            "mechanics": [
+                "basic"
+            ],
+            "difficulty": "hard",
+            "description": "Nivel clÃ¡sico sin trucos. CronÃ³metro: 99s. 20 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 150
+            },
+            "seed": 1110199,
+            "setSize": 2
+        },
+        {
+            "id": 111,
+            "phase": 3,
+            "theme": "space",
+            "pairs": 4,
+            "timeSec": 0,
+            "mechanics": [
+                "frozen"
+            ],
+            "difficulty": "medium",
+            "description": "Cartas que se congelan temporalmente. Sin cronÃ³metro. 8 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 40
+            },
+            "seed": 1111040,
+            "setSize": 2
+        },
+        {
+            "id": 112,
+            "phase": 3,
+            "theme": "space",
+            "pairs": 8,
+            "timeSec": 85,
+            "mechanics": [
+                "fog"
+            ],
+            "difficulty": "medium",
+            "description": "Niebla ligera: observa con atenciÃ³n. CronÃ³metro: 85s. 16 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 80
+            },
+            "seed": 1112165,
+            "setSize": 2
+        },
+        {
+            "id": 113,
+            "phase": 3,
+            "theme": "space",
+            "pairs": 9,
+            "timeSec": 82,
+            "mechanics": [
+                "chameleon"
+            ],
+            "difficulty": "hard",
+            "description": "Las cartas cambian de valor. CronÃ³metro: 82s. 18 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 135
+            },
+            "seed": 1113172,
+            "setSize": 2
+        },
+        {
+            "id": 114,
+            "phase": 3,
+            "theme": "space",
+            "pairs": 12,
+            "timeSec": 0,
+            "mechanics": [
+                "trio"
+            ],
+            "difficulty": "hard",
+            "description": "Encuentra trÃ­os idÃ©nticos. Sin cronÃ³metro. 24 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 180
+            },
+            "seed": 1114120,
+            "setSize": 3
+        },
+        {
+            "id": 115,
+            "phase": 3,
+            "theme": "space",
+            "pairs": 5,
+            "timeSec": 42,
+            "mechanics": [
+                "ghost"
+            ],
+            "difficulty": "medium",
+            "description": "Cartas fantasma aparecen y desaparecen. CronÃ³metro: 42s. 10 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 50
+            },
+            "seed": 1115092,
+            "setSize": 2
+        },
+        {
+            "id": 116,
+            "phase": 3,
+            "theme": "space",
+            "pairs": 12,
+            "timeSec": 0,
+            "mechanics": [
+                "trio"
+            ],
+            "difficulty": "hard",
+            "description": "Encuentra trÃ­os idÃ©nticos. Sin cronÃ³metro. 24 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 180
+            },
+            "seed": 1116120,
+            "setSize": 3
+        },
+        {
+            "id": 117,
+            "phase": 3,
+            "theme": "space",
+            "pairs": 9,
+            "timeSec": 84,
+            "mechanics": [
+                "ghost"
+            ],
+            "difficulty": "hard",
+            "description": "Cartas fantasma aparecen y desaparecen. CronÃ³metro: 84s. 18 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 135
+            },
+            "seed": 1117174,
+            "setSize": 2
+        },
+        {
+            "id": 118,
+            "phase": 3,
+            "theme": "space",
+            "pairs": 12,
+            "timeSec": 0,
+            "mechanics": [
+                "trio"
+            ],
+            "difficulty": "hard",
+            "description": "Encuentra trÃ­os idÃ©nticos. Sin cronÃ³metro. 24 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 180
+            },
+            "seed": 1118120,
+            "setSize": 3
+        },
+        {
+            "id": 119,
+            "phase": 3,
+            "theme": "space",
+            "pairs": 10,
+            "timeSec": 0,
+            "mechanics": [
+                "darkness"
+            ],
+            "difficulty": "hard",
+            "description": "La oscuridad cubre el tablero poco a poco. Sin cronÃ³metro. 20 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 150
+            },
+            "seed": 1119100,
+            "setSize": 2
+        },
+        {
+            "id": 120,
+            "phase": 3,
+            "theme": "space",
+            "pairs": 7,
+            "timeSec": 66,
+            "mechanics": [
+                "fog"
+            ],
+            "difficulty": "medium",
+            "description": "Niebla ligera: observa con atenciÃ³n. CronÃ³metro: 66s. 14 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 70
+            },
+            "seed": 1120136,
+            "setSize": 2
+        },
+        {
+            "id": 121,
+            "phase": 3,
+            "theme": "space",
+            "pairs": 7,
+            "timeSec": 0,
+            "mechanics": [
+                "rotation"
+            ],
+            "difficulty": "medium",
+            "description": "El tablero rota de vez en cuando. Sin cronÃ³metro. 14 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 70
+            },
+            "seed": 1121070,
+            "setSize": 2
+        },
+        {
+            "id": 122,
+            "phase": 3,
+            "theme": "space",
+            "pairs": 7,
+            "timeSec": 78,
+            "mechanics": [
+                "ghost"
+            ],
+            "difficulty": "medium",
+            "description": "Cartas fantasma aparecen y desaparecen. CronÃ³metro: 78s. 14 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 70
+            },
+            "seed": 1122148,
+            "setSize": 2
+        },
+        {
+            "id": 123,
+            "phase": 3,
+            "theme": "space",
+            "pairs": 12,
+            "timeSec": 99,
+            "mechanics": [
+                "darkness"
+            ],
+            "difficulty": "hard",
+            "description": "La oscuridad cubre el tablero poco a poco. CronÃ³metro: 99s. 24 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 180
+            },
+            "seed": 1123219,
+            "setSize": 2
+        },
+        {
+            "id": 124,
+            "phase": 3,
+            "theme": "space",
+            "pairs": 5,
+            "timeSec": 0,
+            "mechanics": [
+                "fog"
+            ],
+            "difficulty": "easy",
+            "description": "Niebla ligera: observa con atenciÃ³n. Sin cronÃ³metro. 10 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 25
+            },
+            "seed": 1124050,
+            "setSize": 2
+        },
+        {
+            "id": 125,
+            "phase": 3,
+            "theme": "space",
+            "pairs": 6,
+            "timeSec": 0,
+            "mechanics": [
+                "rotation"
+            ],
+            "difficulty": "medium",
+            "description": "El tablero rota de vez en cuando. Sin cronÃ³metro. 12 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 60
+            },
+            "seed": 1125060,
+            "setSize": 2
+        },
+        {
+            "id": 126,
+            "phase": 3,
+            "theme": "space",
+            "pairs": 3,
+            "timeSec": 0,
+            "mechanics": [
+                "basic"
+            ],
+            "difficulty": "easy",
+            "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 6 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 15
+            },
+            "seed": 1126030,
+            "setSize": 2
+        },
+        {
+            "id": 127,
+            "phase": 3,
+            "theme": "space",
+            "pairs": 10,
+            "timeSec": 102,
+            "mechanics": [
+                "darkness"
+            ],
+            "difficulty": "hard",
+            "description": "La oscuridad cubre el tablero poco a poco. CronÃ³metro: 102s. 20 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 150
+            },
+            "seed": 1127202,
+            "setSize": 2
+        },
+        {
+            "id": 128,
+            "phase": 3,
+            "theme": "space",
+            "pairs": 2,
+            "timeSec": 0,
+            "mechanics": [
+                "bomb"
+            ],
+            "difficulty": "medium",
+            "description": "Evita bombas: piensa rÃ¡pido. Sin cronÃ³metro. 4 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 20
+            },
+            "seed": 1128020,
+            "setSize": 2
+        },
+        {
+            "id": 129,
+            "phase": 3,
+            "theme": "space",
+            "pairs": 6,
+            "timeSec": 62,
+            "mechanics": [
+                "chameleon"
+            ],
+            "difficulty": "medium",
+            "description": "Las cartas cambian de valor. CronÃ³metro: 62s. 12 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 60
+            },
+            "seed": 1129122,
+            "setSize": 2
+        },
+        {
+            "id": 130,
+            "phase": 3,
+            "theme": "space",
+            "pairs": 8,
+            "timeSec": 78,
+            "mechanics": [
+                "basic"
+            ],
+            "difficulty": "medium",
+            "description": "Nivel clÃ¡sico sin trucos. CronÃ³metro: 78s. 16 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 80
+            },
+            "seed": 1130158,
+            "setSize": 2
+        },
+        {
+            "id": 131,
+            "phase": 3,
+            "theme": "space",
+            "pairs": 12,
+            "timeSec": 0,
+            "mechanics": [
+                "trio"
+            ],
+            "difficulty": "hard",
+            "description": "Encuentra trÃ­os idÃ©nticos. Sin cronÃ³metro. 24 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 180
+            },
+            "seed": 1131120,
+            "setSize": 3
+        },
+        {
+            "id": 132,
+            "phase": 3,
+            "theme": "space",
+            "pairs": 5,
+            "timeSec": 0,
+            "mechanics": [
+                "ghost"
+            ],
+            "difficulty": "easy",
+            "description": "Cartas fantasma aparecen y desaparecen. Sin cronÃ³metro. 10 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 25
+            },
+            "seed": 1132050,
+            "setSize": 2
+        },
+        {
+            "id": 133,
+            "phase": 3,
+            "theme": "space",
+            "pairs": 3,
+            "timeSec": 0,
+            "mechanics": [
+                "basic"
+            ],
+            "difficulty": "easy",
+            "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 6 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 15
+            },
+            "seed": 1133030,
+            "setSize": 2
+        },
+        {
+            "id": 134,
+            "phase": 3,
+            "theme": "space",
+            "pairs": 10,
+            "timeSec": 98,
+            "mechanics": [
+                "chameleon"
+            ],
+            "difficulty": "hard",
+            "description": "Las cartas cambian de valor. CronÃ³metro: 98s. 20 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 150
+            },
+            "seed": 1134198,
+            "setSize": 2
+        },
+        {
+            "id": 135,
+            "phase": 3,
+            "theme": "space",
+            "pairs": 9,
+            "timeSec": 0,
+            "mechanics": [
+                "frozen"
+            ],
+            "difficulty": "hard",
+            "description": "Cartas que se congelan temporalmente. Sin cronÃ³metro. 18 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 135
+            },
+            "seed": 1135090,
+            "setSize": 2
+        },
+        {
+            "id": 136,
+            "phase": 3,
+            "theme": "space",
+            "pairs": 12,
+            "timeSec": 111,
+            "mechanics": [
+                "chameleon"
+            ],
+            "difficulty": "hard",
+            "description": "Las cartas cambian de valor. CronÃ³metro: 111s. 24 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 180
+            },
+            "seed": 1136231,
+            "setSize": 2
+        },
+        {
+            "id": 137,
+            "phase": 3,
+            "theme": "space",
+            "pairs": 7,
+            "timeSec": 66,
+            "mechanics": [
+                "bomb"
+            ],
+            "difficulty": "hard",
+            "description": "Evita bombas: piensa rÃ¡pido. CronÃ³metro: 66s. 14 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 105
+            },
+            "seed": 1137136,
+            "setSize": 2
+        },
+        {
+            "id": 138,
+            "phase": 3,
+            "theme": "space",
+            "pairs": 6,
+            "timeSec": 60,
+            "mechanics": [
+                "basic"
+            ],
+            "difficulty": "medium",
+            "description": "Nivel clÃ¡sico sin trucos. CronÃ³metro: 60s. 12 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 60
+            },
+            "seed": 1138120,
+            "setSize": 2
+        },
+        {
+            "id": 139,
+            "phase": 3,
+            "theme": "space",
+            "pairs": 5,
+            "timeSec": 0,
+            "mechanics": [
+                "chameleon"
+            ],
+            "difficulty": "medium",
+            "description": "Las cartas cambian de valor. Sin cronÃ³metro. 10 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 50
+            },
+            "seed": 1139050,
+            "setSize": 2
+        },
+        {
+            "id": 140,
+            "phase": 3,
+            "theme": "space",
+            "pairs": 7,
+            "timeSec": 0,
+            "mechanics": [
+                "bomb"
+            ],
+            "difficulty": "medium",
+            "description": "Evita bombas: piensa rÃ¡pido. Sin cronÃ³metro. 14 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 70
+            },
+            "seed": 1140070,
+            "setSize": 2
+        },
+        {
+            "id": 141,
+            "phase": 3,
+            "theme": "space",
+            "pairs": 6,
+            "timeSec": 0,
+            "mechanics": [
+                "trio"
+            ],
+            "difficulty": "easy",
+            "description": "Encuentra trÃ­os idÃ©nticos. Sin cronÃ³metro. 12 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 30
+            },
+            "seed": 1141060,
+            "setSize": 3
+        },
+        {
+            "id": 142,
+            "phase": 3,
+            "theme": "space",
+            "pairs": 4,
+            "timeSec": 0,
+            "mechanics": [
+                "frozen"
+            ],
+            "difficulty": "medium",
+            "description": "Cartas que se congelan temporalmente. Sin cronÃ³metro. 8 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 40
+            },
+            "seed": 1142040,
+            "setSize": 2
+        },
+        {
+            "id": 143,
+            "phase": 3,
+            "theme": "space",
+            "pairs": 5,
+            "timeSec": 0,
+            "mechanics": [
+                "ghost"
+            ],
+            "difficulty": "easy",
+            "description": "Cartas fantasma aparecen y desaparecen. Sin cronÃ³metro. 10 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 25
+            },
+            "seed": 1143050,
+            "setSize": 2
+        },
+        {
+            "id": 144,
+            "phase": 3,
+            "theme": "space",
+            "pairs": 2,
+            "timeSec": 0,
+            "mechanics": [
+                "basic"
+            ],
+            "difficulty": "easy",
+            "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 4 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 10
+            },
+            "seed": 1144020,
+            "setSize": 2
+        },
+        {
+            "id": 145,
+            "phase": 3,
+            "theme": "space",
+            "pairs": 5,
+            "timeSec": 50,
+            "mechanics": [
+                "chameleon"
+            ],
+            "difficulty": "medium",
+            "description": "Las cartas cambian de valor. CronÃ³metro: 50s. 10 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 50
+            },
+            "seed": 1145100,
+            "setSize": 2
+        },
+        {
+            "id": 146,
+            "phase": 3,
+            "theme": "space",
+            "pairs": 12,
+            "timeSec": 0,
+            "mechanics": [
+                "basic"
+            ],
+            "difficulty": "medium",
+            "description": "juega normalmente. Sin cronÃ³metro. 24 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 120
+            },
+            "seed": 1146120,
+            "setSize": 2
+        },
+        {
+            "id": 147,
+            "phase": 3,
+            "theme": "space",
+            "pairs": 5,
+            "timeSec": 0,
+            "mechanics": [
+                "ghost"
+            ],
+            "difficulty": "easy",
+            "description": "Cartas fantasma aparecen y desaparecen. Sin cronÃ³metro. 10 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 25
+            },
+            "seed": 1147050,
+            "setSize": 2
+        },
+        {
+            "id": 148,
+            "phase": 3,
+            "theme": "space",
+            "pairs": 8,
+            "timeSec": 73,
+            "mechanics": [
+                "rotation"
+            ],
+            "difficulty": "hard",
+            "description": "El tablero rota de vez en cuando. CronÃ³metro: 73s. 16 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 120
+            },
+            "seed": 1148153,
+            "setSize": 2
+        },
+        {
+            "id": 149,
+            "phase": 3,
+            "theme": "space",
+            "pairs": 10,
+            "timeSec": 103,
+            "mechanics": [
+                "darkness"
+            ],
+            "difficulty": "hard",
+            "description": "La oscuridad cubre el tablero poco a poco. CronÃ³metro: 103s. 20 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 150
+            },
+            "seed": 1149203,
+            "setSize": 2
+        },
+        {
+            "id": 150,
+            "phase": 3,
+            "theme": "space",
+            "pairs": 12,
+            "timeSec": 111,
+            "mechanics": [
+                "frozen",
+                "chameleon"
+            ],
+            "difficulty": "hard",
+            "description": "Boss: 24 cartas, frozen + chameleon, crono 111s.",
+            "isBoss": true,
+            "rewards": {
+                "coins": 180
+            },
+            "seed": 1150231,
+            "setSize": 2
+        },
+        {
+            "id": 151,
+            "phase": 4,
+            "theme": "forest",
+            "pairs": 4,
+            "timeSec": 0,
+            "mechanics": [
+                "ghost"
+            ],
+            "difficulty": "easy",
+            "description": "Cartas fantasma aparecen y desaparecen. Sin cronÃ³metro. 8 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 20
+            },
+            "seed": 1151040,
+            "setSize": 2
+        },
+        {
+            "id": 152,
+            "phase": 4,
+            "theme": "forest",
+            "pairs": 10,
+            "timeSec": 0,
+            "mechanics": [
+                "bomb"
+            ],
+            "difficulty": "hard",
+            "description": "Evita bombas: piensa rÃ¡pido. Sin cronÃ³metro. 20 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 150
+            },
+            "seed": 1152100,
+            "setSize": 2
+        },
+        {
+            "id": 153,
+            "phase": 4,
+            "theme": "forest",
+            "pairs": 8,
+            "timeSec": 0,
+            "mechanics": [
+                "darkness"
+            ],
+            "difficulty": "medium",
+            "description": "La oscuridad cubre el tablero poco a poco. Sin cronÃ³metro. 16 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 80
+            },
+            "seed": 1153080,
+            "setSize": 2
+        },
+        {
+            "id": 154,
+            "phase": 4,
+            "theme": "forest",
+            "pairs": 7,
+            "timeSec": 70,
+            "mechanics": [
+                "fog"
+            ],
+            "difficulty": "medium",
+            "description": "Niebla ligera: observa con atenciÃ³n. CronÃ³metro: 70s. 14 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 70
+            },
+            "seed": 1154140,
+            "setSize": 2
+        },
+        {
+            "id": 155,
+            "phase": 4,
+            "theme": "forest",
+            "pairs": 7,
+            "timeSec": 78,
+            "mechanics": [
+                "frozen"
+            ],
+            "difficulty": "hard",
+            "description": "Cartas que se congelan temporalmente. CronÃ³metro: 78s. 14 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 105
+            },
+            "seed": 1155148,
+            "setSize": 2
+        },
+        {
+            "id": 156,
+            "phase": 4,
+            "theme": "forest",
+            "pairs": 6,
+            "timeSec": 0,
+            "mechanics": [
+                "chameleon"
+            ],
+            "difficulty": "medium",
+            "description": "Las cartas cambian de valor. Sin cronÃ³metro. 12 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 60
+            },
+            "seed": 1156060,
+            "setSize": 2
+        },
+        {
+            "id": 157,
+            "phase": 4,
+            "theme": "forest",
+            "pairs": 5,
+            "timeSec": 0,
+            "mechanics": [
+                "basic"
+            ],
+            "difficulty": "easy",
+            "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 10 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 25
+            },
+            "seed": 1157050,
+            "setSize": 2
+        },
+        {
+            "id": 158,
+            "phase": 4,
+            "theme": "forest",
+            "pairs": 6,
+            "timeSec": 65,
+            "mechanics": [
+                "chameleon"
+            ],
+            "difficulty": "medium",
+            "description": "Las cartas cambian de valor. CronÃ³metro: 65s. 12 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 60
+            },
+            "seed": 1158125,
+            "setSize": 2
+        },
+        {
+            "id": 159,
+            "phase": 4,
+            "theme": "forest",
+            "pairs": 2,
+            "timeSec": 0,
+            "mechanics": [
+                "rotation"
+            ],
+            "difficulty": "medium",
+            "description": "El tablero rota de vez en cuando. Sin cronÃ³metro. 4 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 20
+            },
+            "seed": 1159020,
+            "setSize": 2
+        },
+        {
+            "id": 160,
+            "phase": 4,
+            "theme": "forest",
+            "pairs": 5,
+            "timeSec": 0,
+            "mechanics": [
+                "ghost"
+            ],
+            "difficulty": "easy",
+            "description": "Cartas fantasma aparecen y desaparecen. Sin cronÃ³metro. 10 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 25
+            },
+            "seed": 1160050,
+            "setSize": 2
+        },
+        {
+            "id": 161,
+            "phase": 4,
+            "theme": "forest",
+            "pairs": 7,
+            "timeSec": 74,
+            "mechanics": [
+                "fog"
+            ],
+            "difficulty": "medium",
+            "description": "Niebla ligera: observa con atenciÃ³n. CronÃ³metro: 74s. 14 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 70
+            },
+            "seed": 1161144,
+            "setSize": 2
+        },
+        {
+            "id": 162,
+            "phase": 4,
+            "theme": "forest",
+            "pairs": 8,
+            "timeSec": 78,
+            "mechanics": [
+                "basic"
+            ],
+            "difficulty": "medium",
+            "description": "Nivel clÃ¡sico sin trucos. CronÃ³metro: 78s. 16 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 80
+            },
+            "seed": 1162158,
+            "setSize": 2
+        },
+        {
+            "id": 163,
+            "phase": 4,
+            "theme": "forest",
+            "pairs": 5,
+            "timeSec": 0,
+            "mechanics": [
+                "chameleon"
+            ],
+            "difficulty": "medium",
+            "description": "Las cartas cambian de valor. Sin cronÃ³metro. 10 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 50
+            },
+            "seed": 1163050,
+            "setSize": 2
+        },
+        {
+            "id": 164,
+            "phase": 4,
+            "theme": "forest",
+            "pairs": 8,
+            "timeSec": 0,
+            "mechanics": [
+                "basic"
+            ],
+            "difficulty": "medium",
+            "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 16 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 80
+            },
+            "seed": 1164080,
+            "setSize": 2
+        },
+        {
+            "id": 165,
+            "phase": 4,
+            "theme": "forest",
+            "pairs": 9,
+            "timeSec": 0,
+            "mechanics": [
+                "bomb"
+            ],
+            "difficulty": "hard",
+            "description": "Evita bombas: piensa rÃ¡pido. Sin cronÃ³metro. 18 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 135
+            },
+            "seed": 1165090,
+            "setSize": 2
+        },
+        {
+            "id": 166,
+            "phase": 4,
+            "theme": "forest",
+            "pairs": 7,
+            "timeSec": 62,
+            "mechanics": [
+                "basic"
+            ],
+            "difficulty": "medium",
+            "description": "Nivel clÃ¡sico sin trucos. CronÃ³metro: 62s. 14 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 70
+            },
+            "seed": 1166132,
+            "setSize": 2
+        },
+        {
+            "id": 167,
+            "phase": 4,
+            "theme": "forest",
+            "pairs": 6,
+            "timeSec": 66,
+            "mechanics": [
+                "bomb"
+            ],
+            "difficulty": "medium",
+            "description": "Evita bombas: piensa rÃ¡pido. CronÃ³metro: 66s. 12 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 60
+            },
+            "seed": 1167126,
+            "setSize": 2
+        },
+        {
+            "id": 168,
+            "phase": 4,
+            "theme": "forest",
+            "pairs": 8,
+            "timeSec": 0,
+            "mechanics": [
+                "basic"
+            ],
+            "difficulty": "medium",
+            "description": "juega normalmente. Sin cronÃ³metro. 16 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 80
+            },
+            "seed": 1168080,
+            "setSize": 2
+        },
+        {
+            "id": 169,
+            "phase": 4,
+            "theme": "forest",
+            "pairs": 7,
+            "timeSec": 0,
+            "mechanics": [
+                "bomb"
+            ],
+            "difficulty": "medium",
+            "description": "Evita bombas: piensa rÃ¡pido. Sin cronÃ³metro. 14 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 70
+            },
+            "seed": 1169070,
+            "setSize": 2
+        },
+        {
+            "id": 170,
+            "phase": 4,
+            "theme": "forest",
+            "pairs": 8,
+            "timeSec": 75,
+            "mechanics": [
+                "frozen"
+            ],
+            "difficulty": "hard",
+            "description": "Cartas que se congelan temporalmente. CronÃ³metro: 75s. 16 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 120
+            },
+            "seed": 1170155,
+            "setSize": 2
+        },
+        {
+            "id": 171,
+            "phase": 4,
+            "theme": "forest",
+            "pairs": 5,
+            "timeSec": 0,
+            "mechanics": [
+                "basic"
+            ],
+            "difficulty": "easy",
+            "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 10 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 25
+            },
+            "seed": 1171050,
+            "setSize": 2
+        },
+        {
+            "id": 172,
+            "phase": 4,
+            "theme": "forest",
+            "pairs": 10,
+            "timeSec": 96,
+            "mechanics": [
+                "basic"
+            ],
+            "difficulty": "hard",
+            "description": "Nivel clÃ¡sico sin trucos. CronÃ³metro: 96s. 20 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 150
+            },
+            "seed": 1172196,
+            "setSize": 2
+        },
+        {
+            "id": 173,
+            "phase": 4,
+            "theme": "forest",
+            "pairs": 8,
+            "timeSec": 86,
+            "mechanics": [
+                "rotation"
+            ],
+            "difficulty": "medium",
+            "description": "las cartas pueden rotar. CronÃ³metro: 86s. 16 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 80
+            },
+            "seed": 1173166,
+            "setSize": 2
+        },
+        {
+            "id": 174,
+            "phase": 4,
+            "theme": "forest",
+            "pairs": 5,
+            "timeSec": 55,
+            "mechanics": [
+                "basic"
+            ],
+            "difficulty": "medium",
+            "description": "Nivel clÃ¡sico sin trucos. CronÃ³metro: 55s. 10 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 50
+            },
+            "seed": 1174105,
+            "setSize": 2
+        },
+        {
+            "id": 175,
+            "phase": 4,
+            "theme": "forest",
+            "pairs": 12,
+            "timeSec": 0,
+            "mechanics": [
+                "basic"
+            ],
+            "difficulty": "medium",
+            "description": "juega normalmente. Sin cronÃ³metro. 24 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 120
+            },
+            "seed": 1175120,
+            "setSize": 2
+        },
+        {
+            "id": 176,
+            "phase": 4,
+            "theme": "forest",
+            "pairs": 9,
+            "timeSec": 0,
+            "mechanics": [
+                "basic"
+            ],
+            "difficulty": "medium",
+            "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 18 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 90
+            },
+            "seed": 1176090,
+            "setSize": 2
+        },
+        {
+            "id": 177,
+            "phase": 4,
+            "theme": "forest",
+            "pairs": 5,
+            "timeSec": 0,
+            "mechanics": [
+                "rotation"
+            ],
+            "difficulty": "medium",
+            "description": "El tablero rota de vez en cuando. Sin cronÃ³metro. 10 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 50
+            },
+            "seed": 1177050,
+            "setSize": 2
+        },
+        {
+            "id": 178,
+            "phase": 4,
+            "theme": "forest",
+            "pairs": 8,
+            "timeSec": 0,
+            "mechanics": [
+                "basic"
+            ],
+            "difficulty": "medium",
+            "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 16 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 80
+            },
+            "seed": 1178080,
+            "setSize": 2
+        },
+        {
+            "id": 179,
+            "phase": 4,
+            "theme": "forest",
+            "pairs": 2,
+            "timeSec": 0,
+            "mechanics": [
+                "ghost"
+            ],
+            "difficulty": "easy",
+            "description": "Cartas fantasma aparecen y desaparecen. Sin cronÃ³metro. 4 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 10
+            },
+            "seed": 1179020,
+            "setSize": 2
+        },
+        {
+            "id": 180,
+            "phase": 4,
+            "theme": "forest",
+            "pairs": 8,
+            "timeSec": 0,
+            "mechanics": [
+                "frozen"
+            ],
+            "difficulty": "medium",
+            "description": "Cartas que se congelan temporalmente. Sin cronÃ³metro. 16 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 80
+            },
+            "seed": 1180080,
+            "setSize": 2
+        },
+        {
+            "id": 181,
+            "phase": 4,
+            "theme": "forest",
+            "pairs": 12,
+            "timeSec": 0,
+            "mechanics": [
+                "basic"
+            ],
+            "difficulty": "medium",
+            "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 24 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 120
+            },
+            "seed": 1181120,
+            "setSize": 2
+        },
+        {
+            "id": 182,
+            "phase": 4,
+            "theme": "forest",
+            "pairs": 7,
+            "timeSec": 73,
+            "mechanics": [
+                "bomb"
+            ],
+            "difficulty": "hard",
+            "description": "Evita bombas: piensa rÃ¡pido. CronÃ³metro: 73s. 14 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 105
+            },
+            "seed": 1182143,
+            "setSize": 2
+        },
+        {
+            "id": 183,
+            "phase": 4,
+            "theme": "forest",
+            "pairs": 6,
+            "timeSec": 65,
+            "mechanics": [
+                "ghost"
+            ],
+            "difficulty": "medium",
+            "description": "Cartas fantasma aparecen y desaparecen. CronÃ³metro: 65s. 12 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 60
+            },
+            "seed": 1183125,
+            "setSize": 2
+        },
+        {
+            "id": 184,
+            "phase": 4,
+            "theme": "forest",
+            "pairs": 2,
+            "timeSec": 0,
+            "mechanics": [
+                "basic"
+            ],
+            "difficulty": "easy",
+            "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 4 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 10
+            },
+            "seed": 1184020,
+            "setSize": 2
+        },
+        {
+            "id": 185,
+            "phase": 4,
+            "theme": "forest",
+            "pairs": 11,
+            "timeSec": 95,
+            "mechanics": [
+                "ghost"
+            ],
+            "difficulty": "hard",
+            "description": "Cartas fantasma aparecen y desaparecen. CronÃ³metro: 95s. 22 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 165
+            },
+            "seed": 1185205,
+            "setSize": 2
+        },
+        {
+            "id": 186,
+            "phase": 4,
+            "theme": "forest",
+            "pairs": 10,
+            "timeSec": 94,
+            "mechanics": [
+                "darkness"
+            ],
+            "difficulty": "hard",
+            "description": "La oscuridad cubre el tablero poco a poco. CronÃ³metro: 94s. 20 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 150
+            },
+            "seed": 1186194,
+            "setSize": 2
+        },
+        {
+            "id": 187,
+            "phase": 4,
+            "theme": "forest",
+            "pairs": 8,
+            "timeSec": 80,
+            "mechanics": [
+                "ghost"
+            ],
+            "difficulty": "medium",
+            "description": "Cartas fantasma aparecen y desaparecen. CronÃ³metro: 80s. 16 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 80
+            },
+            "seed": 1187160,
+            "setSize": 2
+        },
+        {
+            "id": 188,
+            "phase": 4,
+            "theme": "forest",
+            "pairs": 4,
+            "timeSec": 0,
+            "mechanics": [
+                "rotation"
+            ],
+            "difficulty": "medium",
+            "description": "El tablero rota de vez en cuando. Sin cronÃ³metro. 8 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 40
+            },
+            "seed": 1188040,
+            "setSize": 2
+        },
+        {
+            "id": 189,
+            "phase": 4,
+            "theme": "forest",
+            "pairs": 5,
+            "timeSec": 0,
+            "mechanics": [
+                "bomb"
+            ],
+            "difficulty": "medium",
+            "description": "Evita bombas: piensa rÃ¡pido. Sin cronÃ³metro. 10 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 50
+            },
+            "seed": 1189050,
+            "setSize": 2
+        },
+        {
+            "id": 190,
+            "phase": 4,
+            "theme": "forest",
+            "pairs": 5,
+            "timeSec": 0,
+            "mechanics": [
+                "basic"
+            ],
+            "difficulty": "easy",
+            "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 10 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 25
+            },
+            "seed": 1190050,
+            "setSize": 2
+        },
+        {
+            "id": 191,
+            "phase": 4,
+            "theme": "forest",
+            "pairs": 7,
+            "timeSec": 77,
+            "mechanics": [
+                "ghost"
+            ],
+            "difficulty": "medium",
+            "description": "Cartas fantasma aparecen y desaparecen. CronÃ³metro: 77s. 14 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 70
+            },
+            "seed": 1191147,
+            "setSize": 2
+        },
+        {
+            "id": 192,
+            "phase": 4,
+            "theme": "forest",
+            "pairs": 3,
+            "timeSec": 0,
+            "mechanics": [
+                "trio"
+            ],
+            "difficulty": "easy",
+            "description": "Encuentra trÃ­os idÃ©nticos. Sin cronÃ³metro. 6 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 15
+            },
+            "seed": 1192030,
+            "setSize": 3
+        },
+        {
+            "id": 193,
+            "phase": 4,
+            "theme": "forest",
+            "pairs": 3,
+            "timeSec": 0,
+            "mechanics": [
+                "chameleon"
+            ],
+            "difficulty": "medium",
+            "description": "Las cartas cambian de valor. Sin cronÃ³metro. 6 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 30
+            },
+            "seed": 1193030,
+            "setSize": 2
+        },
+        {
+            "id": 194,
+            "phase": 4,
+            "theme": "forest",
+            "pairs": 5,
+            "timeSec": 0,
+            "mechanics": [
+                "ghost"
+            ],
+            "difficulty": "easy",
+            "description": "Cartas fantasma aparecen y desaparecen. Sin cronÃ³metro. 10 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 25
+            },
+            "seed": 1194050,
+            "setSize": 2
+        },
+        {
+            "id": 195,
+            "phase": 4,
+            "theme": "forest",
+            "pairs": 3,
+            "timeSec": 0,
+            "mechanics": [
+                "fog"
+            ],
+            "difficulty": "easy",
+            "description": "Niebla ligera: observa con atenciÃ³n. Sin cronÃ³metro. 6 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 15
+            },
+            "seed": 1195030,
+            "setSize": 2
+        },
+        {
+            "id": 196,
+            "phase": 4,
+            "theme": "forest",
+            "pairs": 5,
+            "timeSec": 0,
+            "mechanics": [
+                "basic"
+            ],
+            "difficulty": "easy",
+            "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 10 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 25
+            },
+            "seed": 1196050,
+            "setSize": 2
+        },
+        {
+            "id": 197,
+            "phase": 4,
+            "theme": "forest",
+            "pairs": 8,
+            "timeSec": 83,
+            "mechanics": [
+                "chameleon"
+            ],
+            "difficulty": "hard",
+            "description": "Las cartas cambian de valor. CronÃ³metro: 83s. 16 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 120
+            },
+            "seed": 1197163,
+            "setSize": 2
+        },
+        {
+            "id": 198,
+            "phase": 4,
+            "theme": "forest",
+            "pairs": 5,
+            "timeSec": 0,
+            "mechanics": [
+                "basic"
+            ],
+            "difficulty": "easy",
+            "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 10 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 25
+            },
+            "seed": 1198050,
+            "setSize": 2
+        },
+        {
+            "id": 199,
+            "phase": 4,
+            "theme": "forest",
+            "pairs": 6,
+            "timeSec": 0,
+            "mechanics": [
+                "ghost"
+            ],
+            "difficulty": "easy",
+            "description": "Cartas fantasma aparecen y desaparecen. Sin cronÃ³metro. 12 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 30
+            },
+            "seed": 1199060,
+            "setSize": 2
+        },
+        {
+            "id": 200,
+            "phase": 4,
+            "theme": "forest",
+            "pairs": 12,
+            "timeSec": 99,
+            "mechanics": [
+                "bomb",
+                "frozen"
+            ],
+            "difficulty": "hard",
+            "description": "Boss: 24 cartas, bomb + frozen, crono 99s.",
+            "isBoss": true,
+            "rewards": {
+                "coins": 180
+            },
+            "seed": 1200219,
+            "setSize": 2
+        },
+        {
+            "id": 201,
+            "phase": 5,
+            "theme": "city",
+            "pairs": 10,
+            "timeSec": 0,
+            "mechanics": [
+                "basic"
+            ],
+            "difficulty": "medium",
+            "description": "juega normalmente. Sin cronÃ³metro. 20 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 100
+            },
+            "seed": 1201100,
+            "setSize": 2
+        },
+        {
+            "id": 202,
+            "phase": 5,
+            "theme": "city",
+            "pairs": 5,
+            "timeSec": 0,
+            "mechanics": [
+                "fog"
+            ],
+            "difficulty": "easy",
+            "description": "Niebla ligera: observa con atenciÃ³n. Sin cronÃ³metro. 10 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 25
+            },
+            "seed": 1202050,
+            "setSize": 2
+        },
+        {
+            "id": 203,
+            "phase": 5,
+            "theme": "city",
+            "pairs": 10,
+            "timeSec": 87,
+            "mechanics": [
+                "bomb"
+            ],
+            "difficulty": "hard",
+            "description": "algunas cartas explotan si fallas. CronÃ³metro: 87s. 20 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 150
+            },
+            "seed": 1203187,
+            "setSize": 2
+        },
+        {
+            "id": 204,
+            "phase": 5,
+            "theme": "city",
+            "pairs": 6,
+            "timeSec": 0,
+            "mechanics": [
+                "bomb"
+            ],
+            "difficulty": "medium",
+            "description": "Evita bombas: piensa rÃ¡pido. Sin cronÃ³metro. 12 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 60
+            },
+            "seed": 1204060,
+            "setSize": 2
+        },
+        {
+            "id": 205,
+            "phase": 5,
+            "theme": "city",
+            "pairs": 8,
+            "timeSec": 76,
+            "mechanics": [
+                "darkness"
+            ],
+            "difficulty": "hard",
+            "description": "La oscuridad cubre el tablero poco a poco. CronÃ³metro: 76s. 16 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 120
+            },
+            "seed": 1205156,
+            "setSize": 2
+        },
+        {
+            "id": 206,
+            "phase": 5,
+            "theme": "city",
+            "pairs": 10,
+            "timeSec": 0,
+            "mechanics": [
+                "basic"
+            ],
+            "difficulty": "medium",
+            "description": "juega normalmente. Sin cronÃ³metro. 20 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 100
+            },
+            "seed": 1206100,
+            "setSize": 2
+        },
+        {
+            "id": 207,
+            "phase": 5,
+            "theme": "city",
+            "pairs": 5,
+            "timeSec": 44,
+            "mechanics": [
+                "basic"
+            ],
+            "difficulty": "medium",
+            "description": "Nivel clÃ¡sico sin trucos. CronÃ³metro: 44s. 10 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 50
+            },
+            "seed": 1207094,
+            "setSize": 2
+        },
+        {
+            "id": 208,
+            "phase": 5,
+            "theme": "city",
+            "pairs": 6,
+            "timeSec": 0,
+            "mechanics": [
+                "basic"
+            ],
+            "difficulty": "easy",
+            "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 12 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 30
+            },
+            "seed": 1208060,
+            "setSize": 2
+        },
+        {
+            "id": 209,
+            "phase": 5,
+            "theme": "city",
+            "pairs": 12,
+            "timeSec": 0,
+            "mechanics": [
+                "bomb"
+            ],
+            "difficulty": "hard",
+            "description": "Evita bombas: piensa rÃ¡pido. Sin cronÃ³metro. 24 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 180
+            },
+            "seed": 1209120,
+            "setSize": 2
+        },
+        {
+            "id": 210,
+            "phase": 5,
+            "theme": "city",
+            "pairs": 3,
+            "timeSec": 0,
+            "mechanics": [
+                "frozen"
+            ],
+            "difficulty": "medium",
+            "description": "Cartas que se congelan temporalmente. Sin cronÃ³metro. 6 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 30
+            },
+            "seed": 1210030,
+            "setSize": 2
+        },
+        {
+            "id": 211,
+            "phase": 5,
+            "theme": "city",
+            "pairs": 7,
+            "timeSec": 77,
+            "mechanics": [
+                "chameleon"
+            ],
+            "difficulty": "hard",
+            "description": "Las cartas cambian de valor. CronÃ³metro: 77s. 14 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 105
+            },
+            "seed": 1211147,
+            "setSize": 2
+        },
+        {
+            "id": 212,
+            "phase": 5,
+            "theme": "city",
+            "pairs": 4,
+            "timeSec": 0,
+            "mechanics": [
+                "basic"
+            ],
+            "difficulty": "easy",
+            "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 8 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 20
+            },
+            "seed": 1212040,
+            "setSize": 2
+        },
+        {
+            "id": 213,
+            "phase": 5,
+            "theme": "city",
+            "pairs": 4,
+            "timeSec": 0,
+            "mechanics": [
+                "ghost"
+            ],
+            "difficulty": "easy",
+            "description": "Cartas fantasma aparecen y desaparecen. Sin cronÃ³metro. 8 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 20
+            },
+            "seed": 1213040,
+            "setSize": 2
+        },
+        {
+            "id": 214,
+            "phase": 5,
+            "theme": "city",
+            "pairs": 9,
+            "timeSec": 0,
+            "mechanics": [
+                "basic"
+            ],
+            "difficulty": "medium",
+            "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 18 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 90
+            },
+            "seed": 1214090,
+            "setSize": 2
+        },
+        {
+            "id": 215,
+            "phase": 5,
+            "theme": "city",
+            "pairs": 3,
+            "timeSec": 0,
+            "mechanics": [
+                "rotation"
+            ],
+            "difficulty": "medium",
+            "description": "El tablero rota de vez en cuando. Sin cronÃ³metro. 6 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 30
+            },
+            "seed": 1215030,
+            "setSize": 2
+        },
+        {
+            "id": 216,
+            "phase": 5,
+            "theme": "city",
+            "pairs": 6,
+            "timeSec": 0,
+            "mechanics": [
+                "trio"
+            ],
+            "difficulty": "easy",
+            "description": "Encuentra trÃ­os idÃ©nticos. Sin cronÃ³metro. 12 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 30
+            },
+            "seed": 1216060,
+            "setSize": 3
+        },
+        {
+            "id": 217,
+            "phase": 5,
+            "theme": "city",
+            "pairs": 8,
+            "timeSec": 87,
+            "mechanics": [
+                "fog"
+            ],
+            "difficulty": "medium",
+            "description": "las cartas estÃ¡n parcialmente ocultas. CronÃ³metro: 87s. 16 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 80
+            },
+            "seed": 1217167,
+            "setSize": 2
+        },
+        {
+            "id": 218,
+            "phase": 5,
+            "theme": "city",
+            "pairs": 8,
+            "timeSec": 77,
+            "mechanics": [
+                "darkness"
+            ],
+            "difficulty": "hard",
+            "description": "La oscuridad cubre el tablero poco a poco. CronÃ³metro: 77s. 16 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 120
+            },
+            "seed": 1218157,
+            "setSize": 2
+        },
+        {
+            "id": 219,
+            "phase": 5,
+            "theme": "city",
+            "pairs": 10,
+            "timeSec": 101,
+            "mechanics": [
+                "rotation"
+            ],
+            "difficulty": "hard",
+            "description": "las cartas pueden rotar. CronÃ³metro: 101s. 20 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 150
+            },
+            "seed": 1219201,
+            "setSize": 2
+        },
+        {
+            "id": 220,
+            "phase": 5,
+            "theme": "city",
+            "pairs": 2,
+            "timeSec": 0,
+            "mechanics": [
+                "fog"
+            ],
+            "difficulty": "easy",
+            "description": "Niebla ligera: observa con atenciÃ³n. Sin cronÃ³metro. 4 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 10
+            },
+            "seed": 1220020,
+            "setSize": 2
+        },
+        {
+            "id": 221,
+            "phase": 5,
+            "theme": "city",
+            "pairs": 8,
+            "timeSec": 88,
+            "mechanics": [
+                "rotation"
+            ],
+            "difficulty": "medium",
+            "description": "las cartas pueden rotar. CronÃ³metro: 88s. 16 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 80
+            },
+            "seed": 1221168,
+            "setSize": 2
+        },
+        {
+            "id": 222,
+            "phase": 5,
+            "theme": "city",
+            "pairs": 12,
+            "timeSec": 100,
+            "mechanics": [
+                "bomb"
+            ],
+            "difficulty": "hard",
+            "description": "Evita bombas: piensa rÃ¡pido. CronÃ³metro: 100s. 24 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 180
+            },
+            "seed": 1222220,
+            "setSize": 2
+        },
+        {
+            "id": 223,
+            "phase": 5,
+            "theme": "city",
+            "pairs": 11,
+            "timeSec": 0,
+            "mechanics": [
+                "basic"
+            ],
+            "difficulty": "medium",
+            "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 22 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 110
+            },
+            "seed": 1223110,
+            "setSize": 2
+        },
+        {
+            "id": 224,
+            "phase": 5,
+            "theme": "city",
+            "pairs": 7,
+            "timeSec": 73,
+            "mechanics": [
+                "bomb"
+            ],
+            "difficulty": "hard",
+            "description": "Evita bombas: piensa rÃ¡pido. CronÃ³metro: 73s. 14 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 105
+            },
+            "seed": 1224143,
+            "setSize": 2
+        },
+        {
+            "id": 225,
+            "phase": 5,
+            "theme": "city",
+            "pairs": 4,
+            "timeSec": 0,
+            "mechanics": [
+                "rotation"
+            ],
+            "difficulty": "medium",
+            "description": "El tablero rota de vez en cuando. Sin cronÃ³metro. 8 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 40
+            },
+            "seed": 1225040,
+            "setSize": 2
+        },
+        {
+            "id": 226,
+            "phase": 5,
+            "theme": "city",
+            "pairs": 5,
+            "timeSec": 0,
+            "mechanics": [
+                "bomb"
+            ],
+            "difficulty": "medium",
+            "description": "Evita bombas: piensa rÃ¡pido. Sin cronÃ³metro. 10 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 50
+            },
+            "seed": 1226050,
+            "setSize": 2
+        },
+        {
+            "id": 227,
+            "phase": 5,
+            "theme": "city",
+            "pairs": 12,
+            "timeSec": 0,
+            "mechanics": [
+                "trio"
+            ],
+            "difficulty": "hard",
+            "description": "Encuentra trÃ­os idÃ©nticos. Sin cronÃ³metro. 24 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 180
+            },
+            "seed": 1227120,
+            "setSize": 3
+        },
+        {
+            "id": 228,
+            "phase": 5,
+            "theme": "city",
+            "pairs": 4,
+            "timeSec": 0,
+            "mechanics": [
+                "basic"
+            ],
+            "difficulty": "easy",
+            "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 8 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 20
+            },
+            "seed": 1228040,
+            "setSize": 2
+        },
+        {
+            "id": 229,
+            "phase": 5,
+            "theme": "city",
+            "pairs": 8,
+            "timeSec": 0,
+            "mechanics": [
+                "bomb"
+            ],
+            "difficulty": "medium",
+            "description": "Evita bombas: piensa rÃ¡pido. Sin cronÃ³metro. 16 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 80
+            },
+            "seed": 1229080,
+            "setSize": 2
+        },
+        {
+            "id": 230,
+            "phase": 5,
+            "theme": "city",
+            "pairs": 9,
+            "timeSec": 98,
+            "mechanics": [
+                "basic"
+            ],
+            "difficulty": "hard",
+            "description": "Nivel clÃ¡sico sin trucos. CronÃ³metro: 98s. 18 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 135
+            },
+            "seed": 1230188,
+            "setSize": 2
+        },
+        {
+            "id": 231,
+            "phase": 5,
+            "theme": "city",
+            "pairs": 5,
+            "timeSec": 0,
+            "mechanics": [
+                "ghost"
+            ],
+            "difficulty": "easy",
+            "description": "Cartas fantasma aparecen y desaparecen. Sin cronÃ³metro. 10 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 25
+            },
+            "seed": 1231050,
+            "setSize": 2
+        },
+        {
+            "id": 232,
+            "phase": 5,
+            "theme": "city",
+            "pairs": 12,
+            "timeSec": 107,
+            "mechanics": [
+                "fog"
+            ],
+            "difficulty": "hard",
+            "description": "las cartas estÃ¡n parcialmente ocultas. CronÃ³metro: 107s. 24 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 180
+            },
+            "seed": 1232227,
+            "setSize": 2
+        },
+        {
+            "id": 233,
+            "phase": 5,
+            "theme": "city",
+            "pairs": 8,
+            "timeSec": 88,
+            "mechanics": [
+                "darkness"
+            ],
+            "difficulty": "hard",
+            "description": "La oscuridad cubre el tablero poco a poco. CronÃ³metro: 88s. 16 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 120
+            },
+            "seed": 1233168,
+            "setSize": 2
+        },
+        {
+            "id": 234,
+            "phase": 5,
+            "theme": "city",
+            "pairs": 8,
+            "timeSec": 81,
+            "mechanics": [
+                "rotation"
+            ],
+            "difficulty": "hard",
+            "description": "El tablero rota de vez en cuando. CronÃ³metro: 81s. 16 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 120
+            },
+            "seed": 1234161,
+            "setSize": 2
+        },
+        {
+            "id": 235,
+            "phase": 5,
+            "theme": "city",
+            "pairs": 6,
+            "timeSec": 0,
+            "mechanics": [
+                "frozen"
+            ],
+            "difficulty": "medium",
+            "description": "Cartas que se congelan temporalmente. Sin cronÃ³metro. 12 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 60
+            },
+            "seed": 1235060,
+            "setSize": 2
+        },
+        {
+            "id": 236,
+            "phase": 5,
+            "theme": "city",
+            "pairs": 6,
+            "timeSec": 53,
+            "mechanics": [
+                "basic"
+            ],
+            "difficulty": "medium",
+            "description": "Nivel clÃ¡sico sin trucos. CronÃ³metro: 53s. 12 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 60
+            },
+            "seed": 1236113,
+            "setSize": 2
+        },
+        {
+            "id": 237,
+            "phase": 5,
+            "theme": "city",
+            "pairs": 5,
+            "timeSec": 0,
+            "mechanics": [
+                "basic"
+            ],
+            "difficulty": "easy",
+            "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 10 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 25
+            },
+            "seed": 1237050,
+            "setSize": 2
+        },
+        {
+            "id": 238,
+            "phase": 5,
+            "theme": "city",
+            "pairs": 12,
+            "timeSec": 0,
+            "mechanics": [
+                "trio"
+            ],
+            "difficulty": "hard",
+            "description": "Encuentra trÃ­os idÃ©nticos. Sin cronÃ³metro. 24 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 180
+            },
+            "seed": 1238120,
+            "setSize": 3
+        },
+        {
+            "id": 239,
+            "phase": 5,
+            "theme": "city",
+            "pairs": 2,
+            "timeSec": 0,
+            "mechanics": [
+                "basic"
+            ],
+            "difficulty": "easy",
+            "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 4 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 10
+            },
+            "seed": 1239020,
+            "setSize": 2
+        },
+        {
+            "id": 240,
+            "phase": 5,
+            "theme": "city",
+            "pairs": 7,
+            "timeSec": 0,
+            "mechanics": [
+                "ghost"
+            ],
+            "difficulty": "medium",
+            "description": "Cartas fantasma aparecen y desaparecen. Sin cronÃ³metro. 14 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 70
+            },
+            "seed": 1240070,
+            "setSize": 2
+        },
+        {
+            "id": 241,
+            "phase": 5,
+            "theme": "city",
+            "pairs": 12,
+            "timeSec": 0,
+            "mechanics": [
+                "rotation"
+            ],
+            "difficulty": "hard",
+            "description": "El tablero rota de vez en cuando. Sin cronÃ³metro. 24 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 180
+            },
+            "seed": 1241120,
+            "setSize": 2
+        },
+        {
+            "id": 242,
+            "phase": 5,
+            "theme": "city",
+            "pairs": 10,
+            "timeSec": 87,
+            "mechanics": [
+                "darkness"
+            ],
+            "difficulty": "hard",
+            "description": "La oscuridad cubre el tablero poco a poco. CronÃ³metro: 87s. 20 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 150
+            },
+            "seed": 1242187,
+            "setSize": 2
+        },
+        {
+            "id": 243,
+            "phase": 5,
+            "theme": "city",
+            "pairs": 6,
+            "timeSec": 53,
+            "mechanics": [
+                "basic"
+            ],
+            "difficulty": "medium",
+            "description": "Nivel clÃ¡sico sin trucos. CronÃ³metro: 53s. 12 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 60
+            },
+            "seed": 1243113,
+            "setSize": 2
+        },
+        {
+            "id": 244,
+            "phase": 5,
+            "theme": "city",
+            "pairs": 2,
+            "timeSec": 0,
+            "mechanics": [
+                "ghost"
+            ],
+            "difficulty": "easy",
+            "description": "Cartas fantasma aparecen y desaparecen. Sin cronÃ³metro. 4 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 10
+            },
+            "seed": 1244020,
+            "setSize": 2
+        },
+        {
+            "id": 245,
+            "phase": 5,
+            "theme": "city",
+            "pairs": 4,
+            "timeSec": 0,
+            "mechanics": [
+                "basic"
+            ],
+            "difficulty": "easy",
+            "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 8 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 20
+            },
+            "seed": 1245040,
+            "setSize": 2
+        },
+        {
+            "id": 246,
+            "phase": 5,
+            "theme": "city",
+            "pairs": 12,
+            "timeSec": 112,
+            "mechanics": [
+                "bomb"
+            ],
+            "difficulty": "hard",
+            "description": "Evita bombas: piensa rÃ¡pido. CronÃ³metro: 112s. 24 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 180
+            },
+            "seed": 1246232,
+            "setSize": 2
+        },
+        {
+            "id": 247,
+            "phase": 5,
+            "theme": "city",
+            "pairs": 5,
+            "timeSec": 0,
+            "mechanics": [
+                "fog"
+            ],
+            "difficulty": "easy",
+            "description": "Niebla ligera: observa con atenciÃ³n. Sin cronÃ³metro. 10 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 25
+            },
+            "seed": 1247050,
+            "setSize": 2
+        },
+        {
+            "id": 248,
+            "phase": 5,
+            "theme": "city",
+            "pairs": 7,
+            "timeSec": 0,
+            "mechanics": [
+                "basic"
+            ],
+            "difficulty": "medium",
+            "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 14 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 70
+            },
+            "seed": 1248070,
+            "setSize": 2
+        },
+        {
+            "id": 249,
+            "phase": 5,
+            "theme": "city",
+            "pairs": 3,
+            "timeSec": 0,
+            "mechanics": [
+                "fog"
+            ],
+            "difficulty": "easy",
+            "description": "Niebla ligera: observa con atenciÃ³n. Sin cronÃ³metro. 6 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 15
+            },
+            "seed": 1249030,
+            "setSize": 2
+        },
+        {
+            "id": 250,
+            "phase": 5,
+            "theme": "city",
+            "pairs": 12,
+            "timeSec": 98,
+            "mechanics": [
+                "darkness",
+                "bomb"
+            ],
+            "difficulty": "hard",
+            "description": "Boss: 24 cartas, darkness + bomb, crono 98s.",
+            "isBoss": true,
+            "rewards": {
+                "coins": 180
+            },
+            "seed": 1250218,
+            "setSize": 2
+        },
+        {
+            "id": 251,
+            "phase": 6,
+            "theme": "desert",
+            "pairs": 7,
+            "timeSec": 0,
+            "mechanics": [
+                "frozen"
+            ],
+            "difficulty": "medium",
+            "description": "Cartas que se congelan temporalmente. Sin cronÃ³metro. 14 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 70
+            },
+            "seed": 1251070,
+            "setSize": 2
+        },
+        {
+            "id": 252,
+            "phase": 6,
+            "theme": "desert",
+            "pairs": 3,
+            "timeSec": 0,
+            "mechanics": [
+                "chameleon"
+            ],
+            "difficulty": "medium",
+            "description": "Las cartas cambian de valor. Sin cronÃ³metro. 6 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 30
+            },
+            "seed": 1252030,
+            "setSize": 2
+        },
+        {
+            "id": 253,
+            "phase": 6,
+            "theme": "desert",
+            "pairs": 9,
+            "timeSec": 0,
+            "mechanics": [
+                "trio"
+            ],
+            "difficulty": "hard",
+            "description": "Encuentra trÃ­os idÃ©nticos. Sin cronÃ³metro. 18 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 135
+            },
+            "seed": 1253090,
+            "setSize": 3
+        },
+        {
+            "id": 254,
+            "phase": 6,
+            "theme": "desert",
+            "pairs": 6,
+            "timeSec": 0,
+            "mechanics": [
+                "basic"
+            ],
+            "difficulty": "easy",
+            "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 12 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 30
+            },
+            "seed": 1254060,
+            "setSize": 2
+        },
+        {
+            "id": 255,
+            "phase": 6,
+            "theme": "desert",
+            "pairs": 12,
+            "timeSec": 97,
+            "mechanics": [
+                "darkness"
+            ],
+            "difficulty": "hard",
+            "description": "La oscuridad cubre el tablero poco a poco. CronÃ³metro: 97s. 24 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 180
+            },
+            "seed": 1255217,
+            "setSize": 2
+        },
+        {
+            "id": 256,
+            "phase": 6,
+            "theme": "desert",
+            "pairs": 7,
+            "timeSec": 64,
+            "mechanics": [
+                "chameleon"
+            ],
+            "difficulty": "hard",
+            "description": "Las cartas cambian de valor. CronÃ³metro: 64s. 14 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 105
+            },
+            "seed": 1256134,
+            "setSize": 2
+        },
+        {
+            "id": 257,
+            "phase": 6,
+            "theme": "desert",
+            "pairs": 12,
+            "timeSec": 102,
+            "mechanics": [
+                "bomb"
+            ],
+            "difficulty": "hard",
+            "description": "Evita bombas: piensa rÃ¡pido. CronÃ³metro: 102s. 24 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 180
+            },
+            "seed": 1257222,
+            "setSize": 2
+        },
+        {
+            "id": 258,
+            "phase": 6,
+            "theme": "desert",
+            "pairs": 4,
+            "timeSec": 0,
+            "mechanics": [
+                "chameleon"
+            ],
+            "difficulty": "medium",
+            "description": "Las cartas cambian de valor. Sin cronÃ³metro. 8 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 40
+            },
+            "seed": 1258040,
+            "setSize": 2
+        },
+        {
+            "id": 259,
+            "phase": 6,
+            "theme": "desert",
+            "pairs": 7,
+            "timeSec": 73,
+            "mechanics": [
+                "fog"
+            ],
+            "difficulty": "medium",
+            "description": "Niebla ligera: observa con atenciÃ³n. CronÃ³metro: 73s. 14 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 70
+            },
+            "seed": 1259143,
+            "setSize": 2
+        },
+        {
+            "id": 260,
+            "phase": 6,
+            "theme": "desert",
+            "pairs": 10,
+            "timeSec": 0,
+            "mechanics": [
+                "basic"
+            ],
+            "difficulty": "medium",
+            "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 20 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 100
+            },
+            "seed": 1260100,
+            "setSize": 2
+        },
+        {
+            "id": 261,
+            "phase": 6,
+            "theme": "desert",
+            "pairs": 8,
+            "timeSec": 74,
+            "mechanics": [
+                "fog"
+            ],
+            "difficulty": "medium",
+            "description": "las cartas estÃ¡n parcialmente ocultas. CronÃ³metro: 74s. 16 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 80
+            },
+            "seed": 1261154,
+            "setSize": 2
+        },
+        {
+            "id": 262,
+            "phase": 6,
+            "theme": "desert",
+            "pairs": 6,
+            "timeSec": 0,
+            "mechanics": [
+                "trio"
+            ],
+            "difficulty": "easy",
+            "description": "Encuentra trÃ­os idÃ©nticos. Sin cronÃ³metro. 12 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 30
+            },
+            "seed": 1262060,
+            "setSize": 3
+        },
+        {
+            "id": 263,
+            "phase": 6,
+            "theme": "desert",
+            "pairs": 5,
+            "timeSec": 0,
+            "mechanics": [
+                "chameleon"
+            ],
+            "difficulty": "medium",
+            "description": "Las cartas cambian de valor. Sin cronÃ³metro. 10 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 50
+            },
+            "seed": 1263050,
+            "setSize": 2
+        },
+        {
+            "id": 264,
+            "phase": 6,
+            "theme": "desert",
+            "pairs": 2,
+            "timeSec": 0,
+            "mechanics": [
+                "rotation"
+            ],
+            "difficulty": "medium",
+            "description": "El tablero rota de vez en cuando. Sin cronÃ³metro. 4 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 20
+            },
+            "seed": 1264020,
+            "setSize": 2
+        },
+        {
+            "id": 265,
+            "phase": 6,
+            "theme": "desert",
+            "pairs": 8,
+            "timeSec": 0,
+            "mechanics": [
+                "darkness"
+            ],
+            "difficulty": "medium",
+            "description": "La oscuridad cubre el tablero poco a poco. Sin cronÃ³metro. 16 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 80
+            },
+            "seed": 1265080,
+            "setSize": 2
+        },
+        {
+            "id": 266,
+            "phase": 6,
+            "theme": "desert",
+            "pairs": 6,
+            "timeSec": 0,
+            "mechanics": [
+                "basic"
+            ],
+            "difficulty": "easy",
+            "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 12 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 30
+            },
+            "seed": 1266060,
+            "setSize": 2
+        },
+        {
+            "id": 267,
+            "phase": 6,
+            "theme": "desert",
+            "pairs": 7,
+            "timeSec": 0,
+            "mechanics": [
+                "basic"
+            ],
+            "difficulty": "medium",
+            "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 14 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 70
+            },
+            "seed": 1267070,
+            "setSize": 2
+        },
+        {
+            "id": 268,
+            "phase": 6,
+            "theme": "desert",
+            "pairs": 12,
+            "timeSec": 0,
+            "mechanics": [
+                "trio"
+            ],
+            "difficulty": "hard",
+            "description": "Encuentra trÃ­os idÃ©nticos. Sin cronÃ³metro. 24 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 180
+            },
+            "seed": 1268120,
+            "setSize": 3
+        },
+        {
+            "id": 269,
+            "phase": 6,
+            "theme": "desert",
+            "pairs": 8,
+            "timeSec": 87,
+            "mechanics": [
+                "basic"
+            ],
+            "difficulty": "medium",
+            "description": "Nivel clÃ¡sico sin trucos. CronÃ³metro: 87s. 16 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 80
+            },
+            "seed": 1269167,
+            "setSize": 2
+        },
+        {
+            "id": 270,
+            "phase": 6,
+            "theme": "desert",
+            "pairs": 7,
+            "timeSec": 0,
+            "mechanics": [
+                "basic"
+            ],
+            "difficulty": "medium",
+            "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 14 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 70
+            },
+            "seed": 1270070,
+            "setSize": 2
+        },
+        {
+            "id": 271,
+            "phase": 6,
+            "theme": "desert",
+            "pairs": 10,
+            "timeSec": 0,
+            "mechanics": [
+                "darkness"
+            ],
+            "difficulty": "hard",
+            "description": "La oscuridad cubre el tablero poco a poco. Sin cronÃ³metro. 20 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 150
+            },
+            "seed": 1271100,
+            "setSize": 2
+        },
+        {
+            "id": 272,
+            "phase": 6,
+            "theme": "desert",
+            "pairs": 6,
+            "timeSec": 0,
+            "mechanics": [
+                "chameleon"
+            ],
+            "difficulty": "medium",
+            "description": "Las cartas cambian de valor. Sin cronÃ³metro. 12 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 60
+            },
+            "seed": 1272060,
+            "setSize": 2
+        },
+        {
+            "id": 273,
+            "phase": 6,
+            "theme": "desert",
+            "pairs": 8,
+            "timeSec": 0,
+            "mechanics": [
+                "basic"
+            ],
+            "difficulty": "medium",
+            "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 16 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 80
+            },
+            "seed": 1273080,
+            "setSize": 2
+        },
+        {
+            "id": 274,
+            "phase": 6,
+            "theme": "desert",
+            "pairs": 3,
+            "timeSec": 0,
+            "mechanics": [
+                "rotation"
+            ],
+            "difficulty": "medium",
+            "description": "El tablero rota de vez en cuando. Sin cronÃ³metro. 6 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 30
+            },
+            "seed": 1274030,
+            "setSize": 2
+        },
+        {
+            "id": 275,
+            "phase": 6,
+            "theme": "desert",
+            "pairs": 12,
+            "timeSec": 105,
+            "mechanics": [
+                "frozen"
+            ],
+            "difficulty": "hard",
+            "description": "Cartas que se congelan temporalmente. CronÃ³metro: 105s. 24 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 180
+            },
+            "seed": 1275225,
+            "setSize": 2
+        },
+        {
+            "id": 276,
+            "phase": 6,
+            "theme": "desert",
+            "pairs": 5,
+            "timeSec": 0,
+            "mechanics": [
+                "bomb"
+            ],
+            "difficulty": "medium",
+            "description": "Evita bombas: piensa rÃ¡pido. Sin cronÃ³metro. 10 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 50
+            },
+            "seed": 1276050,
+            "setSize": 2
+        },
+        {
+            "id": 277,
+            "phase": 6,
+            "theme": "desert",
+            "pairs": 5,
+            "timeSec": 56,
+            "mechanics": [
+                "fog"
+            ],
+            "difficulty": "medium",
+            "description": "Niebla ligera: observa con atenciÃ³n. CronÃ³metro: 56s. 10 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 50
+            },
+            "seed": 1277106,
+            "setSize": 2
+        },
+        {
+            "id": 278,
+            "phase": 6,
+            "theme": "desert",
+            "pairs": 10,
+            "timeSec": 91,
+            "mechanics": [
+                "rotation"
+            ],
+            "difficulty": "hard",
+            "description": "las cartas pueden rotar. CronÃ³metro: 91s. 20 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 150
+            },
+            "seed": 1278191,
+            "setSize": 2
+        },
+        {
+            "id": 279,
+            "phase": 6,
+            "theme": "desert",
+            "pairs": 6,
+            "timeSec": 0,
+            "mechanics": [
+                "chameleon"
+            ],
+            "difficulty": "medium",
+            "description": "Las cartas cambian de valor. Sin cronÃ³metro. 12 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 60
+            },
+            "seed": 1279060,
+            "setSize": 2
+        },
+        {
+            "id": 280,
+            "phase": 6,
+            "theme": "desert",
+            "pairs": 8,
+            "timeSec": 0,
+            "mechanics": [
+                "bomb"
+            ],
+            "difficulty": "medium",
+            "description": "Evita bombas: piensa rÃ¡pido. Sin cronÃ³metro. 16 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 80
+            },
+            "seed": 1280080,
+            "setSize": 2
+        },
+        {
+            "id": 281,
+            "phase": 6,
+            "theme": "desert",
+            "pairs": 8,
+            "timeSec": 75,
+            "mechanics": [
+                "fog"
+            ],
+            "difficulty": "medium",
+            "description": "las cartas estÃ¡n parcialmente ocultas. CronÃ³metro: 75s. 16 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 80
+            },
+            "seed": 1281155,
+            "setSize": 2
+        },
+        {
+            "id": 282,
+            "phase": 6,
+            "theme": "desert",
+            "pairs": 7,
+            "timeSec": 66,
+            "mechanics": [
+                "basic"
+            ],
+            "difficulty": "medium",
+            "description": "Nivel clÃ¡sico sin trucos. CronÃ³metro: 66s. 14 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 70
+            },
+            "seed": 1282136,
+            "setSize": 2
+        },
+        {
+            "id": 283,
+            "phase": 6,
+            "theme": "desert",
+            "pairs": 6,
+            "timeSec": 0,
+            "mechanics": [
+                "trio"
+            ],
+            "difficulty": "easy",
+            "description": "Encuentra trÃ­os idÃ©nticos. Sin cronÃ³metro. 12 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 30
+            },
+            "seed": 1283060,
+            "setSize": 3
+        },
+        {
+            "id": 284,
+            "phase": 6,
+            "theme": "desert",
+            "pairs": 5,
+            "timeSec": 0,
+            "mechanics": [
+                "ghost"
+            ],
+            "difficulty": "easy",
+            "description": "Cartas fantasma aparecen y desaparecen. Sin cronÃ³metro. 10 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 25
+            },
+            "seed": 1284050,
+            "setSize": 2
+        },
+        {
+            "id": 285,
+            "phase": 6,
+            "theme": "desert",
+            "pairs": 9,
+            "timeSec": 91,
+            "mechanics": [
+                "basic"
+            ],
+            "difficulty": "hard",
+            "description": "Nivel clÃ¡sico sin trucos. CronÃ³metro: 91s. 18 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 135
+            },
+            "seed": 1285181,
+            "setSize": 2
+        },
+        {
+            "id": 286,
+            "phase": 6,
+            "theme": "desert",
+            "pairs": 5,
+            "timeSec": 49,
+            "mechanics": [
+                "bomb"
+            ],
+            "difficulty": "medium",
+            "description": "Evita bombas: piensa rÃ¡pido. CronÃ³metro: 49s. 10 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 50
+            },
+            "seed": 1286099,
+            "setSize": 2
+        },
+        {
+            "id": 287,
+            "phase": 6,
+            "theme": "desert",
+            "pairs": 7,
+            "timeSec": 0,
+            "mechanics": [
+                "frozen"
+            ],
+            "difficulty": "medium",
+            "description": "Cartas que se congelan temporalmente. Sin cronÃ³metro. 14 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 70
+            },
+            "seed": 1287070,
+            "setSize": 2
+        },
+        {
+            "id": 288,
+            "phase": 6,
+            "theme": "desert",
+            "pairs": 7,
+            "timeSec": 0,
+            "mechanics": [
+                "chameleon"
+            ],
+            "difficulty": "medium",
+            "description": "Las cartas cambian de valor. Sin cronÃ³metro. 14 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 70
+            },
+            "seed": 1288070,
+            "setSize": 2
+        },
+        {
+            "id": 289,
+            "phase": 6,
+            "theme": "desert",
+            "pairs": 9,
+            "timeSec": 87,
+            "mechanics": [
+                "ghost"
+            ],
+            "difficulty": "hard",
+            "description": "Cartas fantasma aparecen y desaparecen. CronÃ³metro: 87s. 18 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 135
+            },
+            "seed": 1289177,
+            "setSize": 2
+        },
+        {
+            "id": 290,
+            "phase": 6,
+            "theme": "desert",
+            "pairs": 12,
+            "timeSec": 0,
+            "mechanics": [
+                "frozen"
+            ],
+            "difficulty": "hard",
+            "description": "Cartas que se congelan temporalmente. Sin cronÃ³metro. 24 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 180
+            },
+            "seed": 1290120,
+            "setSize": 2
+        },
+        {
+            "id": 291,
+            "phase": 6,
+            "theme": "desert",
+            "pairs": 9,
+            "timeSec": 97,
+            "mechanics": [
+                "bomb"
+            ],
+            "difficulty": "hard",
+            "description": "Evita bombas: piensa rÃ¡pido. CronÃ³metro: 97s. 18 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 135
+            },
+            "seed": 1291187,
+            "setSize": 2
+        },
+        {
+            "id": 292,
+            "phase": 6,
+            "theme": "desert",
+            "pairs": 2,
+            "timeSec": 0,
+            "mechanics": [
+                "ghost"
+            ],
+            "difficulty": "easy",
+            "description": "Cartas fantasma aparecen y desaparecen. Sin cronÃ³metro. 4 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 10
+            },
+            "seed": 1292020,
+            "setSize": 2
+        },
+        {
+            "id": 293,
+            "phase": 6,
+            "theme": "desert",
+            "pairs": 6,
+            "timeSec": 0,
+            "mechanics": [
+                "trio"
+            ],
+            "difficulty": "easy",
+            "description": "Encuentra trÃ­os idÃ©nticos. Sin cronÃ³metro. 12 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 30
+            },
+            "seed": 1293060,
+            "setSize": 3
+        },
+        {
+            "id": 294,
+            "phase": 6,
+            "theme": "desert",
+            "pairs": 7,
+            "timeSec": 0,
+            "mechanics": [
+                "chameleon"
+            ],
+            "difficulty": "medium",
+            "description": "Las cartas cambian de valor. Sin cronÃ³metro. 14 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 70
+            },
+            "seed": 1294070,
+            "setSize": 2
+        },
+        {
+            "id": 295,
+            "phase": 6,
+            "theme": "desert",
+            "pairs": 8,
+            "timeSec": 0,
+            "mechanics": [
+                "basic"
+            ],
+            "difficulty": "medium",
+            "description": "juega normalmente. Sin cronÃ³metro. 16 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 80
+            },
+            "seed": 1295080,
+            "setSize": 2
+        },
+        {
+            "id": 296,
+            "phase": 6,
+            "theme": "desert",
+            "pairs": 6,
+            "timeSec": 0,
+            "mechanics": [
+                "basic"
+            ],
+            "difficulty": "easy",
+            "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 12 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 30
+            },
+            "seed": 1296060,
+            "setSize": 2
+        },
+        {
+            "id": 297,
+            "phase": 6,
+            "theme": "desert",
+            "pairs": 5,
+            "timeSec": 44,
+            "mechanics": [
+                "fog"
+            ],
+            "difficulty": "medium",
+            "description": "Niebla ligera: observa con atenciÃ³n. CronÃ³metro: 44s. 10 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 50
+            },
+            "seed": 1297094,
+            "setSize": 2
+        },
+        {
+            "id": 298,
+            "phase": 6,
+            "theme": "desert",
+            "pairs": 7,
+            "timeSec": 0,
+            "mechanics": [
+                "frozen"
+            ],
+            "difficulty": "medium",
+            "description": "Cartas que se congelan temporalmente. Sin cronÃ³metro. 14 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 70
+            },
+            "seed": 1298070,
+            "setSize": 2
+        },
+        {
+            "id": 299,
+            "phase": 6,
+            "theme": "desert",
+            "pairs": 5,
+            "timeSec": 0,
+            "mechanics": [
+                "basic"
+            ],
+            "difficulty": "easy",
+            "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 10 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 25
+            },
+            "seed": 1299050,
+            "setSize": 2
+        },
+        {
+            "id": 300,
+            "phase": 6,
+            "theme": "desert",
+            "pairs": 12,
+            "timeSec": 109,
+            "mechanics": [
+                "chameleon",
+                "darkness"
+            ],
+            "difficulty": "hard",
+            "description": "Boss: 24 cartas, chameleon + darkness, crono 109s.",
+            "isBoss": true,
+            "rewards": {
+                "coins": 180
+            },
+            "seed": 1300229,
+            "setSize": 2
+        },
+        {
+            "id": 301,
+            "phase": 7,
+            "theme": "arctic",
+            "pairs": 3,
+            "timeSec": 0,
+            "mechanics": [
+                "bomb"
+            ],
+            "difficulty": "medium",
+            "description": "Evita bombas: piensa rÃ¡pido. Sin cronÃ³metro. 6 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 30
+            },
+            "seed": 1301030,
+            "setSize": 2
+        },
+        {
+            "id": 302,
+            "phase": 7,
+            "theme": "arctic",
+            "pairs": 8,
+            "timeSec": 85,
+            "mechanics": [
+                "darkness"
+            ],
+            "difficulty": "hard",
+            "description": "La oscuridad cubre el tablero poco a poco. CronÃ³metro: 85s. 16 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 120
+            },
+            "seed": 1302165,
+            "setSize": 2
+        },
+        {
+            "id": 303,
+            "phase": 7,
+            "theme": "arctic",
+            "pairs": 12,
+            "timeSec": 0,
+            "mechanics": [
+                "trio"
+            ],
+            "difficulty": "hard",
+            "description": "Encuentra trÃ­os idÃ©nticos. Sin cronÃ³metro. 24 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 180
+            },
+            "seed": 1303120,
+            "setSize": 3
+        },
+        {
+            "id": 304,
+            "phase": 7,
+            "theme": "arctic",
+            "pairs": 5,
+            "timeSec": 0,
+            "mechanics": [
+                "chameleon"
+            ],
+            "difficulty": "medium",
+            "description": "Las cartas cambian de valor. Sin cronÃ³metro. 10 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 50
+            },
+            "seed": 1304050,
+            "setSize": 2
+        },
+        {
+            "id": 305,
+            "phase": 7,
+            "theme": "arctic",
+            "pairs": 6,
+            "timeSec": 0,
+            "mechanics": [
+                "bomb"
+            ],
+            "difficulty": "medium",
+            "description": "Evita bombas: piensa rÃ¡pido. Sin cronÃ³metro. 12 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 60
+            },
+            "seed": 1305060,
+            "setSize": 2
+        },
+        {
+            "id": 306,
+            "phase": 7,
+            "theme": "arctic",
+            "pairs": 5,
+            "timeSec": 0,
+            "mechanics": [
+                "rotation"
+            ],
+            "difficulty": "medium",
+            "description": "El tablero rota de vez en cuando. Sin cronÃ³metro. 10 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 50
+            },
+            "seed": 1306050,
+            "setSize": 2
+        },
+        {
+            "id": 307,
+            "phase": 7,
+            "theme": "arctic",
+            "pairs": 9,
+            "timeSec": 94,
+            "mechanics": [
+                "basic"
+            ],
+            "difficulty": "hard",
+            "description": "Nivel clÃ¡sico sin trucos. CronÃ³metro: 94s. 18 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 135
+            },
+            "seed": 1307184,
+            "setSize": 2
+        },
+        {
+            "id": 308,
+            "phase": 7,
+            "theme": "arctic",
+            "pairs": 8,
+            "timeSec": 0,
+            "mechanics": [
+                "basic"
+            ],
+            "difficulty": "medium",
+            "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 16 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 80
+            },
+            "seed": 1308080,
+            "setSize": 2
+        },
+        {
+            "id": 309,
+            "phase": 7,
+            "theme": "arctic",
+            "pairs": 12,
+            "timeSec": 99,
+            "mechanics": [
+                "rotation"
+            ],
+            "difficulty": "hard",
+            "description": "El tablero rota de vez en cuando. CronÃ³metro: 99s. 24 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 180
+            },
+            "seed": 1309219,
+            "setSize": 2
+        },
+        {
+            "id": 310,
+            "phase": 7,
+            "theme": "arctic",
+            "pairs": 3,
+            "timeSec": 0,
+            "mechanics": [
+                "trio"
+            ],
+            "difficulty": "easy",
+            "description": "Encuentra trÃ­os idÃ©nticos. Sin cronÃ³metro. 6 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 15
+            },
+            "seed": 1310030,
+            "setSize": 3
+        },
+        {
+            "id": 311,
+            "phase": 7,
+            "theme": "arctic",
+            "pairs": 6,
+            "timeSec": 64,
+            "mechanics": [
+                "basic"
+            ],
+            "difficulty": "medium",
+            "description": "Nivel clÃ¡sico sin trucos. CronÃ³metro: 64s. 12 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 60
+            },
+            "seed": 1311124,
+            "setSize": 2
+        },
+        {
+            "id": 312,
+            "phase": 7,
+            "theme": "arctic",
+            "pairs": 7,
+            "timeSec": 0,
+            "mechanics": [
+                "bomb"
+            ],
+            "difficulty": "medium",
+            "description": "Evita bombas: piensa rÃ¡pido. Sin cronÃ³metro. 14 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 70
+            },
+            "seed": 1312070,
+            "setSize": 2
+        },
+        {
+            "id": 313,
+            "phase": 7,
+            "theme": "arctic",
+            "pairs": 9,
+            "timeSec": 0,
+            "mechanics": [
+                "basic"
+            ],
+            "difficulty": "medium",
+            "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 18 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 90
+            },
+            "seed": 1313090,
+            "setSize": 2
+        },
+        {
+            "id": 314,
+            "phase": 7,
+            "theme": "arctic",
+            "pairs": 7,
+            "timeSec": 0,
+            "mechanics": [
+                "frozen"
+            ],
+            "difficulty": "medium",
+            "description": "Cartas que se congelan temporalmente. Sin cronÃ³metro. 14 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 70
+            },
+            "seed": 1314070,
+            "setSize": 2
+        },
+        {
+            "id": 315,
+            "phase": 7,
+            "theme": "arctic",
+            "pairs": 6,
+            "timeSec": 56,
+            "mechanics": [
+                "ghost"
+            ],
+            "difficulty": "medium",
+            "description": "Cartas fantasma aparecen y desaparecen. CronÃ³metro: 56s. 12 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 60
+            },
+            "seed": 1315116,
+            "setSize": 2
+        },
+        {
+            "id": 316,
+            "phase": 7,
+            "theme": "arctic",
+            "pairs": 6,
+            "timeSec": 0,
+            "mechanics": [
+                "fog"
+            ],
+            "difficulty": "easy",
+            "description": "Niebla ligera: observa con atenciÃ³n. Sin cronÃ³metro. 12 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 30
+            },
+            "seed": 1316060,
+            "setSize": 2
+        },
+        {
+            "id": 317,
+            "phase": 7,
+            "theme": "arctic",
+            "pairs": 6,
+            "timeSec": 62,
+            "mechanics": [
+                "chameleon"
+            ],
+            "difficulty": "medium",
+            "description": "Las cartas cambian de valor. CronÃ³metro: 62s. 12 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 60
+            },
+            "seed": 1317122,
+            "setSize": 2
+        },
+        {
+            "id": 318,
+            "phase": 7,
+            "theme": "arctic",
+            "pairs": 10,
+            "timeSec": 89,
+            "mechanics": [
+                "darkness"
+            ],
+            "difficulty": "hard",
+            "description": "La oscuridad cubre el tablero poco a poco. CronÃ³metro: 89s. 20 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 150
+            },
+            "seed": 1318189,
+            "setSize": 2
+        },
+        {
+            "id": 319,
+            "phase": 7,
+            "theme": "arctic",
+            "pairs": 5,
+            "timeSec": 43,
+            "mechanics": [
+                "basic"
+            ],
+            "difficulty": "medium",
+            "description": "Nivel clÃ¡sico sin trucos. CronÃ³metro: 43s. 10 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 50
+            },
+            "seed": 1319093,
+            "setSize": 2
+        },
+        {
+            "id": 320,
+            "phase": 7,
+            "theme": "arctic",
+            "pairs": 8,
+            "timeSec": 0,
+            "mechanics": [
+                "rotation"
+            ],
+            "difficulty": "medium",
+            "description": "El tablero rota de vez en cuando. Sin cronÃ³metro. 16 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 80
+            },
+            "seed": 1320080,
+            "setSize": 2
+        },
+        {
+            "id": 321,
+            "phase": 7,
+            "theme": "arctic",
+            "pairs": 2,
+            "timeSec": 0,
+            "mechanics": [
+                "bomb"
+            ],
+            "difficulty": "medium",
+            "description": "Evita bombas: piensa rÃ¡pido. Sin cronÃ³metro. 4 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 20
+            },
+            "seed": 1321020,
+            "setSize": 2
+        },
+        {
+            "id": 322,
+            "phase": 7,
+            "theme": "arctic",
+            "pairs": 12,
+            "timeSec": 0,
+            "mechanics": [
+                "basic"
+            ],
+            "difficulty": "medium",
+            "description": "juega normalmente. Sin cronÃ³metro. 24 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 120
+            },
+            "seed": 1322120,
+            "setSize": 2
+        },
+        {
+            "id": 323,
+            "phase": 7,
+            "theme": "arctic",
+            "pairs": 6,
+            "timeSec": 0,
+            "mechanics": [
+                "basic"
+            ],
+            "difficulty": "easy",
+            "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 12 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 30
+            },
+            "seed": 1323060,
+            "setSize": 2
+        },
+        {
+            "id": 324,
+            "phase": 7,
+            "theme": "arctic",
+            "pairs": 9,
+            "timeSec": 0,
+            "mechanics": [
+                "trio"
+            ],
+            "difficulty": "hard",
+            "description": "Encuentra trÃ­os idÃ©nticos. Sin cronÃ³metro. 18 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 135
+            },
+            "seed": 1324090,
+            "setSize": 3
+        },
+        {
+            "id": 325,
+            "phase": 7,
+            "theme": "arctic",
+            "pairs": 9,
+            "timeSec": 97,
+            "mechanics": [
+                "rotation"
+            ],
+            "difficulty": "hard",
+            "description": "El tablero rota de vez en cuando. CronÃ³metro: 97s. 18 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 135
+            },
+            "seed": 1325187,
+            "setSize": 2
+        },
+        {
+            "id": 326,
+            "phase": 7,
+            "theme": "arctic",
+            "pairs": 8,
+            "timeSec": 0,
+            "mechanics": [
+                "basic"
+            ],
+            "difficulty": "medium",
+            "description": "juega normalmente. Sin cronÃ³metro. 16 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 80
+            },
+            "seed": 1326080,
+            "setSize": 2
+        },
+        {
+            "id": 327,
+            "phase": 7,
+            "theme": "arctic",
+            "pairs": 6,
+            "timeSec": 0,
+            "mechanics": [
+                "fog"
+            ],
+            "difficulty": "easy",
+            "description": "Niebla ligera: observa con atenciÃ³n. Sin cronÃ³metro. 12 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 30
+            },
+            "seed": 1327060,
+            "setSize": 2
+        },
+        {
+            "id": 328,
+            "phase": 7,
+            "theme": "arctic",
+            "pairs": 12,
+            "timeSec": 112,
+            "mechanics": [
+                "frozen"
+            ],
+            "difficulty": "hard",
+            "description": "Cartas que se congelan temporalmente. CronÃ³metro: 112s. 24 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 180
+            },
+            "seed": 1328232,
+            "setSize": 2
+        },
+        {
+            "id": 329,
+            "phase": 7,
+            "theme": "arctic",
+            "pairs": 8,
+            "timeSec": 0,
+            "mechanics": [
+                "fog"
+            ],
+            "difficulty": "medium",
+            "description": "Niebla ligera: observa con atenciÃ³n. Sin cronÃ³metro. 16 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 80
+            },
+            "seed": 1329080,
+            "setSize": 2
+        },
+        {
+            "id": 330,
+            "phase": 7,
+            "theme": "arctic",
+            "pairs": 4,
+            "timeSec": 0,
+            "mechanics": [
+                "bomb"
+            ],
+            "difficulty": "medium",
+            "description": "Evita bombas: piensa rÃ¡pido. Sin cronÃ³metro. 8 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 40
+            },
+            "seed": 1330040,
+            "setSize": 2
+        },
+        {
+            "id": 331,
+            "phase": 7,
+            "theme": "arctic",
+            "pairs": 7,
+            "timeSec": 0,
+            "mechanics": [
+                "ghost"
+            ],
+            "difficulty": "medium",
+            "description": "Cartas fantasma aparecen y desaparecen. Sin cronÃ³metro. 14 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 70
+            },
+            "seed": 1331070,
+            "setSize": 2
+        },
+        {
+            "id": 332,
+            "phase": 7,
+            "theme": "arctic",
+            "pairs": 12,
+            "timeSec": 0,
+            "mechanics": [
+                "basic"
+            ],
+            "difficulty": "medium",
+            "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 24 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 120
+            },
+            "seed": 1332120,
+            "setSize": 2
+        },
+        {
+            "id": 333,
+            "phase": 7,
+            "theme": "arctic",
+            "pairs": 5,
+            "timeSec": 0,
+            "mechanics": [
+                "basic"
+            ],
+            "difficulty": "easy",
+            "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 10 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 25
+            },
+            "seed": 1333050,
+            "setSize": 2
+        },
+        {
+            "id": 334,
+            "phase": 7,
+            "theme": "arctic",
+            "pairs": 5,
+            "timeSec": 0,
+            "mechanics": [
+                "fog"
+            ],
+            "difficulty": "easy",
+            "description": "Niebla ligera: observa con atenciÃ³n. Sin cronÃ³metro. 10 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 25
+            },
+            "seed": 1334050,
+            "setSize": 2
+        },
+        {
+            "id": 335,
+            "phase": 7,
+            "theme": "arctic",
+            "pairs": 6,
+            "timeSec": 0,
+            "mechanics": [
+                "ghost"
+            ],
+            "difficulty": "easy",
+            "description": "Cartas fantasma aparecen y desaparecen. Sin cronÃ³metro. 12 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 30
+            },
+            "seed": 1335060,
+            "setSize": 2
+        },
+        {
+            "id": 336,
+            "phase": 7,
+            "theme": "arctic",
+            "pairs": 7,
+            "timeSec": 0,
+            "mechanics": [
+                "frozen"
+            ],
+            "difficulty": "medium",
+            "description": "Cartas que se congelan temporalmente. Sin cronÃ³metro. 14 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 70
+            },
+            "seed": 1336070,
+            "setSize": 2
+        },
+        {
+            "id": 337,
+            "phase": 7,
+            "theme": "arctic",
+            "pairs": 6,
+            "timeSec": 0,
+            "mechanics": [
+                "basic"
+            ],
+            "difficulty": "easy",
+            "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 12 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 30
+            },
+            "seed": 1337060,
+            "setSize": 2
+        },
+        {
+            "id": 338,
+            "phase": 7,
+            "theme": "arctic",
+            "pairs": 8,
+            "timeSec": 87,
+            "mechanics": [
+                "frozen"
+            ],
+            "difficulty": "hard",
+            "description": "Cartas que se congelan temporalmente. CronÃ³metro: 87s. 16 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 120
+            },
+            "seed": 1338167,
+            "setSize": 2
+        },
+        {
+            "id": 339,
+            "phase": 7,
+            "theme": "arctic",
+            "pairs": 12,
+            "timeSec": 100,
+            "mechanics": [
+                "basic"
+            ],
+            "difficulty": "hard",
+            "description": "Nivel clÃ¡sico sin trucos. CronÃ³metro: 100s. 24 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 180
+            },
+            "seed": 1339220,
+            "setSize": 2
+        },
+        {
+            "id": 340,
+            "phase": 7,
+            "theme": "arctic",
+            "pairs": 4,
+            "timeSec": 0,
+            "mechanics": [
+                "ghost"
+            ],
+            "difficulty": "easy",
+            "description": "Cartas fantasma aparecen y desaparecen. Sin cronÃ³metro. 8 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 20
+            },
+            "seed": 1340040,
+            "setSize": 2
+        },
+        {
+            "id": 341,
+            "phase": 7,
+            "theme": "arctic",
+            "pairs": 6,
+            "timeSec": 0,
+            "mechanics": [
+                "trio"
+            ],
+            "difficulty": "easy",
+            "description": "Encuentra trÃ­os idÃ©nticos. Sin cronÃ³metro. 12 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 30
+            },
+            "seed": 1341060,
+            "setSize": 3
+        },
+        {
+            "id": 342,
+            "phase": 7,
+            "theme": "arctic",
+            "pairs": 8,
+            "timeSec": 0,
+            "mechanics": [
+                "basic"
+            ],
+            "difficulty": "medium",
+            "description": "juega normalmente. Sin cronÃ³metro. 16 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 80
+            },
+            "seed": 1342080,
+            "setSize": 2
+        },
+        {
+            "id": 343,
+            "phase": 7,
+            "theme": "arctic",
+            "pairs": 5,
+            "timeSec": 0,
+            "mechanics": [
+                "ghost"
+            ],
+            "difficulty": "easy",
+            "description": "Cartas fantasma aparecen y desaparecen. Sin cronÃ³metro. 10 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 25
+            },
+            "seed": 1343050,
+            "setSize": 2
+        },
+        {
+            "id": 344,
+            "phase": 7,
+            "theme": "arctic",
+            "pairs": 12,
+            "timeSec": 98,
+            "mechanics": [
+                "rotation"
+            ],
+            "difficulty": "hard",
+            "description": "El tablero rota de vez en cuando. CronÃ³metro: 98s. 24 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 180
+            },
+            "seed": 1344218,
+            "setSize": 2
+        },
+        {
+            "id": 345,
+            "phase": 7,
+            "theme": "arctic",
+            "pairs": 7,
+            "timeSec": 71,
+            "mechanics": [
+                "basic"
+            ],
+            "difficulty": "medium",
+            "description": "Nivel clÃ¡sico sin trucos. CronÃ³metro: 71s. 14 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 70
+            },
+            "seed": 1345141,
+            "setSize": 2
+        },
+        {
+            "id": 346,
+            "phase": 7,
+            "theme": "arctic",
+            "pairs": 10,
+            "timeSec": 97,
+            "mechanics": [
+                "bomb"
+            ],
+            "difficulty": "hard",
+            "description": "Evita bombas: piensa rÃ¡pido. CronÃ³metro: 97s. 20 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 150
+            },
+            "seed": 1346197,
+            "setSize": 2
+        },
+        {
+            "id": 347,
+            "phase": 7,
+            "theme": "arctic",
+            "pairs": 8,
+            "timeSec": 0,
+            "mechanics": [
+                "darkness"
+            ],
+            "difficulty": "medium",
+            "description": "La oscuridad cubre el tablero poco a poco. Sin cronÃ³metro. 16 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 80
+            },
+            "seed": 1347080,
+            "setSize": 2
+        },
+        {
+            "id": 348,
+            "phase": 7,
+            "theme": "arctic",
+            "pairs": 7,
+            "timeSec": 76,
+            "mechanics": [
+                "bomb"
+            ],
+            "difficulty": "hard",
+            "description": "Evita bombas: piensa rÃ¡pido. CronÃ³metro: 76s. 14 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 105
+            },
+            "seed": 1348146,
+            "setSize": 2
+        },
+        {
+            "id": 349,
+            "phase": 7,
+            "theme": "arctic",
+            "pairs": 12,
+            "timeSec": 0,
+            "mechanics": [
+                "basic"
+            ],
+            "difficulty": "medium",
+            "description": "juega normalmente. Sin cronÃ³metro. 24 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 120
+            },
+            "seed": 1349120,
+            "setSize": 2
+        },
+        {
+            "id": 350,
+            "phase": 7,
+            "theme": "arctic",
+            "pairs": 12,
+            "timeSec": 107,
+            "mechanics": [
+                "frozen",
+                "darkness"
+            ],
+            "difficulty": "hard",
+            "description": "Boss: 24 cartas, frozen + darkness, crono 107s.",
+            "isBoss": true,
+            "rewards": {
+                "coins": 180
+            },
+            "seed": 1350227,
+            "setSize": 2
+        },
+        {
+            "id": 351,
+            "phase": 8,
+            "theme": "jungle",
+            "pairs": 8,
+            "timeSec": 85,
+            "mechanics": [
+                "fog"
+            ],
+            "difficulty": "medium",
+            "description": "Niebla ligera: observa con atenciÃ³n. CronÃ³metro: 85s. 16 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 80
+            },
+            "seed": 1351165,
+            "setSize": 2
+        },
+        {
+            "id": 352,
+            "phase": 8,
+            "theme": "jungle",
+            "pairs": 6,
+            "timeSec": 0,
+            "mechanics": [
+                "trio"
+            ],
+            "difficulty": "easy",
+            "description": "Encuentra trÃ­os idÃ©nticos. Sin cronÃ³metro. 12 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 30
+            },
+            "seed": 1352060,
+            "setSize": 3
+        },
+        {
+            "id": 353,
+            "phase": 8,
+            "theme": "jungle",
+            "pairs": 7,
+            "timeSec": 67,
+            "mechanics": [
+                "rotation"
+            ],
+            "difficulty": "hard",
+            "description": "El tablero rota de vez en cuando. CronÃ³metro: 67s. 14 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 105
+            },
+            "seed": 1353137,
+            "setSize": 2
+        },
+        {
+            "id": 354,
+            "phase": 8,
+            "theme": "jungle",
+            "pairs": 5,
+            "timeSec": 0,
+            "mechanics": [
+                "fog"
+            ],
+            "difficulty": "easy",
+            "description": "Niebla ligera: observa con atenciÃ³n. Sin cronÃ³metro. 10 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 25
+            },
+            "seed": 1354050,
+            "setSize": 2
+        },
+        {
+            "id": 355,
+            "phase": 8,
+            "theme": "jungle",
+            "pairs": 5,
+            "timeSec": 0,
+            "mechanics": [
+                "chameleon"
+            ],
+            "difficulty": "medium",
+            "description": "Las cartas cambian de valor. Sin cronÃ³metro. 10 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 50
+            },
+            "seed": 1355050,
+            "setSize": 2
+        },
+        {
+            "id": 356,
+            "phase": 8,
+            "theme": "jungle",
+            "pairs": 12,
+            "timeSec": 109,
+            "mechanics": [
+                "darkness"
+            ],
+            "difficulty": "hard",
+            "description": "La oscuridad cubre el tablero poco a poco. CronÃ³metro: 109s. 24 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 180
+            },
+            "seed": 1356229,
+            "setSize": 2
+        },
+        {
+            "id": 357,
+            "phase": 8,
+            "theme": "jungle",
+            "pairs": 8,
+            "timeSec": 73,
+            "mechanics": [
+                "basic"
+            ],
+            "difficulty": "medium",
+            "description": "Nivel clÃ¡sico sin trucos. CronÃ³metro: 73s. 16 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 80
+            },
+            "seed": 1357153,
+            "setSize": 2
+        },
+        {
+            "id": 358,
+            "phase": 8,
+            "theme": "jungle",
+            "pairs": 7,
+            "timeSec": 0,
+            "mechanics": [
+                "frozen"
+            ],
+            "difficulty": "medium",
+            "description": "Cartas que se congelan temporalmente. Sin cronÃ³metro. 14 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 70
+            },
+            "seed": 1358070,
+            "setSize": 2
+        },
+        {
+            "id": 359,
+            "phase": 8,
+            "theme": "jungle",
+            "pairs": 6,
+            "timeSec": 0,
+            "mechanics": [
+                "basic"
+            ],
+            "difficulty": "easy",
+            "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 12 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 30
+            },
+            "seed": 1359060,
+            "setSize": 2
+        },
+        {
+            "id": 360,
+            "phase": 8,
+            "theme": "jungle",
+            "pairs": 5,
+            "timeSec": 0,
+            "mechanics": [
+                "ghost"
+            ],
+            "difficulty": "easy",
+            "description": "Cartas fantasma aparecen y desaparecen. Sin cronÃ³metro. 10 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 25
+            },
+            "seed": 1360050,
+            "setSize": 2
+        },
+        {
+            "id": 361,
+            "phase": 8,
+            "theme": "jungle",
+            "pairs": 8,
+            "timeSec": 74,
+            "mechanics": [
+                "fog"
+            ],
+            "difficulty": "medium",
+            "description": "las cartas estÃ¡n parcialmente ocultas. CronÃ³metro: 74s. 16 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 80
+            },
+            "seed": 1361154,
+            "setSize": 2
+        },
+        {
+            "id": 362,
+            "phase": 8,
+            "theme": "jungle",
+            "pairs": 7,
+            "timeSec": 0,
+            "mechanics": [
+                "basic"
+            ],
+            "difficulty": "medium",
+            "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 14 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 70
+            },
+            "seed": 1362070,
+            "setSize": 2
+        },
+        {
+            "id": 363,
+            "phase": 8,
+            "theme": "jungle",
+            "pairs": 10,
+            "timeSec": 90,
+            "mechanics": [
+                "darkness"
+            ],
+            "difficulty": "hard",
+            "description": "La oscuridad cubre el tablero poco a poco. CronÃ³metro: 90s. 20 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 150
+            },
+            "seed": 1363190,
+            "setSize": 2
+        },
+        {
+            "id": 364,
+            "phase": 8,
+            "theme": "jungle",
+            "pairs": 8,
+            "timeSec": 0,
+            "mechanics": [
+                "frozen"
+            ],
+            "difficulty": "medium",
+            "description": "Cartas que se congelan temporalmente. Sin cronÃ³metro. 16 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 80
+            },
+            "seed": 1364080,
+            "setSize": 2
+        },
+        {
+            "id": 365,
+            "phase": 8,
+            "theme": "jungle",
+            "pairs": 3,
+            "timeSec": 0,
+            "mechanics": [
+                "fog"
+            ],
+            "difficulty": "easy",
+            "description": "Niebla ligera: observa con atenciÃ³n. Sin cronÃ³metro. 6 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 15
+            },
+            "seed": 1365030,
+            "setSize": 2
+        },
+        {
+            "id": 366,
+            "phase": 8,
+            "theme": "jungle",
+            "pairs": 9,
+            "timeSec": 0,
+            "mechanics": [
+                "trio"
+            ],
+            "difficulty": "hard",
+            "description": "Encuentra trÃ­os idÃ©nticos. Sin cronÃ³metro. 18 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 135
+            },
+            "seed": 1366090,
+            "setSize": 3
+        },
+        {
+            "id": 367,
+            "phase": 8,
+            "theme": "jungle",
+            "pairs": 6,
+            "timeSec": 0,
+            "mechanics": [
+                "basic"
+            ],
+            "difficulty": "easy",
+            "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 12 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 30
+            },
+            "seed": 1367060,
+            "setSize": 2
+        },
+        {
+            "id": 368,
+            "phase": 8,
+            "theme": "jungle",
+            "pairs": 8,
+            "timeSec": 0,
+            "mechanics": [
+                "basic"
+            ],
+            "difficulty": "medium",
+            "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 16 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 80
+            },
+            "seed": 1368080,
+            "setSize": 2
+        },
+        {
+            "id": 369,
+            "phase": 8,
+            "theme": "jungle",
+            "pairs": 2,
+            "timeSec": 0,
+            "mechanics": [
+                "fog"
+            ],
+            "difficulty": "easy",
+            "description": "Niebla ligera: observa con atenciÃ³n. Sin cronÃ³metro. 4 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 10
+            },
+            "seed": 1369020,
+            "setSize": 2
+        },
+        {
+            "id": 370,
+            "phase": 8,
+            "theme": "jungle",
+            "pairs": 9,
+            "timeSec": 0,
+            "mechanics": [
+                "bomb"
+            ],
+            "difficulty": "hard",
+            "description": "Evita bombas: piensa rÃ¡pido. Sin cronÃ³metro. 18 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 135
+            },
+            "seed": 1370090,
+            "setSize": 2
+        },
+        {
+            "id": 371,
+            "phase": 8,
+            "theme": "jungle",
+            "pairs": 5,
+            "timeSec": 0,
+            "mechanics": [
+                "ghost"
+            ],
+            "difficulty": "easy",
+            "description": "Cartas fantasma aparecen y desaparecen. Sin cronÃ³metro. 10 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 25
+            },
+            "seed": 1371050,
+            "setSize": 2
+        },
+        {
+            "id": 372,
+            "phase": 8,
+            "theme": "jungle",
+            "pairs": 4,
+            "timeSec": 0,
+            "mechanics": [
+                "frozen"
+            ],
+            "difficulty": "medium",
+            "description": "Cartas que se congelan temporalmente. Sin cronÃ³metro. 8 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 40
+            },
+            "seed": 1372040,
+            "setSize": 2
+        },
+        {
+            "id": 373,
+            "phase": 8,
+            "theme": "jungle",
+            "pairs": 4,
+            "timeSec": 0,
+            "mechanics": [
+                "chameleon"
+            ],
+            "difficulty": "medium",
+            "description": "Las cartas cambian de valor. Sin cronÃ³metro. 8 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 40
+            },
+            "seed": 1373040,
+            "setSize": 2
+        },
+        {
+            "id": 374,
+            "phase": 8,
+            "theme": "jungle",
+            "pairs": 12,
+            "timeSec": 0,
+            "mechanics": [
+                "basic"
+            ],
+            "difficulty": "medium",
+            "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 24 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 120
+            },
+            "seed": 1374120,
+            "setSize": 2
+        },
+        {
+            "id": 375,
+            "phase": 8,
+            "theme": "jungle",
+            "pairs": 10,
+            "timeSec": 91,
+            "mechanics": [
+                "darkness"
+            ],
+            "difficulty": "hard",
+            "description": "La oscuridad cubre el tablero poco a poco. CronÃ³metro: 91s. 20 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 150
+            },
+            "seed": 1375191,
+            "setSize": 2
+        },
+        {
+            "id": 376,
+            "phase": 8,
+            "theme": "jungle",
+            "pairs": 6,
+            "timeSec": 0,
+            "mechanics": [
+                "fog"
+            ],
+            "difficulty": "easy",
+            "description": "Niebla ligera: observa con atenciÃ³n. Sin cronÃ³metro. 12 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 30
+            },
+            "seed": 1376060,
+            "setSize": 2
+        },
+        {
+            "id": 377,
+            "phase": 8,
+            "theme": "jungle",
+            "pairs": 6,
+            "timeSec": 0,
+            "mechanics": [
+                "bomb"
+            ],
+            "difficulty": "medium",
+            "description": "Evita bombas: piensa rÃ¡pido. Sin cronÃ³metro. 12 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 60
+            },
+            "seed": 1377060,
+            "setSize": 2
+        },
+        {
+            "id": 378,
+            "phase": 8,
+            "theme": "jungle",
+            "pairs": 4,
+            "timeSec": 0,
+            "mechanics": [
+                "frozen"
+            ],
+            "difficulty": "medium",
+            "description": "Cartas que se congelan temporalmente. Sin cronÃ³metro. 8 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 40
+            },
+            "seed": 1378040,
+            "setSize": 2
+        },
+        {
+            "id": 379,
+            "phase": 8,
+            "theme": "jungle",
+            "pairs": 6,
+            "timeSec": 0,
+            "mechanics": [
+                "fog"
+            ],
+            "difficulty": "easy",
+            "description": "Niebla ligera: observa con atenciÃ³n. Sin cronÃ³metro. 12 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 30
+            },
+            "seed": 1379060,
+            "setSize": 2
+        },
+        {
+            "id": 380,
+            "phase": 8,
+            "theme": "jungle",
+            "pairs": 8,
+            "timeSec": 0,
+            "mechanics": [
+                "basic"
+            ],
+            "difficulty": "medium",
+            "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 16 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 80
+            },
+            "seed": 1380080,
+            "setSize": 2
+        },
+        {
+            "id": 381,
+            "phase": 8,
+            "theme": "jungle",
+            "pairs": 8,
+            "timeSec": 0,
+            "mechanics": [
+                "bomb"
+            ],
+            "difficulty": "medium",
+            "description": "Evita bombas: piensa rÃ¡pido. Sin cronÃ³metro. 16 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 80
+            },
+            "seed": 1381080,
+            "setSize": 2
+        },
+        {
+            "id": 382,
+            "phase": 8,
+            "theme": "jungle",
+            "pairs": 7,
+            "timeSec": 69,
+            "mechanics": [
+                "fog"
+            ],
+            "difficulty": "medium",
+            "description": "Niebla ligera: observa con atenciÃ³n. CronÃ³metro: 69s. 14 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 70
+            },
+            "seed": 1382139,
+            "setSize": 2
+        },
+        {
+            "id": 383,
+            "phase": 8,
+            "theme": "jungle",
+            "pairs": 8,
+            "timeSec": 86,
+            "mechanics": [
+                "rotation"
+            ],
+            "difficulty": "medium",
+            "description": "las cartas pueden rotar. CronÃ³metro: 86s. 16 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 80
+            },
+            "seed": 1383166,
+            "setSize": 2
+        },
+        {
+            "id": 384,
+            "phase": 8,
+            "theme": "jungle",
+            "pairs": 6,
+            "timeSec": 0,
+            "mechanics": [
+                "bomb"
+            ],
+            "difficulty": "medium",
+            "description": "Evita bombas: piensa rÃ¡pido. Sin cronÃ³metro. 12 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 60
+            },
+            "seed": 1384060,
+            "setSize": 2
+        },
+        {
+            "id": 385,
+            "phase": 8,
+            "theme": "jungle",
+            "pairs": 5,
+            "timeSec": 0,
+            "mechanics": [
+                "fog"
+            ],
+            "difficulty": "easy",
+            "description": "Niebla ligera: observa con atenciÃ³n. Sin cronÃ³metro. 10 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 25
+            },
+            "seed": 1385050,
+            "setSize": 2
+        },
+        {
+            "id": 386,
+            "phase": 8,
+            "theme": "jungle",
+            "pairs": 6,
+            "timeSec": 0,
+            "mechanics": [
+                "basic"
+            ],
+            "difficulty": "easy",
+            "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 12 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 30
+            },
+            "seed": 1386060,
+            "setSize": 2
+        },
+        {
+            "id": 387,
+            "phase": 8,
+            "theme": "jungle",
+            "pairs": 12,
+            "timeSec": 0,
+            "mechanics": [
+                "basic"
+            ],
+            "difficulty": "medium",
+            "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 24 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 120
+            },
+            "seed": 1387120,
+            "setSize": 2
+        },
+        {
+            "id": 388,
+            "phase": 8,
+            "theme": "jungle",
+            "pairs": 6,
+            "timeSec": 58,
+            "mechanics": [
+                "chameleon"
+            ],
+            "difficulty": "medium",
+            "description": "Las cartas cambian de valor. CronÃ³metro: 58s. 12 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 60
+            },
+            "seed": 1388118,
+            "setSize": 2
+        },
+        {
+            "id": 389,
+            "phase": 8,
+            "theme": "jungle",
+            "pairs": 11,
+            "timeSec": 0,
+            "mechanics": [
+                "frozen"
+            ],
+            "difficulty": "hard",
+            "description": "Cartas que se congelan temporalmente. Sin cronÃ³metro. 22 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 165
+            },
+            "seed": 1389110,
+            "setSize": 2
+        },
+        {
+            "id": 390,
+            "phase": 8,
+            "theme": "jungle",
+            "pairs": 5,
+            "timeSec": 51,
+            "mechanics": [
+                "basic"
+            ],
+            "difficulty": "medium",
+            "description": "Nivel clÃ¡sico sin trucos. CronÃ³metro: 51s. 10 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 50
+            },
+            "seed": 1390101,
+            "setSize": 2
+        },
+        {
+            "id": 391,
+            "phase": 8,
+            "theme": "jungle",
+            "pairs": 7,
+            "timeSec": 0,
+            "mechanics": [
+                "basic"
+            ],
+            "difficulty": "medium",
+            "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 14 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 70
+            },
+            "seed": 1391070,
+            "setSize": 2
+        },
+        {
+            "id": 392,
+            "phase": 8,
+            "theme": "jungle",
+            "pairs": 2,
+            "timeSec": 0,
+            "mechanics": [
+                "frozen"
+            ],
+            "difficulty": "medium",
+            "description": "Cartas que se congelan temporalmente. Sin cronÃ³metro. 4 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 20
+            },
+            "seed": 1392020,
+            "setSize": 2
+        },
+        {
+            "id": 393,
+            "phase": 8,
+            "theme": "jungle",
+            "pairs": 6,
+            "timeSec": 57,
+            "mechanics": [
+                "basic"
+            ],
+            "difficulty": "medium",
+            "description": "Nivel clÃ¡sico sin trucos. CronÃ³metro: 57s. 12 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 60
+            },
+            "seed": 1393117,
+            "setSize": 2
+        },
+        {
+            "id": 394,
+            "phase": 8,
+            "theme": "jungle",
+            "pairs": 4,
+            "timeSec": 0,
+            "mechanics": [
+                "basic"
+            ],
+            "difficulty": "easy",
+            "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 8 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 20
+            },
+            "seed": 1394040,
+            "setSize": 2
+        },
+        {
+            "id": 395,
+            "phase": 8,
+            "theme": "jungle",
+            "pairs": 8,
+            "timeSec": 0,
+            "mechanics": [
+                "ghost"
+            ],
+            "difficulty": "medium",
+            "description": "Cartas fantasma aparecen y desaparecen. Sin cronÃ³metro. 16 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 80
+            },
+            "seed": 1395080,
+            "setSize": 2
+        },
+        {
+            "id": 396,
+            "phase": 8,
+            "theme": "jungle",
+            "pairs": 4,
+            "timeSec": 0,
+            "mechanics": [
+                "chameleon"
+            ],
+            "difficulty": "medium",
+            "description": "Las cartas cambian de valor. Sin cronÃ³metro. 8 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 40
+            },
+            "seed": 1396040,
+            "setSize": 2
+        },
+        {
+            "id": 397,
+            "phase": 8,
+            "theme": "jungle",
+            "pairs": 12,
+            "timeSec": 110,
+            "mechanics": [
+                "rotation"
+            ],
+            "difficulty": "hard",
+            "description": "El tablero rota de vez en cuando. CronÃ³metro: 110s. 24 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 180
+            },
+            "seed": 1397230,
+            "setSize": 2
+        },
+        {
+            "id": 398,
+            "phase": 8,
+            "theme": "jungle",
+            "pairs": 6,
+            "timeSec": 67,
+            "mechanics": [
+                "fog"
+            ],
+            "difficulty": "medium",
+            "description": "Niebla ligera: observa con atenciÃ³n. CronÃ³metro: 67s. 12 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 60
+            },
+            "seed": 1398127,
+            "setSize": 2
+        },
+        {
+            "id": 399,
+            "phase": 8,
+            "theme": "jungle",
+            "pairs": 6,
+            "timeSec": 60,
+            "mechanics": [
+                "basic"
+            ],
+            "difficulty": "medium",
+            "description": "Nivel clÃ¡sico sin trucos. CronÃ³metro: 60s. 12 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 60
+            },
+            "seed": 1399120,
+            "setSize": 2
+        },
+        {
+            "id": 400,
+            "phase": 8,
+            "theme": "jungle",
+            "pairs": 12,
+            "timeSec": 108,
+            "mechanics": [
+                "chameleon",
+                "ghost"
+            ],
+            "difficulty": "hard",
+            "description": "Boss: 24 cartas, chameleon + ghost, crono 108s.",
+            "isBoss": true,
+            "rewards": {
+                "coins": 180
+            },
+            "seed": 1400228,
+            "setSize": 2
+        },
+        {
+            "id": 401,
+            "phase": 9,
+            "theme": "volcano",
+            "pairs": 7,
+            "timeSec": 0,
+            "mechanics": [
+                "basic"
+            ],
+            "difficulty": "medium",
+            "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 14 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 70
+            },
+            "seed": 1401070,
+            "setSize": 2
+        },
+        {
+            "id": 402,
+            "phase": 9,
+            "theme": "volcano",
+            "pairs": 6,
+            "timeSec": 0,
+            "mechanics": [
+                "rotation"
+            ],
+            "difficulty": "medium",
+            "description": "El tablero rota de vez en cuando. Sin cronÃ³metro. 12 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 60
+            },
+            "seed": 1402060,
+            "setSize": 2
+        },
+        {
+            "id": 403,
+            "phase": 9,
+            "theme": "volcano",
+            "pairs": 7,
+            "timeSec": 0,
+            "mechanics": [
+                "basic"
+            ],
+            "difficulty": "medium",
+            "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 14 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 70
+            },
+            "seed": 1403070,
+            "setSize": 2
+        },
+        {
+            "id": 404,
+            "phase": 9,
+            "theme": "volcano",
+            "pairs": 10,
+            "timeSec": 0,
+            "mechanics": [
+                "basic"
+            ],
+            "difficulty": "medium",
+            "description": "juega normalmente. Sin cronÃ³metro. 20 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 100
+            },
+            "seed": 1404100,
+            "setSize": 2
+        },
+        {
+            "id": 405,
+            "phase": 9,
+            "theme": "volcano",
+            "pairs": 12,
+            "timeSec": 0,
+            "mechanics": [
+                "darkness"
+            ],
+            "difficulty": "hard",
+            "description": "La oscuridad cubre el tablero poco a poco. Sin cronÃ³metro. 24 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 180
+            },
+            "seed": 1405120,
+            "setSize": 2
+        },
+        {
+            "id": 406,
+            "phase": 9,
+            "theme": "volcano",
+            "pairs": 5,
+            "timeSec": 0,
+            "mechanics": [
+                "basic"
+            ],
+            "difficulty": "easy",
+            "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 10 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 25
+            },
+            "seed": 1406050,
+            "setSize": 2
+        },
+        {
+            "id": 407,
+            "phase": 9,
+            "theme": "volcano",
+            "pairs": 5,
+            "timeSec": 0,
+            "mechanics": [
+                "basic"
+            ],
+            "difficulty": "easy",
+            "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 10 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 25
+            },
+            "seed": 1407050,
+            "setSize": 2
+        },
+        {
+            "id": 408,
+            "phase": 9,
+            "theme": "volcano",
+            "pairs": 5,
+            "timeSec": 0,
+            "mechanics": [
+                "chameleon"
+            ],
+            "difficulty": "medium",
+            "description": "Las cartas cambian de valor. Sin cronÃ³metro. 10 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 50
+            },
+            "seed": 1408050,
+            "setSize": 2
+        },
+        {
+            "id": 409,
+            "phase": 9,
+            "theme": "volcano",
+            "pairs": 3,
+            "timeSec": 0,
+            "mechanics": [
+                "trio"
+            ],
+            "difficulty": "easy",
+            "description": "Encuentra trÃ­os idÃ©nticos. Sin cronÃ³metro. 6 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 15
+            },
+            "seed": 1409030,
+            "setSize": 3
+        },
+        {
+            "id": 410,
+            "phase": 9,
+            "theme": "volcano",
+            "pairs": 5,
+            "timeSec": 0,
+            "mechanics": [
+                "fog"
+            ],
+            "difficulty": "easy",
+            "description": "Niebla ligera: observa con atenciÃ³n. Sin cronÃ³metro. 10 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 25
+            },
+            "seed": 1410050,
+            "setSize": 2
+        },
+        {
+            "id": 411,
+            "phase": 9,
+            "theme": "volcano",
+            "pairs": 3,
+            "timeSec": 0,
+            "mechanics": [
+                "bomb"
+            ],
+            "difficulty": "medium",
+            "description": "Evita bombas: piensa rÃ¡pido. Sin cronÃ³metro. 6 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 30
+            },
+            "seed": 1411030,
+            "setSize": 2
+        },
+        {
+            "id": 412,
+            "phase": 9,
+            "theme": "volcano",
+            "pairs": 12,
+            "timeSec": 0,
+            "mechanics": [
+                "trio"
+            ],
+            "difficulty": "hard",
+            "description": "Encuentra trÃ­os idÃ©nticos. Sin cronÃ³metro. 24 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 180
+            },
+            "seed": 1412120,
+            "setSize": 3
+        },
+        {
+            "id": 413,
+            "phase": 9,
+            "theme": "volcano",
+            "pairs": 10,
+            "timeSec": 103,
+            "mechanics": [
+                "fog"
+            ],
+            "difficulty": "hard",
+            "description": "Niebla ligera: observa con atenciÃ³n. CronÃ³metro: 103s. 20 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 150
+            },
+            "seed": 1413203,
+            "setSize": 2
+        },
+        {
+            "id": 414,
+            "phase": 9,
+            "theme": "volcano",
+            "pairs": 12,
+            "timeSec": 109,
+            "mechanics": [
+                "basic"
+            ],
+            "difficulty": "hard",
+            "description": "Nivel clÃ¡sico sin trucos. CronÃ³metro: 109s. 24 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 180
+            },
+            "seed": 1414229,
+            "setSize": 2
+        },
+        {
+            "id": 415,
+            "phase": 9,
+            "theme": "volcano",
+            "pairs": 7,
+            "timeSec": 0,
+            "mechanics": [
+                "rotation"
+            ],
+            "difficulty": "medium",
+            "description": "El tablero rota de vez en cuando. Sin cronÃ³metro. 14 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 70
+            },
+            "seed": 1415070,
+            "setSize": 2
+        },
+        {
+            "id": 416,
+            "phase": 9,
+            "theme": "volcano",
+            "pairs": 8,
+            "timeSec": 88,
+            "mechanics": [
+                "bomb"
+            ],
+            "difficulty": "medium",
+            "description": "algunas cartas explotan si fallas. CronÃ³metro: 88s. 16 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 80
+            },
+            "seed": 1416168,
+            "setSize": 2
+        },
+        {
+            "id": 417,
+            "phase": 9,
+            "theme": "volcano",
+            "pairs": 7,
+            "timeSec": 0,
+            "mechanics": [
+                "basic"
+            ],
+            "difficulty": "medium",
+            "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 14 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 70
+            },
+            "seed": 1417070,
+            "setSize": 2
+        },
+        {
+            "id": 418,
+            "phase": 9,
+            "theme": "volcano",
+            "pairs": 5,
+            "timeSec": 55,
+            "mechanics": [
+                "fog"
+            ],
+            "difficulty": "medium",
+            "description": "Niebla ligera: observa con atenciÃ³n. CronÃ³metro: 55s. 10 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 50
+            },
+            "seed": 1418105,
+            "setSize": 2
+        },
+        {
+            "id": 419,
+            "phase": 9,
+            "theme": "volcano",
+            "pairs": 7,
+            "timeSec": 0,
+            "mechanics": [
+                "basic"
+            ],
+            "difficulty": "medium",
+            "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 14 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 70
+            },
+            "seed": 1419070,
+            "setSize": 2
+        },
+        {
+            "id": 420,
+            "phase": 9,
+            "theme": "volcano",
+            "pairs": 7,
+            "timeSec": 0,
+            "mechanics": [
+                "frozen"
+            ],
+            "difficulty": "medium",
+            "description": "Cartas que se congelan temporalmente. Sin cronÃ³metro. 14 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 70
+            },
+            "seed": 1420070,
+            "setSize": 2
+        },
+        {
+            "id": 421,
+            "phase": 9,
+            "theme": "volcano",
+            "pairs": 9,
+            "timeSec": 0,
+            "mechanics": [
+                "fog"
+            ],
+            "difficulty": "medium",
+            "description": "Niebla ligera: observa con atenciÃ³n. Sin cronÃ³metro. 18 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 90
+            },
+            "seed": 1421090,
+            "setSize": 2
+        },
+        {
+            "id": 422,
+            "phase": 9,
+            "theme": "volcano",
+            "pairs": 7,
+            "timeSec": 0,
+            "mechanics": [
+                "ghost"
+            ],
+            "difficulty": "medium",
+            "description": "Cartas fantasma aparecen y desaparecen. Sin cronÃ³metro. 14 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 70
+            },
+            "seed": 1422070,
+            "setSize": 2
+        },
+        {
+            "id": 423,
+            "phase": 9,
+            "theme": "volcano",
+            "pairs": 5,
+            "timeSec": 0,
+            "mechanics": [
+                "fog"
+            ],
+            "difficulty": "easy",
+            "description": "Niebla ligera: observa con atenciÃ³n. Sin cronÃ³metro. 10 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 25
+            },
+            "seed": 1423050,
+            "setSize": 2
+        },
+        {
+            "id": 424,
+            "phase": 9,
+            "theme": "volcano",
+            "pairs": 7,
+            "timeSec": 0,
+            "mechanics": [
+                "basic"
+            ],
+            "difficulty": "medium",
+            "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 14 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 70
+            },
+            "seed": 1424070,
+            "setSize": 2
+        },
+        {
+            "id": 425,
+            "phase": 9,
+            "theme": "volcano",
+            "pairs": 7,
+            "timeSec": 0,
+            "mechanics": [
+                "frozen"
+            ],
+            "difficulty": "medium",
+            "description": "Cartas que se congelan temporalmente. Sin cronÃ³metro. 14 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 70
+            },
+            "seed": 1425070,
+            "setSize": 2
+        },
+        {
+            "id": 426,
+            "phase": 9,
+            "theme": "volcano",
+            "pairs": 9,
+            "timeSec": 0,
+            "mechanics": [
+                "trio"
+            ],
+            "difficulty": "hard",
+            "description": "Encuentra trÃ­os idÃ©nticos. Sin cronÃ³metro. 18 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 135
+            },
+            "seed": 1426090,
+            "setSize": 3
+        },
+        {
+            "id": 427,
+            "phase": 9,
+            "theme": "volcano",
+            "pairs": 8,
+            "timeSec": 79,
+            "mechanics": [
+                "ghost"
+            ],
+            "difficulty": "medium",
+            "description": "Cartas fantasma aparecen y desaparecen. CronÃ³metro: 79s. 16 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 80
+            },
+            "seed": 1427159,
+            "setSize": 2
+        },
+        {
+            "id": 428,
+            "phase": 9,
+            "theme": "volcano",
+            "pairs": 6,
+            "timeSec": 0,
+            "mechanics": [
+                "trio"
+            ],
+            "difficulty": "easy",
+            "description": "Encuentra trÃ­os idÃ©nticos. Sin cronÃ³metro. 12 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 30
+            },
+            "seed": 1428060,
+            "setSize": 3
+        },
+        {
+            "id": 429,
+            "phase": 9,
+            "theme": "volcano",
+            "pairs": 7,
+            "timeSec": 69,
+            "mechanics": [
+                "rotation"
+            ],
+            "difficulty": "hard",
+            "description": "El tablero rota de vez en cuando. CronÃ³metro: 69s. 14 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 105
+            },
+            "seed": 1429139,
+            "setSize": 2
+        },
+        {
+            "id": 430,
+            "phase": 9,
+            "theme": "volcano",
+            "pairs": 6,
+            "timeSec": 0,
+            "mechanics": [
+                "chameleon"
+            ],
+            "difficulty": "medium",
+            "description": "Las cartas cambian de valor. Sin cronÃ³metro. 12 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 60
+            },
+            "seed": 1430060,
+            "setSize": 2
+        },
+        {
+            "id": 431,
+            "phase": 9,
+            "theme": "volcano",
+            "pairs": 5,
+            "timeSec": 0,
+            "mechanics": [
+                "basic"
+            ],
+            "difficulty": "easy",
+            "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 10 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 25
+            },
+            "seed": 1431050,
+            "setSize": 2
+        },
+        {
+            "id": 432,
+            "phase": 9,
+            "theme": "volcano",
+            "pairs": 5,
+            "timeSec": 0,
+            "mechanics": [
+                "frozen"
+            ],
+            "difficulty": "medium",
+            "description": "Cartas que se congelan temporalmente. Sin cronÃ³metro. 10 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 50
+            },
+            "seed": 1432050,
+            "setSize": 2
+        },
+        {
+            "id": 433,
+            "phase": 9,
+            "theme": "volcano",
+            "pairs": 2,
+            "timeSec": 0,
+            "mechanics": [
+                "basic"
+            ],
+            "difficulty": "easy",
+            "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 4 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 10
+            },
+            "seed": 1433020,
+            "setSize": 2
+        },
+        {
+            "id": 434,
+            "phase": 9,
+            "theme": "volcano",
+            "pairs": 6,
+            "timeSec": 0,
+            "mechanics": [
+                "fog"
+            ],
+            "difficulty": "easy",
+            "description": "Niebla ligera: observa con atenciÃ³n. Sin cronÃ³metro. 12 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 30
+            },
+            "seed": 1434060,
+            "setSize": 2
+        },
+        {
+            "id": 435,
+            "phase": 9,
+            "theme": "volcano",
+            "pairs": 3,
+            "timeSec": 0,
+            "mechanics": [
+                "trio"
+            ],
+            "difficulty": "easy",
+            "description": "Encuentra trÃ­os idÃ©nticos. Sin cronÃ³metro. 6 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 15
+            },
+            "seed": 1435030,
+            "setSize": 3
+        },
+        {
+            "id": 436,
+            "phase": 9,
+            "theme": "volcano",
+            "pairs": 12,
+            "timeSec": 0,
+            "mechanics": [
+                "basic"
+            ],
+            "difficulty": "medium",
+            "description": "juega normalmente. Sin cronÃ³metro. 24 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 120
+            },
+            "seed": 1436120,
+            "setSize": 2
+        },
+        {
+            "id": 437,
+            "phase": 9,
+            "theme": "volcano",
+            "pairs": 8,
+            "timeSec": 0,
+            "mechanics": [
+                "ghost"
+            ],
+            "difficulty": "medium",
+            "description": "Cartas fantasma aparecen y desaparecen. Sin cronÃ³metro. 16 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 80
+            },
+            "seed": 1437080,
+            "setSize": 2
+        },
+        {
+            "id": 438,
+            "phase": 9,
+            "theme": "volcano",
+            "pairs": 6,
+            "timeSec": 0,
+            "mechanics": [
+                "chameleon"
+            ],
+            "difficulty": "medium",
+            "description": "Las cartas cambian de valor. Sin cronÃ³metro. 12 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 60
+            },
+            "seed": 1438060,
+            "setSize": 2
+        },
+        {
+            "id": 439,
+            "phase": 9,
+            "theme": "volcano",
+            "pairs": 6,
+            "timeSec": 0,
+            "mechanics": [
+                "ghost"
+            ],
+            "difficulty": "easy",
+            "description": "Cartas fantasma aparecen y desaparecen. Sin cronÃ³metro. 12 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 30
+            },
+            "seed": 1439060,
+            "setSize": 2
+        },
+        {
+            "id": 440,
+            "phase": 9,
+            "theme": "volcano",
+            "pairs": 9,
+            "timeSec": 96,
+            "mechanics": [
+                "rotation"
+            ],
+            "difficulty": "hard",
+            "description": "El tablero rota de vez en cuando. CronÃ³metro: 96s. 18 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 135
+            },
+            "seed": 1440186,
+            "setSize": 2
+        },
+        {
+            "id": 441,
+            "phase": 9,
+            "theme": "volcano",
+            "pairs": 6,
+            "timeSec": 0,
+            "mechanics": [
+                "trio"
+            ],
+            "difficulty": "easy",
+            "description": "Encuentra trÃ­os idÃ©nticos. Sin cronÃ³metro. 12 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 30
+            },
+            "seed": 1441060,
+            "setSize": 3
+        },
+        {
+            "id": 442,
+            "phase": 9,
+            "theme": "volcano",
+            "pairs": 12,
+            "timeSec": 112,
+            "mechanics": [
+                "frozen"
+            ],
+            "difficulty": "hard",
+            "description": "Cartas que se congelan temporalmente. CronÃ³metro: 112s. 24 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 180
+            },
+            "seed": 1442232,
+            "setSize": 2
+        },
+        {
+            "id": 443,
+            "phase": 9,
+            "theme": "volcano",
+            "pairs": 3,
+            "timeSec": 0,
+            "mechanics": [
+                "trio"
+            ],
+            "difficulty": "easy",
+            "description": "Encuentra trÃ­os idÃ©nticos. Sin cronÃ³metro. 6 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 15
+            },
+            "seed": 1443030,
+            "setSize": 3
+        },
+        {
+            "id": 444,
+            "phase": 9,
+            "theme": "volcano",
+            "pairs": 7,
+            "timeSec": 0,
+            "mechanics": [
+                "frozen"
+            ],
+            "difficulty": "medium",
+            "description": "Cartas que se congelan temporalmente. Sin cronÃ³metro. 14 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 70
+            },
+            "seed": 1444070,
+            "setSize": 2
+        },
+        {
+            "id": 445,
+            "phase": 9,
+            "theme": "volcano",
+            "pairs": 10,
+            "timeSec": 87,
+            "mechanics": [
+                "chameleon"
+            ],
+            "difficulty": "hard",
+            "description": "Las cartas cambian de valor. CronÃ³metro: 87s. 20 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 150
+            },
+            "seed": 1445187,
+            "setSize": 2
+        },
+        {
+            "id": 446,
+            "phase": 9,
+            "theme": "volcano",
+            "pairs": 5,
+            "timeSec": 0,
+            "mechanics": [
+                "basic"
+            ],
+            "difficulty": "easy",
+            "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 10 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 25
+            },
+            "seed": 1446050,
+            "setSize": 2
+        },
+        {
+            "id": 447,
+            "phase": 9,
+            "theme": "volcano",
+            "pairs": 6,
+            "timeSec": 0,
+            "mechanics": [
+                "trio"
+            ],
+            "difficulty": "easy",
+            "description": "Encuentra trÃ­os idÃ©nticos. Sin cronÃ³metro. 12 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 30
+            },
+            "seed": 1447060,
+            "setSize": 3
+        },
+        {
+            "id": 448,
+            "phase": 9,
+            "theme": "volcano",
+            "pairs": 6,
+            "timeSec": 0,
+            "mechanics": [
+                "frozen"
+            ],
+            "difficulty": "medium",
+            "description": "Cartas que se congelan temporalmente. Sin cronÃ³metro. 12 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 60
+            },
+            "seed": 1448060,
+            "setSize": 2
+        },
+        {
+            "id": 449,
+            "phase": 9,
+            "theme": "volcano",
+            "pairs": 7,
+            "timeSec": 73,
+            "mechanics": [
+                "fog"
+            ],
+            "difficulty": "medium",
+            "description": "Niebla ligera: observa con atenciÃ³n. CronÃ³metro: 73s. 14 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 70
+            },
+            "seed": 1449143,
+            "setSize": 2
+        },
+        {
+            "id": 450,
+            "phase": 9,
+            "theme": "volcano",
+            "pairs": 12,
+            "timeSec": 101,
+            "mechanics": [
+                "rotation"
+            ],
+            "difficulty": "hard",
+            "description": "Boss: 24 cartas, peeked_card + chameleon, crono 101s.",
+            "isBoss": true,
+            "rewards": {
+                "coins": 180
+            },
+            "seed": 1450221,
+            "setSize": 2
+        },
+        {
+            "id": 451,
+            "phase": 10,
+            "theme": "crystal",
+            "pairs": 6,
+            "timeSec": 0,
+            "mechanics": [
+                "frozen"
+            ],
+            "difficulty": "medium",
+            "description": "Cartas que se congelan temporalmente. Sin cronÃ³metro. 12 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 60
+            },
+            "seed": 1451060,
+            "setSize": 2
+        },
+        {
+            "id": 452,
+            "phase": 10,
+            "theme": "crystal",
+            "pairs": 7,
+            "timeSec": 73,
+            "mechanics": [
+                "rotation"
+            ],
+            "difficulty": "hard",
+            "description": "El tablero rota de vez en cuando. CronÃ³metro: 73s. 14 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 105
+            },
+            "seed": 1452143,
+            "setSize": 2
+        },
+        {
+            "id": 453,
+            "phase": 10,
+            "theme": "crystal",
+            "pairs": 8,
+            "timeSec": 81,
+            "mechanics": [
+                "ghost"
+            ],
+            "difficulty": "medium",
+            "description": "Cartas fantasma aparecen y desaparecen. CronÃ³metro: 81s. 16 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 80
+            },
+            "seed": 1453161,
+            "setSize": 2
+        },
+        {
+            "id": 454,
+            "phase": 10,
+            "theme": "crystal",
+            "pairs": 7,
+            "timeSec": 0,
+            "mechanics": [
+                "frozen"
+            ],
+            "difficulty": "medium",
+            "description": "Cartas que se congelan temporalmente. Sin cronÃ³metro. 14 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 70
+            },
+            "seed": 1454070,
+            "setSize": 2
+        },
+        {
+            "id": 455,
+            "phase": 10,
+            "theme": "crystal",
+            "pairs": 9,
+            "timeSec": 85,
+            "mechanics": [
+                "basic"
+            ],
+            "difficulty": "hard",
+            "description": "Nivel clÃ¡sico sin trucos. CronÃ³metro: 85s. 18 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 135
+            },
+            "seed": 1455175,
+            "setSize": 2
+        },
+        {
+            "id": 456,
+            "phase": 10,
+            "theme": "crystal",
+            "pairs": 12,
+            "timeSec": 97,
+            "mechanics": [
+                "fog"
+            ],
+            "difficulty": "hard",
+            "description": "Niebla ligera: observa con atenciÃ³n. CronÃ³metro: 97s. 24 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 180
+            },
+            "seed": 1456217,
+            "setSize": 2
+        },
+        {
+            "id": 457,
+            "phase": 10,
+            "theme": "crystal",
+            "pairs": 8,
+            "timeSec": 0,
+            "mechanics": [
+                "frozen"
+            ],
+            "difficulty": "medium",
+            "description": "Cartas que se congelan temporalmente. Sin cronÃ³metro. 16 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 80
+            },
+            "seed": 1457080,
+            "setSize": 2
+        },
+        {
+            "id": 458,
+            "phase": 10,
+            "theme": "crystal",
+            "pairs": 6,
+            "timeSec": 68,
+            "mechanics": [
+                "basic"
+            ],
+            "difficulty": "medium",
+            "description": "Nivel clÃ¡sico sin trucos. CronÃ³metro: 68s. 12 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 60
+            },
+            "seed": 1458128,
+            "setSize": 2
+        },
+        {
+            "id": 459,
+            "phase": 10,
+            "theme": "crystal",
+            "pairs": 6,
+            "timeSec": 68,
+            "mechanics": [
+                "chameleon"
+            ],
+            "difficulty": "medium",
+            "description": "Las cartas cambian de valor. CronÃ³metro: 68s. 12 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 60
+            },
+            "seed": 1459128,
+            "setSize": 2
+        },
+        {
+            "id": 460,
+            "phase": 10,
+            "theme": "crystal",
+            "pairs": 3,
+            "timeSec": 0,
+            "mechanics": [
+                "basic"
+            ],
+            "difficulty": "easy",
+            "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 6 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 15
+            },
+            "seed": 1460030,
+            "setSize": 2
+        },
+        {
+            "id": 461,
+            "phase": 10,
+            "theme": "crystal",
+            "pairs": 12,
+            "timeSec": 107,
+            "mechanics": [
+                "bomb"
+            ],
+            "difficulty": "hard",
+            "description": "algunas cartas explotan si fallas. CronÃ³metro: 107s. 24 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 180
+            },
+            "seed": 1461227,
+            "setSize": 2
+        },
+        {
+            "id": 462,
+            "phase": 10,
+            "theme": "crystal",
+            "pairs": 5,
+            "timeSec": 45,
+            "mechanics": [
+                "basic"
+            ],
+            "difficulty": "medium",
+            "description": "Nivel clÃ¡sico sin trucos. CronÃ³metro: 45s. 10 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 50
+            },
+            "seed": 1462095,
+            "setSize": 2
+        },
+        {
+            "id": 463,
+            "phase": 10,
+            "theme": "crystal",
+            "pairs": 5,
+            "timeSec": 0,
+            "mechanics": [
+                "ghost"
+            ],
+            "difficulty": "easy",
+            "description": "Cartas fantasma aparecen y desaparecen. Sin cronÃ³metro. 10 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 25
+            },
+            "seed": 1463050,
+            "setSize": 2
+        },
+        {
+            "id": 464,
+            "phase": 10,
+            "theme": "crystal",
+            "pairs": 9,
+            "timeSec": 0,
+            "mechanics": [
+                "basic"
+            ],
+            "difficulty": "medium",
+            "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 18 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 90
+            },
+            "seed": 1464090,
+            "setSize": 2
+        },
+        {
+            "id": 465,
+            "phase": 10,
+            "theme": "crystal",
+            "pairs": 12,
+            "timeSec": 0,
+            "mechanics": [
+                "chameleon"
+            ],
+            "difficulty": "hard",
+            "description": "Las cartas cambian de valor. Sin cronÃ³metro. 24 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 180
+            },
+            "seed": 1465120,
+            "setSize": 2
+        },
+        {
+            "id": 466,
+            "phase": 10,
+            "theme": "crystal",
+            "pairs": 10,
+            "timeSec": 95,
+            "mechanics": [
+                "fog"
+            ],
+            "difficulty": "hard",
+            "description": "las cartas estÃ¡n parcialmente ocultas. CronÃ³metro: 95s. 20 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 150
+            },
+            "seed": 1466195,
+            "setSize": 2
+        },
+        {
+            "id": 467,
+            "phase": 10,
+            "theme": "crystal",
+            "pairs": 12,
+            "timeSec": 104,
+            "mechanics": [
+                "darkness"
+            ],
+            "difficulty": "hard",
+            "description": "La oscuridad cubre el tablero poco a poco. CronÃ³metro: 104s. 24 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 180
+            },
+            "seed": 1467224,
+            "setSize": 2
+        },
+        {
+            "id": 468,
+            "phase": 10,
+            "theme": "crystal",
+            "pairs": 8,
+            "timeSec": 77,
+            "mechanics": [
+                "bomb"
+            ],
+            "difficulty": "medium",
+            "description": "algunas cartas explotan si fallas. CronÃ³metro: 77s. 16 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 80
+            },
+            "seed": 1468157,
+            "setSize": 2
+        },
+        {
+            "id": 469,
+            "phase": 10,
+            "theme": "crystal",
+            "pairs": 2,
+            "timeSec": 0,
+            "mechanics": [
+                "bomb"
+            ],
+            "difficulty": "medium",
+            "description": "Evita bombas: piensa rÃ¡pido. Sin cronÃ³metro. 4 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 20
+            },
+            "seed": 1469020,
+            "setSize": 2
+        },
+        {
+            "id": 470,
+            "phase": 10,
+            "theme": "crystal",
+            "pairs": 10,
+            "timeSec": 89,
+            "mechanics": [
+                "rotation"
+            ],
+            "difficulty": "hard",
+            "description": "las cartas pueden rotar. CronÃ³metro: 89s. 20 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 150
+            },
+            "seed": 1470189,
+            "setSize": 2
+        },
+        {
+            "id": 471,
+            "phase": 10,
+            "theme": "crystal",
+            "pairs": 8,
+            "timeSec": 78,
+            "mechanics": [
+                "frozen"
+            ],
+            "difficulty": "hard",
+            "description": "Cartas que se congelan temporalmente. CronÃ³metro: 78s. 16 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 120
+            },
+            "seed": 1471158,
+            "setSize": 2
+        },
+        {
+            "id": 472,
+            "phase": 10,
+            "theme": "crystal",
+            "pairs": 12,
+            "timeSec": 107,
+            "mechanics": [
+                "rotation"
+            ],
+            "difficulty": "hard",
+            "description": "El tablero rota de vez en cuando. CronÃ³metro: 107s. 24 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 180
+            },
+            "seed": 1472227,
+            "setSize": 2
+        },
+        {
+            "id": 473,
+            "phase": 10,
+            "theme": "crystal",
+            "pairs": 7,
+            "timeSec": 0,
+            "mechanics": [
+                "chameleon"
+            ],
+            "difficulty": "medium",
+            "description": "Las cartas cambian de valor. Sin cronÃ³metro. 14 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 70
+            },
+            "seed": 1473070,
+            "setSize": 2
+        },
+        {
+            "id": 474,
+            "phase": 10,
+            "theme": "crystal",
+            "pairs": 6,
+            "timeSec": 0,
+            "mechanics": [
+                "bomb"
+            ],
+            "difficulty": "medium",
+            "description": "Evita bombas: piensa rÃ¡pido. Sin cronÃ³metro. 12 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 60
+            },
+            "seed": 1474060,
+            "setSize": 2
+        },
+        {
+            "id": 475,
+            "phase": 10,
+            "theme": "crystal",
+            "pairs": 10,
+            "timeSec": 93,
+            "mechanics": [
+                "rotation"
+            ],
+            "difficulty": "hard",
+            "description": "las cartas pueden rotar. CronÃ³metro: 93s. 20 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 150
+            },
+            "seed": 1475193,
+            "setSize": 2
+        },
+        {
+            "id": 476,
+            "phase": 10,
+            "theme": "crystal",
+            "pairs": 12,
+            "timeSec": 105,
+            "mechanics": [
+                "darkness"
+            ],
+            "difficulty": "hard",
+            "description": "La oscuridad cubre el tablero poco a poco. CronÃ³metro: 105s. 24 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 180
+            },
+            "seed": 1476225,
+            "setSize": 2
+        },
+        {
+            "id": 477,
+            "phase": 10,
+            "theme": "crystal",
+            "pairs": 7,
+            "timeSec": 78,
+            "mechanics": [
+                "frozen"
+            ],
+            "difficulty": "hard",
+            "description": "Cartas que se congelan temporalmente. CronÃ³metro: 78s. 14 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 105
+            },
+            "seed": 1477148,
+            "setSize": 2
+        },
+        {
+            "id": 478,
+            "phase": 10,
+            "theme": "crystal",
+            "pairs": 7,
+            "timeSec": 0,
+            "mechanics": [
+                "ghost"
+            ],
+            "difficulty": "medium",
+            "description": "Cartas fantasma aparecen y desaparecen. Sin cronÃ³metro. 14 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 70
+            },
+            "seed": 1478070,
+            "setSize": 2
+        },
+        {
+            "id": 479,
+            "phase": 10,
+            "theme": "crystal",
+            "pairs": 2,
+            "timeSec": 0,
+            "mechanics": [
+                "frozen"
+            ],
+            "difficulty": "medium",
+            "description": "Cartas que se congelan temporalmente. Sin cronÃ³metro. 4 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 20
+            },
+            "seed": 1479020,
+            "setSize": 2
+        },
+        {
+            "id": 480,
+            "phase": 10,
+            "theme": "crystal",
+            "pairs": 7,
+            "timeSec": 0,
+            "mechanics": [
+                "basic"
+            ],
+            "difficulty": "medium",
+            "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 14 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 70
+            },
+            "seed": 1480070,
+            "setSize": 2
+        },
+        {
+            "id": 481,
+            "phase": 10,
+            "theme": "crystal",
+            "pairs": 7,
+            "timeSec": 0,
+            "mechanics": [
+                "chameleon"
+            ],
+            "difficulty": "medium",
+            "description": "Las cartas cambian de valor. Sin cronÃ³metro. 14 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 70
+            },
+            "seed": 1481070,
+            "setSize": 2
+        },
+        {
+            "id": 482,
+            "phase": 10,
+            "theme": "crystal",
+            "pairs": 4,
+            "timeSec": 0,
+            "mechanics": [
+                "rotation"
+            ],
+            "difficulty": "medium",
+            "description": "El tablero rota de vez en cuando. Sin cronÃ³metro. 8 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 40
+            },
+            "seed": 1482040,
+            "setSize": 2
+        },
+        {
+            "id": 483,
+            "phase": 10,
+            "theme": "crystal",
+            "pairs": 5,
+            "timeSec": 0,
+            "mechanics": [
+                "frozen"
+            ],
+            "difficulty": "medium",
+            "description": "Cartas que se congelan temporalmente. Sin cronÃ³metro. 10 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 50
+            },
+            "seed": 1483050,
+            "setSize": 2
+        },
+        {
+            "id": 484,
+            "phase": 10,
+            "theme": "crystal",
+            "pairs": 10,
+            "timeSec": 98,
+            "mechanics": [
+                "bomb"
+            ],
+            "difficulty": "hard",
+            "description": "Evita bombas: piensa rÃ¡pido. CronÃ³metro: 98s. 20 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 150
+            },
+            "seed": 1484198,
+            "setSize": 2
+        },
+        {
+            "id": 485,
+            "phase": 10,
+            "theme": "crystal",
+            "pairs": 7,
+            "timeSec": 74,
+            "mechanics": [
+                "fog"
+            ],
+            "difficulty": "medium",
+            "description": "Niebla ligera: observa con atenciÃ³n. CronÃ³metro: 74s. 14 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 70
+            },
+            "seed": 1485144,
+            "setSize": 2
+        },
+        {
+            "id": 486,
+            "phase": 10,
+            "theme": "crystal",
+            "pairs": 4,
+            "timeSec": 0,
+            "mechanics": [
+                "bomb"
+            ],
+            "difficulty": "medium",
+            "description": "Evita bombas: piensa rÃ¡pido. Sin cronÃ³metro. 8 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 40
+            },
+            "seed": 1486040,
+            "setSize": 2
+        },
+        {
+            "id": 487,
+            "phase": 10,
+            "theme": "crystal",
+            "pairs": 6,
+            "timeSec": 0,
+            "mechanics": [
+                "fog"
+            ],
+            "difficulty": "easy",
+            "description": "Niebla ligera: observa con atenciÃ³n. Sin cronÃ³metro. 12 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 30
+            },
+            "seed": 1487060,
+            "setSize": 2
+        },
+        {
+            "id": 488,
+            "phase": 10,
+            "theme": "crystal",
+            "pairs": 12,
+            "timeSec": 102,
+            "mechanics": [
+                "chameleon"
+            ],
+            "difficulty": "hard",
+            "description": "Las cartas cambian de valor. CronÃ³metro: 102s. 24 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 180
+            },
+            "seed": 1488222,
+            "setSize": 2
+        },
+        {
+            "id": 489,
+            "phase": 10,
+            "theme": "crystal",
+            "pairs": 6,
+            "timeSec": 0,
+            "mechanics": [
+                "trio"
+            ],
+            "difficulty": "easy",
+            "description": "Encuentra trÃ­os idÃ©nticos. Sin cronÃ³metro. 12 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 30
+            },
+            "seed": 1489060,
+            "setSize": 3
+        },
+        {
+            "id": 490,
+            "phase": 10,
+            "theme": "crystal",
+            "pairs": 10,
+            "timeSec": 0,
+            "mechanics": [
+                "basic"
+            ],
+            "difficulty": "medium",
+            "description": "juega normalmente. Sin cronÃ³metro. 20 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 100
+            },
+            "seed": 1490100,
+            "setSize": 2
+        },
+        {
+            "id": 491,
+            "phase": 10,
+            "theme": "crystal",
+            "pairs": 9,
+            "timeSec": 0,
+            "mechanics": [
+                "fog"
+            ],
+            "difficulty": "medium",
+            "description": "Niebla ligera: observa con atenciÃ³n. Sin cronÃ³metro. 18 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 90
+            },
+            "seed": 1491090,
+            "setSize": 2
+        },
+        {
+            "id": 492,
+            "phase": 10,
+            "theme": "crystal",
+            "pairs": 2,
+            "timeSec": 0,
+            "mechanics": [
+                "bomb"
+            ],
+            "difficulty": "medium",
+            "description": "Evita bombas: piensa rÃ¡pido. Sin cronÃ³metro. 4 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 20
+            },
+            "seed": 1492020,
+            "setSize": 2
+        },
+        {
+            "id": 493,
+            "phase": 10,
+            "theme": "crystal",
+            "pairs": 6,
+            "timeSec": 0,
+            "mechanics": [
+                "ghost"
+            ],
+            "difficulty": "easy",
+            "description": "Cartas fantasma aparecen y desaparecen. Sin cronÃ³metro. 12 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 30
+            },
+            "seed": 1493060,
+            "setSize": 2
+        },
+        {
+            "id": 494,
+            "phase": 10,
+            "theme": "crystal",
+            "pairs": 9,
+            "timeSec": 0,
+            "mechanics": [
+                "trio"
+            ],
+            "difficulty": "hard",
+            "description": "Encuentra trÃ­os idÃ©nticos. Sin cronÃ³metro. 18 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 135
+            },
+            "seed": 1494090,
+            "setSize": 3
+        },
+        {
+            "id": 495,
+            "phase": 10,
+            "theme": "crystal",
+            "pairs": 12,
+            "timeSec": 113,
+            "mechanics": [
+                "fog"
+            ],
+            "difficulty": "hard",
+            "description": "las cartas estÃ¡n parcialmente ocultas. CronÃ³metro: 113s. 24 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 180
+            },
+            "seed": 1495233,
+            "setSize": 2
+        },
+        {
+            "id": 496,
+            "phase": 10,
+            "theme": "crystal",
+            "pairs": 7,
+            "timeSec": 0,
+            "mechanics": [
+                "basic"
+            ],
+            "difficulty": "medium",
+            "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 14 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 70
+            },
+            "seed": 1496070,
+            "setSize": 2
+        },
+        {
+            "id": 497,
+            "phase": 10,
+            "theme": "crystal",
+            "pairs": 6,
+            "timeSec": 0,
+            "mechanics": [
+                "bomb"
+            ],
+            "difficulty": "medium",
+            "description": "Evita bombas: piensa rÃ¡pido. Sin cronÃ³metro. 12 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 60
+            },
+            "seed": 1497060,
+            "setSize": 2
+        },
+        {
+            "id": 498,
+            "phase": 10,
+            "theme": "crystal",
+            "pairs": 4,
+            "timeSec": 0,
+            "mechanics": [
+                "rotation"
+            ],
+            "difficulty": "medium",
+            "description": "El tablero rota de vez en cuando. Sin cronÃ³metro. 8 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 40
+            },
+            "seed": 1498040,
+            "setSize": 2
+        },
+        {
+            "id": 499,
+            "phase": 10,
+            "theme": "crystal",
+            "pairs": 12,
+            "timeSec": 0,
+            "mechanics": [
+                "trio"
+            ],
+            "difficulty": "hard",
+            "description": "Encuentra trÃ­os idÃ©nticos. Sin cronÃ³metro. 24 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 180
+            },
+            "seed": 1499120,
+            "setSize": 3
+        },
+        {
+            "id": 500,
+            "phase": 10,
+            "theme": "crystal",
+            "pairs": 12,
+            "timeSec": 110,
+            "mechanics": [
+                "bomb"
+            ],
+            "difficulty": "hard",
+            "description": "Boss: 24 cartas, peeked_card + bomb, crono 110s.",
+            "isBoss": true,
+            "rewards": {
+                "coins": 180
+            },
+            "seed": 1500230,
+            "setSize": 2
+        },
+        {
+            "id": 501,
+            "phase": 11,
+            "theme": "nebula",
+            "pairs": 7,
+            "timeSec": 0,
+            "mechanics": [
+                "basic"
+            ],
+            "difficulty": "medium",
+            "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 14 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 70
+            },
+            "seed": 1501070,
+            "setSize": 2
+        },
+        {
+            "id": 502,
+            "phase": 11,
+            "theme": "nebula",
+            "pairs": 5,
+            "timeSec": 0,
+            "mechanics": [
+                "frozen"
+            ],
+            "difficulty": "medium",
+            "description": "Cartas que se congelan temporalmente. Sin cronÃ³metro. 10 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 50
+            },
+            "seed": 1502050,
+            "setSize": 2
+        },
+        {
+            "id": 503,
+            "phase": 11,
+            "theme": "nebula",
+            "pairs": 7,
+            "timeSec": 0,
+            "mechanics": [
+                "rotation"
+            ],
+            "difficulty": "medium",
+            "description": "El tablero rota de vez en cuando. Sin cronÃ³metro. 14 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 70
+            },
+            "seed": 1503070,
+            "setSize": 2
+        },
+        {
+            "id": 504,
+            "phase": 11,
+            "theme": "nebula",
+            "pairs": 5,
+            "timeSec": 0,
+            "mechanics": [
+                "chameleon"
+            ],
+            "difficulty": "medium",
+            "description": "Las cartas cambian de valor. Sin cronÃ³metro. 10 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 50
+            },
+            "seed": 1504050,
+            "setSize": 2
+        },
+        {
+            "id": 505,
+            "phase": 11,
+            "theme": "nebula",
+            "pairs": 7,
+            "timeSec": 0,
+            "mechanics": [
+                "bomb"
+            ],
+            "difficulty": "medium",
+            "description": "Evita bombas: piensa rÃ¡pido. Sin cronÃ³metro. 14 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 70
+            },
+            "seed": 1505070,
+            "setSize": 2
+        },
+        {
+            "id": 506,
+            "phase": 11,
+            "theme": "nebula",
+            "pairs": 8,
+            "timeSec": 83,
+            "mechanics": [
+                "frozen"
+            ],
+            "difficulty": "hard",
+            "description": "Cartas que se congelan temporalmente. CronÃ³metro: 83s. 16 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 120
+            },
+            "seed": 1506163,
+            "setSize": 2
+        },
+        {
+            "id": 507,
+            "phase": 11,
+            "theme": "nebula",
+            "pairs": 3,
+            "timeSec": 0,
+            "mechanics": [
+                "fog"
+            ],
+            "difficulty": "easy",
+            "description": "Niebla ligera: observa con atenciÃ³n. Sin cronÃ³metro. 6 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 15
+            },
+            "seed": 1507030,
+            "setSize": 2
+        },
+        {
+            "id": 508,
+            "phase": 11,
+            "theme": "nebula",
+            "pairs": 10,
+            "timeSec": 98,
+            "mechanics": [
+                "darkness"
+            ],
+            "difficulty": "hard",
+            "description": "La oscuridad cubre el tablero poco a poco. CronÃ³metro: 98s. 20 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 150
+            },
+            "seed": 1508198,
+            "setSize": 2
+        },
+        {
+            "id": 509,
+            "phase": 11,
+            "theme": "nebula",
+            "pairs": 2,
+            "timeSec": 0,
+            "mechanics": [
+                "ghost"
+            ],
+            "difficulty": "easy",
+            "description": "Cartas fantasma aparecen y desaparecen. Sin cronÃ³metro. 4 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 10
+            },
+            "seed": 1509020,
+            "setSize": 2
+        },
+        {
+            "id": 510,
+            "phase": 11,
+            "theme": "nebula",
+            "pairs": 8,
+            "timeSec": 0,
+            "mechanics": [
+                "basic"
+            ],
+            "difficulty": "medium",
+            "description": "juega normalmente. Sin cronÃ³metro. 16 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 80
+            },
+            "seed": 1510080,
+            "setSize": 2
+        },
+        {
+            "id": 511,
+            "phase": 11,
+            "theme": "nebula",
+            "pairs": 8,
+            "timeSec": 74,
+            "mechanics": [
+                "darkness"
+            ],
+            "difficulty": "hard",
+            "description": "La oscuridad cubre el tablero poco a poco. CronÃ³metro: 74s. 16 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 120
+            },
+            "seed": 1511154,
+            "setSize": 2
+        },
+        {
+            "id": 512,
+            "phase": 11,
+            "theme": "nebula",
+            "pairs": 3,
+            "timeSec": 0,
+            "mechanics": [
+                "trio"
+            ],
+            "difficulty": "easy",
+            "description": "Encuentra trÃ­os idÃ©nticos. Sin cronÃ³metro. 6 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 15
+            },
+            "seed": 1512030,
+            "setSize": 3
+        },
+        {
+            "id": 513,
+            "phase": 11,
+            "theme": "nebula",
+            "pairs": 6,
+            "timeSec": 0,
+            "mechanics": [
+                "basic"
+            ],
+            "difficulty": "easy",
+            "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 12 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 30
+            },
+            "seed": 1513060,
+            "setSize": 2
+        },
+        {
+            "id": 514,
+            "phase": 11,
+            "theme": "nebula",
+            "pairs": 8,
+            "timeSec": 81,
+            "mechanics": [
+                "darkness"
+            ],
+            "difficulty": "hard",
+            "description": "La oscuridad cubre el tablero poco a poco. CronÃ³metro: 81s. 16 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 120
+            },
+            "seed": 1514161,
+            "setSize": 2
+        },
+        {
+            "id": 515,
+            "phase": 11,
+            "theme": "nebula",
+            "pairs": 5,
+            "timeSec": 0,
+            "mechanics": [
+                "rotation"
+            ],
+            "difficulty": "medium",
+            "description": "El tablero rota de vez en cuando. Sin cronÃ³metro. 10 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 50
+            },
+            "seed": 1515050,
+            "setSize": 2
+        },
+        {
+            "id": 516,
+            "phase": 11,
+            "theme": "nebula",
+            "pairs": 6,
+            "timeSec": 0,
+            "mechanics": [
+                "bomb"
+            ],
+            "difficulty": "medium",
+            "description": "Evita bombas: piensa rÃ¡pido. Sin cronÃ³metro. 12 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 60
+            },
+            "seed": 1516060,
+            "setSize": 2
+        },
+        {
+            "id": 517,
+            "phase": 11,
+            "theme": "nebula",
+            "pairs": 3,
+            "timeSec": 0,
+            "mechanics": [
+                "fog"
+            ],
+            "difficulty": "easy",
+            "description": "Niebla ligera: observa con atenciÃ³n. Sin cronÃ³metro. 6 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 15
+            },
+            "seed": 1517030,
+            "setSize": 2
+        },
+        {
+            "id": 518,
+            "phase": 11,
+            "theme": "nebula",
+            "pairs": 9,
+            "timeSec": 97,
+            "mechanics": [
+                "frozen"
+            ],
+            "difficulty": "hard",
+            "description": "Cartas que se congelan temporalmente. CronÃ³metro: 97s. 18 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 135
+            },
+            "seed": 1518187,
+            "setSize": 2
+        },
+        {
+            "id": 519,
+            "phase": 11,
+            "theme": "nebula",
+            "pairs": 3,
+            "timeSec": 0,
+            "mechanics": [
+                "trio"
+            ],
+            "difficulty": "easy",
+            "description": "Encuentra trÃ­os idÃ©nticos. Sin cronÃ³metro. 6 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 15
+            },
+            "seed": 1519030,
+            "setSize": 3
+        },
+        {
+            "id": 520,
+            "phase": 11,
+            "theme": "nebula",
+            "pairs": 4,
+            "timeSec": 0,
+            "mechanics": [
+                "bomb"
+            ],
+            "difficulty": "medium",
+            "description": "Evita bombas: piensa rÃ¡pido. Sin cronÃ³metro. 8 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 40
+            },
+            "seed": 1520040,
+            "setSize": 2
+        },
+        {
+            "id": 521,
+            "phase": 11,
+            "theme": "nebula",
+            "pairs": 10,
+            "timeSec": 103,
+            "mechanics": [
+                "darkness"
+            ],
+            "difficulty": "hard",
+            "description": "La oscuridad cubre el tablero poco a poco. CronÃ³metro: 103s. 20 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 150
+            },
+            "seed": 1521203,
+            "setSize": 2
+        },
+        {
+            "id": 522,
+            "phase": 11,
+            "theme": "nebula",
+            "pairs": 12,
+            "timeSec": 0,
+            "mechanics": [
+                "trio"
+            ],
+            "difficulty": "hard",
+            "description": "Encuentra trÃ­os idÃ©nticos. Sin cronÃ³metro. 24 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 180
+            },
+            "seed": 1522120,
+            "setSize": 3
+        },
+        {
+            "id": 523,
+            "phase": 11,
+            "theme": "nebula",
+            "pairs": 8,
+            "timeSec": 72,
+            "mechanics": [
+                "rotation"
+            ],
+            "difficulty": "medium",
+            "description": "las cartas pueden rotar. CronÃ³metro: 72s. 16 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 80
+            },
+            "seed": 1523152,
+            "setSize": 2
+        },
+        {
+            "id": 524,
+            "phase": 11,
+            "theme": "nebula",
+            "pairs": 7,
+            "timeSec": 0,
+            "mechanics": [
+                "rotation"
+            ],
+            "difficulty": "medium",
+            "description": "El tablero rota de vez en cuando. Sin cronÃ³metro. 14 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 70
+            },
+            "seed": 1524070,
+            "setSize": 2
+        },
+        {
+            "id": 525,
+            "phase": 11,
+            "theme": "nebula",
+            "pairs": 10,
+            "timeSec": 0,
+            "mechanics": [
+                "frozen"
+            ],
+            "difficulty": "hard",
+            "description": "Cartas que se congelan temporalmente. Sin cronÃ³metro. 20 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 150
+            },
+            "seed": 1525100,
+            "setSize": 2
+        },
+        {
+            "id": 526,
+            "phase": 11,
+            "theme": "nebula",
+            "pairs": 12,
+            "timeSec": 106,
+            "mechanics": [
+                "ghost"
+            ],
+            "difficulty": "hard",
+            "description": "Cartas fantasma aparecen y desaparecen. CronÃ³metro: 106s. 24 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 180
+            },
+            "seed": 1526226,
+            "setSize": 2
+        },
+        {
+            "id": 527,
+            "phase": 11,
+            "theme": "nebula",
+            "pairs": 10,
+            "timeSec": 0,
+            "mechanics": [
+                "frozen"
+            ],
+            "difficulty": "hard",
+            "description": "Cartas que se congelan temporalmente. Sin cronÃ³metro. 20 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 150
+            },
+            "seed": 1527100,
+            "setSize": 2
+        },
+        {
+            "id": 528,
+            "phase": 11,
+            "theme": "nebula",
+            "pairs": 6,
+            "timeSec": 0,
+            "mechanics": [
+                "rotation"
+            ],
+            "difficulty": "medium",
+            "description": "El tablero rota de vez en cuando. Sin cronÃ³metro. 12 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 60
+            },
+            "seed": 1528060,
+            "setSize": 2
+        },
+        {
+            "id": 529,
+            "phase": 11,
+            "theme": "nebula",
+            "pairs": 8,
+            "timeSec": 83,
+            "mechanics": [
+                "basic"
+            ],
+            "difficulty": "medium",
+            "description": "Nivel clÃ¡sico sin trucos. CronÃ³metro: 83s. 16 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 80
+            },
+            "seed": 1529163,
+            "setSize": 2
+        },
+        {
+            "id": 530,
+            "phase": 11,
+            "theme": "nebula",
+            "pairs": 10,
+            "timeSec": 90,
+            "mechanics": [
+                "bomb"
+            ],
+            "difficulty": "hard",
+            "description": "algunas cartas explotan si fallas. CronÃ³metro: 90s. 20 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 150
+            },
+            "seed": 1530190,
+            "setSize": 2
+        },
+        {
+            "id": 531,
+            "phase": 11,
+            "theme": "nebula",
+            "pairs": 6,
+            "timeSec": 0,
+            "mechanics": [
+                "chameleon"
+            ],
+            "difficulty": "medium",
+            "description": "Las cartas cambian de valor. Sin cronÃ³metro. 12 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 60
+            },
+            "seed": 1531060,
+            "setSize": 2
+        },
+        {
+            "id": 532,
+            "phase": 11,
+            "theme": "nebula",
+            "pairs": 4,
+            "timeSec": 0,
+            "mechanics": [
+                "ghost"
+            ],
+            "difficulty": "easy",
+            "description": "Cartas fantasma aparecen y desaparecen. Sin cronÃ³metro. 8 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 20
+            },
+            "seed": 1532040,
+            "setSize": 2
+        },
+        {
+            "id": 533,
+            "phase": 11,
+            "theme": "nebula",
+            "pairs": 8,
+            "timeSec": 0,
+            "mechanics": [
+                "darkness"
+            ],
+            "difficulty": "medium",
+            "description": "La oscuridad cubre el tablero poco a poco. Sin cronÃ³metro. 16 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 80
+            },
+            "seed": 1533080,
+            "setSize": 2
+        },
+        {
+            "id": 534,
+            "phase": 11,
+            "theme": "nebula",
+            "pairs": 9,
+            "timeSec": 0,
+            "mechanics": [
+                "ghost"
+            ],
+            "difficulty": "medium",
+            "description": "Cartas fantasma aparecen y desaparecen. Sin cronÃ³metro. 18 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 90
+            },
+            "seed": 1534090,
+            "setSize": 2
+        },
+        {
+            "id": 535,
+            "phase": 11,
+            "theme": "nebula",
+            "pairs": 6,
+            "timeSec": 0,
+            "mechanics": [
+                "basic"
+            ],
+            "difficulty": "easy",
+            "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 12 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 30
+            },
+            "seed": 1535060,
+            "setSize": 2
+        },
+        {
+            "id": 536,
+            "phase": 11,
+            "theme": "nebula",
+            "pairs": 10,
+            "timeSec": 93,
+            "mechanics": [
+                "darkness"
+            ],
+            "difficulty": "hard",
+            "description": "La oscuridad cubre el tablero poco a poco. CronÃ³metro: 93s. 20 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 150
+            },
+            "seed": 1536193,
+            "setSize": 2
+        },
+        {
+            "id": 537,
+            "phase": 11,
+            "theme": "nebula",
+            "pairs": 4,
+            "timeSec": 0,
+            "mechanics": [
+                "ghost"
+            ],
+            "difficulty": "easy",
+            "description": "Cartas fantasma aparecen y desaparecen. Sin cronÃ³metro. 8 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 20
+            },
+            "seed": 1537040,
+            "setSize": 2
+        },
+        {
+            "id": 538,
+            "phase": 11,
+            "theme": "nebula",
+            "pairs": 8,
+            "timeSec": 75,
+            "mechanics": [
+                "bomb"
+            ],
+            "difficulty": "medium",
+            "description": "algunas cartas explotan si fallas. CronÃ³metro: 75s. 16 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 80
+            },
+            "seed": 1538155,
+            "setSize": 2
+        },
+        {
+            "id": 539,
+            "phase": 11,
+            "theme": "nebula",
+            "pairs": 9,
+            "timeSec": 0,
+            "mechanics": [
+                "frozen"
+            ],
+            "difficulty": "hard",
+            "description": "Cartas que se congelan temporalmente. Sin cronÃ³metro. 18 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 135
+            },
+            "seed": 1539090,
+            "setSize": 2
+        },
+        {
+            "id": 540,
+            "phase": 11,
+            "theme": "nebula",
+            "pairs": 3,
+            "timeSec": 0,
+            "mechanics": [
+                "basic"
+            ],
+            "difficulty": "easy",
+            "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 6 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 15
+            },
+            "seed": 1540030,
+            "setSize": 2
+        },
+        {
+            "id": 541,
+            "phase": 11,
+            "theme": "nebula",
+            "pairs": 8,
+            "timeSec": 80,
+            "mechanics": [
+                "rotation"
+            ],
+            "difficulty": "hard",
+            "description": "El tablero rota de vez en cuando. CronÃ³metro: 80s. 16 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 120
+            },
+            "seed": 1541160,
+            "setSize": 2
+        },
+        {
+            "id": 542,
+            "phase": 11,
+            "theme": "nebula",
+            "pairs": 5,
+            "timeSec": 0,
+            "mechanics": [
+                "basic"
+            ],
+            "difficulty": "easy",
+            "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 10 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 25
+            },
+            "seed": 1542050,
+            "setSize": 2
+        },
+        {
+            "id": 543,
+            "phase": 11,
+            "theme": "nebula",
+            "pairs": 8,
+            "timeSec": 82,
+            "mechanics": [
+                "fog"
+            ],
+            "difficulty": "medium",
+            "description": "Niebla ligera: observa con atenciÃ³n. CronÃ³metro: 82s. 16 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 80
+            },
+            "seed": 1543162,
+            "setSize": 2
+        },
+        {
+            "id": 544,
+            "phase": 11,
+            "theme": "nebula",
+            "pairs": 2,
+            "timeSec": 0,
+            "mechanics": [
+                "bomb"
+            ],
+            "difficulty": "medium",
+            "description": "Evita bombas: piensa rÃ¡pido. Sin cronÃ³metro. 4 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 20
+            },
+            "seed": 1544020,
+            "setSize": 2
+        },
+        {
+            "id": 545,
+            "phase": 11,
+            "theme": "nebula",
+            "pairs": 10,
+            "timeSec": 87,
+            "mechanics": [
+                "darkness"
+            ],
+            "difficulty": "hard",
+            "description": "La oscuridad cubre el tablero poco a poco. CronÃ³metro: 87s. 20 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 150
+            },
+            "seed": 1545187,
+            "setSize": 2
+        },
+        {
+            "id": 546,
+            "phase": 11,
+            "theme": "nebula",
+            "pairs": 8,
+            "timeSec": 0,
+            "mechanics": [
+                "ghost"
+            ],
+            "difficulty": "medium",
+            "description": "Cartas fantasma aparecen y desaparecen. Sin cronÃ³metro. 16 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 80
+            },
+            "seed": 1546080,
+            "setSize": 2
+        },
+        {
+            "id": 547,
+            "phase": 11,
+            "theme": "nebula",
+            "pairs": 8,
+            "timeSec": 80,
+            "mechanics": [
+                "frozen"
+            ],
+            "difficulty": "hard",
+            "description": "Cartas que se congelan temporalmente. CronÃ³metro: 80s. 16 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 120
+            },
+            "seed": 1547160,
+            "setSize": 2
+        },
+        {
+            "id": 548,
+            "phase": 11,
+            "theme": "nebula",
+            "pairs": 2,
+            "timeSec": 0,
+            "mechanics": [
+                "fog"
+            ],
+            "difficulty": "easy",
+            "description": "Niebla ligera: observa con atenciÃ³n. Sin cronÃ³metro. 4 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 10
+            },
+            "seed": 1548020,
+            "setSize": 2
+        },
+        {
+            "id": 549,
+            "phase": 11,
+            "theme": "nebula",
+            "pairs": 12,
+            "timeSec": 109,
+            "mechanics": [
+                "ghost"
+            ],
+            "difficulty": "hard",
+            "description": "Cartas fantasma aparecen y desaparecen. CronÃ³metro: 109s. 24 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 180
+            },
+            "seed": 1549229,
+            "setSize": 2
+        },
+        {
+            "id": 550,
+            "phase": 11,
+            "theme": "nebula",
+            "pairs": 12,
+            "timeSec": 102,
+            "mechanics": [
+                "darkness",
+                "chameleon"
+            ],
+            "difficulty": "hard",
+            "description": "Boss: 24 cartas, darkness + chameleon, crono 102s.",
+            "isBoss": true,
+            "rewards": {
+                "coins": 180
+            },
+            "seed": 1550222,
+            "setSize": 2
+        },
+        {
+            "id": 551,
+            "phase": 12,
+            "theme": "underwater",
+            "pairs": 8,
+            "timeSec": 88,
+            "mechanics": [
+                "rotation"
+            ],
+            "difficulty": "hard",
+            "description": "La oscuridad cubre el tablero poco a poco. CronÃ³metro: 88s. 16 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 120
+            },
+            "seed": 1551168,
+            "setSize": 2
+        },
+        {
+            "id": 552,
+            "phase": 12,
+            "theme": "underwater",
+            "pairs": 9,
+            "timeSec": 0,
+            "mechanics": [
+                "basic"
+            ],
+            "difficulty": "medium",
+            "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 18 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 90
+            },
+            "seed": 1552090,
+            "setSize": 2
+        },
+        {
+            "id": 553,
+            "phase": 12,
+            "theme": "underwater",
+            "pairs": 4,
+            "timeSec": 0,
+            "mechanics": [
+                "basic"
+            ],
+            "difficulty": "easy",
+            "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 8 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 20
+            },
+            "seed": 1553040,
+            "setSize": 2
+        },
+        {
+            "id": 554,
+            "phase": 12,
+            "theme": "underwater",
+            "pairs": 10,
+            "timeSec": 102,
+            "mechanics": [
+                "fog"
+            ],
+            "difficulty": "hard",
+            "description": "las cartas estÃ¡n parcialmente ocultas. CronÃ³metro: 102s. 20 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 150
+            },
+            "seed": 1554202,
+            "setSize": 2
+        },
+        {
+            "id": 555,
+            "phase": 12,
+            "theme": "underwater",
+            "pairs": 5,
+            "timeSec": 0,
+            "mechanics": [
+                "fog"
+            ],
+            "difficulty": "easy",
+            "description": "Niebla ligera: observa con atenciÃ³n. Sin cronÃ³metro. 10 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 25
+            },
+            "seed": 1555050,
+            "setSize": 2
+        },
+        {
+            "id": 556,
+            "phase": 12,
+            "theme": "underwater",
+            "pairs": 5,
+            "timeSec": 0,
+            "mechanics": [
+                "chameleon"
+            ],
+            "difficulty": "medium",
+            "description": "Las cartas cambian de valor. Sin cronÃ³metro. 10 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 50
+            },
+            "seed": 1556050,
+            "setSize": 2
+        },
+        {
+            "id": 557,
+            "phase": 12,
+            "theme": "underwater",
+            "pairs": 12,
+            "timeSec": 100,
+            "mechanics": [
+                "bomb"
+            ],
+            "difficulty": "hard",
+            "description": "Evita bombas: piensa rÃ¡pido. CronÃ³metro: 100s. 24 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 180
+            },
+            "seed": 1557220,
+            "setSize": 2
+        },
+        {
+            "id": 558,
+            "phase": 12,
+            "theme": "underwater",
+            "pairs": 7,
+            "timeSec": 71,
+            "mechanics": [
+                "frozen"
+            ],
+            "difficulty": "hard",
+            "description": "Cartas que se congelan temporalmente. CronÃ³metro: 71s. 14 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 105
+            },
+            "seed": 1558141,
+            "setSize": 2
+        },
+        {
+            "id": 559,
+            "phase": 12,
+            "theme": "underwater",
+            "pairs": 9,
+            "timeSec": 0,
+            "mechanics": [
+                "chameleon"
+            ],
+            "difficulty": "hard",
+            "description": "Las cartas cambian de valor. Sin cronÃ³metro. 18 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 135
+            },
+            "seed": 1559090,
+            "setSize": 2
+        },
+        {
+            "id": 560,
+            "phase": 12,
+            "theme": "underwater",
+            "pairs": 8,
+            "timeSec": 0,
+            "mechanics": [
+                "basic"
+            ],
+            "difficulty": "medium",
+            "description": "juega normalmente. Sin cronÃ³metro. 16 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 80
+            },
+            "seed": 1560080,
+            "setSize": 2
+        },
+        {
+            "id": 561,
+            "phase": 12,
+            "theme": "underwater",
+            "pairs": 5,
+            "timeSec": 0,
+            "mechanics": [
+                "frozen"
+            ],
+            "difficulty": "medium",
+            "description": "Cartas que se congelan temporalmente. Sin cronÃ³metro. 10 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 50
+            },
+            "seed": 1561050,
+            "setSize": 2
+        },
+        {
+            "id": 562,
+            "phase": 12,
+            "theme": "underwater",
+            "pairs": 8,
+            "timeSec": 0,
+            "mechanics": [
+                "darkness"
+            ],
+            "difficulty": "medium",
+            "description": "La oscuridad cubre el tablero poco a poco. Sin cronÃ³metro. 16 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 80
+            },
+            "seed": 1562080,
+            "setSize": 2
+        },
+        {
+            "id": 563,
+            "phase": 12,
+            "theme": "underwater",
+            "pairs": 4,
+            "timeSec": 0,
+            "mechanics": [
+                "basic"
+            ],
+            "difficulty": "easy",
+            "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 8 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 20
+            },
+            "seed": 1563040,
+            "setSize": 2
+        },
+        {
+            "id": 564,
+            "phase": 12,
+            "theme": "underwater",
+            "pairs": 8,
+            "timeSec": 0,
+            "mechanics": [
+                "basic"
+            ],
+            "difficulty": "medium",
+            "description": "juega normalmente. Sin cronÃ³metro. 16 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 80
+            },
+            "seed": 1564080,
+            "setSize": 2
+        },
+        {
+            "id": 565,
+            "phase": 12,
+            "theme": "underwater",
+            "pairs": 7,
+            "timeSec": 0,
+            "mechanics": [
+                "basic"
+            ],
+            "difficulty": "medium",
+            "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 14 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 70
+            },
+            "seed": 1565070,
+            "setSize": 2
+        },
+        {
+            "id": 566,
+            "phase": 12,
+            "theme": "underwater",
+            "pairs": 3,
+            "timeSec": 0,
+            "mechanics": [
+                "rotation"
+            ],
+            "difficulty": "medium",
+            "description": "El tablero rota de vez en cuando. Sin cronÃ³metro. 6 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 30
+            },
+            "seed": 1566030,
+            "setSize": 2
+        },
+        {
+            "id": 567,
+            "phase": 12,
+            "theme": "underwater",
+            "pairs": 9,
+            "timeSec": 0,
+            "mechanics": [
+                "trio"
+            ],
+            "difficulty": "hard",
+            "description": "Encuentra trÃ­os idÃ©nticos. Sin cronÃ³metro. 18 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 135
+            },
+            "seed": 1567090,
+            "setSize": 3
+        },
+        {
+            "id": 568,
+            "phase": 12,
+            "theme": "underwater",
+            "pairs": 8,
+            "timeSec": 0,
+            "mechanics": [
+                "frozen"
+            ],
+            "difficulty": "medium",
+            "description": "Cartas que se congelan temporalmente. Sin cronÃ³metro. 16 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 80
+            },
+            "seed": 1568080,
+            "setSize": 2
+        },
+        {
+            "id": 569,
+            "phase": 12,
+            "theme": "underwater",
+            "pairs": 5,
+            "timeSec": 47,
+            "mechanics": [
+                "bomb"
+            ],
+            "difficulty": "medium",
+            "description": "Evita bombas: piensa rÃ¡pido. CronÃ³metro: 47s. 10 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 50
+            },
+            "seed": 1569097,
+            "setSize": 2
+        },
+        {
+            "id": 570,
+            "phase": 12,
+            "theme": "underwater",
+            "pairs": 12,
+            "timeSec": 0,
+            "mechanics": [
+                "trio"
+            ],
+            "difficulty": "hard",
+            "description": "Encuentra trÃ­os idÃ©nticos. Sin cronÃ³metro. 24 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 180
+            },
+            "seed": 1570120,
+            "setSize": 3
+        },
+        {
+            "id": 571,
+            "phase": 12,
+            "theme": "underwater",
+            "pairs": 9,
+            "timeSec": 83,
+            "mechanics": [
+                "rotation"
+            ],
+            "difficulty": "hard",
+            "description": "El tablero rota de vez en cuando. CronÃ³metro: 83s. 18 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 135
+            },
+            "seed": 1571173,
+            "setSize": 2
+        },
+        {
+            "id": 572,
+            "phase": 12,
+            "theme": "underwater",
+            "pairs": 3,
+            "timeSec": 0,
+            "mechanics": [
+                "fog"
+            ],
+            "difficulty": "easy",
+            "description": "Niebla ligera: observa con atenciÃ³n. Sin cronÃ³metro. 6 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 15
+            },
+            "seed": 1572030,
+            "setSize": 2
+        },
+        {
+            "id": 573,
+            "phase": 12,
+            "theme": "underwater",
+            "pairs": 2,
+            "timeSec": 0,
+            "mechanics": [
+                "chameleon"
+            ],
+            "difficulty": "medium",
+            "description": "Las cartas cambian de valor. Sin cronÃ³metro. 4 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 20
+            },
+            "seed": 1573020,
+            "setSize": 2
+        },
+        {
+            "id": 574,
+            "phase": 12,
+            "theme": "underwater",
+            "pairs": 12,
+            "timeSec": 97,
+            "mechanics": [
+                "basic"
+            ],
+            "difficulty": "hard",
+            "description": "Nivel clÃ¡sico sin trucos. CronÃ³metro: 97s. 24 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 180
+            },
+            "seed": 1574217,
+            "setSize": 2
+        },
+        {
+            "id": 575,
+            "phase": 12,
+            "theme": "underwater",
+            "pairs": 8,
+            "timeSec": 85,
+            "mechanics": [
+                "bomb"
+            ],
+            "difficulty": "medium",
+            "description": "algunas cartas explotan si fallas. CronÃ³metro: 85s. 16 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 80
+            },
+            "seed": 1575165,
+            "setSize": 2
+        },
+        {
+            "id": 576,
+            "phase": 12,
+            "theme": "underwater",
+            "pairs": 7,
+            "timeSec": 0,
+            "mechanics": [
+                "ghost"
+            ],
+            "difficulty": "medium",
+            "description": "Cartas fantasma aparecen y desaparecen. Sin cronÃ³metro. 14 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 70
+            },
+            "seed": 1576070,
+            "setSize": 2
+        },
+        {
+            "id": 577,
+            "phase": 12,
+            "theme": "underwater",
+            "pairs": 10,
+            "timeSec": 97,
+            "mechanics": [
+                "rotation"
+            ],
+            "difficulty": "hard",
+            "description": "El tablero rota de vez en cuando. CronÃ³metro: 97s. 20 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 150
+            },
+            "seed": 1577197,
+            "setSize": 2
+        },
+        {
+            "id": 578,
+            "phase": 12,
+            "theme": "underwater",
+            "pairs": 12,
+            "timeSec": 97,
+            "mechanics": [
+                "bomb"
+            ],
+            "difficulty": "hard",
+            "description": "algunas cartas explotan si fallas. CronÃ³metro: 97s. 24 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 180
+            },
+            "seed": 1578217,
+            "setSize": 2
+        },
+        {
+            "id": 579,
+            "phase": 12,
+            "theme": "underwater",
+            "pairs": 4,
+            "timeSec": 0,
+            "mechanics": [
+                "basic"
+            ],
+            "difficulty": "easy",
+            "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 8 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 20
+            },
+            "seed": 1579040,
+            "setSize": 2
+        },
+        {
+            "id": 580,
+            "phase": 12,
+            "theme": "underwater",
+            "pairs": 12,
+            "timeSec": 107,
+            "mechanics": [
+                "bomb"
+            ],
+            "difficulty": "hard",
+            "description": "algunas cartas explotan si fallas. CronÃ³metro: 107s. 24 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 180
+            },
+            "seed": 1580227,
+            "setSize": 2
+        },
+        {
+            "id": 581,
+            "phase": 12,
+            "theme": "underwater",
+            "pairs": 3,
+            "timeSec": 0,
+            "mechanics": [
+                "trio"
+            ],
+            "difficulty": "easy",
+            "description": "Encuentra trÃ­os idÃ©nticos. Sin cronÃ³metro. 6 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 15
+            },
+            "seed": 1581030,
+            "setSize": 3
+        },
+        {
+            "id": 582,
+            "phase": 12,
+            "theme": "underwater",
+            "pairs": 7,
+            "timeSec": 0,
+            "mechanics": [
+                "rotation"
+            ],
+            "difficulty": "medium",
+            "description": "El tablero rota de vez en cuando. Sin cronÃ³metro. 14 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 70
+            },
+            "seed": 1582070,
+            "setSize": 2
+        },
+        {
+            "id": 583,
+            "phase": 12,
+            "theme": "underwater",
+            "pairs": 8,
+            "timeSec": 87,
+            "mechanics": [
+                "fog"
+            ],
+            "difficulty": "medium",
+            "description": "las cartas estÃ¡n parcialmente ocultas. CronÃ³metro: 87s. 16 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 80
+            },
+            "seed": 1583167,
+            "setSize": 2
+        },
+        {
+            "id": 584,
+            "phase": 12,
+            "theme": "underwater",
+            "pairs": 8,
+            "timeSec": 79,
+            "mechanics": [
+                "basic"
+            ],
+            "difficulty": "medium",
+            "description": "Nivel clÃ¡sico sin trucos. CronÃ³metro: 79s. 16 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 80
+            },
+            "seed": 1584159,
+            "setSize": 2
+        },
+        {
+            "id": 585,
+            "phase": 12,
+            "theme": "underwater",
+            "pairs": 10,
+            "timeSec": 103,
+            "mechanics": [
+                "ghost"
+            ],
+            "difficulty": "hard",
+            "description": "Cartas fantasma aparecen y desaparecen. CronÃ³metro: 103s. 20 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 150
+            },
+            "seed": 1585203,
+            "setSize": 2
+        },
+        {
+            "id": 586,
+            "phase": 12,
+            "theme": "underwater",
+            "pairs": 8,
+            "timeSec": 0,
+            "mechanics": [
+                "basic"
+            ],
+            "difficulty": "medium",
+            "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 16 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 80
+            },
+            "seed": 1586080,
+            "setSize": 2
+        },
+        {
+            "id": 587,
+            "phase": 12,
+            "theme": "underwater",
+            "pairs": 9,
+            "timeSec": 0,
+            "mechanics": [
+                "bomb"
+            ],
+            "difficulty": "hard",
+            "description": "Evita bombas: piensa rÃ¡pido. Sin cronÃ³metro. 18 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 135
+            },
+            "seed": 1587090,
+            "setSize": 2
+        },
+        {
+            "id": 588,
+            "phase": 12,
+            "theme": "underwater",
+            "pairs": 5,
+            "timeSec": 0,
+            "mechanics": [
+                "fog"
+            ],
+            "difficulty": "easy",
+            "description": "Niebla ligera: observa con atenciÃ³n. Sin cronÃ³metro. 10 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 25
+            },
+            "seed": 1588050,
+            "setSize": 2
+        },
+        {
+            "id": 589,
+            "phase": 12,
+            "theme": "underwater",
+            "pairs": 12,
+            "timeSec": 0,
+            "mechanics": [
+                "trio"
+            ],
+            "difficulty": "hard",
+            "description": "Encuentra trÃ­os idÃ©nticos. Sin cronÃ³metro. 24 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 180
+            },
+            "seed": 1589120,
+            "setSize": 3
+        },
+        {
+            "id": 590,
+            "phase": 12,
+            "theme": "underwater",
+            "pairs": 8,
+            "timeSec": 0,
+            "mechanics": [
+                "basic"
+            ],
+            "difficulty": "medium",
+            "description": "juega normalmente. Sin cronÃ³metro. 16 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 80
+            },
+            "seed": 1590080,
+            "setSize": 2
+        },
+        {
+            "id": 591,
+            "phase": 12,
+            "theme": "underwater",
+            "pairs": 2,
+            "timeSec": 0,
+            "mechanics": [
+                "rotation"
+            ],
+            "difficulty": "medium",
+            "description": "El tablero rota de vez en cuando. Sin cronÃ³metro. 4 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 20
+            },
+            "seed": 1591020,
+            "setSize": 2
+        },
+        {
+            "id": 592,
+            "phase": 12,
+            "theme": "underwater",
+            "pairs": 12,
+            "timeSec": 104,
+            "mechanics": [
+                "chameleon"
+            ],
+            "difficulty": "hard",
+            "description": "Las cartas cambian de valor. CronÃ³metro: 104s. 24 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 180
+            },
+            "seed": 1592224,
+            "setSize": 2
+        },
+        {
+            "id": 593,
+            "phase": 12,
+            "theme": "underwater",
+            "pairs": 6,
+            "timeSec": 0,
+            "mechanics": [
+                "trio"
+            ],
+            "difficulty": "easy",
+            "description": "Encuentra trÃ­os idÃ©nticos. Sin cronÃ³metro. 12 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 30
+            },
+            "seed": 1593060,
+            "setSize": 3
+        },
+        {
+            "id": 594,
+            "phase": 12,
+            "theme": "underwater",
+            "pairs": 8,
+            "timeSec": 80,
+            "mechanics": [
+                "darkness"
+            ],
+            "difficulty": "hard",
+            "description": "La oscuridad cubre el tablero poco a poco. CronÃ³metro: 80s. 16 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 120
+            },
+            "seed": 1594160,
+            "setSize": 2
+        },
+        {
+            "id": 595,
+            "phase": 12,
+            "theme": "underwater",
+            "pairs": 8,
+            "timeSec": 87,
+            "mechanics": [
+                "bomb"
+            ],
+            "difficulty": "hard",
+            "description": "Evita bombas: piensa rÃ¡pido. CronÃ³metro: 87s. 16 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 120
+            },
+            "seed": 1595167,
+            "setSize": 2
+        },
+        {
+            "id": 596,
+            "phase": 12,
+            "theme": "underwater",
+            "pairs": 12,
+            "timeSec": 0,
+            "mechanics": [
+                "trio"
+            ],
+            "difficulty": "hard",
+            "description": "Encuentra trÃ­os idÃ©nticos. Sin cronÃ³metro. 24 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 180
+            },
+            "seed": 1596120,
+            "setSize": 3
+        },
+        {
+            "id": 597,
+            "phase": 12,
+            "theme": "underwater",
+            "pairs": 2,
+            "timeSec": 0,
+            "mechanics": [
+                "basic"
+            ],
+            "difficulty": "easy",
+            "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 4 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 10
+            },
+            "seed": 1597020,
+            "setSize": 2
+        },
+        {
+            "id": 598,
+            "phase": 12,
+            "theme": "underwater",
+            "pairs": 8,
+            "timeSec": 76,
+            "mechanics": [
+                "fog"
+            ],
+            "difficulty": "medium",
+            "description": "Niebla ligera: observa con atenciÃ³n. CronÃ³metro: 76s. 16 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 80
+            },
+            "seed": 1598156,
+            "setSize": 2
+        },
+        {
+            "id": 599,
+            "phase": 12,
+            "theme": "underwater",
+            "pairs": 7,
+            "timeSec": 62,
+            "mechanics": [
+                "rotation"
+            ],
+            "difficulty": "hard",
+            "description": "El tablero rota de vez en cuando. CronÃ³metro: 62s. 14 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 105
+            },
+            "seed": 1599132,
+            "setSize": 2
+        },
+        {
+            "id": 600,
+            "phase": 12,
+            "theme": "underwater",
+            "pairs": 12,
+            "timeSec": 101,
+            "mechanics": [
+                "ghost",
+                "chameleon"
+            ],
+            "difficulty": "hard",
+            "description": "Boss: 24 cartas, ghost + chameleon, crono 101s.",
+            "isBoss": true,
+            "rewards": {
+                "coins": 180
+            },
+            "seed": 1600221,
+            "setSize": 2
+        },
+        {
+            "id": 601,
+            "phase": 13,
+            "theme": "laboratory",
+            "pairs": 10,
+            "timeSec": 0,
+            "mechanics": [
+                "basic"
+            ],
+            "difficulty": "medium",
+            "description": "juega normalmente. Sin cronÃ³metro. 20 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 100
+            },
+            "seed": 1601100,
+            "setSize": 2
+        },
+        {
+            "id": 602,
+            "phase": 13,
+            "theme": "laboratory",
+            "pairs": 5,
+            "timeSec": 0,
+            "mechanics": [
+                "basic"
+            ],
+            "difficulty": "easy",
+            "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 10 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 25
+            },
+            "seed": 1602050,
+            "setSize": 2
+        },
+        {
+            "id": 603,
+            "phase": 13,
+            "theme": "laboratory",
+            "pairs": 7,
+            "timeSec": 0,
+            "mechanics": [
+                "fog"
+            ],
+            "difficulty": "medium",
+            "description": "Niebla ligera: observa con atenciÃ³n. Sin cronÃ³metro. 14 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 70
+            },
+            "seed": 1603070,
+            "setSize": 2
+        },
+        {
+            "id": 604,
+            "phase": 13,
+            "theme": "laboratory",
+            "pairs": 4,
+            "timeSec": 0,
+            "mechanics": [
+                "basic"
+            ],
+            "difficulty": "easy",
+            "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 8 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 20
+            },
+            "seed": 1604040,
+            "setSize": 2
+        },
+        {
+            "id": 605,
+            "phase": 13,
+            "theme": "laboratory",
+            "pairs": 2,
+            "timeSec": 0,
+            "mechanics": [
+                "fog"
+            ],
+            "difficulty": "easy",
+            "description": "Niebla ligera: observa con atenciÃ³n. Sin cronÃ³metro. 4 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 10
+            },
+            "seed": 1605020,
+            "setSize": 2
+        },
+        {
+            "id": 606,
+            "phase": 13,
+            "theme": "laboratory",
+            "pairs": 10,
+            "timeSec": 87,
+            "mechanics": [
+                "basic"
+            ],
+            "difficulty": "hard",
+            "description": "Nivel clÃ¡sico sin trucos. CronÃ³metro: 87s. 20 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 150
+            },
+            "seed": 1606187,
+            "setSize": 2
+        },
+        {
+            "id": 607,
+            "phase": 13,
+            "theme": "laboratory",
+            "pairs": 7,
+            "timeSec": 0,
+            "mechanics": [
+                "basic"
+            ],
+            "difficulty": "medium",
+            "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 14 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 70
+            },
+            "seed": 1607070,
+            "setSize": 2
+        },
+        {
+            "id": 608,
+            "phase": 13,
+            "theme": "laboratory",
+            "pairs": 6,
+            "timeSec": 0,
+            "mechanics": [
+                "ghost"
+            ],
+            "difficulty": "easy",
+            "description": "Cartas fantasma aparecen y desaparecen. Sin cronÃ³metro. 12 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 30
+            },
+            "seed": 1608060,
+            "setSize": 2
+        },
+        {
+            "id": 609,
+            "phase": 13,
+            "theme": "laboratory",
+            "pairs": 10,
+            "timeSec": 0,
+            "mechanics": [
+                "basic"
+            ],
+            "difficulty": "medium",
+            "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 20 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 100
+            },
+            "seed": 1609100,
+            "setSize": 2
+        },
+        {
+            "id": 610,
+            "phase": 13,
+            "theme": "laboratory",
+            "pairs": 5,
+            "timeSec": 0,
+            "mechanics": [
+                "ghost"
+            ],
+            "difficulty": "easy",
+            "description": "Cartas fantasma aparecen y desaparecen. Sin cronÃ³metro. 10 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 25
+            },
+            "seed": 1610050,
+            "setSize": 2
+        },
+        {
+            "id": 611,
+            "phase": 13,
+            "theme": "laboratory",
+            "pairs": 2,
+            "timeSec": 0,
+            "mechanics": [
+                "basic"
+            ],
+            "difficulty": "easy",
+            "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 4 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 10
+            },
+            "seed": 1611020,
+            "setSize": 2
+        },
+        {
+            "id": 612,
+            "phase": 13,
+            "theme": "laboratory",
+            "pairs": 5,
+            "timeSec": 56,
+            "mechanics": [
+                "rotation"
+            ],
+            "difficulty": "medium",
+            "description": "El tablero rota de vez en cuando. CronÃ³metro: 56s. 10 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 50
+            },
+            "seed": 1612106,
+            "setSize": 2
+        },
+        {
+            "id": 613,
+            "phase": 13,
+            "theme": "laboratory",
+            "pairs": 12,
+            "timeSec": 109,
+            "mechanics": [
+                "fog"
+            ],
+            "difficulty": "hard",
+            "description": "las cartas estÃ¡n parcialmente ocultas. CronÃ³metro: 109s. 24 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 180
+            },
+            "seed": 1613229,
+            "setSize": 2
+        },
+        {
+            "id": 614,
+            "phase": 13,
+            "theme": "laboratory",
+            "pairs": 6,
+            "timeSec": 0,
+            "mechanics": [
+                "frozen"
+            ],
+            "difficulty": "medium",
+            "description": "Cartas que se congelan temporalmente. Sin cronÃ³metro. 12 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 60
+            },
+            "seed": 1614060,
+            "setSize": 2
+        },
+        {
+            "id": 615,
+            "phase": 13,
+            "theme": "laboratory",
+            "pairs": 9,
+            "timeSec": 98,
+            "mechanics": [
+                "bomb"
+            ],
+            "difficulty": "hard",
+            "description": "Evita bombas: piensa rÃ¡pido. CronÃ³metro: 98s. 18 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 135
+            },
+            "seed": 1615188,
+            "setSize": 2
+        },
+        {
+            "id": 616,
+            "phase": 13,
+            "theme": "laboratory",
+            "pairs": 7,
+            "timeSec": 0,
+            "mechanics": [
+                "rotation"
+            ],
+            "difficulty": "medium",
+            "description": "El tablero rota de vez en cuando. Sin cronÃ³metro. 14 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 70
+            },
+            "seed": 1616070,
+            "setSize": 2
+        },
+        {
+            "id": 617,
+            "phase": 13,
+            "theme": "laboratory",
+            "pairs": 3,
+            "timeSec": 0,
+            "mechanics": [
+                "ghost"
+            ],
+            "difficulty": "easy",
+            "description": "Cartas fantasma aparecen y desaparecen. Sin cronÃ³metro. 6 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 15
+            },
+            "seed": 1617030,
+            "setSize": 2
+        },
+        {
+            "id": 618,
+            "phase": 13,
+            "theme": "laboratory",
+            "pairs": 7,
+            "timeSec": 0,
+            "mechanics": [
+                "frozen"
+            ],
+            "difficulty": "medium",
+            "description": "Cartas que se congelan temporalmente. Sin cronÃ³metro. 14 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 70
+            },
+            "seed": 1618070,
+            "setSize": 2
+        },
+        {
+            "id": 619,
+            "phase": 13,
+            "theme": "laboratory",
+            "pairs": 6,
+            "timeSec": 0,
+            "mechanics": [
+                "rotation"
+            ],
+            "difficulty": "medium",
+            "description": "El tablero rota de vez en cuando. Sin cronÃ³metro. 12 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 60
+            },
+            "seed": 1619060,
+            "setSize": 2
+        },
+        {
+            "id": 620,
+            "phase": 13,
+            "theme": "laboratory",
+            "pairs": 10,
+            "timeSec": 99,
+            "mechanics": [
+                "darkness"
+            ],
+            "difficulty": "hard",
+            "description": "La oscuridad cubre el tablero poco a poco. CronÃ³metro: 99s. 20 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 150
+            },
+            "seed": 1620199,
+            "setSize": 2
+        },
+        {
+            "id": 621,
+            "phase": 13,
+            "theme": "laboratory",
+            "pairs": 6,
+            "timeSec": 0,
+            "mechanics": [
+                "ghost"
+            ],
+            "difficulty": "easy",
+            "description": "Cartas fantasma aparecen y desaparecen. Sin cronÃ³metro. 12 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 30
+            },
+            "seed": 1621060,
+            "setSize": 2
+        },
+        {
+            "id": 622,
+            "phase": 13,
+            "theme": "laboratory",
+            "pairs": 12,
+            "timeSec": 105,
+            "mechanics": [
+                "fog"
+            ],
+            "difficulty": "hard",
+            "description": "las cartas estÃ¡n parcialmente ocultas. CronÃ³metro: 105s. 24 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 180
+            },
+            "seed": 1622225,
+            "setSize": 2
+        },
+        {
+            "id": 623,
+            "phase": 13,
+            "theme": "laboratory",
+            "pairs": 10,
+            "timeSec": 91,
+            "mechanics": [
+                "darkness"
+            ],
+            "difficulty": "hard",
+            "description": "La oscuridad cubre el tablero poco a poco. CronÃ³metro: 91s. 20 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 150
+            },
+            "seed": 1623191,
+            "setSize": 2
+        },
+        {
+            "id": 624,
+            "phase": 13,
+            "theme": "laboratory",
+            "pairs": 8,
+            "timeSec": 77,
+            "mechanics": [
+                "basic"
+            ],
+            "difficulty": "medium",
+            "description": "Nivel clÃ¡sico sin trucos. CronÃ³metro: 77s. 16 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 80
+            },
+            "seed": 1624157,
+            "setSize": 2
+        },
+        {
+            "id": 625,
+            "phase": 13,
+            "theme": "laboratory",
+            "pairs": 7,
+            "timeSec": 0,
+            "mechanics": [
+                "chameleon"
+            ],
+            "difficulty": "medium",
+            "description": "Las cartas cambian de valor. Sin cronÃ³metro. 14 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 70
+            },
+            "seed": 1625070,
+            "setSize": 2
+        },
+        {
+            "id": 626,
+            "phase": 13,
+            "theme": "laboratory",
+            "pairs": 7,
+            "timeSec": 0,
+            "mechanics": [
+                "bomb"
+            ],
+            "difficulty": "medium",
+            "description": "Evita bombas: piensa rÃ¡pido. Sin cronÃ³metro. 14 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 70
+            },
+            "seed": 1626070,
+            "setSize": 2
+        },
+        {
+            "id": 627,
+            "phase": 13,
+            "theme": "laboratory",
+            "pairs": 5,
+            "timeSec": 0,
+            "mechanics": [
+                "fog"
+            ],
+            "difficulty": "easy",
+            "description": "Niebla ligera: observa con atenciÃ³n. Sin cronÃ³metro. 10 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 25
+            },
+            "seed": 1627050,
+            "setSize": 2
+        },
+        {
+            "id": 628,
+            "phase": 13,
+            "theme": "laboratory",
+            "pairs": 4,
+            "timeSec": 0,
+            "mechanics": [
+                "frozen"
+            ],
+            "difficulty": "medium",
+            "description": "Cartas que se congelan temporalmente. Sin cronÃ³metro. 8 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 40
+            },
+            "seed": 1628040,
+            "setSize": 2
+        },
+        {
+            "id": 629,
+            "phase": 13,
+            "theme": "laboratory",
+            "pairs": 6,
+            "timeSec": 0,
+            "mechanics": [
+                "trio"
+            ],
+            "difficulty": "easy",
+            "description": "Encuentra trÃ­os idÃ©nticos. Sin cronÃ³metro. 12 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 30
+            },
+            "seed": 1629060,
+            "setSize": 3
+        },
+        {
+            "id": 630,
+            "phase": 13,
+            "theme": "laboratory",
+            "pairs": 10,
+            "timeSec": 0,
+            "mechanics": [
+                "darkness"
+            ],
+            "difficulty": "hard",
+            "description": "La oscuridad cubre el tablero poco a poco. Sin cronÃ³metro. 20 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 150
+            },
+            "seed": 1630100,
+            "setSize": 2
+        },
+        {
+            "id": 631,
+            "phase": 13,
+            "theme": "laboratory",
+            "pairs": 12,
+            "timeSec": 112,
+            "mechanics": [
+                "basic"
+            ],
+            "difficulty": "hard",
+            "description": "Nivel clÃ¡sico sin trucos. CronÃ³metro: 112s. 24 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 180
+            },
+            "seed": 1631232,
+            "setSize": 2
+        },
+        {
+            "id": 632,
+            "phase": 13,
+            "theme": "laboratory",
+            "pairs": 7,
+            "timeSec": 0,
+            "mechanics": [
+                "chameleon"
+            ],
+            "difficulty": "medium",
+            "description": "Las cartas cambian de valor. Sin cronÃ³metro. 14 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 70
+            },
+            "seed": 1632070,
+            "setSize": 2
+        },
+        {
+            "id": 633,
+            "phase": 13,
+            "theme": "laboratory",
+            "pairs": 6,
+            "timeSec": 0,
+            "mechanics": [
+                "trio"
+            ],
+            "difficulty": "easy",
+            "description": "Encuentra trÃ­os idÃ©nticos. Sin cronÃ³metro. 12 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 30
+            },
+            "seed": 1633060,
+            "setSize": 3
+        },
+        {
+            "id": 634,
+            "phase": 13,
+            "theme": "laboratory",
+            "pairs": 9,
+            "timeSec": 96,
+            "mechanics": [
+                "rotation"
+            ],
+            "difficulty": "hard",
+            "description": "El tablero rota de vez en cuando. CronÃ³metro: 96s. 18 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 135
+            },
+            "seed": 1634186,
+            "setSize": 2
+        },
+        {
+            "id": 635,
+            "phase": 13,
+            "theme": "laboratory",
+            "pairs": 7,
+            "timeSec": 75,
+            "mechanics": [
+                "basic"
+            ],
+            "difficulty": "medium",
+            "description": "Nivel clÃ¡sico sin trucos. CronÃ³metro: 75s. 14 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 70
+            },
+            "seed": 1635145,
+            "setSize": 2
+        },
+        {
+            "id": 636,
+            "phase": 13,
+            "theme": "laboratory",
+            "pairs": 3,
+            "timeSec": 0,
+            "mechanics": [
+                "trio"
+            ],
+            "difficulty": "easy",
+            "description": "Encuentra trÃ­os idÃ©nticos. Sin cronÃ³metro. 6 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 15
+            },
+            "seed": 1636030,
+            "setSize": 3
+        },
+        {
+            "id": 637,
+            "phase": 13,
+            "theme": "laboratory",
+            "pairs": 5,
+            "timeSec": 0,
+            "mechanics": [
+                "frozen"
+            ],
+            "difficulty": "medium",
+            "description": "Cartas que se congelan temporalmente. Sin cronÃ³metro. 10 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 50
+            },
+            "seed": 1637050,
+            "setSize": 2
+        },
+        {
+            "id": 638,
+            "phase": 13,
+            "theme": "laboratory",
+            "pairs": 6,
+            "timeSec": 0,
+            "mechanics": [
+                "trio"
+            ],
+            "difficulty": "easy",
+            "description": "Encuentra trÃ­os idÃ©nticos. Sin cronÃ³metro. 12 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 30
+            },
+            "seed": 1638060,
+            "setSize": 3
+        },
+        {
+            "id": 639,
+            "phase": 13,
+            "theme": "laboratory",
+            "pairs": 10,
+            "timeSec": 89,
+            "mechanics": [
+                "chameleon"
+            ],
+            "difficulty": "hard",
+            "description": "Las cartas cambian de valor. CronÃ³metro: 89s. 20 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 150
+            },
+            "seed": 1639189,
+            "setSize": 2
+        },
+        {
+            "id": 640,
+            "phase": 13,
+            "theme": "laboratory",
+            "pairs": 12,
+            "timeSec": 113,
+            "mechanics": [
+                "bomb"
+            ],
+            "difficulty": "hard",
+            "description": "algunas cartas explotan si fallas. CronÃ³metro: 113s. 24 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 180
+            },
+            "seed": 1640233,
+            "setSize": 2
+        },
+        {
+            "id": 641,
+            "phase": 13,
+            "theme": "laboratory",
+            "pairs": 3,
+            "timeSec": 0,
+            "mechanics": [
+                "fog"
+            ],
+            "difficulty": "easy",
+            "description": "Niebla ligera: observa con atenciÃ³n. Sin cronÃ³metro. 6 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 15
+            },
+            "seed": 1641030,
+            "setSize": 2
+        },
+        {
+            "id": 642,
+            "phase": 13,
+            "theme": "laboratory",
+            "pairs": 6,
+            "timeSec": 0,
+            "mechanics": [
+                "frozen"
+            ],
+            "difficulty": "medium",
+            "description": "Cartas que se congelan temporalmente. Sin cronÃ³metro. 12 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 60
+            },
+            "seed": 1642060,
+            "setSize": 2
+        },
+        {
+            "id": 643,
+            "phase": 13,
+            "theme": "laboratory",
+            "pairs": 8,
+            "timeSec": 0,
+            "mechanics": [
+                "darkness"
+            ],
+            "difficulty": "medium",
+            "description": "La oscuridad cubre el tablero poco a poco. Sin cronÃ³metro. 16 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 80
+            },
+            "seed": 1643080,
+            "setSize": 2
+        },
+        {
+            "id": 644,
+            "phase": 13,
+            "theme": "laboratory",
+            "pairs": 10,
+            "timeSec": 99,
+            "mechanics": [
+                "bomb"
+            ],
+            "difficulty": "hard",
+            "description": "algunas cartas explotan si fallas. CronÃ³metro: 99s. 20 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 150
+            },
+            "seed": 1644199,
+            "setSize": 2
+        },
+        {
+            "id": 645,
+            "phase": 13,
+            "theme": "laboratory",
+            "pairs": 3,
+            "timeSec": 0,
+            "mechanics": [
+                "ghost"
+            ],
+            "difficulty": "easy",
+            "description": "Cartas fantasma aparecen y desaparecen. Sin cronÃ³metro. 6 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 15
+            },
+            "seed": 1645030,
+            "setSize": 2
+        },
+        {
+            "id": 646,
+            "phase": 13,
+            "theme": "laboratory",
+            "pairs": 6,
+            "timeSec": 66,
+            "mechanics": [
+                "basic"
+            ],
+            "difficulty": "medium",
+            "description": "Nivel clÃ¡sico sin trucos. CronÃ³metro: 66s. 12 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 60
+            },
+            "seed": 1646126,
+            "setSize": 2
+        },
+        {
+            "id": 647,
+            "phase": 13,
+            "theme": "laboratory",
+            "pairs": 7,
+            "timeSec": 0,
+            "mechanics": [
+                "basic"
+            ],
+            "difficulty": "medium",
+            "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 14 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 70
+            },
+            "seed": 1647070,
+            "setSize": 2
+        },
+        {
+            "id": 648,
+            "phase": 13,
+            "theme": "laboratory",
+            "pairs": 8,
+            "timeSec": 73,
+            "mechanics": [
+                "bomb"
+            ],
+            "difficulty": "medium",
+            "description": "algunas cartas explotan si fallas. CronÃ³metro: 73s. 16 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 80
+            },
+            "seed": 1648153,
+            "setSize": 2
+        },
+        {
+            "id": 649,
+            "phase": 13,
+            "theme": "laboratory",
+            "pairs": 5,
+            "timeSec": 0,
+            "mechanics": [
+                "bomb"
+            ],
+            "difficulty": "medium",
+            "description": "Evita bombas: piensa rÃ¡pido. Sin cronÃ³metro. 10 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 50
+            },
+            "seed": 1649050,
+            "setSize": 2
+        },
+        {
+            "id": 650,
+            "phase": 13,
+            "theme": "laboratory",
+            "pairs": 12,
+            "timeSec": 105,
+            "mechanics": [
+                "fog"
+            ],
+            "difficulty": "hard",
+            "description": "Boss: 24 cartas, ghost + peeked_card, crono 105s.",
+            "isBoss": true,
+            "rewards": {
+                "coins": 180
+            },
+            "seed": 1650225,
+            "setSize": 2
+        },
+        {
+            "id": 651,
+            "phase": 14,
+            "theme": "graveyard",
+            "pairs": 5,
+            "timeSec": 0,
+            "mechanics": [
+                "fog"
+            ],
+            "difficulty": "easy",
+            "description": "Cartas fantasma aparecen y desaparecen. Sin cronÃ³metro. 10 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 25
+            },
+            "seed": 1651050,
+            "setSize": 2
+        },
+        {
+            "id": 652,
+            "phase": 14,
+            "theme": "graveyard",
+            "pairs": 7,
+            "timeSec": 74,
+            "mechanics": [
+                "frozen"
+            ],
+            "difficulty": "hard",
+            "description": "Cartas que se congelan temporalmente. CronÃ³metro: 74s. 14 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 105
+            },
+            "seed": 1652144,
+            "setSize": 2
+        },
+        {
+            "id": 653,
+            "phase": 14,
+            "theme": "graveyard",
+            "pairs": 6,
+            "timeSec": 0,
+            "mechanics": [
+                "trio"
+            ],
+            "difficulty": "easy",
+            "description": "Encuentra trÃ­os idÃ©nticos. Sin cronÃ³metro. 12 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 30
+            },
+            "seed": 1653060,
+            "setSize": 3
+        },
+        {
+            "id": 654,
+            "phase": 14,
+            "theme": "graveyard",
+            "pairs": 10,
+            "timeSec": 0,
+            "mechanics": [
+                "basic"
+            ],
+            "difficulty": "medium",
+            "description": "juega normalmente. Sin cronÃ³metro. 20 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 100
+            },
+            "seed": 1654100,
+            "setSize": 2
+        },
+        {
+            "id": 655,
+            "phase": 14,
+            "theme": "graveyard",
+            "pairs": 9,
+            "timeSec": 0,
+            "mechanics": [
+                "basic"
+            ],
+            "difficulty": "medium",
+            "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 18 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 90
+            },
+            "seed": 1655090,
+            "setSize": 2
+        },
+        {
+            "id": 656,
+            "phase": 14,
+            "theme": "graveyard",
+            "pairs": 12,
+            "timeSec": 107,
+            "mechanics": [
+                "fog"
+            ],
+            "difficulty": "hard",
+            "description": "Niebla ligera: observa con atenciÃ³n. CronÃ³metro: 107s. 24 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 180
+            },
+            "seed": 1656227,
+            "setSize": 2
+        },
+        {
+            "id": 657,
+            "phase": 14,
+            "theme": "graveyard",
+            "pairs": 4,
+            "timeSec": 0,
+            "mechanics": [
+                "basic"
+            ],
+            "difficulty": "easy",
+            "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 8 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 20
+            },
+            "seed": 1657040,
+            "setSize": 2
+        },
+        {
+            "id": 658,
+            "phase": 14,
+            "theme": "graveyard",
+            "pairs": 10,
+            "timeSec": 101,
+            "mechanics": [
+                "basic"
+            ],
+            "difficulty": "hard",
+            "description": "Nivel clÃ¡sico sin trucos. CronÃ³metro: 101s. 20 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 150
+            },
+            "seed": 1658201,
+            "setSize": 2
+        },
+        {
+            "id": 659,
+            "phase": 14,
+            "theme": "graveyard",
+            "pairs": 2,
+            "timeSec": 0,
+            "mechanics": [
+                "chameleon"
+            ],
+            "difficulty": "medium",
+            "description": "Las cartas cambian de valor. Sin cronÃ³metro. 4 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 20
+            },
+            "seed": 1659020,
+            "setSize": 2
+        },
+        {
+            "id": 660,
+            "phase": 14,
+            "theme": "graveyard",
+            "pairs": 9,
+            "timeSec": 0,
+            "mechanics": [
+                "basic"
+            ],
+            "difficulty": "medium",
+            "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 18 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 90
+            },
+            "seed": 1660090,
+            "setSize": 2
+        },
+        {
+            "id": 661,
+            "phase": 14,
+            "theme": "graveyard",
+            "pairs": 9,
+            "timeSec": 0,
+            "mechanics": [
+                "basic"
+            ],
+            "difficulty": "medium",
+            "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 18 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 90
+            },
+            "seed": 1661090,
+            "setSize": 2
+        },
+        {
+            "id": 662,
+            "phase": 14,
+            "theme": "graveyard",
+            "pairs": 3,
+            "timeSec": 0,
+            "mechanics": [
+                "trio"
+            ],
+            "difficulty": "easy",
+            "description": "Encuentra trÃ­os idÃ©nticos. Sin cronÃ³metro. 6 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 15
+            },
+            "seed": 1662030,
+            "setSize": 3
+        },
+        {
+            "id": 663,
+            "phase": 14,
+            "theme": "graveyard",
+            "pairs": 9,
+            "timeSec": 85,
+            "mechanics": [
+                "basic"
+            ],
+            "difficulty": "hard",
+            "description": "Nivel clÃ¡sico sin trucos. CronÃ³metro: 85s. 18 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 135
+            },
+            "seed": 1663175,
+            "setSize": 2
+        },
+        {
+            "id": 664,
+            "phase": 14,
+            "theme": "graveyard",
+            "pairs": 12,
+            "timeSec": 105,
+            "mechanics": [
+                "basic"
+            ],
+            "difficulty": "hard",
+            "description": "Nivel clÃ¡sico sin trucos. CronÃ³metro: 105s. 24 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 180
+            },
+            "seed": 1664225,
+            "setSize": 2
+        },
+        {
+            "id": 665,
+            "phase": 14,
+            "theme": "graveyard",
+            "pairs": 7,
+            "timeSec": 66,
+            "mechanics": [
+                "frozen"
+            ],
+            "difficulty": "hard",
+            "description": "Cartas que se congelan temporalmente. CronÃ³metro: 66s. 14 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 105
+            },
+            "seed": 1665136,
+            "setSize": 2
+        },
+        {
+            "id": 666,
+            "phase": 14,
+            "theme": "graveyard",
+            "pairs": 8,
+            "timeSec": 0,
+            "mechanics": [
+                "basic"
+            ],
+            "difficulty": "medium",
+            "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 16 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 80
+            },
+            "seed": 1666080,
+            "setSize": 2
+        },
+        {
+            "id": 667,
+            "phase": 14,
+            "theme": "graveyard",
+            "pairs": 7,
+            "timeSec": 70,
+            "mechanics": [
+                "rotation"
+            ],
+            "difficulty": "hard",
+            "description": "El tablero rota de vez en cuando. CronÃ³metro: 70s. 14 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 105
+            },
+            "seed": 1667140,
+            "setSize": 2
+        },
+        {
+            "id": 668,
+            "phase": 14,
+            "theme": "graveyard",
+            "pairs": 4,
+            "timeSec": 0,
+            "mechanics": [
+                "chameleon"
+            ],
+            "difficulty": "medium",
+            "description": "Las cartas cambian de valor. Sin cronÃ³metro. 8 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 40
+            },
+            "seed": 1668040,
+            "setSize": 2
+        },
+        {
+            "id": 669,
+            "phase": 14,
+            "theme": "graveyard",
+            "pairs": 5,
+            "timeSec": 0,
+            "mechanics": [
+                "fog"
+            ],
+            "difficulty": "easy",
+            "description": "Niebla ligera: observa con atenciÃ³n. Sin cronÃ³metro. 10 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 25
+            },
+            "seed": 1669050,
+            "setSize": 2
+        },
+        {
+            "id": 670,
+            "phase": 14,
+            "theme": "graveyard",
+            "pairs": 4,
+            "timeSec": 0,
+            "mechanics": [
+                "bomb"
+            ],
+            "difficulty": "medium",
+            "description": "Evita bombas: piensa rÃ¡pido. Sin cronÃ³metro. 8 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 40
+            },
+            "seed": 1670040,
+            "setSize": 2
+        },
+        {
+            "id": 671,
+            "phase": 14,
+            "theme": "graveyard",
+            "pairs": 3,
+            "timeSec": 0,
+            "mechanics": [
+                "frozen"
+            ],
+            "difficulty": "medium",
+            "description": "Cartas que se congelan temporalmente. Sin cronÃ³metro. 6 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 30
+            },
+            "seed": 1671030,
+            "setSize": 2
+        },
+        {
+            "id": 672,
+            "phase": 14,
+            "theme": "graveyard",
+            "pairs": 5,
+            "timeSec": 0,
+            "mechanics": [
+                "ghost"
+            ],
+            "difficulty": "easy",
+            "description": "Cartas fantasma aparecen y desaparecen. Sin cronÃ³metro. 10 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 25
+            },
+            "seed": 1672050,
+            "setSize": 2
+        },
+        {
+            "id": 673,
+            "phase": 14,
+            "theme": "graveyard",
+            "pairs": 4,
+            "timeSec": 0,
+            "mechanics": [
+                "bomb"
+            ],
+            "difficulty": "medium",
+            "description": "Evita bombas: piensa rÃ¡pido. Sin cronÃ³metro. 8 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 40
+            },
+            "seed": 1673040,
+            "setSize": 2
+        },
+        {
+            "id": 674,
+            "phase": 14,
+            "theme": "graveyard",
+            "pairs": 4,
+            "timeSec": 0,
+            "mechanics": [
+                "ghost"
+            ],
+            "difficulty": "easy",
+            "description": "Cartas fantasma aparecen y desaparecen. Sin cronÃ³metro. 8 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 20
+            },
+            "seed": 1674040,
+            "setSize": 2
+        },
+        {
+            "id": 675,
+            "phase": 14,
+            "theme": "graveyard",
+            "pairs": 3,
+            "timeSec": 0,
+            "mechanics": [
+                "trio"
+            ],
+            "difficulty": "easy",
+            "description": "Encuentra trÃ­os idÃ©nticos. Sin cronÃ³metro. 6 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 15
+            },
+            "seed": 1675030,
+            "setSize": 3
+        },
+        {
+            "id": 676,
+            "phase": 14,
+            "theme": "graveyard",
+            "pairs": 10,
+            "timeSec": 97,
+            "mechanics": [
+                "bomb"
+            ],
+            "difficulty": "hard",
+            "description": "algunas cartas explotan si fallas. CronÃ³metro: 97s. 20 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 150
+            },
+            "seed": 1676197,
+            "setSize": 2
+        },
+        {
+            "id": 677,
+            "phase": 14,
+            "theme": "graveyard",
+            "pairs": 8,
+            "timeSec": 81,
+            "mechanics": [
+                "darkness"
+            ],
+            "difficulty": "hard",
+            "description": "La oscuridad cubre el tablero poco a poco. CronÃ³metro: 81s. 16 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 120
+            },
+            "seed": 1677161,
+            "setSize": 2
+        },
+        {
+            "id": 678,
+            "phase": 14,
+            "theme": "graveyard",
+            "pairs": 3,
+            "timeSec": 0,
+            "mechanics": [
+                "frozen"
+            ],
+            "difficulty": "medium",
+            "description": "Cartas que se congelan temporalmente. Sin cronÃ³metro. 6 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 30
+            },
+            "seed": 1678030,
+            "setSize": 2
+        },
+        {
+            "id": 679,
+            "phase": 14,
+            "theme": "graveyard",
+            "pairs": 12,
+            "timeSec": 110,
+            "mechanics": [
+                "darkness"
+            ],
+            "difficulty": "hard",
+            "description": "La oscuridad cubre el tablero poco a poco. CronÃ³metro: 110s. 24 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 180
+            },
+            "seed": 1679230,
+            "setSize": 2
+        },
+        {
+            "id": 680,
+            "phase": 14,
+            "theme": "graveyard",
+            "pairs": 6,
+            "timeSec": 57,
+            "mechanics": [
+                "bomb"
+            ],
+            "difficulty": "medium",
+            "description": "Evita bombas: piensa rÃ¡pido. CronÃ³metro: 57s. 12 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 60
+            },
+            "seed": 1680117,
+            "setSize": 2
+        },
+        {
+            "id": 681,
+            "phase": 14,
+            "theme": "graveyard",
+            "pairs": 5,
+            "timeSec": 0,
+            "mechanics": [
+                "ghost"
+            ],
+            "difficulty": "easy",
+            "description": "Cartas fantasma aparecen y desaparecen. Sin cronÃ³metro. 10 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 25
+            },
+            "seed": 1681050,
+            "setSize": 2
+        },
+        {
+            "id": 682,
+            "phase": 14,
+            "theme": "graveyard",
+            "pairs": 5,
+            "timeSec": 0,
+            "mechanics": [
+                "chameleon"
+            ],
+            "difficulty": "medium",
+            "description": "Las cartas cambian de valor. Sin cronÃ³metro. 10 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 50
+            },
+            "seed": 1682050,
+            "setSize": 2
+        },
+        {
+            "id": 683,
+            "phase": 14,
+            "theme": "graveyard",
+            "pairs": 5,
+            "timeSec": 0,
+            "mechanics": [
+                "basic"
+            ],
+            "difficulty": "easy",
+            "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 10 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 25
+            },
+            "seed": 1683050,
+            "setSize": 2
+        },
+        {
+            "id": 684,
+            "phase": 14,
+            "theme": "graveyard",
+            "pairs": 8,
+            "timeSec": 78,
+            "mechanics": [
+                "darkness"
+            ],
+            "difficulty": "hard",
+            "description": "La oscuridad cubre el tablero poco a poco. CronÃ³metro: 78s. 16 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 120
+            },
+            "seed": 1684158,
+            "setSize": 2
+        },
+        {
+            "id": 685,
+            "phase": 14,
+            "theme": "graveyard",
+            "pairs": 8,
+            "timeSec": 75,
+            "mechanics": [
+                "chameleon"
+            ],
+            "difficulty": "hard",
+            "description": "Las cartas cambian de valor. CronÃ³metro: 75s. 16 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 120
+            },
+            "seed": 1685155,
+            "setSize": 2
+        },
+        {
+            "id": 686,
+            "phase": 14,
+            "theme": "graveyard",
+            "pairs": 10,
+            "timeSec": 0,
+            "mechanics": [
+                "basic"
+            ],
+            "difficulty": "medium",
+            "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 20 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 100
+            },
+            "seed": 1686100,
+            "setSize": 2
+        },
+        {
+            "id": 687,
+            "phase": 14,
+            "theme": "graveyard",
+            "pairs": 3,
+            "timeSec": 0,
+            "mechanics": [
+                "chameleon"
+            ],
+            "difficulty": "medium",
+            "description": "Las cartas cambian de valor. Sin cronÃ³metro. 6 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 30
+            },
+            "seed": 1687030,
+            "setSize": 2
+        },
+        {
+            "id": 688,
+            "phase": 14,
+            "theme": "graveyard",
+            "pairs": 6,
+            "timeSec": 0,
+            "mechanics": [
+                "frozen"
+            ],
+            "difficulty": "medium",
+            "description": "Cartas que se congelan temporalmente. Sin cronÃ³metro. 12 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 60
+            },
+            "seed": 1688060,
+            "setSize": 2
+        },
+        {
+            "id": 689,
+            "phase": 14,
+            "theme": "graveyard",
+            "pairs": 7,
+            "timeSec": 78,
+            "mechanics": [
+                "ghost"
+            ],
+            "difficulty": "medium",
+            "description": "Cartas fantasma aparecen y desaparecen. CronÃ³metro: 78s. 14 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 70
+            },
+            "seed": 1689148,
+            "setSize": 2
+        },
+        {
+            "id": 690,
+            "phase": 14,
+            "theme": "graveyard",
+            "pairs": 8,
+            "timeSec": 75,
+            "mechanics": [
+                "fog"
+            ],
+            "difficulty": "medium",
+            "description": "Niebla ligera: observa con atenciÃ³n. CronÃ³metro: 75s. 16 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 80
+            },
+            "seed": 1690155,
+            "setSize": 2
+        },
+        {
+            "id": 691,
+            "phase": 14,
+            "theme": "graveyard",
+            "pairs": 7,
+            "timeSec": 0,
+            "mechanics": [
+                "basic"
+            ],
+            "difficulty": "medium",
+            "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 14 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 70
+            },
+            "seed": 1691070,
+            "setSize": 2
+        },
+        {
+            "id": 692,
+            "phase": 14,
+            "theme": "graveyard",
+            "pairs": 7,
+            "timeSec": 75,
+            "mechanics": [
+                "frozen"
+            ],
+            "difficulty": "hard",
+            "description": "Cartas que se congelan temporalmente. CronÃ³metro: 75s. 14 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 105
+            },
+            "seed": 1692145,
+            "setSize": 2
+        },
+        {
+            "id": 693,
+            "phase": 14,
+            "theme": "graveyard",
+            "pairs": 3,
+            "timeSec": 0,
+            "mechanics": [
+                "fog"
+            ],
+            "difficulty": "easy",
+            "description": "Niebla ligera: observa con atenciÃ³n. Sin cronÃ³metro. 6 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 15
+            },
+            "seed": 1693030,
+            "setSize": 2
+        },
+        {
+            "id": 694,
+            "phase": 14,
+            "theme": "graveyard",
+            "pairs": 8,
+            "timeSec": 79,
+            "mechanics": [
+                "chameleon"
+            ],
+            "difficulty": "hard",
+            "description": "Las cartas cambian de valor. CronÃ³metro: 79s. 16 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 120
+            },
+            "seed": 1694159,
+            "setSize": 2
+        },
+        {
+            "id": 695,
+            "phase": 14,
+            "theme": "graveyard",
+            "pairs": 11,
+            "timeSec": 107,
+            "mechanics": [
+                "ghost"
+            ],
+            "difficulty": "hard",
+            "description": "Cartas fantasma aparecen y desaparecen. CronÃ³metro: 107s. 22 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 165
+            },
+            "seed": 1695217,
+            "setSize": 2
+        },
+        {
+            "id": 696,
+            "phase": 14,
+            "theme": "graveyard",
+            "pairs": 12,
+            "timeSec": 98,
+            "mechanics": [
+                "bomb"
+            ],
+            "difficulty": "hard",
+            "description": "algunas cartas explotan si fallas. CronÃ³metro: 98s. 24 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 180
+            },
+            "seed": 1696218,
+            "setSize": 2
+        },
+        {
+            "id": 697,
+            "phase": 14,
+            "theme": "graveyard",
+            "pairs": 3,
+            "timeSec": 0,
+            "mechanics": [
+                "frozen"
+            ],
+            "difficulty": "medium",
+            "description": "Cartas que se congelan temporalmente. Sin cronÃ³metro. 6 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 30
+            },
+            "seed": 1697030,
+            "setSize": 2
+        },
+        {
+            "id": 698,
+            "phase": 14,
+            "theme": "graveyard",
+            "pairs": 8,
+            "timeSec": 0,
+            "mechanics": [
+                "bomb"
+            ],
+            "difficulty": "medium",
+            "description": "Evita bombas: piensa rÃ¡pido. Sin cronÃ³metro. 16 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 80
+            },
+            "seed": 1698080,
+            "setSize": 2
+        },
+        {
+            "id": 699,
+            "phase": 14,
+            "theme": "graveyard",
+            "pairs": 8,
+            "timeSec": 0,
+            "mechanics": [
+                "rotation"
+            ],
+            "difficulty": "medium",
+            "description": "El tablero rota de vez en cuando. Sin cronÃ³metro. 16 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 80
+            },
+            "seed": 1699080,
+            "setSize": 2
+        },
+        {
+            "id": 700,
+            "phase": 14,
+            "theme": "graveyard",
+            "pairs": 12,
+            "timeSec": 102,
+            "mechanics": [
+                "frozen",
+                "chameleon"
+            ],
+            "difficulty": "hard",
+            "description": "Boss: 24 cartas, frozen + chameleon, crono 102s.",
+            "isBoss": true,
+            "rewards": {
+                "coins": 180
+            },
+            "seed": 1700222,
+            "setSize": 2
+        },
+        {
+            "id": 701,
+            "phase": 15,
+            "theme": "palace",
+            "pairs": 8,
+            "timeSec": 0,
+            "mechanics": [
+                "rotation"
+            ],
+            "difficulty": "medium",
+            "description": "El tablero rota de vez en cuando. Sin cronÃ³metro. 16 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 80
+            },
+            "seed": 1701080,
+            "setSize": 2
+        },
+        {
+            "id": 702,
+            "phase": 15,
+            "theme": "palace",
+            "pairs": 10,
+            "timeSec": 94,
+            "mechanics": [
+                "ghost"
+            ],
+            "difficulty": "hard",
+            "description": "Cartas fantasma aparecen y desaparecen. CronÃ³metro: 94s. 20 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 150
+            },
+            "seed": 1702194,
+            "setSize": 2
+        },
+        {
+            "id": 703,
+            "phase": 15,
+            "theme": "palace",
+            "pairs": 8,
+            "timeSec": 84,
+            "mechanics": [
+                "darkness"
+            ],
+            "difficulty": "hard",
+            "description": "La oscuridad cubre el tablero poco a poco. CronÃ³metro: 84s. 16 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 120
+            },
+            "seed": 1703164,
+            "setSize": 2
+        },
+        {
+            "id": 704,
+            "phase": 15,
+            "theme": "palace",
+            "pairs": 8,
+            "timeSec": 82,
+            "mechanics": [
+                "rotation"
+            ],
+            "difficulty": "hard",
+            "description": "El tablero rota de vez en cuando. CronÃ³metro: 82s. 16 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 120
+            },
+            "seed": 1704162,
+            "setSize": 2
+        },
+        {
+            "id": 705,
+            "phase": 15,
+            "theme": "palace",
+            "pairs": 12,
+            "timeSec": 0,
+            "mechanics": [
+                "frozen"
+            ],
+            "difficulty": "hard",
+            "description": "Cartas que se congelan temporalmente. Sin cronÃ³metro. 24 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 180
+            },
+            "seed": 1705120,
+            "setSize": 2
+        },
+        {
+            "id": 706,
+            "phase": 15,
+            "theme": "palace",
+            "pairs": 10,
+            "timeSec": 100,
+            "mechanics": [
+                "fog"
+            ],
+            "difficulty": "hard",
+            "description": "Niebla ligera: observa con atenciÃ³n. CronÃ³metro: 100s. 20 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 150
+            },
+            "seed": 1706200,
+            "setSize": 2
+        },
+        {
+            "id": 707,
+            "phase": 15,
+            "theme": "palace",
+            "pairs": 8,
+            "timeSec": 86,
+            "mechanics": [
+                "darkness"
+            ],
+            "difficulty": "hard",
+            "description": "La oscuridad cubre el tablero poco a poco. CronÃ³metro: 86s. 16 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 120
+            },
+            "seed": 1707166,
+            "setSize": 2
+        },
+        {
+            "id": 708,
+            "phase": 15,
+            "theme": "palace",
+            "pairs": 6,
+            "timeSec": 0,
+            "mechanics": [
+                "trio"
+            ],
+            "difficulty": "easy",
+            "description": "Encuentra trÃ­os idÃ©nticos. Sin cronÃ³metro. 12 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 30
+            },
+            "seed": 1708060,
+            "setSize": 3
+        },
+        {
+            "id": 709,
+            "phase": 15,
+            "theme": "palace",
+            "pairs": 8,
+            "timeSec": 73,
+            "mechanics": [
+                "darkness"
+            ],
+            "difficulty": "hard",
+            "description": "La oscuridad cubre el tablero poco a poco. CronÃ³metro: 73s. 16 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 120
+            },
+            "seed": 1709153,
+            "setSize": 2
+        },
+        {
+            "id": 710,
+            "phase": 15,
+            "theme": "palace",
+            "pairs": 6,
+            "timeSec": 57,
+            "mechanics": [
+                "bomb"
+            ],
+            "difficulty": "medium",
+            "description": "Evita bombas: piensa rÃ¡pido. CronÃ³metro: 57s. 12 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 60
+            },
+            "seed": 1710117,
+            "setSize": 2
+        },
+        {
+            "id": 711,
+            "phase": 15,
+            "theme": "palace",
+            "pairs": 9,
+            "timeSec": 0,
+            "mechanics": [
+                "basic"
+            ],
+            "difficulty": "medium",
+            "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 18 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 90
+            },
+            "seed": 1711090,
+            "setSize": 2
+        },
+        {
+            "id": 712,
+            "phase": 15,
+            "theme": "palace",
+            "pairs": 5,
+            "timeSec": 0,
+            "mechanics": [
+                "frozen"
+            ],
+            "difficulty": "medium",
+            "description": "Cartas que se congelan temporalmente. Sin cronÃ³metro. 10 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 50
+            },
+            "seed": 1712050,
+            "setSize": 2
+        },
+        {
+            "id": 713,
+            "phase": 15,
+            "theme": "palace",
+            "pairs": 12,
+            "timeSec": 0,
+            "mechanics": [
+                "bomb"
+            ],
+            "difficulty": "hard",
+            "description": "Evita bombas: piensa rÃ¡pido. Sin cronÃ³metro. 24 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 180
+            },
+            "seed": 1713120,
+            "setSize": 2
+        },
+        {
+            "id": 714,
+            "phase": 15,
+            "theme": "palace",
+            "pairs": 5,
+            "timeSec": 0,
+            "mechanics": [
+                "basic"
+            ],
+            "difficulty": "easy",
+            "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 10 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 25
+            },
+            "seed": 1714050,
+            "setSize": 2
+        },
+        {
+            "id": 715,
+            "phase": 15,
+            "theme": "palace",
+            "pairs": 11,
+            "timeSec": 0,
+            "mechanics": [
+                "ghost"
+            ],
+            "difficulty": "medium",
+            "description": "Cartas fantasma aparecen y desaparecen. Sin cronÃ³metro. 22 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 110
+            },
+            "seed": 1715110,
+            "setSize": 2
+        },
+        {
+            "id": 716,
+            "phase": 15,
+            "theme": "palace",
+            "pairs": 9,
+            "timeSec": 0,
+            "mechanics": [
+                "chameleon"
+            ],
+            "difficulty": "hard",
+            "description": "Las cartas cambian de valor. Sin cronÃ³metro. 18 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 135
+            },
+            "seed": 1716090,
+            "setSize": 2
+        },
+        {
+            "id": 717,
+            "phase": 15,
+            "theme": "palace",
+            "pairs": 7,
+            "timeSec": 0,
+            "mechanics": [
+                "basic"
+            ],
+            "difficulty": "medium",
+            "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 14 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 70
+            },
+            "seed": 1717070,
+            "setSize": 2
+        },
+        {
+            "id": 718,
+            "phase": 15,
+            "theme": "palace",
+            "pairs": 10,
+            "timeSec": 102,
+            "mechanics": [
+                "bomb"
+            ],
+            "difficulty": "hard",
+            "description": "algunas cartas explotan si fallas. CronÃ³metro: 102s. 20 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 150
+            },
+            "seed": 1718202,
+            "setSize": 2
+        },
+        {
+            "id": 719,
+            "phase": 15,
+            "theme": "palace",
+            "pairs": 2,
+            "timeSec": 0,
+            "mechanics": [
+                "fog"
+            ],
+            "difficulty": "easy",
+            "description": "Niebla ligera: observa con atenciÃ³n. Sin cronÃ³metro. 4 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 10
+            },
+            "seed": 1719020,
+            "setSize": 2
+        },
+        {
+            "id": 720,
+            "phase": 15,
+            "theme": "palace",
+            "pairs": 8,
+            "timeSec": 0,
+            "mechanics": [
+                "darkness"
+            ],
+            "difficulty": "medium",
+            "description": "La oscuridad cubre el tablero poco a poco. Sin cronÃ³metro. 16 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 80
+            },
+            "seed": 1720080,
+            "setSize": 2
+        },
+        {
+            "id": 721,
+            "phase": 15,
+            "theme": "palace",
+            "pairs": 10,
+            "timeSec": 95,
+            "mechanics": [
+                "fog"
+            ],
+            "difficulty": "hard",
+            "description": "Niebla ligera: observa con atenciÃ³n. CronÃ³metro: 95s. 20 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 150
+            },
+            "seed": 1721195,
+            "setSize": 2
+        },
+        {
+            "id": 722,
+            "phase": 15,
+            "theme": "palace",
+            "pairs": 7,
+            "timeSec": 74,
+            "mechanics": [
+                "basic"
+            ],
+            "difficulty": "medium",
+            "description": "Nivel clÃ¡sico sin trucos. CronÃ³metro: 74s. 14 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 70
+            },
+            "seed": 1722144,
+            "setSize": 2
+        },
+        {
+            "id": 723,
+            "phase": 15,
+            "theme": "palace",
+            "pairs": 7,
+            "timeSec": 0,
+            "mechanics": [
+                "basic"
+            ],
+            "difficulty": "medium",
+            "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 14 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 70
+            },
+            "seed": 1723070,
+            "setSize": 2
+        },
+        {
+            "id": 724,
+            "phase": 15,
+            "theme": "palace",
+            "pairs": 10,
+            "timeSec": 0,
+            "mechanics": [
+                "darkness"
+            ],
+            "difficulty": "hard",
+            "description": "La oscuridad cubre el tablero poco a poco. Sin cronÃ³metro. 20 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 150
+            },
+            "seed": 1724100,
+            "setSize": 2
+        },
+        {
+            "id": 725,
+            "phase": 15,
+            "theme": "palace",
+            "pairs": 12,
+            "timeSec": 0,
+            "mechanics": [
+                "basic"
+            ],
+            "difficulty": "medium",
+            "description": "juega normalmente. Sin cronÃ³metro. 24 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 120
+            },
+            "seed": 1725120,
+            "setSize": 2
+        },
+        {
+            "id": 726,
+            "phase": 15,
+            "theme": "palace",
+            "pairs": 8,
+            "timeSec": 83,
+            "mechanics": [
+                "bomb"
+            ],
+            "difficulty": "hard",
+            "description": "Evita bombas: piensa rÃ¡pido. CronÃ³metro: 83s. 16 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 120
+            },
+            "seed": 1726163,
+            "setSize": 2
+        },
+        {
+            "id": 727,
+            "phase": 15,
+            "theme": "palace",
+            "pairs": 6,
+            "timeSec": 0,
+            "mechanics": [
+                "trio"
+            ],
+            "difficulty": "easy",
+            "description": "Encuentra trÃ­os idÃ©nticos. Sin cronÃ³metro. 12 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 30
+            },
+            "seed": 1727060,
+            "setSize": 3
+        },
+        {
+            "id": 728,
+            "phase": 15,
+            "theme": "palace",
+            "pairs": 8,
+            "timeSec": 73,
+            "mechanics": [
+                "basic"
+            ],
+            "difficulty": "medium",
+            "description": "Nivel clÃ¡sico sin trucos. CronÃ³metro: 73s. 16 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 80
+            },
+            "seed": 1728153,
+            "setSize": 2
+        },
+        {
+            "id": 729,
+            "phase": 15,
+            "theme": "palace",
+            "pairs": 8,
+            "timeSec": 0,
+            "mechanics": [
+                "basic"
+            ],
+            "difficulty": "medium",
+            "description": "juega normalmente. Sin cronÃ³metro. 16 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 80
+            },
+            "seed": 1729080,
+            "setSize": 2
+        },
+        {
+            "id": 730,
+            "phase": 15,
+            "theme": "palace",
+            "pairs": 10,
+            "timeSec": 95,
+            "mechanics": [
+                "darkness"
+            ],
+            "difficulty": "hard",
+            "description": "La oscuridad cubre el tablero poco a poco. CronÃ³metro: 95s. 20 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 150
+            },
+            "seed": 1730195,
+            "setSize": 2
+        },
+        {
+            "id": 731,
+            "phase": 15,
+            "theme": "palace",
+            "pairs": 6,
+            "timeSec": 0,
+            "mechanics": [
+                "rotation"
+            ],
+            "difficulty": "medium",
+            "description": "El tablero rota de vez en cuando. Sin cronÃ³metro. 12 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 60
+            },
+            "seed": 1731060,
+            "setSize": 2
+        },
+        {
+            "id": 732,
+            "phase": 15,
+            "theme": "palace",
+            "pairs": 9,
+            "timeSec": 0,
+            "mechanics": [
+                "basic"
+            ],
+            "difficulty": "medium",
+            "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 18 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 90
+            },
+            "seed": 1732090,
+            "setSize": 2
+        },
+        {
+            "id": 733,
+            "phase": 15,
+            "theme": "palace",
+            "pairs": 2,
+            "timeSec": 0,
+            "mechanics": [
+                "rotation"
+            ],
+            "difficulty": "medium",
+            "description": "El tablero rota de vez en cuando. Sin cronÃ³metro. 4 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 20
+            },
+            "seed": 1733020,
+            "setSize": 2
+        },
+        {
+            "id": 734,
+            "phase": 15,
+            "theme": "palace",
+            "pairs": 8,
+            "timeSec": 84,
+            "mechanics": [
+                "frozen"
+            ],
+            "difficulty": "hard",
+            "description": "Cartas que se congelan temporalmente. CronÃ³metro: 84s. 16 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 120
+            },
+            "seed": 1734164,
+            "setSize": 2
+        },
+        {
+            "id": 735,
+            "phase": 15,
+            "theme": "palace",
+            "pairs": 9,
+            "timeSec": 0,
+            "mechanics": [
+                "trio"
+            ],
+            "difficulty": "hard",
+            "description": "Encuentra trÃ­os idÃ©nticos. Sin cronÃ³metro. 18 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 135
+            },
+            "seed": 1735090,
+            "setSize": 3
+        },
+        {
+            "id": 736,
+            "phase": 15,
+            "theme": "palace",
+            "pairs": 2,
+            "timeSec": 0,
+            "mechanics": [
+                "fog"
+            ],
+            "difficulty": "easy",
+            "description": "Niebla ligera: observa con atenciÃ³n. Sin cronÃ³metro. 4 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 10
+            },
+            "seed": 1736020,
+            "setSize": 2
+        },
+        {
+            "id": 737,
+            "phase": 15,
+            "theme": "palace",
+            "pairs": 8,
+            "timeSec": 0,
+            "mechanics": [
+                "basic"
+            ],
+            "difficulty": "medium",
+            "description": "juega normalmente. Sin cronÃ³metro. 16 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 80
+            },
+            "seed": 1737080,
+            "setSize": 2
+        },
+        {
+            "id": 738,
+            "phase": 15,
+            "theme": "palace",
+            "pairs": 7,
+            "timeSec": 0,
+            "mechanics": [
+                "basic"
+            ],
+            "difficulty": "medium",
+            "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 14 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 70
+            },
+            "seed": 1738070,
+            "setSize": 2
+        },
+        {
+            "id": 739,
+            "phase": 15,
+            "theme": "palace",
+            "pairs": 3,
+            "timeSec": 0,
+            "mechanics": [
+                "trio"
+            ],
+            "difficulty": "easy",
+            "description": "Encuentra trÃ­os idÃ©nticos. Sin cronÃ³metro. 6 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 15
+            },
+            "seed": 1739030,
+            "setSize": 3
+        },
+        {
+            "id": 740,
+            "phase": 15,
+            "theme": "palace",
+            "pairs": 8,
+            "timeSec": 0,
+            "mechanics": [
+                "frozen"
+            ],
+            "difficulty": "medium",
+            "description": "Cartas que se congelan temporalmente. Sin cronÃ³metro. 16 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 80
+            },
+            "seed": 1740080,
+            "setSize": 2
+        },
+        {
+            "id": 741,
+            "phase": 15,
+            "theme": "palace",
+            "pairs": 8,
+            "timeSec": 76,
+            "mechanics": [
+                "darkness"
+            ],
+            "difficulty": "hard",
+            "description": "La oscuridad cubre el tablero poco a poco. CronÃ³metro: 76s. 16 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 120
+            },
+            "seed": 1741156,
+            "setSize": 2
+        },
+        {
+            "id": 742,
+            "phase": 15,
+            "theme": "palace",
+            "pairs": 8,
+            "timeSec": 74,
+            "mechanics": [
+                "fog"
+            ],
+            "difficulty": "medium",
+            "description": "las cartas estÃ¡n parcialmente ocultas. CronÃ³metro: 74s. 16 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 80
+            },
+            "seed": 1742154,
+            "setSize": 2
+        },
+        {
+            "id": 743,
+            "phase": 15,
+            "theme": "palace",
+            "pairs": 6,
+            "timeSec": 0,
+            "mechanics": [
+                "ghost"
+            ],
+            "difficulty": "easy",
+            "description": "Cartas fantasma aparecen y desaparecen. Sin cronÃ³metro. 12 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 30
+            },
+            "seed": 1743060,
+            "setSize": 2
+        },
+        {
+            "id": 744,
+            "phase": 15,
+            "theme": "palace",
+            "pairs": 4,
+            "timeSec": 0,
+            "mechanics": [
+                "frozen"
+            ],
+            "difficulty": "medium",
+            "description": "Cartas que se congelan temporalmente. Sin cronÃ³metro. 8 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 40
+            },
+            "seed": 1744040,
+            "setSize": 2
+        },
+        {
+            "id": 745,
+            "phase": 15,
+            "theme": "palace",
+            "pairs": 4,
+            "timeSec": 0,
+            "mechanics": [
+                "bomb"
+            ],
+            "difficulty": "medium",
+            "description": "Evita bombas: piensa rÃ¡pido. Sin cronÃ³metro. 8 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 40
+            },
+            "seed": 1745040,
+            "setSize": 2
+        },
+        {
+            "id": 746,
+            "phase": 15,
+            "theme": "palace",
+            "pairs": 9,
+            "timeSec": 0,
+            "mechanics": [
+                "rotation"
+            ],
+            "difficulty": "hard",
+            "description": "El tablero rota de vez en cuando. Sin cronÃ³metro. 18 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 135
+            },
+            "seed": 1746090,
+            "setSize": 2
+        },
+        {
+            "id": 747,
+            "phase": 15,
+            "theme": "palace",
+            "pairs": 12,
+            "timeSec": 0,
+            "mechanics": [
+                "trio"
+            ],
+            "difficulty": "hard",
+            "description": "Encuentra trÃ­os idÃ©nticos. Sin cronÃ³metro. 24 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 180
+            },
+            "seed": 1747120,
+            "setSize": 3
+        },
+        {
+            "id": 748,
+            "phase": 15,
+            "theme": "palace",
+            "pairs": 7,
+            "timeSec": 0,
+            "mechanics": [
+                "rotation"
+            ],
+            "difficulty": "medium",
+            "description": "El tablero rota de vez en cuando. Sin cronÃ³metro. 14 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 70
+            },
+            "seed": 1748070,
+            "setSize": 2
+        },
+        {
+            "id": 749,
+            "phase": 15,
+            "theme": "palace",
+            "pairs": 9,
+            "timeSec": 84,
+            "mechanics": [
+                "chameleon"
+            ],
+            "difficulty": "hard",
+            "description": "Las cartas cambian de valor. CronÃ³metro: 84s. 18 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 135
+            },
+            "seed": 1749174,
+            "setSize": 2
+        },
+        {
+            "id": 750,
+            "phase": 15,
+            "theme": "palace",
+            "pairs": 12,
+            "timeSec": 113,
+            "mechanics": [
+                "bomb",
+                "fog"
+            ],
+            "difficulty": "hard",
+            "description": "Boss: 24 cartas, bomb + fog, crono 113s.",
+            "isBoss": true,
+            "rewards": {
+                "coins": 180
+            },
+            "seed": 1750233,
+            "setSize": 2
+        },
+        {
+            "id": 751,
+            "phase": 16,
+            "theme": "mine",
+            "pairs": 8,
+            "timeSec": 76,
+            "mechanics": [
+                "basic"
+            ],
+            "difficulty": "medium",
+            "description": "Nivel clÃ¡sico sin trucos. CronÃ³metro: 76s. 16 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 80
+            },
+            "seed": 1751156,
+            "setSize": 2
+        },
+        {
+            "id": 752,
+            "phase": 16,
+            "theme": "mine",
+            "pairs": 12,
+            "timeSec": 0,
+            "mechanics": [
+                "darkness"
+            ],
+            "difficulty": "hard",
+            "description": "La oscuridad cubre el tablero poco a poco. Sin cronÃ³metro. 24 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 180
+            },
+            "seed": 1752120,
+            "setSize": 2
+        },
+        {
+            "id": 753,
+            "phase": 16,
+            "theme": "mine",
+            "pairs": 2,
+            "timeSec": 0,
+            "mechanics": [
+                "fog"
+            ],
+            "difficulty": "easy",
+            "description": "Niebla ligera: observa con atenciÃ³n. Sin cronÃ³metro. 4 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 10
+            },
+            "seed": 1753020,
+            "setSize": 2
+        },
+        {
+            "id": 754,
+            "phase": 16,
+            "theme": "mine",
+            "pairs": 7,
+            "timeSec": 69,
+            "mechanics": [
+                "basic"
+            ],
+            "difficulty": "medium",
+            "description": "Nivel clÃ¡sico sin trucos. CronÃ³metro: 69s. 14 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 70
+            },
+            "seed": 1754139,
+            "setSize": 2
+        },
+        {
+            "id": 755,
+            "phase": 16,
+            "theme": "mine",
+            "pairs": 8,
+            "timeSec": 0,
+            "mechanics": [
+                "basic"
+            ],
+            "difficulty": "medium",
+            "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 16 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 80
+            },
+            "seed": 1755080,
+            "setSize": 2
+        },
+        {
+            "id": 756,
+            "phase": 16,
+            "theme": "mine",
+            "pairs": 8,
+            "timeSec": 88,
+            "mechanics": [
+                "darkness"
+            ],
+            "difficulty": "hard",
+            "description": "La oscuridad cubre el tablero poco a poco. CronÃ³metro: 88s. 16 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 120
+            },
+            "seed": 1756168,
+            "setSize": 2
+        },
+        {
+            "id": 757,
+            "phase": 16,
+            "theme": "mine",
+            "pairs": 3,
+            "timeSec": 0,
+            "mechanics": [
+                "rotation"
+            ],
+            "difficulty": "medium",
+            "description": "El tablero rota de vez en cuando. Sin cronÃ³metro. 6 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 30
+            },
+            "seed": 1757030,
+            "setSize": 2
+        },
+        {
+            "id": 758,
+            "phase": 16,
+            "theme": "mine",
+            "pairs": 6,
+            "timeSec": 0,
+            "mechanics": [
+                "frozen"
+            ],
+            "difficulty": "medium",
+            "description": "Cartas que se congelan temporalmente. Sin cronÃ³metro. 12 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 60
+            },
+            "seed": 1758060,
+            "setSize": 2
+        },
+        {
+            "id": 759,
+            "phase": 16,
+            "theme": "mine",
+            "pairs": 8,
+            "timeSec": 80,
+            "mechanics": [
+                "fog"
+            ],
+            "difficulty": "medium",
+            "description": "Niebla ligera: observa con atenciÃ³n. CronÃ³metro: 80s. 16 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 80
+            },
+            "seed": 1759160,
+            "setSize": 2
+        },
+        {
+            "id": 760,
+            "phase": 16,
+            "theme": "mine",
+            "pairs": 6,
+            "timeSec": 0,
+            "mechanics": [
+                "basic"
+            ],
+            "difficulty": "easy",
+            "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 12 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 30
+            },
+            "seed": 1760060,
+            "setSize": 2
+        },
+        {
+            "id": 761,
+            "phase": 16,
+            "theme": "mine",
+            "pairs": 4,
+            "timeSec": 0,
+            "mechanics": [
+                "frozen"
+            ],
+            "difficulty": "medium",
+            "description": "Cartas que se congelan temporalmente. Sin cronÃ³metro. 8 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 40
+            },
+            "seed": 1761040,
+            "setSize": 2
+        },
+        {
+            "id": 762,
+            "phase": 16,
+            "theme": "mine",
+            "pairs": 8,
+            "timeSec": 0,
+            "mechanics": [
+                "basic"
+            ],
+            "difficulty": "medium",
+            "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 16 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 80
+            },
+            "seed": 1762080,
+            "setSize": 2
+        },
+        {
+            "id": 763,
+            "phase": 16,
+            "theme": "mine",
+            "pairs": 8,
+            "timeSec": 0,
+            "mechanics": [
+                "basic"
+            ],
+            "difficulty": "medium",
+            "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 16 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 80
+            },
+            "seed": 1763080,
+            "setSize": 2
+        },
+        {
+            "id": 764,
+            "phase": 16,
+            "theme": "mine",
+            "pairs": 7,
+            "timeSec": 0,
+            "mechanics": [
+                "chameleon"
+            ],
+            "difficulty": "medium",
+            "description": "Las cartas cambian de valor. Sin cronÃ³metro. 14 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 70
+            },
+            "seed": 1764070,
+            "setSize": 2
+        },
+        {
+            "id": 765,
+            "phase": 16,
+            "theme": "mine",
+            "pairs": 9,
+            "timeSec": 0,
+            "mechanics": [
+                "fog"
+            ],
+            "difficulty": "medium",
+            "description": "Niebla ligera: observa con atenciÃ³n. Sin cronÃ³metro. 18 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 90
+            },
+            "seed": 1765090,
+            "setSize": 2
+        },
+        {
+            "id": 766,
+            "phase": 16,
+            "theme": "mine",
+            "pairs": 12,
+            "timeSec": 0,
+            "mechanics": [
+                "basic"
+            ],
+            "difficulty": "medium",
+            "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 24 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 120
+            },
+            "seed": 1766120,
+            "setSize": 2
+        },
+        {
+            "id": 767,
+            "phase": 16,
+            "theme": "mine",
+            "pairs": 8,
+            "timeSec": 0,
+            "mechanics": [
+                "darkness"
+            ],
+            "difficulty": "medium",
+            "description": "La oscuridad cubre el tablero poco a poco. Sin cronÃ³metro. 16 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 80
+            },
+            "seed": 1767080,
+            "setSize": 2
+        },
+        {
+            "id": 768,
+            "phase": 16,
+            "theme": "mine",
+            "pairs": 12,
+            "timeSec": 108,
+            "mechanics": [
+                "rotation"
+            ],
+            "difficulty": "hard",
+            "description": "El tablero rota de vez en cuando. CronÃ³metro: 108s. 24 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 180
+            },
+            "seed": 1768228,
+            "setSize": 2
+        },
+        {
+            "id": 769,
+            "phase": 16,
+            "theme": "mine",
+            "pairs": 8,
+            "timeSec": 75,
+            "mechanics": [
+                "fog"
+            ],
+            "difficulty": "medium",
+            "description": "Niebla ligera: observa con atenciÃ³n. CronÃ³metro: 75s. 16 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 80
+            },
+            "seed": 1769155,
+            "setSize": 2
+        },
+        {
+            "id": 770,
+            "phase": 16,
+            "theme": "mine",
+            "pairs": 8,
+            "timeSec": 0,
+            "mechanics": [
+                "basic"
+            ],
+            "difficulty": "medium",
+            "description": "juega normalmente. Sin cronÃ³metro. 16 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 80
+            },
+            "seed": 1770080,
+            "setSize": 2
+        },
+        {
+            "id": 771,
+            "phase": 16,
+            "theme": "mine",
+            "pairs": 6,
+            "timeSec": 55,
+            "mechanics": [
+                "rotation"
+            ],
+            "difficulty": "medium",
+            "description": "El tablero rota de vez en cuando. CronÃ³metro: 55s. 12 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 60
+            },
+            "seed": 1771115,
+            "setSize": 2
+        },
+        {
+            "id": 772,
+            "phase": 16,
+            "theme": "mine",
+            "pairs": 6,
+            "timeSec": 0,
+            "mechanics": [
+                "trio"
+            ],
+            "difficulty": "easy",
+            "description": "Encuentra trÃ­os idÃ©nticos. Sin cronÃ³metro. 12 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 30
+            },
+            "seed": 1772060,
+            "setSize": 3
+        },
+        {
+            "id": 773,
+            "phase": 16,
+            "theme": "mine",
+            "pairs": 10,
+            "timeSec": 103,
+            "mechanics": [
+                "fog"
+            ],
+            "difficulty": "hard",
+            "description": "Niebla ligera: observa con atenciÃ³n. CronÃ³metro: 103s. 20 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 150
+            },
+            "seed": 1773203,
+            "setSize": 2
+        },
+        {
+            "id": 774,
+            "phase": 16,
+            "theme": "mine",
+            "pairs": 4,
+            "timeSec": 0,
+            "mechanics": [
+                "frozen"
+            ],
+            "difficulty": "medium",
+            "description": "Cartas que se congelan temporalmente. Sin cronÃ³metro. 8 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 40
+            },
+            "seed": 1774040,
+            "setSize": 2
+        },
+        {
+            "id": 775,
+            "phase": 16,
+            "theme": "mine",
+            "pairs": 3,
+            "timeSec": 0,
+            "mechanics": [
+                "basic"
+            ],
+            "difficulty": "easy",
+            "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 6 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 15
+            },
+            "seed": 1775030,
+            "setSize": 2
+        },
+        {
+            "id": 776,
+            "phase": 16,
+            "theme": "mine",
+            "pairs": 8,
+            "timeSec": 73,
+            "mechanics": [
+                "basic"
+            ],
+            "difficulty": "medium",
+            "description": "Nivel clÃ¡sico sin trucos. CronÃ³metro: 73s. 16 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 80
+            },
+            "seed": 1776153,
+            "setSize": 2
+        },
+        {
+            "id": 777,
+            "phase": 16,
+            "theme": "mine",
+            "pairs": 10,
+            "timeSec": 0,
+            "mechanics": [
+                "darkness"
+            ],
+            "difficulty": "hard",
+            "description": "La oscuridad cubre el tablero poco a poco. Sin cronÃ³metro. 20 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 150
+            },
+            "seed": 1777100,
+            "setSize": 2
+        },
+        {
+            "id": 778,
+            "phase": 16,
+            "theme": "mine",
+            "pairs": 8,
+            "timeSec": 78,
+            "mechanics": [
+                "frozen"
+            ],
+            "difficulty": "hard",
+            "description": "Cartas que se congelan temporalmente. CronÃ³metro: 78s. 16 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 120
+            },
+            "seed": 1778158,
+            "setSize": 2
+        },
+        {
+            "id": 779,
+            "phase": 16,
+            "theme": "mine",
+            "pairs": 8,
+            "timeSec": 0,
+            "mechanics": [
+                "basic"
+            ],
+            "difficulty": "medium",
+            "description": "juega normalmente. Sin cronÃ³metro. 16 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 80
+            },
+            "seed": 1779080,
+            "setSize": 2
+        },
+        {
+            "id": 780,
+            "phase": 16,
+            "theme": "mine",
+            "pairs": 8,
+            "timeSec": 0,
+            "mechanics": [
+                "darkness"
+            ],
+            "difficulty": "medium",
+            "description": "La oscuridad cubre el tablero poco a poco. Sin cronÃ³metro. 16 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 80
+            },
+            "seed": 1780080,
+            "setSize": 2
+        },
+        {
+            "id": 781,
+            "phase": 16,
+            "theme": "mine",
+            "pairs": 6,
+            "timeSec": 0,
+            "mechanics": [
+                "bomb"
+            ],
+            "difficulty": "medium",
+            "description": "Evita bombas: piensa rÃ¡pido. Sin cronÃ³metro. 12 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 60
+            },
+            "seed": 1781060,
+            "setSize": 2
+        },
+        {
+            "id": 782,
+            "phase": 16,
+            "theme": "mine",
+            "pairs": 8,
+            "timeSec": 87,
+            "mechanics": [
+                "darkness"
+            ],
+            "difficulty": "hard",
+            "description": "La oscuridad cubre el tablero poco a poco. CronÃ³metro: 87s. 16 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 120
+            },
+            "seed": 1782167,
+            "setSize": 2
+        },
+        {
+            "id": 783,
+            "phase": 16,
+            "theme": "mine",
+            "pairs": 7,
+            "timeSec": 0,
+            "mechanics": [
+                "ghost"
+            ],
+            "difficulty": "medium",
+            "description": "Cartas fantasma aparecen y desaparecen. Sin cronÃ³metro. 14 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 70
+            },
+            "seed": 1783070,
+            "setSize": 2
+        },
+        {
+            "id": 784,
+            "phase": 16,
+            "theme": "mine",
+            "pairs": 7,
+            "timeSec": 63,
+            "mechanics": [
+                "basic"
+            ],
+            "difficulty": "medium",
+            "description": "Nivel clÃ¡sico sin trucos. CronÃ³metro: 63s. 14 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 70
+            },
+            "seed": 1784133,
+            "setSize": 2
+        },
+        {
+            "id": 785,
+            "phase": 16,
+            "theme": "mine",
+            "pairs": 12,
+            "timeSec": 104,
+            "mechanics": [
+                "chameleon"
+            ],
+            "difficulty": "hard",
+            "description": "Las cartas cambian de valor. CronÃ³metro: 104s. 24 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 180
+            },
+            "seed": 1785224,
+            "setSize": 2
+        },
+        {
+            "id": 786,
+            "phase": 16,
+            "theme": "mine",
+            "pairs": 9,
+            "timeSec": 0,
+            "mechanics": [
+                "trio"
+            ],
+            "difficulty": "hard",
+            "description": "Encuentra trÃ­os idÃ©nticos. Sin cronÃ³metro. 18 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 135
+            },
+            "seed": 1786090,
+            "setSize": 3
+        },
+        {
+            "id": 787,
+            "phase": 16,
+            "theme": "mine",
+            "pairs": 5,
+            "timeSec": 45,
+            "mechanics": [
+                "frozen"
+            ],
+            "difficulty": "medium",
+            "description": "Cartas que se congelan temporalmente. CronÃ³metro: 45s. 10 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 50
+            },
+            "seed": 1787095,
+            "setSize": 2
+        },
+        {
+            "id": 788,
+            "phase": 16,
+            "theme": "mine",
+            "pairs": 4,
+            "timeSec": 0,
+            "mechanics": [
+                "ghost"
+            ],
+            "difficulty": "easy",
+            "description": "Cartas fantasma aparecen y desaparecen. Sin cronÃ³metro. 8 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 20
+            },
+            "seed": 1788040,
+            "setSize": 2
+        },
+        {
+            "id": 789,
+            "phase": 16,
+            "theme": "mine",
+            "pairs": 6,
+            "timeSec": 0,
+            "mechanics": [
+                "bomb"
+            ],
+            "difficulty": "medium",
+            "description": "Evita bombas: piensa rÃ¡pido. Sin cronÃ³metro. 12 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 60
+            },
+            "seed": 1789060,
+            "setSize": 2
+        },
+        {
+            "id": 790,
+            "phase": 16,
+            "theme": "mine",
+            "pairs": 9,
+            "timeSec": 0,
+            "mechanics": [
+                "ghost"
+            ],
+            "difficulty": "medium",
+            "description": "Cartas fantasma aparecen y desaparecen. Sin cronÃ³metro. 18 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 90
+            },
+            "seed": 1790090,
+            "setSize": 2
+        },
+        {
+            "id": 791,
+            "phase": 16,
+            "theme": "mine",
+            "pairs": 7,
+            "timeSec": 0,
+            "mechanics": [
+                "bomb"
+            ],
+            "difficulty": "medium",
+            "description": "Evita bombas: piensa rÃ¡pido. Sin cronÃ³metro. 14 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 70
+            },
+            "seed": 1791070,
+            "setSize": 2
+        },
+        {
+            "id": 792,
+            "phase": 16,
+            "theme": "mine",
+            "pairs": 6,
+            "timeSec": 68,
+            "mechanics": [
+                "fog"
+            ],
+            "difficulty": "medium",
+            "description": "Niebla ligera: observa con atenciÃ³n. CronÃ³metro: 68s. 12 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 60
+            },
+            "seed": 1792128,
+            "setSize": 2
+        },
+        {
+            "id": 793,
+            "phase": 16,
+            "theme": "mine",
+            "pairs": 12,
+            "timeSec": 110,
+            "mechanics": [
+                "darkness"
+            ],
+            "difficulty": "hard",
+            "description": "La oscuridad cubre el tablero poco a poco. CronÃ³metro: 110s. 24 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 180
+            },
+            "seed": 1793230,
+            "setSize": 2
+        },
+        {
+            "id": 794,
+            "phase": 16,
+            "theme": "mine",
+            "pairs": 6,
+            "timeSec": 59,
+            "mechanics": [
+                "ghost"
+            ],
+            "difficulty": "medium",
+            "description": "Cartas fantasma aparecen y desaparecen. CronÃ³metro: 59s. 12 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 60
+            },
+            "seed": 1794119,
+            "setSize": 2
+        },
+        {
+            "id": 795,
+            "phase": 16,
+            "theme": "mine",
+            "pairs": 3,
+            "timeSec": 0,
+            "mechanics": [
+                "bomb"
+            ],
+            "difficulty": "medium",
+            "description": "Evita bombas: piensa rÃ¡pido. Sin cronÃ³metro. 6 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 30
+            },
+            "seed": 1795030,
+            "setSize": 2
+        },
+        {
+            "id": 796,
+            "phase": 16,
+            "theme": "mine",
+            "pairs": 4,
+            "timeSec": 0,
+            "mechanics": [
+                "rotation"
+            ],
+            "difficulty": "medium",
+            "description": "El tablero rota de vez en cuando. Sin cronÃ³metro. 8 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 40
+            },
+            "seed": 1796040,
+            "setSize": 2
+        },
+        {
+            "id": 797,
+            "phase": 16,
+            "theme": "mine",
+            "pairs": 12,
+            "timeSec": 0,
+            "mechanics": [
+                "fog"
+            ],
+            "difficulty": "medium",
+            "description": "Niebla ligera: observa con atenciÃ³n. Sin cronÃ³metro. 24 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 120
+            },
+            "seed": 1797120,
+            "setSize": 2
+        },
+        {
+            "id": 798,
+            "phase": 16,
+            "theme": "mine",
+            "pairs": 6,
+            "timeSec": 0,
+            "mechanics": [
+                "trio"
+            ],
+            "difficulty": "easy",
+            "description": "Encuentra trÃ­os idÃ©nticos. Sin cronÃ³metro. 12 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 30
+            },
+            "seed": 1798060,
+            "setSize": 3
+        },
+        {
+            "id": 799,
+            "phase": 16,
+            "theme": "mine",
+            "pairs": 9,
+            "timeSec": 0,
+            "mechanics": [
+                "chameleon"
+            ],
+            "difficulty": "hard",
+            "description": "Las cartas cambian de valor. Sin cronÃ³metro. 18 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 135
+            },
+            "seed": 1799090,
+            "setSize": 2
+        },
+        {
+            "id": 800,
+            "phase": 16,
+            "theme": "mine",
+            "pairs": 12,
+            "timeSec": 98,
+            "mechanics": [
+                "fog",
+                "darkness"
+            ],
+            "difficulty": "hard",
+            "description": "Boss: 24 cartas, fog + darkness, crono 98s.",
+            "isBoss": true,
+            "rewards": {
+                "coins": 180
+            },
+            "seed": 1800218,
+            "setSize": 2
+        },
+        {
+            "id": 801,
+            "phase": 17,
+            "theme": "temple",
+            "pairs": 7,
+            "timeSec": 0,
+            "mechanics": [
+                "chameleon"
+            ],
+            "difficulty": "medium",
+            "description": "Niebla ligera: observa con atenciÃ³n. Sin cronÃ³metro. 14 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 70
+            },
+            "seed": 1801070,
+            "setSize": 2
+        },
+        {
+            "id": 802,
+            "phase": 17,
+            "theme": "temple",
+            "pairs": 4,
+            "timeSec": 0,
+            "mechanics": [
+                "ghost"
+            ],
+            "difficulty": "easy",
+            "description": "Cartas fantasma aparecen y desaparecen. Sin cronÃ³metro. 8 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 20
+            },
+            "seed": 1802040,
+            "setSize": 2
+        },
+        {
+            "id": 803,
+            "phase": 17,
+            "theme": "temple",
+            "pairs": 8,
+            "timeSec": 84,
+            "mechanics": [
+                "rotation"
+            ],
+            "difficulty": "hard",
+            "description": "El tablero rota de vez en cuando. CronÃ³metro: 84s. 16 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 120
+            },
+            "seed": 1803164,
+            "setSize": 2
+        },
+        {
+            "id": 804,
+            "phase": 17,
+            "theme": "temple",
+            "pairs": 6,
+            "timeSec": 0,
+            "mechanics": [
+                "basic"
+            ],
+            "difficulty": "easy",
+            "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 12 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 30
+            },
+            "seed": 1804060,
+            "setSize": 2
+        },
+        {
+            "id": 805,
+            "phase": 17,
+            "theme": "temple",
+            "pairs": 5,
+            "timeSec": 0,
+            "mechanics": [
+                "rotation"
+            ],
+            "difficulty": "medium",
+            "description": "El tablero rota de vez en cuando. Sin cronÃ³metro. 10 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 50
+            },
+            "seed": 1805050,
+            "setSize": 2
+        },
+        {
+            "id": 806,
+            "phase": 17,
+            "theme": "temple",
+            "pairs": 5,
+            "timeSec": 0,
+            "mechanics": [
+                "basic"
+            ],
+            "difficulty": "easy",
+            "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 10 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 25
+            },
+            "seed": 1806050,
+            "setSize": 2
+        },
+        {
+            "id": 807,
+            "phase": 17,
+            "theme": "temple",
+            "pairs": 9,
+            "timeSec": 85,
+            "mechanics": [
+                "chameleon"
+            ],
+            "difficulty": "hard",
+            "description": "Las cartas cambian de valor. CronÃ³metro: 85s. 18 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 135
+            },
+            "seed": 1807175,
+            "setSize": 2
+        },
+        {
+            "id": 808,
+            "phase": 17,
+            "theme": "temple",
+            "pairs": 9,
+            "timeSec": 84,
+            "mechanics": [
+                "basic"
+            ],
+            "difficulty": "hard",
+            "description": "Nivel clÃ¡sico sin trucos. CronÃ³metro: 84s. 18 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 135
+            },
+            "seed": 1808174,
+            "setSize": 2
+        },
+        {
+            "id": 809,
+            "phase": 17,
+            "theme": "temple",
+            "pairs": 4,
+            "timeSec": 0,
+            "mechanics": [
+                "frozen"
+            ],
+            "difficulty": "medium",
+            "description": "Cartas que se congelan temporalmente. Sin cronÃ³metro. 8 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 40
+            },
+            "seed": 1809040,
+            "setSize": 2
+        },
+        {
+            "id": 810,
+            "phase": 17,
+            "theme": "temple",
+            "pairs": 10,
+            "timeSec": 0,
+            "mechanics": [
+                "basic"
+            ],
+            "difficulty": "medium",
+            "description": "juega normalmente. Sin cronÃ³metro. 20 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 100
+            },
+            "seed": 1810100,
+            "setSize": 2
+        },
+        {
+            "id": 811,
+            "phase": 17,
+            "theme": "temple",
+            "pairs": 4,
+            "timeSec": 0,
+            "mechanics": [
+                "chameleon"
+            ],
+            "difficulty": "medium",
+            "description": "Las cartas cambian de valor. Sin cronÃ³metro. 8 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 40
+            },
+            "seed": 1811040,
+            "setSize": 2
+        },
+        {
+            "id": 812,
+            "phase": 17,
+            "theme": "temple",
+            "pairs": 7,
+            "timeSec": 76,
+            "mechanics": [
+                "frozen"
+            ],
+            "difficulty": "hard",
+            "description": "Cartas que se congelan temporalmente. CronÃ³metro: 76s. 14 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 105
+            },
+            "seed": 1812146,
+            "setSize": 2
+        },
+        {
+            "id": 813,
+            "phase": 17,
+            "theme": "temple",
+            "pairs": 7,
+            "timeSec": 0,
+            "mechanics": [
+                "bomb"
+            ],
+            "difficulty": "medium",
+            "description": "Evita bombas: piensa rÃ¡pido. Sin cronÃ³metro. 14 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 70
+            },
+            "seed": 1813070,
+            "setSize": 2
+        },
+        {
+            "id": 814,
+            "phase": 17,
+            "theme": "temple",
+            "pairs": 12,
+            "timeSec": 0,
+            "mechanics": [
+                "basic"
+            ],
+            "difficulty": "medium",
+            "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 24 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 120
+            },
+            "seed": 1814120,
+            "setSize": 2
+        },
+        {
+            "id": 815,
+            "phase": 17,
+            "theme": "temple",
+            "pairs": 5,
+            "timeSec": 0,
+            "mechanics": [
+                "basic"
+            ],
+            "difficulty": "easy",
+            "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 10 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 25
+            },
+            "seed": 1815050,
+            "setSize": 2
+        },
+        {
+            "id": 816,
+            "phase": 17,
+            "theme": "temple",
+            "pairs": 7,
+            "timeSec": 64,
+            "mechanics": [
+                "ghost"
+            ],
+            "difficulty": "medium",
+            "description": "Cartas fantasma aparecen y desaparecen. CronÃ³metro: 64s. 14 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 70
+            },
+            "seed": 1816134,
+            "setSize": 2
+        },
+        {
+            "id": 817,
+            "phase": 17,
+            "theme": "temple",
+            "pairs": 3,
+            "timeSec": 0,
+            "mechanics": [
+                "fog"
+            ],
+            "difficulty": "easy",
+            "description": "Niebla ligera: observa con atenciÃ³n. Sin cronÃ³metro. 6 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 15
+            },
+            "seed": 1817030,
+            "setSize": 2
+        },
+        {
+            "id": 818,
+            "phase": 17,
+            "theme": "temple",
+            "pairs": 9,
+            "timeSec": 0,
+            "mechanics": [
+                "rotation"
+            ],
+            "difficulty": "hard",
+            "description": "El tablero rota de vez en cuando. Sin cronÃ³metro. 18 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 135
+            },
+            "seed": 1818090,
+            "setSize": 2
+        },
+        {
+            "id": 819,
+            "phase": 17,
+            "theme": "temple",
+            "pairs": 6,
+            "timeSec": 0,
+            "mechanics": [
+                "frozen"
+            ],
+            "difficulty": "medium",
+            "description": "Cartas que se congelan temporalmente. Sin cronÃ³metro. 12 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 60
+            },
+            "seed": 1819060,
+            "setSize": 2
+        },
+        {
+            "id": 820,
+            "phase": 17,
+            "theme": "temple",
+            "pairs": 9,
+            "timeSec": 88,
+            "mechanics": [
+                "ghost"
+            ],
+            "difficulty": "hard",
+            "description": "Cartas fantasma aparecen y desaparecen. CronÃ³metro: 88s. 18 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 135
+            },
+            "seed": 1820178,
+            "setSize": 2
+        },
+        {
+            "id": 821,
+            "phase": 17,
+            "theme": "temple",
+            "pairs": 8,
+            "timeSec": 0,
+            "mechanics": [
+                "basic"
+            ],
+            "difficulty": "medium",
+            "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 16 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 80
+            },
+            "seed": 1821080,
+            "setSize": 2
+        },
+        {
+            "id": 822,
+            "phase": 17,
+            "theme": "temple",
+            "pairs": 12,
+            "timeSec": 99,
+            "mechanics": [
+                "rotation"
+            ],
+            "difficulty": "hard",
+            "description": "El tablero rota de vez en cuando. CronÃ³metro: 99s. 24 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 180
+            },
+            "seed": 1822219,
+            "setSize": 2
+        },
+        {
+            "id": 823,
+            "phase": 17,
+            "theme": "temple",
+            "pairs": 7,
+            "timeSec": 0,
+            "mechanics": [
+                "basic"
+            ],
+            "difficulty": "medium",
+            "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 14 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 70
+            },
+            "seed": 1823070,
+            "setSize": 2
+        },
+        {
+            "id": 824,
+            "phase": 17,
+            "theme": "temple",
+            "pairs": 4,
+            "timeSec": 0,
+            "mechanics": [
+                "basic"
+            ],
+            "difficulty": "easy",
+            "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 8 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 20
+            },
+            "seed": 1824040,
+            "setSize": 2
+        },
+        {
+            "id": 825,
+            "phase": 17,
+            "theme": "temple",
+            "pairs": 7,
+            "timeSec": 62,
+            "mechanics": [
+                "ghost"
+            ],
+            "difficulty": "medium",
+            "description": "Cartas fantasma aparecen y desaparecen. CronÃ³metro: 62s. 14 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 70
+            },
+            "seed": 1825132,
+            "setSize": 2
+        },
+        {
+            "id": 826,
+            "phase": 17,
+            "theme": "temple",
+            "pairs": 10,
+            "timeSec": 92,
+            "mechanics": [
+                "chameleon"
+            ],
+            "difficulty": "hard",
+            "description": "Las cartas cambian de valor. CronÃ³metro: 92s. 20 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 150
+            },
+            "seed": 1826192,
+            "setSize": 2
+        },
+        {
+            "id": 827,
+            "phase": 17,
+            "theme": "temple",
+            "pairs": 8,
+            "timeSec": 88,
+            "mechanics": [
+                "basic"
+            ],
+            "difficulty": "medium",
+            "description": "Nivel clÃ¡sico sin trucos. CronÃ³metro: 88s. 16 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 80
+            },
+            "seed": 1827168,
+            "setSize": 2
+        },
+        {
+            "id": 828,
+            "phase": 17,
+            "theme": "temple",
+            "pairs": 9,
+            "timeSec": 0,
+            "mechanics": [
+                "chameleon"
+            ],
+            "difficulty": "hard",
+            "description": "Las cartas cambian de valor. Sin cronÃ³metro. 18 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 135
+            },
+            "seed": 1828090,
+            "setSize": 2
+        },
+        {
+            "id": 829,
+            "phase": 17,
+            "theme": "temple",
+            "pairs": 4,
+            "timeSec": 0,
+            "mechanics": [
+                "fog"
+            ],
+            "difficulty": "easy",
+            "description": "Niebla ligera: observa con atenciÃ³n. Sin cronÃ³metro. 8 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 20
+            },
+            "seed": 1829040,
+            "setSize": 2
+        },
+        {
+            "id": 830,
+            "phase": 17,
+            "theme": "temple",
+            "pairs": 10,
+            "timeSec": 0,
+            "mechanics": [
+                "basic"
+            ],
+            "difficulty": "medium",
+            "description": "juega normalmente. Sin cronÃ³metro. 20 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 100
+            },
+            "seed": 1830100,
+            "setSize": 2
+        },
+        {
+            "id": 831,
+            "phase": 17,
+            "theme": "temple",
+            "pairs": 7,
+            "timeSec": 62,
+            "mechanics": [
+                "basic"
+            ],
+            "difficulty": "medium",
+            "description": "Nivel clÃ¡sico sin trucos. CronÃ³metro: 62s. 14 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 70
+            },
+            "seed": 1831132,
+            "setSize": 2
+        },
+        {
+            "id": 832,
+            "phase": 17,
+            "theme": "temple",
+            "pairs": 3,
+            "timeSec": 0,
+            "mechanics": [
+                "frozen"
+            ],
+            "difficulty": "medium",
+            "description": "Cartas que se congelan temporalmente. Sin cronÃ³metro. 6 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 30
+            },
+            "seed": 1832030,
+            "setSize": 2
+        },
+        {
+            "id": 833,
+            "phase": 17,
+            "theme": "temple",
+            "pairs": 3,
+            "timeSec": 0,
+            "mechanics": [
+                "basic"
+            ],
+            "difficulty": "easy",
+            "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 6 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 15
+            },
+            "seed": 1833030,
+            "setSize": 2
+        },
+        {
+            "id": 834,
+            "phase": 17,
+            "theme": "temple",
+            "pairs": 6,
+            "timeSec": 63,
+            "mechanics": [
+                "basic"
+            ],
+            "difficulty": "medium",
+            "description": "Nivel clÃ¡sico sin trucos. CronÃ³metro: 63s. 12 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 60
+            },
+            "seed": 1834123,
+            "setSize": 2
+        },
+        {
+            "id": 835,
+            "phase": 17,
+            "theme": "temple",
+            "pairs": 10,
+            "timeSec": 94,
+            "mechanics": [
+                "chameleon"
+            ],
+            "difficulty": "hard",
+            "description": "Las cartas cambian de valor. CronÃ³metro: 94s. 20 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 150
+            },
+            "seed": 1835194,
+            "setSize": 2
+        },
+        {
+            "id": 836,
+            "phase": 17,
+            "theme": "temple",
+            "pairs": 12,
+            "timeSec": 0,
+            "mechanics": [
+                "trio"
+            ],
+            "difficulty": "hard",
+            "description": "Encuentra trÃ­os idÃ©nticos. Sin cronÃ³metro. 24 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 180
+            },
+            "seed": 1836120,
+            "setSize": 3
+        },
+        {
+            "id": 837,
+            "phase": 17,
+            "theme": "temple",
+            "pairs": 10,
+            "timeSec": 92,
+            "mechanics": [
+                "basic"
+            ],
+            "difficulty": "hard",
+            "description": "Nivel clÃ¡sico sin trucos. CronÃ³metro: 92s. 20 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 150
+            },
+            "seed": 1837192,
+            "setSize": 2
+        },
+        {
+            "id": 838,
+            "phase": 17,
+            "theme": "temple",
+            "pairs": 4,
+            "timeSec": 0,
+            "mechanics": [
+                "rotation"
+            ],
+            "difficulty": "medium",
+            "description": "El tablero rota de vez en cuando. Sin cronÃ³metro. 8 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 40
+            },
+            "seed": 1838040,
+            "setSize": 2
+        },
+        {
+            "id": 839,
+            "phase": 17,
+            "theme": "temple",
+            "pairs": 8,
+            "timeSec": 0,
+            "mechanics": [
+                "darkness"
+            ],
+            "difficulty": "medium",
+            "description": "La oscuridad cubre el tablero poco a poco. Sin cronÃ³metro. 16 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 80
+            },
+            "seed": 1839080,
+            "setSize": 2
+        },
+        {
+            "id": 840,
+            "phase": 17,
+            "theme": "temple",
+            "pairs": 4,
+            "timeSec": 0,
+            "mechanics": [
+                "ghost"
+            ],
+            "difficulty": "easy",
+            "description": "Cartas fantasma aparecen y desaparecen. Sin cronÃ³metro. 8 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 20
+            },
+            "seed": 1840040,
+            "setSize": 2
+        },
+        {
+            "id": 841,
+            "phase": 17,
+            "theme": "temple",
+            "pairs": 11,
+            "timeSec": 92,
+            "mechanics": [
+                "basic"
+            ],
+            "difficulty": "hard",
+            "description": "Nivel clÃ¡sico sin trucos. CronÃ³metro: 92s. 22 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 165
+            },
+            "seed": 1841202,
+            "setSize": 2
+        },
+        {
+            "id": 842,
+            "phase": 17,
+            "theme": "temple",
+            "pairs": 12,
+            "timeSec": 0,
+            "mechanics": [
+                "darkness"
+            ],
+            "difficulty": "hard",
+            "description": "La oscuridad cubre el tablero poco a poco. Sin cronÃ³metro. 24 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 180
+            },
+            "seed": 1842120,
+            "setSize": 2
+        },
+        {
+            "id": 843,
+            "phase": 17,
+            "theme": "temple",
+            "pairs": 8,
+            "timeSec": 83,
+            "mechanics": [
+                "chameleon"
+            ],
+            "difficulty": "hard",
+            "description": "Las cartas cambian de valor. CronÃ³metro: 83s. 16 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 120
+            },
+            "seed": 1843163,
+            "setSize": 2
+        },
+        {
+            "id": 844,
+            "phase": 17,
+            "theme": "temple",
+            "pairs": 8,
+            "timeSec": 0,
+            "mechanics": [
+                "basic"
+            ],
+            "difficulty": "medium",
+            "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 16 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 80
+            },
+            "seed": 1844080,
+            "setSize": 2
+        },
+        {
+            "id": 845,
+            "phase": 17,
+            "theme": "temple",
+            "pairs": 7,
+            "timeSec": 0,
+            "mechanics": [
+                "rotation"
+            ],
+            "difficulty": "medium",
+            "description": "El tablero rota de vez en cuando. Sin cronÃ³metro. 14 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 70
+            },
+            "seed": 1845070,
+            "setSize": 2
+        },
+        {
+            "id": 846,
+            "phase": 17,
+            "theme": "temple",
+            "pairs": 6,
+            "timeSec": 0,
+            "mechanics": [
+                "basic"
+            ],
+            "difficulty": "easy",
+            "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 12 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 30
+            },
+            "seed": 1846060,
+            "setSize": 2
+        },
+        {
+            "id": 847,
+            "phase": 17,
+            "theme": "temple",
+            "pairs": 6,
+            "timeSec": 0,
+            "mechanics": [
+                "trio"
+            ],
+            "difficulty": "easy",
+            "description": "Encuentra trÃ­os idÃ©nticos. Sin cronÃ³metro. 12 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 30
+            },
+            "seed": 1847060,
+            "setSize": 3
+        },
+        {
+            "id": 848,
+            "phase": 17,
+            "theme": "temple",
+            "pairs": 8,
+            "timeSec": 0,
+            "mechanics": [
+                "basic"
+            ],
+            "difficulty": "medium",
+            "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 16 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 80
+            },
+            "seed": 1848080,
+            "setSize": 2
+        },
+        {
+            "id": 849,
+            "phase": 17,
+            "theme": "temple",
+            "pairs": 2,
+            "timeSec": 0,
+            "mechanics": [
+                "fog"
+            ],
+            "difficulty": "medium",
+            "description": "Niebla antes del Boss. Sin cronÃ³metro. 4 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 20
+            },
+            "seed": 1849020,
+            "setSize": 2
+        },
+        {
+            "id": 850,
+            "phase": 17,
+            "theme": "temple",
+            "pairs": 12,
+            "timeSec": 113,
+            "mechanics": [
+                "rotation",
+                "bomb"
+            ],
+            "difficulty": "hard",
+            "description": "Boss: 24 cartas, rotation + bomb, crono 113s.",
+            "isBoss": true,
+            "rewards": {
+                "coins": 180
+            },
+            "seed": 1850233,
+            "setSize": 2
+        },
+        {
+            "id": 851,
+            "phase": 18,
+            "theme": "castle",
+            "pairs": 8,
+            "timeSec": 87,
+            "mechanics": [
+                "darkness"
+            ],
+            "difficulty": "hard",
+            "description": "La oscuridad cubre el tablero poco a poco. CronÃ³metro: 87s. 16 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 120
+            },
+            "seed": 1851167,
+            "setSize": 2
+        },
+        {
+            "id": 852,
+            "phase": 18,
+            "theme": "castle",
+            "pairs": 11,
+            "timeSec": 102,
+            "mechanics": [
+                "basic"
+            ],
+            "difficulty": "hard",
+            "description": "Nivel clÃ¡sico sin trucos. CronÃ³metro: 102s. 22 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 165
+            },
+            "seed": 1852212,
+            "setSize": 2
+        },
+        {
+            "id": 853,
+            "phase": 18,
+            "theme": "castle",
+            "pairs": 4,
+            "timeSec": 0,
+            "mechanics": [
+                "basic"
+            ],
+            "difficulty": "easy",
+            "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 8 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 20
+            },
+            "seed": 1853040,
+            "setSize": 2
+        },
+        {
+            "id": 854,
+            "phase": 18,
+            "theme": "castle",
+            "pairs": 8,
+            "timeSec": 0,
+            "mechanics": [
+                "rotation"
+            ],
+            "difficulty": "medium",
+            "description": "El tablero rota de vez en cuando. Sin cronÃ³metro. 16 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 80
+            },
+            "seed": 1854080,
+            "setSize": 2
+        },
+        {
+            "id": 855,
+            "phase": 18,
+            "theme": "castle",
+            "pairs": 8,
+            "timeSec": 0,
+            "mechanics": [
+                "basic"
+            ],
+            "difficulty": "medium",
+            "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 16 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 80
+            },
+            "seed": 1855080,
+            "setSize": 2
+        },
+        {
+            "id": 856,
+            "phase": 18,
+            "theme": "castle",
+            "pairs": 8,
+            "timeSec": 85,
+            "mechanics": [
+                "fog"
+            ],
+            "difficulty": "medium",
+            "description": "las cartas estÃ¡n parcialmente ocultas. CronÃ³metro: 85s. 16 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 80
+            },
+            "seed": 1856165,
+            "setSize": 2
+        },
+        {
+            "id": 857,
+            "phase": 18,
+            "theme": "castle",
+            "pairs": 4,
+            "timeSec": 0,
+            "mechanics": [
+                "basic"
+            ],
+            "difficulty": "easy",
+            "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 8 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 20
+            },
+            "seed": 1857040,
+            "setSize": 2
+        },
+        {
+            "id": 858,
+            "phase": 18,
+            "theme": "castle",
+            "pairs": 4,
+            "timeSec": 0,
+            "mechanics": [
+                "fog"
+            ],
+            "difficulty": "easy",
+            "description": "Niebla ligera: observa con atenciÃ³n. Sin cronÃ³metro. 8 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 20
+            },
+            "seed": 1858040,
+            "setSize": 2
+        },
+        {
+            "id": 859,
+            "phase": 18,
+            "theme": "castle",
+            "pairs": 5,
+            "timeSec": 0,
+            "mechanics": [
+                "frozen"
+            ],
+            "difficulty": "medium",
+            "description": "Cartas que se congelan temporalmente. Sin cronÃ³metro. 10 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 50
+            },
+            "seed": 1859050,
+            "setSize": 2
+        },
+        {
+            "id": 860,
+            "phase": 18,
+            "theme": "castle",
+            "pairs": 8,
+            "timeSec": 0,
+            "mechanics": [
+                "basic"
+            ],
+            "difficulty": "medium",
+            "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 16 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 80
+            },
+            "seed": 1860080,
+            "setSize": 2
+        },
+        {
+            "id": 861,
+            "phase": 18,
+            "theme": "castle",
+            "pairs": 6,
+            "timeSec": 0,
+            "mechanics": [
+                "basic"
+            ],
+            "difficulty": "easy",
+            "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 12 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 30
+            },
+            "seed": 1861060,
+            "setSize": 2
+        },
+        {
+            "id": 862,
+            "phase": 18,
+            "theme": "castle",
+            "pairs": 5,
+            "timeSec": 0,
+            "mechanics": [
+                "ghost"
+            ],
+            "difficulty": "easy",
+            "description": "Cartas fantasma aparecen y desaparecen. Sin cronÃ³metro. 10 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 25
+            },
+            "seed": 1862050,
+            "setSize": 2
+        },
+        {
+            "id": 863,
+            "phase": 18,
+            "theme": "castle",
+            "pairs": 8,
+            "timeSec": 0,
+            "mechanics": [
+                "frozen"
+            ],
+            "difficulty": "medium",
+            "description": "Cartas que se congelan temporalmente. Sin cronÃ³metro. 16 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 80
+            },
+            "seed": 1863080,
+            "setSize": 2
+        },
+        {
+            "id": 864,
+            "phase": 18,
+            "theme": "castle",
+            "pairs": 6,
+            "timeSec": 0,
+            "mechanics": [
+                "ghost"
+            ],
+            "difficulty": "easy",
+            "description": "Cartas fantasma aparecen y desaparecen. Sin cronÃ³metro. 12 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 30
+            },
+            "seed": 1864060,
+            "setSize": 2
+        },
+        {
+            "id": 865,
+            "phase": 18,
+            "theme": "castle",
+            "pairs": 8,
+            "timeSec": 80,
+            "mechanics": [
+                "rotation"
+            ],
+            "difficulty": "medium",
+            "description": "las cartas pueden rotar. CronÃ³metro: 80s. 16 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 80
+            },
+            "seed": 1865160,
+            "setSize": 2
+        },
+        {
+            "id": 866,
+            "phase": 18,
+            "theme": "castle",
+            "pairs": 9,
+            "timeSec": 0,
+            "mechanics": [
+                "bomb"
+            ],
+            "difficulty": "hard",
+            "description": "Evita bombas: piensa rÃ¡pido. Sin cronÃ³metro. 18 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 135
+            },
+            "seed": 1866090,
+            "setSize": 2
+        },
+        {
+            "id": 867,
+            "phase": 18,
+            "theme": "castle",
+            "pairs": 7,
+            "timeSec": 0,
+            "mechanics": [
+                "rotation"
+            ],
+            "difficulty": "medium",
+            "description": "El tablero rota de vez en cuando. Sin cronÃ³metro. 14 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 70
+            },
+            "seed": 1867070,
+            "setSize": 2
+        },
+        {
+            "id": 868,
+            "phase": 18,
+            "theme": "castle",
+            "pairs": 8,
+            "timeSec": 82,
+            "mechanics": [
+                "darkness"
+            ],
+            "difficulty": "hard",
+            "description": "La oscuridad cubre el tablero poco a poco. CronÃ³metro: 82s. 16 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 120
+            },
+            "seed": 1868162,
+            "setSize": 2
+        },
+        {
+            "id": 869,
+            "phase": 18,
+            "theme": "castle",
+            "pairs": 6,
+            "timeSec": 0,
+            "mechanics": [
+                "bomb"
+            ],
+            "difficulty": "medium",
+            "description": "Evita bombas: piensa rÃ¡pido. Sin cronÃ³metro. 12 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 60
+            },
+            "seed": 1869060,
+            "setSize": 2
+        },
+        {
+            "id": 870,
+            "phase": 18,
+            "theme": "castle",
+            "pairs": 10,
+            "timeSec": 91,
+            "mechanics": [
+                "ghost"
+            ],
+            "difficulty": "hard",
+            "description": "Cartas fantasma aparecen y desaparecen. CronÃ³metro: 91s. 20 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 150
+            },
+            "seed": 1870191,
+            "setSize": 2
+        },
+        {
+            "id": 871,
+            "phase": 18,
+            "theme": "castle",
+            "pairs": 12,
+            "timeSec": 0,
+            "mechanics": [
+                "trio"
+            ],
+            "difficulty": "hard",
+            "description": "Encuentra trÃ­os idÃ©nticos. Sin cronÃ³metro. 24 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 180
+            },
+            "seed": 1871120,
+            "setSize": 3
+        },
+        {
+            "id": 872,
+            "phase": 18,
+            "theme": "castle",
+            "pairs": 8,
+            "timeSec": 0,
+            "mechanics": [
+                "basic"
+            ],
+            "difficulty": "medium",
+            "description": "juega normalmente. Sin cronÃ³metro. 16 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 80
+            },
+            "seed": 1872080,
+            "setSize": 2
+        },
+        {
+            "id": 873,
+            "phase": 18,
+            "theme": "castle",
+            "pairs": 6,
+            "timeSec": 0,
+            "mechanics": [
+                "basic"
+            ],
+            "difficulty": "easy",
+            "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 12 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 30
+            },
+            "seed": 1873060,
+            "setSize": 2
+        },
+        {
+            "id": 874,
+            "phase": 18,
+            "theme": "castle",
+            "pairs": 7,
+            "timeSec": 0,
+            "mechanics": [
+                "frozen"
+            ],
+            "difficulty": "medium",
+            "description": "Cartas que se congelan temporalmente. Sin cronÃ³metro. 14 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 70
+            },
+            "seed": 1874070,
+            "setSize": 2
+        },
+        {
+            "id": 875,
+            "phase": 18,
+            "theme": "castle",
+            "pairs": 12,
+            "timeSec": 102,
+            "mechanics": [
+                "rotation"
+            ],
+            "difficulty": "hard",
+            "description": "las cartas pueden rotar. CronÃ³metro: 102s. 24 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 180
+            },
+            "seed": 1875222,
+            "setSize": 2
+        },
+        {
+            "id": 876,
+            "phase": 18,
+            "theme": "castle",
+            "pairs": 10,
+            "timeSec": 0,
+            "mechanics": [
+                "ghost"
+            ],
+            "difficulty": "medium",
+            "description": "Cartas fantasma aparecen y desaparecen. Sin cronÃ³metro. 20 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 100
+            },
+            "seed": 1876100,
+            "setSize": 2
+        },
+        {
+            "id": 877,
+            "phase": 18,
+            "theme": "castle",
+            "pairs": 6,
+            "timeSec": 0,
+            "mechanics": [
+                "trio"
+            ],
+            "difficulty": "easy",
+            "description": "Encuentra trÃ­os idÃ©nticos. Sin cronÃ³metro. 12 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 30
+            },
+            "seed": 1877060,
+            "setSize": 3
+        },
+        {
+            "id": 878,
+            "phase": 18,
+            "theme": "castle",
+            "pairs": 7,
+            "timeSec": 76,
+            "mechanics": [
+                "rotation"
+            ],
+            "difficulty": "hard",
+            "description": "El tablero rota de vez en cuando. CronÃ³metro: 76s. 14 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 105
+            },
+            "seed": 1878146,
+            "setSize": 2
+        },
+        {
+            "id": 879,
+            "phase": 18,
+            "theme": "castle",
+            "pairs": 12,
+            "timeSec": 105,
+            "mechanics": [
+                "fog"
+            ],
+            "difficulty": "hard",
+            "description": "Niebla ligera: observa con atenciÃ³n. CronÃ³metro: 105s. 24 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 180
+            },
+            "seed": 1879225,
+            "setSize": 2
+        },
+        {
+            "id": 880,
+            "phase": 18,
+            "theme": "castle",
+            "pairs": 8,
+            "timeSec": 79,
+            "mechanics": [
+                "basic"
+            ],
+            "difficulty": "medium",
+            "description": "Nivel clÃ¡sico sin trucos. CronÃ³metro: 79s. 16 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 80
+            },
+            "seed": 1880159,
+            "setSize": 2
+        },
+        {
+            "id": 881,
+            "phase": 18,
+            "theme": "castle",
+            "pairs": 4,
+            "timeSec": 0,
+            "mechanics": [
+                "basic"
+            ],
+            "difficulty": "easy",
+            "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 8 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 20
+            },
+            "seed": 1881040,
+            "setSize": 2
+        },
+        {
+            "id": 882,
+            "phase": 18,
+            "theme": "castle",
+            "pairs": 2,
+            "timeSec": 0,
+            "mechanics": [
+                "chameleon"
+            ],
+            "difficulty": "medium",
+            "description": "Las cartas cambian de valor. Sin cronÃ³metro. 4 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 20
+            },
+            "seed": 1882020,
+            "setSize": 2
+        },
+        {
+            "id": 883,
+            "phase": 18,
+            "theme": "castle",
+            "pairs": 6,
+            "timeSec": 0,
+            "mechanics": [
+                "bomb"
+            ],
+            "difficulty": "medium",
+            "description": "Evita bombas: piensa rÃ¡pido. Sin cronÃ³metro. 12 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 60
+            },
+            "seed": 1883060,
+            "setSize": 2
+        },
+        {
+            "id": 884,
+            "phase": 18,
+            "theme": "castle",
+            "pairs": 8,
+            "timeSec": 80,
+            "mechanics": [
+                "darkness"
+            ],
+            "difficulty": "hard",
+            "description": "La oscuridad cubre el tablero poco a poco. CronÃ³metro: 80s. 16 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 120
+            },
+            "seed": 1884160,
+            "setSize": 2
+        },
+        {
+            "id": 885,
+            "phase": 18,
+            "theme": "castle",
+            "pairs": 7,
+            "timeSec": 72,
+            "mechanics": [
+                "basic"
+            ],
+            "difficulty": "medium",
+            "description": "Nivel clÃ¡sico sin trucos. CronÃ³metro: 72s. 14 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 70
+            },
+            "seed": 1885142,
+            "setSize": 2
+        },
+        {
+            "id": 886,
+            "phase": 18,
+            "theme": "castle",
+            "pairs": 4,
+            "timeSec": 0,
+            "mechanics": [
+                "frozen"
+            ],
+            "difficulty": "medium",
+            "description": "Cartas que se congelan temporalmente. Sin cronÃ³metro. 8 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 40
+            },
+            "seed": 1886040,
+            "setSize": 2
+        },
+        {
+            "id": 887,
+            "phase": 18,
+            "theme": "castle",
+            "pairs": 8,
+            "timeSec": 72,
+            "mechanics": [
+                "bomb"
+            ],
+            "difficulty": "hard",
+            "description": "Evita bombas: piensa rÃ¡pido. CronÃ³metro: 72s. 16 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 120
+            },
+            "seed": 1887152,
+            "setSize": 2
+        },
+        {
+            "id": 888,
+            "phase": 18,
+            "theme": "castle",
+            "pairs": 8,
+            "timeSec": 0,
+            "mechanics": [
+                "ghost"
+            ],
+            "difficulty": "medium",
+            "description": "Cartas fantasma aparecen y desaparecen. Sin cronÃ³metro. 16 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 80
+            },
+            "seed": 1888080,
+            "setSize": 2
+        },
+        {
+            "id": 889,
+            "phase": 18,
+            "theme": "castle",
+            "pairs": 7,
+            "timeSec": 0,
+            "mechanics": [
+                "basic"
+            ],
+            "difficulty": "medium",
+            "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 14 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 70
+            },
+            "seed": 1889070,
+            "setSize": 2
+        },
+        {
+            "id": 890,
+            "phase": 18,
+            "theme": "castle",
+            "pairs": 8,
+            "timeSec": 72,
+            "mechanics": [
+                "ghost"
+            ],
+            "difficulty": "medium",
+            "description": "Cartas fantasma aparecen y desaparecen. CronÃ³metro: 72s. 16 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 80
+            },
+            "seed": 1890152,
+            "setSize": 2
+        },
+        {
+            "id": 891,
+            "phase": 18,
+            "theme": "castle",
+            "pairs": 7,
+            "timeSec": 0,
+            "mechanics": [
+                "basic"
+            ],
+            "difficulty": "medium",
+            "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 14 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 70
+            },
+            "seed": 1891070,
+            "setSize": 2
+        },
+        {
+            "id": 892,
+            "phase": 18,
+            "theme": "castle",
+            "pairs": 6,
+            "timeSec": 0,
+            "mechanics": [
+                "trio"
+            ],
+            "difficulty": "easy",
+            "description": "Encuentra trÃ­os idÃ©nticos. Sin cronÃ³metro. 12 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 30
+            },
+            "seed": 1892060,
+            "setSize": 3
+        },
+        {
+            "id": 893,
+            "phase": 18,
+            "theme": "castle",
+            "pairs": 2,
+            "timeSec": 0,
+            "mechanics": [
+                "fog"
+            ],
+            "difficulty": "easy",
+            "description": "Niebla ligera: observa con atenciÃ³n. Sin cronÃ³metro. 4 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 10
+            },
+            "seed": 1893020,
+            "setSize": 2
+        },
+        {
+            "id": 894,
+            "phase": 18,
+            "theme": "castle",
+            "pairs": 8,
+            "timeSec": 0,
+            "mechanics": [
+                "darkness"
+            ],
+            "difficulty": "medium",
+            "description": "La oscuridad cubre el tablero poco a poco. Sin cronÃ³metro. 16 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 80
+            },
+            "seed": 1894080,
+            "setSize": 2
+        },
+        {
+            "id": 895,
+            "phase": 18,
+            "theme": "castle",
+            "pairs": 12,
+            "timeSec": 0,
+            "mechanics": [
+                "trio"
+            ],
+            "difficulty": "hard",
+            "description": "Encuentra trÃ­os idÃ©nticos. Sin cronÃ³metro. 24 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 180
+            },
+            "seed": 1895120,
+            "setSize": 3
+        },
+        {
+            "id": 896,
+            "phase": 18,
+            "theme": "castle",
+            "pairs": 8,
+            "timeSec": 0,
+            "mechanics": [
+                "basic"
+            ],
+            "difficulty": "medium",
+            "description": "juega normalmente. Sin cronÃ³metro. 16 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 80
+            },
+            "seed": 1896080,
+            "setSize": 2
+        },
+        {
+            "id": 897,
+            "phase": 18,
+            "theme": "castle",
+            "pairs": 6,
+            "timeSec": 0,
+            "mechanics": [
+                "trio"
+            ],
+            "difficulty": "easy",
+            "description": "Encuentra trÃ­os idÃ©nticos. Sin cronÃ³metro. 12 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 30
+            },
+            "seed": 1897060,
+            "setSize": 3
+        },
+        {
+            "id": 898,
+            "phase": 18,
+            "theme": "castle",
+            "pairs": 12,
+            "timeSec": 101,
+            "mechanics": [
+                "fog"
+            ],
+            "difficulty": "hard",
+            "description": "las cartas estÃ¡n parcialmente ocultas. CronÃ³metro: 101s. 24 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 180
+            },
+            "seed": 1898221,
+            "setSize": 2
+        },
+        {
+            "id": 899,
+            "phase": 18,
+            "theme": "castle",
+            "pairs": 7,
+            "timeSec": 72,
+            "mechanics": [
+                "basic"
+            ],
+            "difficulty": "medium",
+            "description": "Nivel clÃ¡sico sin trucos. CronÃ³metro: 72s. 14 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 70
+            },
+            "seed": 1899142,
+            "setSize": 2
+        },
+        {
+            "id": 900,
+            "phase": 18,
+            "theme": "castle",
+            "pairs": 12,
+            "timeSec": 113,
+            "mechanics": [
+                "ghost",
+                "darkness"
+            ],
+            "difficulty": "hard",
+            "description": "Boss: 24 cartas, ghost + darkness, crono 113s.",
+            "isBoss": true,
+            "rewards": {
+                "coins": 180
+            },
+            "seed": 1900233,
+            "setSize": 2
+        },
+        {
+            "id": 901,
+            "phase": 19,
+            "theme": "dimension",
+            "pairs": 7,
+            "timeSec": 0,
+            "mechanics": [
+                "rotation"
+            ],
+            "difficulty": "medium",
+            "description": "El tablero rota de vez en cuando. Sin cronÃ³metro. 14 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 70
+            },
+            "seed": 1901070,
+            "setSize": 2
+        },
+        {
+            "id": 902,
+            "phase": 19,
+            "theme": "dimension",
+            "pairs": 3,
+            "timeSec": 0,
+            "mechanics": [
+                "ghost"
+            ],
+            "difficulty": "easy",
+            "description": "Cartas fantasma aparecen y desaparecen. Sin cronÃ³metro. 6 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 15
+            },
+            "seed": 1902030,
+            "setSize": 2
+        },
+        {
+            "id": 903,
+            "phase": 19,
+            "theme": "dimension",
+            "pairs": 8,
+            "timeSec": 87,
+            "mechanics": [
+                "rotation"
+            ],
+            "difficulty": "hard",
+            "description": "El tablero rota de vez en cuando. CronÃ³metro: 87s. 16 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 120
+            },
+            "seed": 1903167,
+            "setSize": 2
+        },
+        {
+            "id": 904,
+            "phase": 19,
+            "theme": "dimension",
+            "pairs": 8,
+            "timeSec": 82,
+            "mechanics": [
+                "frozen"
+            ],
+            "difficulty": "hard",
+            "description": "Cartas que se congelan temporalmente. CronÃ³metro: 82s. 16 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 120
+            },
+            "seed": 1904162,
+            "setSize": 2
+        },
+        {
+            "id": 905,
+            "phase": 19,
+            "theme": "dimension",
+            "pairs": 8,
+            "timeSec": 0,
+            "mechanics": [
+                "ghost"
+            ],
+            "difficulty": "medium",
+            "description": "Cartas fantasma aparecen y desaparecen. Sin cronÃ³metro. 16 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 80
+            },
+            "seed": 1905080,
+            "setSize": 2
+        },
+        {
+            "id": 906,
+            "phase": 19,
+            "theme": "dimension",
+            "pairs": 9,
+            "timeSec": 0,
+            "mechanics": [
+                "basic"
+            ],
+            "difficulty": "medium",
+            "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 18 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 90
+            },
+            "seed": 1906090,
+            "setSize": 2
+        },
+        {
+            "id": 907,
+            "phase": 19,
+            "theme": "dimension",
+            "pairs": 12,
+            "timeSec": 107,
+            "mechanics": [
+                "basic"
+            ],
+            "difficulty": "hard",
+            "description": "Nivel clÃ¡sico sin trucos. CronÃ³metro: 107s. 24 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 180
+            },
+            "seed": 1907227,
+            "setSize": 2
+        },
+        {
+            "id": 908,
+            "phase": 19,
+            "theme": "dimension",
+            "pairs": 4,
+            "timeSec": 0,
+            "mechanics": [
+                "ghost"
+            ],
+            "difficulty": "easy",
+            "description": "Cartas fantasma aparecen y desaparecen. Sin cronÃ³metro. 8 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 20
+            },
+            "seed": 1908040,
+            "setSize": 2
+        },
+        {
+            "id": 909,
+            "phase": 19,
+            "theme": "dimension",
+            "pairs": 5,
+            "timeSec": 45,
+            "mechanics": [
+                "fog"
+            ],
+            "difficulty": "medium",
+            "description": "Niebla ligera: observa con atenciÃ³n. CronÃ³metro: 45s. 10 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 50
+            },
+            "seed": 1909095,
+            "setSize": 2
+        },
+        {
+            "id": 910,
+            "phase": 19,
+            "theme": "dimension",
+            "pairs": 10,
+            "timeSec": 92,
+            "mechanics": [
+                "rotation"
+            ],
+            "difficulty": "hard",
+            "description": "las cartas pueden rotar. CronÃ³metro: 92s. 20 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 150
+            },
+            "seed": 1910192,
+            "setSize": 2
+        },
+        {
+            "id": 911,
+            "phase": 19,
+            "theme": "dimension",
+            "pairs": 7,
+            "timeSec": 0,
+            "mechanics": [
+                "frozen"
+            ],
+            "difficulty": "medium",
+            "description": "Cartas que se congelan temporalmente. Sin cronÃ³metro. 14 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 70
+            },
+            "seed": 1911070,
+            "setSize": 2
+        },
+        {
+            "id": 912,
+            "phase": 19,
+            "theme": "dimension",
+            "pairs": 3,
+            "timeSec": 0,
+            "mechanics": [
+                "ghost"
+            ],
+            "difficulty": "easy",
+            "description": "Cartas fantasma aparecen y desaparecen. Sin cronÃ³metro. 6 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 15
+            },
+            "seed": 1912030,
+            "setSize": 2
+        },
+        {
+            "id": 913,
+            "phase": 19,
+            "theme": "dimension",
+            "pairs": 6,
+            "timeSec": 0,
+            "mechanics": [
+                "frozen"
+            ],
+            "difficulty": "medium",
+            "description": "Cartas que se congelan temporalmente. Sin cronÃ³metro. 12 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 60
+            },
+            "seed": 1913060,
+            "setSize": 2
+        },
+        {
+            "id": 914,
+            "phase": 19,
+            "theme": "dimension",
+            "pairs": 8,
+            "timeSec": 0,
+            "mechanics": [
+                "darkness"
+            ],
+            "difficulty": "medium",
+            "description": "La oscuridad cubre el tablero poco a poco. Sin cronÃ³metro. 16 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 80
+            },
+            "seed": 1914080,
+            "setSize": 2
+        },
+        {
+            "id": 915,
+            "phase": 19,
+            "theme": "dimension",
+            "pairs": 3,
+            "timeSec": 0,
+            "mechanics": [
+                "frozen"
+            ],
+            "difficulty": "medium",
+            "description": "Cartas que se congelan temporalmente. Sin cronÃ³metro. 6 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 30
+            },
+            "seed": 1915030,
+            "setSize": 2
+        },
+        {
+            "id": 916,
+            "phase": 19,
+            "theme": "dimension",
+            "pairs": 6,
+            "timeSec": 0,
+            "mechanics": [
+                "trio"
+            ],
+            "difficulty": "easy",
+            "description": "Encuentra trÃ­os idÃ©nticos. Sin cronÃ³metro. 12 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 30
+            },
+            "seed": 1916060,
+            "setSize": 3
+        },
+        {
+            "id": 917,
+            "phase": 19,
+            "theme": "dimension",
+            "pairs": 10,
+            "timeSec": 0,
+            "mechanics": [
+                "basic"
+            ],
+            "difficulty": "medium",
+            "description": "juega normalmente. Sin cronÃ³metro. 20 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 100
+            },
+            "seed": 1917100,
+            "setSize": 2
+        },
+        {
+            "id": 918,
+            "phase": 19,
+            "theme": "dimension",
+            "pairs": 8,
+            "timeSec": 0,
+            "mechanics": [
+                "fog"
+            ],
+            "difficulty": "medium",
+            "description": "Niebla ligera: observa con atenciÃ³n. Sin cronÃ³metro. 16 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 80
+            },
+            "seed": 1918080,
+            "setSize": 2
+        },
+        {
+            "id": 919,
+            "phase": 19,
+            "theme": "dimension",
+            "pairs": 8,
+            "timeSec": 0,
+            "mechanics": [
+                "basic"
+            ],
+            "difficulty": "medium",
+            "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 16 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 80
+            },
+            "seed": 1919080,
+            "setSize": 2
+        },
+        {
+            "id": 920,
+            "phase": 19,
+            "theme": "dimension",
+            "pairs": 4,
+            "timeSec": 0,
+            "mechanics": [
+                "rotation"
+            ],
+            "difficulty": "medium",
+            "description": "El tablero rota de vez en cuando. Sin cronÃ³metro. 8 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 40
+            },
+            "seed": 1920040,
+            "setSize": 2
+        },
+        {
+            "id": 921,
+            "phase": 19,
+            "theme": "dimension",
+            "pairs": 12,
+            "timeSec": 0,
+            "mechanics": [
+                "trio"
+            ],
+            "difficulty": "hard",
+            "description": "Encuentra trÃ­os idÃ©nticos. Sin cronÃ³metro. 24 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 180
+            },
+            "seed": 1921120,
+            "setSize": 3
+        },
+        {
+            "id": 922,
+            "phase": 19,
+            "theme": "dimension",
+            "pairs": 2,
+            "timeSec": 0,
+            "mechanics": [
+                "chameleon"
+            ],
+            "difficulty": "medium",
+            "description": "Las cartas cambian de valor. Sin cronÃ³metro. 4 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 20
+            },
+            "seed": 1922020,
+            "setSize": 2
+        },
+        {
+            "id": 923,
+            "phase": 19,
+            "theme": "dimension",
+            "pairs": 3,
+            "timeSec": 0,
+            "mechanics": [
+                "trio"
+            ],
+            "difficulty": "easy",
+            "description": "Encuentra trÃ­os idÃ©nticos. Sin cronÃ³metro. 6 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 15
+            },
+            "seed": 1923030,
+            "setSize": 3
+        },
+        {
+            "id": 924,
+            "phase": 19,
+            "theme": "dimension",
+            "pairs": 8,
+            "timeSec": 82,
+            "mechanics": [
+                "bomb"
+            ],
+            "difficulty": "hard",
+            "description": "Evita bombas: piensa rÃ¡pido. CronÃ³metro: 82s. 16 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 120
+            },
+            "seed": 1924162,
+            "setSize": 2
+        },
+        {
+            "id": 925,
+            "phase": 19,
+            "theme": "dimension",
+            "pairs": 4,
+            "timeSec": 0,
+            "mechanics": [
+                "rotation"
+            ],
+            "difficulty": "medium",
+            "description": "El tablero rota de vez en cuando. Sin cronÃ³metro. 8 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 40
+            },
+            "seed": 1925040,
+            "setSize": 2
+        },
+        {
+            "id": 926,
+            "phase": 19,
+            "theme": "dimension",
+            "pairs": 10,
+            "timeSec": 0,
+            "mechanics": [
+                "basic"
+            ],
+            "difficulty": "medium",
+            "description": "juega normalmente. Sin cronÃ³metro. 20 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 100
+            },
+            "seed": 1926100,
+            "setSize": 2
+        },
+        {
+            "id": 927,
+            "phase": 19,
+            "theme": "dimension",
+            "pairs": 11,
+            "timeSec": 93,
+            "mechanics": [
+                "basic"
+            ],
+            "difficulty": "hard",
+            "description": "Nivel clÃ¡sico sin trucos. CronÃ³metro: 93s. 22 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 165
+            },
+            "seed": 1927203,
+            "setSize": 2
+        },
+        {
+            "id": 928,
+            "phase": 19,
+            "theme": "dimension",
+            "pairs": 10,
+            "timeSec": 101,
+            "mechanics": [
+                "darkness"
+            ],
+            "difficulty": "hard",
+            "description": "La oscuridad cubre el tablero poco a poco. CronÃ³metro: 101s. 20 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 150
+            },
+            "seed": 1928201,
+            "setSize": 2
+        },
+        {
+            "id": 929,
+            "phase": 19,
+            "theme": "dimension",
+            "pairs": 8,
+            "timeSec": 75,
+            "mechanics": [
+                "chameleon"
+            ],
+            "difficulty": "hard",
+            "description": "Las cartas cambian de valor. CronÃ³metro: 75s. 16 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 120
+            },
+            "seed": 1929155,
+            "setSize": 2
+        },
+        {
+            "id": 930,
+            "phase": 19,
+            "theme": "dimension",
+            "pairs": 12,
+            "timeSec": 0,
+            "mechanics": [
+                "fog"
+            ],
+            "difficulty": "medium",
+            "description": "Niebla ligera: observa con atenciÃ³n. Sin cronÃ³metro. 24 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 120
+            },
+            "seed": 1930120,
+            "setSize": 2
+        },
+        {
+            "id": 931,
+            "phase": 19,
+            "theme": "dimension",
+            "pairs": 6,
+            "timeSec": 66,
+            "mechanics": [
+                "bomb"
+            ],
+            "difficulty": "medium",
+            "description": "Evita bombas: piensa rÃ¡pido. CronÃ³metro: 66s. 12 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 60
+            },
+            "seed": 1931126,
+            "setSize": 2
+        },
+        {
+            "id": 932,
+            "phase": 19,
+            "theme": "dimension",
+            "pairs": 8,
+            "timeSec": 0,
+            "mechanics": [
+                "rotation"
+            ],
+            "difficulty": "medium",
+            "description": "El tablero rota de vez en cuando. Sin cronÃ³metro. 16 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 80
+            },
+            "seed": 1932080,
+            "setSize": 2
+        },
+        {
+            "id": 933,
+            "phase": 19,
+            "theme": "dimension",
+            "pairs": 10,
+            "timeSec": 0,
+            "mechanics": [
+                "darkness"
+            ],
+            "difficulty": "hard",
+            "description": "La oscuridad cubre el tablero poco a poco. Sin cronÃ³metro. 20 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 150
+            },
+            "seed": 1933100,
+            "setSize": 2
+        },
+        {
+            "id": 934,
+            "phase": 19,
+            "theme": "dimension",
+            "pairs": 7,
+            "timeSec": 78,
+            "mechanics": [
+                "rotation"
+            ],
+            "difficulty": "hard",
+            "description": "El tablero rota de vez en cuando. CronÃ³metro: 78s. 14 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 105
+            },
+            "seed": 1934148,
+            "setSize": 2
+        },
+        {
+            "id": 935,
+            "phase": 19,
+            "theme": "dimension",
+            "pairs": 6,
+            "timeSec": 59,
+            "mechanics": [
+                "basic"
+            ],
+            "difficulty": "medium",
+            "description": "Nivel clÃ¡sico sin trucos. CronÃ³metro: 59s. 12 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 60
+            },
+            "seed": 1935119,
+            "setSize": 2
+        },
+        {
+            "id": 936,
+            "phase": 19,
+            "theme": "dimension",
+            "pairs": 5,
+            "timeSec": 0,
+            "mechanics": [
+                "basic"
+            ],
+            "difficulty": "easy",
+            "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 10 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 25
+            },
+            "seed": 1936050,
+            "setSize": 2
+        },
+        {
+            "id": 937,
+            "phase": 19,
+            "theme": "dimension",
+            "pairs": 7,
+            "timeSec": 0,
+            "mechanics": [
+                "ghost"
+            ],
+            "difficulty": "medium",
+            "description": "Cartas fantasma aparecen y desaparecen. Sin cronÃ³metro. 14 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 70
+            },
+            "seed": 1937070,
+            "setSize": 2
+        },
+        {
+            "id": 938,
+            "phase": 19,
+            "theme": "dimension",
+            "pairs": 2,
+            "timeSec": 0,
+            "mechanics": [
+                "frozen"
+            ],
+            "difficulty": "medium",
+            "description": "Cartas que se congelan temporalmente. Sin cronÃ³metro. 4 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 20
+            },
+            "seed": 1938020,
+            "setSize": 2
+        },
+        {
+            "id": 939,
+            "phase": 19,
+            "theme": "dimension",
+            "pairs": 6,
+            "timeSec": 0,
+            "mechanics": [
+                "bomb"
+            ],
+            "difficulty": "medium",
+            "description": "Evita bombas: piensa rÃ¡pido. Sin cronÃ³metro. 12 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 60
+            },
+            "seed": 1939060,
+            "setSize": 2
+        },
+        {
+            "id": 940,
+            "phase": 19,
+            "theme": "dimension",
+            "pairs": 12,
+            "timeSec": 98,
+            "mechanics": [
+                "fog"
+            ],
+            "difficulty": "hard",
+            "description": "las cartas estÃ¡n parcialmente ocultas. CronÃ³metro: 98s. 24 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 180
+            },
+            "seed": 1940218,
+            "setSize": 2
+        },
+        {
+            "id": 941,
+            "phase": 19,
+            "theme": "dimension",
+            "pairs": 9,
+            "timeSec": 0,
+            "mechanics": [
+                "basic"
+            ],
+            "difficulty": "medium",
+            "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 18 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 90
+            },
+            "seed": 1941090,
+            "setSize": 2
+        },
+        {
+            "id": 942,
+            "phase": 19,
+            "theme": "dimension",
+            "pairs": 8,
+            "timeSec": 0,
+            "mechanics": [
+                "basic"
+            ],
+            "difficulty": "medium",
+            "description": "juega normalmente. Sin cronÃ³metro. 16 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 80
+            },
+            "seed": 1942080,
+            "setSize": 2
+        },
+        {
+            "id": 943,
+            "phase": 19,
+            "theme": "dimension",
+            "pairs": 5,
+            "timeSec": 0,
+            "mechanics": [
+                "basic"
+            ],
+            "difficulty": "easy",
+            "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 10 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 25
+            },
+            "seed": 1943050,
+            "setSize": 2
+        },
+        {
+            "id": 944,
+            "phase": 19,
+            "theme": "dimension",
+            "pairs": 6,
+            "timeSec": 0,
+            "mechanics": [
+                "bomb"
+            ],
+            "difficulty": "medium",
+            "description": "Evita bombas: piensa rÃ¡pido. Sin cronÃ³metro. 12 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 60
+            },
+            "seed": 1944060,
+            "setSize": 2
+        },
+        {
+            "id": 945,
+            "phase": 19,
+            "theme": "dimension",
+            "pairs": 9,
+            "timeSec": 0,
+            "mechanics": [
+                "basic"
+            ],
+            "difficulty": "medium",
+            "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 18 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 90
+            },
+            "seed": 1945090,
+            "setSize": 2
+        },
+        {
+            "id": 946,
+            "phase": 19,
+            "theme": "dimension",
+            "pairs": 8,
+            "timeSec": 75,
+            "mechanics": [
+                "darkness"
+            ],
+            "difficulty": "hard",
+            "description": "La oscuridad cubre el tablero poco a poco. CronÃ³metro: 75s. 16 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 120
+            },
+            "seed": 1946155,
+            "setSize": 2
+        },
+        {
+            "id": 947,
+            "phase": 19,
+            "theme": "dimension",
+            "pairs": 2,
+            "timeSec": 0,
+            "mechanics": [
+                "rotation"
+            ],
+            "difficulty": "medium",
+            "description": "El tablero rota de vez en cuando. Sin cronÃ³metro. 4 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 20
+            },
+            "seed": 1947020,
+            "setSize": 2
+        },
+        {
+            "id": 948,
+            "phase": 19,
+            "theme": "dimension",
+            "pairs": 6,
+            "timeSec": 0,
+            "mechanics": [
+                "chameleon"
+            ],
+            "difficulty": "medium",
+            "description": "Las cartas cambian de valor. Sin cronÃ³metro. 12 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 60
+            },
+            "seed": 1948060,
+            "setSize": 2
+        },
+        {
+            "id": 949,
+            "phase": 19,
+            "theme": "dimension",
+            "pairs": 4,
+            "timeSec": 0,
+            "mechanics": [
+                "bomb"
+            ],
+            "difficulty": "medium",
+            "description": "Evita bombas: piensa rÃ¡pido. Sin cronÃ³metro. 8 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 40
+            },
+            "seed": 1949040,
+            "setSize": 2
+        },
+        {
+            "id": 950,
+            "phase": 19,
+            "theme": "dimension",
+            "pairs": 12,
+            "timeSec": 101,
+            "mechanics": [
+                "fog",
+                "rotation"
+            ],
+            "difficulty": "hard",
+            "description": "Boss: 24 cartas, fog + rotation, crono 101s.",
+            "isBoss": true,
+            "rewards": {
+                "coins": 180
+            },
+            "seed": 1950221,
+            "setSize": 2
+        },
+        {
+            "id": 951,
+            "phase": 20,
+            "theme": "final",
+            "pairs": 3,
+            "timeSec": 0,
+            "mechanics": [
+                "trio"
+            ],
+            "difficulty": "easy",
+            "description": "Encuentra trÃ­os idÃ©nticos. Sin cronÃ³metro. 6 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 15
+            },
+            "seed": 1951030,
+            "setSize": 3
+        },
+        {
+            "id": 952,
+            "phase": 20,
+            "theme": "final",
+            "pairs": 8,
+            "timeSec": 0,
+            "mechanics": [
+                "darkness"
+            ],
+            "difficulty": "medium",
+            "description": "La oscuridad cubre el tablero poco a poco. Sin cronÃ³metro. 16 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 80
+            },
+            "seed": 1952080,
+            "setSize": 2
+        },
+        {
+            "id": 953,
+            "phase": 20,
+            "theme": "final",
+            "pairs": 8,
+            "timeSec": 80,
+            "mechanics": [
+                "bomb"
+            ],
+            "difficulty": "hard",
+            "description": "Evita bombas: piensa rÃ¡pido. CronÃ³metro: 80s. 16 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 120
+            },
+            "seed": 1953160,
+            "setSize": 2
+        },
+        {
+            "id": 954,
+            "phase": 20,
+            "theme": "final",
+            "pairs": 8,
+            "timeSec": 77,
+            "mechanics": [
+                "basic"
+            ],
+            "difficulty": "medium",
+            "description": "Nivel clÃ¡sico sin trucos. CronÃ³metro: 77s. 16 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 80
+            },
+            "seed": 1954157,
+            "setSize": 2
+        },
+        {
+            "id": 955,
+            "phase": 20,
+            "theme": "final",
+            "pairs": 10,
+            "timeSec": 0,
+            "mechanics": [
+                "chameleon"
+            ],
+            "difficulty": "hard",
+            "description": "Las cartas cambian de valor. Sin cronÃ³metro. 20 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 150
+            },
+            "seed": 1955100,
+            "setSize": 2
+        },
+        {
+            "id": 956,
+            "phase": 20,
+            "theme": "final",
+            "pairs": 6,
+            "timeSec": 0,
+            "mechanics": [
+                "basic"
+            ],
+            "difficulty": "easy",
+            "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 12 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 30
+            },
+            "seed": 1956060,
+            "setSize": 2
+        },
+        {
+            "id": 957,
+            "phase": 20,
+            "theme": "final",
+            "pairs": 8,
+            "timeSec": 72,
+            "mechanics": [
+                "fog"
+            ],
+            "difficulty": "medium",
+            "description": "las cartas estÃ¡n parcialmente ocultas. CronÃ³metro: 72s. 16 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 80
+            },
+            "seed": 1957152,
+            "setSize": 2
+        },
+        {
+            "id": 958,
+            "phase": 20,
+            "theme": "final",
+            "pairs": 9,
+            "timeSec": 0,
+            "mechanics": [
+                "ghost"
+            ],
+            "difficulty": "medium",
+            "description": "Cartas fantasma aparecen y desaparecen. Sin cronÃ³metro. 18 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 90
+            },
+            "seed": 1958090,
+            "setSize": 2
+        },
+        {
+            "id": 959,
+            "phase": 20,
+            "theme": "final",
+            "pairs": 4,
+            "timeSec": 0,
+            "mechanics": [
+                "frozen"
+            ],
+            "difficulty": "medium",
+            "description": "Cartas que se congelan temporalmente. Sin cronÃ³metro. 8 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 40
+            },
+            "seed": 1959040,
+            "setSize": 2
+        },
+        {
+            "id": 960,
+            "phase": 20,
+            "theme": "final",
+            "pairs": 6,
+            "timeSec": 0,
+            "mechanics": [
+                "rotation"
+            ],
+            "difficulty": "medium",
+            "description": "El tablero rota de vez en cuando. Sin cronÃ³metro. 12 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 60
+            },
+            "seed": 1960060,
+            "setSize": 2
+        },
+        {
+            "id": 961,
+            "phase": 20,
+            "theme": "final",
+            "pairs": 4,
+            "timeSec": 0,
+            "mechanics": [
+                "chameleon"
+            ],
+            "difficulty": "medium",
+            "description": "Las cartas cambian de valor. Sin cronÃ³metro. 8 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 40
+            },
+            "seed": 1961040,
+            "setSize": 2
+        },
+        {
+            "id": 962,
+            "phase": 20,
+            "theme": "final",
+            "pairs": 5,
+            "timeSec": 0,
+            "mechanics": [
+                "rotation"
+            ],
+            "difficulty": "medium",
+            "description": "El tablero rota de vez en cuando. Sin cronÃ³metro. 10 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 50
+            },
+            "seed": 1962050,
+            "setSize": 2
+        },
+        {
+            "id": 963,
+            "phase": 20,
+            "theme": "final",
+            "pairs": 4,
+            "timeSec": 0,
+            "mechanics": [
+                "bomb"
+            ],
+            "difficulty": "medium",
+            "description": "Evita bombas: piensa rÃ¡pido. Sin cronÃ³metro. 8 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 40
+            },
+            "seed": 1963040,
+            "setSize": 2
+        },
+        {
+            "id": 964,
+            "phase": 20,
+            "theme": "final",
+            "pairs": 6,
+            "timeSec": 0,
+            "mechanics": [
+                "chameleon"
+            ],
+            "difficulty": "medium",
+            "description": "Las cartas cambian de valor. Sin cronÃ³metro. 12 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 60
+            },
+            "seed": 1964060,
+            "setSize": 2
+        },
+        {
+            "id": 965,
+            "phase": 20,
+            "theme": "final",
+            "pairs": 10,
+            "timeSec": 93,
+            "mechanics": [
+                "darkness"
+            ],
+            "difficulty": "hard",
+            "description": "La oscuridad cubre el tablero poco a poco. CronÃ³metro: 93s. 20 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 150
+            },
+            "seed": 1965193,
+            "setSize": 2
+        },
+        {
+            "id": 966,
+            "phase": 20,
+            "theme": "final",
+            "pairs": 6,
+            "timeSec": 63,
+            "mechanics": [
+                "bomb"
+            ],
+            "difficulty": "medium",
+            "description": "Evita bombas: piensa rÃ¡pido. CronÃ³metro: 63s. 12 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 60
+            },
+            "seed": 1966123,
+            "setSize": 2
+        },
+        {
+            "id": 967,
+            "phase": 20,
+            "theme": "final",
+            "pairs": 6,
+            "timeSec": 0,
+            "mechanics": [
+                "ghost"
+            ],
+            "difficulty": "easy",
+            "description": "Cartas fantasma aparecen y desaparecen. Sin cronÃ³metro. 12 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 30
+            },
+            "seed": 1967060,
+            "setSize": 2
+        },
+        {
+            "id": 968,
+            "phase": 20,
+            "theme": "final",
+            "pairs": 10,
+            "timeSec": 0,
+            "mechanics": [
+                "basic"
+            ],
+            "difficulty": "medium",
+            "description": "juega normalmente. Sin cronÃ³metro. 20 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 100
+            },
+            "seed": 1968100,
+            "setSize": 2
+        },
+        {
+            "id": 969,
+            "phase": 20,
+            "theme": "final",
+            "pairs": 2,
+            "timeSec": 0,
+            "mechanics": [
+                "fog"
+            ],
+            "difficulty": "easy",
+            "description": "Niebla ligera: observa con atenciÃ³n. Sin cronÃ³metro. 4 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 10
+            },
+            "seed": 1969020,
+            "setSize": 2
+        },
+        {
+            "id": 970,
+            "phase": 20,
+            "theme": "final",
+            "pairs": 10,
+            "timeSec": 92,
+            "mechanics": [
+                "frozen"
+            ],
+            "difficulty": "hard",
+            "description": "Cartas que se congelan temporalmente. CronÃ³metro: 92s. 20 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 150
+            },
+            "seed": 1970192,
+            "setSize": 2
+        },
+        {
+            "id": 971,
+            "phase": 20,
+            "theme": "final",
+            "pairs": 4,
+            "timeSec": 0,
+            "mechanics": [
+                "fog"
+            ],
+            "difficulty": "easy",
+            "description": "Niebla ligera: observa con atenciÃ³n. Sin cronÃ³metro. 8 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 20
+            },
+            "seed": 1971040,
+            "setSize": 2
+        },
+        {
+            "id": 972,
+            "phase": 20,
+            "theme": "final",
+            "pairs": 8,
+            "timeSec": 0,
+            "mechanics": [
+                "frozen"
+            ],
+            "difficulty": "medium",
+            "description": "Cartas que se congelan temporalmente. Sin cronÃ³metro. 16 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 80
+            },
+            "seed": 1972080,
+            "setSize": 2
+        },
+        {
+            "id": 973,
+            "phase": 20,
+            "theme": "final",
+            "pairs": 8,
+            "timeSec": 84,
+            "mechanics": [
+                "rotation"
+            ],
+            "difficulty": "hard",
+            "description": "El tablero rota de vez en cuando. CronÃ³metro: 84s. 16 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 120
+            },
+            "seed": 1973164,
+            "setSize": 2
+        },
+        {
+            "id": 974,
+            "phase": 20,
+            "theme": "final",
+            "pairs": 3,
+            "timeSec": 0,
+            "mechanics": [
+                "trio"
+            ],
+            "difficulty": "easy",
+            "description": "Encuentra trÃ­os idÃ©nticos. Sin cronÃ³metro. 6 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 15
+            },
+            "seed": 1974030,
+            "setSize": 3
+        },
+        {
+            "id": 975,
+            "phase": 20,
+            "theme": "final",
+            "pairs": 7,
+            "timeSec": 0,
+            "mechanics": [
+                "fog"
+            ],
+            "difficulty": "medium",
+            "description": "Niebla ligera: observa con atenciÃ³n. Sin cronÃ³metro. 14 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 70
+            },
+            "seed": 1975070,
+            "setSize": 2
+        },
+        {
+            "id": 976,
+            "phase": 20,
+            "theme": "final",
+            "pairs": 5,
+            "timeSec": 0,
+            "mechanics": [
+                "rotation"
+            ],
+            "difficulty": "medium",
+            "description": "El tablero rota de vez en cuando. Sin cronÃ³metro. 10 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 50
+            },
+            "seed": 1976050,
+            "setSize": 2
+        },
+        {
+            "id": 977,
+            "phase": 20,
+            "theme": "final",
+            "pairs": 6,
+            "timeSec": 0,
+            "mechanics": [
+                "basic"
+            ],
+            "difficulty": "easy",
+            "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 12 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 30
+            },
+            "seed": 1977060,
+            "setSize": 2
+        },
+        {
+            "id": 978,
+            "phase": 20,
+            "theme": "final",
+            "pairs": 3,
+            "timeSec": 0,
+            "mechanics": [
+                "frozen"
+            ],
+            "difficulty": "medium",
+            "description": "Cartas que se congelan temporalmente. Sin cronÃ³metro. 6 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 30
+            },
+            "seed": 1978030,
+            "setSize": 2
+        },
+        {
+            "id": 979,
+            "phase": 20,
+            "theme": "final",
+            "pairs": 9,
+            "timeSec": 0,
+            "mechanics": [
+                "trio"
+            ],
+            "difficulty": "hard",
+            "description": "Encuentra trÃ­os idÃ©nticos. Sin cronÃ³metro. 18 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 135
+            },
+            "seed": 1979090,
+            "setSize": 3
+        },
+        {
+            "id": 980,
+            "phase": 20,
+            "theme": "final",
+            "pairs": 8,
+            "timeSec": 0,
+            "mechanics": [
+                "basic"
+            ],
+            "difficulty": "medium",
+            "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 16 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 80
+            },
+            "seed": 1980080,
+            "setSize": 2
+        },
+        {
+            "id": 981,
+            "phase": 20,
+            "theme": "final",
+            "pairs": 9,
+            "timeSec": 97,
+            "mechanics": [
+                "basic"
+            ],
+            "difficulty": "hard",
+            "description": "Nivel clÃ¡sico sin trucos. CronÃ³metro: 97s. 18 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 135
+            },
+            "seed": 1981187,
+            "setSize": 2
+        },
+        {
+            "id": 982,
+            "phase": 20,
+            "theme": "final",
+            "pairs": 8,
+            "timeSec": 76,
+            "mechanics": [
+                "rotation"
+            ],
+            "difficulty": "medium",
+            "description": "las cartas pueden rotar. CronÃ³metro: 76s. 16 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 80
+            },
+            "seed": 1982156,
+            "setSize": 2
+        },
+        {
+            "id": 983,
+            "phase": 20,
+            "theme": "final",
+            "pairs": 4,
+            "timeSec": 0,
+            "mechanics": [
+                "basic"
+            ],
+            "difficulty": "easy",
+            "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 8 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 20
+            },
+            "seed": 1983040,
+            "setSize": 2
+        },
+        {
+            "id": 984,
+            "phase": 20,
+            "theme": "final",
+            "pairs": 8,
+            "timeSec": 0,
+            "mechanics": [
+                "basic"
+            ],
+            "difficulty": "medium",
+            "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 16 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 80
+            },
+            "seed": 1984080,
+            "setSize": 2
+        },
+        {
+            "id": 985,
+            "phase": 20,
+            "theme": "final",
+            "pairs": 6,
+            "timeSec": 0,
+            "mechanics": [
+                "bomb"
+            ],
+            "difficulty": "medium",
+            "description": "Evita bombas: piensa rÃ¡pido. Sin cronÃ³metro. 12 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 60
+            },
+            "seed": 1985060,
+            "setSize": 2
+        },
+        {
+            "id": 986,
+            "phase": 20,
+            "theme": "final",
+            "pairs": 9,
+            "timeSec": 88,
+            "mechanics": [
+                "basic"
+            ],
+            "difficulty": "hard",
+            "description": "Nivel clÃ¡sico sin trucos. CronÃ³metro: 88s. 18 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 135
+            },
+            "seed": 1986178,
+            "setSize": 2
+        },
+        {
+            "id": 987,
+            "phase": 20,
+            "theme": "final",
+            "pairs": 6,
+            "timeSec": 0,
+            "mechanics": [
+                "basic"
+            ],
+            "difficulty": "easy",
+            "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 12 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 30
+            },
+            "seed": 1987060,
+            "setSize": 2
+        },
+        {
+            "id": 988,
+            "phase": 20,
+            "theme": "final",
+            "pairs": 7,
+            "timeSec": 0,
+            "mechanics": [
+                "bomb"
+            ],
+            "difficulty": "medium",
+            "description": "Evita bombas: piensa rÃ¡pido. Sin cronÃ³metro. 14 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 70
+            },
+            "seed": 1988070,
+            "setSize": 2
+        },
+        {
+            "id": 989,
+            "phase": 20,
+            "theme": "final",
+            "pairs": 2,
+            "timeSec": 0,
+            "mechanics": [
+                "basic"
+            ],
+            "difficulty": "easy",
+            "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 4 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 10
+            },
+            "seed": 1989020,
+            "setSize": 2
+        },
+        {
+            "id": 990,
+            "phase": 20,
+            "theme": "final",
+            "pairs": 7,
+            "timeSec": 0,
+            "mechanics": [
+                "basic"
+            ],
+            "difficulty": "medium",
+            "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 14 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 70
+            },
+            "seed": 1990070,
+            "setSize": 2
+        },
+        {
+            "id": 991,
+            "phase": 20,
+            "theme": "final",
+            "pairs": 3,
+            "timeSec": 0,
+            "mechanics": [
+                "bomb"
+            ],
+            "difficulty": "medium",
+            "description": "Evita bombas: piensa rÃ¡pido. Sin cronÃ³metro. 6 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 30
+            },
+            "seed": 1991030,
+            "setSize": 2
+        },
+        {
+            "id": 992,
+            "phase": 20,
+            "theme": "final",
+            "pairs": 9,
+            "timeSec": 0,
+            "mechanics": [
+                "trio"
+            ],
+            "difficulty": "hard",
+            "description": "Encuentra trÃ­os idÃ©nticos. Sin cronÃ³metro. 18 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 135
+            },
+            "seed": 1992090,
+            "setSize": 3
+        },
+        {
+            "id": 993,
+            "phase": 20,
+            "theme": "final",
+            "pairs": 5,
+            "timeSec": 0,
+            "mechanics": [
+                "frozen"
+            ],
+            "difficulty": "medium",
+            "description": "Cartas que se congelan temporalmente. Sin cronÃ³metro. 10 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 50
+            },
+            "seed": 1993050,
+            "setSize": 2
+        },
+        {
+            "id": 994,
+            "phase": 20,
+            "theme": "final",
+            "pairs": 4,
+            "timeSec": 0,
+            "mechanics": [
+                "bomb"
+            ],
+            "difficulty": "medium",
+            "description": "Evita bombas: piensa rÃ¡pido. Sin cronÃ³metro. 8 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 40
+            },
+            "seed": 1994040,
+            "setSize": 2
+        },
+        {
+            "id": 995,
+            "phase": 20,
+            "theme": "final",
+            "pairs": 6,
+            "timeSec": 0,
+            "mechanics": [
+                "fog"
+            ],
+            "difficulty": "easy",
+            "description": "Niebla ligera: observa con atenciÃ³n. Sin cronÃ³metro. 12 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 30
+            },
+            "seed": 1995060,
+            "setSize": 2
+        },
+        {
+            "id": 996,
+            "phase": 20,
+            "theme": "final",
+            "pairs": 12,
+            "timeSec": 111,
+            "mechanics": [
+                "darkness"
+            ],
+            "difficulty": "hard",
+            "description": "La oscuridad cubre el tablero poco a poco. CronÃ³metro: 111s. 24 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 180
+            },
+            "seed": 1996231,
+            "setSize": 2
+        },
+        {
+            "id": 997,
+            "phase": 20,
+            "theme": "final",
+            "pairs": 7,
+            "timeSec": 0,
+            "mechanics": [
+                "rotation"
+            ],
+            "difficulty": "medium",
+            "description": "El tablero rota de vez en cuando. Sin cronÃ³metro. 14 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 70
+            },
+            "seed": 1997070,
+            "setSize": 2
+        },
+        {
+            "id": 998,
+            "phase": 20,
+            "theme": "final",
+            "pairs": 9,
+            "timeSec": 86,
+            "mechanics": [
+                "fog"
+            ],
+            "difficulty": "hard",
+            "description": "Niebla ligera: observa con atenciÃ³n. CronÃ³metro: 86s. 18 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 135
+            },
+            "seed": 1998176,
+            "setSize": 2
+        },
+        {
+            "id": 999,
+            "phase": 20,
+            "theme": "final",
+            "pairs": 4,
+            "timeSec": 0,
+            "mechanics": [
+                "frozen"
+            ],
+            "difficulty": "medium",
+            "description": "Cartas que se congelan temporalmente. Sin cronÃ³metro. 8 cartas.",
+            "isBoss": false,
+            "rewards": {
+                "coins": 40
+            },
+            "seed": 1999040,
+            "setSize": 2
+        },
+        {
+            "id": 1000,
+            "phase": 20,
+            "theme": "final",
+            "pairs": 12,
+            "timeSec": 113,
+            "mechanics": [
+                "rotation",
+                "darkness"
+            ],
+            "difficulty": "hard",
+            "description": "Boss: 24 cartas, rotation + darkness, crono 113s.",
+            "isBoss": true,
+            "rewards": {
+                "coins": 180
+            },
+            "seed": 2000233,
+            "setSize": 2
+        }
+    ]
+};
