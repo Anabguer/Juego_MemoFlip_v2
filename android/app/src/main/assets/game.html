@@ -670,33 +670,15 @@
         
         /* ===== MODAL DE ANUNCIO DE MECÁNICAS ===== */
         
-        /* Overlay transparente (se ven las cartas detrás) */
+        /* Overlay (se ven cartas detrás) */
         .mechanic-intro-overlay {
             position: fixed;
             inset: 0;
             z-index: 50;
-            display: none;
+            display: flex;
             align-items: center;
             justify-content: center;
-            pointer-events: none; /* NO bloquea clics en el fondo */
-            opacity: 0;
-            transition: opacity 0.3s ease-out;
-        }
-        
-        .mechanic-intro-overlay.show {
-            display: flex;
-            opacity: 1;
-        }
-        
-        @keyframes mechanic-fade-in {
-            from {
-                opacity: 0;
-                transform: scale(0.8) translateY(-50px);
-            }
-            to {
-                opacity: 1;
-                transform: scale(1) translateY(0);
-            }
+            pointer-events: none; /* No bloquea clics */
         }
         
         /* Caja transparente con blur */
@@ -713,8 +695,19 @@
             box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
             padding: 24px;
             max-width: 400px;
-            width: 100%;
-            margin: 0 16px;
+            width: calc(100% - 32px);
+            animation: appear 0.5s ease-out;
+        }
+        
+        @keyframes appear {
+            from {
+                opacity: 0;
+                transform: scale(0.8) translateY(-50px);
+            }
+            to {
+                opacity: 1;
+                transform: scale(1) translateY(0);
+            }
         }
         
         /* Título */
@@ -727,7 +720,7 @@
             text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
         }
         
-        /* Lista de mecánicas */
+        /* Lista */
         .mechanic-list {
             display: flex;
             flex-direction: column;
@@ -741,19 +734,17 @@
             align-items: center;
             justify-content: center;
             gap: 12px;
-            background: rgba(147, 51, 234, 0.5); /* Morado semi-transparente */
+            background: rgba(147, 51, 234, 0.5);
             border-radius: 8px;
             padding: 12px;
-            animation: mechanic-slide-in 0.3s ease-out backwards;
+            animation: slide-in 0.3s ease-out backwards;
         }
         
-        /* Aparecen progresivamente */
         .mechanic-item:nth-child(1) { animation-delay: 0s; }
         .mechanic-item:nth-child(2) { animation-delay: 0.2s; }
         .mechanic-item:nth-child(3) { animation-delay: 0.4s; }
-        .mechanic-item:nth-child(4) { animation-delay: 0.6s; }
         
-        @keyframes mechanic-slide-in {
+        @keyframes slide-in {
             from {
                 opacity: 0;
                 transform: translateX(-20px);
@@ -781,12 +772,12 @@
             text-align: center;
             margin: 0;
             text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
-            animation: footer-fade 0.3s ease-out;
+            animation: fade-in 0.3s ease-out;
             animation-delay: 0.5s;
             animation-fill-mode: backwards;
         }
         
-        @keyframes footer-fade {
+        @keyframes fade-in {
             from { opacity: 0; }
             to { opacity: 1; }
         }
@@ -1698,134 +1689,6 @@
             margin: 0;
         }
 
-        /* ===== MODAL ANUNCIO DE MECÁNICAS ===== */
-        .mechanic-intro-overlay {
-            position: fixed;
-            inset: 0;
-            z-index: 50;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            pointer-events: none; /* ← NO bloquea interacción */
-            animation: mechanic-fade-in 0.5s ease-out;
-        }
-
-        .mechanic-intro-overlay.hidden {
-            display: none;
-        }
-
-        @keyframes mechanic-fade-in {
-            from {
-                opacity: 0;
-                transform: scale(0.8) translateY(-50px);
-            }
-            to {
-                opacity: 1;
-                transform: scale(1) translateY(0);
-            }
-        }
-
-        /* ===== CAJA TRANSPARENTE CON BLUR ===== */
-        .mechanic-intro-box {
-            background: linear-gradient(135deg, 
-                rgba(255, 255, 255, 0.2),
-                rgba(255, 255, 255, 0.15),
-                rgba(255, 255, 255, 0.1)
-            );
-            backdrop-filter: blur(8px);
-            -webkit-backdrop-filter: blur(8px);
-            border-radius: 16px;
-            border: 1px solid rgba(255, 255, 255, 0.3);
-            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
-            padding: 24px;
-            max-width: 400px;
-            width: 100%;
-            margin: 0 16px;
-        }
-
-        /* ===== CONTENIDO ===== */
-        .mechanic-intro-content {
-            text-align: center;
-        }
-
-        /* ===== TÍTULO ===== */
-        .mechanic-intro-title {
-            font-size: 20px;
-            font-weight: bold;
-            color: white;
-            margin: 0 0 16px 0;
-            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
-        }
-
-        /* ===== LISTA DE MECÁNICAS ===== */
-        .mechanic-list {
-            display: flex;
-            flex-direction: column;
-            gap: 12px;
-            margin-bottom: 16px;
-        }
-
-        /* ===== CADA MECÁNICA ===== */
-        .mechanic-item {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 12px;
-            background: rgba(147, 51, 234, 0.5); /* purple-600/50 */
-            border-radius: 8px;
-            padding: 12px;
-            animation: mechanic-slide-in 0.3s ease-out backwards;
-        }
-
-        /* Cada mecánica aparece con delay progresivo */
-        .mechanic-item:nth-child(1) { animation-delay: 0s; }
-        .mechanic-item:nth-child(2) { animation-delay: 0.2s; }
-        .mechanic-item:nth-child(3) { animation-delay: 0.4s; }
-        .mechanic-item:nth-child(4) { animation-delay: 0.6s; }
-        .mechanic-item:nth-child(5) { animation-delay: 0.8s; }
-
-        @keyframes mechanic-slide-in {
-            from {
-                opacity: 0;
-                transform: translateX(-20px);
-            }
-            to {
-                opacity: 1;
-                transform: translateX(0);
-            }
-        }
-
-        /* ===== ICONO EMOJI ===== */
-        .mechanic-icon {
-            font-size: 24px;
-            line-height: 1;
-        }
-
-        /* ===== NOMBRE DE MECÁNICA ===== */
-        .mechanic-name {
-            color: white;
-            font-weight: 500;
-            font-size: 16px;
-            text-transform: capitalize;
-        }
-
-        /* ===== TEXTO FOOTER ===== */
-        .mechanic-intro-footer {
-            font-size: 14px;
-            color: rgba(255, 255, 255, 0.8);
-            animation: mechanic-footer-fade 0.3s ease-out;
-            animation-delay: 0.5s;
-            animation-fill-mode: backwards;
-        }
-
-        @keyframes mechanic-footer-fade {
-            from {
-                opacity: 0;
-            }
-            to {
-                opacity: 1;
-            }
-        }
 
         /* ===== HELPERS ===== */
         .hidden {
@@ -2680,22 +2543,15 @@
     </div>
 
     <!-- ===== MODAL ANUNCIO DE MECÁNICAS ===== -->
-    <div id="mechanic-intro" class="mechanic-intro-overlay hidden">
+    <div id="mechanic-intro" class="mechanic-intro-overlay">
         <div class="mechanic-intro-box">
-            <div class="mechanic-intro-content">
-                <!-- Título -->
-                <h3 class="mechanic-intro-title">¡Desafío Especial!</h3>
-                
-                <!-- Lista de mecánicas -->
-                <div class="mechanic-list" id="mechanic-list">
-                    <!-- Las mecánicas se agregan dinámicamente -->
-                </div>
-                
-                <!-- Texto de motivación -->
-                <div class="mechanic-intro-footer">
-                    ¡Demuestra tu habilidad!
-                </div>
+            <h3 class="mechanic-intro-title">¡Desafío Especial!</h3>
+            
+            <div class="mechanic-list" id="mechanic-list">
+                <!-- Las mecánicas se agregan dinámicamente -->
             </div>
+            
+            <p class="mechanic-intro-footer">¡Demuestra tu habilidad!</p>
         </div>
     </div>
 
@@ -2711,19 +2567,6 @@
             <div class="mechanic-help-list" id="mechanic-help-list">
                 <!-- Se rellena dinámicamente -->
             </div>
-        </div>
-    </div>
-
-    <!-- Modal de Anuncio de Mecánicas -->
-    <div id="mechanic-intro" class="mechanic-intro-overlay">
-        <div class="mechanic-intro-box">
-            <h3 class="mechanic-intro-title">¡Desafío Especial!</h3>
-            
-            <div class="mechanic-list" id="mechanic-list">
-                <!-- Las mecánicas se agregan dinámicamente -->
-            </div>
-            
-            <p class="mechanic-intro-footer">¡Demuestra tu habilidad!</p>
         </div>
     </div>
 
@@ -3925,7 +3768,7 @@
             }
             
             // Asegurar que el modal esté oculto antes de mostrarlo
-            overlay.classList.remove('show');
+            overlay.style.display = 'none';
             
             // Limpiar lista
             list.innerHTML = '';
@@ -3951,17 +3794,15 @@
                 list.appendChild(item);
             });
             
-            // Mostrar modal con un pequeño delay para asegurar que se renderice
+            // Mostrar modal
+            overlay.style.display = 'flex';
+            console.log('🎯 Mostrando modal de mecánicas:', specialMechanics);
+            
+            // Ocultar después de 3 segundos
             setTimeout(() => {
-                overlay.classList.add('show');
-                console.log('🎯 Mostrando modal de mecánicas:', specialMechanics);
-                
-                // Ocultar después de 3 segundos
-                setTimeout(() => {
-                    overlay.classList.remove('show');
-                    console.log('🎯 Modal de mecánicas ocultado');
-                }, 3000);
-            }, 100);
+                overlay.style.display = 'none';
+                console.log('🎯 Modal de mecánicas ocultado');
+            }, 3000);
         }
 
         // ========================================
@@ -4210,39 +4051,6 @@
             trio: 'Trío'
         };
 
-        function showMechanicIntro(levelMechanics) {
-            const specialMechanics = levelMechanics.filter(m => m !== 'basic');
-            
-            if (specialMechanics.length === 0) return;
-            
-            const overlay = document.getElementById('mechanic-intro');
-            const list = document.getElementById('mechanic-list');
-            
-            list.innerHTML = '';
-            
-            specialMechanics.forEach((mechanic) => {
-                const item = document.createElement('div');
-                item.className = 'mechanic-item';
-                
-                const icon = document.createElement('span');
-                icon.className = 'mechanic-icon';
-                icon.textContent = MECHANIC_ICONS[mechanic] || '❓';
-                
-                const name = document.createElement('span');
-                name.className = 'mechanic-name';
-                name.textContent = MECHANIC_NAMES[mechanic] || mechanic;
-                
-                item.appendChild(icon);
-                item.appendChild(name);
-                list.appendChild(item);
-            });
-            
-            overlay.classList.remove('hidden');
-            
-            setTimeout(() => {
-                overlay.classList.add('hidden');
-            }, 3000);
-        }
 
         // ===== FUNCIONES AUXILIARES =====
         function formatTime(seconds) {
