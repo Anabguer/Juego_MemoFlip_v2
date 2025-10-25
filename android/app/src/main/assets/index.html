@@ -625,7 +625,7 @@
       } else {
         console.log('❌ Usuario sin nick, pidiendo nick...');
         // Pedir nick SOLO si no existe en Firestore
-        showNickModal();
+        showNickModal(p);
       }
     };
     
@@ -856,7 +856,7 @@
               e.preventDefault();
               e.stopPropagation();
               console.log('🚪 Píldora de usuario presionada (addEventListener)');
-              window.logout();
+              logout();
             });
             console.log('✅ Event listener añadido a toda la píldora');
             } else {
@@ -930,7 +930,7 @@
               e.preventDefault();
               e.stopPropagation();
               console.log('🚪 Píldora de usuario presionada (addEventListener)');
-              window.logout();
+              logout();
             });
             console.log('✅ Event listener añadido a toda la píldora');
           } else {
@@ -1208,6 +1208,14 @@
     // 🔍 VERIFICAR LOGIN AL CARGAR LA PÁGINA
     document.addEventListener('DOMContentLoaded', () => {
       checkLoginStatus();
+      
+      // Verificar con Android nativo si hay usuario logueado
+      if (window.AndroidInterface && window.AndroidInterface.getUser) {
+        console.log('🔍 Llamando a AndroidInterface.getUser()...');
+        window.AndroidInterface.getUser();
+      } else {
+        console.log('❌ AndroidInterface.getUser no disponible');
+      }
     });
     
     // Función de ayuda para modos
@@ -1271,6 +1279,19 @@ Máximo desafío. Mecánicas complejas desde el inicio para expertos.`);
       } else {
         console.error('❌ AndroidInterface.login no disponible');
         alert('Error: AndroidInterface no disponible');
+      }
+    }
+    
+    // Función para logout
+    function logout() {
+      console.log('🚪 Iniciando logout...');
+      if (window.AndroidInterface && window.AndroidInterface.logout) {
+        window.AndroidInterface.logout();
+      } else {
+        console.error('❌ AndroidInterface.logout no disponible');
+        // Fallback: limpiar localStorage y recargar
+        localStorage.clear();
+        location.reload();
       }
     }
     
