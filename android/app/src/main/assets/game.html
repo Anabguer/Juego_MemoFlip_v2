@@ -3193,12 +3193,6 @@
             updateUI();
             generateCards();
             
-            // Mostrar modal de mecánicas si hay mecánicas especiales
-            const levelData = getCurrentLevelData();
-            if (levelData && levelData.mechanics) {
-                showMechanicIntro(levelData.mechanics);
-            }
-            
             // NO iniciar automáticamente - esperar primer clic
             console.log('🎮 Juego listo. Esperando primer clic...');
         }
@@ -3335,6 +3329,11 @@
             
             // 6️⃣ INICIAR MECÁNICAS DEL NIVEL
             MechanicEngine.initLevel(levelData, gameCards);
+            
+            // 7️⃣ MOSTRAR MODAL DE MECÁNICAS SI HAY MECÁNICAS ESPECIALES
+            if (mechanics && mechanics.length > 0) {
+                showMechanicIntro(mechanics);
+            }
         }
         
         
@@ -3743,6 +3742,8 @@
 
         // Mostrar modal de anuncio de mecánicas
         function showMechanicIntro(levelMechanics) {
+            console.log('🎯 showMechanicIntro llamada con:', levelMechanics);
+            
             // NO mostrar modal en modo Principiante/Relax (todas las mecánicas son basic)
             const currentMode = getSelectedMode();
             if (currentMode === 'beginner' || currentMode === 'relax') {
@@ -3752,6 +3753,7 @@
             
             // Filtrar solo mecánicas especiales (sin 'basic')
             const specialMechanics = levelMechanics.filter(m => m !== 'basic');
+            console.log('🎯 Mecánicas especiales filtradas:', specialMechanics);
             
             // Si no hay mecánicas especiales, no mostrar nada
             if (specialMechanics.length === 0) {
@@ -3767,16 +3769,16 @@
                 return;
             }
             
-            // Asegurar que el modal esté oculto antes de mostrarlo
-            overlay.style.display = 'none';
-            
             // Limpiar lista
             list.innerHTML = '';
             
             // Agregar cada mecánica
             specialMechanics.forEach(mechanic => {
                 const info = MECHANIC_INFO[mechanic];
-                if (!info) return;
+                if (!info) {
+                    console.warn('⚠️ Info no encontrada para mecánica:', mechanic);
+                    return;
+                }
                 
                 const item = document.createElement('div');
                 item.className = 'mechanic-item';
