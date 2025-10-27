@@ -1,4 +1,4 @@
-﻿window.levels = {
+window.levels = {
   "levels": [
     {
       "id": 1,
@@ -10,7 +10,7 @@
         "basic"
       ],
       "difficulty": "easy",
-      "description": "Tutorial: Â¡Bienvenido! Sin cronÃ³metro. 4 cartas.",
+      "description": "Practica con calma. Sin cronómetro. 4 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 10
@@ -28,7 +28,7 @@
         "basic"
       ],
       "difficulty": "easy",
-      "description": "Aprende lo bÃ¡sico. Sin cronÃ³metro. 6 cartas.",
+      "description": "Más cartas. Sin cronómetro. 6 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 15
@@ -46,7 +46,7 @@
         "basic"
       ],
       "difficulty": "easy",
-      "description": "MÃ¡s cartas para practicar. Sin cronÃ³metro. 8 cartas.",
+      "description": "Nivel básico. Sin cronómetro. 8 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 20
@@ -64,7 +64,7 @@
         "basic"
       ],
       "difficulty": "easy",
-      "description": "Sigue practicando. Sin cronÃ³metro. 10 cartas.",
+      "description": "Juego tranquilo. Sin cronómetro. 10 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 25
@@ -82,7 +82,7 @@
         "basic"
       ],
       "difficulty": "easy",
-      "description": "Domina la memoria bÃ¡sica. Sin cronÃ³metro. 12 cartas.",
+      "description": "Nivel clásico. Sin cronómetro. 12 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 30
@@ -100,7 +100,7 @@
         "basic"
       ],
       "difficulty": "easy",
-      "description": "Primera mecÃ¡nica: Niebla suave. Sin cronÃ³metro. 8 cartas.",
+      "description": "Practica con calma. Sin cronómetro. 8 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 40
@@ -118,7 +118,7 @@
         "basic"
       ],
       "difficulty": "easy",
-      "description": "Descanso despuÃ©s de niebla. Sin cronÃ³metro. 12 cartas.",
+      "description": "Más cartas. Sin cronómetro. 12 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 30
@@ -136,7 +136,7 @@
         "basic"
       ],
       "difficulty": "easy",
-      "description": "Cartas fantasma aparecen y desaparecen. Sin cronÃ³metro. 10 cartas.",
+      "description": "Nivel básico. Sin cronómetro. 10 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 50
@@ -154,7 +154,7 @@
         "basic"
       ],
       "difficulty": "easy",
-      "description": "Nivel de descanso. Sin cronÃ³metro. 14 cartas.",
+      "description": "Juego tranquilo. Sin cronómetro. 14 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 35
@@ -172,7 +172,7 @@
         "basic"
       ],
       "difficulty": "easy",
-      "description": "Nivel bÃ¡sico: juega normalmente. Sin cronÃ³metro. 12 cartas.",
+      "description": "Nivel clásico. Sin cronómetro. 12 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 60
@@ -190,7 +190,7 @@
         "basic"
       ],
       "difficulty": "easy",
-      "description": "Nivel de descanso. Sin cronÃ³metro. 12 cartas.",
+      "description": "Practica con calma. Sin cronómetro. 12 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 30
@@ -208,13 +208,13 @@
         "basic"
       ],
       "difficulty": "easy",
-      "description": "Encuentra trÃ­os en lugar de pares. Sin cronÃ³metro. 9 cartas.",
+      "description": "Más cartas. Sin cronómetro. 6 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 45
       },
       "seed": 1012030,
-      "setSize": 3
+      "setSize": 2
     },
     {
       "id": 13,
@@ -226,7 +226,7 @@
         "basic"
       ],
       "difficulty": "medium",
-      "description": "Â¡Primer cronÃ³metro! Tienes 60 segundos. 12 cartas.",
+      "description": "Nivel básico. Sin cronómetro. 12 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 60
@@ -244,7 +244,7 @@
         "basic"
       ],
       "difficulty": "medium",
-      "description": "Niebla de nuevo. Sin cronÃ³metro. 12 cartas.",
+      "description": "Juego tranquilo. Sin cronómetro. 12 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 60
@@ -262,7 +262,7 @@
         "basic"
       ],
       "difficulty": "medium",
-      "description": "MÃ¡s cartas con cronÃ³metro. 70 segundos. 14 cartas.",
+      "description": "Nivel clásico. Sin cronómetro. 14 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 70
@@ -280,7 +280,7 @@
         "basic"
       ],
       "difficulty": "medium",
-      "description": "Fantasma con cronÃ³metro. 55 segundos. 12 cartas.",
+      "description": "Practica con calma. Sin cronómetro. 12 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 80
@@ -298,7 +298,7 @@
         "basic"
       ],
       "difficulty": "medium",
-      "description": "Nivel de descanso. Sin cronÃ³metro. 16 cartas.",
+      "description": "Más cartas. Sin cronómetro. 16 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 40
@@ -316,7 +316,7 @@
         "basic"
       ],
       "difficulty": "medium",
-      "description": "Cartas congeladas temporalmente. Sin cronÃ³metro. 10 cartas.",
+      "description": "Nivel básico. Sin cronómetro. 10 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 70
@@ -334,7 +334,7 @@
         "basic"
       ],
       "difficulty": "medium",
-      "description": "Descanso con cronÃ³metro. 65 segundos. 12 cartas.",
+      "description": "Juego tranquilo. Sin cronómetro. 12 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 60
@@ -352,7 +352,7 @@
         "basic"
       ],
       "difficulty": "medium",
-      "description": "La oscuridad cubre el tablero poco a poco. Sin cronÃ³metro. 12 cartas.",
+      "description": "Nivel clásico. Sin cronómetro. 12 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 80
@@ -370,7 +370,7 @@
         "basic"
       ],
       "difficulty": "hard",
-      "description": "Evita bombas: piensa rÃ¡pido. Sin cronÃ³metro. 24 cartas.",
+      "description": "Practica con calma. Sin cronómetro. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 180
@@ -388,7 +388,7 @@
         "basic"
       ],
       "difficulty": "medium",
-      "description": "Nivel clÃ¡sico sin trucos. CronÃ³metro: 64s. 14 cartas.",
+      "description": "Más cartas. Sin cronómetro. 14 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 70
@@ -406,7 +406,7 @@
         "basic"
       ],
       "difficulty": "medium",
-      "description": "Cartas fantasma aparecen y desaparecen. CronÃ³metro: 45s. 10 cartas.",
+      "description": "Nivel básico. Sin cronómetro. 10 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 50
@@ -424,7 +424,7 @@
         "basic"
       ],
       "difficulty": "medium",
-      "description": "Niebla ligera: observa con atenciÃ³n. Sin cronÃ³metro. 14 cartas.",
+      "description": "Juego tranquilo. Sin cronómetro. 14 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 70
@@ -436,19 +436,20 @@
       "id": 25,
       "phase": 1,
       "theme": "ocean",
-      "pairs": 9,
+      "pairs": 6,
       "timeSec": 0,
       "mechanics": [
-        "basic"
+        "basic",
+        "trio"
       ],
       "difficulty": "hard",
-      "description": "Nivel clÃ¡sico sin trucos. CronÃ³metro: 85s. 18 cartas.",
+      "description": "Nivel clásico. Sin cronómetro. 18 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 135
       },
       "seed": 1025175,
-      "setSize": 2
+      "setSize": 3
     },
     {
       "id": 26,
@@ -460,7 +461,7 @@
         "basic"
       ],
       "difficulty": "medium",
-      "description": "La oscuridad cubre el tablero poco a poco. Sin cronÃ³metro. 16 cartas.",
+      "description": "Practica con calma. Sin cronómetro. 16 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 80
@@ -478,7 +479,7 @@
         "basic"
       ],
       "difficulty": "medium",
-      "description": "El tablero rota de vez en cuando. Sin cronÃ³metro. 6 cartas.",
+      "description": "Más cartas. Sin cronómetro. 6 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 30
@@ -496,7 +497,7 @@
         "basic"
       ],
       "difficulty": "hard",
-      "description": "La oscuridad cubre el tablero poco a poco. CronÃ³metro: 101s. 20 cartas.",
+      "description": "Nivel básico. Sin cronómetro. 20 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 150
@@ -514,7 +515,7 @@
         "basic"
       ],
       "difficulty": "hard",
-      "description": "Las cartas cambian de valor. CronÃ³metro: 81s. 16 cartas.",
+      "description": "Juego tranquilo. Sin cronómetro. 16 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 120
@@ -532,7 +533,7 @@
         "basic"
       ],
       "difficulty": "medium",
-      "description": "juega normalmente. Sin cronÃ³metro. 16 cartas.",
+      "description": "Nivel clásico. Sin cronómetro. 16 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 80
@@ -550,7 +551,7 @@
         "basic"
       ],
       "difficulty": "medium",
-      "description": "Nivel clÃ¡sico sin trucos. CronÃ³metro: 67s. 12 cartas.",
+      "description": "Practica con calma. Sin cronómetro. 12 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 60
@@ -568,7 +569,7 @@
         "basic"
       ],
       "difficulty": "medium",
-      "description": "Cartas fantasma aparecen y desaparecen. Sin cronÃ³metro. 16 cartas.",
+      "description": "Más cartas. Sin cronómetro. 16 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 80
@@ -586,7 +587,7 @@
         "basic"
       ],
       "difficulty": "hard",
-      "description": "las cartas pueden rotar. CronÃ³metro: 89s. 20 cartas.",
+      "description": "Nivel básico. Sin cronómetro. 20 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 150
@@ -604,7 +605,7 @@
         "basic"
       ],
       "difficulty": "hard",
-      "description": "La oscuridad cubre el tablero poco a poco. CronÃ³metro: 106s. 24 cartas.",
+      "description": "Juego tranquilo. Sin cronómetro. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 180
@@ -622,7 +623,7 @@
         "basic"
       ],
       "difficulty": "medium",
-      "description": "Cartas que se congelan temporalmente. Sin cronÃ³metro. 10 cartas.",
+      "description": "Nivel clásico. Sin cronómetro. 10 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 50
@@ -640,7 +641,7 @@
         "basic"
       ],
       "difficulty": "medium",
-      "description": "Nivel clÃ¡sico sin trucos. CronÃ³metro: 53s. 12 cartas.",
+      "description": "Practica con calma. Sin cronómetro. 12 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 60
@@ -658,7 +659,7 @@
         "basic"
       ],
       "difficulty": "easy",
-      "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 10 cartas.",
+      "description": "Más cartas. Sin cronómetro. 10 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 25
@@ -676,7 +677,7 @@
         "basic"
       ],
       "difficulty": "medium",
-      "description": "Cartas que se congelan temporalmente. Sin cronÃ³metro. 6 cartas.",
+      "description": "Nivel básico. Sin cronómetro. 6 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 30
@@ -694,7 +695,7 @@
         "basic"
       ],
       "difficulty": "medium",
-      "description": "juega normalmente. Sin cronÃ³metro. 20 cartas.",
+      "description": "Juego tranquilo. Sin cronómetro. 20 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 100
@@ -712,7 +713,7 @@
         "basic"
       ],
       "difficulty": "medium",
-      "description": "Cartas que se congelan temporalmente. Sin cronÃ³metro. 8 cartas.",
+      "description": "Nivel clásico. Sin cronómetro. 8 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 40
@@ -730,7 +731,7 @@
         "basic"
       ],
       "difficulty": "medium",
-      "description": "Niebla ligera: observa con atenciÃ³n. CronÃ³metro: 52s. 12 cartas.",
+      "description": "Practica con calma. Sin cronómetro. 12 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 60
@@ -748,7 +749,7 @@
         "basic"
       ],
       "difficulty": "easy",
-      "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 12 cartas.",
+      "description": "Más cartas. Sin cronómetro. 12 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 30
@@ -766,7 +767,7 @@
         "basic"
       ],
       "difficulty": "medium",
-      "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 18 cartas.",
+      "description": "Nivel básico. Sin cronómetro. 18 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 90
@@ -784,7 +785,7 @@
         "basic"
       ],
       "difficulty": "hard",
-      "description": "Cartas que se congelan temporalmente. Sin cronÃ³metro. 18 cartas.",
+      "description": "Juego tranquilo. Sin cronómetro. 18 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 135
@@ -802,7 +803,7 @@
         "basic"
       ],
       "difficulty": "medium",
-      "description": "juega normalmente. Sin cronÃ³metro. 20 cartas.",
+      "description": "Nivel clásico. Sin cronómetro. 20 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 100
@@ -820,7 +821,7 @@
         "basic"
       ],
       "difficulty": "easy",
-      "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 6 cartas.",
+      "description": "Practica con calma. Sin cronómetro. 6 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 15
@@ -838,7 +839,7 @@
         "basic"
       ],
       "difficulty": "easy",
-      "description": "Niebla ligera: observa con atenciÃ³n. Sin cronÃ³metro. 6 cartas.",
+      "description": "Más cartas. Sin cronómetro. 6 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 15
@@ -856,7 +857,7 @@
         "basic"
       ],
       "difficulty": "easy",
-      "description": "Cartas fantasma aparecen y desaparecen. Sin cronÃ³metro. 6 cartas.",
+      "description": "Nivel básico. Sin cronómetro. 6 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 15
@@ -874,7 +875,7 @@
         "basic"
       ],
       "difficulty": "medium",
-      "description": "juega normalmente. Sin cronÃ³metro. 16 cartas.",
+      "description": "Juego tranquilo. Sin cronómetro. 16 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 80
@@ -889,10 +890,11 @@
       "pairs": 12,
       "timeSec": 0,
       "mechanics": [
-        "basic"
+        "basic",
+        "fog"
       ],
       "difficulty": "hard",
-      "description": "Boss: 24 cartas, chameleon + rotation, crono 112s.",
+      "description": "Nivel especial. Sin cronómetro. 24 cartas.",
       "isBoss": true,
       "rewards": {
         "coins": 180
@@ -910,7 +912,7 @@
         "basic"
       ],
       "difficulty": "medium",
-      "description": "Evita bombas: piensa rÃ¡pido. Sin cronÃ³metro. 6 cartas.",
+      "description": "Practica con calma. Sin cronómetro. 6 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 30
@@ -928,7 +930,7 @@
         "basic"
       ],
       "difficulty": "medium",
-      "description": "Las cartas cambian de valor. Sin cronÃ³metro. 12 cartas.",
+      "description": "Más cartas. Sin cronómetro. 12 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 60
@@ -946,7 +948,7 @@
         "basic"
       ],
       "difficulty": "medium",
-      "description": "Niebla ligera: observa con atenciÃ³n. Sin cronÃ³metro. 16 cartas.",
+      "description": "Nivel básico. Sin cronómetro. 16 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 80
@@ -964,7 +966,7 @@
         "basic"
       ],
       "difficulty": "medium",
-      "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 16 cartas.",
+      "description": "Juego tranquilo. Sin cronómetro. 16 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 80
@@ -982,7 +984,7 @@
         "basic"
       ],
       "difficulty": "medium",
-      "description": "Las cartas cambian de valor. Sin cronÃ³metro. 12 cartas.",
+      "description": "Nivel clásico. Sin cronómetro. 12 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 60
@@ -1000,13 +1002,13 @@
         "basic"
       ],
       "difficulty": "hard",
-      "description": "Encuentra trÃ­os idÃ©nticos. Sin cronÃ³metro. 18 cartas.",
+      "description": "Practica con calma. Sin cronómetro. 12 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 180
       },
       "seed": 1056120,
-      "setSize": 3
+      "setSize": 2
     },
     {
       "id": 57,
@@ -1018,7 +1020,7 @@
         "basic"
       ],
       "difficulty": "medium",
-      "description": "Las cartas cambian de valor. CronÃ³metro: 52s. 12 cartas.",
+      "description": "Más cartas. Sin cronómetro. 12 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 60
@@ -1036,7 +1038,7 @@
         "basic"
       ],
       "difficulty": "hard",
-      "description": "La oscuridad cubre el tablero poco a poco. CronÃ³metro: 98s. 20 cartas.",
+      "description": "Nivel básico. Sin cronómetro. 20 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 150
@@ -1054,7 +1056,7 @@
         "basic"
       ],
       "difficulty": "medium",
-      "description": "El tablero rota de vez en cuando. Sin cronÃ³metro. 6 cartas.",
+      "description": "Juego tranquilo. Sin cronómetro. 6 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 30
@@ -1072,7 +1074,7 @@
         "basic"
       ],
       "difficulty": "hard",
-      "description": "La oscuridad cubre el tablero poco a poco. CronÃ³metro: 83s. 16 cartas.",
+      "description": "Nivel clásico. Sin cronómetro. 16 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 120
@@ -1090,7 +1092,7 @@
         "basic"
       ],
       "difficulty": "medium",
-      "description": "Cartas fantasma aparecen y desaparecen. CronÃ³metro: 78s. 16 cartas.",
+      "description": "Practica con calma. Sin cronómetro. 16 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 80
@@ -1108,7 +1110,7 @@
         "basic"
       ],
       "difficulty": "medium",
-      "description": "Las cartas cambian de valor. CronÃ³metro: 64s. 12 cartas.",
+      "description": "Más cartas. Sin cronómetro. 12 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 60
@@ -1126,7 +1128,7 @@
         "basic"
       ],
       "difficulty": "medium",
-      "description": "Cartas fantasma aparecen y desaparecen. Sin cronÃ³metro. 16 cartas.",
+      "description": "Nivel básico. Sin cronómetro. 16 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 80
@@ -1144,7 +1146,7 @@
         "basic"
       ],
       "difficulty": "easy",
-      "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 8 cartas.",
+      "description": "Juego tranquilo. Sin cronómetro. 8 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 20
@@ -1162,7 +1164,7 @@
         "basic"
       ],
       "difficulty": "medium",
-      "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 16 cartas.",
+      "description": "Nivel clásico. Sin cronómetro. 16 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 80
@@ -1180,7 +1182,7 @@
         "basic"
       ],
       "difficulty": "hard",
-      "description": "La oscuridad cubre el tablero poco a poco. Sin cronÃ³metro. 24 cartas.",
+      "description": "Practica con calma. Sin cronómetro. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 180
@@ -1198,7 +1200,7 @@
         "basic"
       ],
       "difficulty": "easy",
-      "description": "Cartas fantasma aparecen y desaparecen. Sin cronÃ³metro. 12 cartas.",
+      "description": "Más cartas. Sin cronómetro. 12 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 30
@@ -1216,13 +1218,13 @@
         "basic"
       ],
       "difficulty": "hard",
-      "description": "Encuentra trÃ­os idÃ©nticos. Sin cronÃ³metro. 24 cartas.",
+      "description": "Nivel básico. Sin cronómetro. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 180
       },
       "seed": 1068120,
-      "setSize": 3
+      "setSize": 2
     },
     {
       "id": 69,
@@ -1234,7 +1236,7 @@
         "basic"
       ],
       "difficulty": "medium",
-      "description": "las cartas estÃ¡n parcialmente ocultas. CronÃ³metro: 83s. 16 cartas.",
+      "description": "Juego tranquilo. Sin cronómetro. 16 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 80
@@ -1252,7 +1254,7 @@
         "basic"
       ],
       "difficulty": "hard",
-      "description": "Cartas que se congelan temporalmente. CronÃ³metro: 76s. 16 cartas.",
+      "description": "Nivel clásico. Sin cronómetro. 16 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 120
@@ -1270,7 +1272,7 @@
         "basic"
       ],
       "difficulty": "medium",
-      "description": "Niebla ligera: observa con atenciÃ³n. Sin cronÃ³metro. 18 cartas.",
+      "description": "Practica con calma. Sin cronómetro. 18 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 90
@@ -1288,7 +1290,7 @@
         "basic"
       ],
       "difficulty": "medium",
-      "description": "Las cartas cambian de valor. Sin cronÃ³metro. 8 cartas.",
+      "description": "Más cartas. Sin cronómetro. 8 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 40
@@ -1306,7 +1308,7 @@
         "basic"
       ],
       "difficulty": "medium",
-      "description": "juega normalmente. Sin cronÃ³metro. 20 cartas.",
+      "description": "Nivel básico. Sin cronómetro. 20 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 100
@@ -1324,7 +1326,7 @@
         "basic"
       ],
       "difficulty": "medium",
-      "description": "Nivel clÃ¡sico sin trucos. CronÃ³metro: 65s. 14 cartas.",
+      "description": "Juego tranquilo. Sin cronómetro. 14 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 70
@@ -1336,19 +1338,20 @@
       "id": 75,
       "phase": 2,
       "theme": "candyland",
-      "pairs": 8,
+      "pairs": 6,
       "timeSec": 0,
       "mechanics": [
-        "basic"
+        "basic",
+        "trio"
       ],
       "difficulty": "hard",
-      "description": "La oscuridad cubre el tablero poco a poco. CronÃ³metro: 88s. 16 cartas.",
+      "description": "Nivel clásico. Sin cronómetro. 18 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 120
       },
       "seed": 1075168,
-      "setSize": 2
+      "setSize": 3
     },
     {
       "id": 76,
@@ -1360,7 +1363,7 @@
         "basic"
       ],
       "difficulty": "medium",
-      "description": "Las cartas cambian de valor. Sin cronÃ³metro. 14 cartas.",
+      "description": "Practica con calma. Sin cronómetro. 14 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 70
@@ -1378,13 +1381,13 @@
         "basic"
       ],
       "difficulty": "hard",
-      "description": "Encuentra trÃ­os idÃ©nticos. Sin cronÃ³metro. 18 cartas.",
+      "description": "Más cartas. Sin cronómetro. 18 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 135
       },
       "seed": 1077090,
-      "setSize": 3
+      "setSize": 2
     },
     {
       "id": 78,
@@ -1396,7 +1399,7 @@
         "basic"
       ],
       "difficulty": "hard",
-      "description": "Las cartas cambian de valor. CronÃ³metro: 86s. 16 cartas.",
+      "description": "Nivel básico. Sin cronómetro. 16 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 120
@@ -1414,13 +1417,13 @@
         "basic"
       ],
       "difficulty": "easy",
-      "description": "Encuentra trÃ­os idÃ©nticos. Sin cronÃ³metro. 12 cartas.",
+      "description": "Juego tranquilo. Sin cronómetro. 12 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 30
       },
       "seed": 1079060,
-      "setSize": 3
+      "setSize": 2
     },
     {
       "id": 80,
@@ -1432,7 +1435,7 @@
         "basic"
       ],
       "difficulty": "medium",
-      "description": "Cartas fantasma aparecen y desaparecen. Sin cronÃ³metro. 18 cartas.",
+      "description": "Nivel clásico. Sin cronómetro. 18 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 90
@@ -1450,7 +1453,7 @@
         "basic"
       ],
       "difficulty": "medium",
-      "description": "Las cartas cambian de valor. Sin cronÃ³metro. 10 cartas.",
+      "description": "Practica con calma. Sin cronómetro. 10 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 50
@@ -1468,7 +1471,7 @@
         "basic"
       ],
       "difficulty": "easy",
-      "description": "Cartas fantasma aparecen y desaparecen. Sin cronÃ³metro. 12 cartas.",
+      "description": "Más cartas. Sin cronómetro. 12 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 30
@@ -1486,7 +1489,7 @@
         "basic"
       ],
       "difficulty": "medium",
-      "description": "Las cartas cambian de valor. Sin cronÃ³metro. 14 cartas.",
+      "description": "Nivel básico. Sin cronómetro. 14 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 70
@@ -1504,7 +1507,7 @@
         "basic"
       ],
       "difficulty": "medium",
-      "description": "las cartas estÃ¡n parcialmente ocultas. CronÃ³metro: 86s. 16 cartas.",
+      "description": "Juego tranquilo. Sin cronómetro. 16 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 80
@@ -1522,7 +1525,7 @@
         "basic"
       ],
       "difficulty": "easy",
-      "description": "Niebla ligera: observa con atenciÃ³n. Sin cronÃ³metro. 12 cartas.",
+      "description": "Nivel clásico. Sin cronómetro. 12 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 30
@@ -1540,7 +1543,7 @@
         "basic"
       ],
       "difficulty": "hard",
-      "description": "Evita bombas: piensa rÃ¡pido. Sin cronÃ³metro. 22 cartas.",
+      "description": "Practica con calma. Sin cronómetro. 22 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 165
@@ -1558,7 +1561,7 @@
         "basic"
       ],
       "difficulty": "medium",
-      "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 24 cartas.",
+      "description": "Más cartas. Sin cronómetro. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 120
@@ -1576,7 +1579,7 @@
         "basic"
       ],
       "difficulty": "medium",
-      "description": "Evita bombas: piensa rÃ¡pido. Sin cronÃ³metro. 16 cartas.",
+      "description": "Nivel básico. Sin cronómetro. 16 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 80
@@ -1594,7 +1597,7 @@
         "basic"
       ],
       "difficulty": "medium",
-      "description": "Cartas que se congelan temporalmente. Sin cronÃ³metro. 8 cartas.",
+      "description": "Juego tranquilo. Sin cronómetro. 8 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 40
@@ -1612,7 +1615,7 @@
         "basic"
       ],
       "difficulty": "easy",
-      "description": "Cartas fantasma aparecen y desaparecen. Sin cronÃ³metro. 10 cartas.",
+      "description": "Nivel clásico. Sin cronómetro. 10 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 25
@@ -1630,7 +1633,7 @@
         "basic"
       ],
       "difficulty": "hard",
-      "description": "El tablero rota de vez en cuando. Sin cronÃ³metro. 20 cartas.",
+      "description": "Practica con calma. Sin cronómetro. 20 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 150
@@ -1648,7 +1651,7 @@
         "basic"
       ],
       "difficulty": "medium",
-      "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 24 cartas.",
+      "description": "Más cartas. Sin cronómetro. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 120
@@ -1666,7 +1669,7 @@
         "basic"
       ],
       "difficulty": "hard",
-      "description": "El tablero rota de vez en cuando. Sin cronÃ³metro. 22 cartas.",
+      "description": "Nivel básico. Sin cronómetro. 22 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 165
@@ -1684,7 +1687,7 @@
         "basic"
       ],
       "difficulty": "medium",
-      "description": "Niebla ligera: observa con atenciÃ³n. CronÃ³metro: 57s. 12 cartas.",
+      "description": "Juego tranquilo. Sin cronómetro. 12 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 60
@@ -1702,7 +1705,7 @@
         "basic"
       ],
       "difficulty": "medium",
-      "description": "Las cartas cambian de valor. Sin cronÃ³metro. 8 cartas.",
+      "description": "Nivel clásico. Sin cronómetro. 8 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 40
@@ -1720,7 +1723,7 @@
         "basic"
       ],
       "difficulty": "medium",
-      "description": "El tablero rota de vez en cuando. CronÃ³metro: 52s. 12 cartas.",
+      "description": "Practica con calma. Sin cronómetro. 12 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 60
@@ -1738,7 +1741,7 @@
         "basic"
       ],
       "difficulty": "easy",
-      "description": "Niebla ligera: observa con atenciÃ³n. Sin cronÃ³metro. 4 cartas.",
+      "description": "Más cartas. Sin cronómetro. 4 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 10
@@ -1756,7 +1759,7 @@
         "basic"
       ],
       "difficulty": "medium",
-      "description": "Nivel clÃ¡sico sin trucos. CronÃ³metro: 65s. 12 cartas.",
+      "description": "Nivel básico. Sin cronómetro. 12 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 60
@@ -1774,7 +1777,7 @@
         "basic"
       ],
       "difficulty": "hard",
-      "description": "La oscuridad cubre el tablero poco a poco. CronÃ³metro: 78s. 16 cartas.",
+      "description": "Juego tranquilo. Sin cronómetro. 16 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 120
@@ -1789,10 +1792,11 @@
       "pairs": 12,
       "timeSec": 0,
       "mechanics": [
-        "basic"
+        "basic",
+        "fog"
       ],
       "difficulty": "hard",
-      "description": "Boss: 24 cartas, ghost + chameleon, crono 103s.",
+      "description": "Nivel especial. Sin cronómetro. 24 cartas.",
       "isBoss": true,
       "rewards": {
         "coins": 180
@@ -1810,7 +1814,7 @@
         "basic"
       ],
       "difficulty": "medium",
-      "description": "Evita bombas: piensa rÃ¡pido. Sin cronÃ³metro. 12 cartas.",
+      "description": "Practica con calma. Sin cronómetro. 12 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 60
@@ -1828,7 +1832,7 @@
         "basic"
       ],
       "difficulty": "easy",
-      "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 6 cartas.",
+      "description": "Más cartas. Sin cronómetro. 6 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 15
@@ -1846,7 +1850,7 @@
         "basic"
       ],
       "difficulty": "medium",
-      "description": "Evita bombas: piensa rÃ¡pido. Sin cronÃ³metro. 4 cartas.",
+      "description": "Nivel básico. Sin cronómetro. 4 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 20
@@ -1864,7 +1868,7 @@
         "basic"
       ],
       "difficulty": "hard",
-      "description": "El tablero rota de vez en cuando. CronÃ³metro: 67s. 14 cartas.",
+      "description": "Juego tranquilo. Sin cronómetro. 14 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 105
@@ -1882,7 +1886,7 @@
         "basic"
       ],
       "difficulty": "easy",
-      "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 12 cartas.",
+      "description": "Nivel clásico. Sin cronómetro. 12 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 30
@@ -1900,7 +1904,7 @@
         "basic"
       ],
       "difficulty": "hard",
-      "description": "La oscuridad cubre el tablero poco a poco. Sin cronÃ³metro. 24 cartas.",
+      "description": "Practica con calma. Sin cronómetro. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 180
@@ -1918,7 +1922,7 @@
         "basic"
       ],
       "difficulty": "easy",
-      "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 8 cartas.",
+      "description": "Más cartas. Sin cronómetro. 8 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 20
@@ -1936,7 +1940,7 @@
         "basic"
       ],
       "difficulty": "medium",
-      "description": "Las cartas cambian de valor. CronÃ³metro: 44s. 10 cartas.",
+      "description": "Nivel básico. Sin cronómetro. 10 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 50
@@ -1954,7 +1958,7 @@
         "basic"
       ],
       "difficulty": "medium",
-      "description": "Nivel clÃ¡sico sin trucos. CronÃ³metro: 69s. 14 cartas.",
+      "description": "Juego tranquilo. Sin cronómetro. 14 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 70
@@ -1972,7 +1976,7 @@
         "basic"
       ],
       "difficulty": "hard",
-      "description": "Nivel clÃ¡sico sin trucos. CronÃ³metro: 99s. 20 cartas.",
+      "description": "Nivel clásico. Sin cronómetro. 20 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 150
@@ -1990,7 +1994,7 @@
         "basic"
       ],
       "difficulty": "medium",
-      "description": "Cartas que se congelan temporalmente. Sin cronÃ³metro. 8 cartas.",
+      "description": "Practica con calma. Sin cronómetro. 8 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 40
@@ -2008,7 +2012,7 @@
         "basic"
       ],
       "difficulty": "medium",
-      "description": "Niebla ligera: observa con atenciÃ³n. CronÃ³metro: 85s. 16 cartas.",
+      "description": "Más cartas. Sin cronómetro. 16 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 80
@@ -2026,7 +2030,7 @@
         "basic"
       ],
       "difficulty": "hard",
-      "description": "Las cartas cambian de valor. CronÃ³metro: 82s. 18 cartas.",
+      "description": "Nivel básico. Sin cronómetro. 18 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 135
@@ -2044,13 +2048,13 @@
         "basic"
       ],
       "difficulty": "hard",
-      "description": "Encuentra trÃ­os idÃ©nticos. Sin cronÃ³metro. 24 cartas.",
+      "description": "Juego tranquilo. Sin cronómetro. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 180
       },
       "seed": 1114120,
-      "setSize": 3
+      "setSize": 2
     },
     {
       "id": 115,
@@ -2062,7 +2066,7 @@
         "basic"
       ],
       "difficulty": "medium",
-      "description": "Cartas fantasma aparecen y desaparecen. CronÃ³metro: 42s. 10 cartas.",
+      "description": "Nivel clásico. Sin cronómetro. 10 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 50
@@ -2080,13 +2084,13 @@
         "basic"
       ],
       "difficulty": "hard",
-      "description": "Encuentra trÃ­os idÃ©nticos. Sin cronÃ³metro. 24 cartas.",
+      "description": "Practica con calma. Sin cronómetro. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 180
       },
       "seed": 1116120,
-      "setSize": 3
+      "setSize": 2
     },
     {
       "id": 117,
@@ -2098,7 +2102,7 @@
         "basic"
       ],
       "difficulty": "hard",
-      "description": "Cartas fantasma aparecen y desaparecen. CronÃ³metro: 84s. 18 cartas.",
+      "description": "Más cartas. Sin cronómetro. 18 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 135
@@ -2116,13 +2120,13 @@
         "basic"
       ],
       "difficulty": "hard",
-      "description": "Encuentra trÃ­os idÃ©nticos. Sin cronÃ³metro. 24 cartas.",
+      "description": "Nivel básico. Sin cronómetro. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 180
       },
       "seed": 1118120,
-      "setSize": 3
+      "setSize": 2
     },
     {
       "id": 119,
@@ -2134,7 +2138,7 @@
         "basic"
       ],
       "difficulty": "hard",
-      "description": "La oscuridad cubre el tablero poco a poco. Sin cronÃ³metro. 20 cartas.",
+      "description": "Juego tranquilo. Sin cronómetro. 20 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 150
@@ -2152,7 +2156,7 @@
         "basic"
       ],
       "difficulty": "medium",
-      "description": "Niebla ligera: observa con atenciÃ³n. CronÃ³metro: 66s. 14 cartas.",
+      "description": "Nivel clásico. Sin cronómetro. 14 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 70
@@ -2170,7 +2174,7 @@
         "basic"
       ],
       "difficulty": "medium",
-      "description": "El tablero rota de vez en cuando. Sin cronÃ³metro. 14 cartas.",
+      "description": "Practica con calma. Sin cronómetro. 14 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 70
@@ -2188,7 +2192,7 @@
         "basic"
       ],
       "difficulty": "medium",
-      "description": "Cartas fantasma aparecen y desaparecen. CronÃ³metro: 78s. 14 cartas.",
+      "description": "Más cartas. Sin cronómetro. 14 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 70
@@ -2206,7 +2210,7 @@
         "basic"
       ],
       "difficulty": "hard",
-      "description": "La oscuridad cubre el tablero poco a poco. CronÃ³metro: 99s. 24 cartas.",
+      "description": "Nivel básico. Sin cronómetro. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 180
@@ -2224,7 +2228,7 @@
         "basic"
       ],
       "difficulty": "easy",
-      "description": "Niebla ligera: observa con atenciÃ³n. Sin cronÃ³metro. 10 cartas.",
+      "description": "Juego tranquilo. Sin cronómetro. 10 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 25
@@ -2239,16 +2243,17 @@
       "pairs": 6,
       "timeSec": 0,
       "mechanics": [
-        "basic"
+        "basic",
+        "trio"
       ],
       "difficulty": "medium",
-      "description": "El tablero rota de vez en cuando. Sin cronÃ³metro. 12 cartas.",
+      "description": "Nivel clásico. Sin cronómetro. 18 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 60
       },
       "seed": 1125060,
-      "setSize": 2
+      "setSize": 3
     },
     {
       "id": 126,
@@ -2260,7 +2265,7 @@
         "basic"
       ],
       "difficulty": "easy",
-      "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 6 cartas.",
+      "description": "Practica con calma. Sin cronómetro. 6 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 15
@@ -2278,7 +2283,7 @@
         "basic"
       ],
       "difficulty": "hard",
-      "description": "La oscuridad cubre el tablero poco a poco. CronÃ³metro: 102s. 20 cartas.",
+      "description": "Más cartas. Sin cronómetro. 20 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 150
@@ -2296,7 +2301,7 @@
         "basic"
       ],
       "difficulty": "medium",
-      "description": "Evita bombas: piensa rÃ¡pido. Sin cronÃ³metro. 4 cartas.",
+      "description": "Nivel básico. Sin cronómetro. 4 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 20
@@ -2314,7 +2319,7 @@
         "basic"
       ],
       "difficulty": "medium",
-      "description": "Las cartas cambian de valor. CronÃ³metro: 62s. 12 cartas.",
+      "description": "Juego tranquilo. Sin cronómetro. 12 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 60
@@ -2332,7 +2337,7 @@
         "basic"
       ],
       "difficulty": "medium",
-      "description": "Nivel clÃ¡sico sin trucos. CronÃ³metro: 78s. 16 cartas.",
+      "description": "Nivel clásico. Sin cronómetro. 16 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 80
@@ -2350,13 +2355,13 @@
         "basic"
       ],
       "difficulty": "hard",
-      "description": "Encuentra trÃ­os idÃ©nticos. Sin cronÃ³metro. 24 cartas.",
+      "description": "Practica con calma. Sin cronómetro. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 180
       },
       "seed": 1131120,
-      "setSize": 3
+      "setSize": 2
     },
     {
       "id": 132,
@@ -2368,7 +2373,7 @@
         "basic"
       ],
       "difficulty": "easy",
-      "description": "Cartas fantasma aparecen y desaparecen. Sin cronÃ³metro. 10 cartas.",
+      "description": "Más cartas. Sin cronómetro. 10 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 25
@@ -2386,7 +2391,7 @@
         "basic"
       ],
       "difficulty": "easy",
-      "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 6 cartas.",
+      "description": "Nivel básico. Sin cronómetro. 6 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 15
@@ -2404,7 +2409,7 @@
         "basic"
       ],
       "difficulty": "hard",
-      "description": "Las cartas cambian de valor. CronÃ³metro: 98s. 20 cartas.",
+      "description": "Juego tranquilo. Sin cronómetro. 20 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 150
@@ -2422,7 +2427,7 @@
         "basic"
       ],
       "difficulty": "hard",
-      "description": "Cartas que se congelan temporalmente. Sin cronÃ³metro. 18 cartas.",
+      "description": "Nivel clásico. Sin cronómetro. 18 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 135
@@ -2440,7 +2445,7 @@
         "basic"
       ],
       "difficulty": "hard",
-      "description": "Las cartas cambian de valor. CronÃ³metro: 111s. 24 cartas.",
+      "description": "Practica con calma. Sin cronómetro. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 180
@@ -2458,7 +2463,7 @@
         "basic"
       ],
       "difficulty": "hard",
-      "description": "Evita bombas: piensa rÃ¡pido. CronÃ³metro: 66s. 14 cartas.",
+      "description": "Más cartas. Sin cronómetro. 14 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 105
@@ -2476,7 +2481,7 @@
         "basic"
       ],
       "difficulty": "medium",
-      "description": "Nivel clÃ¡sico sin trucos. CronÃ³metro: 60s. 12 cartas.",
+      "description": "Nivel básico. Sin cronómetro. 12 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 60
@@ -2494,7 +2499,7 @@
         "basic"
       ],
       "difficulty": "medium",
-      "description": "Las cartas cambian de valor. Sin cronÃ³metro. 10 cartas.",
+      "description": "Juego tranquilo. Sin cronómetro. 10 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 50
@@ -2506,13 +2511,13 @@
       "id": 140,
       "phase": 3,
       "theme": "space",
-      "pairs": 7,
+      "pairs": 12,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "medium",
-      "description": "Evita bombas: piensa rÃ¡pido. Sin cronÃ³metro. 14 cartas.",
+      "description": "Nivel clásico. Sin cronómetro. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 70
@@ -2524,31 +2529,31 @@
       "id": 141,
       "phase": 3,
       "theme": "space",
-      "pairs": 6,
+      "pairs": 11,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "easy",
-      "description": "Encuentra trÃ­os idÃ©nticos. Sin cronÃ³metro. 12 cartas.",
+      "description": "Practica con calma. Sin cronómetro. 22 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 30
       },
       "seed": 1141060,
-      "setSize": 3
+      "setSize": 2
     },
     {
       "id": 142,
       "phase": 3,
       "theme": "space",
-      "pairs": 4,
+      "pairs": 10,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "medium",
-      "description": "Cartas que se congelan temporalmente. Sin cronÃ³metro. 8 cartas.",
+      "description": "Más cartas. Sin cronómetro. 20 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 40
@@ -2560,13 +2565,13 @@
       "id": 143,
       "phase": 3,
       "theme": "space",
-      "pairs": 5,
+      "pairs": 11,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "easy",
-      "description": "Cartas fantasma aparecen y desaparecen. Sin cronÃ³metro. 10 cartas.",
+      "description": "Nivel básico. Sin cronómetro. 22 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 25
@@ -2578,13 +2583,13 @@
       "id": 144,
       "phase": 3,
       "theme": "space",
-      "pairs": 2,
+      "pairs": 12,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "easy",
-      "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 4 cartas.",
+      "description": "Juego tranquilo. Sin cronómetro. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 10
@@ -2596,13 +2601,13 @@
       "id": 145,
       "phase": 3,
       "theme": "space",
-      "pairs": 5,
+      "pairs": 12,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "medium",
-      "description": "Las cartas cambian de valor. CronÃ³metro: 50s. 10 cartas.",
+      "description": "Nivel clásico. Sin cronómetro. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 50
@@ -2620,7 +2625,7 @@
         "basic"
       ],
       "difficulty": "medium",
-      "description": "juega normalmente. Sin cronÃ³metro. 24 cartas.",
+      "description": "Practica con calma. Sin cronómetro. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 120
@@ -2632,13 +2637,13 @@
       "id": 147,
       "phase": 3,
       "theme": "space",
-      "pairs": 5,
+      "pairs": 12,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "easy",
-      "description": "Cartas fantasma aparecen y desaparecen. Sin cronÃ³metro. 10 cartas.",
+      "description": "Más cartas. Sin cronómetro. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 25
@@ -2650,13 +2655,13 @@
       "id": 148,
       "phase": 3,
       "theme": "space",
-      "pairs": 8,
+      "pairs": 11,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "hard",
-      "description": "El tablero rota de vez en cuando. CronÃ³metro: 73s. 16 cartas.",
+      "description": "Nivel básico. Sin cronómetro. 22 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 120
@@ -2668,13 +2673,13 @@
       "id": 149,
       "phase": 3,
       "theme": "space",
-      "pairs": 10,
+      "pairs": 12,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "hard",
-      "description": "La oscuridad cubre el tablero poco a poco. CronÃ³metro: 103s. 20 cartas.",
+      "description": "Juego tranquilo. Sin cronómetro. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 150
@@ -2689,10 +2694,11 @@
       "pairs": 12,
       "timeSec": 0,
       "mechanics": [
-        "basic"
+        "basic",
+        "rotation"
       ],
       "difficulty": "hard",
-      "description": "Boss: 24 cartas, frozen + chameleon, crono 111s.",
+      "description": "Nivel especial. Sin cronómetro. 24 cartas.",
       "isBoss": true,
       "rewards": {
         "coins": 180
@@ -2704,13 +2710,13 @@
       "id": 151,
       "phase": 4,
       "theme": "forest",
-      "pairs": 4,
+      "pairs": 11,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "easy",
-      "description": "Cartas fantasma aparecen y desaparecen. Sin cronÃ³metro. 8 cartas.",
+      "description": "Practica con calma. Sin cronómetro. 22 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 20
@@ -2722,13 +2728,13 @@
       "id": 152,
       "phase": 4,
       "theme": "forest",
-      "pairs": 10,
+      "pairs": 12,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "hard",
-      "description": "Evita bombas: piensa rÃ¡pido. Sin cronÃ³metro. 20 cartas.",
+      "description": "Más cartas. Sin cronómetro. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 150
@@ -2740,13 +2746,13 @@
       "id": 153,
       "phase": 4,
       "theme": "forest",
-      "pairs": 8,
+      "pairs": 10,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "medium",
-      "description": "La oscuridad cubre el tablero poco a poco. Sin cronÃ³metro. 16 cartas.",
+      "description": "Nivel básico. Sin cronómetro. 20 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 80
@@ -2758,13 +2764,13 @@
       "id": 154,
       "phase": 4,
       "theme": "forest",
-      "pairs": 7,
+      "pairs": 10,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "medium",
-      "description": "Niebla ligera: observa con atenciÃ³n. CronÃ³metro: 70s. 14 cartas.",
+      "description": "Juego tranquilo. Sin cronómetro. 20 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 70
@@ -2776,13 +2782,13 @@
       "id": 155,
       "phase": 4,
       "theme": "forest",
-      "pairs": 7,
+      "pairs": 12,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "hard",
-      "description": "Cartas que se congelan temporalmente. CronÃ³metro: 78s. 14 cartas.",
+      "description": "Nivel clásico. Sin cronómetro. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 105
@@ -2794,13 +2800,13 @@
       "id": 156,
       "phase": 4,
       "theme": "forest",
-      "pairs": 6,
+      "pairs": 12,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "medium",
-      "description": "Las cartas cambian de valor. Sin cronÃ³metro. 12 cartas.",
+      "description": "Practica con calma. Sin cronómetro. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 60
@@ -2812,13 +2818,13 @@
       "id": 157,
       "phase": 4,
       "theme": "forest",
-      "pairs": 5,
+      "pairs": 11,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "easy",
-      "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 10 cartas.",
+      "description": "Más cartas. Sin cronómetro. 22 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 25
@@ -2830,13 +2836,13 @@
       "id": 158,
       "phase": 4,
       "theme": "forest",
-      "pairs": 6,
+      "pairs": 11,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "medium",
-      "description": "Las cartas cambian de valor. CronÃ³metro: 65s. 12 cartas.",
+      "description": "Nivel básico. Sin cronómetro. 22 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 60
@@ -2848,13 +2854,13 @@
       "id": 159,
       "phase": 4,
       "theme": "forest",
-      "pairs": 2,
+      "pairs": 12,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "medium",
-      "description": "El tablero rota de vez en cuando. Sin cronÃ³metro. 4 cartas.",
+      "description": "Juego tranquilo. Sin cronómetro. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 20
@@ -2866,13 +2872,13 @@
       "id": 160,
       "phase": 4,
       "theme": "forest",
-      "pairs": 5,
+      "pairs": 10,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "easy",
-      "description": "Cartas fantasma aparecen y desaparecen. Sin cronÃ³metro. 10 cartas.",
+      "description": "Nivel clásico. Sin cronómetro. 20 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 25
@@ -2884,13 +2890,13 @@
       "id": 161,
       "phase": 4,
       "theme": "forest",
-      "pairs": 7,
+      "pairs": 12,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "medium",
-      "description": "Niebla ligera: observa con atenciÃ³n. CronÃ³metro: 74s. 14 cartas.",
+      "description": "Practica con calma. Sin cronómetro. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 70
@@ -2902,13 +2908,13 @@
       "id": 162,
       "phase": 4,
       "theme": "forest",
-      "pairs": 8,
+      "pairs": 11,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "medium",
-      "description": "Nivel clÃ¡sico sin trucos. CronÃ³metro: 78s. 16 cartas.",
+      "description": "Más cartas. Sin cronómetro. 22 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 80
@@ -2920,13 +2926,13 @@
       "id": 163,
       "phase": 4,
       "theme": "forest",
-      "pairs": 5,
+      "pairs": 10,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "medium",
-      "description": "Las cartas cambian de valor. Sin cronÃ³metro. 10 cartas.",
+      "description": "Nivel básico. Sin cronómetro. 20 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 50
@@ -2938,13 +2944,13 @@
       "id": 164,
       "phase": 4,
       "theme": "forest",
-      "pairs": 8,
+      "pairs": 10,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "medium",
-      "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 16 cartas.",
+      "description": "Juego tranquilo. Sin cronómetro. 20 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 80
@@ -2956,13 +2962,13 @@
       "id": 165,
       "phase": 4,
       "theme": "forest",
-      "pairs": 9,
+      "pairs": 11,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "hard",
-      "description": "Evita bombas: piensa rÃ¡pido. Sin cronÃ³metro. 18 cartas.",
+      "description": "Nivel clásico. Sin cronómetro. 22 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 135
@@ -2974,13 +2980,13 @@
       "id": 166,
       "phase": 4,
       "theme": "forest",
-      "pairs": 7,
+      "pairs": 11,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "medium",
-      "description": "Nivel clÃ¡sico sin trucos. CronÃ³metro: 62s. 14 cartas.",
+      "description": "Practica con calma. Sin cronómetro. 22 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 70
@@ -2992,13 +2998,13 @@
       "id": 167,
       "phase": 4,
       "theme": "forest",
-      "pairs": 6,
+      "pairs": 12,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "medium",
-      "description": "Evita bombas: piensa rÃ¡pido. CronÃ³metro: 66s. 12 cartas.",
+      "description": "Más cartas. Sin cronómetro. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 60
@@ -3010,13 +3016,13 @@
       "id": 168,
       "phase": 4,
       "theme": "forest",
-      "pairs": 8,
+      "pairs": 12,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "medium",
-      "description": "juega normalmente. Sin cronÃ³metro. 16 cartas.",
+      "description": "Nivel básico. Sin cronómetro. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 80
@@ -3028,13 +3034,13 @@
       "id": 169,
       "phase": 4,
       "theme": "forest",
-      "pairs": 7,
+      "pairs": 11,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "medium",
-      "description": "Evita bombas: piensa rÃ¡pido. Sin cronÃ³metro. 14 cartas.",
+      "description": "Juego tranquilo. Sin cronómetro. 22 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 70
@@ -3046,13 +3052,13 @@
       "id": 170,
       "phase": 4,
       "theme": "forest",
-      "pairs": 8,
+      "pairs": 12,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "hard",
-      "description": "Cartas que se congelan temporalmente. CronÃ³metro: 75s. 16 cartas.",
+      "description": "Nivel clásico. Sin cronómetro. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 120
@@ -3064,13 +3070,13 @@
       "id": 171,
       "phase": 4,
       "theme": "forest",
-      "pairs": 5,
+      "pairs": 11,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "easy",
-      "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 10 cartas.",
+      "description": "Practica con calma. Sin cronómetro. 22 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 25
@@ -3082,13 +3088,13 @@
       "id": 172,
       "phase": 4,
       "theme": "forest",
-      "pairs": 10,
+      "pairs": 12,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "hard",
-      "description": "Nivel clÃ¡sico sin trucos. CronÃ³metro: 96s. 20 cartas.",
+      "description": "Más cartas. Sin cronómetro. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 150
@@ -3100,13 +3106,13 @@
       "id": 173,
       "phase": 4,
       "theme": "forest",
-      "pairs": 8,
+      "pairs": 12,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "medium",
-      "description": "las cartas pueden rotar. CronÃ³metro: 86s. 16 cartas.",
+      "description": "Nivel básico. Sin cronómetro. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 80
@@ -3118,13 +3124,13 @@
       "id": 174,
       "phase": 4,
       "theme": "forest",
-      "pairs": 5,
+      "pairs": 11,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "medium",
-      "description": "Nivel clÃ¡sico sin trucos. CronÃ³metro: 55s. 10 cartas.",
+      "description": "Juego tranquilo. Sin cronómetro. 22 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 50
@@ -3136,31 +3142,32 @@
       "id": 175,
       "phase": 4,
       "theme": "forest",
+      "pairs": 6,
+      "timeSec": 0,
+      "mechanics": [
+        "basic",
+        "trio"
+      ],
+      "difficulty": "medium",
+      "description": "Nivel clásico. Sin cronómetro. 18 cartas.",
+      "isBoss": false,
+      "rewards": {
+        "coins": 120
+      },
+      "seed": 1175120,
+      "setSize": 3
+    },
+    {
+      "id": 176,
+      "phase": 4,
+      "theme": "forest",
       "pairs": 12,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "medium",
-      "description": "juega normalmente. Sin cronÃ³metro. 24 cartas.",
-      "isBoss": false,
-      "rewards": {
-        "coins": 120
-      },
-      "seed": 1175120,
-      "setSize": 2
-    },
-    {
-      "id": 176,
-      "phase": 4,
-      "theme": "forest",
-      "pairs": 9,
-      "timeSec": 0,
-      "mechanics": [
-        "basic"
-      ],
-      "difficulty": "medium",
-      "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 18 cartas.",
+      "description": "Practica con calma. Sin cronómetro. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 90
@@ -3172,13 +3179,13 @@
       "id": 177,
       "phase": 4,
       "theme": "forest",
-      "pairs": 5,
+      "pairs": 10,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "medium",
-      "description": "El tablero rota de vez en cuando. Sin cronÃ³metro. 10 cartas.",
+      "description": "Más cartas. Sin cronómetro. 20 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 50
@@ -3190,13 +3197,13 @@
       "id": 178,
       "phase": 4,
       "theme": "forest",
-      "pairs": 8,
+      "pairs": 10,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "medium",
-      "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 16 cartas.",
+      "description": "Nivel básico. Sin cronómetro. 20 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 80
@@ -3208,13 +3215,13 @@
       "id": 179,
       "phase": 4,
       "theme": "forest",
-      "pairs": 2,
+      "pairs": 11,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "easy",
-      "description": "Cartas fantasma aparecen y desaparecen. Sin cronÃ³metro. 4 cartas.",
+      "description": "Juego tranquilo. Sin cronómetro. 22 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 10
@@ -3226,13 +3233,13 @@
       "id": 180,
       "phase": 4,
       "theme": "forest",
-      "pairs": 8,
+      "pairs": 12,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "medium",
-      "description": "Cartas que se congelan temporalmente. Sin cronÃ³metro. 16 cartas.",
+      "description": "Nivel clásico. Sin cronómetro. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 80
@@ -3244,13 +3251,13 @@
       "id": 181,
       "phase": 4,
       "theme": "forest",
-      "pairs": 12,
+      "pairs": 10,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "medium",
-      "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 24 cartas.",
+      "description": "Practica con calma. Sin cronómetro. 20 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 120
@@ -3262,13 +3269,13 @@
       "id": 182,
       "phase": 4,
       "theme": "forest",
-      "pairs": 7,
+      "pairs": 12,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "hard",
-      "description": "Evita bombas: piensa rÃ¡pido. CronÃ³metro: 73s. 14 cartas.",
+      "description": "Más cartas. Sin cronómetro. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 105
@@ -3280,13 +3287,13 @@
       "id": 183,
       "phase": 4,
       "theme": "forest",
-      "pairs": 6,
+      "pairs": 12,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "medium",
-      "description": "Cartas fantasma aparecen y desaparecen. CronÃ³metro: 65s. 12 cartas.",
+      "description": "Nivel básico. Sin cronómetro. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 60
@@ -3298,13 +3305,13 @@
       "id": 184,
       "phase": 4,
       "theme": "forest",
-      "pairs": 2,
+      "pairs": 12,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "easy",
-      "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 4 cartas.",
+      "description": "Juego tranquilo. Sin cronómetro. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 10
@@ -3316,13 +3323,13 @@
       "id": 185,
       "phase": 4,
       "theme": "forest",
-      "pairs": 11,
+      "pairs": 12,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "hard",
-      "description": "Cartas fantasma aparecen y desaparecen. CronÃ³metro: 95s. 22 cartas.",
+      "description": "Nivel clásico. Sin cronómetro. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 165
@@ -3334,13 +3341,13 @@
       "id": 186,
       "phase": 4,
       "theme": "forest",
-      "pairs": 10,
+      "pairs": 11,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "hard",
-      "description": "La oscuridad cubre el tablero poco a poco. CronÃ³metro: 94s. 20 cartas.",
+      "description": "Practica con calma. Sin cronómetro. 22 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 150
@@ -3352,13 +3359,13 @@
       "id": 187,
       "phase": 4,
       "theme": "forest",
-      "pairs": 8,
+      "pairs": 12,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "medium",
-      "description": "Cartas fantasma aparecen y desaparecen. CronÃ³metro: 80s. 16 cartas.",
+      "description": "Más cartas. Sin cronómetro. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 80
@@ -3370,13 +3377,13 @@
       "id": 188,
       "phase": 4,
       "theme": "forest",
-      "pairs": 4,
+      "pairs": 11,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "medium",
-      "description": "El tablero rota de vez en cuando. Sin cronÃ³metro. 8 cartas.",
+      "description": "Nivel básico. Sin cronómetro. 22 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 40
@@ -3388,13 +3395,13 @@
       "id": 189,
       "phase": 4,
       "theme": "forest",
-      "pairs": 5,
+      "pairs": 12,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "medium",
-      "description": "Evita bombas: piensa rÃ¡pido. Sin cronÃ³metro. 10 cartas.",
+      "description": "Juego tranquilo. Sin cronómetro. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 50
@@ -3406,13 +3413,13 @@
       "id": 190,
       "phase": 4,
       "theme": "forest",
-      "pairs": 5,
+      "pairs": 11,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "easy",
-      "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 10 cartas.",
+      "description": "Nivel clásico. Sin cronómetro. 22 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 25
@@ -3424,13 +3431,13 @@
       "id": 191,
       "phase": 4,
       "theme": "forest",
-      "pairs": 7,
+      "pairs": 11,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "medium",
-      "description": "Cartas fantasma aparecen y desaparecen. CronÃ³metro: 77s. 14 cartas.",
+      "description": "Practica con calma. Sin cronómetro. 22 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 70
@@ -3442,31 +3449,31 @@
       "id": 192,
       "phase": 4,
       "theme": "forest",
-      "pairs": 3,
+      "pairs": 10,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "easy",
-      "description": "Encuentra trÃ­os idÃ©nticos. Sin cronÃ³metro. 6 cartas.",
+      "description": "Más cartas. Sin cronómetro. 20 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 15
       },
       "seed": 1192030,
-      "setSize": 3
+      "setSize": 2
     },
     {
       "id": 193,
       "phase": 4,
       "theme": "forest",
-      "pairs": 3,
+      "pairs": 10,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "medium",
-      "description": "Las cartas cambian de valor. Sin cronÃ³metro. 6 cartas.",
+      "description": "Nivel básico. Sin cronómetro. 20 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 30
@@ -3478,13 +3485,13 @@
       "id": 194,
       "phase": 4,
       "theme": "forest",
-      "pairs": 5,
+      "pairs": 10,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "easy",
-      "description": "Cartas fantasma aparecen y desaparecen. Sin cronÃ³metro. 10 cartas.",
+      "description": "Juego tranquilo. Sin cronómetro. 20 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 25
@@ -3496,13 +3503,13 @@
       "id": 195,
       "phase": 4,
       "theme": "forest",
-      "pairs": 3,
+      "pairs": 10,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "easy",
-      "description": "Niebla ligera: observa con atenciÃ³n. Sin cronÃ³metro. 6 cartas.",
+      "description": "Nivel clásico. Sin cronómetro. 20 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 15
@@ -3514,13 +3521,13 @@
       "id": 196,
       "phase": 4,
       "theme": "forest",
-      "pairs": 5,
+      "pairs": 12,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "easy",
-      "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 10 cartas.",
+      "description": "Practica con calma. Sin cronómetro. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 25
@@ -3532,13 +3539,13 @@
       "id": 197,
       "phase": 4,
       "theme": "forest",
-      "pairs": 8,
+      "pairs": 10,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "hard",
-      "description": "Las cartas cambian de valor. CronÃ³metro: 83s. 16 cartas.",
+      "description": "Más cartas. Sin cronómetro. 20 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 120
@@ -3550,13 +3557,13 @@
       "id": 198,
       "phase": 4,
       "theme": "forest",
-      "pairs": 5,
+      "pairs": 10,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "easy",
-      "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 10 cartas.",
+      "description": "Nivel básico. Sin cronómetro. 20 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 25
@@ -3568,13 +3575,13 @@
       "id": 199,
       "phase": 4,
       "theme": "forest",
-      "pairs": 6,
+      "pairs": 10,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "easy",
-      "description": "Cartas fantasma aparecen y desaparecen. Sin cronÃ³metro. 12 cartas.",
+      "description": "Juego tranquilo. Sin cronómetro. 20 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 30
@@ -3589,10 +3596,11 @@
       "pairs": 12,
       "timeSec": 0,
       "mechanics": [
-        "basic"
+        "basic",
+        "rotation"
       ],
       "difficulty": "hard",
-      "description": "Boss: 24 cartas, bomb + frozen, crono 99s.",
+      "description": "Nivel especial. Sin cronómetro. 24 cartas.",
       "isBoss": true,
       "rewards": {
         "coins": 180
@@ -3604,13 +3612,13 @@
       "id": 201,
       "phase": 5,
       "theme": "city",
-      "pairs": 10,
+      "pairs": 11,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "medium",
-      "description": "juega normalmente. Sin cronÃ³metro. 20 cartas.",
+      "description": "Practica con calma. Sin cronómetro. 22 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 100
@@ -3622,13 +3630,13 @@
       "id": 202,
       "phase": 5,
       "theme": "city",
-      "pairs": 5,
+      "pairs": 12,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "easy",
-      "description": "Niebla ligera: observa con atenciÃ³n. Sin cronÃ³metro. 10 cartas.",
+      "description": "Más cartas. Sin cronómetro. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 25
@@ -3646,7 +3654,7 @@
         "basic"
       ],
       "difficulty": "hard",
-      "description": "algunas cartas explotan si fallas. CronÃ³metro: 87s. 20 cartas.",
+      "description": "Nivel básico. Sin cronómetro. 20 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 150
@@ -3658,13 +3666,13 @@
       "id": 204,
       "phase": 5,
       "theme": "city",
-      "pairs": 6,
+      "pairs": 12,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "medium",
-      "description": "Evita bombas: piensa rÃ¡pido. Sin cronÃ³metro. 12 cartas.",
+      "description": "Juego tranquilo. Sin cronómetro. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 60
@@ -3676,13 +3684,13 @@
       "id": 205,
       "phase": 5,
       "theme": "city",
-      "pairs": 8,
+      "pairs": 11,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "hard",
-      "description": "La oscuridad cubre el tablero poco a poco. CronÃ³metro: 76s. 16 cartas.",
+      "description": "Nivel clásico. Sin cronómetro. 22 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 120
@@ -3694,13 +3702,13 @@
       "id": 206,
       "phase": 5,
       "theme": "city",
-      "pairs": 10,
+      "pairs": 12,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "medium",
-      "description": "juega normalmente. Sin cronÃ³metro. 20 cartas.",
+      "description": "Practica con calma. Sin cronómetro. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 100
@@ -3712,13 +3720,13 @@
       "id": 207,
       "phase": 5,
       "theme": "city",
-      "pairs": 5,
+      "pairs": 12,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "medium",
-      "description": "Nivel clÃ¡sico sin trucos. CronÃ³metro: 44s. 10 cartas.",
+      "description": "Más cartas. Sin cronómetro. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 50
@@ -3730,13 +3738,13 @@
       "id": 208,
       "phase": 5,
       "theme": "city",
-      "pairs": 6,
+      "pairs": 11,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "easy",
-      "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 12 cartas.",
+      "description": "Nivel básico. Sin cronómetro. 22 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 30
@@ -3748,13 +3756,13 @@
       "id": 209,
       "phase": 5,
       "theme": "city",
-      "pairs": 12,
+      "pairs": 11,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "hard",
-      "description": "Evita bombas: piensa rÃ¡pido. Sin cronÃ³metro. 24 cartas.",
+      "description": "Juego tranquilo. Sin cronómetro. 22 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 180
@@ -3766,13 +3774,13 @@
       "id": 210,
       "phase": 5,
       "theme": "city",
-      "pairs": 3,
+      "pairs": 10,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "medium",
-      "description": "Cartas que se congelan temporalmente. Sin cronÃ³metro. 6 cartas.",
+      "description": "Nivel clásico. Sin cronómetro. 20 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 30
@@ -3784,13 +3792,13 @@
       "id": 211,
       "phase": 5,
       "theme": "city",
-      "pairs": 7,
+      "pairs": 11,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "hard",
-      "description": "Las cartas cambian de valor. CronÃ³metro: 77s. 14 cartas.",
+      "description": "Practica con calma. Sin cronómetro. 22 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 105
@@ -3802,13 +3810,13 @@
       "id": 212,
       "phase": 5,
       "theme": "city",
-      "pairs": 4,
+      "pairs": 12,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "easy",
-      "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 8 cartas.",
+      "description": "Más cartas. Sin cronómetro. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 20
@@ -3820,13 +3828,13 @@
       "id": 213,
       "phase": 5,
       "theme": "city",
-      "pairs": 4,
+      "pairs": 12,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "easy",
-      "description": "Cartas fantasma aparecen y desaparecen. Sin cronÃ³metro. 8 cartas.",
+      "description": "Nivel básico. Sin cronómetro. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 20
@@ -3838,13 +3846,13 @@
       "id": 214,
       "phase": 5,
       "theme": "city",
-      "pairs": 9,
+      "pairs": 10,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "medium",
-      "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 18 cartas.",
+      "description": "Juego tranquilo. Sin cronómetro. 20 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 90
@@ -3856,13 +3864,13 @@
       "id": 215,
       "phase": 5,
       "theme": "city",
-      "pairs": 3,
+      "pairs": 12,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "medium",
-      "description": "El tablero rota de vez en cuando. Sin cronÃ³metro. 6 cartas.",
+      "description": "Nivel clásico. Sin cronómetro. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 30
@@ -3874,31 +3882,31 @@
       "id": 216,
       "phase": 5,
       "theme": "city",
-      "pairs": 6,
+      "pairs": 10,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "easy",
-      "description": "Encuentra trÃ­os idÃ©nticos. Sin cronÃ³metro. 12 cartas.",
+      "description": "Practica con calma. Sin cronómetro. 20 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 30
       },
       "seed": 1216060,
-      "setSize": 3
+      "setSize": 2
     },
     {
       "id": 217,
       "phase": 5,
       "theme": "city",
-      "pairs": 8,
+      "pairs": 11,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "medium",
-      "description": "las cartas estÃ¡n parcialmente ocultas. CronÃ³metro: 87s. 16 cartas.",
+      "description": "Más cartas. Sin cronómetro. 22 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 80
@@ -3910,13 +3918,13 @@
       "id": 218,
       "phase": 5,
       "theme": "city",
-      "pairs": 8,
+      "pairs": 12,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "hard",
-      "description": "La oscuridad cubre el tablero poco a poco. CronÃ³metro: 77s. 16 cartas.",
+      "description": "Nivel básico. Sin cronómetro. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 120
@@ -3928,13 +3936,13 @@
       "id": 219,
       "phase": 5,
       "theme": "city",
-      "pairs": 10,
+      "pairs": 12,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "hard",
-      "description": "las cartas pueden rotar. CronÃ³metro: 101s. 20 cartas.",
+      "description": "Juego tranquilo. Sin cronómetro. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 150
@@ -3946,13 +3954,13 @@
       "id": 220,
       "phase": 5,
       "theme": "city",
-      "pairs": 2,
+      "pairs": 10,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "easy",
-      "description": "Niebla ligera: observa con atenciÃ³n. Sin cronÃ³metro. 4 cartas.",
+      "description": "Nivel clásico. Sin cronómetro. 20 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 10
@@ -3964,13 +3972,13 @@
       "id": 221,
       "phase": 5,
       "theme": "city",
-      "pairs": 8,
+      "pairs": 12,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "medium",
-      "description": "las cartas pueden rotar. CronÃ³metro: 88s. 16 cartas.",
+      "description": "Practica con calma. Sin cronómetro. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 80
@@ -3982,13 +3990,13 @@
       "id": 222,
       "phase": 5,
       "theme": "city",
-      "pairs": 12,
+      "pairs": 11,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "hard",
-      "description": "Evita bombas: piensa rÃ¡pido. CronÃ³metro: 100s. 24 cartas.",
+      "description": "Más cartas. Sin cronómetro. 22 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 180
@@ -4000,13 +4008,13 @@
       "id": 223,
       "phase": 5,
       "theme": "city",
-      "pairs": 11,
+      "pairs": 10,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "medium",
-      "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 22 cartas.",
+      "description": "Nivel básico. Sin cronómetro. 20 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 110
@@ -4018,13 +4026,13 @@
       "id": 224,
       "phase": 5,
       "theme": "city",
-      "pairs": 7,
+      "pairs": 12,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "hard",
-      "description": "Evita bombas: piensa rÃ¡pido. CronÃ³metro: 73s. 14 cartas.",
+      "description": "Juego tranquilo. Sin cronómetro. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 105
@@ -4036,31 +4044,32 @@
       "id": 225,
       "phase": 5,
       "theme": "city",
-      "pairs": 4,
+      "pairs": 6,
       "timeSec": 0,
       "mechanics": [
-        "basic"
+        "basic",
+        "trio"
       ],
       "difficulty": "medium",
-      "description": "El tablero rota de vez en cuando. Sin cronÃ³metro. 8 cartas.",
+      "description": "Nivel clásico. Sin cronómetro. 18 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 40
       },
       "seed": 1225040,
-      "setSize": 2
+      "setSize": 3
     },
     {
       "id": 226,
       "phase": 5,
       "theme": "city",
-      "pairs": 5,
+      "pairs": 12,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "medium",
-      "description": "Evita bombas: piensa rÃ¡pido. Sin cronÃ³metro. 10 cartas.",
+      "description": "Practica con calma. Sin cronómetro. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 50
@@ -4072,31 +4081,31 @@
       "id": 227,
       "phase": 5,
       "theme": "city",
-      "pairs": 12,
+      "pairs": 11,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "hard",
-      "description": "Encuentra trÃ­os idÃ©nticos. Sin cronÃ³metro. 24 cartas.",
+      "description": "Más cartas. Sin cronómetro. 22 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 180
       },
       "seed": 1227120,
-      "setSize": 3
+      "setSize": 2
     },
     {
       "id": 228,
       "phase": 5,
       "theme": "city",
-      "pairs": 4,
+      "pairs": 11,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "easy",
-      "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 8 cartas.",
+      "description": "Nivel básico. Sin cronómetro. 22 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 20
@@ -4108,13 +4117,13 @@
       "id": 229,
       "phase": 5,
       "theme": "city",
-      "pairs": 8,
+      "pairs": 11,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "medium",
-      "description": "Evita bombas: piensa rÃ¡pido. Sin cronÃ³metro. 16 cartas.",
+      "description": "Juego tranquilo. Sin cronómetro. 22 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 80
@@ -4126,13 +4135,13 @@
       "id": 230,
       "phase": 5,
       "theme": "city",
-      "pairs": 9,
+      "pairs": 10,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "hard",
-      "description": "Nivel clÃ¡sico sin trucos. CronÃ³metro: 98s. 18 cartas.",
+      "description": "Nivel clásico. Sin cronómetro. 20 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 135
@@ -4144,13 +4153,13 @@
       "id": 231,
       "phase": 5,
       "theme": "city",
-      "pairs": 5,
+      "pairs": 12,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "easy",
-      "description": "Cartas fantasma aparecen y desaparecen. Sin cronÃ³metro. 10 cartas.",
+      "description": "Practica con calma. Sin cronómetro. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 25
@@ -4162,13 +4171,13 @@
       "id": 232,
       "phase": 5,
       "theme": "city",
-      "pairs": 12,
+      "pairs": 10,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "hard",
-      "description": "las cartas estÃ¡n parcialmente ocultas. CronÃ³metro: 107s. 24 cartas.",
+      "description": "Más cartas. Sin cronómetro. 20 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 180
@@ -4180,13 +4189,13 @@
       "id": 233,
       "phase": 5,
       "theme": "city",
-      "pairs": 8,
+      "pairs": 11,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "hard",
-      "description": "La oscuridad cubre el tablero poco a poco. CronÃ³metro: 88s. 16 cartas.",
+      "description": "Nivel básico. Sin cronómetro. 22 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 120
@@ -4198,13 +4207,13 @@
       "id": 234,
       "phase": 5,
       "theme": "city",
-      "pairs": 8,
+      "pairs": 12,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "hard",
-      "description": "El tablero rota de vez en cuando. CronÃ³metro: 81s. 16 cartas.",
+      "description": "Juego tranquilo. Sin cronómetro. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 120
@@ -4216,13 +4225,13 @@
       "id": 235,
       "phase": 5,
       "theme": "city",
-      "pairs": 6,
+      "pairs": 10,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "medium",
-      "description": "Cartas que se congelan temporalmente. Sin cronÃ³metro. 12 cartas.",
+      "description": "Nivel clásico. Sin cronómetro. 20 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 60
@@ -4234,13 +4243,13 @@
       "id": 236,
       "phase": 5,
       "theme": "city",
-      "pairs": 6,
+      "pairs": 11,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "medium",
-      "description": "Nivel clÃ¡sico sin trucos. CronÃ³metro: 53s. 12 cartas.",
+      "description": "Practica con calma. Sin cronómetro. 22 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 60
@@ -4252,13 +4261,13 @@
       "id": 237,
       "phase": 5,
       "theme": "city",
-      "pairs": 5,
+      "pairs": 10,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "easy",
-      "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 10 cartas.",
+      "description": "Más cartas. Sin cronómetro. 20 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 25
@@ -4270,31 +4279,31 @@
       "id": 238,
       "phase": 5,
       "theme": "city",
-      "pairs": 12,
+      "pairs": 10,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "hard",
-      "description": "Encuentra trÃ­os idÃ©nticos. Sin cronÃ³metro. 24 cartas.",
+      "description": "Nivel básico. Sin cronómetro. 20 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 180
       },
       "seed": 1238120,
-      "setSize": 3
+      "setSize": 2
     },
     {
       "id": 239,
       "phase": 5,
       "theme": "city",
-      "pairs": 2,
+      "pairs": 11,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "easy",
-      "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 4 cartas.",
+      "description": "Juego tranquilo. Sin cronómetro. 22 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 10
@@ -4306,13 +4315,13 @@
       "id": 240,
       "phase": 5,
       "theme": "city",
-      "pairs": 7,
+      "pairs": 11,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "medium",
-      "description": "Cartas fantasma aparecen y desaparecen. Sin cronÃ³metro. 14 cartas.",
+      "description": "Nivel clásico. Sin cronómetro. 22 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 70
@@ -4324,13 +4333,13 @@
       "id": 241,
       "phase": 5,
       "theme": "city",
-      "pairs": 12,
+      "pairs": 10,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "hard",
-      "description": "El tablero rota de vez en cuando. Sin cronÃ³metro. 24 cartas.",
+      "description": "Practica con calma. Sin cronómetro. 20 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 180
@@ -4348,7 +4357,7 @@
         "basic"
       ],
       "difficulty": "hard",
-      "description": "La oscuridad cubre el tablero poco a poco. CronÃ³metro: 87s. 20 cartas.",
+      "description": "Más cartas. Sin cronómetro. 20 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 150
@@ -4360,13 +4369,13 @@
       "id": 243,
       "phase": 5,
       "theme": "city",
-      "pairs": 6,
+      "pairs": 12,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "medium",
-      "description": "Nivel clÃ¡sico sin trucos. CronÃ³metro: 53s. 12 cartas.",
+      "description": "Nivel básico. Sin cronómetro. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 60
@@ -4378,13 +4387,13 @@
       "id": 244,
       "phase": 5,
       "theme": "city",
-      "pairs": 2,
+      "pairs": 12,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "easy",
-      "description": "Cartas fantasma aparecen y desaparecen. Sin cronÃ³metro. 4 cartas.",
+      "description": "Juego tranquilo. Sin cronómetro. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 10
@@ -4396,13 +4405,13 @@
       "id": 245,
       "phase": 5,
       "theme": "city",
-      "pairs": 4,
+      "pairs": 11,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "easy",
-      "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 8 cartas.",
+      "description": "Nivel clásico. Sin cronómetro. 22 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 20
@@ -4420,7 +4429,7 @@
         "basic"
       ],
       "difficulty": "hard",
-      "description": "Evita bombas: piensa rÃ¡pido. CronÃ³metro: 112s. 24 cartas.",
+      "description": "Practica con calma. Sin cronómetro. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 180
@@ -4432,13 +4441,13 @@
       "id": 247,
       "phase": 5,
       "theme": "city",
-      "pairs": 5,
+      "pairs": 11,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "easy",
-      "description": "Niebla ligera: observa con atenciÃ³n. Sin cronÃ³metro. 10 cartas.",
+      "description": "Más cartas. Sin cronómetro. 22 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 25
@@ -4450,13 +4459,13 @@
       "id": 248,
       "phase": 5,
       "theme": "city",
-      "pairs": 7,
+      "pairs": 11,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "medium",
-      "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 14 cartas.",
+      "description": "Nivel básico. Sin cronómetro. 22 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 70
@@ -4468,13 +4477,13 @@
       "id": 249,
       "phase": 5,
       "theme": "city",
-      "pairs": 3,
+      "pairs": 12,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "easy",
-      "description": "Niebla ligera: observa con atenciÃ³n. Sin cronÃ³metro. 6 cartas.",
+      "description": "Juego tranquilo. Sin cronómetro. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 15
@@ -4489,10 +4498,11 @@
       "pairs": 12,
       "timeSec": 0,
       "mechanics": [
-        "basic"
+        "basic",
+        "rotation"
       ],
       "difficulty": "hard",
-      "description": "Boss: 24 cartas, darkness + bomb, crono 98s.",
+      "description": "Nivel especial. Sin cronómetro. 24 cartas.",
       "isBoss": true,
       "rewards": {
         "coins": 180
@@ -4504,13 +4514,13 @@
       "id": 251,
       "phase": 6,
       "theme": "desert",
-      "pairs": 7,
+      "pairs": 10,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "medium",
-      "description": "Cartas que se congelan temporalmente. Sin cronÃ³metro. 14 cartas.",
+      "description": "Practica con calma. Sin cronómetro. 20 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 70
@@ -4522,13 +4532,13 @@
       "id": 252,
       "phase": 6,
       "theme": "desert",
-      "pairs": 3,
+      "pairs": 12,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "medium",
-      "description": "Las cartas cambian de valor. Sin cronÃ³metro. 6 cartas.",
+      "description": "Más cartas. Sin cronómetro. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 30
@@ -4540,31 +4550,31 @@
       "id": 253,
       "phase": 6,
       "theme": "desert",
-      "pairs": 9,
+      "pairs": 10,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "hard",
-      "description": "Encuentra trÃ­os idÃ©nticos. Sin cronÃ³metro. 18 cartas.",
+      "description": "Nivel básico. Sin cronómetro. 20 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 135
       },
       "seed": 1253090,
-      "setSize": 3
+      "setSize": 2
     },
     {
       "id": 254,
       "phase": 6,
       "theme": "desert",
-      "pairs": 6,
+      "pairs": 10,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "easy",
-      "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 12 cartas.",
+      "description": "Juego tranquilo. Sin cronómetro. 20 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 30
@@ -4582,7 +4592,7 @@
         "basic"
       ],
       "difficulty": "hard",
-      "description": "La oscuridad cubre el tablero poco a poco. CronÃ³metro: 97s. 24 cartas.",
+      "description": "Nivel clásico. Sin cronómetro. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 180
@@ -4594,13 +4604,13 @@
       "id": 256,
       "phase": 6,
       "theme": "desert",
-      "pairs": 7,
+      "pairs": 10,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "hard",
-      "description": "Las cartas cambian de valor. CronÃ³metro: 64s. 14 cartas.",
+      "description": "Practica con calma. Sin cronómetro. 20 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 105
@@ -4612,13 +4622,13 @@
       "id": 257,
       "phase": 6,
       "theme": "desert",
-      "pairs": 12,
+      "pairs": 11,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "hard",
-      "description": "Evita bombas: piensa rÃ¡pido. CronÃ³metro: 102s. 24 cartas.",
+      "description": "Más cartas. Sin cronómetro. 22 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 180
@@ -4630,13 +4640,13 @@
       "id": 258,
       "phase": 6,
       "theme": "desert",
-      "pairs": 4,
+      "pairs": 12,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "medium",
-      "description": "Las cartas cambian de valor. Sin cronÃ³metro. 8 cartas.",
+      "description": "Nivel básico. Sin cronómetro. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 40
@@ -4648,13 +4658,13 @@
       "id": 259,
       "phase": 6,
       "theme": "desert",
-      "pairs": 7,
+      "pairs": 11,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "medium",
-      "description": "Niebla ligera: observa con atenciÃ³n. CronÃ³metro: 73s. 14 cartas.",
+      "description": "Juego tranquilo. Sin cronómetro. 22 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 70
@@ -4666,13 +4676,13 @@
       "id": 260,
       "phase": 6,
       "theme": "desert",
-      "pairs": 10,
+      "pairs": 11,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "medium",
-      "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 20 cartas.",
+      "description": "Nivel clásico. Sin cronómetro. 22 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 100
@@ -4684,13 +4694,13 @@
       "id": 261,
       "phase": 6,
       "theme": "desert",
-      "pairs": 8,
+      "pairs": 10,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "medium",
-      "description": "las cartas estÃ¡n parcialmente ocultas. CronÃ³metro: 74s. 16 cartas.",
+      "description": "Practica con calma. Sin cronómetro. 20 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 80
@@ -4702,31 +4712,31 @@
       "id": 262,
       "phase": 6,
       "theme": "desert",
-      "pairs": 6,
+      "pairs": 10,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "easy",
-      "description": "Encuentra trÃ­os idÃ©nticos. Sin cronÃ³metro. 12 cartas.",
+      "description": "Más cartas. Sin cronómetro. 20 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 30
       },
       "seed": 1262060,
-      "setSize": 3
+      "setSize": 2
     },
     {
       "id": 263,
       "phase": 6,
       "theme": "desert",
-      "pairs": 5,
+      "pairs": 11,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "medium",
-      "description": "Las cartas cambian de valor. Sin cronÃ³metro. 10 cartas.",
+      "description": "Nivel básico. Sin cronómetro. 22 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 50
@@ -4738,13 +4748,13 @@
       "id": 264,
       "phase": 6,
       "theme": "desert",
-      "pairs": 2,
+      "pairs": 11,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "medium",
-      "description": "El tablero rota de vez en cuando. Sin cronÃ³metro. 4 cartas.",
+      "description": "Juego tranquilo. Sin cronómetro. 22 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 20
@@ -4756,13 +4766,13 @@
       "id": 265,
       "phase": 6,
       "theme": "desert",
-      "pairs": 8,
+      "pairs": 10,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "medium",
-      "description": "La oscuridad cubre el tablero poco a poco. Sin cronÃ³metro. 16 cartas.",
+      "description": "Nivel clásico. Sin cronómetro. 20 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 80
@@ -4774,13 +4784,13 @@
       "id": 266,
       "phase": 6,
       "theme": "desert",
-      "pairs": 6,
+      "pairs": 10,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "easy",
-      "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 12 cartas.",
+      "description": "Practica con calma. Sin cronómetro. 20 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 30
@@ -4792,13 +4802,13 @@
       "id": 267,
       "phase": 6,
       "theme": "desert",
-      "pairs": 7,
+      "pairs": 10,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "medium",
-      "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 14 cartas.",
+      "description": "Más cartas. Sin cronómetro. 20 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 70
@@ -4816,25 +4826,25 @@
         "basic"
       ],
       "difficulty": "hard",
-      "description": "Encuentra trÃ­os idÃ©nticos. Sin cronÃ³metro. 24 cartas.",
+      "description": "Nivel básico. Sin cronómetro. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 180
       },
       "seed": 1268120,
-      "setSize": 3
+      "setSize": 2
     },
     {
       "id": 269,
       "phase": 6,
       "theme": "desert",
-      "pairs": 8,
+      "pairs": 10,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "medium",
-      "description": "Nivel clÃ¡sico sin trucos. CronÃ³metro: 87s. 16 cartas.",
+      "description": "Juego tranquilo. Sin cronómetro. 20 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 80
@@ -4846,13 +4856,13 @@
       "id": 270,
       "phase": 6,
       "theme": "desert",
-      "pairs": 7,
+      "pairs": 10,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "medium",
-      "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 14 cartas.",
+      "description": "Nivel clásico. Sin cronómetro. 20 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 70
@@ -4870,7 +4880,7 @@
         "basic"
       ],
       "difficulty": "hard",
-      "description": "La oscuridad cubre el tablero poco a poco. Sin cronÃ³metro. 20 cartas.",
+      "description": "Practica con calma. Sin cronómetro. 20 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 150
@@ -4882,13 +4892,13 @@
       "id": 272,
       "phase": 6,
       "theme": "desert",
-      "pairs": 6,
+      "pairs": 12,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "medium",
-      "description": "Las cartas cambian de valor. Sin cronÃ³metro. 12 cartas.",
+      "description": "Más cartas. Sin cronómetro. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 60
@@ -4900,13 +4910,13 @@
       "id": 273,
       "phase": 6,
       "theme": "desert",
-      "pairs": 8,
+      "pairs": 10,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "medium",
-      "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 16 cartas.",
+      "description": "Nivel básico. Sin cronómetro. 20 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 80
@@ -4918,13 +4928,13 @@
       "id": 274,
       "phase": 6,
       "theme": "desert",
-      "pairs": 3,
+      "pairs": 11,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "medium",
-      "description": "El tablero rota de vez en cuando. Sin cronÃ³metro. 6 cartas.",
+      "description": "Juego tranquilo. Sin cronómetro. 22 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 30
@@ -4936,31 +4946,32 @@
       "id": 275,
       "phase": 6,
       "theme": "desert",
-      "pairs": 12,
+      "pairs": 6,
       "timeSec": 0,
       "mechanics": [
-        "basic"
+        "basic",
+        "trio"
       ],
       "difficulty": "hard",
-      "description": "Cartas que se congelan temporalmente. CronÃ³metro: 105s. 24 cartas.",
+      "description": "Nivel clásico. Sin cronómetro. 18 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 180
       },
       "seed": 1275225,
-      "setSize": 2
+      "setSize": 3
     },
     {
       "id": 276,
       "phase": 6,
       "theme": "desert",
-      "pairs": 5,
+      "pairs": 12,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "medium",
-      "description": "Evita bombas: piensa rÃ¡pido. Sin cronÃ³metro. 10 cartas.",
+      "description": "Practica con calma. Sin cronómetro. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 50
@@ -4972,13 +4983,13 @@
       "id": 277,
       "phase": 6,
       "theme": "desert",
-      "pairs": 5,
+      "pairs": 10,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "medium",
-      "description": "Niebla ligera: observa con atenciÃ³n. CronÃ³metro: 56s. 10 cartas.",
+      "description": "Más cartas. Sin cronómetro. 20 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 50
@@ -4996,7 +5007,7 @@
         "basic"
       ],
       "difficulty": "hard",
-      "description": "las cartas pueden rotar. CronÃ³metro: 91s. 20 cartas.",
+      "description": "Nivel básico. Sin cronómetro. 20 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 150
@@ -5008,13 +5019,13 @@
       "id": 279,
       "phase": 6,
       "theme": "desert",
-      "pairs": 6,
+      "pairs": 11,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "medium",
-      "description": "Las cartas cambian de valor. Sin cronÃ³metro. 12 cartas.",
+      "description": "Juego tranquilo. Sin cronómetro. 22 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 60
@@ -5026,13 +5037,13 @@
       "id": 280,
       "phase": 6,
       "theme": "desert",
-      "pairs": 8,
+      "pairs": 12,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "medium",
-      "description": "Evita bombas: piensa rÃ¡pido. Sin cronÃ³metro. 16 cartas.",
+      "description": "Nivel clásico. Sin cronómetro. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 80
@@ -5044,13 +5055,13 @@
       "id": 281,
       "phase": 6,
       "theme": "desert",
-      "pairs": 8,
+      "pairs": 10,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "medium",
-      "description": "las cartas estÃ¡n parcialmente ocultas. CronÃ³metro: 75s. 16 cartas.",
+      "description": "Practica con calma. Sin cronómetro. 20 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 80
@@ -5062,13 +5073,13 @@
       "id": 282,
       "phase": 6,
       "theme": "desert",
-      "pairs": 7,
+      "pairs": 11,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "medium",
-      "description": "Nivel clÃ¡sico sin trucos. CronÃ³metro: 66s. 14 cartas.",
+      "description": "Más cartas. Sin cronómetro. 22 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 70
@@ -5080,31 +5091,31 @@
       "id": 283,
       "phase": 6,
       "theme": "desert",
-      "pairs": 6,
+      "pairs": 10,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "easy",
-      "description": "Encuentra trÃ­os idÃ©nticos. Sin cronÃ³metro. 12 cartas.",
+      "description": "Nivel básico. Sin cronómetro. 20 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 30
       },
       "seed": 1283060,
-      "setSize": 3
+      "setSize": 2
     },
     {
       "id": 284,
       "phase": 6,
       "theme": "desert",
-      "pairs": 5,
+      "pairs": 11,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "easy",
-      "description": "Cartas fantasma aparecen y desaparecen. Sin cronÃ³metro. 10 cartas.",
+      "description": "Juego tranquilo. Sin cronómetro. 22 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 25
@@ -5116,13 +5127,13 @@
       "id": 285,
       "phase": 6,
       "theme": "desert",
-      "pairs": 9,
+      "pairs": 10,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "hard",
-      "description": "Nivel clÃ¡sico sin trucos. CronÃ³metro: 91s. 18 cartas.",
+      "description": "Nivel clásico. Sin cronómetro. 20 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 135
@@ -5134,13 +5145,13 @@
       "id": 286,
       "phase": 6,
       "theme": "desert",
-      "pairs": 5,
+      "pairs": 11,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "medium",
-      "description": "Evita bombas: piensa rÃ¡pido. CronÃ³metro: 49s. 10 cartas.",
+      "description": "Practica con calma. Sin cronómetro. 22 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 50
@@ -5152,13 +5163,13 @@
       "id": 287,
       "phase": 6,
       "theme": "desert",
-      "pairs": 7,
+      "pairs": 12,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "medium",
-      "description": "Cartas que se congelan temporalmente. Sin cronÃ³metro. 14 cartas.",
+      "description": "Más cartas. Sin cronómetro. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 70
@@ -5170,13 +5181,13 @@
       "id": 288,
       "phase": 6,
       "theme": "desert",
-      "pairs": 7,
+      "pairs": 11,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "medium",
-      "description": "Las cartas cambian de valor. Sin cronÃ³metro. 14 cartas.",
+      "description": "Nivel básico. Sin cronómetro. 22 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 70
@@ -5188,13 +5199,13 @@
       "id": 289,
       "phase": 6,
       "theme": "desert",
-      "pairs": 9,
+      "pairs": 10,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "hard",
-      "description": "Cartas fantasma aparecen y desaparecen. CronÃ³metro: 87s. 18 cartas.",
+      "description": "Juego tranquilo. Sin cronómetro. 20 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 135
@@ -5206,13 +5217,13 @@
       "id": 290,
       "phase": 6,
       "theme": "desert",
-      "pairs": 12,
+      "pairs": 10,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "hard",
-      "description": "Cartas que se congelan temporalmente. Sin cronÃ³metro. 24 cartas.",
+      "description": "Nivel clásico. Sin cronómetro. 20 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 180
@@ -5224,13 +5235,13 @@
       "id": 291,
       "phase": 6,
       "theme": "desert",
-      "pairs": 9,
+      "pairs": 10,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "hard",
-      "description": "Evita bombas: piensa rÃ¡pido. CronÃ³metro: 97s. 18 cartas.",
+      "description": "Practica con calma. Sin cronómetro. 20 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 135
@@ -5242,13 +5253,13 @@
       "id": 292,
       "phase": 6,
       "theme": "desert",
-      "pairs": 2,
+      "pairs": 10,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "easy",
-      "description": "Cartas fantasma aparecen y desaparecen. Sin cronÃ³metro. 4 cartas.",
+      "description": "Más cartas. Sin cronómetro. 20 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 10
@@ -5260,31 +5271,31 @@
       "id": 293,
       "phase": 6,
       "theme": "desert",
-      "pairs": 6,
+      "pairs": 11,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "easy",
-      "description": "Encuentra trÃ­os idÃ©nticos. Sin cronÃ³metro. 12 cartas.",
+      "description": "Nivel básico. Sin cronómetro. 22 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 30
       },
       "seed": 1293060,
-      "setSize": 3
+      "setSize": 2
     },
     {
       "id": 294,
       "phase": 6,
       "theme": "desert",
-      "pairs": 7,
+      "pairs": 10,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "medium",
-      "description": "Las cartas cambian de valor. Sin cronÃ³metro. 14 cartas.",
+      "description": "Juego tranquilo. Sin cronómetro. 20 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 70
@@ -5296,13 +5307,13 @@
       "id": 295,
       "phase": 6,
       "theme": "desert",
-      "pairs": 8,
+      "pairs": 12,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "medium",
-      "description": "juega normalmente. Sin cronÃ³metro. 16 cartas.",
+      "description": "Nivel clásico. Sin cronómetro. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 80
@@ -5314,13 +5325,13 @@
       "id": 296,
       "phase": 6,
       "theme": "desert",
-      "pairs": 6,
+      "pairs": 11,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "easy",
-      "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 12 cartas.",
+      "description": "Practica con calma. Sin cronómetro. 22 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 30
@@ -5332,13 +5343,13 @@
       "id": 297,
       "phase": 6,
       "theme": "desert",
-      "pairs": 5,
+      "pairs": 10,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "medium",
-      "description": "Niebla ligera: observa con atenciÃ³n. CronÃ³metro: 44s. 10 cartas.",
+      "description": "Más cartas. Sin cronómetro. 20 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 50
@@ -5350,13 +5361,13 @@
       "id": 298,
       "phase": 6,
       "theme": "desert",
-      "pairs": 7,
+      "pairs": 12,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "medium",
-      "description": "Cartas que se congelan temporalmente. Sin cronÃ³metro. 14 cartas.",
+      "description": "Nivel básico. Sin cronómetro. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 70
@@ -5368,13 +5379,13 @@
       "id": 299,
       "phase": 6,
       "theme": "desert",
-      "pairs": 5,
+      "pairs": 11,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "easy",
-      "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 10 cartas.",
+      "description": "Juego tranquilo. Sin cronómetro. 22 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 25
@@ -5389,10 +5400,11 @@
       "pairs": 12,
       "timeSec": 0,
       "mechanics": [
-        "basic"
+        "basic",
+        "fog"
       ],
       "difficulty": "hard",
-      "description": "Boss: 24 cartas, chameleon + darkness, crono 109s.",
+      "description": "Nivel especial. Sin cronómetro. 24 cartas.",
       "isBoss": true,
       "rewards": {
         "coins": 180
@@ -5404,13 +5416,13 @@
       "id": 301,
       "phase": 7,
       "theme": "arctic",
-      "pairs": 3,
+      "pairs": 12,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "medium",
-      "description": "Evita bombas: piensa rÃ¡pido. Sin cronÃ³metro. 6 cartas.",
+      "description": "Practica con calma. Sin cronómetro. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 30
@@ -5422,13 +5434,13 @@
       "id": 302,
       "phase": 7,
       "theme": "arctic",
-      "pairs": 8,
+      "pairs": 11,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "hard",
-      "description": "La oscuridad cubre el tablero poco a poco. CronÃ³metro: 85s. 16 cartas.",
+      "description": "Más cartas. Sin cronómetro. 22 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 120
@@ -5446,25 +5458,25 @@
         "basic"
       ],
       "difficulty": "hard",
-      "description": "Encuentra trÃ­os idÃ©nticos. Sin cronÃ³metro. 24 cartas.",
+      "description": "Nivel básico. Sin cronómetro. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 180
       },
       "seed": 1303120,
-      "setSize": 3
+      "setSize": 2
     },
     {
       "id": 304,
       "phase": 7,
       "theme": "arctic",
-      "pairs": 5,
+      "pairs": 10,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "medium",
-      "description": "Las cartas cambian de valor. Sin cronÃ³metro. 10 cartas.",
+      "description": "Juego tranquilo. Sin cronómetro. 20 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 50
@@ -5476,13 +5488,13 @@
       "id": 305,
       "phase": 7,
       "theme": "arctic",
-      "pairs": 6,
+      "pairs": 12,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "medium",
-      "description": "Evita bombas: piensa rÃ¡pido. Sin cronÃ³metro. 12 cartas.",
+      "description": "Nivel clásico. Sin cronómetro. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 60
@@ -5494,13 +5506,13 @@
       "id": 306,
       "phase": 7,
       "theme": "arctic",
-      "pairs": 5,
+      "pairs": 12,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "medium",
-      "description": "El tablero rota de vez en cuando. Sin cronÃ³metro. 10 cartas.",
+      "description": "Practica con calma. Sin cronómetro. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 50
@@ -5512,13 +5524,13 @@
       "id": 307,
       "phase": 7,
       "theme": "arctic",
-      "pairs": 9,
+      "pairs": 11,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "hard",
-      "description": "Nivel clÃ¡sico sin trucos. CronÃ³metro: 94s. 18 cartas.",
+      "description": "Más cartas. Sin cronómetro. 22 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 135
@@ -5530,13 +5542,13 @@
       "id": 308,
       "phase": 7,
       "theme": "arctic",
-      "pairs": 8,
+      "pairs": 11,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "medium",
-      "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 16 cartas.",
+      "description": "Nivel básico. Sin cronómetro. 22 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 80
@@ -5554,7 +5566,7 @@
         "basic"
       ],
       "difficulty": "hard",
-      "description": "El tablero rota de vez en cuando. CronÃ³metro: 99s. 24 cartas.",
+      "description": "Juego tranquilo. Sin cronómetro. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 180
@@ -5566,31 +5578,31 @@
       "id": 310,
       "phase": 7,
       "theme": "arctic",
-      "pairs": 3,
+      "pairs": 12,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "easy",
-      "description": "Encuentra trÃ­os idÃ©nticos. Sin cronÃ³metro. 6 cartas.",
+      "description": "Nivel clásico. Sin cronómetro. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 15
       },
       "seed": 1310030,
-      "setSize": 3
+      "setSize": 2
     },
     {
       "id": 311,
       "phase": 7,
       "theme": "arctic",
-      "pairs": 6,
+      "pairs": 11,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "medium",
-      "description": "Nivel clÃ¡sico sin trucos. CronÃ³metro: 64s. 12 cartas.",
+      "description": "Practica con calma. Sin cronómetro. 22 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 60
@@ -5602,13 +5614,13 @@
       "id": 312,
       "phase": 7,
       "theme": "arctic",
-      "pairs": 7,
+      "pairs": 12,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "medium",
-      "description": "Evita bombas: piensa rÃ¡pido. Sin cronÃ³metro. 14 cartas.",
+      "description": "Más cartas. Sin cronómetro. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 70
@@ -5620,13 +5632,13 @@
       "id": 313,
       "phase": 7,
       "theme": "arctic",
-      "pairs": 9,
+      "pairs": 12,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "medium",
-      "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 18 cartas.",
+      "description": "Nivel básico. Sin cronómetro. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 90
@@ -5638,13 +5650,13 @@
       "id": 314,
       "phase": 7,
       "theme": "arctic",
-      "pairs": 7,
+      "pairs": 11,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "medium",
-      "description": "Cartas que se congelan temporalmente. Sin cronÃ³metro. 14 cartas.",
+      "description": "Juego tranquilo. Sin cronómetro. 22 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 70
@@ -5656,13 +5668,13 @@
       "id": 315,
       "phase": 7,
       "theme": "arctic",
-      "pairs": 6,
+      "pairs": 10,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "medium",
-      "description": "Cartas fantasma aparecen y desaparecen. CronÃ³metro: 56s. 12 cartas.",
+      "description": "Nivel clásico. Sin cronómetro. 20 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 60
@@ -5674,13 +5686,13 @@
       "id": 316,
       "phase": 7,
       "theme": "arctic",
-      "pairs": 6,
+      "pairs": 11,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "easy",
-      "description": "Niebla ligera: observa con atenciÃ³n. Sin cronÃ³metro. 12 cartas.",
+      "description": "Practica con calma. Sin cronómetro. 22 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 30
@@ -5692,13 +5704,13 @@
       "id": 317,
       "phase": 7,
       "theme": "arctic",
-      "pairs": 6,
+      "pairs": 10,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "medium",
-      "description": "Las cartas cambian de valor. CronÃ³metro: 62s. 12 cartas.",
+      "description": "Más cartas. Sin cronómetro. 20 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 60
@@ -5710,13 +5722,13 @@
       "id": 318,
       "phase": 7,
       "theme": "arctic",
-      "pairs": 10,
+      "pairs": 11,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "hard",
-      "description": "La oscuridad cubre el tablero poco a poco. CronÃ³metro: 89s. 20 cartas.",
+      "description": "Nivel básico. Sin cronómetro. 22 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 150
@@ -5728,13 +5740,13 @@
       "id": 319,
       "phase": 7,
       "theme": "arctic",
-      "pairs": 5,
+      "pairs": 12,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "medium",
-      "description": "Nivel clÃ¡sico sin trucos. CronÃ³metro: 43s. 10 cartas.",
+      "description": "Juego tranquilo. Sin cronómetro. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 50
@@ -5746,13 +5758,13 @@
       "id": 320,
       "phase": 7,
       "theme": "arctic",
-      "pairs": 8,
+      "pairs": 10,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "medium",
-      "description": "El tablero rota de vez en cuando. Sin cronÃ³metro. 16 cartas.",
+      "description": "Nivel clásico. Sin cronómetro. 20 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 80
@@ -5764,13 +5776,13 @@
       "id": 321,
       "phase": 7,
       "theme": "arctic",
-      "pairs": 2,
+      "pairs": 11,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "medium",
-      "description": "Evita bombas: piensa rÃ¡pido. Sin cronÃ³metro. 4 cartas.",
+      "description": "Practica con calma. Sin cronómetro. 22 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 20
@@ -5788,7 +5800,7 @@
         "basic"
       ],
       "difficulty": "medium",
-      "description": "juega normalmente. Sin cronÃ³metro. 24 cartas.",
+      "description": "Más cartas. Sin cronómetro. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 120
@@ -5800,13 +5812,13 @@
       "id": 323,
       "phase": 7,
       "theme": "arctic",
-      "pairs": 6,
+      "pairs": 11,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "easy",
-      "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 12 cartas.",
+      "description": "Nivel básico. Sin cronómetro. 22 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 30
@@ -5818,49 +5830,50 @@
       "id": 324,
       "phase": 7,
       "theme": "arctic",
-      "pairs": 9,
+      "pairs": 10,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "hard",
-      "description": "Encuentra trÃ­os idÃ©nticos. Sin cronÃ³metro. 18 cartas.",
+      "description": "Juego tranquilo. Sin cronómetro. 20 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 135
       },
       "seed": 1324090,
-      "setSize": 3
+      "setSize": 2
     },
     {
       "id": 325,
       "phase": 7,
       "theme": "arctic",
-      "pairs": 9,
+      "pairs": 6,
       "timeSec": 0,
       "mechanics": [
-        "basic"
+        "basic",
+        "trio"
       ],
       "difficulty": "hard",
-      "description": "El tablero rota de vez en cuando. CronÃ³metro: 97s. 18 cartas.",
+      "description": "Nivel clásico. Sin cronómetro. 18 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 135
       },
       "seed": 1325187,
-      "setSize": 2
+      "setSize": 3
     },
     {
       "id": 326,
       "phase": 7,
       "theme": "arctic",
-      "pairs": 8,
+      "pairs": 10,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "medium",
-      "description": "juega normalmente. Sin cronÃ³metro. 16 cartas.",
+      "description": "Practica con calma. Sin cronómetro. 20 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 80
@@ -5872,13 +5885,13 @@
       "id": 327,
       "phase": 7,
       "theme": "arctic",
-      "pairs": 6,
+      "pairs": 11,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "easy",
-      "description": "Niebla ligera: observa con atenciÃ³n. Sin cronÃ³metro. 12 cartas.",
+      "description": "Más cartas. Sin cronómetro. 22 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 30
@@ -5890,13 +5903,13 @@
       "id": 328,
       "phase": 7,
       "theme": "arctic",
-      "pairs": 12,
+      "pairs": 11,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "hard",
-      "description": "Cartas que se congelan temporalmente. CronÃ³metro: 112s. 24 cartas.",
+      "description": "Nivel básico. Sin cronómetro. 22 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 180
@@ -5908,13 +5921,13 @@
       "id": 329,
       "phase": 7,
       "theme": "arctic",
-      "pairs": 8,
+      "pairs": 11,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "medium",
-      "description": "Niebla ligera: observa con atenciÃ³n. Sin cronÃ³metro. 16 cartas.",
+      "description": "Juego tranquilo. Sin cronómetro. 22 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 80
@@ -5926,13 +5939,13 @@
       "id": 330,
       "phase": 7,
       "theme": "arctic",
-      "pairs": 4,
+      "pairs": 10,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "medium",
-      "description": "Evita bombas: piensa rÃ¡pido. Sin cronÃ³metro. 8 cartas.",
+      "description": "Nivel clásico. Sin cronómetro. 20 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 40
@@ -5944,13 +5957,13 @@
       "id": 331,
       "phase": 7,
       "theme": "arctic",
-      "pairs": 7,
+      "pairs": 12,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "medium",
-      "description": "Cartas fantasma aparecen y desaparecen. Sin cronÃ³metro. 14 cartas.",
+      "description": "Practica con calma. Sin cronómetro. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 70
@@ -5962,13 +5975,13 @@
       "id": 332,
       "phase": 7,
       "theme": "arctic",
-      "pairs": 12,
+      "pairs": 11,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "medium",
-      "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 24 cartas.",
+      "description": "Más cartas. Sin cronómetro. 22 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 120
@@ -5980,13 +5993,13 @@
       "id": 333,
       "phase": 7,
       "theme": "arctic",
-      "pairs": 5,
+      "pairs": 12,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "easy",
-      "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 10 cartas.",
+      "description": "Nivel básico. Sin cronómetro. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 25
@@ -5998,13 +6011,13 @@
       "id": 334,
       "phase": 7,
       "theme": "arctic",
-      "pairs": 5,
+      "pairs": 10,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "easy",
-      "description": "Niebla ligera: observa con atenciÃ³n. Sin cronÃ³metro. 10 cartas.",
+      "description": "Juego tranquilo. Sin cronómetro. 20 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 25
@@ -6016,13 +6029,13 @@
       "id": 335,
       "phase": 7,
       "theme": "arctic",
-      "pairs": 6,
+      "pairs": 12,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "easy",
-      "description": "Cartas fantasma aparecen y desaparecen. Sin cronÃ³metro. 12 cartas.",
+      "description": "Nivel clásico. Sin cronómetro. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 30
@@ -6034,13 +6047,13 @@
       "id": 336,
       "phase": 7,
       "theme": "arctic",
-      "pairs": 7,
+      "pairs": 10,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "medium",
-      "description": "Cartas que se congelan temporalmente. Sin cronÃ³metro. 14 cartas.",
+      "description": "Practica con calma. Sin cronómetro. 20 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 70
@@ -6052,13 +6065,13 @@
       "id": 337,
       "phase": 7,
       "theme": "arctic",
-      "pairs": 6,
+      "pairs": 12,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "easy",
-      "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 12 cartas.",
+      "description": "Más cartas. Sin cronómetro. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 30
@@ -6070,13 +6083,13 @@
       "id": 338,
       "phase": 7,
       "theme": "arctic",
-      "pairs": 8,
+      "pairs": 11,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "hard",
-      "description": "Cartas que se congelan temporalmente. CronÃ³metro: 87s. 16 cartas.",
+      "description": "Nivel básico. Sin cronómetro. 22 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 120
@@ -6088,13 +6101,13 @@
       "id": 339,
       "phase": 7,
       "theme": "arctic",
-      "pairs": 12,
+      "pairs": 11,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "hard",
-      "description": "Nivel clÃ¡sico sin trucos. CronÃ³metro: 100s. 24 cartas.",
+      "description": "Juego tranquilo. Sin cronómetro. 22 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 180
@@ -6106,13 +6119,13 @@
       "id": 340,
       "phase": 7,
       "theme": "arctic",
-      "pairs": 4,
+      "pairs": 11,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "easy",
-      "description": "Cartas fantasma aparecen y desaparecen. Sin cronÃ³metro. 8 cartas.",
+      "description": "Nivel clásico. Sin cronómetro. 22 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 20
@@ -6124,31 +6137,31 @@
       "id": 341,
       "phase": 7,
       "theme": "arctic",
-      "pairs": 6,
+      "pairs": 12,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "easy",
-      "description": "Encuentra trÃ­os idÃ©nticos. Sin cronÃ³metro. 12 cartas.",
+      "description": "Practica con calma. Sin cronómetro. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 30
       },
       "seed": 1341060,
-      "setSize": 3
+      "setSize": 2
     },
     {
       "id": 342,
       "phase": 7,
       "theme": "arctic",
-      "pairs": 8,
+      "pairs": 12,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "medium",
-      "description": "juega normalmente. Sin cronÃ³metro. 16 cartas.",
+      "description": "Más cartas. Sin cronómetro. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 80
@@ -6160,13 +6173,13 @@
       "id": 343,
       "phase": 7,
       "theme": "arctic",
-      "pairs": 5,
+      "pairs": 11,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "easy",
-      "description": "Cartas fantasma aparecen y desaparecen. Sin cronÃ³metro. 10 cartas.",
+      "description": "Nivel básico. Sin cronómetro. 22 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 25
@@ -6178,13 +6191,13 @@
       "id": 344,
       "phase": 7,
       "theme": "arctic",
-      "pairs": 12,
+      "pairs": 11,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "hard",
-      "description": "El tablero rota de vez en cuando. CronÃ³metro: 98s. 24 cartas.",
+      "description": "Juego tranquilo. Sin cronómetro. 22 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 180
@@ -6196,13 +6209,13 @@
       "id": 345,
       "phase": 7,
       "theme": "arctic",
-      "pairs": 7,
+      "pairs": 10,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "medium",
-      "description": "Nivel clÃ¡sico sin trucos. CronÃ³metro: 71s. 14 cartas.",
+      "description": "Nivel clásico. Sin cronómetro. 20 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 70
@@ -6220,7 +6233,7 @@
         "basic"
       ],
       "difficulty": "hard",
-      "description": "Evita bombas: piensa rÃ¡pido. CronÃ³metro: 97s. 20 cartas.",
+      "description": "Practica con calma. Sin cronómetro. 20 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 150
@@ -6232,13 +6245,13 @@
       "id": 347,
       "phase": 7,
       "theme": "arctic",
-      "pairs": 8,
+      "pairs": 12,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "medium",
-      "description": "La oscuridad cubre el tablero poco a poco. Sin cronÃ³metro. 16 cartas.",
+      "description": "Más cartas. Sin cronómetro. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 80
@@ -6250,13 +6263,13 @@
       "id": 348,
       "phase": 7,
       "theme": "arctic",
-      "pairs": 7,
+      "pairs": 10,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "hard",
-      "description": "Evita bombas: piensa rÃ¡pido. CronÃ³metro: 76s. 14 cartas.",
+      "description": "Nivel básico. Sin cronómetro. 20 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 105
@@ -6268,13 +6281,13 @@
       "id": 349,
       "phase": 7,
       "theme": "arctic",
-      "pairs": 12,
+      "pairs": 10,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "medium",
-      "description": "juega normalmente. Sin cronÃ³metro. 24 cartas.",
+      "description": "Juego tranquilo. Sin cronómetro. 20 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 120
@@ -6289,10 +6302,11 @@
       "pairs": 12,
       "timeSec": 0,
       "mechanics": [
-        "basic"
+        "basic",
+        "rotation"
       ],
       "difficulty": "hard",
-      "description": "Boss: 24 cartas, frozen + darkness, crono 107s.",
+      "description": "Nivel especial. Sin cronómetro. 24 cartas.",
       "isBoss": true,
       "rewards": {
         "coins": 180
@@ -6304,13 +6318,13 @@
       "id": 351,
       "phase": 8,
       "theme": "jungle",
-      "pairs": 8,
+      "pairs": 12,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "medium",
-      "description": "Niebla ligera: observa con atenciÃ³n. CronÃ³metro: 85s. 16 cartas.",
+      "description": "Practica con calma. Sin cronómetro. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 80
@@ -6322,31 +6336,31 @@
       "id": 352,
       "phase": 8,
       "theme": "jungle",
-      "pairs": 6,
+      "pairs": 10,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "easy",
-      "description": "Encuentra trÃ­os idÃ©nticos. Sin cronÃ³metro. 12 cartas.",
+      "description": "Más cartas. Sin cronómetro. 20 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 30
       },
       "seed": 1352060,
-      "setSize": 3
+      "setSize": 2
     },
     {
       "id": 353,
       "phase": 8,
       "theme": "jungle",
-      "pairs": 7,
+      "pairs": 10,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "hard",
-      "description": "El tablero rota de vez en cuando. CronÃ³metro: 67s. 14 cartas.",
+      "description": "Nivel básico. Sin cronómetro. 20 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 105
@@ -6358,13 +6372,13 @@
       "id": 354,
       "phase": 8,
       "theme": "jungle",
-      "pairs": 5,
+      "pairs": 12,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "easy",
-      "description": "Niebla ligera: observa con atenciÃ³n. Sin cronÃ³metro. 10 cartas.",
+      "description": "Juego tranquilo. Sin cronómetro. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 25
@@ -6376,13 +6390,13 @@
       "id": 355,
       "phase": 8,
       "theme": "jungle",
-      "pairs": 5,
+      "pairs": 11,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "medium",
-      "description": "Las cartas cambian de valor. Sin cronÃ³metro. 10 cartas.",
+      "description": "Nivel clásico. Sin cronómetro. 22 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 50
@@ -6394,13 +6408,13 @@
       "id": 356,
       "phase": 8,
       "theme": "jungle",
-      "pairs": 12,
+      "pairs": 10,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "hard",
-      "description": "La oscuridad cubre el tablero poco a poco. CronÃ³metro: 109s. 24 cartas.",
+      "description": "Practica con calma. Sin cronómetro. 20 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 180
@@ -6412,13 +6426,13 @@
       "id": 357,
       "phase": 8,
       "theme": "jungle",
-      "pairs": 8,
+      "pairs": 10,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "medium",
-      "description": "Nivel clÃ¡sico sin trucos. CronÃ³metro: 73s. 16 cartas.",
+      "description": "Más cartas. Sin cronómetro. 20 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 80
@@ -6430,13 +6444,13 @@
       "id": 358,
       "phase": 8,
       "theme": "jungle",
-      "pairs": 7,
+      "pairs": 12,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "medium",
-      "description": "Cartas que se congelan temporalmente. Sin cronÃ³metro. 14 cartas.",
+      "description": "Nivel básico. Sin cronómetro. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 70
@@ -6448,13 +6462,13 @@
       "id": 359,
       "phase": 8,
       "theme": "jungle",
-      "pairs": 6,
+      "pairs": 12,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "easy",
-      "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 12 cartas.",
+      "description": "Juego tranquilo. Sin cronómetro. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 30
@@ -6466,13 +6480,13 @@
       "id": 360,
       "phase": 8,
       "theme": "jungle",
-      "pairs": 5,
+      "pairs": 12,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "easy",
-      "description": "Cartas fantasma aparecen y desaparecen. Sin cronÃ³metro. 10 cartas.",
+      "description": "Nivel clásico. Sin cronómetro. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 25
@@ -6484,13 +6498,13 @@
       "id": 361,
       "phase": 8,
       "theme": "jungle",
-      "pairs": 8,
+      "pairs": 10,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "medium",
-      "description": "las cartas estÃ¡n parcialmente ocultas. CronÃ³metro: 74s. 16 cartas.",
+      "description": "Practica con calma. Sin cronómetro. 20 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 80
@@ -6502,13 +6516,13 @@
       "id": 362,
       "phase": 8,
       "theme": "jungle",
-      "pairs": 7,
+      "pairs": 11,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "medium",
-      "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 14 cartas.",
+      "description": "Más cartas. Sin cronómetro. 22 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 70
@@ -6520,13 +6534,13 @@
       "id": 363,
       "phase": 8,
       "theme": "jungle",
-      "pairs": 10,
+      "pairs": 12,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "hard",
-      "description": "La oscuridad cubre el tablero poco a poco. CronÃ³metro: 90s. 20 cartas.",
+      "description": "Nivel básico. Sin cronómetro. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 150
@@ -6538,13 +6552,13 @@
       "id": 364,
       "phase": 8,
       "theme": "jungle",
-      "pairs": 8,
+      "pairs": 11,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "medium",
-      "description": "Cartas que se congelan temporalmente. Sin cronÃ³metro. 16 cartas.",
+      "description": "Juego tranquilo. Sin cronómetro. 22 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 80
@@ -6556,13 +6570,13 @@
       "id": 365,
       "phase": 8,
       "theme": "jungle",
-      "pairs": 3,
+      "pairs": 12,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "easy",
-      "description": "Niebla ligera: observa con atenciÃ³n. Sin cronÃ³metro. 6 cartas.",
+      "description": "Nivel clásico. Sin cronómetro. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 15
@@ -6574,31 +6588,31 @@
       "id": 366,
       "phase": 8,
       "theme": "jungle",
-      "pairs": 9,
+      "pairs": 10,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "hard",
-      "description": "Encuentra trÃ­os idÃ©nticos. Sin cronÃ³metro. 18 cartas.",
+      "description": "Practica con calma. Sin cronómetro. 20 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 135
       },
       "seed": 1366090,
-      "setSize": 3
+      "setSize": 2
     },
     {
       "id": 367,
       "phase": 8,
       "theme": "jungle",
-      "pairs": 6,
+      "pairs": 10,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "easy",
-      "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 12 cartas.",
+      "description": "Más cartas. Sin cronómetro. 20 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 30
@@ -6610,13 +6624,13 @@
       "id": 368,
       "phase": 8,
       "theme": "jungle",
-      "pairs": 8,
+      "pairs": 12,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "medium",
-      "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 16 cartas.",
+      "description": "Nivel básico. Sin cronómetro. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 80
@@ -6628,13 +6642,13 @@
       "id": 369,
       "phase": 8,
       "theme": "jungle",
-      "pairs": 2,
+      "pairs": 12,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "easy",
-      "description": "Niebla ligera: observa con atenciÃ³n. Sin cronÃ³metro. 4 cartas.",
+      "description": "Juego tranquilo. Sin cronómetro. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 10
@@ -6646,13 +6660,13 @@
       "id": 370,
       "phase": 8,
       "theme": "jungle",
-      "pairs": 9,
+      "pairs": 11,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "hard",
-      "description": "Evita bombas: piensa rÃ¡pido. Sin cronÃ³metro. 18 cartas.",
+      "description": "Nivel clásico. Sin cronómetro. 22 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 135
@@ -6664,13 +6678,13 @@
       "id": 371,
       "phase": 8,
       "theme": "jungle",
-      "pairs": 5,
+      "pairs": 10,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "easy",
-      "description": "Cartas fantasma aparecen y desaparecen. Sin cronÃ³metro. 10 cartas.",
+      "description": "Practica con calma. Sin cronómetro. 20 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 25
@@ -6682,13 +6696,13 @@
       "id": 372,
       "phase": 8,
       "theme": "jungle",
-      "pairs": 4,
+      "pairs": 10,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "medium",
-      "description": "Cartas que se congelan temporalmente. Sin cronÃ³metro. 8 cartas.",
+      "description": "Más cartas. Sin cronómetro. 20 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 40
@@ -6700,13 +6714,13 @@
       "id": 373,
       "phase": 8,
       "theme": "jungle",
-      "pairs": 4,
+      "pairs": 10,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "medium",
-      "description": "Las cartas cambian de valor. Sin cronÃ³metro. 8 cartas.",
+      "description": "Nivel básico. Sin cronómetro. 20 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 40
@@ -6718,13 +6732,13 @@
       "id": 374,
       "phase": 8,
       "theme": "jungle",
-      "pairs": 12,
+      "pairs": 11,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "medium",
-      "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 24 cartas.",
+      "description": "Juego tranquilo. Sin cronómetro. 22 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 120
@@ -6736,31 +6750,31 @@
       "id": 375,
       "phase": 8,
       "theme": "jungle",
-      "pairs": 10,
+      "pairs": 8,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "hard",
-      "description": "La oscuridad cubre el tablero poco a poco. CronÃ³metro: 91s. 20 cartas.",
+      "description": "Nivel clásico. Sin cronómetro. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 150
       },
       "seed": 1375191,
-      "setSize": 2
+      "setSize": 3
     },
     {
       "id": 376,
       "phase": 8,
       "theme": "jungle",
-      "pairs": 6,
+      "pairs": 10,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "easy",
-      "description": "Niebla ligera: observa con atenciÃ³n. Sin cronÃ³metro. 12 cartas.",
+      "description": "Practica con calma. Sin cronómetro. 20 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 30
@@ -6772,13 +6786,13 @@
       "id": 377,
       "phase": 8,
       "theme": "jungle",
-      "pairs": 6,
+      "pairs": 10,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "medium",
-      "description": "Evita bombas: piensa rÃ¡pido. Sin cronÃ³metro. 12 cartas.",
+      "description": "Más cartas. Sin cronómetro. 20 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 60
@@ -6790,13 +6804,13 @@
       "id": 378,
       "phase": 8,
       "theme": "jungle",
-      "pairs": 4,
+      "pairs": 12,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "medium",
-      "description": "Cartas que se congelan temporalmente. Sin cronÃ³metro. 8 cartas.",
+      "description": "Nivel básico. Sin cronómetro. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 40
@@ -6808,13 +6822,13 @@
       "id": 379,
       "phase": 8,
       "theme": "jungle",
-      "pairs": 6,
+      "pairs": 11,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "easy",
-      "description": "Niebla ligera: observa con atenciÃ³n. Sin cronÃ³metro. 12 cartas.",
+      "description": "Juego tranquilo. Sin cronómetro. 22 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 30
@@ -6826,13 +6840,13 @@
       "id": 380,
       "phase": 8,
       "theme": "jungle",
-      "pairs": 8,
+      "pairs": 12,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "medium",
-      "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 16 cartas.",
+      "description": "Nivel clásico. Sin cronómetro. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 80
@@ -6844,13 +6858,13 @@
       "id": 381,
       "phase": 8,
       "theme": "jungle",
-      "pairs": 8,
+      "pairs": 10,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "medium",
-      "description": "Evita bombas: piensa rÃ¡pido. Sin cronÃ³metro. 16 cartas.",
+      "description": "Practica con calma. Sin cronómetro. 20 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 80
@@ -6862,13 +6876,13 @@
       "id": 382,
       "phase": 8,
       "theme": "jungle",
-      "pairs": 7,
+      "pairs": 10,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "medium",
-      "description": "Niebla ligera: observa con atenciÃ³n. CronÃ³metro: 69s. 14 cartas.",
+      "description": "Más cartas. Sin cronómetro. 20 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 70
@@ -6880,13 +6894,13 @@
       "id": 383,
       "phase": 8,
       "theme": "jungle",
-      "pairs": 8,
+      "pairs": 12,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "medium",
-      "description": "las cartas pueden rotar. CronÃ³metro: 86s. 16 cartas.",
+      "description": "Nivel básico. Sin cronómetro. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 80
@@ -6898,13 +6912,13 @@
       "id": 384,
       "phase": 8,
       "theme": "jungle",
-      "pairs": 6,
+      "pairs": 11,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "medium",
-      "description": "Evita bombas: piensa rÃ¡pido. Sin cronÃ³metro. 12 cartas.",
+      "description": "Juego tranquilo. Sin cronómetro. 22 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 60
@@ -6916,13 +6930,13 @@
       "id": 385,
       "phase": 8,
       "theme": "jungle",
-      "pairs": 5,
+      "pairs": 10,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "easy",
-      "description": "Niebla ligera: observa con atenciÃ³n. Sin cronÃ³metro. 10 cartas.",
+      "description": "Nivel clásico. Sin cronómetro. 20 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 25
@@ -6934,13 +6948,13 @@
       "id": 386,
       "phase": 8,
       "theme": "jungle",
-      "pairs": 6,
+      "pairs": 10,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "easy",
-      "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 12 cartas.",
+      "description": "Practica con calma. Sin cronómetro. 20 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 30
@@ -6952,13 +6966,13 @@
       "id": 387,
       "phase": 8,
       "theme": "jungle",
-      "pairs": 12,
+      "pairs": 10,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "medium",
-      "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 24 cartas.",
+      "description": "Más cartas. Sin cronómetro. 20 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 120
@@ -6970,13 +6984,13 @@
       "id": 388,
       "phase": 8,
       "theme": "jungle",
-      "pairs": 6,
+      "pairs": 10,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "medium",
-      "description": "Las cartas cambian de valor. CronÃ³metro: 58s. 12 cartas.",
+      "description": "Nivel básico. Sin cronómetro. 20 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 60
@@ -6988,13 +7002,13 @@
       "id": 389,
       "phase": 8,
       "theme": "jungle",
-      "pairs": 11,
+      "pairs": 12,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "hard",
-      "description": "Cartas que se congelan temporalmente. Sin cronÃ³metro. 22 cartas.",
+      "description": "Juego tranquilo. Sin cronómetro. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 165
@@ -7006,13 +7020,13 @@
       "id": 390,
       "phase": 8,
       "theme": "jungle",
-      "pairs": 5,
+      "pairs": 10,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "medium",
-      "description": "Nivel clÃ¡sico sin trucos. CronÃ³metro: 51s. 10 cartas.",
+      "description": "Nivel clásico. Sin cronómetro. 20 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 50
@@ -7024,13 +7038,13 @@
       "id": 391,
       "phase": 8,
       "theme": "jungle",
-      "pairs": 7,
+      "pairs": 10,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "medium",
-      "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 14 cartas.",
+      "description": "Practica con calma. Sin cronómetro. 20 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 70
@@ -7042,13 +7056,13 @@
       "id": 392,
       "phase": 8,
       "theme": "jungle",
-      "pairs": 2,
+      "pairs": 10,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "medium",
-      "description": "Cartas que se congelan temporalmente. Sin cronÃ³metro. 4 cartas.",
+      "description": "Más cartas. Sin cronómetro. 20 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 20
@@ -7060,13 +7074,13 @@
       "id": 393,
       "phase": 8,
       "theme": "jungle",
-      "pairs": 6,
+      "pairs": 12,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "medium",
-      "description": "Nivel clÃ¡sico sin trucos. CronÃ³metro: 57s. 12 cartas.",
+      "description": "Nivel básico. Sin cronómetro. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 60
@@ -7078,13 +7092,13 @@
       "id": 394,
       "phase": 8,
       "theme": "jungle",
-      "pairs": 4,
+      "pairs": 10,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "easy",
-      "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 8 cartas.",
+      "description": "Juego tranquilo. Sin cronómetro. 20 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 20
@@ -7096,13 +7110,13 @@
       "id": 395,
       "phase": 8,
       "theme": "jungle",
-      "pairs": 8,
+      "pairs": 12,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "medium",
-      "description": "Cartas fantasma aparecen y desaparecen. Sin cronÃ³metro. 16 cartas.",
+      "description": "Nivel clásico. Sin cronómetro. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 80
@@ -7114,13 +7128,13 @@
       "id": 396,
       "phase": 8,
       "theme": "jungle",
-      "pairs": 4,
+      "pairs": 11,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "medium",
-      "description": "Las cartas cambian de valor. Sin cronÃ³metro. 8 cartas.",
+      "description": "Practica con calma. Sin cronómetro. 22 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 40
@@ -7132,13 +7146,13 @@
       "id": 397,
       "phase": 8,
       "theme": "jungle",
-      "pairs": 12,
+      "pairs": 10,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "hard",
-      "description": "El tablero rota de vez en cuando. CronÃ³metro: 110s. 24 cartas.",
+      "description": "Más cartas. Sin cronómetro. 20 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 180
@@ -7150,13 +7164,13 @@
       "id": 398,
       "phase": 8,
       "theme": "jungle",
-      "pairs": 6,
+      "pairs": 11,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "medium",
-      "description": "Niebla ligera: observa con atenciÃ³n. CronÃ³metro: 67s. 12 cartas.",
+      "description": "Nivel básico. Sin cronómetro. 22 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 60
@@ -7168,13 +7182,13 @@
       "id": 399,
       "phase": 8,
       "theme": "jungle",
-      "pairs": 6,
+      "pairs": 12,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "medium",
-      "description": "Nivel clÃ¡sico sin trucos. CronÃ³metro: 60s. 12 cartas.",
+      "description": "Juego tranquilo. Sin cronómetro. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 60
@@ -7189,10 +7203,11 @@
       "pairs": 12,
       "timeSec": 0,
       "mechanics": [
-        "basic"
+        "basic",
+        "rotation"
       ],
       "difficulty": "hard",
-      "description": "Boss: 24 cartas, chameleon + ghost, crono 108s.",
+      "description": "Nivel especial. Sin cronómetro. 24 cartas.",
       "isBoss": true,
       "rewards": {
         "coins": 180
@@ -7204,13 +7219,13 @@
       "id": 401,
       "phase": 9,
       "theme": "volcano",
-      "pairs": 7,
+      "pairs": 11,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "medium",
-      "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 14 cartas.",
+      "description": "Practica con calma. Sin cronómetro. 22 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 70
@@ -7222,13 +7237,13 @@
       "id": 402,
       "phase": 9,
       "theme": "volcano",
-      "pairs": 6,
+      "pairs": 12,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "medium",
-      "description": "El tablero rota de vez en cuando. Sin cronÃ³metro. 12 cartas.",
+      "description": "Más cartas. Sin cronómetro. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 60
@@ -7240,13 +7255,13 @@
       "id": 403,
       "phase": 9,
       "theme": "volcano",
-      "pairs": 7,
+      "pairs": 11,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "medium",
-      "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 14 cartas.",
+      "description": "Nivel básico. Sin cronómetro. 22 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 70
@@ -7264,7 +7279,7 @@
         "basic"
       ],
       "difficulty": "medium",
-      "description": "juega normalmente. Sin cronÃ³metro. 20 cartas.",
+      "description": "Juego tranquilo. Sin cronómetro. 20 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 100
@@ -7276,13 +7291,13 @@
       "id": 405,
       "phase": 9,
       "theme": "volcano",
-      "pairs": 12,
+      "pairs": 10,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "hard",
-      "description": "La oscuridad cubre el tablero poco a poco. Sin cronÃ³metro. 24 cartas.",
+      "description": "Nivel clásico. Sin cronómetro. 20 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 180
@@ -7294,13 +7309,13 @@
       "id": 406,
       "phase": 9,
       "theme": "volcano",
-      "pairs": 5,
+      "pairs": 12,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "easy",
-      "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 10 cartas.",
+      "description": "Practica con calma. Sin cronómetro. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 25
@@ -7312,13 +7327,13 @@
       "id": 407,
       "phase": 9,
       "theme": "volcano",
-      "pairs": 5,
+      "pairs": 11,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "easy",
-      "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 10 cartas.",
+      "description": "Más cartas. Sin cronómetro. 22 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 25
@@ -7330,13 +7345,13 @@
       "id": 408,
       "phase": 9,
       "theme": "volcano",
-      "pairs": 5,
+      "pairs": 11,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "medium",
-      "description": "Las cartas cambian de valor. Sin cronÃ³metro. 10 cartas.",
+      "description": "Nivel básico. Sin cronómetro. 22 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 50
@@ -7348,31 +7363,31 @@
       "id": 409,
       "phase": 9,
       "theme": "volcano",
-      "pairs": 3,
+      "pairs": 10,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "easy",
-      "description": "Encuentra trÃ­os idÃ©nticos. Sin cronÃ³metro. 6 cartas.",
+      "description": "Juego tranquilo. Sin cronómetro. 20 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 15
       },
       "seed": 1409030,
-      "setSize": 3
+      "setSize": 2
     },
     {
       "id": 410,
       "phase": 9,
       "theme": "volcano",
-      "pairs": 5,
+      "pairs": 12,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "easy",
-      "description": "Niebla ligera: observa con atenciÃ³n. Sin cronÃ³metro. 10 cartas.",
+      "description": "Nivel clásico. Sin cronómetro. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 25
@@ -7384,13 +7399,13 @@
       "id": 411,
       "phase": 9,
       "theme": "volcano",
-      "pairs": 3,
+      "pairs": 12,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "medium",
-      "description": "Evita bombas: piensa rÃ¡pido. Sin cronÃ³metro. 6 cartas.",
+      "description": "Practica con calma. Sin cronómetro. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 30
@@ -7402,31 +7417,31 @@
       "id": 412,
       "phase": 9,
       "theme": "volcano",
+      "pairs": 11,
+      "timeSec": 0,
+      "mechanics": [
+        "basic"
+      ],
+      "difficulty": "hard",
+      "description": "Más cartas. Sin cronómetro. 22 cartas.",
+      "isBoss": false,
+      "rewards": {
+        "coins": 180
+      },
+      "seed": 1412120,
+      "setSize": 2
+    },
+    {
+      "id": 413,
+      "phase": 9,
+      "theme": "volcano",
       "pairs": 12,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "hard",
-      "description": "Encuentra trÃ­os idÃ©nticos. Sin cronÃ³metro. 24 cartas.",
-      "isBoss": false,
-      "rewards": {
-        "coins": 180
-      },
-      "seed": 1412120,
-      "setSize": 3
-    },
-    {
-      "id": 413,
-      "phase": 9,
-      "theme": "volcano",
-      "pairs": 10,
-      "timeSec": 0,
-      "mechanics": [
-        "basic"
-      ],
-      "difficulty": "hard",
-      "description": "Niebla ligera: observa con atenciÃ³n. CronÃ³metro: 103s. 20 cartas.",
+      "description": "Nivel básico. Sin cronómetro. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 150
@@ -7444,7 +7459,7 @@
         "basic"
       ],
       "difficulty": "hard",
-      "description": "Nivel clÃ¡sico sin trucos. CronÃ³metro: 109s. 24 cartas.",
+      "description": "Juego tranquilo. Sin cronómetro. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 180
@@ -7456,13 +7471,13 @@
       "id": 415,
       "phase": 9,
       "theme": "volcano",
-      "pairs": 7,
+      "pairs": 10,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "medium",
-      "description": "El tablero rota de vez en cuando. Sin cronÃ³metro. 14 cartas.",
+      "description": "Nivel clásico. Sin cronómetro. 20 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 70
@@ -7474,13 +7489,13 @@
       "id": 416,
       "phase": 9,
       "theme": "volcano",
-      "pairs": 8,
+      "pairs": 12,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "medium",
-      "description": "algunas cartas explotan si fallas. CronÃ³metro: 88s. 16 cartas.",
+      "description": "Practica con calma. Sin cronómetro. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 80
@@ -7492,13 +7507,13 @@
       "id": 417,
       "phase": 9,
       "theme": "volcano",
-      "pairs": 7,
+      "pairs": 10,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "medium",
-      "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 14 cartas.",
+      "description": "Más cartas. Sin cronómetro. 20 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 70
@@ -7510,13 +7525,13 @@
       "id": 418,
       "phase": 9,
       "theme": "volcano",
-      "pairs": 5,
+      "pairs": 11,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "medium",
-      "description": "Niebla ligera: observa con atenciÃ³n. CronÃ³metro: 55s. 10 cartas.",
+      "description": "Nivel básico. Sin cronómetro. 22 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 50
@@ -7528,13 +7543,13 @@
       "id": 419,
       "phase": 9,
       "theme": "volcano",
-      "pairs": 7,
+      "pairs": 11,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "medium",
-      "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 14 cartas.",
+      "description": "Juego tranquilo. Sin cronómetro. 22 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 70
@@ -7546,13 +7561,13 @@
       "id": 420,
       "phase": 9,
       "theme": "volcano",
-      "pairs": 7,
+      "pairs": 11,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "medium",
-      "description": "Cartas que se congelan temporalmente. Sin cronÃ³metro. 14 cartas.",
+      "description": "Nivel clásico. Sin cronómetro. 22 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 70
@@ -7564,13 +7579,13 @@
       "id": 421,
       "phase": 9,
       "theme": "volcano",
-      "pairs": 9,
+      "pairs": 12,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "medium",
-      "description": "Niebla ligera: observa con atenciÃ³n. Sin cronÃ³metro. 18 cartas.",
+      "description": "Practica con calma. Sin cronómetro. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 90
@@ -7582,13 +7597,13 @@
       "id": 422,
       "phase": 9,
       "theme": "volcano",
-      "pairs": 7,
+      "pairs": 12,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "medium",
-      "description": "Cartas fantasma aparecen y desaparecen. Sin cronÃ³metro. 14 cartas.",
+      "description": "Más cartas. Sin cronómetro. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 70
@@ -7600,13 +7615,13 @@
       "id": 423,
       "phase": 9,
       "theme": "volcano",
-      "pairs": 5,
+      "pairs": 11,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "easy",
-      "description": "Niebla ligera: observa con atenciÃ³n. Sin cronÃ³metro. 10 cartas.",
+      "description": "Nivel básico. Sin cronómetro. 22 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 25
@@ -7618,13 +7633,13 @@
       "id": 424,
       "phase": 9,
       "theme": "volcano",
-      "pairs": 7,
+      "pairs": 10,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "medium",
-      "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 14 cartas.",
+      "description": "Juego tranquilo. Sin cronómetro. 20 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 70
@@ -7636,49 +7651,50 @@
       "id": 425,
       "phase": 9,
       "theme": "volcano",
-      "pairs": 7,
+      "pairs": 6,
       "timeSec": 0,
       "mechanics": [
-        "basic"
+        "basic",
+        "trio"
       ],
       "difficulty": "medium",
-      "description": "Cartas que se congelan temporalmente. Sin cronÃ³metro. 14 cartas.",
+      "description": "Nivel clásico. Sin cronómetro. 18 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 70
       },
       "seed": 1425070,
-      "setSize": 2
+      "setSize": 3
     },
     {
       "id": 426,
       "phase": 9,
       "theme": "volcano",
-      "pairs": 9,
+      "pairs": 10,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "hard",
-      "description": "Encuentra trÃ­os idÃ©nticos. Sin cronÃ³metro. 18 cartas.",
+      "description": "Practica con calma. Sin cronómetro. 20 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 135
       },
       "seed": 1426090,
-      "setSize": 3
+      "setSize": 2
     },
     {
       "id": 427,
       "phase": 9,
       "theme": "volcano",
-      "pairs": 8,
+      "pairs": 12,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "medium",
-      "description": "Cartas fantasma aparecen y desaparecen. CronÃ³metro: 79s. 16 cartas.",
+      "description": "Más cartas. Sin cronómetro. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 80
@@ -7690,31 +7706,31 @@
       "id": 428,
       "phase": 9,
       "theme": "volcano",
-      "pairs": 6,
+      "pairs": 11,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "easy",
-      "description": "Encuentra trÃ­os idÃ©nticos. Sin cronÃ³metro. 12 cartas.",
+      "description": "Nivel básico. Sin cronómetro. 22 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 30
       },
       "seed": 1428060,
-      "setSize": 3
+      "setSize": 2
     },
     {
       "id": 429,
       "phase": 9,
       "theme": "volcano",
-      "pairs": 7,
+      "pairs": 10,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "hard",
-      "description": "El tablero rota de vez en cuando. CronÃ³metro: 69s. 14 cartas.",
+      "description": "Juego tranquilo. Sin cronómetro. 20 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 105
@@ -7726,13 +7742,13 @@
       "id": 430,
       "phase": 9,
       "theme": "volcano",
-      "pairs": 6,
+      "pairs": 11,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "medium",
-      "description": "Las cartas cambian de valor. Sin cronÃ³metro. 12 cartas.",
+      "description": "Nivel clásico. Sin cronómetro. 22 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 60
@@ -7744,13 +7760,13 @@
       "id": 431,
       "phase": 9,
       "theme": "volcano",
-      "pairs": 5,
+      "pairs": 10,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "easy",
-      "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 10 cartas.",
+      "description": "Practica con calma. Sin cronómetro. 20 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 25
@@ -7762,13 +7778,13 @@
       "id": 432,
       "phase": 9,
       "theme": "volcano",
-      "pairs": 5,
+      "pairs": 11,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "medium",
-      "description": "Cartas que se congelan temporalmente. Sin cronÃ³metro. 10 cartas.",
+      "description": "Más cartas. Sin cronómetro. 22 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 50
@@ -7780,13 +7796,13 @@
       "id": 433,
       "phase": 9,
       "theme": "volcano",
-      "pairs": 2,
+      "pairs": 10,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "easy",
-      "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 4 cartas.",
+      "description": "Nivel básico. Sin cronómetro. 20 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 10
@@ -7798,13 +7814,13 @@
       "id": 434,
       "phase": 9,
       "theme": "volcano",
-      "pairs": 6,
+      "pairs": 12,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "easy",
-      "description": "Niebla ligera: observa con atenciÃ³n. Sin cronÃ³metro. 12 cartas.",
+      "description": "Juego tranquilo. Sin cronómetro. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 30
@@ -7816,31 +7832,31 @@
       "id": 435,
       "phase": 9,
       "theme": "volcano",
-      "pairs": 3,
+      "pairs": 10,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "easy",
-      "description": "Encuentra trÃ­os idÃ©nticos. Sin cronÃ³metro. 6 cartas.",
+      "description": "Nivel clásico. Sin cronómetro. 20 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 15
       },
       "seed": 1435030,
-      "setSize": 3
+      "setSize": 2
     },
     {
       "id": 436,
       "phase": 9,
       "theme": "volcano",
-      "pairs": 12,
+      "pairs": 11,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "medium",
-      "description": "juega normalmente. Sin cronÃ³metro. 24 cartas.",
+      "description": "Practica con calma. Sin cronómetro. 22 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 120
@@ -7852,13 +7868,13 @@
       "id": 437,
       "phase": 9,
       "theme": "volcano",
-      "pairs": 8,
+      "pairs": 10,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "medium",
-      "description": "Cartas fantasma aparecen y desaparecen. Sin cronÃ³metro. 16 cartas.",
+      "description": "Más cartas. Sin cronómetro. 20 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 80
@@ -7870,13 +7886,13 @@
       "id": 438,
       "phase": 9,
       "theme": "volcano",
-      "pairs": 6,
+      "pairs": 10,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "medium",
-      "description": "Las cartas cambian de valor. Sin cronÃ³metro. 12 cartas.",
+      "description": "Nivel básico. Sin cronómetro. 20 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 60
@@ -7888,13 +7904,13 @@
       "id": 439,
       "phase": 9,
       "theme": "volcano",
-      "pairs": 6,
+      "pairs": 11,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "easy",
-      "description": "Cartas fantasma aparecen y desaparecen. Sin cronÃ³metro. 12 cartas.",
+      "description": "Juego tranquilo. Sin cronómetro. 22 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 30
@@ -7906,13 +7922,13 @@
       "id": 440,
       "phase": 9,
       "theme": "volcano",
-      "pairs": 9,
+      "pairs": 12,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "hard",
-      "description": "El tablero rota de vez en cuando. CronÃ³metro: 96s. 18 cartas.",
+      "description": "Nivel clásico. Sin cronómetro. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 135
@@ -7924,31 +7940,31 @@
       "id": 441,
       "phase": 9,
       "theme": "volcano",
-      "pairs": 6,
+      "pairs": 10,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "easy",
-      "description": "Encuentra trÃ­os idÃ©nticos. Sin cronÃ³metro. 12 cartas.",
+      "description": "Practica con calma. Sin cronómetro. 20 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 30
       },
       "seed": 1441060,
-      "setSize": 3
+      "setSize": 2
     },
     {
       "id": 442,
       "phase": 9,
       "theme": "volcano",
-      "pairs": 12,
+      "pairs": 11,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "hard",
-      "description": "Cartas que se congelan temporalmente. CronÃ³metro: 112s. 24 cartas.",
+      "description": "Más cartas. Sin cronómetro. 22 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 180
@@ -7960,31 +7976,31 @@
       "id": 443,
       "phase": 9,
       "theme": "volcano",
-      "pairs": 3,
+      "pairs": 10,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "easy",
-      "description": "Encuentra trÃ­os idÃ©nticos. Sin cronÃ³metro. 6 cartas.",
+      "description": "Nivel básico. Sin cronómetro. 20 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 15
       },
       "seed": 1443030,
-      "setSize": 3
+      "setSize": 2
     },
     {
       "id": 444,
       "phase": 9,
       "theme": "volcano",
-      "pairs": 7,
+      "pairs": 10,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "medium",
-      "description": "Cartas que se congelan temporalmente. Sin cronÃ³metro. 14 cartas.",
+      "description": "Juego tranquilo. Sin cronómetro. 20 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 70
@@ -7996,13 +8012,13 @@
       "id": 445,
       "phase": 9,
       "theme": "volcano",
-      "pairs": 10,
+      "pairs": 11,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "hard",
-      "description": "Las cartas cambian de valor. CronÃ³metro: 87s. 20 cartas.",
+      "description": "Nivel clásico. Sin cronómetro. 22 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 150
@@ -8014,13 +8030,13 @@
       "id": 446,
       "phase": 9,
       "theme": "volcano",
-      "pairs": 5,
+      "pairs": 10,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "easy",
-      "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 10 cartas.",
+      "description": "Practica con calma. Sin cronómetro. 20 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 25
@@ -8032,31 +8048,31 @@
       "id": 447,
       "phase": 9,
       "theme": "volcano",
-      "pairs": 6,
+      "pairs": 10,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "easy",
-      "description": "Encuentra trÃ­os idÃ©nticos. Sin cronÃ³metro. 12 cartas.",
+      "description": "Más cartas. Sin cronómetro. 20 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 30
       },
       "seed": 1447060,
-      "setSize": 3
+      "setSize": 2
     },
     {
       "id": 448,
       "phase": 9,
       "theme": "volcano",
-      "pairs": 6,
+      "pairs": 10,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "medium",
-      "description": "Cartas que se congelan temporalmente. Sin cronÃ³metro. 12 cartas.",
+      "description": "Nivel básico. Sin cronómetro. 20 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 60
@@ -8068,13 +8084,13 @@
       "id": 449,
       "phase": 9,
       "theme": "volcano",
-      "pairs": 7,
+      "pairs": 11,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "medium",
-      "description": "Niebla ligera: observa con atenciÃ³n. CronÃ³metro: 73s. 14 cartas.",
+      "description": "Juego tranquilo. Sin cronómetro. 22 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 70
@@ -8089,10 +8105,11 @@
       "pairs": 12,
       "timeSec": 0,
       "mechanics": [
-        "basic"
+        "basic",
+        "fog"
       ],
       "difficulty": "hard",
-      "description": "Boss: 24 cartas, peeked_card + chameleon, crono 101s.",
+      "description": "Nivel especial. Sin cronómetro. 24 cartas.",
       "isBoss": true,
       "rewards": {
         "coins": 180
@@ -8104,13 +8121,13 @@
       "id": 451,
       "phase": 10,
       "theme": "crystal",
-      "pairs": 6,
+      "pairs": 11,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "medium",
-      "description": "Cartas que se congelan temporalmente. Sin cronÃ³metro. 12 cartas.",
+      "description": "Practica con calma. Sin cronómetro. 22 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 60
@@ -8122,13 +8139,13 @@
       "id": 452,
       "phase": 10,
       "theme": "crystal",
-      "pairs": 7,
+      "pairs": 10,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "hard",
-      "description": "El tablero rota de vez en cuando. CronÃ³metro: 73s. 14 cartas.",
+      "description": "Más cartas. Sin cronómetro. 20 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 105
@@ -8140,13 +8157,13 @@
       "id": 453,
       "phase": 10,
       "theme": "crystal",
-      "pairs": 8,
+      "pairs": 12,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "medium",
-      "description": "Cartas fantasma aparecen y desaparecen. CronÃ³metro: 81s. 16 cartas.",
+      "description": "Nivel básico. Sin cronómetro. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 80
@@ -8158,13 +8175,13 @@
       "id": 454,
       "phase": 10,
       "theme": "crystal",
-      "pairs": 7,
+      "pairs": 12,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "medium",
-      "description": "Cartas que se congelan temporalmente. Sin cronÃ³metro. 14 cartas.",
+      "description": "Juego tranquilo. Sin cronómetro. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 70
@@ -8176,13 +8193,13 @@
       "id": 455,
       "phase": 10,
       "theme": "crystal",
-      "pairs": 9,
+      "pairs": 10,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "hard",
-      "description": "Nivel clÃ¡sico sin trucos. CronÃ³metro: 85s. 18 cartas.",
+      "description": "Nivel clásico. Sin cronómetro. 20 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 135
@@ -8200,7 +8217,7 @@
         "basic"
       ],
       "difficulty": "hard",
-      "description": "Niebla ligera: observa con atenciÃ³n. CronÃ³metro: 97s. 24 cartas.",
+      "description": "Practica con calma. Sin cronómetro. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 180
@@ -8212,13 +8229,13 @@
       "id": 457,
       "phase": 10,
       "theme": "crystal",
-      "pairs": 8,
+      "pairs": 10,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "medium",
-      "description": "Cartas que se congelan temporalmente. Sin cronÃ³metro. 16 cartas.",
+      "description": "Más cartas. Sin cronómetro. 20 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 80
@@ -8230,13 +8247,13 @@
       "id": 458,
       "phase": 10,
       "theme": "crystal",
-      "pairs": 6,
+      "pairs": 12,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "medium",
-      "description": "Nivel clÃ¡sico sin trucos. CronÃ³metro: 68s. 12 cartas.",
+      "description": "Nivel básico. Sin cronómetro. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 60
@@ -8248,13 +8265,13 @@
       "id": 459,
       "phase": 10,
       "theme": "crystal",
-      "pairs": 6,
+      "pairs": 11,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "medium",
-      "description": "Las cartas cambian de valor. CronÃ³metro: 68s. 12 cartas.",
+      "description": "Juego tranquilo. Sin cronómetro. 22 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 60
@@ -8266,13 +8283,13 @@
       "id": 460,
       "phase": 10,
       "theme": "crystal",
-      "pairs": 3,
+      "pairs": 12,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "easy",
-      "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 6 cartas.",
+      "description": "Nivel clásico. Sin cronómetro. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 15
@@ -8284,13 +8301,13 @@
       "id": 461,
       "phase": 10,
       "theme": "crystal",
-      "pairs": 12,
+      "pairs": 10,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "hard",
-      "description": "algunas cartas explotan si fallas. CronÃ³metro: 107s. 24 cartas.",
+      "description": "Practica con calma. Sin cronómetro. 20 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 180
@@ -8302,13 +8319,13 @@
       "id": 462,
       "phase": 10,
       "theme": "crystal",
-      "pairs": 5,
+      "pairs": 12,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "medium",
-      "description": "Nivel clÃ¡sico sin trucos. CronÃ³metro: 45s. 10 cartas.",
+      "description": "Más cartas. Sin cronómetro. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 50
@@ -8320,13 +8337,13 @@
       "id": 463,
       "phase": 10,
       "theme": "crystal",
-      "pairs": 5,
+      "pairs": 11,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "easy",
-      "description": "Cartas fantasma aparecen y desaparecen. Sin cronÃ³metro. 10 cartas.",
+      "description": "Nivel básico. Sin cronómetro. 22 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 25
@@ -8338,13 +8355,13 @@
       "id": 464,
       "phase": 10,
       "theme": "crystal",
-      "pairs": 9,
+      "pairs": 11,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "medium",
-      "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 18 cartas.",
+      "description": "Juego tranquilo. Sin cronómetro. 22 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 90
@@ -8356,13 +8373,13 @@
       "id": 465,
       "phase": 10,
       "theme": "crystal",
-      "pairs": 12,
+      "pairs": 10,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "hard",
-      "description": "Las cartas cambian de valor. Sin cronÃ³metro. 24 cartas.",
+      "description": "Nivel clásico. Sin cronómetro. 20 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 180
@@ -8374,13 +8391,13 @@
       "id": 466,
       "phase": 10,
       "theme": "crystal",
-      "pairs": 10,
+      "pairs": 11,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "hard",
-      "description": "las cartas estÃ¡n parcialmente ocultas. CronÃ³metro: 95s. 20 cartas.",
+      "description": "Practica con calma. Sin cronómetro. 22 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 150
@@ -8392,13 +8409,13 @@
       "id": 467,
       "phase": 10,
       "theme": "crystal",
-      "pairs": 12,
+      "pairs": 11,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "hard",
-      "description": "La oscuridad cubre el tablero poco a poco. CronÃ³metro: 104s. 24 cartas.",
+      "description": "Más cartas. Sin cronómetro. 22 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 180
@@ -8410,13 +8427,13 @@
       "id": 468,
       "phase": 10,
       "theme": "crystal",
-      "pairs": 8,
+      "pairs": 10,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "medium",
-      "description": "algunas cartas explotan si fallas. CronÃ³metro: 77s. 16 cartas.",
+      "description": "Nivel básico. Sin cronómetro. 20 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 80
@@ -8428,13 +8445,13 @@
       "id": 469,
       "phase": 10,
       "theme": "crystal",
-      "pairs": 2,
+      "pairs": 12,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "medium",
-      "description": "Evita bombas: piensa rÃ¡pido. Sin cronÃ³metro. 4 cartas.",
+      "description": "Juego tranquilo. Sin cronómetro. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 20
@@ -8446,13 +8463,13 @@
       "id": 470,
       "phase": 10,
       "theme": "crystal",
-      "pairs": 10,
+      "pairs": 12,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "hard",
-      "description": "las cartas pueden rotar. CronÃ³metro: 89s. 20 cartas.",
+      "description": "Nivel clásico. Sin cronómetro. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 150
@@ -8464,13 +8481,13 @@
       "id": 471,
       "phase": 10,
       "theme": "crystal",
-      "pairs": 8,
+      "pairs": 10,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "hard",
-      "description": "Cartas que se congelan temporalmente. CronÃ³metro: 78s. 16 cartas.",
+      "description": "Practica con calma. Sin cronómetro. 20 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 120
@@ -8482,13 +8499,13 @@
       "id": 472,
       "phase": 10,
       "theme": "crystal",
-      "pairs": 12,
+      "pairs": 11,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "hard",
-      "description": "El tablero rota de vez en cuando. CronÃ³metro: 107s. 24 cartas.",
+      "description": "Más cartas. Sin cronómetro. 22 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 180
@@ -8500,13 +8517,13 @@
       "id": 473,
       "phase": 10,
       "theme": "crystal",
-      "pairs": 7,
+      "pairs": 10,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "medium",
-      "description": "Las cartas cambian de valor. Sin cronÃ³metro. 14 cartas.",
+      "description": "Nivel básico. Sin cronómetro. 20 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 70
@@ -8518,13 +8535,13 @@
       "id": 474,
       "phase": 10,
       "theme": "crystal",
-      "pairs": 6,
+      "pairs": 10,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "medium",
-      "description": "Evita bombas: piensa rÃ¡pido. Sin cronÃ³metro. 12 cartas.",
+      "description": "Juego tranquilo. Sin cronómetro. 20 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 60
@@ -8536,31 +8553,32 @@
       "id": 475,
       "phase": 10,
       "theme": "crystal",
+      "pairs": 6,
+      "timeSec": 0,
+      "mechanics": [
+        "basic",
+        "trio"
+      ],
+      "difficulty": "hard",
+      "description": "Nivel clásico. Sin cronómetro. 18 cartas.",
+      "isBoss": false,
+      "rewards": {
+        "coins": 150
+      },
+      "seed": 1475193,
+      "setSize": 3
+    },
+    {
+      "id": 476,
+      "phase": 10,
+      "theme": "crystal",
       "pairs": 10,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "hard",
-      "description": "las cartas pueden rotar. CronÃ³metro: 93s. 20 cartas.",
-      "isBoss": false,
-      "rewards": {
-        "coins": 150
-      },
-      "seed": 1475193,
-      "setSize": 2
-    },
-    {
-      "id": 476,
-      "phase": 10,
-      "theme": "crystal",
-      "pairs": 12,
-      "timeSec": 0,
-      "mechanics": [
-        "basic"
-      ],
-      "difficulty": "hard",
-      "description": "La oscuridad cubre el tablero poco a poco. CronÃ³metro: 105s. 24 cartas.",
+      "description": "Practica con calma. Sin cronómetro. 20 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 180
@@ -8572,13 +8590,13 @@
       "id": 477,
       "phase": 10,
       "theme": "crystal",
-      "pairs": 7,
+      "pairs": 10,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "hard",
-      "description": "Cartas que se congelan temporalmente. CronÃ³metro: 78s. 14 cartas.",
+      "description": "Más cartas. Sin cronómetro. 20 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 105
@@ -8590,13 +8608,13 @@
       "id": 478,
       "phase": 10,
       "theme": "crystal",
-      "pairs": 7,
+      "pairs": 11,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "medium",
-      "description": "Cartas fantasma aparecen y desaparecen. Sin cronÃ³metro. 14 cartas.",
+      "description": "Nivel básico. Sin cronómetro. 22 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 70
@@ -8608,13 +8626,13 @@
       "id": 479,
       "phase": 10,
       "theme": "crystal",
-      "pairs": 2,
+      "pairs": 11,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "medium",
-      "description": "Cartas que se congelan temporalmente. Sin cronÃ³metro. 4 cartas.",
+      "description": "Juego tranquilo. Sin cronómetro. 22 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 20
@@ -8626,13 +8644,13 @@
       "id": 480,
       "phase": 10,
       "theme": "crystal",
-      "pairs": 7,
+      "pairs": 11,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "medium",
-      "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 14 cartas.",
+      "description": "Nivel clásico. Sin cronómetro. 22 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 70
@@ -8644,13 +8662,13 @@
       "id": 481,
       "phase": 10,
       "theme": "crystal",
-      "pairs": 7,
+      "pairs": 11,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "medium",
-      "description": "Las cartas cambian de valor. Sin cronÃ³metro. 14 cartas.",
+      "description": "Practica con calma. Sin cronómetro. 22 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 70
@@ -8662,13 +8680,13 @@
       "id": 482,
       "phase": 10,
       "theme": "crystal",
-      "pairs": 4,
+      "pairs": 11,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "medium",
-      "description": "El tablero rota de vez en cuando. Sin cronÃ³metro. 8 cartas.",
+      "description": "Más cartas. Sin cronómetro. 22 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 40
@@ -8680,13 +8698,13 @@
       "id": 483,
       "phase": 10,
       "theme": "crystal",
-      "pairs": 5,
+      "pairs": 12,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "medium",
-      "description": "Cartas que se congelan temporalmente. Sin cronÃ³metro. 10 cartas.",
+      "description": "Nivel básico. Sin cronómetro. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 50
@@ -8698,13 +8716,13 @@
       "id": 484,
       "phase": 10,
       "theme": "crystal",
-      "pairs": 10,
+      "pairs": 12,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "hard",
-      "description": "Evita bombas: piensa rÃ¡pido. CronÃ³metro: 98s. 20 cartas.",
+      "description": "Juego tranquilo. Sin cronómetro. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 150
@@ -8716,13 +8734,13 @@
       "id": 485,
       "phase": 10,
       "theme": "crystal",
-      "pairs": 7,
+      "pairs": 10,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "medium",
-      "description": "Niebla ligera: observa con atenciÃ³n. CronÃ³metro: 74s. 14 cartas.",
+      "description": "Nivel clásico. Sin cronómetro. 20 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 70
@@ -8734,13 +8752,13 @@
       "id": 486,
       "phase": 10,
       "theme": "crystal",
-      "pairs": 4,
+      "pairs": 10,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "medium",
-      "description": "Evita bombas: piensa rÃ¡pido. Sin cronÃ³metro. 8 cartas.",
+      "description": "Practica con calma. Sin cronómetro. 20 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 40
@@ -8752,13 +8770,13 @@
       "id": 487,
       "phase": 10,
       "theme": "crystal",
-      "pairs": 6,
+      "pairs": 10,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "easy",
-      "description": "Niebla ligera: observa con atenciÃ³n. Sin cronÃ³metro. 12 cartas.",
+      "description": "Más cartas. Sin cronómetro. 20 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 30
@@ -8776,7 +8794,7 @@
         "basic"
       ],
       "difficulty": "hard",
-      "description": "Las cartas cambian de valor. CronÃ³metro: 102s. 24 cartas.",
+      "description": "Nivel básico. Sin cronómetro. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 180
@@ -8788,19 +8806,19 @@
       "id": 489,
       "phase": 10,
       "theme": "crystal",
-      "pairs": 6,
+      "pairs": 12,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "easy",
-      "description": "Encuentra trÃ­os idÃ©nticos. Sin cronÃ³metro. 12 cartas.",
+      "description": "Juego tranquilo. Sin cronómetro. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 30
       },
       "seed": 1489060,
-      "setSize": 3
+      "setSize": 2
     },
     {
       "id": 490,
@@ -8812,7 +8830,7 @@
         "basic"
       ],
       "difficulty": "medium",
-      "description": "juega normalmente. Sin cronÃ³metro. 20 cartas.",
+      "description": "Nivel clásico. Sin cronómetro. 20 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 100
@@ -8824,13 +8842,13 @@
       "id": 491,
       "phase": 10,
       "theme": "crystal",
-      "pairs": 9,
+      "pairs": 12,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "medium",
-      "description": "Niebla ligera: observa con atenciÃ³n. Sin cronÃ³metro. 18 cartas.",
+      "description": "Practica con calma. Sin cronómetro. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 90
@@ -8842,13 +8860,13 @@
       "id": 492,
       "phase": 10,
       "theme": "crystal",
-      "pairs": 2,
+      "pairs": 11,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "medium",
-      "description": "Evita bombas: piensa rÃ¡pido. Sin cronÃ³metro. 4 cartas.",
+      "description": "Más cartas. Sin cronómetro. 22 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 20
@@ -8860,13 +8878,13 @@
       "id": 493,
       "phase": 10,
       "theme": "crystal",
-      "pairs": 6,
+      "pairs": 11,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "easy",
-      "description": "Cartas fantasma aparecen y desaparecen. Sin cronÃ³metro. 12 cartas.",
+      "description": "Nivel básico. Sin cronómetro. 22 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 30
@@ -8878,31 +8896,31 @@
       "id": 494,
       "phase": 10,
       "theme": "crystal",
-      "pairs": 9,
+      "pairs": 10,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "hard",
-      "description": "Encuentra trÃ­os idÃ©nticos. Sin cronÃ³metro. 18 cartas.",
+      "description": "Juego tranquilo. Sin cronómetro. 20 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 135
       },
       "seed": 1494090,
-      "setSize": 3
+      "setSize": 2
     },
     {
       "id": 495,
       "phase": 10,
       "theme": "crystal",
-      "pairs": 12,
+      "pairs": 11,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "hard",
-      "description": "las cartas estÃ¡n parcialmente ocultas. CronÃ³metro: 113s. 24 cartas.",
+      "description": "Nivel clásico. Sin cronómetro. 22 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 180
@@ -8914,13 +8932,13 @@
       "id": 496,
       "phase": 10,
       "theme": "crystal",
-      "pairs": 7,
+      "pairs": 12,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "medium",
-      "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 14 cartas.",
+      "description": "Practica con calma. Sin cronómetro. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 70
@@ -8932,13 +8950,13 @@
       "id": 497,
       "phase": 10,
       "theme": "crystal",
-      "pairs": 6,
+      "pairs": 11,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "medium",
-      "description": "Evita bombas: piensa rÃ¡pido. Sin cronÃ³metro. 12 cartas.",
+      "description": "Más cartas. Sin cronómetro. 22 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 60
@@ -8950,13 +8968,13 @@
       "id": 498,
       "phase": 10,
       "theme": "crystal",
-      "pairs": 4,
+      "pairs": 10,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "medium",
-      "description": "El tablero rota de vez en cuando. Sin cronÃ³metro. 8 cartas.",
+      "description": "Nivel básico. Sin cronómetro. 20 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 40
@@ -8968,19 +8986,19 @@
       "id": 499,
       "phase": 10,
       "theme": "crystal",
-      "pairs": 12,
+      "pairs": 11,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "hard",
-      "description": "Encuentra trÃ­os idÃ©nticos. Sin cronÃ³metro. 24 cartas.",
+      "description": "Juego tranquilo. Sin cronómetro. 22 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 180
       },
       "seed": 1499120,
-      "setSize": 3
+      "setSize": 2
     },
     {
       "id": 500,
@@ -8989,10 +9007,11 @@
       "pairs": 12,
       "timeSec": 0,
       "mechanics": [
-        "basic"
+        "basic",
+        "fog"
       ],
       "difficulty": "hard",
-      "description": "Boss: 24 cartas, peeked_card + bomb, crono 110s.",
+      "description": "Nivel especial. Sin cronómetro. 24 cartas.",
       "isBoss": true,
       "rewards": {
         "coins": 180
@@ -9004,13 +9023,13 @@
       "id": 501,
       "phase": 11,
       "theme": "nebula",
-      "pairs": 7,
+      "pairs": 10,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "medium",
-      "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 14 cartas.",
+      "description": "Practica con calma. Sin cronómetro. 20 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 70
@@ -9022,13 +9041,13 @@
       "id": 502,
       "phase": 11,
       "theme": "nebula",
-      "pairs": 5,
+      "pairs": 11,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "medium",
-      "description": "Cartas que se congelan temporalmente. Sin cronÃ³metro. 10 cartas.",
+      "description": "Más cartas. Sin cronómetro. 22 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 50
@@ -9040,13 +9059,13 @@
       "id": 503,
       "phase": 11,
       "theme": "nebula",
-      "pairs": 7,
+      "pairs": 10,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "medium",
-      "description": "El tablero rota de vez en cuando. Sin cronÃ³metro. 14 cartas.",
+      "description": "Nivel básico. Sin cronómetro. 20 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 70
@@ -9058,13 +9077,13 @@
       "id": 504,
       "phase": 11,
       "theme": "nebula",
-      "pairs": 5,
+      "pairs": 12,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "medium",
-      "description": "Las cartas cambian de valor. Sin cronÃ³metro. 10 cartas.",
+      "description": "Juego tranquilo. Sin cronómetro. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 50
@@ -9076,13 +9095,13 @@
       "id": 505,
       "phase": 11,
       "theme": "nebula",
-      "pairs": 7,
+      "pairs": 12,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "medium",
-      "description": "Evita bombas: piensa rÃ¡pido. Sin cronÃ³metro. 14 cartas.",
+      "description": "Nivel clásico. Sin cronómetro. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 70
@@ -9094,13 +9113,13 @@
       "id": 506,
       "phase": 11,
       "theme": "nebula",
-      "pairs": 8,
+      "pairs": 11,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "hard",
-      "description": "Cartas que se congelan temporalmente. CronÃ³metro: 83s. 16 cartas.",
+      "description": "Practica con calma. Sin cronómetro. 22 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 120
@@ -9112,13 +9131,13 @@
       "id": 507,
       "phase": 11,
       "theme": "nebula",
-      "pairs": 3,
+      "pairs": 12,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "easy",
-      "description": "Niebla ligera: observa con atenciÃ³n. Sin cronÃ³metro. 6 cartas.",
+      "description": "Más cartas. Sin cronómetro. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 15
@@ -9130,13 +9149,13 @@
       "id": 508,
       "phase": 11,
       "theme": "nebula",
-      "pairs": 10,
+      "pairs": 11,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "hard",
-      "description": "La oscuridad cubre el tablero poco a poco. CronÃ³metro: 98s. 20 cartas.",
+      "description": "Nivel básico. Sin cronómetro. 22 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 150
@@ -9148,13 +9167,13 @@
       "id": 509,
       "phase": 11,
       "theme": "nebula",
-      "pairs": 2,
+      "pairs": 10,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "easy",
-      "description": "Cartas fantasma aparecen y desaparecen. Sin cronÃ³metro. 4 cartas.",
+      "description": "Juego tranquilo. Sin cronómetro. 20 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 10
@@ -9166,13 +9185,13 @@
       "id": 510,
       "phase": 11,
       "theme": "nebula",
-      "pairs": 8,
+      "pairs": 10,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "medium",
-      "description": "juega normalmente. Sin cronÃ³metro. 16 cartas.",
+      "description": "Nivel clásico. Sin cronómetro. 20 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 80
@@ -9184,13 +9203,13 @@
       "id": 511,
       "phase": 11,
       "theme": "nebula",
-      "pairs": 8,
+      "pairs": 11,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "hard",
-      "description": "La oscuridad cubre el tablero poco a poco. CronÃ³metro: 74s. 16 cartas.",
+      "description": "Practica con calma. Sin cronómetro. 22 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 120
@@ -9202,31 +9221,31 @@
       "id": 512,
       "phase": 11,
       "theme": "nebula",
-      "pairs": 3,
+      "pairs": 11,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "easy",
-      "description": "Encuentra trÃ­os idÃ©nticos. Sin cronÃ³metro. 6 cartas.",
+      "description": "Más cartas. Sin cronómetro. 22 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 15
       },
       "seed": 1512030,
-      "setSize": 3
+      "setSize": 2
     },
     {
       "id": 513,
       "phase": 11,
       "theme": "nebula",
-      "pairs": 6,
+      "pairs": 12,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "easy",
-      "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 12 cartas.",
+      "description": "Nivel básico. Sin cronómetro. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 30
@@ -9238,13 +9257,13 @@
       "id": 514,
       "phase": 11,
       "theme": "nebula",
-      "pairs": 8,
+      "pairs": 12,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "hard",
-      "description": "La oscuridad cubre el tablero poco a poco. CronÃ³metro: 81s. 16 cartas.",
+      "description": "Juego tranquilo. Sin cronómetro. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 120
@@ -9256,13 +9275,13 @@
       "id": 515,
       "phase": 11,
       "theme": "nebula",
-      "pairs": 5,
+      "pairs": 11,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "medium",
-      "description": "El tablero rota de vez en cuando. Sin cronÃ³metro. 10 cartas.",
+      "description": "Nivel clásico. Sin cronómetro. 22 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 50
@@ -9274,13 +9293,13 @@
       "id": 516,
       "phase": 11,
       "theme": "nebula",
-      "pairs": 6,
+      "pairs": 10,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "medium",
-      "description": "Evita bombas: piensa rÃ¡pido. Sin cronÃ³metro. 12 cartas.",
+      "description": "Practica con calma. Sin cronómetro. 20 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 60
@@ -9292,13 +9311,13 @@
       "id": 517,
       "phase": 11,
       "theme": "nebula",
-      "pairs": 3,
+      "pairs": 11,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "easy",
-      "description": "Niebla ligera: observa con atenciÃ³n. Sin cronÃ³metro. 6 cartas.",
+      "description": "Más cartas. Sin cronómetro. 22 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 15
@@ -9310,13 +9329,13 @@
       "id": 518,
       "phase": 11,
       "theme": "nebula",
-      "pairs": 9,
+      "pairs": 10,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "hard",
-      "description": "Cartas que se congelan temporalmente. CronÃ³metro: 97s. 18 cartas.",
+      "description": "Nivel básico. Sin cronómetro. 20 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 135
@@ -9328,31 +9347,31 @@
       "id": 519,
       "phase": 11,
       "theme": "nebula",
-      "pairs": 3,
+      "pairs": 11,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "easy",
-      "description": "Encuentra trÃ­os idÃ©nticos. Sin cronÃ³metro. 6 cartas.",
+      "description": "Juego tranquilo. Sin cronómetro. 22 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 15
       },
       "seed": 1519030,
-      "setSize": 3
+      "setSize": 2
     },
     {
       "id": 520,
       "phase": 11,
       "theme": "nebula",
-      "pairs": 4,
+      "pairs": 11,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "medium",
-      "description": "Evita bombas: piensa rÃ¡pido. Sin cronÃ³metro. 8 cartas.",
+      "description": "Nivel clásico. Sin cronómetro. 22 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 40
@@ -9370,7 +9389,7 @@
         "basic"
       ],
       "difficulty": "hard",
-      "description": "La oscuridad cubre el tablero poco a poco. CronÃ³metro: 103s. 20 cartas.",
+      "description": "Practica con calma. Sin cronómetro. 20 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 150
@@ -9382,31 +9401,31 @@
       "id": 522,
       "phase": 11,
       "theme": "nebula",
-      "pairs": 12,
+      "pairs": 11,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "hard",
-      "description": "Encuentra trÃ­os idÃ©nticos. Sin cronÃ³metro. 24 cartas.",
+      "description": "Más cartas. Sin cronómetro. 22 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 180
       },
       "seed": 1522120,
-      "setSize": 3
+      "setSize": 2
     },
     {
       "id": 523,
       "phase": 11,
       "theme": "nebula",
-      "pairs": 8,
+      "pairs": 10,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "medium",
-      "description": "las cartas pueden rotar. CronÃ³metro: 72s. 16 cartas.",
+      "description": "Nivel básico. Sin cronómetro. 20 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 80
@@ -9418,13 +9437,13 @@
       "id": 524,
       "phase": 11,
       "theme": "nebula",
-      "pairs": 7,
+      "pairs": 12,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "medium",
-      "description": "El tablero rota de vez en cuando. Sin cronÃ³metro. 14 cartas.",
+      "description": "Juego tranquilo. Sin cronómetro. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 70
@@ -9436,31 +9455,32 @@
       "id": 525,
       "phase": 11,
       "theme": "nebula",
-      "pairs": 10,
+      "pairs": 6,
       "timeSec": 0,
       "mechanics": [
-        "basic"
+        "basic",
+        "trio"
       ],
       "difficulty": "hard",
-      "description": "Cartas que se congelan temporalmente. Sin cronÃ³metro. 20 cartas.",
+      "description": "Nivel clásico. Sin cronómetro. 18 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 150
       },
       "seed": 1525100,
-      "setSize": 2
+      "setSize": 3
     },
     {
       "id": 526,
       "phase": 11,
       "theme": "nebula",
-      "pairs": 12,
+      "pairs": 11,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "hard",
-      "description": "Cartas fantasma aparecen y desaparecen. CronÃ³metro: 106s. 24 cartas.",
+      "description": "Practica con calma. Sin cronómetro. 22 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 180
@@ -9472,13 +9492,13 @@
       "id": 527,
       "phase": 11,
       "theme": "nebula",
-      "pairs": 10,
+      "pairs": 11,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "hard",
-      "description": "Cartas que se congelan temporalmente. Sin cronÃ³metro. 20 cartas.",
+      "description": "Más cartas. Sin cronómetro. 22 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 150
@@ -9490,13 +9510,13 @@
       "id": 528,
       "phase": 11,
       "theme": "nebula",
-      "pairs": 6,
+      "pairs": 10,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "medium",
-      "description": "El tablero rota de vez en cuando. Sin cronÃ³metro. 12 cartas.",
+      "description": "Nivel básico. Sin cronómetro. 20 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 60
@@ -9508,13 +9528,13 @@
       "id": 529,
       "phase": 11,
       "theme": "nebula",
-      "pairs": 8,
+      "pairs": 10,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "medium",
-      "description": "Nivel clÃ¡sico sin trucos. CronÃ³metro: 83s. 16 cartas.",
+      "description": "Juego tranquilo. Sin cronómetro. 20 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 80
@@ -9526,13 +9546,13 @@
       "id": 530,
       "phase": 11,
       "theme": "nebula",
-      "pairs": 10,
+      "pairs": 11,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "hard",
-      "description": "algunas cartas explotan si fallas. CronÃ³metro: 90s. 20 cartas.",
+      "description": "Nivel clásico. Sin cronómetro. 22 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 150
@@ -9544,13 +9564,13 @@
       "id": 531,
       "phase": 11,
       "theme": "nebula",
-      "pairs": 6,
+      "pairs": 12,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "medium",
-      "description": "Las cartas cambian de valor. Sin cronÃ³metro. 12 cartas.",
+      "description": "Practica con calma. Sin cronómetro. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 60
@@ -9562,13 +9582,13 @@
       "id": 532,
       "phase": 11,
       "theme": "nebula",
-      "pairs": 4,
+      "pairs": 12,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "easy",
-      "description": "Cartas fantasma aparecen y desaparecen. Sin cronÃ³metro. 8 cartas.",
+      "description": "Más cartas. Sin cronómetro. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 20
@@ -9580,13 +9600,13 @@
       "id": 533,
       "phase": 11,
       "theme": "nebula",
-      "pairs": 8,
+      "pairs": 12,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "medium",
-      "description": "La oscuridad cubre el tablero poco a poco. Sin cronÃ³metro. 16 cartas.",
+      "description": "Nivel básico. Sin cronómetro. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 80
@@ -9598,13 +9618,13 @@
       "id": 534,
       "phase": 11,
       "theme": "nebula",
-      "pairs": 9,
+      "pairs": 12,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "medium",
-      "description": "Cartas fantasma aparecen y desaparecen. Sin cronÃ³metro. 18 cartas.",
+      "description": "Juego tranquilo. Sin cronómetro. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 90
@@ -9616,13 +9636,13 @@
       "id": 535,
       "phase": 11,
       "theme": "nebula",
-      "pairs": 6,
+      "pairs": 12,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "easy",
-      "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 12 cartas.",
+      "description": "Nivel clásico. Sin cronómetro. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 30
@@ -9634,13 +9654,13 @@
       "id": 536,
       "phase": 11,
       "theme": "nebula",
-      "pairs": 10,
+      "pairs": 11,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "hard",
-      "description": "La oscuridad cubre el tablero poco a poco. CronÃ³metro: 93s. 20 cartas.",
+      "description": "Practica con calma. Sin cronómetro. 22 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 150
@@ -9652,13 +9672,13 @@
       "id": 537,
       "phase": 11,
       "theme": "nebula",
-      "pairs": 4,
+      "pairs": 12,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "easy",
-      "description": "Cartas fantasma aparecen y desaparecen. Sin cronÃ³metro. 8 cartas.",
+      "description": "Más cartas. Sin cronómetro. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 20
@@ -9670,13 +9690,13 @@
       "id": 538,
       "phase": 11,
       "theme": "nebula",
-      "pairs": 8,
+      "pairs": 12,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "medium",
-      "description": "algunas cartas explotan si fallas. CronÃ³metro: 75s. 16 cartas.",
+      "description": "Nivel básico. Sin cronómetro. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 80
@@ -9688,13 +9708,13 @@
       "id": 539,
       "phase": 11,
       "theme": "nebula",
-      "pairs": 9,
+      "pairs": 11,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "hard",
-      "description": "Cartas que se congelan temporalmente. Sin cronÃ³metro. 18 cartas.",
+      "description": "Juego tranquilo. Sin cronómetro. 22 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 135
@@ -9706,13 +9726,13 @@
       "id": 540,
       "phase": 11,
       "theme": "nebula",
-      "pairs": 3,
+      "pairs": 11,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "easy",
-      "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 6 cartas.",
+      "description": "Nivel clásico. Sin cronómetro. 22 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 15
@@ -9724,13 +9744,13 @@
       "id": 541,
       "phase": 11,
       "theme": "nebula",
-      "pairs": 8,
+      "pairs": 11,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "hard",
-      "description": "El tablero rota de vez en cuando. CronÃ³metro: 80s. 16 cartas.",
+      "description": "Practica con calma. Sin cronómetro. 22 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 120
@@ -9742,13 +9762,13 @@
       "id": 542,
       "phase": 11,
       "theme": "nebula",
-      "pairs": 5,
+      "pairs": 12,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "easy",
-      "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 10 cartas.",
+      "description": "Más cartas. Sin cronómetro. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 25
@@ -9760,13 +9780,13 @@
       "id": 543,
       "phase": 11,
       "theme": "nebula",
-      "pairs": 8,
+      "pairs": 10,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "medium",
-      "description": "Niebla ligera: observa con atenciÃ³n. CronÃ³metro: 82s. 16 cartas.",
+      "description": "Nivel básico. Sin cronómetro. 20 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 80
@@ -9778,13 +9798,13 @@
       "id": 544,
       "phase": 11,
       "theme": "nebula",
-      "pairs": 2,
+      "pairs": 11,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "medium",
-      "description": "Evita bombas: piensa rÃ¡pido. Sin cronÃ³metro. 4 cartas.",
+      "description": "Juego tranquilo. Sin cronómetro. 22 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 20
@@ -9802,7 +9822,7 @@
         "basic"
       ],
       "difficulty": "hard",
-      "description": "La oscuridad cubre el tablero poco a poco. CronÃ³metro: 87s. 20 cartas.",
+      "description": "Nivel clásico. Sin cronómetro. 20 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 150
@@ -9814,13 +9834,13 @@
       "id": 546,
       "phase": 11,
       "theme": "nebula",
-      "pairs": 8,
+      "pairs": 12,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "medium",
-      "description": "Cartas fantasma aparecen y desaparecen. Sin cronÃ³metro. 16 cartas.",
+      "description": "Practica con calma. Sin cronómetro. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 80
@@ -9832,13 +9852,13 @@
       "id": 547,
       "phase": 11,
       "theme": "nebula",
-      "pairs": 8,
+      "pairs": 12,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "hard",
-      "description": "Cartas que se congelan temporalmente. CronÃ³metro: 80s. 16 cartas.",
+      "description": "Más cartas. Sin cronómetro. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 120
@@ -9850,13 +9870,13 @@
       "id": 548,
       "phase": 11,
       "theme": "nebula",
-      "pairs": 2,
+      "pairs": 11,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "easy",
-      "description": "Niebla ligera: observa con atenciÃ³n. Sin cronÃ³metro. 4 cartas.",
+      "description": "Nivel básico. Sin cronómetro. 22 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 10
@@ -9874,7 +9894,7 @@
         "basic"
       ],
       "difficulty": "hard",
-      "description": "Cartas fantasma aparecen y desaparecen. CronÃ³metro: 109s. 24 cartas.",
+      "description": "Juego tranquilo. Sin cronómetro. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 180
@@ -9889,10 +9909,11 @@
       "pairs": 12,
       "timeSec": 0,
       "mechanics": [
-        "basic"
+        "basic",
+        "fog"
       ],
       "difficulty": "hard",
-      "description": "Boss: 24 cartas, darkness + chameleon, crono 102s.",
+      "description": "Nivel especial. Sin cronómetro. 24 cartas.",
       "isBoss": true,
       "rewards": {
         "coins": 180
@@ -9904,13 +9925,13 @@
       "id": 551,
       "phase": 12,
       "theme": "underwater",
-      "pairs": 8,
+      "pairs": 11,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "hard",
-      "description": "La oscuridad cubre el tablero poco a poco. CronÃ³metro: 88s. 16 cartas.",
+      "description": "Practica con calma. Sin cronómetro. 22 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 120
@@ -9922,13 +9943,13 @@
       "id": 552,
       "phase": 12,
       "theme": "underwater",
-      "pairs": 9,
+      "pairs": 10,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "medium",
-      "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 18 cartas.",
+      "description": "Más cartas. Sin cronómetro. 20 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 90
@@ -9940,13 +9961,13 @@
       "id": 553,
       "phase": 12,
       "theme": "underwater",
-      "pairs": 4,
+      "pairs": 11,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "easy",
-      "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 8 cartas.",
+      "description": "Nivel básico. Sin cronómetro. 22 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 20
@@ -9958,13 +9979,13 @@
       "id": 554,
       "phase": 12,
       "theme": "underwater",
-      "pairs": 10,
+      "pairs": 11,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "hard",
-      "description": "las cartas estÃ¡n parcialmente ocultas. CronÃ³metro: 102s. 20 cartas.",
+      "description": "Juego tranquilo. Sin cronómetro. 22 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 150
@@ -9976,13 +9997,13 @@
       "id": 555,
       "phase": 12,
       "theme": "underwater",
-      "pairs": 5,
+      "pairs": 12,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "easy",
-      "description": "Niebla ligera: observa con atenciÃ³n. Sin cronÃ³metro. 10 cartas.",
+      "description": "Nivel clásico. Sin cronómetro. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 25
@@ -9994,13 +10015,13 @@
       "id": 556,
       "phase": 12,
       "theme": "underwater",
-      "pairs": 5,
+      "pairs": 11,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "medium",
-      "description": "Las cartas cambian de valor. Sin cronÃ³metro. 10 cartas.",
+      "description": "Practica con calma. Sin cronómetro. 22 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 50
@@ -10018,7 +10039,7 @@
         "basic"
       ],
       "difficulty": "hard",
-      "description": "Evita bombas: piensa rÃ¡pido. CronÃ³metro: 100s. 24 cartas.",
+      "description": "Más cartas. Sin cronómetro. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 180
@@ -10030,13 +10051,13 @@
       "id": 558,
       "phase": 12,
       "theme": "underwater",
-      "pairs": 7,
+      "pairs": 11,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "hard",
-      "description": "Cartas que se congelan temporalmente. CronÃ³metro: 71s. 14 cartas.",
+      "description": "Nivel básico. Sin cronómetro. 22 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 105
@@ -10048,13 +10069,13 @@
       "id": 559,
       "phase": 12,
       "theme": "underwater",
-      "pairs": 9,
+      "pairs": 11,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "hard",
-      "description": "Las cartas cambian de valor. Sin cronÃ³metro. 18 cartas.",
+      "description": "Juego tranquilo. Sin cronómetro. 22 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 135
@@ -10066,13 +10087,13 @@
       "id": 560,
       "phase": 12,
       "theme": "underwater",
-      "pairs": 8,
+      "pairs": 10,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "medium",
-      "description": "juega normalmente. Sin cronÃ³metro. 16 cartas.",
+      "description": "Nivel clásico. Sin cronómetro. 20 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 80
@@ -10084,13 +10105,13 @@
       "id": 561,
       "phase": 12,
       "theme": "underwater",
-      "pairs": 5,
+      "pairs": 11,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "medium",
-      "description": "Cartas que se congelan temporalmente. Sin cronÃ³metro. 10 cartas.",
+      "description": "Practica con calma. Sin cronómetro. 22 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 50
@@ -10102,13 +10123,13 @@
       "id": 562,
       "phase": 12,
       "theme": "underwater",
-      "pairs": 8,
+      "pairs": 11,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "medium",
-      "description": "La oscuridad cubre el tablero poco a poco. Sin cronÃ³metro. 16 cartas.",
+      "description": "Más cartas. Sin cronómetro. 22 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 80
@@ -10120,13 +10141,13 @@
       "id": 563,
       "phase": 12,
       "theme": "underwater",
-      "pairs": 4,
+      "pairs": 10,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "easy",
-      "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 8 cartas.",
+      "description": "Nivel básico. Sin cronómetro. 20 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 20
@@ -10138,13 +10159,13 @@
       "id": 564,
       "phase": 12,
       "theme": "underwater",
-      "pairs": 8,
+      "pairs": 11,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "medium",
-      "description": "juega normalmente. Sin cronÃ³metro. 16 cartas.",
+      "description": "Juego tranquilo. Sin cronómetro. 22 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 80
@@ -10156,13 +10177,13 @@
       "id": 565,
       "phase": 12,
       "theme": "underwater",
-      "pairs": 7,
+      "pairs": 12,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "medium",
-      "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 14 cartas.",
+      "description": "Nivel clásico. Sin cronómetro. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 70
@@ -10174,13 +10195,13 @@
       "id": 566,
       "phase": 12,
       "theme": "underwater",
-      "pairs": 3,
+      "pairs": 10,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "medium",
-      "description": "El tablero rota de vez en cuando. Sin cronÃ³metro. 6 cartas.",
+      "description": "Practica con calma. Sin cronómetro. 20 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 30
@@ -10192,31 +10213,31 @@
       "id": 567,
       "phase": 12,
       "theme": "underwater",
-      "pairs": 9,
+      "pairs": 12,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "hard",
-      "description": "Encuentra trÃ­os idÃ©nticos. Sin cronÃ³metro. 18 cartas.",
+      "description": "Más cartas. Sin cronómetro. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 135
       },
       "seed": 1567090,
-      "setSize": 3
+      "setSize": 2
     },
     {
       "id": 568,
       "phase": 12,
       "theme": "underwater",
-      "pairs": 8,
+      "pairs": 12,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "medium",
-      "description": "Cartas que se congelan temporalmente. Sin cronÃ³metro. 16 cartas.",
+      "description": "Nivel básico. Sin cronómetro. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 80
@@ -10228,13 +10249,13 @@
       "id": 569,
       "phase": 12,
       "theme": "underwater",
-      "pairs": 5,
+      "pairs": 10,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "medium",
-      "description": "Evita bombas: piensa rÃ¡pido. CronÃ³metro: 47s. 10 cartas.",
+      "description": "Juego tranquilo. Sin cronómetro. 20 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 50
@@ -10246,31 +10267,31 @@
       "id": 570,
       "phase": 12,
       "theme": "underwater",
-      "pairs": 12,
+      "pairs": 11,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "hard",
-      "description": "Encuentra trÃ­os idÃ©nticos. Sin cronÃ³metro. 24 cartas.",
+      "description": "Nivel clásico. Sin cronómetro. 22 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 180
       },
       "seed": 1570120,
-      "setSize": 3
+      "setSize": 2
     },
     {
       "id": 571,
       "phase": 12,
       "theme": "underwater",
-      "pairs": 9,
+      "pairs": 11,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "hard",
-      "description": "El tablero rota de vez en cuando. CronÃ³metro: 83s. 18 cartas.",
+      "description": "Practica con calma. Sin cronómetro. 22 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 135
@@ -10282,13 +10303,13 @@
       "id": 572,
       "phase": 12,
       "theme": "underwater",
-      "pairs": 3,
+      "pairs": 12,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "easy",
-      "description": "Niebla ligera: observa con atenciÃ³n. Sin cronÃ³metro. 6 cartas.",
+      "description": "Más cartas. Sin cronómetro. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 15
@@ -10300,13 +10321,13 @@
       "id": 573,
       "phase": 12,
       "theme": "underwater",
-      "pairs": 2,
+      "pairs": 10,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "medium",
-      "description": "Las cartas cambian de valor. Sin cronÃ³metro. 4 cartas.",
+      "description": "Nivel básico. Sin cronómetro. 20 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 20
@@ -10318,13 +10339,13 @@
       "id": 574,
       "phase": 12,
       "theme": "underwater",
-      "pairs": 12,
+      "pairs": 10,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "hard",
-      "description": "Nivel clÃ¡sico sin trucos. CronÃ³metro: 97s. 24 cartas.",
+      "description": "Juego tranquilo. Sin cronómetro. 20 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 180
@@ -10336,31 +10357,32 @@
       "id": 575,
       "phase": 12,
       "theme": "underwater",
-      "pairs": 8,
+      "pairs": 6,
       "timeSec": 0,
       "mechanics": [
-        "basic"
+        "basic",
+        "trio"
       ],
       "difficulty": "medium",
-      "description": "algunas cartas explotan si fallas. CronÃ³metro: 85s. 16 cartas.",
+      "description": "Nivel clásico. Sin cronómetro. 18 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 80
       },
       "seed": 1575165,
-      "setSize": 2
+      "setSize": 3
     },
     {
       "id": 576,
       "phase": 12,
       "theme": "underwater",
-      "pairs": 7,
+      "pairs": 11,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "medium",
-      "description": "Cartas fantasma aparecen y desaparecen. Sin cronÃ³metro. 14 cartas.",
+      "description": "Practica con calma. Sin cronómetro. 22 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 70
@@ -10372,13 +10394,13 @@
       "id": 577,
       "phase": 12,
       "theme": "underwater",
-      "pairs": 10,
+      "pairs": 11,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "hard",
-      "description": "El tablero rota de vez en cuando. CronÃ³metro: 97s. 20 cartas.",
+      "description": "Más cartas. Sin cronómetro. 22 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 150
@@ -10396,7 +10418,7 @@
         "basic"
       ],
       "difficulty": "hard",
-      "description": "algunas cartas explotan si fallas. CronÃ³metro: 97s. 24 cartas.",
+      "description": "Nivel básico. Sin cronómetro. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 180
@@ -10408,13 +10430,13 @@
       "id": 579,
       "phase": 12,
       "theme": "underwater",
-      "pairs": 4,
+      "pairs": 12,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "easy",
-      "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 8 cartas.",
+      "description": "Juego tranquilo. Sin cronómetro. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 20
@@ -10432,7 +10454,7 @@
         "basic"
       ],
       "difficulty": "hard",
-      "description": "algunas cartas explotan si fallas. CronÃ³metro: 107s. 24 cartas.",
+      "description": "Nivel clásico. Sin cronómetro. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 180
@@ -10444,31 +10466,31 @@
       "id": 581,
       "phase": 12,
       "theme": "underwater",
-      "pairs": 3,
+      "pairs": 10,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "easy",
-      "description": "Encuentra trÃ­os idÃ©nticos. Sin cronÃ³metro. 6 cartas.",
+      "description": "Practica con calma. Sin cronómetro. 20 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 15
       },
       "seed": 1581030,
-      "setSize": 3
+      "setSize": 2
     },
     {
       "id": 582,
       "phase": 12,
       "theme": "underwater",
-      "pairs": 7,
+      "pairs": 10,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "medium",
-      "description": "El tablero rota de vez en cuando. Sin cronÃ³metro. 14 cartas.",
+      "description": "Más cartas. Sin cronómetro. 20 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 70
@@ -10480,13 +10502,13 @@
       "id": 583,
       "phase": 12,
       "theme": "underwater",
-      "pairs": 8,
+      "pairs": 10,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "medium",
-      "description": "las cartas estÃ¡n parcialmente ocultas. CronÃ³metro: 87s. 16 cartas.",
+      "description": "Nivel básico. Sin cronómetro. 20 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 80
@@ -10498,13 +10520,13 @@
       "id": 584,
       "phase": 12,
       "theme": "underwater",
-      "pairs": 8,
+      "pairs": 11,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "medium",
-      "description": "Nivel clÃ¡sico sin trucos. CronÃ³metro: 79s. 16 cartas.",
+      "description": "Juego tranquilo. Sin cronómetro. 22 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 80
@@ -10516,13 +10538,13 @@
       "id": 585,
       "phase": 12,
       "theme": "underwater",
-      "pairs": 10,
+      "pairs": 11,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "hard",
-      "description": "Cartas fantasma aparecen y desaparecen. CronÃ³metro: 103s. 20 cartas.",
+      "description": "Nivel clásico. Sin cronómetro. 22 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 150
@@ -10534,13 +10556,13 @@
       "id": 586,
       "phase": 12,
       "theme": "underwater",
-      "pairs": 8,
+      "pairs": 11,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "medium",
-      "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 16 cartas.",
+      "description": "Practica con calma. Sin cronómetro. 22 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 80
@@ -10552,13 +10574,13 @@
       "id": 587,
       "phase": 12,
       "theme": "underwater",
-      "pairs": 9,
+      "pairs": 10,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "hard",
-      "description": "Evita bombas: piensa rÃ¡pido. Sin cronÃ³metro. 18 cartas.",
+      "description": "Más cartas. Sin cronómetro. 20 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 135
@@ -10570,13 +10592,13 @@
       "id": 588,
       "phase": 12,
       "theme": "underwater",
-      "pairs": 5,
+      "pairs": 11,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "easy",
-      "description": "Niebla ligera: observa con atenciÃ³n. Sin cronÃ³metro. 10 cartas.",
+      "description": "Nivel básico. Sin cronómetro. 22 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 25
@@ -10588,31 +10610,31 @@
       "id": 589,
       "phase": 12,
       "theme": "underwater",
-      "pairs": 12,
+      "pairs": 11,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "hard",
-      "description": "Encuentra trÃ­os idÃ©nticos. Sin cronÃ³metro. 24 cartas.",
+      "description": "Juego tranquilo. Sin cronómetro. 22 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 180
       },
       "seed": 1589120,
-      "setSize": 3
+      "setSize": 2
     },
     {
       "id": 590,
       "phase": 12,
       "theme": "underwater",
-      "pairs": 8,
+      "pairs": 11,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "medium",
-      "description": "juega normalmente. Sin cronÃ³metro. 16 cartas.",
+      "description": "Nivel clásico. Sin cronómetro. 22 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 80
@@ -10624,13 +10646,13 @@
       "id": 591,
       "phase": 12,
       "theme": "underwater",
-      "pairs": 2,
+      "pairs": 11,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "medium",
-      "description": "El tablero rota de vez en cuando. Sin cronÃ³metro. 4 cartas.",
+      "description": "Practica con calma. Sin cronómetro. 22 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 20
@@ -10642,13 +10664,13 @@
       "id": 592,
       "phase": 12,
       "theme": "underwater",
-      "pairs": 12,
+      "pairs": 10,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "hard",
-      "description": "Las cartas cambian de valor. CronÃ³metro: 104s. 24 cartas.",
+      "description": "Más cartas. Sin cronómetro. 20 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 180
@@ -10660,31 +10682,31 @@
       "id": 593,
       "phase": 12,
       "theme": "underwater",
-      "pairs": 6,
+      "pairs": 11,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "easy",
-      "description": "Encuentra trÃ­os idÃ©nticos. Sin cronÃ³metro. 12 cartas.",
+      "description": "Nivel básico. Sin cronómetro. 22 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 30
       },
       "seed": 1593060,
-      "setSize": 3
+      "setSize": 2
     },
     {
       "id": 594,
       "phase": 12,
       "theme": "underwater",
-      "pairs": 8,
+      "pairs": 11,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "hard",
-      "description": "La oscuridad cubre el tablero poco a poco. CronÃ³metro: 80s. 16 cartas.",
+      "description": "Juego tranquilo. Sin cronómetro. 22 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 120
@@ -10696,13 +10718,13 @@
       "id": 595,
       "phase": 12,
       "theme": "underwater",
-      "pairs": 8,
+      "pairs": 12,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "hard",
-      "description": "Evita bombas: piensa rÃ¡pido. CronÃ³metro: 87s. 16 cartas.",
+      "description": "Nivel clásico. Sin cronómetro. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 120
@@ -10714,31 +10736,31 @@
       "id": 596,
       "phase": 12,
       "theme": "underwater",
-      "pairs": 12,
+      "pairs": 11,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "hard",
-      "description": "Encuentra trÃ­os idÃ©nticos. Sin cronÃ³metro. 24 cartas.",
+      "description": "Practica con calma. Sin cronómetro. 22 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 180
       },
       "seed": 1596120,
-      "setSize": 3
+      "setSize": 2
     },
     {
       "id": 597,
       "phase": 12,
       "theme": "underwater",
-      "pairs": 2,
+      "pairs": 10,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "easy",
-      "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 4 cartas.",
+      "description": "Más cartas. Sin cronómetro. 20 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 10
@@ -10750,13 +10772,13 @@
       "id": 598,
       "phase": 12,
       "theme": "underwater",
-      "pairs": 8,
+      "pairs": 12,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "medium",
-      "description": "Niebla ligera: observa con atenciÃ³n. CronÃ³metro: 76s. 16 cartas.",
+      "description": "Nivel básico. Sin cronómetro. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 80
@@ -10768,13 +10790,13 @@
       "id": 599,
       "phase": 12,
       "theme": "underwater",
-      "pairs": 7,
+      "pairs": 10,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "hard",
-      "description": "El tablero rota de vez en cuando. CronÃ³metro: 62s. 14 cartas.",
+      "description": "Juego tranquilo. Sin cronómetro. 20 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 105
@@ -10789,10 +10811,11 @@
       "pairs": 12,
       "timeSec": 0,
       "mechanics": [
-        "basic"
+        "basic",
+        "rotation"
       ],
       "difficulty": "hard",
-      "description": "Boss: 24 cartas, ghost + chameleon, crono 101s.",
+      "description": "Nivel especial. Sin cronómetro. 24 cartas.",
       "isBoss": true,
       "rewards": {
         "coins": 180
@@ -10804,13 +10827,13 @@
       "id": 601,
       "phase": 13,
       "theme": "laboratory",
-      "pairs": 10,
+      "pairs": 12,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "medium",
-      "description": "juega normalmente. Sin cronÃ³metro. 20 cartas.",
+      "description": "Practica con calma. Sin cronómetro. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 100
@@ -10822,13 +10845,13 @@
       "id": 602,
       "phase": 13,
       "theme": "laboratory",
-      "pairs": 5,
+      "pairs": 12,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "easy",
-      "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 10 cartas.",
+      "description": "Más cartas. Sin cronómetro. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 25
@@ -10840,13 +10863,13 @@
       "id": 603,
       "phase": 13,
       "theme": "laboratory",
-      "pairs": 7,
+      "pairs": 10,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "medium",
-      "description": "Niebla ligera: observa con atenciÃ³n. Sin cronÃ³metro. 14 cartas.",
+      "description": "Nivel básico. Sin cronómetro. 20 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 70
@@ -10858,13 +10881,13 @@
       "id": 604,
       "phase": 13,
       "theme": "laboratory",
-      "pairs": 4,
+      "pairs": 12,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "easy",
-      "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 8 cartas.",
+      "description": "Juego tranquilo. Sin cronómetro. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 20
@@ -10876,13 +10899,13 @@
       "id": 605,
       "phase": 13,
       "theme": "laboratory",
-      "pairs": 2,
+      "pairs": 11,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "easy",
-      "description": "Niebla ligera: observa con atenciÃ³n. Sin cronÃ³metro. 4 cartas.",
+      "description": "Nivel clásico. Sin cronómetro. 22 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 10
@@ -10894,13 +10917,13 @@
       "id": 606,
       "phase": 13,
       "theme": "laboratory",
-      "pairs": 10,
+      "pairs": 12,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "hard",
-      "description": "Nivel clÃ¡sico sin trucos. CronÃ³metro: 87s. 20 cartas.",
+      "description": "Practica con calma. Sin cronómetro. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 150
@@ -10912,13 +10935,13 @@
       "id": 607,
       "phase": 13,
       "theme": "laboratory",
-      "pairs": 7,
+      "pairs": 11,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "medium",
-      "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 14 cartas.",
+      "description": "Más cartas. Sin cronómetro. 22 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 70
@@ -10930,13 +10953,13 @@
       "id": 608,
       "phase": 13,
       "theme": "laboratory",
-      "pairs": 6,
+      "pairs": 10,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "easy",
-      "description": "Cartas fantasma aparecen y desaparecen. Sin cronÃ³metro. 12 cartas.",
+      "description": "Nivel básico. Sin cronómetro. 20 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 30
@@ -10954,7 +10977,7 @@
         "basic"
       ],
       "difficulty": "medium",
-      "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 20 cartas.",
+      "description": "Juego tranquilo. Sin cronómetro. 20 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 100
@@ -10966,13 +10989,13 @@
       "id": 610,
       "phase": 13,
       "theme": "laboratory",
-      "pairs": 5,
+      "pairs": 10,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "easy",
-      "description": "Cartas fantasma aparecen y desaparecen. Sin cronÃ³metro. 10 cartas.",
+      "description": "Nivel clásico. Sin cronómetro. 20 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 25
@@ -10984,13 +11007,13 @@
       "id": 611,
       "phase": 13,
       "theme": "laboratory",
-      "pairs": 2,
+      "pairs": 12,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "easy",
-      "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 4 cartas.",
+      "description": "Practica con calma. Sin cronómetro. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 10
@@ -11002,13 +11025,13 @@
       "id": 612,
       "phase": 13,
       "theme": "laboratory",
-      "pairs": 5,
+      "pairs": 12,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "medium",
-      "description": "El tablero rota de vez en cuando. CronÃ³metro: 56s. 10 cartas.",
+      "description": "Más cartas. Sin cronómetro. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 50
@@ -11026,7 +11049,7 @@
         "basic"
       ],
       "difficulty": "hard",
-      "description": "las cartas estÃ¡n parcialmente ocultas. CronÃ³metro: 109s. 24 cartas.",
+      "description": "Nivel básico. Sin cronómetro. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 180
@@ -11038,13 +11061,13 @@
       "id": 614,
       "phase": 13,
       "theme": "laboratory",
-      "pairs": 6,
+      "pairs": 12,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "medium",
-      "description": "Cartas que se congelan temporalmente. Sin cronÃ³metro. 12 cartas.",
+      "description": "Juego tranquilo. Sin cronómetro. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 60
@@ -11056,13 +11079,13 @@
       "id": 615,
       "phase": 13,
       "theme": "laboratory",
-      "pairs": 9,
+      "pairs": 12,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "hard",
-      "description": "Evita bombas: piensa rÃ¡pido. CronÃ³metro: 98s. 18 cartas.",
+      "description": "Nivel clásico. Sin cronómetro. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 135
@@ -11074,13 +11097,13 @@
       "id": 616,
       "phase": 13,
       "theme": "laboratory",
-      "pairs": 7,
+      "pairs": 11,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "medium",
-      "description": "El tablero rota de vez en cuando. Sin cronÃ³metro. 14 cartas.",
+      "description": "Practica con calma. Sin cronómetro. 22 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 70
@@ -11092,13 +11115,13 @@
       "id": 617,
       "phase": 13,
       "theme": "laboratory",
-      "pairs": 3,
+      "pairs": 12,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "easy",
-      "description": "Cartas fantasma aparecen y desaparecen. Sin cronÃ³metro. 6 cartas.",
+      "description": "Más cartas. Sin cronómetro. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 15
@@ -11110,13 +11133,13 @@
       "id": 618,
       "phase": 13,
       "theme": "laboratory",
-      "pairs": 7,
+      "pairs": 10,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "medium",
-      "description": "Cartas que se congelan temporalmente. Sin cronÃ³metro. 14 cartas.",
+      "description": "Nivel básico. Sin cronómetro. 20 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 70
@@ -11128,13 +11151,13 @@
       "id": 619,
       "phase": 13,
       "theme": "laboratory",
-      "pairs": 6,
+      "pairs": 11,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "medium",
-      "description": "El tablero rota de vez en cuando. Sin cronÃ³metro. 12 cartas.",
+      "description": "Juego tranquilo. Sin cronómetro. 22 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 60
@@ -11146,13 +11169,13 @@
       "id": 620,
       "phase": 13,
       "theme": "laboratory",
-      "pairs": 10,
+      "pairs": 11,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "hard",
-      "description": "La oscuridad cubre el tablero poco a poco. CronÃ³metro: 99s. 20 cartas.",
+      "description": "Nivel clásico. Sin cronómetro. 22 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 150
@@ -11164,13 +11187,13 @@
       "id": 621,
       "phase": 13,
       "theme": "laboratory",
-      "pairs": 6,
+      "pairs": 12,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "easy",
-      "description": "Cartas fantasma aparecen y desaparecen. Sin cronÃ³metro. 12 cartas.",
+      "description": "Practica con calma. Sin cronómetro. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 30
@@ -11182,13 +11205,13 @@
       "id": 622,
       "phase": 13,
       "theme": "laboratory",
-      "pairs": 12,
+      "pairs": 11,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "hard",
-      "description": "las cartas estÃ¡n parcialmente ocultas. CronÃ³metro: 105s. 24 cartas.",
+      "description": "Más cartas. Sin cronómetro. 22 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 180
@@ -11200,13 +11223,13 @@
       "id": 623,
       "phase": 13,
       "theme": "laboratory",
-      "pairs": 10,
+      "pairs": 12,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "hard",
-      "description": "La oscuridad cubre el tablero poco a poco. CronÃ³metro: 91s. 20 cartas.",
+      "description": "Nivel básico. Sin cronómetro. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 150
@@ -11218,13 +11241,13 @@
       "id": 624,
       "phase": 13,
       "theme": "laboratory",
-      "pairs": 8,
+      "pairs": 10,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "medium",
-      "description": "Nivel clÃ¡sico sin trucos. CronÃ³metro: 77s. 16 cartas.",
+      "description": "Juego tranquilo. Sin cronómetro. 20 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 80
@@ -11236,31 +11259,32 @@
       "id": 625,
       "phase": 13,
       "theme": "laboratory",
-      "pairs": 7,
+      "pairs": 6,
       "timeSec": 0,
       "mechanics": [
-        "basic"
+        "basic",
+        "trio"
       ],
       "difficulty": "medium",
-      "description": "Las cartas cambian de valor. Sin cronÃ³metro. 14 cartas.",
+      "description": "Nivel clásico. Sin cronómetro. 18 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 70
       },
       "seed": 1625070,
-      "setSize": 2
+      "setSize": 3
     },
     {
       "id": 626,
       "phase": 13,
       "theme": "laboratory",
-      "pairs": 7,
+      "pairs": 12,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "medium",
-      "description": "Evita bombas: piensa rÃ¡pido. Sin cronÃ³metro. 14 cartas.",
+      "description": "Practica con calma. Sin cronómetro. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 70
@@ -11272,13 +11296,13 @@
       "id": 627,
       "phase": 13,
       "theme": "laboratory",
-      "pairs": 5,
+      "pairs": 11,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "easy",
-      "description": "Niebla ligera: observa con atenciÃ³n. Sin cronÃ³metro. 10 cartas.",
+      "description": "Más cartas. Sin cronómetro. 22 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 25
@@ -11290,13 +11314,13 @@
       "id": 628,
       "phase": 13,
       "theme": "laboratory",
-      "pairs": 4,
+      "pairs": 10,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "medium",
-      "description": "Cartas que se congelan temporalmente. Sin cronÃ³metro. 8 cartas.",
+      "description": "Nivel básico. Sin cronómetro. 20 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 40
@@ -11308,31 +11332,31 @@
       "id": 629,
       "phase": 13,
       "theme": "laboratory",
-      "pairs": 6,
+      "pairs": 11,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "easy",
-      "description": "Encuentra trÃ­os idÃ©nticos. Sin cronÃ³metro. 12 cartas.",
+      "description": "Juego tranquilo. Sin cronómetro. 22 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 30
       },
       "seed": 1629060,
-      "setSize": 3
+      "setSize": 2
     },
     {
       "id": 630,
       "phase": 13,
       "theme": "laboratory",
-      "pairs": 10,
+      "pairs": 11,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "hard",
-      "description": "La oscuridad cubre el tablero poco a poco. Sin cronÃ³metro. 20 cartas.",
+      "description": "Nivel clásico. Sin cronómetro. 22 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 150
@@ -11344,13 +11368,13 @@
       "id": 631,
       "phase": 13,
       "theme": "laboratory",
-      "pairs": 12,
+      "pairs": 10,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "hard",
-      "description": "Nivel clÃ¡sico sin trucos. CronÃ³metro: 112s. 24 cartas.",
+      "description": "Practica con calma. Sin cronómetro. 20 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 180
@@ -11362,13 +11386,13 @@
       "id": 632,
       "phase": 13,
       "theme": "laboratory",
-      "pairs": 7,
+      "pairs": 10,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "medium",
-      "description": "Las cartas cambian de valor. Sin cronÃ³metro. 14 cartas.",
+      "description": "Más cartas. Sin cronómetro. 20 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 70
@@ -11380,31 +11404,31 @@
       "id": 633,
       "phase": 13,
       "theme": "laboratory",
-      "pairs": 6,
+      "pairs": 10,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "easy",
-      "description": "Encuentra trÃ­os idÃ©nticos. Sin cronÃ³metro. 12 cartas.",
+      "description": "Nivel básico. Sin cronómetro. 20 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 30
       },
       "seed": 1633060,
-      "setSize": 3
+      "setSize": 2
     },
     {
       "id": 634,
       "phase": 13,
       "theme": "laboratory",
-      "pairs": 9,
+      "pairs": 12,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "hard",
-      "description": "El tablero rota de vez en cuando. CronÃ³metro: 96s. 18 cartas.",
+      "description": "Juego tranquilo. Sin cronómetro. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 135
@@ -11416,13 +11440,13 @@
       "id": 635,
       "phase": 13,
       "theme": "laboratory",
-      "pairs": 7,
+      "pairs": 10,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "medium",
-      "description": "Nivel clÃ¡sico sin trucos. CronÃ³metro: 75s. 14 cartas.",
+      "description": "Nivel clásico. Sin cronómetro. 20 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 70
@@ -11434,31 +11458,31 @@
       "id": 636,
       "phase": 13,
       "theme": "laboratory",
-      "pairs": 3,
+      "pairs": 11,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "easy",
-      "description": "Encuentra trÃ­os idÃ©nticos. Sin cronÃ³metro. 6 cartas.",
+      "description": "Practica con calma. Sin cronómetro. 22 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 15
       },
       "seed": 1636030,
-      "setSize": 3
+      "setSize": 2
     },
     {
       "id": 637,
       "phase": 13,
       "theme": "laboratory",
-      "pairs": 5,
+      "pairs": 10,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "medium",
-      "description": "Cartas que se congelan temporalmente. Sin cronÃ³metro. 10 cartas.",
+      "description": "Más cartas. Sin cronómetro. 20 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 50
@@ -11470,19 +11494,19 @@
       "id": 638,
       "phase": 13,
       "theme": "laboratory",
-      "pairs": 6,
+      "pairs": 11,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "easy",
-      "description": "Encuentra trÃ­os idÃ©nticos. Sin cronÃ³metro. 12 cartas.",
+      "description": "Nivel básico. Sin cronómetro. 22 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 30
       },
       "seed": 1638060,
-      "setSize": 3
+      "setSize": 2
     },
     {
       "id": 639,
@@ -11494,7 +11518,7 @@
         "basic"
       ],
       "difficulty": "hard",
-      "description": "Las cartas cambian de valor. CronÃ³metro: 89s. 20 cartas.",
+      "description": "Juego tranquilo. Sin cronómetro. 20 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 150
@@ -11512,7 +11536,7 @@
         "basic"
       ],
       "difficulty": "hard",
-      "description": "algunas cartas explotan si fallas. CronÃ³metro: 113s. 24 cartas.",
+      "description": "Nivel clásico. Sin cronómetro. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 180
@@ -11524,13 +11548,13 @@
       "id": 641,
       "phase": 13,
       "theme": "laboratory",
-      "pairs": 3,
+      "pairs": 10,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "easy",
-      "description": "Niebla ligera: observa con atenciÃ³n. Sin cronÃ³metro. 6 cartas.",
+      "description": "Practica con calma. Sin cronómetro. 20 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 15
@@ -11542,13 +11566,13 @@
       "id": 642,
       "phase": 13,
       "theme": "laboratory",
-      "pairs": 6,
+      "pairs": 11,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "medium",
-      "description": "Cartas que se congelan temporalmente. Sin cronÃ³metro. 12 cartas.",
+      "description": "Más cartas. Sin cronómetro. 22 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 60
@@ -11560,13 +11584,13 @@
       "id": 643,
       "phase": 13,
       "theme": "laboratory",
-      "pairs": 8,
+      "pairs": 11,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "medium",
-      "description": "La oscuridad cubre el tablero poco a poco. Sin cronÃ³metro. 16 cartas.",
+      "description": "Nivel básico. Sin cronómetro. 22 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 80
@@ -11584,7 +11608,7 @@
         "basic"
       ],
       "difficulty": "hard",
-      "description": "algunas cartas explotan si fallas. CronÃ³metro: 99s. 20 cartas.",
+      "description": "Juego tranquilo. Sin cronómetro. 20 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 150
@@ -11596,13 +11620,13 @@
       "id": 645,
       "phase": 13,
       "theme": "laboratory",
-      "pairs": 3,
+      "pairs": 12,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "easy",
-      "description": "Cartas fantasma aparecen y desaparecen. Sin cronÃ³metro. 6 cartas.",
+      "description": "Nivel clásico. Sin cronómetro. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 15
@@ -11614,13 +11638,13 @@
       "id": 646,
       "phase": 13,
       "theme": "laboratory",
-      "pairs": 6,
+      "pairs": 10,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "medium",
-      "description": "Nivel clÃ¡sico sin trucos. CronÃ³metro: 66s. 12 cartas.",
+      "description": "Practica con calma. Sin cronómetro. 20 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 60
@@ -11632,13 +11656,13 @@
       "id": 647,
       "phase": 13,
       "theme": "laboratory",
-      "pairs": 7,
+      "pairs": 11,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "medium",
-      "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 14 cartas.",
+      "description": "Más cartas. Sin cronómetro. 22 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 70
@@ -11650,13 +11674,13 @@
       "id": 648,
       "phase": 13,
       "theme": "laboratory",
-      "pairs": 8,
+      "pairs": 11,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "medium",
-      "description": "algunas cartas explotan si fallas. CronÃ³metro: 73s. 16 cartas.",
+      "description": "Nivel básico. Sin cronómetro. 22 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 80
@@ -11668,13 +11692,13 @@
       "id": 649,
       "phase": 13,
       "theme": "laboratory",
-      "pairs": 5,
+      "pairs": 10,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "medium",
-      "description": "Evita bombas: piensa rÃ¡pido. Sin cronÃ³metro. 10 cartas.",
+      "description": "Juego tranquilo. Sin cronómetro. 20 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 50
@@ -11689,10 +11713,11 @@
       "pairs": 12,
       "timeSec": 0,
       "mechanics": [
-        "basic"
+        "basic",
+        "rotation"
       ],
       "difficulty": "hard",
-      "description": "Boss: 24 cartas, ghost + peeked_card, crono 105s.",
+      "description": "Nivel especial. Sin cronómetro. 24 cartas.",
       "isBoss": true,
       "rewards": {
         "coins": 180
@@ -11704,13 +11729,13 @@
       "id": 651,
       "phase": 14,
       "theme": "graveyard",
-      "pairs": 5,
+      "pairs": 10,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "easy",
-      "description": "Cartas fantasma aparecen y desaparecen. Sin cronÃ³metro. 10 cartas.",
+      "description": "Practica con calma. Sin cronómetro. 20 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 25
@@ -11722,13 +11747,13 @@
       "id": 652,
       "phase": 14,
       "theme": "graveyard",
-      "pairs": 7,
+      "pairs": 11,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "hard",
-      "description": "Cartas que se congelan temporalmente. CronÃ³metro: 74s. 14 cartas.",
+      "description": "Más cartas. Sin cronómetro. 22 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 105
@@ -11740,31 +11765,31 @@
       "id": 653,
       "phase": 14,
       "theme": "graveyard",
-      "pairs": 6,
+      "pairs": 11,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "easy",
-      "description": "Encuentra trÃ­os idÃ©nticos. Sin cronÃ³metro. 12 cartas.",
+      "description": "Nivel básico. Sin cronómetro. 22 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 30
       },
       "seed": 1653060,
-      "setSize": 3
+      "setSize": 2
     },
     {
       "id": 654,
       "phase": 14,
       "theme": "graveyard",
-      "pairs": 10,
+      "pairs": 12,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "medium",
-      "description": "juega normalmente. Sin cronÃ³metro. 20 cartas.",
+      "description": "Juego tranquilo. Sin cronómetro. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 100
@@ -11776,13 +11801,13 @@
       "id": 655,
       "phase": 14,
       "theme": "graveyard",
-      "pairs": 9,
+      "pairs": 10,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "medium",
-      "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 18 cartas.",
+      "description": "Nivel clásico. Sin cronómetro. 20 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 90
@@ -11794,13 +11819,13 @@
       "id": 656,
       "phase": 14,
       "theme": "graveyard",
-      "pairs": 12,
+      "pairs": 10,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "hard",
-      "description": "Niebla ligera: observa con atenciÃ³n. CronÃ³metro: 107s. 24 cartas.",
+      "description": "Practica con calma. Sin cronómetro. 20 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 180
@@ -11812,13 +11837,13 @@
       "id": 657,
       "phase": 14,
       "theme": "graveyard",
-      "pairs": 4,
+      "pairs": 10,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "easy",
-      "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 8 cartas.",
+      "description": "Más cartas. Sin cronómetro. 20 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 20
@@ -11830,13 +11855,13 @@
       "id": 658,
       "phase": 14,
       "theme": "graveyard",
-      "pairs": 10,
+      "pairs": 11,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "hard",
-      "description": "Nivel clÃ¡sico sin trucos. CronÃ³metro: 101s. 20 cartas.",
+      "description": "Nivel básico. Sin cronómetro. 22 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 150
@@ -11848,13 +11873,13 @@
       "id": 659,
       "phase": 14,
       "theme": "graveyard",
-      "pairs": 2,
+      "pairs": 11,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "medium",
-      "description": "Las cartas cambian de valor. Sin cronÃ³metro. 4 cartas.",
+      "description": "Juego tranquilo. Sin cronómetro. 22 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 20
@@ -11866,13 +11891,13 @@
       "id": 660,
       "phase": 14,
       "theme": "graveyard",
-      "pairs": 9,
+      "pairs": 10,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "medium",
-      "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 18 cartas.",
+      "description": "Nivel clásico. Sin cronómetro. 20 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 90
@@ -11884,13 +11909,13 @@
       "id": 661,
       "phase": 14,
       "theme": "graveyard",
-      "pairs": 9,
+      "pairs": 10,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "medium",
-      "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 18 cartas.",
+      "description": "Practica con calma. Sin cronómetro. 20 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 90
@@ -11902,31 +11927,31 @@
       "id": 662,
       "phase": 14,
       "theme": "graveyard",
-      "pairs": 3,
+      "pairs": 11,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "easy",
-      "description": "Encuentra trÃ­os idÃ©nticos. Sin cronÃ³metro. 6 cartas.",
+      "description": "Más cartas. Sin cronómetro. 22 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 15
       },
       "seed": 1662030,
-      "setSize": 3
+      "setSize": 2
     },
     {
       "id": 663,
       "phase": 14,
       "theme": "graveyard",
-      "pairs": 9,
+      "pairs": 12,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "hard",
-      "description": "Nivel clÃ¡sico sin trucos. CronÃ³metro: 85s. 18 cartas.",
+      "description": "Nivel básico. Sin cronómetro. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 135
@@ -11938,13 +11963,13 @@
       "id": 664,
       "phase": 14,
       "theme": "graveyard",
-      "pairs": 12,
+      "pairs": 11,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "hard",
-      "description": "Nivel clÃ¡sico sin trucos. CronÃ³metro: 105s. 24 cartas.",
+      "description": "Juego tranquilo. Sin cronómetro. 22 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 180
@@ -11956,13 +11981,13 @@
       "id": 665,
       "phase": 14,
       "theme": "graveyard",
-      "pairs": 7,
+      "pairs": 12,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "hard",
-      "description": "Cartas que se congelan temporalmente. CronÃ³metro: 66s. 14 cartas.",
+      "description": "Nivel clásico. Sin cronómetro. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 105
@@ -11974,13 +11999,13 @@
       "id": 666,
       "phase": 14,
       "theme": "graveyard",
-      "pairs": 8,
+      "pairs": 10,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "medium",
-      "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 16 cartas.",
+      "description": "Practica con calma. Sin cronómetro. 20 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 80
@@ -11992,13 +12017,13 @@
       "id": 667,
       "phase": 14,
       "theme": "graveyard",
-      "pairs": 7,
+      "pairs": 12,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "hard",
-      "description": "El tablero rota de vez en cuando. CronÃ³metro: 70s. 14 cartas.",
+      "description": "Más cartas. Sin cronómetro. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 105
@@ -12010,13 +12035,13 @@
       "id": 668,
       "phase": 14,
       "theme": "graveyard",
-      "pairs": 4,
+      "pairs": 10,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "medium",
-      "description": "Las cartas cambian de valor. Sin cronÃ³metro. 8 cartas.",
+      "description": "Nivel básico. Sin cronómetro. 20 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 40
@@ -12028,13 +12053,13 @@
       "id": 669,
       "phase": 14,
       "theme": "graveyard",
-      "pairs": 5,
+      "pairs": 10,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "easy",
-      "description": "Niebla ligera: observa con atenciÃ³n. Sin cronÃ³metro. 10 cartas.",
+      "description": "Juego tranquilo. Sin cronómetro. 20 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 25
@@ -12046,13 +12071,13 @@
       "id": 670,
       "phase": 14,
       "theme": "graveyard",
-      "pairs": 4,
+      "pairs": 12,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "medium",
-      "description": "Evita bombas: piensa rÃ¡pido. Sin cronÃ³metro. 8 cartas.",
+      "description": "Nivel clásico. Sin cronómetro. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 40
@@ -12064,13 +12089,13 @@
       "id": 671,
       "phase": 14,
       "theme": "graveyard",
-      "pairs": 3,
+      "pairs": 11,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "medium",
-      "description": "Cartas que se congelan temporalmente. Sin cronÃ³metro. 6 cartas.",
+      "description": "Practica con calma. Sin cronómetro. 22 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 30
@@ -12082,13 +12107,13 @@
       "id": 672,
       "phase": 14,
       "theme": "graveyard",
-      "pairs": 5,
+      "pairs": 12,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "easy",
-      "description": "Cartas fantasma aparecen y desaparecen. Sin cronÃ³metro. 10 cartas.",
+      "description": "Más cartas. Sin cronómetro. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 25
@@ -12100,13 +12125,13 @@
       "id": 673,
       "phase": 14,
       "theme": "graveyard",
-      "pairs": 4,
+      "pairs": 11,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "medium",
-      "description": "Evita bombas: piensa rÃ¡pido. Sin cronÃ³metro. 8 cartas.",
+      "description": "Nivel básico. Sin cronómetro. 22 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 40
@@ -12118,13 +12143,13 @@
       "id": 674,
       "phase": 14,
       "theme": "graveyard",
-      "pairs": 4,
+      "pairs": 12,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "easy",
-      "description": "Cartas fantasma aparecen y desaparecen. Sin cronÃ³metro. 8 cartas.",
+      "description": "Juego tranquilo. Sin cronómetro. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 20
@@ -12136,13 +12161,14 @@
       "id": 675,
       "phase": 14,
       "theme": "graveyard",
-      "pairs": 3,
+      "pairs": 6,
       "timeSec": 0,
       "mechanics": [
-        "basic"
+        "basic",
+        "trio"
       ],
       "difficulty": "easy",
-      "description": "Encuentra trÃ­os idÃ©nticos. Sin cronÃ³metro. 6 cartas.",
+      "description": "Nivel clásico. Sin cronómetro. 18 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 15
@@ -12154,13 +12180,13 @@
       "id": 676,
       "phase": 14,
       "theme": "graveyard",
-      "pairs": 10,
+      "pairs": 12,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "hard",
-      "description": "algunas cartas explotan si fallas. CronÃ³metro: 97s. 20 cartas.",
+      "description": "Practica con calma. Sin cronómetro. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 150
@@ -12172,13 +12198,13 @@
       "id": 677,
       "phase": 14,
       "theme": "graveyard",
-      "pairs": 8,
+      "pairs": 11,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "hard",
-      "description": "La oscuridad cubre el tablero poco a poco. CronÃ³metro: 81s. 16 cartas.",
+      "description": "Más cartas. Sin cronómetro. 22 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 120
@@ -12190,13 +12216,13 @@
       "id": 678,
       "phase": 14,
       "theme": "graveyard",
-      "pairs": 3,
+      "pairs": 11,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "medium",
-      "description": "Cartas que se congelan temporalmente. Sin cronÃ³metro. 6 cartas.",
+      "description": "Nivel básico. Sin cronómetro. 22 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 30
@@ -12214,7 +12240,7 @@
         "basic"
       ],
       "difficulty": "hard",
-      "description": "La oscuridad cubre el tablero poco a poco. CronÃ³metro: 110s. 24 cartas.",
+      "description": "Juego tranquilo. Sin cronómetro. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 180
@@ -12226,13 +12252,13 @@
       "id": 680,
       "phase": 14,
       "theme": "graveyard",
-      "pairs": 6,
+      "pairs": 10,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "medium",
-      "description": "Evita bombas: piensa rÃ¡pido. CronÃ³metro: 57s. 12 cartas.",
+      "description": "Nivel clásico. Sin cronómetro. 20 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 60
@@ -12244,13 +12270,13 @@
       "id": 681,
       "phase": 14,
       "theme": "graveyard",
-      "pairs": 5,
+      "pairs": 10,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "easy",
-      "description": "Cartas fantasma aparecen y desaparecen. Sin cronÃ³metro. 10 cartas.",
+      "description": "Practica con calma. Sin cronómetro. 20 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 25
@@ -12262,13 +12288,13 @@
       "id": 682,
       "phase": 14,
       "theme": "graveyard",
-      "pairs": 5,
+      "pairs": 11,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "medium",
-      "description": "Las cartas cambian de valor. Sin cronÃ³metro. 10 cartas.",
+      "description": "Más cartas. Sin cronómetro. 22 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 50
@@ -12280,13 +12306,13 @@
       "id": 683,
       "phase": 14,
       "theme": "graveyard",
-      "pairs": 5,
+      "pairs": 11,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "easy",
-      "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 10 cartas.",
+      "description": "Nivel básico. Sin cronómetro. 22 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 25
@@ -12298,13 +12324,13 @@
       "id": 684,
       "phase": 14,
       "theme": "graveyard",
-      "pairs": 8,
+      "pairs": 11,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "hard",
-      "description": "La oscuridad cubre el tablero poco a poco. CronÃ³metro: 78s. 16 cartas.",
+      "description": "Juego tranquilo. Sin cronómetro. 22 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 120
@@ -12316,13 +12342,13 @@
       "id": 685,
       "phase": 14,
       "theme": "graveyard",
-      "pairs": 8,
+      "pairs": 10,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "hard",
-      "description": "Las cartas cambian de valor. CronÃ³metro: 75s. 16 cartas.",
+      "description": "Nivel clásico. Sin cronómetro. 20 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 120
@@ -12334,13 +12360,13 @@
       "id": 686,
       "phase": 14,
       "theme": "graveyard",
-      "pairs": 10,
+      "pairs": 11,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "medium",
-      "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 20 cartas.",
+      "description": "Practica con calma. Sin cronómetro. 22 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 100
@@ -12352,13 +12378,13 @@
       "id": 687,
       "phase": 14,
       "theme": "graveyard",
-      "pairs": 3,
+      "pairs": 10,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "medium",
-      "description": "Las cartas cambian de valor. Sin cronÃ³metro. 6 cartas.",
+      "description": "Más cartas. Sin cronómetro. 20 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 30
@@ -12370,13 +12396,13 @@
       "id": 688,
       "phase": 14,
       "theme": "graveyard",
-      "pairs": 6,
+      "pairs": 11,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "medium",
-      "description": "Cartas que se congelan temporalmente. Sin cronÃ³metro. 12 cartas.",
+      "description": "Nivel básico. Sin cronómetro. 22 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 60
@@ -12388,13 +12414,13 @@
       "id": 689,
       "phase": 14,
       "theme": "graveyard",
-      "pairs": 7,
+      "pairs": 11,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "medium",
-      "description": "Cartas fantasma aparecen y desaparecen. CronÃ³metro: 78s. 14 cartas.",
+      "description": "Juego tranquilo. Sin cronómetro. 22 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 70
@@ -12406,13 +12432,13 @@
       "id": 690,
       "phase": 14,
       "theme": "graveyard",
-      "pairs": 8,
+      "pairs": 12,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "medium",
-      "description": "Niebla ligera: observa con atenciÃ³n. CronÃ³metro: 75s. 16 cartas.",
+      "description": "Nivel clásico. Sin cronómetro. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 80
@@ -12424,13 +12450,13 @@
       "id": 691,
       "phase": 14,
       "theme": "graveyard",
-      "pairs": 7,
+      "pairs": 11,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "medium",
-      "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 14 cartas.",
+      "description": "Practica con calma. Sin cronómetro. 22 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 70
@@ -12442,13 +12468,13 @@
       "id": 692,
       "phase": 14,
       "theme": "graveyard",
-      "pairs": 7,
+      "pairs": 10,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "hard",
-      "description": "Cartas que se congelan temporalmente. CronÃ³metro: 75s. 14 cartas.",
+      "description": "Más cartas. Sin cronómetro. 20 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 105
@@ -12460,13 +12486,13 @@
       "id": 693,
       "phase": 14,
       "theme": "graveyard",
-      "pairs": 3,
+      "pairs": 12,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "easy",
-      "description": "Niebla ligera: observa con atenciÃ³n. Sin cronÃ³metro. 6 cartas.",
+      "description": "Nivel básico. Sin cronómetro. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 15
@@ -12478,13 +12504,13 @@
       "id": 694,
       "phase": 14,
       "theme": "graveyard",
-      "pairs": 8,
+      "pairs": 12,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "hard",
-      "description": "Las cartas cambian de valor. CronÃ³metro: 79s. 16 cartas.",
+      "description": "Juego tranquilo. Sin cronómetro. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 120
@@ -12496,13 +12522,13 @@
       "id": 695,
       "phase": 14,
       "theme": "graveyard",
-      "pairs": 11,
+      "pairs": 12,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "hard",
-      "description": "Cartas fantasma aparecen y desaparecen. CronÃ³metro: 107s. 22 cartas.",
+      "description": "Nivel clásico. Sin cronómetro. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 165
@@ -12520,7 +12546,7 @@
         "basic"
       ],
       "difficulty": "hard",
-      "description": "algunas cartas explotan si fallas. CronÃ³metro: 98s. 24 cartas.",
+      "description": "Practica con calma. Sin cronómetro. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 180
@@ -12532,13 +12558,13 @@
       "id": 697,
       "phase": 14,
       "theme": "graveyard",
-      "pairs": 3,
+      "pairs": 10,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "medium",
-      "description": "Cartas que se congelan temporalmente. Sin cronÃ³metro. 6 cartas.",
+      "description": "Más cartas. Sin cronómetro. 20 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 30
@@ -12550,13 +12576,13 @@
       "id": 698,
       "phase": 14,
       "theme": "graveyard",
-      "pairs": 8,
+      "pairs": 10,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "medium",
-      "description": "Evita bombas: piensa rÃ¡pido. Sin cronÃ³metro. 16 cartas.",
+      "description": "Nivel básico. Sin cronómetro. 20 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 80
@@ -12568,13 +12594,13 @@
       "id": 699,
       "phase": 14,
       "theme": "graveyard",
-      "pairs": 8,
+      "pairs": 11,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "medium",
-      "description": "El tablero rota de vez en cuando. Sin cronÃ³metro. 16 cartas.",
+      "description": "Juego tranquilo. Sin cronómetro. 22 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 80
@@ -12589,10 +12615,11 @@
       "pairs": 12,
       "timeSec": 0,
       "mechanics": [
-        "basic"
+        "basic",
+        "fog"
       ],
       "difficulty": "hard",
-      "description": "Boss: 24 cartas, frozen + chameleon, crono 102s.",
+      "description": "Nivel especial. Sin cronómetro. 24 cartas.",
       "isBoss": true,
       "rewards": {
         "coins": 180
@@ -12604,13 +12631,13 @@
       "id": 701,
       "phase": 15,
       "theme": "palace",
-      "pairs": 8,
+      "pairs": 11,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "medium",
-      "description": "El tablero rota de vez en cuando. Sin cronÃ³metro. 16 cartas.",
+      "description": "Practica con calma. Sin cronómetro. 22 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 80
@@ -12628,7 +12655,7 @@
         "basic"
       ],
       "difficulty": "hard",
-      "description": "Cartas fantasma aparecen y desaparecen. CronÃ³metro: 94s. 20 cartas.",
+      "description": "Más cartas. Sin cronómetro. 20 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 150
@@ -12640,13 +12667,13 @@
       "id": 703,
       "phase": 15,
       "theme": "palace",
-      "pairs": 8,
+      "pairs": 11,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "hard",
-      "description": "La oscuridad cubre el tablero poco a poco. CronÃ³metro: 84s. 16 cartas.",
+      "description": "Nivel básico. Sin cronómetro. 22 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 120
@@ -12658,13 +12685,13 @@
       "id": 704,
       "phase": 15,
       "theme": "palace",
-      "pairs": 8,
+      "pairs": 11,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "hard",
-      "description": "El tablero rota de vez en cuando. CronÃ³metro: 82s. 16 cartas.",
+      "description": "Juego tranquilo. Sin cronómetro. 22 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 120
@@ -12676,13 +12703,13 @@
       "id": 705,
       "phase": 15,
       "theme": "palace",
-      "pairs": 12,
+      "pairs": 10,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "hard",
-      "description": "Cartas que se congelan temporalmente. Sin cronÃ³metro. 24 cartas.",
+      "description": "Nivel clásico. Sin cronómetro. 20 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 180
@@ -12694,13 +12721,13 @@
       "id": 706,
       "phase": 15,
       "theme": "palace",
-      "pairs": 10,
+      "pairs": 12,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "hard",
-      "description": "Niebla ligera: observa con atenciÃ³n. CronÃ³metro: 100s. 20 cartas.",
+      "description": "Practica con calma. Sin cronómetro. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 150
@@ -12712,13 +12739,13 @@
       "id": 707,
       "phase": 15,
       "theme": "palace",
-      "pairs": 8,
+      "pairs": 11,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "hard",
-      "description": "La oscuridad cubre el tablero poco a poco. CronÃ³metro: 86s. 16 cartas.",
+      "description": "Más cartas. Sin cronómetro. 22 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 120
@@ -12730,31 +12757,31 @@
       "id": 708,
       "phase": 15,
       "theme": "palace",
-      "pairs": 6,
+      "pairs": 11,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "easy",
-      "description": "Encuentra trÃ­os idÃ©nticos. Sin cronÃ³metro. 12 cartas.",
+      "description": "Nivel básico. Sin cronómetro. 22 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 30
       },
       "seed": 1708060,
-      "setSize": 3
+      "setSize": 2
     },
     {
       "id": 709,
       "phase": 15,
       "theme": "palace",
-      "pairs": 8,
+      "pairs": 10,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "hard",
-      "description": "La oscuridad cubre el tablero poco a poco. CronÃ³metro: 73s. 16 cartas.",
+      "description": "Juego tranquilo. Sin cronómetro. 20 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 120
@@ -12766,13 +12793,13 @@
       "id": 710,
       "phase": 15,
       "theme": "palace",
-      "pairs": 6,
+      "pairs": 12,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "medium",
-      "description": "Evita bombas: piensa rÃ¡pido. CronÃ³metro: 57s. 12 cartas.",
+      "description": "Nivel clásico. Sin cronómetro. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 60
@@ -12784,13 +12811,13 @@
       "id": 711,
       "phase": 15,
       "theme": "palace",
-      "pairs": 9,
+      "pairs": 11,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "medium",
-      "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 18 cartas.",
+      "description": "Practica con calma. Sin cronómetro. 22 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 90
@@ -12802,13 +12829,13 @@
       "id": 712,
       "phase": 15,
       "theme": "palace",
-      "pairs": 5,
+      "pairs": 12,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "medium",
-      "description": "Cartas que se congelan temporalmente. Sin cronÃ³metro. 10 cartas.",
+      "description": "Más cartas. Sin cronómetro. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 50
@@ -12826,7 +12853,7 @@
         "basic"
       ],
       "difficulty": "hard",
-      "description": "Evita bombas: piensa rÃ¡pido. Sin cronÃ³metro. 24 cartas.",
+      "description": "Nivel básico. Sin cronómetro. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 180
@@ -12838,13 +12865,13 @@
       "id": 714,
       "phase": 15,
       "theme": "palace",
-      "pairs": 5,
+      "pairs": 11,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "easy",
-      "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 10 cartas.",
+      "description": "Juego tranquilo. Sin cronómetro. 22 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 25
@@ -12856,13 +12883,13 @@
       "id": 715,
       "phase": 15,
       "theme": "palace",
-      "pairs": 11,
+      "pairs": 10,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "medium",
-      "description": "Cartas fantasma aparecen y desaparecen. Sin cronÃ³metro. 22 cartas.",
+      "description": "Nivel clásico. Sin cronómetro. 20 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 110
@@ -12874,13 +12901,13 @@
       "id": 716,
       "phase": 15,
       "theme": "palace",
-      "pairs": 9,
+      "pairs": 11,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "hard",
-      "description": "Las cartas cambian de valor. Sin cronÃ³metro. 18 cartas.",
+      "description": "Practica con calma. Sin cronómetro. 22 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 135
@@ -12892,13 +12919,13 @@
       "id": 717,
       "phase": 15,
       "theme": "palace",
-      "pairs": 7,
+      "pairs": 12,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "medium",
-      "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 14 cartas.",
+      "description": "Más cartas. Sin cronómetro. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 70
@@ -12910,13 +12937,13 @@
       "id": 718,
       "phase": 15,
       "theme": "palace",
-      "pairs": 10,
+      "pairs": 12,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "hard",
-      "description": "algunas cartas explotan si fallas. CronÃ³metro: 102s. 20 cartas.",
+      "description": "Nivel básico. Sin cronómetro. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 150
@@ -12928,13 +12955,13 @@
       "id": 719,
       "phase": 15,
       "theme": "palace",
-      "pairs": 2,
+      "pairs": 11,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "easy",
-      "description": "Niebla ligera: observa con atenciÃ³n. Sin cronÃ³metro. 4 cartas.",
+      "description": "Juego tranquilo. Sin cronómetro. 22 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 10
@@ -12946,13 +12973,13 @@
       "id": 720,
       "phase": 15,
       "theme": "palace",
-      "pairs": 8,
+      "pairs": 12,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "medium",
-      "description": "La oscuridad cubre el tablero poco a poco. Sin cronÃ³metro. 16 cartas.",
+      "description": "Nivel clásico. Sin cronómetro. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 80
@@ -12970,7 +12997,7 @@
         "basic"
       ],
       "difficulty": "hard",
-      "description": "Niebla ligera: observa con atenciÃ³n. CronÃ³metro: 95s. 20 cartas.",
+      "description": "Practica con calma. Sin cronómetro. 20 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 150
@@ -12982,13 +13009,13 @@
       "id": 722,
       "phase": 15,
       "theme": "palace",
-      "pairs": 7,
+      "pairs": 11,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "medium",
-      "description": "Nivel clÃ¡sico sin trucos. CronÃ³metro: 74s. 14 cartas.",
+      "description": "Más cartas. Sin cronómetro. 22 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 70
@@ -13000,13 +13027,13 @@
       "id": 723,
       "phase": 15,
       "theme": "palace",
-      "pairs": 7,
+      "pairs": 10,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "medium",
-      "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 14 cartas.",
+      "description": "Nivel básico. Sin cronómetro. 20 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 70
@@ -13024,7 +13051,7 @@
         "basic"
       ],
       "difficulty": "hard",
-      "description": "La oscuridad cubre el tablero poco a poco. Sin cronÃ³metro. 20 cartas.",
+      "description": "Juego tranquilo. Sin cronómetro. 20 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 150
@@ -13036,31 +13063,32 @@
       "id": 725,
       "phase": 15,
       "theme": "palace",
-      "pairs": 12,
+      "pairs": 6,
       "timeSec": 0,
       "mechanics": [
-        "basic"
+        "basic",
+        "trio"
       ],
       "difficulty": "medium",
-      "description": "juega normalmente. Sin cronÃ³metro. 24 cartas.",
+      "description": "Nivel clásico. Sin cronómetro. 18 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 120
       },
       "seed": 1725120,
-      "setSize": 2
+      "setSize": 3
     },
     {
       "id": 726,
       "phase": 15,
       "theme": "palace",
-      "pairs": 8,
+      "pairs": 11,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "hard",
-      "description": "Evita bombas: piensa rÃ¡pido. CronÃ³metro: 83s. 16 cartas.",
+      "description": "Practica con calma. Sin cronómetro. 22 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 120
@@ -13072,31 +13100,31 @@
       "id": 727,
       "phase": 15,
       "theme": "palace",
-      "pairs": 6,
+      "pairs": 12,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "easy",
-      "description": "Encuentra trÃ­os idÃ©nticos. Sin cronÃ³metro. 12 cartas.",
+      "description": "Más cartas. Sin cronómetro. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 30
       },
       "seed": 1727060,
-      "setSize": 3
+      "setSize": 2
     },
     {
       "id": 728,
       "phase": 15,
       "theme": "palace",
-      "pairs": 8,
+      "pairs": 12,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "medium",
-      "description": "Nivel clÃ¡sico sin trucos. CronÃ³metro: 73s. 16 cartas.",
+      "description": "Nivel básico. Sin cronómetro. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 80
@@ -13108,13 +13136,13 @@
       "id": 729,
       "phase": 15,
       "theme": "palace",
-      "pairs": 8,
+      "pairs": 12,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "medium",
-      "description": "juega normalmente. Sin cronÃ³metro. 16 cartas.",
+      "description": "Juego tranquilo. Sin cronómetro. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 80
@@ -13126,13 +13154,13 @@
       "id": 730,
       "phase": 15,
       "theme": "palace",
-      "pairs": 10,
+      "pairs": 12,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "hard",
-      "description": "La oscuridad cubre el tablero poco a poco. CronÃ³metro: 95s. 20 cartas.",
+      "description": "Nivel clásico. Sin cronómetro. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 150
@@ -13144,13 +13172,13 @@
       "id": 731,
       "phase": 15,
       "theme": "palace",
-      "pairs": 6,
+      "pairs": 10,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "medium",
-      "description": "El tablero rota de vez en cuando. Sin cronÃ³metro. 12 cartas.",
+      "description": "Practica con calma. Sin cronómetro. 20 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 60
@@ -13162,13 +13190,13 @@
       "id": 732,
       "phase": 15,
       "theme": "palace",
-      "pairs": 9,
+      "pairs": 12,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "medium",
-      "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 18 cartas.",
+      "description": "Más cartas. Sin cronómetro. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 90
@@ -13180,13 +13208,13 @@
       "id": 733,
       "phase": 15,
       "theme": "palace",
-      "pairs": 2,
+      "pairs": 12,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "medium",
-      "description": "El tablero rota de vez en cuando. Sin cronÃ³metro. 4 cartas.",
+      "description": "Nivel básico. Sin cronómetro. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 20
@@ -13198,13 +13226,13 @@
       "id": 734,
       "phase": 15,
       "theme": "palace",
-      "pairs": 8,
+      "pairs": 11,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "hard",
-      "description": "Cartas que se congelan temporalmente. CronÃ³metro: 84s. 16 cartas.",
+      "description": "Juego tranquilo. Sin cronómetro. 22 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 120
@@ -13216,31 +13244,31 @@
       "id": 735,
       "phase": 15,
       "theme": "palace",
-      "pairs": 9,
+      "pairs": 11,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "hard",
-      "description": "Encuentra trÃ­os idÃ©nticos. Sin cronÃ³metro. 18 cartas.",
+      "description": "Nivel clásico. Sin cronómetro. 22 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 135
       },
       "seed": 1735090,
-      "setSize": 3
+      "setSize": 2
     },
     {
       "id": 736,
       "phase": 15,
       "theme": "palace",
-      "pairs": 2,
+      "pairs": 11,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "easy",
-      "description": "Niebla ligera: observa con atenciÃ³n. Sin cronÃ³metro. 4 cartas.",
+      "description": "Practica con calma. Sin cronómetro. 22 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 10
@@ -13252,13 +13280,13 @@
       "id": 737,
       "phase": 15,
       "theme": "palace",
-      "pairs": 8,
+      "pairs": 12,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "medium",
-      "description": "juega normalmente. Sin cronÃ³metro. 16 cartas.",
+      "description": "Más cartas. Sin cronómetro. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 80
@@ -13270,13 +13298,13 @@
       "id": 738,
       "phase": 15,
       "theme": "palace",
-      "pairs": 7,
+      "pairs": 12,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "medium",
-      "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 14 cartas.",
+      "description": "Nivel básico. Sin cronómetro. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 70
@@ -13288,31 +13316,31 @@
       "id": 739,
       "phase": 15,
       "theme": "palace",
-      "pairs": 3,
+      "pairs": 11,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "easy",
-      "description": "Encuentra trÃ­os idÃ©nticos. Sin cronÃ³metro. 6 cartas.",
+      "description": "Juego tranquilo. Sin cronómetro. 22 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 15
       },
       "seed": 1739030,
-      "setSize": 3
+      "setSize": 2
     },
     {
       "id": 740,
       "phase": 15,
       "theme": "palace",
-      "pairs": 8,
+      "pairs": 10,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "medium",
-      "description": "Cartas que se congelan temporalmente. Sin cronÃ³metro. 16 cartas.",
+      "description": "Nivel clásico. Sin cronómetro. 20 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 80
@@ -13324,13 +13352,13 @@
       "id": 741,
       "phase": 15,
       "theme": "palace",
-      "pairs": 8,
+      "pairs": 12,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "hard",
-      "description": "La oscuridad cubre el tablero poco a poco. CronÃ³metro: 76s. 16 cartas.",
+      "description": "Practica con calma. Sin cronómetro. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 120
@@ -13342,13 +13370,13 @@
       "id": 742,
       "phase": 15,
       "theme": "palace",
-      "pairs": 8,
+      "pairs": 11,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "medium",
-      "description": "las cartas estÃ¡n parcialmente ocultas. CronÃ³metro: 74s. 16 cartas.",
+      "description": "Más cartas. Sin cronómetro. 22 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 80
@@ -13360,13 +13388,13 @@
       "id": 743,
       "phase": 15,
       "theme": "palace",
-      "pairs": 6,
+      "pairs": 12,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "easy",
-      "description": "Cartas fantasma aparecen y desaparecen. Sin cronÃ³metro. 12 cartas.",
+      "description": "Nivel básico. Sin cronómetro. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 30
@@ -13378,13 +13406,13 @@
       "id": 744,
       "phase": 15,
       "theme": "palace",
-      "pairs": 4,
+      "pairs": 12,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "medium",
-      "description": "Cartas que se congelan temporalmente. Sin cronÃ³metro. 8 cartas.",
+      "description": "Juego tranquilo. Sin cronómetro. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 40
@@ -13396,13 +13424,13 @@
       "id": 745,
       "phase": 15,
       "theme": "palace",
-      "pairs": 4,
+      "pairs": 12,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "medium",
-      "description": "Evita bombas: piensa rÃ¡pido. Sin cronÃ³metro. 8 cartas.",
+      "description": "Nivel clásico. Sin cronómetro. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 40
@@ -13414,13 +13442,13 @@
       "id": 746,
       "phase": 15,
       "theme": "palace",
-      "pairs": 9,
+      "pairs": 12,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "hard",
-      "description": "El tablero rota de vez en cuando. Sin cronÃ³metro. 18 cartas.",
+      "description": "Practica con calma. Sin cronómetro. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 135
@@ -13438,25 +13466,25 @@
         "basic"
       ],
       "difficulty": "hard",
-      "description": "Encuentra trÃ­os idÃ©nticos. Sin cronÃ³metro. 24 cartas.",
+      "description": "Más cartas. Sin cronómetro. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 180
       },
       "seed": 1747120,
-      "setSize": 3
+      "setSize": 2
     },
     {
       "id": 748,
       "phase": 15,
       "theme": "palace",
-      "pairs": 7,
+      "pairs": 11,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "medium",
-      "description": "El tablero rota de vez en cuando. Sin cronÃ³metro. 14 cartas.",
+      "description": "Nivel básico. Sin cronómetro. 22 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 70
@@ -13468,13 +13496,13 @@
       "id": 749,
       "phase": 15,
       "theme": "palace",
-      "pairs": 9,
+      "pairs": 12,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "hard",
-      "description": "Las cartas cambian de valor. CronÃ³metro: 84s. 18 cartas.",
+      "description": "Juego tranquilo. Sin cronómetro. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 135
@@ -13489,10 +13517,11 @@
       "pairs": 12,
       "timeSec": 0,
       "mechanics": [
-        "basic"
+        "basic",
+        "rotation"
       ],
       "difficulty": "hard",
-      "description": "Boss: 24 cartas, bomb + fog, crono 113s.",
+      "description": "Nivel especial. Sin cronómetro. 24 cartas.",
       "isBoss": true,
       "rewards": {
         "coins": 180
@@ -13504,13 +13533,13 @@
       "id": 751,
       "phase": 16,
       "theme": "mine",
-      "pairs": 8,
+      "pairs": 11,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "medium",
-      "description": "Nivel clÃ¡sico sin trucos. CronÃ³metro: 76s. 16 cartas.",
+      "description": "Practica con calma. Sin cronómetro. 22 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 80
@@ -13522,13 +13551,13 @@
       "id": 752,
       "phase": 16,
       "theme": "mine",
-      "pairs": 12,
+      "pairs": 11,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "hard",
-      "description": "La oscuridad cubre el tablero poco a poco. Sin cronÃ³metro. 24 cartas.",
+      "description": "Más cartas. Sin cronómetro. 22 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 180
@@ -13540,13 +13569,13 @@
       "id": 753,
       "phase": 16,
       "theme": "mine",
-      "pairs": 2,
+      "pairs": 10,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "easy",
-      "description": "Niebla ligera: observa con atenciÃ³n. Sin cronÃ³metro. 4 cartas.",
+      "description": "Nivel básico. Sin cronómetro. 20 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 10
@@ -13558,13 +13587,13 @@
       "id": 754,
       "phase": 16,
       "theme": "mine",
-      "pairs": 7,
+      "pairs": 12,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "medium",
-      "description": "Nivel clÃ¡sico sin trucos. CronÃ³metro: 69s. 14 cartas.",
+      "description": "Juego tranquilo. Sin cronómetro. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 70
@@ -13576,13 +13605,13 @@
       "id": 755,
       "phase": 16,
       "theme": "mine",
-      "pairs": 8,
+      "pairs": 10,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "medium",
-      "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 16 cartas.",
+      "description": "Nivel clásico. Sin cronómetro. 20 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 80
@@ -13594,13 +13623,13 @@
       "id": 756,
       "phase": 16,
       "theme": "mine",
-      "pairs": 8,
+      "pairs": 12,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "hard",
-      "description": "La oscuridad cubre el tablero poco a poco. CronÃ³metro: 88s. 16 cartas.",
+      "description": "Practica con calma. Sin cronómetro. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 120
@@ -13612,13 +13641,13 @@
       "id": 757,
       "phase": 16,
       "theme": "mine",
-      "pairs": 3,
+      "pairs": 11,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "medium",
-      "description": "El tablero rota de vez en cuando. Sin cronÃ³metro. 6 cartas.",
+      "description": "Más cartas. Sin cronómetro. 22 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 30
@@ -13630,13 +13659,13 @@
       "id": 758,
       "phase": 16,
       "theme": "mine",
-      "pairs": 6,
+      "pairs": 11,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "medium",
-      "description": "Cartas que se congelan temporalmente. Sin cronÃ³metro. 12 cartas.",
+      "description": "Nivel básico. Sin cronómetro. 22 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 60
@@ -13648,13 +13677,13 @@
       "id": 759,
       "phase": 16,
       "theme": "mine",
-      "pairs": 8,
+      "pairs": 11,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "medium",
-      "description": "Niebla ligera: observa con atenciÃ³n. CronÃ³metro: 80s. 16 cartas.",
+      "description": "Juego tranquilo. Sin cronómetro. 22 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 80
@@ -13666,13 +13695,13 @@
       "id": 760,
       "phase": 16,
       "theme": "mine",
-      "pairs": 6,
+      "pairs": 10,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "easy",
-      "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 12 cartas.",
+      "description": "Nivel clásico. Sin cronómetro. 20 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 30
@@ -13684,13 +13713,13 @@
       "id": 761,
       "phase": 16,
       "theme": "mine",
-      "pairs": 4,
+      "pairs": 12,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "medium",
-      "description": "Cartas que se congelan temporalmente. Sin cronÃ³metro. 8 cartas.",
+      "description": "Practica con calma. Sin cronómetro. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 40
@@ -13702,13 +13731,13 @@
       "id": 762,
       "phase": 16,
       "theme": "mine",
-      "pairs": 8,
+      "pairs": 12,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "medium",
-      "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 16 cartas.",
+      "description": "Más cartas. Sin cronómetro. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 80
@@ -13720,13 +13749,13 @@
       "id": 763,
       "phase": 16,
       "theme": "mine",
-      "pairs": 8,
+      "pairs": 10,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "medium",
-      "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 16 cartas.",
+      "description": "Nivel básico. Sin cronómetro. 20 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 80
@@ -13738,13 +13767,13 @@
       "id": 764,
       "phase": 16,
       "theme": "mine",
-      "pairs": 7,
+      "pairs": 12,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "medium",
-      "description": "Las cartas cambian de valor. Sin cronÃ³metro. 14 cartas.",
+      "description": "Juego tranquilo. Sin cronómetro. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 70
@@ -13756,13 +13785,13 @@
       "id": 765,
       "phase": 16,
       "theme": "mine",
-      "pairs": 9,
+      "pairs": 12,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "medium",
-      "description": "Niebla ligera: observa con atenciÃ³n. Sin cronÃ³metro. 18 cartas.",
+      "description": "Nivel clásico. Sin cronómetro. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 90
@@ -13780,7 +13809,7 @@
         "basic"
       ],
       "difficulty": "medium",
-      "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 24 cartas.",
+      "description": "Practica con calma. Sin cronómetro. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 120
@@ -13792,13 +13821,13 @@
       "id": 767,
       "phase": 16,
       "theme": "mine",
-      "pairs": 8,
+      "pairs": 10,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "medium",
-      "description": "La oscuridad cubre el tablero poco a poco. Sin cronÃ³metro. 16 cartas.",
+      "description": "Más cartas. Sin cronómetro. 20 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 80
@@ -13816,7 +13845,7 @@
         "basic"
       ],
       "difficulty": "hard",
-      "description": "El tablero rota de vez en cuando. CronÃ³metro: 108s. 24 cartas.",
+      "description": "Nivel básico. Sin cronómetro. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 180
@@ -13828,13 +13857,13 @@
       "id": 769,
       "phase": 16,
       "theme": "mine",
-      "pairs": 8,
+      "pairs": 12,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "medium",
-      "description": "Niebla ligera: observa con atenciÃ³n. CronÃ³metro: 75s. 16 cartas.",
+      "description": "Juego tranquilo. Sin cronómetro. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 80
@@ -13846,13 +13875,13 @@
       "id": 770,
       "phase": 16,
       "theme": "mine",
-      "pairs": 8,
+      "pairs": 10,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "medium",
-      "description": "juega normalmente. Sin cronÃ³metro. 16 cartas.",
+      "description": "Nivel clásico. Sin cronómetro. 20 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 80
@@ -13864,13 +13893,13 @@
       "id": 771,
       "phase": 16,
       "theme": "mine",
-      "pairs": 6,
+      "pairs": 10,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "medium",
-      "description": "El tablero rota de vez en cuando. CronÃ³metro: 55s. 12 cartas.",
+      "description": "Practica con calma. Sin cronómetro. 20 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 60
@@ -13882,19 +13911,19 @@
       "id": 772,
       "phase": 16,
       "theme": "mine",
-      "pairs": 6,
+      "pairs": 12,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "easy",
-      "description": "Encuentra trÃ­os idÃ©nticos. Sin cronÃ³metro. 12 cartas.",
+      "description": "Más cartas. Sin cronómetro. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 30
       },
       "seed": 1772060,
-      "setSize": 3
+      "setSize": 2
     },
     {
       "id": 773,
@@ -13906,7 +13935,7 @@
         "basic"
       ],
       "difficulty": "hard",
-      "description": "Niebla ligera: observa con atenciÃ³n. CronÃ³metro: 103s. 20 cartas.",
+      "description": "Nivel básico. Sin cronómetro. 20 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 150
@@ -13918,13 +13947,13 @@
       "id": 774,
       "phase": 16,
       "theme": "mine",
-      "pairs": 4,
+      "pairs": 10,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "medium",
-      "description": "Cartas que se congelan temporalmente. Sin cronÃ³metro. 8 cartas.",
+      "description": "Juego tranquilo. Sin cronómetro. 20 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 40
@@ -13936,31 +13965,32 @@
       "id": 775,
       "phase": 16,
       "theme": "mine",
-      "pairs": 3,
+      "pairs": 8,
       "timeSec": 0,
       "mechanics": [
-        "basic"
+        "basic",
+        "trio"
       ],
       "difficulty": "easy",
-      "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 6 cartas.",
+      "description": "Nivel clásico. Sin cronómetro. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 15
       },
       "seed": 1775030,
-      "setSize": 2
+      "setSize": 3
     },
     {
       "id": 776,
       "phase": 16,
       "theme": "mine",
-      "pairs": 8,
+      "pairs": 11,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "medium",
-      "description": "Nivel clÃ¡sico sin trucos. CronÃ³metro: 73s. 16 cartas.",
+      "description": "Practica con calma. Sin cronómetro. 22 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 80
@@ -13972,13 +14002,13 @@
       "id": 777,
       "phase": 16,
       "theme": "mine",
-      "pairs": 10,
+      "pairs": 11,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "hard",
-      "description": "La oscuridad cubre el tablero poco a poco. Sin cronÃ³metro. 20 cartas.",
+      "description": "Más cartas. Sin cronómetro. 22 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 150
@@ -13990,13 +14020,13 @@
       "id": 778,
       "phase": 16,
       "theme": "mine",
-      "pairs": 8,
+      "pairs": 11,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "hard",
-      "description": "Cartas que se congelan temporalmente. CronÃ³metro: 78s. 16 cartas.",
+      "description": "Nivel básico. Sin cronómetro. 22 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 120
@@ -14008,13 +14038,13 @@
       "id": 779,
       "phase": 16,
       "theme": "mine",
-      "pairs": 8,
+      "pairs": 12,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "medium",
-      "description": "juega normalmente. Sin cronÃ³metro. 16 cartas.",
+      "description": "Juego tranquilo. Sin cronómetro. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 80
@@ -14026,13 +14056,13 @@
       "id": 780,
       "phase": 16,
       "theme": "mine",
-      "pairs": 8,
+      "pairs": 12,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "medium",
-      "description": "La oscuridad cubre el tablero poco a poco. Sin cronÃ³metro. 16 cartas.",
+      "description": "Nivel clásico. Sin cronómetro. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 80
@@ -14044,13 +14074,13 @@
       "id": 781,
       "phase": 16,
       "theme": "mine",
-      "pairs": 6,
+      "pairs": 12,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "medium",
-      "description": "Evita bombas: piensa rÃ¡pido. Sin cronÃ³metro. 12 cartas.",
+      "description": "Practica con calma. Sin cronómetro. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 60
@@ -14062,13 +14092,13 @@
       "id": 782,
       "phase": 16,
       "theme": "mine",
-      "pairs": 8,
+      "pairs": 10,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "hard",
-      "description": "La oscuridad cubre el tablero poco a poco. CronÃ³metro: 87s. 16 cartas.",
+      "description": "Más cartas. Sin cronómetro. 20 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 120
@@ -14080,13 +14110,13 @@
       "id": 783,
       "phase": 16,
       "theme": "mine",
-      "pairs": 7,
+      "pairs": 11,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "medium",
-      "description": "Cartas fantasma aparecen y desaparecen. Sin cronÃ³metro. 14 cartas.",
+      "description": "Nivel básico. Sin cronómetro. 22 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 70
@@ -14098,13 +14128,13 @@
       "id": 784,
       "phase": 16,
       "theme": "mine",
-      "pairs": 7,
+      "pairs": 11,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "medium",
-      "description": "Nivel clÃ¡sico sin trucos. CronÃ³metro: 63s. 14 cartas.",
+      "description": "Juego tranquilo. Sin cronómetro. 22 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 70
@@ -14116,13 +14146,13 @@
       "id": 785,
       "phase": 16,
       "theme": "mine",
-      "pairs": 12,
+      "pairs": 11,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "hard",
-      "description": "Las cartas cambian de valor. CronÃ³metro: 104s. 24 cartas.",
+      "description": "Nivel clásico. Sin cronómetro. 22 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 180
@@ -14134,31 +14164,31 @@
       "id": 786,
       "phase": 16,
       "theme": "mine",
-      "pairs": 9,
+      "pairs": 10,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "hard",
-      "description": "Encuentra trÃ­os idÃ©nticos. Sin cronÃ³metro. 18 cartas.",
+      "description": "Practica con calma. Sin cronómetro. 20 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 135
       },
       "seed": 1786090,
-      "setSize": 3
+      "setSize": 2
     },
     {
       "id": 787,
       "phase": 16,
       "theme": "mine",
-      "pairs": 5,
+      "pairs": 10,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "medium",
-      "description": "Cartas que se congelan temporalmente. CronÃ³metro: 45s. 10 cartas.",
+      "description": "Más cartas. Sin cronómetro. 20 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 50
@@ -14170,13 +14200,13 @@
       "id": 788,
       "phase": 16,
       "theme": "mine",
-      "pairs": 4,
+      "pairs": 11,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "easy",
-      "description": "Cartas fantasma aparecen y desaparecen. Sin cronÃ³metro. 8 cartas.",
+      "description": "Nivel básico. Sin cronómetro. 22 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 20
@@ -14188,13 +14218,13 @@
       "id": 789,
       "phase": 16,
       "theme": "mine",
-      "pairs": 6,
+      "pairs": 10,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "medium",
-      "description": "Evita bombas: piensa rÃ¡pido. Sin cronÃ³metro. 12 cartas.",
+      "description": "Juego tranquilo. Sin cronómetro. 20 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 60
@@ -14206,13 +14236,13 @@
       "id": 790,
       "phase": 16,
       "theme": "mine",
-      "pairs": 9,
+      "pairs": 10,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "medium",
-      "description": "Cartas fantasma aparecen y desaparecen. Sin cronÃ³metro. 18 cartas.",
+      "description": "Nivel clásico. Sin cronómetro. 20 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 90
@@ -14224,13 +14254,13 @@
       "id": 791,
       "phase": 16,
       "theme": "mine",
-      "pairs": 7,
+      "pairs": 11,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "medium",
-      "description": "Evita bombas: piensa rÃ¡pido. Sin cronÃ³metro. 14 cartas.",
+      "description": "Practica con calma. Sin cronómetro. 22 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 70
@@ -14242,13 +14272,13 @@
       "id": 792,
       "phase": 16,
       "theme": "mine",
-      "pairs": 6,
+      "pairs": 11,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "medium",
-      "description": "Niebla ligera: observa con atenciÃ³n. CronÃ³metro: 68s. 12 cartas.",
+      "description": "Más cartas. Sin cronómetro. 22 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 60
@@ -14260,13 +14290,13 @@
       "id": 793,
       "phase": 16,
       "theme": "mine",
-      "pairs": 12,
+      "pairs": 10,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "hard",
-      "description": "La oscuridad cubre el tablero poco a poco. CronÃ³metro: 110s. 24 cartas.",
+      "description": "Nivel básico. Sin cronómetro. 20 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 180
@@ -14278,13 +14308,13 @@
       "id": 794,
       "phase": 16,
       "theme": "mine",
-      "pairs": 6,
+      "pairs": 10,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "medium",
-      "description": "Cartas fantasma aparecen y desaparecen. CronÃ³metro: 59s. 12 cartas.",
+      "description": "Juego tranquilo. Sin cronómetro. 20 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 60
@@ -14296,13 +14326,13 @@
       "id": 795,
       "phase": 16,
       "theme": "mine",
-      "pairs": 3,
+      "pairs": 10,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "medium",
-      "description": "Evita bombas: piensa rÃ¡pido. Sin cronÃ³metro. 6 cartas.",
+      "description": "Nivel clásico. Sin cronómetro. 20 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 30
@@ -14314,13 +14344,13 @@
       "id": 796,
       "phase": 16,
       "theme": "mine",
-      "pairs": 4,
+      "pairs": 10,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "medium",
-      "description": "El tablero rota de vez en cuando. Sin cronÃ³metro. 8 cartas.",
+      "description": "Practica con calma. Sin cronómetro. 20 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 40
@@ -14332,13 +14362,13 @@
       "id": 797,
       "phase": 16,
       "theme": "mine",
-      "pairs": 12,
+      "pairs": 11,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "medium",
-      "description": "Niebla ligera: observa con atenciÃ³n. Sin cronÃ³metro. 24 cartas.",
+      "description": "Más cartas. Sin cronómetro. 22 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 120
@@ -14350,31 +14380,31 @@
       "id": 798,
       "phase": 16,
       "theme": "mine",
-      "pairs": 6,
+      "pairs": 12,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "easy",
-      "description": "Encuentra trÃ­os idÃ©nticos. Sin cronÃ³metro. 12 cartas.",
+      "description": "Nivel básico. Sin cronómetro. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 30
       },
       "seed": 1798060,
-      "setSize": 3
+      "setSize": 2
     },
     {
       "id": 799,
       "phase": 16,
       "theme": "mine",
-      "pairs": 9,
+      "pairs": 10,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "hard",
-      "description": "Las cartas cambian de valor. Sin cronÃ³metro. 18 cartas.",
+      "description": "Juego tranquilo. Sin cronómetro. 20 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 135
@@ -14389,10 +14419,11 @@
       "pairs": 12,
       "timeSec": 0,
       "mechanics": [
-        "basic"
+        "basic",
+        "fog"
       ],
       "difficulty": "hard",
-      "description": "Boss: 24 cartas, fog + darkness, crono 98s.",
+      "description": "Nivel especial. Sin cronómetro. 24 cartas.",
       "isBoss": true,
       "rewards": {
         "coins": 180
@@ -14404,13 +14435,13 @@
       "id": 801,
       "phase": 17,
       "theme": "temple",
-      "pairs": 7,
+      "pairs": 12,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "medium",
-      "description": "Niebla ligera: observa con atenciÃ³n. Sin cronÃ³metro. 14 cartas.",
+      "description": "Practica con calma. Sin cronómetro. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 70
@@ -14422,13 +14453,13 @@
       "id": 802,
       "phase": 17,
       "theme": "temple",
-      "pairs": 4,
+      "pairs": 11,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "easy",
-      "description": "Cartas fantasma aparecen y desaparecen. Sin cronÃ³metro. 8 cartas.",
+      "description": "Más cartas. Sin cronómetro. 22 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 20
@@ -14440,13 +14471,13 @@
       "id": 803,
       "phase": 17,
       "theme": "temple",
-      "pairs": 8,
+      "pairs": 10,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "hard",
-      "description": "El tablero rota de vez en cuando. CronÃ³metro: 84s. 16 cartas.",
+      "description": "Nivel básico. Sin cronómetro. 20 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 120
@@ -14458,13 +14489,13 @@
       "id": 804,
       "phase": 17,
       "theme": "temple",
-      "pairs": 6,
+      "pairs": 12,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "easy",
-      "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 12 cartas.",
+      "description": "Juego tranquilo. Sin cronómetro. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 30
@@ -14476,13 +14507,13 @@
       "id": 805,
       "phase": 17,
       "theme": "temple",
-      "pairs": 5,
+      "pairs": 11,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "medium",
-      "description": "El tablero rota de vez en cuando. Sin cronÃ³metro. 10 cartas.",
+      "description": "Nivel clásico. Sin cronómetro. 22 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 50
@@ -14494,13 +14525,13 @@
       "id": 806,
       "phase": 17,
       "theme": "temple",
-      "pairs": 5,
+      "pairs": 11,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "easy",
-      "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 10 cartas.",
+      "description": "Practica con calma. Sin cronómetro. 22 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 25
@@ -14512,13 +14543,13 @@
       "id": 807,
       "phase": 17,
       "theme": "temple",
-      "pairs": 9,
+      "pairs": 11,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "hard",
-      "description": "Las cartas cambian de valor. CronÃ³metro: 85s. 18 cartas.",
+      "description": "Más cartas. Sin cronómetro. 22 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 135
@@ -14530,13 +14561,13 @@
       "id": 808,
       "phase": 17,
       "theme": "temple",
-      "pairs": 9,
+      "pairs": 10,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "hard",
-      "description": "Nivel clÃ¡sico sin trucos. CronÃ³metro: 84s. 18 cartas.",
+      "description": "Nivel básico. Sin cronómetro. 20 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 135
@@ -14548,13 +14579,13 @@
       "id": 809,
       "phase": 17,
       "theme": "temple",
-      "pairs": 4,
+      "pairs": 12,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "medium",
-      "description": "Cartas que se congelan temporalmente. Sin cronÃ³metro. 8 cartas.",
+      "description": "Juego tranquilo. Sin cronómetro. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 40
@@ -14572,7 +14603,7 @@
         "basic"
       ],
       "difficulty": "medium",
-      "description": "juega normalmente. Sin cronÃ³metro. 20 cartas.",
+      "description": "Nivel clásico. Sin cronómetro. 20 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 100
@@ -14584,13 +14615,13 @@
       "id": 811,
       "phase": 17,
       "theme": "temple",
-      "pairs": 4,
+      "pairs": 10,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "medium",
-      "description": "Las cartas cambian de valor. Sin cronÃ³metro. 8 cartas.",
+      "description": "Practica con calma. Sin cronómetro. 20 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 40
@@ -14602,13 +14633,13 @@
       "id": 812,
       "phase": 17,
       "theme": "temple",
-      "pairs": 7,
+      "pairs": 11,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "hard",
-      "description": "Cartas que se congelan temporalmente. CronÃ³metro: 76s. 14 cartas.",
+      "description": "Más cartas. Sin cronómetro. 22 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 105
@@ -14620,13 +14651,13 @@
       "id": 813,
       "phase": 17,
       "theme": "temple",
-      "pairs": 7,
+      "pairs": 11,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "medium",
-      "description": "Evita bombas: piensa rÃ¡pido. Sin cronÃ³metro. 14 cartas.",
+      "description": "Nivel básico. Sin cronómetro. 22 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 70
@@ -14638,13 +14669,13 @@
       "id": 814,
       "phase": 17,
       "theme": "temple",
-      "pairs": 12,
+      "pairs": 11,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "medium",
-      "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 24 cartas.",
+      "description": "Juego tranquilo. Sin cronómetro. 22 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 120
@@ -14656,13 +14687,13 @@
       "id": 815,
       "phase": 17,
       "theme": "temple",
-      "pairs": 5,
+      "pairs": 12,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "easy",
-      "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 10 cartas.",
+      "description": "Nivel clásico. Sin cronómetro. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 25
@@ -14674,13 +14705,13 @@
       "id": 816,
       "phase": 17,
       "theme": "temple",
-      "pairs": 7,
+      "pairs": 12,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "medium",
-      "description": "Cartas fantasma aparecen y desaparecen. CronÃ³metro: 64s. 14 cartas.",
+      "description": "Practica con calma. Sin cronómetro. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 70
@@ -14692,13 +14723,13 @@
       "id": 817,
       "phase": 17,
       "theme": "temple",
-      "pairs": 3,
+      "pairs": 11,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "easy",
-      "description": "Niebla ligera: observa con atenciÃ³n. Sin cronÃ³metro. 6 cartas.",
+      "description": "Más cartas. Sin cronómetro. 22 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 15
@@ -14710,13 +14741,13 @@
       "id": 818,
       "phase": 17,
       "theme": "temple",
-      "pairs": 9,
+      "pairs": 12,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "hard",
-      "description": "El tablero rota de vez en cuando. Sin cronÃ³metro. 18 cartas.",
+      "description": "Nivel básico. Sin cronómetro. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 135
@@ -14728,13 +14759,13 @@
       "id": 819,
       "phase": 17,
       "theme": "temple",
-      "pairs": 6,
+      "pairs": 12,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "medium",
-      "description": "Cartas que se congelan temporalmente. Sin cronÃ³metro. 12 cartas.",
+      "description": "Juego tranquilo. Sin cronómetro. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 60
@@ -14746,13 +14777,13 @@
       "id": 820,
       "phase": 17,
       "theme": "temple",
-      "pairs": 9,
+      "pairs": 12,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "hard",
-      "description": "Cartas fantasma aparecen y desaparecen. CronÃ³metro: 88s. 18 cartas.",
+      "description": "Nivel clásico. Sin cronómetro. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 135
@@ -14764,13 +14795,13 @@
       "id": 821,
       "phase": 17,
       "theme": "temple",
-      "pairs": 8,
+      "pairs": 12,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "medium",
-      "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 16 cartas.",
+      "description": "Practica con calma. Sin cronómetro. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 80
@@ -14782,13 +14813,13 @@
       "id": 822,
       "phase": 17,
       "theme": "temple",
-      "pairs": 12,
+      "pairs": 10,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "hard",
-      "description": "El tablero rota de vez en cuando. CronÃ³metro: 99s. 24 cartas.",
+      "description": "Más cartas. Sin cronómetro. 20 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 180
@@ -14800,13 +14831,13 @@
       "id": 823,
       "phase": 17,
       "theme": "temple",
-      "pairs": 7,
+      "pairs": 11,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "medium",
-      "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 14 cartas.",
+      "description": "Nivel básico. Sin cronómetro. 22 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 70
@@ -14818,13 +14849,13 @@
       "id": 824,
       "phase": 17,
       "theme": "temple",
-      "pairs": 4,
+      "pairs": 12,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "easy",
-      "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 8 cartas.",
+      "description": "Juego tranquilo. Sin cronómetro. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 20
@@ -14836,31 +14867,32 @@
       "id": 825,
       "phase": 17,
       "theme": "temple",
-      "pairs": 7,
+      "pairs": 6,
       "timeSec": 0,
       "mechanics": [
-        "basic"
+        "basic",
+        "trio"
       ],
       "difficulty": "medium",
-      "description": "Cartas fantasma aparecen y desaparecen. CronÃ³metro: 62s. 14 cartas.",
+      "description": "Nivel clásico. Sin cronómetro. 18 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 70
       },
       "seed": 1825132,
-      "setSize": 2
+      "setSize": 3
     },
     {
       "id": 826,
       "phase": 17,
       "theme": "temple",
-      "pairs": 10,
+      "pairs": 11,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "hard",
-      "description": "Las cartas cambian de valor. CronÃ³metro: 92s. 20 cartas.",
+      "description": "Practica con calma. Sin cronómetro. 22 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 150
@@ -14872,13 +14904,13 @@
       "id": 827,
       "phase": 17,
       "theme": "temple",
-      "pairs": 8,
+      "pairs": 11,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "medium",
-      "description": "Nivel clÃ¡sico sin trucos. CronÃ³metro: 88s. 16 cartas.",
+      "description": "Más cartas. Sin cronómetro. 22 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 80
@@ -14890,13 +14922,13 @@
       "id": 828,
       "phase": 17,
       "theme": "temple",
-      "pairs": 9,
+      "pairs": 10,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "hard",
-      "description": "Las cartas cambian de valor. Sin cronÃ³metro. 18 cartas.",
+      "description": "Nivel básico. Sin cronómetro. 20 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 135
@@ -14908,13 +14940,13 @@
       "id": 829,
       "phase": 17,
       "theme": "temple",
-      "pairs": 4,
+      "pairs": 10,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "easy",
-      "description": "Niebla ligera: observa con atenciÃ³n. Sin cronÃ³metro. 8 cartas.",
+      "description": "Juego tranquilo. Sin cronómetro. 20 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 20
@@ -14926,13 +14958,13 @@
       "id": 830,
       "phase": 17,
       "theme": "temple",
-      "pairs": 10,
+      "pairs": 11,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "medium",
-      "description": "juega normalmente. Sin cronÃ³metro. 20 cartas.",
+      "description": "Nivel clásico. Sin cronómetro. 22 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 100
@@ -14944,13 +14976,13 @@
       "id": 831,
       "phase": 17,
       "theme": "temple",
-      "pairs": 7,
+      "pairs": 12,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "medium",
-      "description": "Nivel clÃ¡sico sin trucos. CronÃ³metro: 62s. 14 cartas.",
+      "description": "Practica con calma. Sin cronómetro. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 70
@@ -14962,13 +14994,13 @@
       "id": 832,
       "phase": 17,
       "theme": "temple",
-      "pairs": 3,
+      "pairs": 10,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "medium",
-      "description": "Cartas que se congelan temporalmente. Sin cronÃ³metro. 6 cartas.",
+      "description": "Más cartas. Sin cronómetro. 20 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 30
@@ -14980,13 +15012,13 @@
       "id": 833,
       "phase": 17,
       "theme": "temple",
-      "pairs": 3,
+      "pairs": 10,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "easy",
-      "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 6 cartas.",
+      "description": "Nivel básico. Sin cronómetro. 20 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 15
@@ -14998,13 +15030,13 @@
       "id": 834,
       "phase": 17,
       "theme": "temple",
-      "pairs": 6,
+      "pairs": 11,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "medium",
-      "description": "Nivel clÃ¡sico sin trucos. CronÃ³metro: 63s. 12 cartas.",
+      "description": "Juego tranquilo. Sin cronómetro. 22 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 60
@@ -15016,13 +15048,13 @@
       "id": 835,
       "phase": 17,
       "theme": "temple",
-      "pairs": 10,
+      "pairs": 12,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "hard",
-      "description": "Las cartas cambian de valor. CronÃ³metro: 94s. 20 cartas.",
+      "description": "Nivel clásico. Sin cronómetro. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 150
@@ -15034,31 +15066,31 @@
       "id": 836,
       "phase": 17,
       "theme": "temple",
-      "pairs": 12,
-      "timeSec": 0,
-      "mechanics": [
-        "basic"
-      ],
-      "difficulty": "hard",
-      "description": "Encuentra trÃ­os idÃ©nticos. Sin cronÃ³metro. 24 cartas.",
-      "isBoss": false,
-      "rewards": {
-        "coins": 180
-      },
-      "seed": 1836120,
-      "setSize": 3
-    },
-    {
-      "id": 837,
-      "phase": 17,
-      "theme": "temple",
       "pairs": 10,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "hard",
-      "description": "Nivel clÃ¡sico sin trucos. CronÃ³metro: 92s. 20 cartas.",
+      "description": "Practica con calma. Sin cronómetro. 20 cartas.",
+      "isBoss": false,
+      "rewards": {
+        "coins": 180
+      },
+      "seed": 1836120,
+      "setSize": 2
+    },
+    {
+      "id": 837,
+      "phase": 17,
+      "theme": "temple",
+      "pairs": 12,
+      "timeSec": 0,
+      "mechanics": [
+        "basic"
+      ],
+      "difficulty": "hard",
+      "description": "Más cartas. Sin cronómetro. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 150
@@ -15070,13 +15102,13 @@
       "id": 838,
       "phase": 17,
       "theme": "temple",
-      "pairs": 4,
+      "pairs": 12,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "medium",
-      "description": "El tablero rota de vez en cuando. Sin cronÃ³metro. 8 cartas.",
+      "description": "Nivel básico. Sin cronómetro. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 40
@@ -15088,13 +15120,13 @@
       "id": 839,
       "phase": 17,
       "theme": "temple",
-      "pairs": 8,
+      "pairs": 12,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "medium",
-      "description": "La oscuridad cubre el tablero poco a poco. Sin cronÃ³metro. 16 cartas.",
+      "description": "Juego tranquilo. Sin cronómetro. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 80
@@ -15106,13 +15138,13 @@
       "id": 840,
       "phase": 17,
       "theme": "temple",
-      "pairs": 4,
+      "pairs": 10,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "easy",
-      "description": "Cartas fantasma aparecen y desaparecen. Sin cronÃ³metro. 8 cartas.",
+      "description": "Nivel clásico. Sin cronómetro. 20 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 20
@@ -15130,7 +15162,7 @@
         "basic"
       ],
       "difficulty": "hard",
-      "description": "Nivel clÃ¡sico sin trucos. CronÃ³metro: 92s. 22 cartas.",
+      "description": "Practica con calma. Sin cronómetro. 22 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 165
@@ -15148,7 +15180,7 @@
         "basic"
       ],
       "difficulty": "hard",
-      "description": "La oscuridad cubre el tablero poco a poco. Sin cronÃ³metro. 24 cartas.",
+      "description": "Más cartas. Sin cronómetro. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 180
@@ -15160,13 +15192,13 @@
       "id": 843,
       "phase": 17,
       "theme": "temple",
-      "pairs": 8,
+      "pairs": 12,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "hard",
-      "description": "Las cartas cambian de valor. CronÃ³metro: 83s. 16 cartas.",
+      "description": "Nivel básico. Sin cronómetro. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 120
@@ -15178,13 +15210,13 @@
       "id": 844,
       "phase": 17,
       "theme": "temple",
-      "pairs": 8,
+      "pairs": 12,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "medium",
-      "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 16 cartas.",
+      "description": "Juego tranquilo. Sin cronómetro. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 80
@@ -15196,13 +15228,13 @@
       "id": 845,
       "phase": 17,
       "theme": "temple",
-      "pairs": 7,
+      "pairs": 11,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "medium",
-      "description": "El tablero rota de vez en cuando. Sin cronÃ³metro. 14 cartas.",
+      "description": "Nivel clásico. Sin cronómetro. 22 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 70
@@ -15214,13 +15246,13 @@
       "id": 846,
       "phase": 17,
       "theme": "temple",
-      "pairs": 6,
+      "pairs": 10,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "easy",
-      "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 12 cartas.",
+      "description": "Practica con calma. Sin cronómetro. 20 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 30
@@ -15232,31 +15264,31 @@
       "id": 847,
       "phase": 17,
       "theme": "temple",
-      "pairs": 6,
+      "pairs": 11,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "easy",
-      "description": "Encuentra trÃ­os idÃ©nticos. Sin cronÃ³metro. 12 cartas.",
+      "description": "Más cartas. Sin cronómetro. 22 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 30
       },
       "seed": 1847060,
-      "setSize": 3
+      "setSize": 2
     },
     {
       "id": 848,
       "phase": 17,
       "theme": "temple",
-      "pairs": 8,
+      "pairs": 10,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "medium",
-      "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 16 cartas.",
+      "description": "Nivel básico. Sin cronómetro. 20 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 80
@@ -15268,13 +15300,13 @@
       "id": 849,
       "phase": 17,
       "theme": "temple",
-      "pairs": 2,
+      "pairs": 11,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "medium",
-      "description": "Niebla antes del Boss. Sin cronÃ³metro. 4 cartas.",
+      "description": "Juego tranquilo. Sin cronómetro. 22 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 20
@@ -15289,10 +15321,11 @@
       "pairs": 12,
       "timeSec": 0,
       "mechanics": [
-        "basic"
+        "basic",
+        "rotation"
       ],
       "difficulty": "hard",
-      "description": "Boss: 24 cartas, rotation + bomb, crono 113s.",
+      "description": "Nivel especial. Sin cronómetro. 24 cartas.",
       "isBoss": true,
       "rewards": {
         "coins": 180
@@ -15304,13 +15337,13 @@
       "id": 851,
       "phase": 18,
       "theme": "castle",
-      "pairs": 8,
+      "pairs": 10,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "hard",
-      "description": "La oscuridad cubre el tablero poco a poco. CronÃ³metro: 87s. 16 cartas.",
+      "description": "Practica con calma. Sin cronómetro. 20 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 120
@@ -15328,7 +15361,7 @@
         "basic"
       ],
       "difficulty": "hard",
-      "description": "Nivel clÃ¡sico sin trucos. CronÃ³metro: 102s. 22 cartas.",
+      "description": "Más cartas. Sin cronómetro. 22 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 165
@@ -15340,13 +15373,13 @@
       "id": 853,
       "phase": 18,
       "theme": "castle",
-      "pairs": 4,
+      "pairs": 10,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "easy",
-      "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 8 cartas.",
+      "description": "Nivel básico. Sin cronómetro. 20 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 20
@@ -15358,13 +15391,13 @@
       "id": 854,
       "phase": 18,
       "theme": "castle",
-      "pairs": 8,
+      "pairs": 12,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "medium",
-      "description": "El tablero rota de vez en cuando. Sin cronÃ³metro. 16 cartas.",
+      "description": "Juego tranquilo. Sin cronómetro. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 80
@@ -15376,13 +15409,13 @@
       "id": 855,
       "phase": 18,
       "theme": "castle",
-      "pairs": 8,
+      "pairs": 10,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "medium",
-      "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 16 cartas.",
+      "description": "Nivel clásico. Sin cronómetro. 20 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 80
@@ -15394,13 +15427,13 @@
       "id": 856,
       "phase": 18,
       "theme": "castle",
-      "pairs": 8,
+      "pairs": 12,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "medium",
-      "description": "las cartas estÃ¡n parcialmente ocultas. CronÃ³metro: 85s. 16 cartas.",
+      "description": "Practica con calma. Sin cronómetro. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 80
@@ -15412,13 +15445,13 @@
       "id": 857,
       "phase": 18,
       "theme": "castle",
-      "pairs": 4,
+      "pairs": 10,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "easy",
-      "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 8 cartas.",
+      "description": "Más cartas. Sin cronómetro. 20 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 20
@@ -15430,13 +15463,13 @@
       "id": 858,
       "phase": 18,
       "theme": "castle",
-      "pairs": 4,
+      "pairs": 11,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "easy",
-      "description": "Niebla ligera: observa con atenciÃ³n. Sin cronÃ³metro. 8 cartas.",
+      "description": "Nivel básico. Sin cronómetro. 22 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 20
@@ -15448,13 +15481,13 @@
       "id": 859,
       "phase": 18,
       "theme": "castle",
-      "pairs": 5,
+      "pairs": 11,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "medium",
-      "description": "Cartas que se congelan temporalmente. Sin cronÃ³metro. 10 cartas.",
+      "description": "Juego tranquilo. Sin cronómetro. 22 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 50
@@ -15466,13 +15499,13 @@
       "id": 860,
       "phase": 18,
       "theme": "castle",
-      "pairs": 8,
+      "pairs": 10,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "medium",
-      "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 16 cartas.",
+      "description": "Nivel clásico. Sin cronómetro. 20 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 80
@@ -15484,13 +15517,13 @@
       "id": 861,
       "phase": 18,
       "theme": "castle",
-      "pairs": 6,
+      "pairs": 10,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "easy",
-      "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 12 cartas.",
+      "description": "Practica con calma. Sin cronómetro. 20 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 30
@@ -15502,13 +15535,13 @@
       "id": 862,
       "phase": 18,
       "theme": "castle",
-      "pairs": 5,
+      "pairs": 10,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "easy",
-      "description": "Cartas fantasma aparecen y desaparecen. Sin cronÃ³metro. 10 cartas.",
+      "description": "Más cartas. Sin cronómetro. 20 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 25
@@ -15520,13 +15553,13 @@
       "id": 863,
       "phase": 18,
       "theme": "castle",
-      "pairs": 8,
+      "pairs": 10,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "medium",
-      "description": "Cartas que se congelan temporalmente. Sin cronÃ³metro. 16 cartas.",
+      "description": "Nivel básico. Sin cronómetro. 20 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 80
@@ -15538,13 +15571,13 @@
       "id": 864,
       "phase": 18,
       "theme": "castle",
-      "pairs": 6,
+      "pairs": 10,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "easy",
-      "description": "Cartas fantasma aparecen y desaparecen. Sin cronÃ³metro. 12 cartas.",
+      "description": "Juego tranquilo. Sin cronómetro. 20 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 30
@@ -15556,13 +15589,13 @@
       "id": 865,
       "phase": 18,
       "theme": "castle",
-      "pairs": 8,
+      "pairs": 11,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "medium",
-      "description": "las cartas pueden rotar. CronÃ³metro: 80s. 16 cartas.",
+      "description": "Nivel clásico. Sin cronómetro. 22 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 80
@@ -15574,13 +15607,13 @@
       "id": 866,
       "phase": 18,
       "theme": "castle",
-      "pairs": 9,
+      "pairs": 10,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "hard",
-      "description": "Evita bombas: piensa rÃ¡pido. Sin cronÃ³metro. 18 cartas.",
+      "description": "Practica con calma. Sin cronómetro. 20 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 135
@@ -15592,13 +15625,13 @@
       "id": 867,
       "phase": 18,
       "theme": "castle",
-      "pairs": 7,
+      "pairs": 12,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "medium",
-      "description": "El tablero rota de vez en cuando. Sin cronÃ³metro. 14 cartas.",
+      "description": "Más cartas. Sin cronómetro. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 70
@@ -15610,13 +15643,13 @@
       "id": 868,
       "phase": 18,
       "theme": "castle",
-      "pairs": 8,
+      "pairs": 10,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "hard",
-      "description": "La oscuridad cubre el tablero poco a poco. CronÃ³metro: 82s. 16 cartas.",
+      "description": "Nivel básico. Sin cronómetro. 20 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 120
@@ -15628,13 +15661,13 @@
       "id": 869,
       "phase": 18,
       "theme": "castle",
-      "pairs": 6,
+      "pairs": 11,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "medium",
-      "description": "Evita bombas: piensa rÃ¡pido. Sin cronÃ³metro. 12 cartas.",
+      "description": "Juego tranquilo. Sin cronómetro. 22 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 60
@@ -15652,7 +15685,7 @@
         "basic"
       ],
       "difficulty": "hard",
-      "description": "Cartas fantasma aparecen y desaparecen. CronÃ³metro: 91s. 20 cartas.",
+      "description": "Nivel clásico. Sin cronómetro. 20 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 150
@@ -15664,31 +15697,31 @@
       "id": 871,
       "phase": 18,
       "theme": "castle",
-      "pairs": 12,
+      "pairs": 10,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "hard",
-      "description": "Encuentra trÃ­os idÃ©nticos. Sin cronÃ³metro. 24 cartas.",
+      "description": "Practica con calma. Sin cronómetro. 20 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 180
       },
       "seed": 1871120,
-      "setSize": 3
+      "setSize": 2
     },
     {
       "id": 872,
       "phase": 18,
       "theme": "castle",
-      "pairs": 8,
+      "pairs": 12,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "medium",
-      "description": "juega normalmente. Sin cronÃ³metro. 16 cartas.",
+      "description": "Más cartas. Sin cronómetro. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 80
@@ -15700,13 +15733,13 @@
       "id": 873,
       "phase": 18,
       "theme": "castle",
-      "pairs": 6,
+      "pairs": 11,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "easy",
-      "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 12 cartas.",
+      "description": "Nivel básico. Sin cronómetro. 22 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 30
@@ -15718,13 +15751,13 @@
       "id": 874,
       "phase": 18,
       "theme": "castle",
-      "pairs": 7,
+      "pairs": 11,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "medium",
-      "description": "Cartas que se congelan temporalmente. Sin cronÃ³metro. 14 cartas.",
+      "description": "Juego tranquilo. Sin cronómetro. 22 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 70
@@ -15736,19 +15769,20 @@
       "id": 875,
       "phase": 18,
       "theme": "castle",
-      "pairs": 12,
+      "pairs": 6,
       "timeSec": 0,
       "mechanics": [
-        "basic"
+        "basic",
+        "trio"
       ],
       "difficulty": "hard",
-      "description": "las cartas pueden rotar. CronÃ³metro: 102s. 24 cartas.",
+      "description": "Nivel clásico. Sin cronómetro. 18 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 180
       },
       "seed": 1875222,
-      "setSize": 2
+      "setSize": 3
     },
     {
       "id": 876,
@@ -15760,7 +15794,7 @@
         "basic"
       ],
       "difficulty": "medium",
-      "description": "Cartas fantasma aparecen y desaparecen. Sin cronÃ³metro. 20 cartas.",
+      "description": "Practica con calma. Sin cronómetro. 20 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 100
@@ -15772,31 +15806,31 @@
       "id": 877,
       "phase": 18,
       "theme": "castle",
-      "pairs": 6,
+      "pairs": 12,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "easy",
-      "description": "Encuentra trÃ­os idÃ©nticos. Sin cronÃ³metro. 12 cartas.",
+      "description": "Más cartas. Sin cronómetro. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 30
       },
       "seed": 1877060,
-      "setSize": 3
+      "setSize": 2
     },
     {
       "id": 878,
       "phase": 18,
       "theme": "castle",
-      "pairs": 7,
+      "pairs": 10,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "hard",
-      "description": "El tablero rota de vez en cuando. CronÃ³metro: 76s. 14 cartas.",
+      "description": "Nivel básico. Sin cronómetro. 20 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 105
@@ -15808,13 +15842,13 @@
       "id": 879,
       "phase": 18,
       "theme": "castle",
-      "pairs": 12,
+      "pairs": 11,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "hard",
-      "description": "Niebla ligera: observa con atenciÃ³n. CronÃ³metro: 105s. 24 cartas.",
+      "description": "Juego tranquilo. Sin cronómetro. 22 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 180
@@ -15826,13 +15860,13 @@
       "id": 880,
       "phase": 18,
       "theme": "castle",
-      "pairs": 8,
+      "pairs": 10,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "medium",
-      "description": "Nivel clÃ¡sico sin trucos. CronÃ³metro: 79s. 16 cartas.",
+      "description": "Nivel clásico. Sin cronómetro. 20 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 80
@@ -15844,13 +15878,13 @@
       "id": 881,
       "phase": 18,
       "theme": "castle",
-      "pairs": 4,
+      "pairs": 11,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "easy",
-      "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 8 cartas.",
+      "description": "Practica con calma. Sin cronómetro. 22 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 20
@@ -15862,13 +15896,13 @@
       "id": 882,
       "phase": 18,
       "theme": "castle",
-      "pairs": 2,
+      "pairs": 12,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "medium",
-      "description": "Las cartas cambian de valor. Sin cronÃ³metro. 4 cartas.",
+      "description": "Más cartas. Sin cronómetro. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 20
@@ -15880,13 +15914,13 @@
       "id": 883,
       "phase": 18,
       "theme": "castle",
-      "pairs": 6,
+      "pairs": 10,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "medium",
-      "description": "Evita bombas: piensa rÃ¡pido. Sin cronÃ³metro. 12 cartas.",
+      "description": "Nivel básico. Sin cronómetro. 20 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 60
@@ -15898,13 +15932,13 @@
       "id": 884,
       "phase": 18,
       "theme": "castle",
-      "pairs": 8,
+      "pairs": 10,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "hard",
-      "description": "La oscuridad cubre el tablero poco a poco. CronÃ³metro: 80s. 16 cartas.",
+      "description": "Juego tranquilo. Sin cronómetro. 20 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 120
@@ -15916,13 +15950,13 @@
       "id": 885,
       "phase": 18,
       "theme": "castle",
-      "pairs": 7,
+      "pairs": 11,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "medium",
-      "description": "Nivel clÃ¡sico sin trucos. CronÃ³metro: 72s. 14 cartas.",
+      "description": "Nivel clásico. Sin cronómetro. 22 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 70
@@ -15934,13 +15968,13 @@
       "id": 886,
       "phase": 18,
       "theme": "castle",
-      "pairs": 4,
+      "pairs": 12,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "medium",
-      "description": "Cartas que se congelan temporalmente. Sin cronÃ³metro. 8 cartas.",
+      "description": "Practica con calma. Sin cronómetro. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 40
@@ -15952,13 +15986,13 @@
       "id": 887,
       "phase": 18,
       "theme": "castle",
-      "pairs": 8,
+      "pairs": 10,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "hard",
-      "description": "Evita bombas: piensa rÃ¡pido. CronÃ³metro: 72s. 16 cartas.",
+      "description": "Más cartas. Sin cronómetro. 20 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 120
@@ -15970,13 +16004,13 @@
       "id": 888,
       "phase": 18,
       "theme": "castle",
-      "pairs": 8,
+      "pairs": 12,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "medium",
-      "description": "Cartas fantasma aparecen y desaparecen. Sin cronÃ³metro. 16 cartas.",
+      "description": "Nivel básico. Sin cronómetro. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 80
@@ -15988,13 +16022,13 @@
       "id": 889,
       "phase": 18,
       "theme": "castle",
-      "pairs": 7,
+      "pairs": 12,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "medium",
-      "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 14 cartas.",
+      "description": "Juego tranquilo. Sin cronómetro. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 70
@@ -16006,13 +16040,13 @@
       "id": 890,
       "phase": 18,
       "theme": "castle",
-      "pairs": 8,
+      "pairs": 12,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "medium",
-      "description": "Cartas fantasma aparecen y desaparecen. CronÃ³metro: 72s. 16 cartas.",
+      "description": "Nivel clásico. Sin cronómetro. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 80
@@ -16024,13 +16058,13 @@
       "id": 891,
       "phase": 18,
       "theme": "castle",
-      "pairs": 7,
+      "pairs": 12,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "medium",
-      "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 14 cartas.",
+      "description": "Practica con calma. Sin cronómetro. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 70
@@ -16042,31 +16076,31 @@
       "id": 892,
       "phase": 18,
       "theme": "castle",
-      "pairs": 6,
+      "pairs": 12,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "easy",
-      "description": "Encuentra trÃ­os idÃ©nticos. Sin cronÃ³metro. 12 cartas.",
+      "description": "Más cartas. Sin cronómetro. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 30
       },
       "seed": 1892060,
-      "setSize": 3
+      "setSize": 2
     },
     {
       "id": 893,
       "phase": 18,
       "theme": "castle",
-      "pairs": 2,
+      "pairs": 12,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "easy",
-      "description": "Niebla ligera: observa con atenciÃ³n. Sin cronÃ³metro. 4 cartas.",
+      "description": "Nivel básico. Sin cronómetro. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 10
@@ -16078,13 +16112,13 @@
       "id": 894,
       "phase": 18,
       "theme": "castle",
-      "pairs": 8,
+      "pairs": 10,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "medium",
-      "description": "La oscuridad cubre el tablero poco a poco. Sin cronÃ³metro. 16 cartas.",
+      "description": "Juego tranquilo. Sin cronómetro. 20 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 80
@@ -16102,25 +16136,25 @@
         "basic"
       ],
       "difficulty": "hard",
-      "description": "Encuentra trÃ­os idÃ©nticos. Sin cronÃ³metro. 24 cartas.",
+      "description": "Nivel clásico. Sin cronómetro. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 180
       },
       "seed": 1895120,
-      "setSize": 3
+      "setSize": 2
     },
     {
       "id": 896,
       "phase": 18,
       "theme": "castle",
-      "pairs": 8,
+      "pairs": 10,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "medium",
-      "description": "juega normalmente. Sin cronÃ³metro. 16 cartas.",
+      "description": "Practica con calma. Sin cronómetro. 20 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 80
@@ -16132,31 +16166,31 @@
       "id": 897,
       "phase": 18,
       "theme": "castle",
-      "pairs": 6,
-      "timeSec": 0,
-      "mechanics": [
-        "basic"
-      ],
-      "difficulty": "easy",
-      "description": "Encuentra trÃ­os idÃ©nticos. Sin cronÃ³metro. 12 cartas.",
-      "isBoss": false,
-      "rewards": {
-        "coins": 30
-      },
-      "seed": 1897060,
-      "setSize": 3
-    },
-    {
-      "id": 898,
-      "phase": 18,
-      "theme": "castle",
       "pairs": 12,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
+      "difficulty": "easy",
+      "description": "Más cartas. Sin cronómetro. 24 cartas.",
+      "isBoss": false,
+      "rewards": {
+        "coins": 30
+      },
+      "seed": 1897060,
+      "setSize": 2
+    },
+    {
+      "id": 898,
+      "phase": 18,
+      "theme": "castle",
+      "pairs": 10,
+      "timeSec": 0,
+      "mechanics": [
+        "basic"
+      ],
       "difficulty": "hard",
-      "description": "las cartas estÃ¡n parcialmente ocultas. CronÃ³metro: 101s. 24 cartas.",
+      "description": "Nivel básico. Sin cronómetro. 20 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 180
@@ -16168,13 +16202,13 @@
       "id": 899,
       "phase": 18,
       "theme": "castle",
-      "pairs": 7,
+      "pairs": 11,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "medium",
-      "description": "Nivel clÃ¡sico sin trucos. CronÃ³metro: 72s. 14 cartas.",
+      "description": "Juego tranquilo. Sin cronómetro. 22 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 70
@@ -16189,10 +16223,11 @@
       "pairs": 12,
       "timeSec": 0,
       "mechanics": [
-        "basic"
+        "basic",
+        "rotation"
       ],
       "difficulty": "hard",
-      "description": "Boss: 24 cartas, ghost + darkness, crono 113s.",
+      "description": "Nivel especial. Sin cronómetro. 24 cartas.",
       "isBoss": true,
       "rewards": {
         "coins": 180
@@ -16204,13 +16239,13 @@
       "id": 901,
       "phase": 19,
       "theme": "dimension",
-      "pairs": 7,
+      "pairs": 11,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "medium",
-      "description": "El tablero rota de vez en cuando. Sin cronÃ³metro. 14 cartas.",
+      "description": "Practica con calma. Sin cronómetro. 22 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 70
@@ -16222,13 +16257,13 @@
       "id": 902,
       "phase": 19,
       "theme": "dimension",
-      "pairs": 3,
+      "pairs": 11,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "easy",
-      "description": "Cartas fantasma aparecen y desaparecen. Sin cronÃ³metro. 6 cartas.",
+      "description": "Más cartas. Sin cronómetro. 22 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 15
@@ -16240,13 +16275,13 @@
       "id": 903,
       "phase": 19,
       "theme": "dimension",
-      "pairs": 8,
+      "pairs": 11,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "hard",
-      "description": "El tablero rota de vez en cuando. CronÃ³metro: 87s. 16 cartas.",
+      "description": "Nivel básico. Sin cronómetro. 22 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 120
@@ -16258,13 +16293,13 @@
       "id": 904,
       "phase": 19,
       "theme": "dimension",
-      "pairs": 8,
+      "pairs": 10,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "hard",
-      "description": "Cartas que se congelan temporalmente. CronÃ³metro: 82s. 16 cartas.",
+      "description": "Juego tranquilo. Sin cronómetro. 20 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 120
@@ -16276,13 +16311,13 @@
       "id": 905,
       "phase": 19,
       "theme": "dimension",
-      "pairs": 8,
+      "pairs": 11,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "medium",
-      "description": "Cartas fantasma aparecen y desaparecen. Sin cronÃ³metro. 16 cartas.",
+      "description": "Nivel clásico. Sin cronómetro. 22 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 80
@@ -16294,13 +16329,13 @@
       "id": 906,
       "phase": 19,
       "theme": "dimension",
-      "pairs": 9,
+      "pairs": 11,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "medium",
-      "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 18 cartas.",
+      "description": "Practica con calma. Sin cronómetro. 22 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 90
@@ -16312,13 +16347,13 @@
       "id": 907,
       "phase": 19,
       "theme": "dimension",
-      "pairs": 12,
+      "pairs": 10,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "hard",
-      "description": "Nivel clÃ¡sico sin trucos. CronÃ³metro: 107s. 24 cartas.",
+      "description": "Más cartas. Sin cronómetro. 20 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 180
@@ -16330,13 +16365,13 @@
       "id": 908,
       "phase": 19,
       "theme": "dimension",
-      "pairs": 4,
+      "pairs": 12,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "easy",
-      "description": "Cartas fantasma aparecen y desaparecen. Sin cronÃ³metro. 8 cartas.",
+      "description": "Nivel básico. Sin cronómetro. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 20
@@ -16348,13 +16383,13 @@
       "id": 909,
       "phase": 19,
       "theme": "dimension",
-      "pairs": 5,
+      "pairs": 12,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "medium",
-      "description": "Niebla ligera: observa con atenciÃ³n. CronÃ³metro: 45s. 10 cartas.",
+      "description": "Juego tranquilo. Sin cronómetro. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 50
@@ -16372,7 +16407,7 @@
         "basic"
       ],
       "difficulty": "hard",
-      "description": "las cartas pueden rotar. CronÃ³metro: 92s. 20 cartas.",
+      "description": "Nivel clásico. Sin cronómetro. 20 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 150
@@ -16384,13 +16419,13 @@
       "id": 911,
       "phase": 19,
       "theme": "dimension",
-      "pairs": 7,
+      "pairs": 12,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "medium",
-      "description": "Cartas que se congelan temporalmente. Sin cronÃ³metro. 14 cartas.",
+      "description": "Practica con calma. Sin cronómetro. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 70
@@ -16402,13 +16437,13 @@
       "id": 912,
       "phase": 19,
       "theme": "dimension",
-      "pairs": 3,
+      "pairs": 12,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "easy",
-      "description": "Cartas fantasma aparecen y desaparecen. Sin cronÃ³metro. 6 cartas.",
+      "description": "Más cartas. Sin cronómetro. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 15
@@ -16420,13 +16455,13 @@
       "id": 913,
       "phase": 19,
       "theme": "dimension",
-      "pairs": 6,
+      "pairs": 12,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "medium",
-      "description": "Cartas que se congelan temporalmente. Sin cronÃ³metro. 12 cartas.",
+      "description": "Nivel básico. Sin cronómetro. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 60
@@ -16438,13 +16473,13 @@
       "id": 914,
       "phase": 19,
       "theme": "dimension",
-      "pairs": 8,
+      "pairs": 12,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "medium",
-      "description": "La oscuridad cubre el tablero poco a poco. Sin cronÃ³metro. 16 cartas.",
+      "description": "Juego tranquilo. Sin cronómetro. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 80
@@ -16456,13 +16491,13 @@
       "id": 915,
       "phase": 19,
       "theme": "dimension",
-      "pairs": 3,
+      "pairs": 12,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "medium",
-      "description": "Cartas que se congelan temporalmente. Sin cronÃ³metro. 6 cartas.",
+      "description": "Nivel clásico. Sin cronómetro. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 30
@@ -16474,19 +16509,19 @@
       "id": 916,
       "phase": 19,
       "theme": "dimension",
-      "pairs": 6,
+      "pairs": 10,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "easy",
-      "description": "Encuentra trÃ­os idÃ©nticos. Sin cronÃ³metro. 12 cartas.",
+      "description": "Practica con calma. Sin cronómetro. 20 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 30
       },
       "seed": 1916060,
-      "setSize": 3
+      "setSize": 2
     },
     {
       "id": 917,
@@ -16498,7 +16533,7 @@
         "basic"
       ],
       "difficulty": "medium",
-      "description": "juega normalmente. Sin cronÃ³metro. 20 cartas.",
+      "description": "Más cartas. Sin cronómetro. 20 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 100
@@ -16510,13 +16545,13 @@
       "id": 918,
       "phase": 19,
       "theme": "dimension",
-      "pairs": 8,
+      "pairs": 11,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "medium",
-      "description": "Niebla ligera: observa con atenciÃ³n. Sin cronÃ³metro. 16 cartas.",
+      "description": "Nivel básico. Sin cronómetro. 22 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 80
@@ -16528,13 +16563,13 @@
       "id": 919,
       "phase": 19,
       "theme": "dimension",
-      "pairs": 8,
+      "pairs": 12,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "medium",
-      "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 16 cartas.",
+      "description": "Juego tranquilo. Sin cronómetro. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 80
@@ -16546,13 +16581,13 @@
       "id": 920,
       "phase": 19,
       "theme": "dimension",
-      "pairs": 4,
+      "pairs": 10,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "medium",
-      "description": "El tablero rota de vez en cuando. Sin cronÃ³metro. 8 cartas.",
+      "description": "Nivel clásico. Sin cronómetro. 20 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 40
@@ -16570,25 +16605,25 @@
         "basic"
       ],
       "difficulty": "hard",
-      "description": "Encuentra trÃ­os idÃ©nticos. Sin cronÃ³metro. 24 cartas.",
+      "description": "Practica con calma. Sin cronómetro. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 180
       },
       "seed": 1921120,
-      "setSize": 3
+      "setSize": 2
     },
     {
       "id": 922,
       "phase": 19,
       "theme": "dimension",
-      "pairs": 2,
+      "pairs": 11,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "medium",
-      "description": "Las cartas cambian de valor. Sin cronÃ³metro. 4 cartas.",
+      "description": "Más cartas. Sin cronómetro. 22 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 20
@@ -16600,31 +16635,31 @@
       "id": 923,
       "phase": 19,
       "theme": "dimension",
-      "pairs": 3,
+      "pairs": 11,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "easy",
-      "description": "Encuentra trÃ­os idÃ©nticos. Sin cronÃ³metro. 6 cartas.",
+      "description": "Nivel básico. Sin cronómetro. 22 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 15
       },
       "seed": 1923030,
-      "setSize": 3
+      "setSize": 2
     },
     {
       "id": 924,
       "phase": 19,
       "theme": "dimension",
-      "pairs": 8,
+      "pairs": 12,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "hard",
-      "description": "Evita bombas: piensa rÃ¡pido. CronÃ³metro: 82s. 16 cartas.",
+      "description": "Juego tranquilo. Sin cronómetro. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 120
@@ -16636,31 +16671,32 @@
       "id": 925,
       "phase": 19,
       "theme": "dimension",
-      "pairs": 4,
+      "pairs": 6,
       "timeSec": 0,
       "mechanics": [
-        "basic"
+        "basic",
+        "trio"
       ],
       "difficulty": "medium",
-      "description": "El tablero rota de vez en cuando. Sin cronÃ³metro. 8 cartas.",
+      "description": "Nivel clásico. Sin cronómetro. 18 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 40
       },
       "seed": 1925040,
-      "setSize": 2
+      "setSize": 3
     },
     {
       "id": 926,
       "phase": 19,
       "theme": "dimension",
-      "pairs": 10,
+      "pairs": 12,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "medium",
-      "description": "juega normalmente. Sin cronÃ³metro. 20 cartas.",
+      "description": "Practica con calma. Sin cronómetro. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 100
@@ -16672,13 +16708,13 @@
       "id": 927,
       "phase": 19,
       "theme": "dimension",
-      "pairs": 11,
+      "pairs": 12,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "hard",
-      "description": "Nivel clÃ¡sico sin trucos. CronÃ³metro: 93s. 22 cartas.",
+      "description": "Más cartas. Sin cronómetro. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 165
@@ -16696,7 +16732,7 @@
         "basic"
       ],
       "difficulty": "hard",
-      "description": "La oscuridad cubre el tablero poco a poco. CronÃ³metro: 101s. 20 cartas.",
+      "description": "Nivel básico. Sin cronómetro. 20 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 150
@@ -16708,13 +16744,13 @@
       "id": 929,
       "phase": 19,
       "theme": "dimension",
-      "pairs": 8,
+      "pairs": 10,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "hard",
-      "description": "Las cartas cambian de valor. CronÃ³metro: 75s. 16 cartas.",
+      "description": "Juego tranquilo. Sin cronómetro. 20 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 120
@@ -16726,13 +16762,13 @@
       "id": 930,
       "phase": 19,
       "theme": "dimension",
-      "pairs": 12,
+      "pairs": 11,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "medium",
-      "description": "Niebla ligera: observa con atenciÃ³n. Sin cronÃ³metro. 24 cartas.",
+      "description": "Nivel clásico. Sin cronómetro. 22 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 120
@@ -16744,13 +16780,13 @@
       "id": 931,
       "phase": 19,
       "theme": "dimension",
-      "pairs": 6,
+      "pairs": 10,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "medium",
-      "description": "Evita bombas: piensa rÃ¡pido. CronÃ³metro: 66s. 12 cartas.",
+      "description": "Practica con calma. Sin cronómetro. 20 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 60
@@ -16762,13 +16798,13 @@
       "id": 932,
       "phase": 19,
       "theme": "dimension",
-      "pairs": 8,
+      "pairs": 11,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "medium",
-      "description": "El tablero rota de vez en cuando. Sin cronÃ³metro. 16 cartas.",
+      "description": "Más cartas. Sin cronómetro. 22 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 80
@@ -16780,13 +16816,13 @@
       "id": 933,
       "phase": 19,
       "theme": "dimension",
-      "pairs": 10,
+      "pairs": 11,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "hard",
-      "description": "La oscuridad cubre el tablero poco a poco. Sin cronÃ³metro. 20 cartas.",
+      "description": "Nivel básico. Sin cronómetro. 22 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 150
@@ -16798,13 +16834,13 @@
       "id": 934,
       "phase": 19,
       "theme": "dimension",
-      "pairs": 7,
+      "pairs": 12,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "hard",
-      "description": "El tablero rota de vez en cuando. CronÃ³metro: 78s. 14 cartas.",
+      "description": "Juego tranquilo. Sin cronómetro. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 105
@@ -16816,13 +16852,13 @@
       "id": 935,
       "phase": 19,
       "theme": "dimension",
-      "pairs": 6,
+      "pairs": 12,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "medium",
-      "description": "Nivel clÃ¡sico sin trucos. CronÃ³metro: 59s. 12 cartas.",
+      "description": "Nivel clásico. Sin cronómetro. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 60
@@ -16834,13 +16870,13 @@
       "id": 936,
       "phase": 19,
       "theme": "dimension",
-      "pairs": 5,
+      "pairs": 10,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "easy",
-      "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 10 cartas.",
+      "description": "Practica con calma. Sin cronómetro. 20 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 25
@@ -16852,13 +16888,13 @@
       "id": 937,
       "phase": 19,
       "theme": "dimension",
-      "pairs": 7,
+      "pairs": 10,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "medium",
-      "description": "Cartas fantasma aparecen y desaparecen. Sin cronÃ³metro. 14 cartas.",
+      "description": "Más cartas. Sin cronómetro. 20 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 70
@@ -16870,13 +16906,13 @@
       "id": 938,
       "phase": 19,
       "theme": "dimension",
-      "pairs": 2,
+      "pairs": 10,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "medium",
-      "description": "Cartas que se congelan temporalmente. Sin cronÃ³metro. 4 cartas.",
+      "description": "Nivel básico. Sin cronómetro. 20 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 20
@@ -16888,13 +16924,13 @@
       "id": 939,
       "phase": 19,
       "theme": "dimension",
-      "pairs": 6,
+      "pairs": 10,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "medium",
-      "description": "Evita bombas: piensa rÃ¡pido. Sin cronÃ³metro. 12 cartas.",
+      "description": "Juego tranquilo. Sin cronómetro. 20 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 60
@@ -16906,13 +16942,13 @@
       "id": 940,
       "phase": 19,
       "theme": "dimension",
-      "pairs": 12,
+      "pairs": 11,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "hard",
-      "description": "las cartas estÃ¡n parcialmente ocultas. CronÃ³metro: 98s. 24 cartas.",
+      "description": "Nivel clásico. Sin cronómetro. 22 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 180
@@ -16924,13 +16960,13 @@
       "id": 941,
       "phase": 19,
       "theme": "dimension",
-      "pairs": 9,
+      "pairs": 11,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "medium",
-      "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 18 cartas.",
+      "description": "Practica con calma. Sin cronómetro. 22 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 90
@@ -16942,13 +16978,13 @@
       "id": 942,
       "phase": 19,
       "theme": "dimension",
-      "pairs": 8,
+      "pairs": 11,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "medium",
-      "description": "juega normalmente. Sin cronÃ³metro. 16 cartas.",
+      "description": "Más cartas. Sin cronómetro. 22 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 80
@@ -16960,13 +16996,13 @@
       "id": 943,
       "phase": 19,
       "theme": "dimension",
-      "pairs": 5,
+      "pairs": 12,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "easy",
-      "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 10 cartas.",
+      "description": "Nivel básico. Sin cronómetro. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 25
@@ -16978,13 +17014,13 @@
       "id": 944,
       "phase": 19,
       "theme": "dimension",
-      "pairs": 6,
+      "pairs": 11,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "medium",
-      "description": "Evita bombas: piensa rÃ¡pido. Sin cronÃ³metro. 12 cartas.",
+      "description": "Juego tranquilo. Sin cronómetro. 22 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 60
@@ -16996,13 +17032,13 @@
       "id": 945,
       "phase": 19,
       "theme": "dimension",
-      "pairs": 9,
+      "pairs": 12,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "medium",
-      "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 18 cartas.",
+      "description": "Nivel clásico. Sin cronómetro. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 90
@@ -17014,13 +17050,13 @@
       "id": 946,
       "phase": 19,
       "theme": "dimension",
-      "pairs": 8,
+      "pairs": 11,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "hard",
-      "description": "La oscuridad cubre el tablero poco a poco. CronÃ³metro: 75s. 16 cartas.",
+      "description": "Practica con calma. Sin cronómetro. 22 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 120
@@ -17032,13 +17068,13 @@
       "id": 947,
       "phase": 19,
       "theme": "dimension",
-      "pairs": 2,
+      "pairs": 12,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "medium",
-      "description": "El tablero rota de vez en cuando. Sin cronÃ³metro. 4 cartas.",
+      "description": "Más cartas. Sin cronómetro. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 20
@@ -17050,13 +17086,13 @@
       "id": 948,
       "phase": 19,
       "theme": "dimension",
-      "pairs": 6,
+      "pairs": 11,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "medium",
-      "description": "Las cartas cambian de valor. Sin cronÃ³metro. 12 cartas.",
+      "description": "Nivel básico. Sin cronómetro. 22 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 60
@@ -17068,13 +17104,13 @@
       "id": 949,
       "phase": 19,
       "theme": "dimension",
-      "pairs": 4,
+      "pairs": 10,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "medium",
-      "description": "Evita bombas: piensa rÃ¡pido. Sin cronÃ³metro. 8 cartas.",
+      "description": "Juego tranquilo. Sin cronómetro. 20 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 40
@@ -17089,10 +17125,11 @@
       "pairs": 12,
       "timeSec": 0,
       "mechanics": [
-        "basic"
+        "basic",
+        "fog"
       ],
       "difficulty": "hard",
-      "description": "Boss: 24 cartas, fog + rotation, crono 101s.",
+      "description": "Nivel especial. Sin cronómetro. 24 cartas.",
       "isBoss": true,
       "rewards": {
         "coins": 180
@@ -17104,31 +17141,31 @@
       "id": 951,
       "phase": 20,
       "theme": "final",
-      "pairs": 3,
+      "pairs": 12,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "easy",
-      "description": "Encuentra trÃ­os idÃ©nticos. Sin cronÃ³metro. 6 cartas.",
+      "description": "Practica con calma. Sin cronómetro. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 15
       },
       "seed": 1951030,
-      "setSize": 3
+      "setSize": 2
     },
     {
       "id": 952,
       "phase": 20,
       "theme": "final",
-      "pairs": 8,
+      "pairs": 12,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "medium",
-      "description": "La oscuridad cubre el tablero poco a poco. Sin cronÃ³metro. 16 cartas.",
+      "description": "Más cartas. Sin cronómetro. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 80
@@ -17140,13 +17177,13 @@
       "id": 953,
       "phase": 20,
       "theme": "final",
-      "pairs": 8,
+      "pairs": 10,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "hard",
-      "description": "Evita bombas: piensa rÃ¡pido. CronÃ³metro: 80s. 16 cartas.",
+      "description": "Nivel básico. Sin cronómetro. 20 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 120
@@ -17158,13 +17195,13 @@
       "id": 954,
       "phase": 20,
       "theme": "final",
-      "pairs": 8,
+      "pairs": 10,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "medium",
-      "description": "Nivel clÃ¡sico sin trucos. CronÃ³metro: 77s. 16 cartas.",
+      "description": "Juego tranquilo. Sin cronómetro. 20 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 80
@@ -17176,13 +17213,13 @@
       "id": 955,
       "phase": 20,
       "theme": "final",
-      "pairs": 10,
+      "pairs": 11,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "hard",
-      "description": "Las cartas cambian de valor. Sin cronÃ³metro. 20 cartas.",
+      "description": "Nivel clásico. Sin cronómetro. 22 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 150
@@ -17194,13 +17231,13 @@
       "id": 956,
       "phase": 20,
       "theme": "final",
-      "pairs": 6,
+      "pairs": 12,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "easy",
-      "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 12 cartas.",
+      "description": "Practica con calma. Sin cronómetro. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 30
@@ -17212,13 +17249,13 @@
       "id": 957,
       "phase": 20,
       "theme": "final",
-      "pairs": 8,
+      "pairs": 12,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "medium",
-      "description": "las cartas estÃ¡n parcialmente ocultas. CronÃ³metro: 72s. 16 cartas.",
+      "description": "Más cartas. Sin cronómetro. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 80
@@ -17230,13 +17267,13 @@
       "id": 958,
       "phase": 20,
       "theme": "final",
-      "pairs": 9,
+      "pairs": 12,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "medium",
-      "description": "Cartas fantasma aparecen y desaparecen. Sin cronÃ³metro. 18 cartas.",
+      "description": "Nivel básico. Sin cronómetro. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 90
@@ -17248,13 +17285,13 @@
       "id": 959,
       "phase": 20,
       "theme": "final",
-      "pairs": 4,
+      "pairs": 10,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "medium",
-      "description": "Cartas que se congelan temporalmente. Sin cronÃ³metro. 8 cartas.",
+      "description": "Juego tranquilo. Sin cronómetro. 20 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 40
@@ -17266,13 +17303,13 @@
       "id": 960,
       "phase": 20,
       "theme": "final",
-      "pairs": 6,
+      "pairs": 12,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "medium",
-      "description": "El tablero rota de vez en cuando. Sin cronÃ³metro. 12 cartas.",
+      "description": "Nivel clásico. Sin cronómetro. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 60
@@ -17284,13 +17321,13 @@
       "id": 961,
       "phase": 20,
       "theme": "final",
-      "pairs": 4,
+      "pairs": 11,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "medium",
-      "description": "Las cartas cambian de valor. Sin cronÃ³metro. 8 cartas.",
+      "description": "Practica con calma. Sin cronómetro. 22 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 40
@@ -17302,13 +17339,13 @@
       "id": 962,
       "phase": 20,
       "theme": "final",
-      "pairs": 5,
+      "pairs": 12,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "medium",
-      "description": "El tablero rota de vez en cuando. Sin cronÃ³metro. 10 cartas.",
+      "description": "Más cartas. Sin cronómetro. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 50
@@ -17320,13 +17357,13 @@
       "id": 963,
       "phase": 20,
       "theme": "final",
-      "pairs": 4,
+      "pairs": 11,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "medium",
-      "description": "Evita bombas: piensa rÃ¡pido. Sin cronÃ³metro. 8 cartas.",
+      "description": "Nivel básico. Sin cronómetro. 22 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 40
@@ -17338,13 +17375,13 @@
       "id": 964,
       "phase": 20,
       "theme": "final",
-      "pairs": 6,
+      "pairs": 12,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "medium",
-      "description": "Las cartas cambian de valor. Sin cronÃ³metro. 12 cartas.",
+      "description": "Juego tranquilo. Sin cronómetro. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 60
@@ -17356,13 +17393,13 @@
       "id": 965,
       "phase": 20,
       "theme": "final",
-      "pairs": 10,
+      "pairs": 12,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "hard",
-      "description": "La oscuridad cubre el tablero poco a poco. CronÃ³metro: 93s. 20 cartas.",
+      "description": "Nivel clásico. Sin cronómetro. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 150
@@ -17374,13 +17411,13 @@
       "id": 966,
       "phase": 20,
       "theme": "final",
-      "pairs": 6,
+      "pairs": 12,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "medium",
-      "description": "Evita bombas: piensa rÃ¡pido. CronÃ³metro: 63s. 12 cartas.",
+      "description": "Practica con calma. Sin cronómetro. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 60
@@ -17392,13 +17429,13 @@
       "id": 967,
       "phase": 20,
       "theme": "final",
-      "pairs": 6,
+      "pairs": 10,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "easy",
-      "description": "Cartas fantasma aparecen y desaparecen. Sin cronÃ³metro. 12 cartas.",
+      "description": "Más cartas. Sin cronómetro. 20 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 30
@@ -17410,13 +17447,13 @@
       "id": 968,
       "phase": 20,
       "theme": "final",
-      "pairs": 10,
+      "pairs": 11,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "medium",
-      "description": "juega normalmente. Sin cronÃ³metro. 20 cartas.",
+      "description": "Nivel básico. Sin cronómetro. 22 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 100
@@ -17428,13 +17465,13 @@
       "id": 969,
       "phase": 20,
       "theme": "final",
-      "pairs": 2,
+      "pairs": 12,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "easy",
-      "description": "Niebla ligera: observa con atenciÃ³n. Sin cronÃ³metro. 4 cartas.",
+      "description": "Juego tranquilo. Sin cronómetro. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 10
@@ -17452,7 +17489,7 @@
         "basic"
       ],
       "difficulty": "hard",
-      "description": "Cartas que se congelan temporalmente. CronÃ³metro: 92s. 20 cartas.",
+      "description": "Nivel clásico. Sin cronómetro. 20 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 150
@@ -17464,13 +17501,13 @@
       "id": 971,
       "phase": 20,
       "theme": "final",
-      "pairs": 4,
+      "pairs": 12,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "easy",
-      "description": "Niebla ligera: observa con atenciÃ³n. Sin cronÃ³metro. 8 cartas.",
+      "description": "Practica con calma. Sin cronómetro. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 20
@@ -17482,13 +17519,13 @@
       "id": 972,
       "phase": 20,
       "theme": "final",
-      "pairs": 8,
+      "pairs": 12,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "medium",
-      "description": "Cartas que se congelan temporalmente. Sin cronÃ³metro. 16 cartas.",
+      "description": "Más cartas. Sin cronómetro. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 80
@@ -17500,13 +17537,13 @@
       "id": 973,
       "phase": 20,
       "theme": "final",
-      "pairs": 8,
+      "pairs": 10,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "hard",
-      "description": "El tablero rota de vez en cuando. CronÃ³metro: 84s. 16 cartas.",
+      "description": "Nivel básico. Sin cronómetro. 20 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 120
@@ -17518,49 +17555,50 @@
       "id": 974,
       "phase": 20,
       "theme": "final",
-      "pairs": 3,
+      "pairs": 12,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "easy",
-      "description": "Encuentra trÃ­os idÃ©nticos. Sin cronÃ³metro. 6 cartas.",
+      "description": "Juego tranquilo. Sin cronómetro. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 15
       },
       "seed": 1974030,
-      "setSize": 3
+      "setSize": 2
     },
     {
       "id": 975,
       "phase": 20,
       "theme": "final",
-      "pairs": 7,
+      "pairs": 6,
       "timeSec": 0,
       "mechanics": [
-        "basic"
+        "basic",
+        "trio"
       ],
       "difficulty": "medium",
-      "description": "Niebla ligera: observa con atenciÃ³n. Sin cronÃ³metro. 14 cartas.",
+      "description": "Nivel clásico. Sin cronómetro. 18 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 70
       },
       "seed": 1975070,
-      "setSize": 2
+      "setSize": 3
     },
     {
       "id": 976,
       "phase": 20,
       "theme": "final",
-      "pairs": 5,
+      "pairs": 10,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "medium",
-      "description": "El tablero rota de vez en cuando. Sin cronÃ³metro. 10 cartas.",
+      "description": "Practica con calma. Sin cronómetro. 20 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 50
@@ -17572,13 +17610,13 @@
       "id": 977,
       "phase": 20,
       "theme": "final",
-      "pairs": 6,
+      "pairs": 11,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "easy",
-      "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 12 cartas.",
+      "description": "Más cartas. Sin cronómetro. 22 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 30
@@ -17590,13 +17628,13 @@
       "id": 978,
       "phase": 20,
       "theme": "final",
-      "pairs": 3,
+      "pairs": 10,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "medium",
-      "description": "Cartas que se congelan temporalmente. Sin cronÃ³metro. 6 cartas.",
+      "description": "Nivel básico. Sin cronómetro. 20 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 30
@@ -17608,31 +17646,31 @@
       "id": 979,
       "phase": 20,
       "theme": "final",
-      "pairs": 9,
+      "pairs": 10,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "hard",
-      "description": "Encuentra trÃ­os idÃ©nticos. Sin cronÃ³metro. 18 cartas.",
+      "description": "Juego tranquilo. Sin cronómetro. 20 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 135
       },
       "seed": 1979090,
-      "setSize": 3
+      "setSize": 2
     },
     {
       "id": 980,
       "phase": 20,
       "theme": "final",
-      "pairs": 8,
+      "pairs": 10,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "medium",
-      "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 16 cartas.",
+      "description": "Nivel clásico. Sin cronómetro. 20 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 80
@@ -17644,13 +17682,13 @@
       "id": 981,
       "phase": 20,
       "theme": "final",
-      "pairs": 9,
+      "pairs": 12,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "hard",
-      "description": "Nivel clÃ¡sico sin trucos. CronÃ³metro: 97s. 18 cartas.",
+      "description": "Practica con calma. Sin cronómetro. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 135
@@ -17662,13 +17700,13 @@
       "id": 982,
       "phase": 20,
       "theme": "final",
-      "pairs": 8,
+      "pairs": 12,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "medium",
-      "description": "las cartas pueden rotar. CronÃ³metro: 76s. 16 cartas.",
+      "description": "Más cartas. Sin cronómetro. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 80
@@ -17680,13 +17718,13 @@
       "id": 983,
       "phase": 20,
       "theme": "final",
-      "pairs": 4,
+      "pairs": 12,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "easy",
-      "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 8 cartas.",
+      "description": "Nivel básico. Sin cronómetro. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 20
@@ -17698,13 +17736,13 @@
       "id": 984,
       "phase": 20,
       "theme": "final",
-      "pairs": 8,
+      "pairs": 12,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "medium",
-      "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 16 cartas.",
+      "description": "Juego tranquilo. Sin cronómetro. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 80
@@ -17716,13 +17754,13 @@
       "id": 985,
       "phase": 20,
       "theme": "final",
-      "pairs": 6,
+      "pairs": 11,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "medium",
-      "description": "Evita bombas: piensa rÃ¡pido. Sin cronÃ³metro. 12 cartas.",
+      "description": "Nivel clásico. Sin cronómetro. 22 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 60
@@ -17734,13 +17772,13 @@
       "id": 986,
       "phase": 20,
       "theme": "final",
-      "pairs": 9,
+      "pairs": 10,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "hard",
-      "description": "Nivel clÃ¡sico sin trucos. CronÃ³metro: 88s. 18 cartas.",
+      "description": "Practica con calma. Sin cronómetro. 20 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 135
@@ -17752,13 +17790,13 @@
       "id": 987,
       "phase": 20,
       "theme": "final",
-      "pairs": 6,
+      "pairs": 12,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "easy",
-      "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 12 cartas.",
+      "description": "Más cartas. Sin cronómetro. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 30
@@ -17770,13 +17808,13 @@
       "id": 988,
       "phase": 20,
       "theme": "final",
-      "pairs": 7,
+      "pairs": 12,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "medium",
-      "description": "Evita bombas: piensa rÃ¡pido. Sin cronÃ³metro. 14 cartas.",
+      "description": "Nivel básico. Sin cronómetro. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 70
@@ -17788,13 +17826,13 @@
       "id": 989,
       "phase": 20,
       "theme": "final",
-      "pairs": 2,
+      "pairs": 11,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "easy",
-      "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 4 cartas.",
+      "description": "Juego tranquilo. Sin cronómetro. 22 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 10
@@ -17806,13 +17844,13 @@
       "id": 990,
       "phase": 20,
       "theme": "final",
-      "pairs": 7,
+      "pairs": 12,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "medium",
-      "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 14 cartas.",
+      "description": "Nivel clásico. Sin cronómetro. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 70
@@ -17824,13 +17862,13 @@
       "id": 991,
       "phase": 20,
       "theme": "final",
-      "pairs": 3,
+      "pairs": 11,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "medium",
-      "description": "Evita bombas: piensa rÃ¡pido. Sin cronÃ³metro. 6 cartas.",
+      "description": "Practica con calma. Sin cronómetro. 22 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 30
@@ -17842,31 +17880,31 @@
       "id": 992,
       "phase": 20,
       "theme": "final",
-      "pairs": 9,
+      "pairs": 12,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "hard",
-      "description": "Encuentra trÃ­os idÃ©nticos. Sin cronÃ³metro. 18 cartas.",
+      "description": "Más cartas. Sin cronómetro. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 135
       },
       "seed": 1992090,
-      "setSize": 3
+      "setSize": 2
     },
     {
       "id": 993,
       "phase": 20,
       "theme": "final",
-      "pairs": 5,
+      "pairs": 10,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "medium",
-      "description": "Cartas que se congelan temporalmente. Sin cronÃ³metro. 10 cartas.",
+      "description": "Nivel básico. Sin cronómetro. 20 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 50
@@ -17878,13 +17916,13 @@
       "id": 994,
       "phase": 20,
       "theme": "final",
-      "pairs": 4,
+      "pairs": 12,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "medium",
-      "description": "Evita bombas: piensa rÃ¡pido. Sin cronÃ³metro. 8 cartas.",
+      "description": "Juego tranquilo. Sin cronómetro. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 40
@@ -17896,13 +17934,13 @@
       "id": 995,
       "phase": 20,
       "theme": "final",
-      "pairs": 6,
+      "pairs": 12,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "easy",
-      "description": "Niebla ligera: observa con atenciÃ³n. Sin cronÃ³metro. 12 cartas.",
+      "description": "Nivel clásico. Sin cronómetro. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 30
@@ -17914,13 +17952,13 @@
       "id": 996,
       "phase": 20,
       "theme": "final",
-      "pairs": 12,
+      "pairs": 11,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "hard",
-      "description": "La oscuridad cubre el tablero poco a poco. CronÃ³metro: 111s. 24 cartas.",
+      "description": "Practica con calma. Sin cronómetro. 22 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 180
@@ -17932,13 +17970,13 @@
       "id": 997,
       "phase": 20,
       "theme": "final",
-      "pairs": 7,
+      "pairs": 10,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "medium",
-      "description": "El tablero rota de vez en cuando. Sin cronÃ³metro. 14 cartas.",
+      "description": "Más cartas. Sin cronómetro. 20 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 70
@@ -17950,13 +17988,13 @@
       "id": 998,
       "phase": 20,
       "theme": "final",
-      "pairs": 9,
+      "pairs": 11,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "hard",
-      "description": "Niebla ligera: observa con atenciÃ³n. CronÃ³metro: 86s. 18 cartas.",
+      "description": "Nivel básico. Sin cronómetro. 22 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 135
@@ -17968,13 +18006,13 @@
       "id": 999,
       "phase": 20,
       "theme": "final",
-      "pairs": 4,
+      "pairs": 12,
       "timeSec": 0,
       "mechanics": [
         "basic"
       ],
       "difficulty": "medium",
-      "description": "Cartas que se congelan temporalmente. Sin cronÃ³metro. 8 cartas.",
+      "description": "Juego tranquilo. Sin cronómetro. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 40
@@ -17989,10 +18027,11 @@
       "pairs": 12,
       "timeSec": 0,
       "mechanics": [
-        "basic"
+        "basic",
+        "rotation"
       ],
       "difficulty": "hard",
-      "description": "Boss: 24 cartas, rotation + darkness, crono 113s.",
+      "description": "Nivel especial. Sin cronómetro. 24 cartas.",
       "isBoss": true,
       "rewards": {
         "coins": 180

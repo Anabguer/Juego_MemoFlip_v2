@@ -81,18 +81,26 @@
     },
     {
       "client_info": {
-        "mobilesdk_app_id": "1:439019722673:android:028588a17643f7c08c0f90",
+        "mobilesdk_app_id": "1:439019722673:android:3fb151b97bbbc3838c0f90",
         "android_client_info": {
           "package_name": "com.intocables.memoflip"
         }
       },
       "oauth_client": [
         {
-          "client_id": "439019722673-8it640utjnvavl60h8r7bfgcge21eugp.apps.googleusercontent.com",
+          "client_id": "439019722673-835c15qcm3ef95so50epd1mpaqnh8qjb.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
             "package_name": "com.intocables.memoflip",
-            "certificate_hash": "e15aa48c0f935642186ea067bf1745484d7b1fad"
+            "certificate_hash": "b7a269267d6194c2a64c3a29749426fb4a34ede9"
+          }
+        },
+        {
+          "client_id": "439019722673-ftr9s7ruqciq29ej5h64jmgnsa69j6av.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.intocables.memoflip",
+            "certificate_hash": "1919685429e64c22cf68e2c2fb2ad23096ec27f7"
           }
         },
         {

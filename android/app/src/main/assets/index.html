@@ -117,22 +117,23 @@
     .btn-play {
       position: relative;
       width: 100%;
-      padding: 16px 32px;
+      max-width: 280px;
+      padding: 12px 24px;
       background: linear-gradient(135deg, #facc15, #eab308);
-      border: 3px solid white;
+      border: 2px solid white;
       border-radius: 999px;
       color: white;
-      font-size: 24px;
-      font-weight: 900;
+      font-size: 20px;
+      font-weight: 700;
       cursor: pointer;
       overflow: hidden;
-      box-shadow: 0 8px 20px rgba(250, 204, 21, 0.4);
+      box-shadow: 0 6px 20px rgba(250, 204, 21, 0.4);
       transition: all 0.3s;
-      margin-bottom: 24px;
+      margin: 0 auto 24px auto;
       display: flex;
       align-items: center;
       justify-content: center;
-      gap: 12px;
+      gap: 8px;
     }
     
     .btn-play:hover {
@@ -151,6 +152,129 @@
       overflow: hidden;
       border-radius: 999px;
       pointer-events: none;
+    }
+
+    /* ===== MODAL AYUDA DE MODOS ===== */
+    .help-modal-box {
+      position: relative;
+      z-index: 10;
+      width: 100%;
+      max-width: 500px;
+      margin: 0 16px;
+      background: linear-gradient(135deg, #1e293b, #581c87, #1e293b);
+      border-radius: 16px;
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+      overflow: hidden;
+    }
+
+    .help-modal-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 24px;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .help-modal-header .header-left {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .help-modal-header .header-icon {
+      padding: 8px;
+      background: rgba(255, 255, 255, 0.1);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      border-radius: 12px;
+    }
+
+    .help-modal-header .header-icon .icon {
+      width: 24px;
+      height: 24px;
+      stroke: white;
+    }
+
+    .help-modal-header .header-title {
+      font-size: 24px;
+      font-weight: bold;
+      color: white;
+      margin: 0;
+    }
+
+    .help-modal-header .btn-close {
+      padding: 8px;
+      background: rgba(255, 255, 255, 0.1);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      border-radius: 12px;
+      color: white;
+      font-size: 20px;
+      cursor: pointer;
+      transition: background 0.2s;
+    }
+
+    .help-modal-header .btn-close:hover {
+      background: rgba(255, 255, 255, 0.2);
+    }
+
+    .help-modal-content {
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      max-height: none;
+      overflow-y: visible;
+    }
+
+    .help-section {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    .help-section-title {
+      font-size: 16px;
+      font-weight: 600;
+      color: white;
+      margin: 0;
+    }
+
+    .mode-help-item {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      padding: 12px;
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: 8px;
+    }
+
+    .mode-help-icon {
+      flex-shrink: 0;
+    }
+
+    .help-mode-icon {
+      width: 24px;
+      height: 24px;
+      object-fit: contain;
+    }
+
+    .mode-help-text {
+      flex: 1;
+    }
+
+    .mode-help-text h3 {
+      font-size: 16px;
+      font-weight: 600;
+      color: white;
+      margin: 0 0 4px 0;
+    }
+
+    .mode-help-text p {
+      font-size: 14px;
+      color: rgba(255, 255, 255, 0.7);
+      margin: 0;
+      line-height: 1.4;
     }
     
     .bubble {
@@ -640,6 +764,12 @@
       localStorage.removeItem('user');
       localStorage.removeItem('memoflip_user');
       
+      // Limpiar progreso del usuario logueado para volver a modo invitado
+      localStorage.removeItem('memoflip_progress_normal');
+      localStorage.removeItem('memoflip_progress_beginner');
+      localStorage.removeItem('memoflip_progress_extreme');
+      localStorage.removeItem('lastUserUid');
+      
       console.log('🔍 localStorage después:', {
         user: localStorage.getItem('user'),
         memoflip_user: localStorage.getItem('memoflip_user')
@@ -940,7 +1070,35 @@
         
         console.log('✅ UI actualizada para usuario logueado');
         console.log('🔍 Función logout disponible:', typeof window.logout);
+        
+        // Actualizar color del nick según el modo actual (con delay para que se renderice)
+        setTimeout(() => {
+          updateNickColor(currentMode);
+        }, 100);
       }
+    }
+    
+    // ===== ACTUALIZAR COLOR DEL NICK SEGÚN MODO =====
+    function updateNickColor(mode) {
+      console.log('🎨 Actualizando color del nick para modo:', mode);
+      
+      const userNickElement = document.querySelector('.user-nick');
+      if (!userNickElement) {
+        console.log('❌ No se encontró elemento .user-nick');
+        return;
+      }
+      
+      // Colores según el modo (iguales que en el juego)
+      const modeColors = {
+        'beginner': '#facc15',  // Amarillo dorado
+        'normal': '#2fdde6',    // Azul cyan
+        'extreme': '#ef4444'    // Rojo
+      };
+      
+      const color = modeColors[mode] || modeColors['normal'];
+      userNickElement.style.color = color;
+      
+      console.log('🎨 Color aplicado al nick:', color, 'para modo:', mode);
     }
     
     function setUILoggedOut() {
@@ -976,16 +1134,26 @@
     setInterval(createFallingCard, 1500);
     for (let i = 0; i < 3; i++) setTimeout(createFallingCard, i * 500);
     
-    // Modos
-    let currentMode = 'normal';
+    // Modos - Cargar modo guardado
+    let currentMode = localStorage.getItem('memoflip_selected_mode') || 'normal';
+    
+    // Activar botón del modo guardado
+    const savedModeButton = document.querySelector(`.mode-btn[data-mode="${currentMode}"]`);
+    if (savedModeButton) {
+        savedModeButton.classList.add('active');
+        console.log('✅ Modo guardado cargado:', currentMode);
+    }
     document.querySelectorAll('.mode-btn').forEach(btn => {
       btn.onclick = () => {
         document.querySelectorAll('.mode-btn').forEach(b => b.classList.remove('active'));
         btn.classList.add('active');
         currentMode = btn.dataset.mode;
         
-        // Mostrar frase motivacional
-        showModeMotivationalMessage(btn.dataset.mode);
+        // Cambiar color del nick según el modo
+        updateNickColor(currentMode);
+        
+        // Modo seleccionado (sin modal)
+        console.log('🎯 Modo seleccionado:', btn.dataset.mode);
       };
     });
     
@@ -1019,25 +1187,25 @@
       // Colores según el modo (iguales que los botones)
       const modeColors = {
         'beginner': {
-          background: 'linear-gradient(135deg, rgba(250, 204, 21, 0.95), rgba(234, 179, 8, 0.95))',
+          background: 'linear-gradient(135deg, rgba(250, 204, 21, 0.3), rgba(234, 179, 8, 0.3))',
           border: '2px solid #facc15',
           titleColor: '#facc15',
           emoji: '🌅',
-          boxShadow: '0 20px 40px rgba(250, 204, 21, 0.4)'
+          boxShadow: '0 20px 40px rgba(250, 204, 21, 0.2)'
         },
         'normal': {
-          background: 'linear-gradient(135deg, rgba(59, 130, 246, 0.95), rgba(37, 99, 235, 0.95))',
+          background: 'linear-gradient(135deg, rgba(59, 130, 246, 0.3), rgba(37, 99, 235, 0.3))',
           border: '2px solid #2fdde6',
           titleColor: '#2fdde6',
           emoji: '⚡',
-          boxShadow: '0 20px 40px rgba(59, 130, 246, 0.4)'
+          boxShadow: '0 20px 40px rgba(59, 130, 246, 0.2)'
         },
         'extreme': {
-          background: 'linear-gradient(135deg, rgba(239, 68, 68, 0.95), rgba(185, 28, 28, 0.95))',
+          background: 'linear-gradient(135deg, rgba(239, 68, 68, 0.3), rgba(185, 28, 28, 0.3))',
           border: '2px solid #ef4444',
           titleColor: '#ef4444',
           emoji: '🔥',
-          boxShadow: '0 20px 40px rgba(239, 68, 68, 0.4)'
+          boxShadow: '0 20px 40px rgba(239, 68, 68, 0.2)'
         }
       };
 
@@ -1178,6 +1346,9 @@
     
     // Botón jugar
     document.getElementById('btn-play').onclick = () => {
+      // Marcar que el usuario ha interactuado (para permitir música automática)
+      localStorage.setItem('memoflip_user_interacted', 'true');
+      
       // Guardar modo seleccionado
       localStorage.setItem('memoflip_selected_mode', currentMode);
       
@@ -1201,6 +1372,23 @@
         }
       }
       
+      // Marcar que se debe reproducir música al entrar al juego
+      if (!user) {
+        // No hay usuario logueado - reproducir por defecto
+        console.log('🎵 Marcando para reproducir música al entrar al juego (usuario no logueado)');
+        localStorage.setItem('memoflip_should_play_music', 'true');
+      } else {
+        // Hay usuario logueado - verificar configuraciones
+        const settings = JSON.parse(localStorage.getItem('memoflip_settings') || '{"soundEnabled":true}');
+        if (settings.soundEnabled) {
+          console.log('🎵 Marcando para reproducir música al entrar al juego (usuario logueado con sonido habilitado)');
+          localStorage.setItem('memoflip_should_play_music', 'true');
+        } else {
+          console.log('🎵 Usuario logueado tiene sonido deshabilitado, no reproduciendo');
+          localStorage.removeItem('memoflip_should_play_music');
+        }
+      }
+      
       // Ir al juego
       window.location.href = 'game.html';
     };
@@ -1208,6 +1396,9 @@
     // 🔍 VERIFICAR LOGIN AL CARGAR LA PÁGINA
     document.addEventListener('DOMContentLoaded', () => {
       checkLoginStatus();
+      
+      // Inicializar color del nick según el modo actual
+      updateNickColor(currentMode);
       
       // Verificar con Android nativo si hay usuario logueado
       if (window.AndroidInterface && window.AndroidInterface.getUser) {
@@ -1220,16 +1411,12 @@
     
     // Función de ayuda para modos
     function showModeHelp() {
-      alert(`🎮 AYUDA DE MODOS
+      document.getElementById('help-modal').classList.remove('hidden');
+    }
 
-🎮 Relax (Principiante)
-Modo tranquilo para aprender. Sin mecánicas especiales, solo concentración y memoria.
-
-⚡ Normal  
-Desafío equilibrado con mecánicas especiales que aparecen progresivamente.
-
-🔥 Extremo
-Máximo desafío. Mecánicas complejas desde el inicio para expertos.`);
+    // Función para cerrar modal de ayuda
+    function closeHelpModal() {
+      document.getElementById('help-modal').classList.add('hidden');
     }
     
     // Función para login con Google
@@ -1244,6 +1431,9 @@ Máximo desafío. Mecánicas complejas desde el inicio para expertos.`);
     
     // Botón jugar
     document.getElementById('btn-play').onclick = () => {
+      // Marcar que el usuario ha interactuado (para permitir música automática)
+      localStorage.setItem('memoflip_user_interacted', 'true');
+      
       // Guardar modo seleccionado
       localStorage.setItem('memoflip_selected_mode', currentMode);
       
@@ -1264,6 +1454,23 @@ Máximo desafío. Mecánicas complejas desde el inicio para expertos.`);
           console.log('🎯 Modo guardado en Firestore:', currentMode);
         } catch (error) {
           console.error('❌ Error guardando modo en Firestore:', error);
+        }
+      }
+      
+      // Marcar que se debe reproducir música al entrar al juego
+      if (!user) {
+        // No hay usuario logueado - reproducir por defecto
+        console.log('🎵 Marcando para reproducir música al entrar al juego (usuario no logueado)');
+        localStorage.setItem('memoflip_should_play_music', 'true');
+      } else {
+        // Hay usuario logueado - verificar configuraciones
+        const settings = JSON.parse(localStorage.getItem('memoflip_settings') || '{"soundEnabled":true}');
+        if (settings.soundEnabled) {
+          console.log('🎵 Marcando para reproducir música al entrar al juego (usuario logueado con sonido habilitado)');
+          localStorage.setItem('memoflip_should_play_music', 'true');
+        } else {
+          console.log('🎵 Usuario logueado tiene sonido deshabilitado, no reproduciendo');
+          localStorage.removeItem('memoflip_should_play_music');
         }
       }
       
@@ -1425,6 +1632,72 @@ Máximo desafío. Mecánicas complejas desde el inicio para expertos.`);
     // Event listener para botón Google
     document.getElementById('btn-google-login').onclick = loginWithGoogle;
     </script>
+
+    <!-- ===== MODAL AYUDA DE MODOS ===== -->
+    <div id="help-modal" class="modal-overlay hidden">
+      <div class="modal-backdrop" onclick="closeHelpModal()"></div>
+      
+      <div class="help-modal-box">
+        <!-- Header -->
+        <div class="help-modal-header">
+          <div class="header-left">
+            <div class="header-icon">
+              <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M6 9a6 6 0 0 0 12 0V3a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1z"/>
+                <path d="M6 9H4.5a1 1 0 0 1 0-5H6"/>
+                <path d="M18 9h1.5a1 1 0 0 0 0-5H18"/>
+                <path d="M6 15H4.5a1 1 0 0 0 0 5H6"/>
+                <path d="M18 15h1.5a1 1 0 0 1 0 5H18"/>
+                <circle cx="9" cy="9" r="1"/>
+                <circle cx="15" cy="9" r="1"/>
+              </svg>
+            </div>
+            <h2 class="header-title">Modos de Juego</h2>
+          </div>
+          <button class="btn-close" onclick="closeHelpModal()">✕</button>
+        </div>
+        
+        <!-- Content -->
+        <div class="help-modal-content">
+          
+          <!-- MODOS -->
+          <div class="help-section">
+            <h3 class="help-section-title">Modos Disponibles</h3>
+            
+            <div class="mode-help-item">
+              <div class="mode-help-icon">
+                <img src="relax.png" alt="Relax" class="help-mode-icon">
+              </div>
+              <div class="mode-help-text">
+                <h3>Relax (Principiante)</h3>
+                <p>¡Perfecto para empezar! Sin prisa, sin presión. Solo tú, las cartas y tu memoria. Ideal para relajarte y mejorar paso a paso.</p>
+              </div>
+            </div>
+            
+            <div class="mode-help-item">
+              <div class="mode-help-icon">
+                <img src="normal.png" alt="Normal" class="help-mode-icon">
+              </div>
+              <div class="mode-help-text">
+                <h3>Normal</h3>
+                <p>El equilibrio perfecto. Tiempo limitado y mecánicas especiales que van apareciendo. ¡Para cuando ya tienes experiencia!</p>
+              </div>
+            </div>
+            
+            <div class="mode-help-item">
+              <div class="mode-help-icon">
+                <img src="extremo.png" alt="Extremo" class="help-mode-icon">
+              </div>
+              <div class="mode-help-text">
+                <h3>Extremo</h3>
+                <p>¡No te confíes! Niveles casi imposibles desde el primer momento. Solo para verdaderos maestros de la memoria. ¿Te atreves?</p>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </div>
 </body>
 </html>
 

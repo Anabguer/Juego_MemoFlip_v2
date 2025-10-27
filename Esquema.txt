@@ -1,0 +1,11 @@
+game.html
+Sistemas básicos + inicialización
+
+game-core.js
+lógica principal del juego
+
+game-firebase.js
+Firebase y sincronización
+
+game-ui.js
+interfaz de usuario

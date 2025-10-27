@@ -1,16 +1,16 @@
-﻿window.levels = {
+window.levels = {
   "levels": [
     {
       "id": 1,
       "phase": 1,
       "theme": "ocean",
       "pairs": 4,
-      "timeSec": 60,
+      "timeSec": 51,
       "mechanics": [
         "chameleon"
       ],
       "difficulty": "medium",
-      "description": "Tutorial: Â¡Bienvenido! Sin cronÃ³metro. 4 cartas.",
+      "description": "Desafío intenso. Cronómetro: 51s. 8 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 10
@@ -23,12 +23,12 @@
       "phase": 1,
       "theme": "ocean",
       "pairs": 4,
-      "timeSec": 60,
+      "timeSec": 52,
       "mechanics": [
         "ghost"
       ],
       "difficulty": "medium",
-      "description": "Aprende lo bÃ¡sico. Sin cronÃ³metro. 6 cartas.",
+      "description": "Prueba extrema. Cronómetro: 52s. 8 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 15
@@ -41,12 +41,14 @@
       "phase": 1,
       "theme": "ocean",
       "pairs": 4,
-      "timeSec": 60,
+      "timeSec": 53,
       "mechanics": [
-        "bomb"
+        "bomb",
+        "ghost",
+        "rotation"
       ],
       "difficulty": "medium",
-      "description": "MÃ¡s cartas para practicar. Sin cronÃ³metro. 8 cartas.",
+      "description": "Nivel brutal. Cronómetro: 53s. 8 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 20
@@ -59,12 +61,12 @@
       "phase": 1,
       "theme": "ocean",
       "pairs": 5,
-      "timeSec": 60,
+      "timeSec": 54,
       "mechanics": [
-        "basic"
+        "bomb"
       ],
       "difficulty": "medium",
-      "description": "Sigue practicando. Sin cronÃ³metro. 10 cartas.",
+      "description": "Desafío máximo. Cronómetro: 54s. 10 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 25
@@ -77,12 +79,12 @@
       "phase": 1,
       "theme": "ocean",
       "pairs": 6,
-      "timeSec": 60,
+      "timeSec": 55,
       "mechanics": [
         "ghost"
       ],
       "difficulty": "medium",
-      "description": "Domina la memoria bÃ¡sica. Sin cronÃ³metro. 12 cartas.",
+      "description": "Nivel extremo. Cronómetro: 55s. 12 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 30
@@ -95,12 +97,13 @@
       "phase": 1,
       "theme": "ocean",
       "pairs": 4,
-      "timeSec": 60,
+      "timeSec": 56,
       "mechanics": [
-        "ghost"
+        "ghost",
+        "rotation"
       ],
       "difficulty": "medium",
-      "description": "Primera mecÃ¡nica: Niebla suave. Sin cronÃ³metro. 8 cartas.",
+      "description": "Desafío intenso. Cronómetro: 56s. 8 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 40
@@ -113,12 +116,12 @@
       "phase": 1,
       "theme": "ocean",
       "pairs": 6,
-      "timeSec": 60,
+      "timeSec": 57,
       "mechanics": [
-        "basic"
+        "bomb"
       ],
       "difficulty": "medium",
-      "description": "Descanso despuÃ©s de niebla. Sin cronÃ³metro. 12 cartas.",
+      "description": "Prueba extrema. Cronómetro: 57s. 12 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 30
@@ -131,12 +134,12 @@
       "phase": 1,
       "theme": "ocean",
       "pairs": 5,
-      "timeSec": 60,
+      "timeSec": 58,
       "mechanics": [
         "rotation"
       ],
       "difficulty": "medium",
-      "description": "Cartas fantasma aparecen y desaparecen. Sin cronÃ³metro. 10 cartas.",
+      "description": "Nivel brutal. Cronómetro: 58s. 10 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 50
@@ -149,12 +152,14 @@
       "phase": 1,
       "theme": "ocean",
       "pairs": 7,
-      "timeSec": 60,
+      "timeSec": 59,
       "mechanics": [
-        "basic"
+        "bomb",
+        "ghost",
+        "rotation"
       ],
       "difficulty": "medium",
-      "description": "Nivel de descanso. Sin cronÃ³metro. 14 cartas.",
+      "description": "Desafío máximo. Cronómetro: 59s. 14 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 35
@@ -172,7 +177,7 @@
         "frozen"
       ],
       "difficulty": "medium",
-      "description": "Nivel bÃ¡sico: juega normalmente. Sin cronÃ³metro. 12 cartas.",
+      "description": "Nivel extremo. Cronómetro: 60s. 12 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 60
@@ -185,12 +190,12 @@
       "phase": 1,
       "theme": "ocean",
       "pairs": 6,
-      "timeSec": 60,
+      "timeSec": 55,
       "mechanics": [
         "ghost"
       ],
       "difficulty": "medium",
-      "description": "Nivel de descanso. Sin cronÃ³metro. 12 cartas.",
+      "description": "Desafío intenso. Cronómetro: 55s. 12 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 30
@@ -203,30 +208,32 @@
       "phase": 1,
       "theme": "ocean",
       "pairs": 3,
-      "timeSec": 60,
+      "timeSec": 56,
       "mechanics": [
-        "rotation"
+        "rotation",
+        "fog",
+        "darkness"
       ],
       "difficulty": "medium",
-      "description": "Encuentra trÃ­os en lugar de pares. Sin cronÃ³metro. 9 cartas.",
+      "description": "Prueba extrema. Cronómetro: 56s. 6 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 45
       },
       "seed": 1012030,
-      "setSize": 3
+      "setSize": 2
     },
     {
       "id": 13,
       "phase": 1,
       "theme": "ocean",
       "pairs": 6,
-      "timeSec": 60,
+      "timeSec": 57,
       "mechanics": [
         "ghost"
       ],
       "difficulty": "medium",
-      "description": "Â¡Primer cronÃ³metro! Tienes 60 segundos. 12 cartas.",
+      "description": "Nivel brutal. Cronómetro: 57s. 12 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 60
@@ -239,12 +246,13 @@
       "phase": 1,
       "theme": "ocean",
       "pairs": 6,
-      "timeSec": 60,
+      "timeSec": 58,
       "mechanics": [
-        "fog"
+        "fog",
+        "darkness"
       ],
       "difficulty": "medium",
-      "description": "Niebla de nuevo. Sin cronÃ³metro. 12 cartas.",
+      "description": "Desafío máximo. Cronómetro: 58s. 12 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 60
@@ -257,12 +265,12 @@
       "phase": 1,
       "theme": "ocean",
       "pairs": 7,
-      "timeSec": 70,
+      "timeSec": 59,
       "mechanics": [
         "bomb"
       ],
       "difficulty": "medium",
-      "description": "MÃ¡s cartas con cronÃ³metro. 70 segundos. 14 cartas.",
+      "description": "Nivel extremo. Cronómetro: 59s. 14 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 70
@@ -275,12 +283,14 @@
       "phase": 1,
       "theme": "ocean",
       "pairs": 6,
-      "timeSec": 55,
+      "timeSec": 60,
       "mechanics": [
-        "frozen"
+        "frozen",
+        "fog",
+        "darkness"
       ],
       "difficulty": "medium",
-      "description": "Fantasma con cronÃ³metro. 55 segundos. 12 cartas.",
+      "description": "Desafío intenso. Cronómetro: 60s. 12 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 80
@@ -293,12 +303,12 @@
       "phase": 1,
       "theme": "ocean",
       "pairs": 8,
-      "timeSec": 60,
+      "timeSec": 61,
       "mechanics": [
-        "basic"
+        "bomb"
       ],
       "difficulty": "medium",
-      "description": "Nivel de descanso. Sin cronÃ³metro. 16 cartas.",
+      "description": "Prueba extrema. Cronómetro: 61s. 16 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 40
@@ -311,12 +321,14 @@
       "phase": 1,
       "theme": "ocean",
       "pairs": 5,
-      "timeSec": 60,
+      "timeSec": 62,
       "mechanics": [
-        "frozen"
+        "frozen",
+        "fog",
+        "darkness"
       ],
       "difficulty": "medium",
-      "description": "Cartas congeladas temporalmente. Sin cronÃ³metro. 10 cartas.",
+      "description": "Nivel brutal. Cronómetro: 62s. 10 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 70
@@ -329,12 +341,12 @@
       "phase": 1,
       "theme": "ocean",
       "pairs": 6,
-      "timeSec": 65,
+      "timeSec": 63,
       "mechanics": [
         "fog"
       ],
       "difficulty": "medium",
-      "description": "Descanso con cronÃ³metro. 65 segundos. 12 cartas.",
+      "description": "Desafío máximo. Cronómetro: 63s. 12 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 60
@@ -347,12 +359,13 @@
       "phase": 1,
       "theme": "ocean",
       "pairs": 6,
-      "timeSec": 60,
+      "timeSec": 64,
       "mechanics": [
-        "fog"
+        "fog",
+        "darkness"
       ],
       "difficulty": "medium",
-      "description": "La oscuridad cubre el tablero poco a poco. Sin cronÃ³metro. 12 cartas.",
+      "description": "Nivel extremo. Cronómetro: 64s. 12 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 80
@@ -365,12 +378,12 @@
       "phase": 1,
       "theme": "ocean",
       "pairs": 12,
-      "timeSec": 60,
+      "timeSec": 65,
       "mechanics": [
-        "basic"
+        "bomb"
       ],
       "difficulty": "hard",
-      "description": "Evita bombas: piensa rÃ¡pido. Sin cronÃ³metro. 24 cartas.",
+      "description": "Desafío intenso. Cronómetro: 65s. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 180
@@ -383,12 +396,13 @@
       "phase": 1,
       "theme": "ocean",
       "pairs": 7,
-      "timeSec": 64,
+      "timeSec": 55,
       "mechanics": [
-        "darkness"
+        "darkness",
+        "fog"
       ],
       "difficulty": "medium",
-      "description": "Nivel clÃ¡sico sin trucos. CronÃ³metro: 64s. 14 cartas.",
+      "description": "Prueba extrema. Cronómetro: 55s. 14 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 70
@@ -401,12 +415,12 @@
       "phase": 1,
       "theme": "ocean",
       "pairs": 5,
-      "timeSec": 45,
+      "timeSec": 56,
       "mechanics": [
         "bomb"
       ],
       "difficulty": "medium",
-      "description": "Cartas fantasma aparecen y desaparecen. CronÃ³metro: 45s. 10 cartas.",
+      "description": "Nivel brutal. Cronómetro: 56s. 10 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 50
@@ -419,12 +433,14 @@
       "phase": 1,
       "theme": "ocean",
       "pairs": 7,
-      "timeSec": 60,
+      "timeSec": 57,
       "mechanics": [
-        "frozen"
+        "frozen",
+        "fog",
+        "darkness"
       ],
       "difficulty": "medium",
-      "description": "Niebla ligera: observa con atenciÃ³n. Sin cronÃ³metro. 14 cartas.",
+      "description": "Desafío máximo. Cronómetro: 57s. 14 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 70
@@ -437,12 +453,12 @@
       "phase": 1,
       "theme": "ocean",
       "pairs": 9,
-      "timeSec": 85,
+      "timeSec": 58,
       "mechanics": [
         "darkness"
       ],
       "difficulty": "hard",
-      "description": "Nivel clÃ¡sico sin trucos. CronÃ³metro: 85s. 18 cartas.",
+      "description": "Nivel extremo. Cronómetro: 58s. 18 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 135
@@ -455,12 +471,14 @@
       "phase": 1,
       "theme": "ocean",
       "pairs": 8,
-      "timeSec": 60,
+      "timeSec": 59,
       "mechanics": [
-        "frozen"
+        "frozen",
+        "fog",
+        "darkness"
       ],
       "difficulty": "medium",
-      "description": "La oscuridad cubre el tablero poco a poco. Sin cronÃ³metro. 16 cartas.",
+      "description": "Desafío intenso. Cronómetro: 59s. 16 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 80
@@ -475,10 +493,10 @@
       "pairs": 4,
       "timeSec": 60,
       "mechanics": [
-        "basic"
+        "bomb"
       ],
       "difficulty": "medium",
-      "description": "El tablero rota de vez en cuando. Sin cronÃ³metro. 6 cartas.",
+      "description": "Prueba extrema. Cronómetro: 60s. 8 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 30
@@ -491,12 +509,14 @@
       "phase": 1,
       "theme": "ocean",
       "pairs": 10,
-      "timeSec": 101,
+      "timeSec": 61,
       "mechanics": [
-        "basic"
+        "bomb",
+        "fog",
+        "darkness"
       ],
       "difficulty": "hard",
-      "description": "La oscuridad cubre el tablero poco a poco. CronÃ³metro: 101s. 20 cartas.",
+      "description": "Nivel brutal. Cronómetro: 61s. 20 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 150
@@ -509,30 +529,31 @@
       "phase": 1,
       "theme": "ocean",
       "pairs": 8,
-      "timeSec": 81,
+      "timeSec": 62,
       "mechanics": [
         "trio"
       ],
       "difficulty": "hard",
-      "description": "Las cartas cambian de valor. CronÃ³metro: 81s. 16 cartas.",
+      "description": "Desafío máximo. Cronómetro: 62s. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 120
       },
       "seed": 1029161,
-      "setSize": 2
+      "setSize": 3
     },
     {
       "id": 30,
       "phase": 1,
       "theme": "ocean",
       "pairs": 8,
-      "timeSec": 60,
+      "timeSec": 63,
       "mechanics": [
-        "fog"
+        "fog",
+        "darkness"
       ],
       "difficulty": "medium",
-      "description": "juega normalmente. Sin cronÃ³metro. 16 cartas.",
+      "description": "Nivel extremo. Cronómetro: 63s. 16 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 80
@@ -550,7 +571,7 @@
         "chameleon"
       ],
       "difficulty": "medium",
-      "description": "Nivel clÃ¡sico sin trucos. CronÃ³metro: 67s. 12 cartas.",
+      "description": "Desafío intenso. Cronómetro: 67s. 12 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 60
@@ -565,10 +586,10 @@
       "pairs": 8,
       "timeSec": 60,
       "mechanics": [
-        "basic"
+        "bomb"
       ],
       "difficulty": "medium",
-      "description": "Cartas fantasma aparecen y desaparecen. Sin cronÃ³metro. 16 cartas.",
+      "description": "Prueba extrema. Cronómetro: 60s. 16 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 80
@@ -586,7 +607,7 @@
         "chameleon"
       ],
       "difficulty": "hard",
-      "description": "las cartas pueden rotar. CronÃ³metro: 89s. 20 cartas.",
+      "description": "Nivel brutal. Cronómetro: 89s. 20 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 150
@@ -604,7 +625,7 @@
         "chameleon"
       ],
       "difficulty": "hard",
-      "description": "La oscuridad cubre el tablero poco a poco. CronÃ³metro: 106s. 24 cartas.",
+      "description": "Desafío máximo. Cronómetro: 106s. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 180
@@ -622,7 +643,7 @@
         "ghost"
       ],
       "difficulty": "medium",
-      "description": "Cartas que se congelan temporalmente. Sin cronÃ³metro. 10 cartas.",
+      "description": "Nivel extremo. Cronómetro: 60s. 10 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 50
@@ -640,7 +661,7 @@
         "ghost"
       ],
       "difficulty": "medium",
-      "description": "Nivel clÃ¡sico sin trucos. CronÃ³metro: 53s. 12 cartas.",
+      "description": "Desafío intenso. Cronómetro: 53s. 12 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 60
@@ -658,7 +679,7 @@
         "chameleon"
       ],
       "difficulty": "medium",
-      "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 10 cartas.",
+      "description": "Prueba extrema. Cronómetro: 60s. 10 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 25
@@ -676,13 +697,13 @@
         "trio"
       ],
       "difficulty": "medium",
-      "description": "Cartas que se congelan temporalmente. Sin cronÃ³metro. 6 cartas.",
+      "description": "Nivel brutal. Cronómetro: 60s. 12 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 30
       },
       "seed": 1038030,
-      "setSize": 2
+      "setSize": 3
     },
     {
       "id": 39,
@@ -694,7 +715,7 @@
         "bomb"
       ],
       "difficulty": "medium",
-      "description": "juega normalmente. Sin cronÃ³metro. 20 cartas.",
+      "description": "Desafío máximo. Cronómetro: 60s. 20 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 100
@@ -712,7 +733,7 @@
         "darkness"
       ],
       "difficulty": "medium",
-      "description": "Cartas que se congelan temporalmente. Sin cronÃ³metro. 8 cartas.",
+      "description": "Nivel extremo. Cronómetro: 60s. 8 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 40
@@ -727,10 +748,10 @@
       "pairs": 6,
       "timeSec": 52,
       "mechanics": [
-        "basic"
+        "bomb"
       ],
       "difficulty": "medium",
-      "description": "Niebla ligera: observa con atenciÃ³n. CronÃ³metro: 52s. 12 cartas.",
+      "description": "Desafío intenso. Cronómetro: 52s. 12 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 60
@@ -748,7 +769,7 @@
         "frozen"
       ],
       "difficulty": "medium",
-      "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 12 cartas.",
+      "description": "Prueba extrema. Cronómetro: 60s. 12 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 30
@@ -766,7 +787,7 @@
         "fog"
       ],
       "difficulty": "medium",
-      "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 18 cartas.",
+      "description": "Nivel brutal. Cronómetro: 60s. 18 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 90
@@ -784,7 +805,7 @@
         "frozen"
       ],
       "difficulty": "hard",
-      "description": "Cartas que se congelan temporalmente. Sin cronÃ³metro. 18 cartas.",
+      "description": "Desafío máximo. Cronómetro: 60s. 18 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 135
@@ -802,7 +823,7 @@
         "rotation"
       ],
       "difficulty": "medium",
-      "description": "juega normalmente. Sin cronÃ³metro. 20 cartas.",
+      "description": "Nivel extremo. Cronómetro: 60s. 20 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 100
@@ -820,7 +841,7 @@
         "ghost"
       ],
       "difficulty": "medium",
-      "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 6 cartas.",
+      "description": "Desafío intenso. Cronómetro: 60s. 8 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 15
@@ -838,13 +859,13 @@
         "trio"
       ],
       "difficulty": "medium",
-      "description": "Niebla ligera: observa con atenciÃ³n. Sin cronÃ³metro. 6 cartas.",
+      "description": "Prueba extrema. Cronómetro: 60s. 12 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 15
       },
       "seed": 1047030,
-      "setSize": 2
+      "setSize": 3
     },
     {
       "id": 48,
@@ -856,7 +877,7 @@
         "darkness"
       ],
       "difficulty": "medium",
-      "description": "Cartas fantasma aparecen y desaparecen. Sin cronÃ³metro. 6 cartas.",
+      "description": "Nivel brutal. Cronómetro: 60s. 8 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 15
@@ -871,10 +892,10 @@
       "pairs": 8,
       "timeSec": 60,
       "mechanics": [
-        "basic"
+        "bomb"
       ],
       "difficulty": "medium",
-      "description": "juega normalmente. Sin cronÃ³metro. 16 cartas.",
+      "description": "Desafío máximo. Cronómetro: 60s. 16 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 80
@@ -889,10 +910,11 @@
       "pairs": 12,
       "timeSec": 112,
       "mechanics": [
-        "bomb"
+        "bomb",
+        "rotation"
       ],
       "difficulty": "hard",
-      "description": "Boss: 24 cartas, chameleon + rotation, crono 112s.",
+      "description": "Boss extremo. Cronómetro: 112s. 24 cartas.",
       "isBoss": true,
       "rewards": {
         "coins": 180
@@ -910,7 +932,7 @@
         "chameleon"
       ],
       "difficulty": "medium",
-      "description": "Evita bombas: piensa rÃ¡pido. Sin cronÃ³metro. 6 cartas.",
+      "description": "Desafío intenso. Cronómetro: 60s. 8 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 30
@@ -928,7 +950,7 @@
         "darkness"
       ],
       "difficulty": "medium",
-      "description": "Las cartas cambian de valor. Sin cronÃ³metro. 12 cartas.",
+      "description": "Prueba extrema. Cronómetro: 60s. 12 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 60
@@ -946,7 +968,7 @@
         "rotation"
       ],
       "difficulty": "medium",
-      "description": "Niebla ligera: observa con atenciÃ³n. Sin cronÃ³metro. 16 cartas.",
+      "description": "Nivel brutal. Cronómetro: 60s. 16 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 80
@@ -964,7 +986,7 @@
         "chameleon"
       ],
       "difficulty": "medium",
-      "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 16 cartas.",
+      "description": "Desafío máximo. Cronómetro: 60s. 16 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 80
@@ -982,7 +1004,7 @@
         "bomb"
       ],
       "difficulty": "medium",
-      "description": "Las cartas cambian de valor. Sin cronÃ³metro. 12 cartas.",
+      "description": "Nivel extremo. Cronómetro: 60s. 12 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 60
@@ -1000,13 +1022,13 @@
         "frozen"
       ],
       "difficulty": "hard",
-      "description": "Encuentra trÃ­os idÃ©nticos. Sin cronÃ³metro. 18 cartas.",
+      "description": "Desafío intenso. Cronómetro: 60s. 12 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 180
       },
       "seed": 1056120,
-      "setSize": 3
+      "setSize": 2
     },
     {
       "id": 57,
@@ -1015,10 +1037,10 @@
       "pairs": 6,
       "timeSec": 52,
       "mechanics": [
-        "basic"
+        "bomb"
       ],
       "difficulty": "medium",
-      "description": "Las cartas cambian de valor. CronÃ³metro: 52s. 12 cartas.",
+      "description": "Prueba extrema. Cronómetro: 52s. 12 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 60
@@ -1036,7 +1058,7 @@
         "frozen"
       ],
       "difficulty": "hard",
-      "description": "La oscuridad cubre el tablero poco a poco. CronÃ³metro: 98s. 20 cartas.",
+      "description": "Nivel brutal. Cronómetro: 98s. 20 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 150
@@ -1054,7 +1076,7 @@
         "bomb"
       ],
       "difficulty": "medium",
-      "description": "El tablero rota de vez en cuando. Sin cronÃ³metro. 6 cartas.",
+      "description": "Desafío máximo. Cronómetro: 60s. 8 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 30
@@ -1072,7 +1094,7 @@
         "darkness"
       ],
       "difficulty": "hard",
-      "description": "La oscuridad cubre el tablero poco a poco. CronÃ³metro: 83s. 16 cartas.",
+      "description": "Nivel extremo. Cronómetro: 83s. 16 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 120
@@ -1090,13 +1112,13 @@
         "trio"
       ],
       "difficulty": "medium",
-      "description": "Cartas fantasma aparecen y desaparecen. CronÃ³metro: 78s. 16 cartas.",
+      "description": "Desafío intenso. Cronómetro: 78s. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 80
       },
       "seed": 1061158,
-      "setSize": 2
+      "setSize": 3
     },
     {
       "id": 62,
@@ -1108,7 +1130,7 @@
         "darkness"
       ],
       "difficulty": "medium",
-      "description": "Las cartas cambian de valor. CronÃ³metro: 64s. 12 cartas.",
+      "description": "Prueba extrema. Cronómetro: 64s. 12 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 60
@@ -1126,7 +1148,7 @@
         "chameleon"
       ],
       "difficulty": "medium",
-      "description": "Cartas fantasma aparecen y desaparecen. Sin cronÃ³metro. 16 cartas.",
+      "description": "Nivel brutal. Cronómetro: 60s. 16 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 80
@@ -1144,7 +1166,7 @@
         "frozen"
       ],
       "difficulty": "medium",
-      "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 8 cartas.",
+      "description": "Desafío máximo. Cronómetro: 60s. 8 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 20
@@ -1162,7 +1184,7 @@
         "rotation"
       ],
       "difficulty": "medium",
-      "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 16 cartas.",
+      "description": "Nivel extremo. Cronómetro: 60s. 16 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 80
@@ -1180,7 +1202,7 @@
         "darkness"
       ],
       "difficulty": "hard",
-      "description": "La oscuridad cubre el tablero poco a poco. Sin cronÃ³metro. 24 cartas.",
+      "description": "Desafío intenso. Cronómetro: 60s. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 180
@@ -1198,7 +1220,7 @@
         "fog"
       ],
       "difficulty": "medium",
-      "description": "Cartas fantasma aparecen y desaparecen. Sin cronÃ³metro. 12 cartas.",
+      "description": "Prueba extrema. Cronómetro: 60s. 12 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 30
@@ -1216,13 +1238,13 @@
         "fog"
       ],
       "difficulty": "hard",
-      "description": "Encuentra trÃ­os idÃ©nticos. Sin cronÃ³metro. 24 cartas.",
+      "description": "Nivel brutal. Cronómetro: 60s. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 180
       },
       "seed": 1068120,
-      "setSize": 3
+      "setSize": 2
     },
     {
       "id": 69,
@@ -1234,7 +1256,7 @@
         "darkness"
       ],
       "difficulty": "medium",
-      "description": "las cartas estÃ¡n parcialmente ocultas. CronÃ³metro: 83s. 16 cartas.",
+      "description": "Desafío máximo. Cronómetro: 83s. 16 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 80
@@ -1252,7 +1274,7 @@
         "darkness"
       ],
       "difficulty": "hard",
-      "description": "Cartas que se congelan temporalmente. CronÃ³metro: 76s. 16 cartas.",
+      "description": "Nivel extremo. Cronómetro: 76s. 16 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 120
@@ -1270,7 +1292,7 @@
         "darkness"
       ],
       "difficulty": "medium",
-      "description": "Niebla ligera: observa con atenciÃ³n. Sin cronÃ³metro. 18 cartas.",
+      "description": "Desafío intenso. Cronómetro: 60s. 18 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 90
@@ -1288,7 +1310,7 @@
         "ghost"
       ],
       "difficulty": "medium",
-      "description": "Las cartas cambian de valor. Sin cronÃ³metro. 8 cartas.",
+      "description": "Prueba extrema. Cronómetro: 60s. 8 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 40
@@ -1303,10 +1325,10 @@
       "pairs": 10,
       "timeSec": 60,
       "mechanics": [
-        "basic"
+        "bomb"
       ],
       "difficulty": "medium",
-      "description": "juega normalmente. Sin cronÃ³metro. 20 cartas.",
+      "description": "Nivel brutal. Cronómetro: 60s. 20 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 100
@@ -1324,7 +1346,7 @@
         "rotation"
       ],
       "difficulty": "medium",
-      "description": "Nivel clÃ¡sico sin trucos. CronÃ³metro: 65s. 14 cartas.",
+      "description": "Desafío máximo. Cronómetro: 65s. 14 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 70
@@ -1342,7 +1364,7 @@
         "ghost"
       ],
       "difficulty": "hard",
-      "description": "La oscuridad cubre el tablero poco a poco. CronÃ³metro: 88s. 16 cartas.",
+      "description": "Nivel extremo. Cronómetro: 88s. 16 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 120
@@ -1360,7 +1382,7 @@
         "bomb"
       ],
       "difficulty": "medium",
-      "description": "Las cartas cambian de valor. Sin cronÃ³metro. 14 cartas.",
+      "description": "Desafío intenso. Cronómetro: 60s. 14 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 70
@@ -1375,16 +1397,16 @@
       "pairs": 9,
       "timeSec": 60,
       "mechanics": [
-        "basic"
+        "bomb"
       ],
       "difficulty": "hard",
-      "description": "Encuentra trÃ­os idÃ©nticos. Sin cronÃ³metro. 18 cartas.",
+      "description": "Prueba extrema. Cronómetro: 60s. 18 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 135
       },
       "seed": 1077090,
-      "setSize": 3
+      "setSize": 2
     },
     {
       "id": 78,
@@ -1396,7 +1418,7 @@
         "rotation"
       ],
       "difficulty": "hard",
-      "description": "Las cartas cambian de valor. CronÃ³metro: 86s. 16 cartas.",
+      "description": "Nivel brutal. Cronómetro: 86s. 16 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 120
@@ -1414,13 +1436,13 @@
         "ghost"
       ],
       "difficulty": "medium",
-      "description": "Encuentra trÃ­os idÃ©nticos. Sin cronÃ³metro. 12 cartas.",
+      "description": "Desafío máximo. Cronómetro: 60s. 12 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 30
       },
       "seed": 1079060,
-      "setSize": 3
+      "setSize": 2
     },
     {
       "id": 80,
@@ -1432,7 +1454,7 @@
         "bomb"
       ],
       "difficulty": "medium",
-      "description": "Cartas fantasma aparecen y desaparecen. Sin cronÃ³metro. 18 cartas.",
+      "description": "Nivel extremo. Cronómetro: 60s. 18 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 90
@@ -1450,7 +1472,7 @@
         "ghost"
       ],
       "difficulty": "medium",
-      "description": "Las cartas cambian de valor. Sin cronÃ³metro. 10 cartas.",
+      "description": "Desafío intenso. Cronómetro: 60s. 10 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 50
@@ -1468,13 +1490,13 @@
         "trio"
       ],
       "difficulty": "medium",
-      "description": "Cartas fantasma aparecen y desaparecen. Sin cronÃ³metro. 12 cartas.",
+      "description": "Prueba extrema. Cronómetro: 60s. 18 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 30
       },
       "seed": 1082060,
-      "setSize": 2
+      "setSize": 3
     },
     {
       "id": 83,
@@ -1486,7 +1508,7 @@
         "bomb"
       ],
       "difficulty": "medium",
-      "description": "Las cartas cambian de valor. Sin cronÃ³metro. 14 cartas.",
+      "description": "Nivel brutal. Cronómetro: 60s. 14 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 70
@@ -1504,7 +1526,7 @@
         "rotation"
       ],
       "difficulty": "medium",
-      "description": "las cartas estÃ¡n parcialmente ocultas. CronÃ³metro: 86s. 16 cartas.",
+      "description": "Desafío máximo. Cronómetro: 86s. 16 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 80
@@ -1522,7 +1544,7 @@
         "chameleon"
       ],
       "difficulty": "medium",
-      "description": "Niebla ligera: observa con atenciÃ³n. Sin cronÃ³metro. 12 cartas.",
+      "description": "Nivel extremo. Cronómetro: 60s. 12 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 30
@@ -1540,7 +1562,7 @@
         "bomb"
       ],
       "difficulty": "hard",
-      "description": "Evita bombas: piensa rÃ¡pido. Sin cronÃ³metro. 22 cartas.",
+      "description": "Desafío intenso. Cronómetro: 60s. 22 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 165
@@ -1552,19 +1574,19 @@
       "id": 87,
       "phase": 2,
       "theme": "candyland",
-      "pairs": 12,
+      "pairs": 8,
       "timeSec": 60,
       "mechanics": [
         "trio"
       ],
       "difficulty": "medium",
-      "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 24 cartas.",
+      "description": "Prueba extrema. Cronómetro: 60s. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 120
       },
       "seed": 1087120,
-      "setSize": 2
+      "setSize": 3
     },
     {
       "id": 88,
@@ -1576,7 +1598,7 @@
         "fog"
       ],
       "difficulty": "medium",
-      "description": "Evita bombas: piensa rÃ¡pido. Sin cronÃ³metro. 16 cartas.",
+      "description": "Nivel brutal. Cronómetro: 60s. 16 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 80
@@ -1594,7 +1616,7 @@
         "ghost"
       ],
       "difficulty": "medium",
-      "description": "Cartas que se congelan temporalmente. Sin cronÃ³metro. 8 cartas.",
+      "description": "Desafío máximo. Cronómetro: 60s. 8 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 40
@@ -1609,10 +1631,10 @@
       "pairs": 5,
       "timeSec": 60,
       "mechanics": [
-        "basic"
+        "bomb"
       ],
       "difficulty": "medium",
-      "description": "Cartas fantasma aparecen y desaparecen. Sin cronÃ³metro. 10 cartas.",
+      "description": "Nivel extremo. Cronómetro: 60s. 10 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 25
@@ -1630,7 +1652,7 @@
         "bomb"
       ],
       "difficulty": "hard",
-      "description": "El tablero rota de vez en cuando. Sin cronÃ³metro. 20 cartas.",
+      "description": "Desafío intenso. Cronómetro: 60s. 20 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 150
@@ -1648,7 +1670,7 @@
         "frozen"
       ],
       "difficulty": "medium",
-      "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 24 cartas.",
+      "description": "Prueba extrema. Cronómetro: 60s. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 120
@@ -1666,7 +1688,7 @@
         "darkness"
       ],
       "difficulty": "hard",
-      "description": "El tablero rota de vez en cuando. Sin cronÃ³metro. 22 cartas.",
+      "description": "Nivel brutal. Cronómetro: 60s. 22 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 165
@@ -1684,7 +1706,7 @@
         "ghost"
       ],
       "difficulty": "medium",
-      "description": "Niebla ligera: observa con atenciÃ³n. CronÃ³metro: 57s. 12 cartas.",
+      "description": "Desafío máximo. Cronómetro: 57s. 12 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 60
@@ -1702,7 +1724,7 @@
         "ghost"
       ],
       "difficulty": "medium",
-      "description": "Las cartas cambian de valor. Sin cronÃ³metro. 8 cartas.",
+      "description": "Nivel extremo. Cronómetro: 60s. 8 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 40
@@ -1720,7 +1742,7 @@
         "fog"
       ],
       "difficulty": "medium",
-      "description": "El tablero rota de vez en cuando. CronÃ³metro: 52s. 12 cartas.",
+      "description": "Desafío intenso. Cronómetro: 52s. 12 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 60
@@ -1735,10 +1757,10 @@
       "pairs": 4,
       "timeSec": 60,
       "mechanics": [
-        "basic"
+        "bomb"
       ],
       "difficulty": "medium",
-      "description": "Niebla ligera: observa con atenciÃ³n. Sin cronÃ³metro. 4 cartas.",
+      "description": "Prueba extrema. Cronómetro: 60s. 8 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 10
@@ -1756,7 +1778,7 @@
         "darkness"
       ],
       "difficulty": "medium",
-      "description": "Nivel clÃ¡sico sin trucos. CronÃ³metro: 65s. 12 cartas.",
+      "description": "Nivel brutal. Cronómetro: 65s. 12 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 60
@@ -1774,7 +1796,7 @@
         "fog"
       ],
       "difficulty": "hard",
-      "description": "La oscuridad cubre el tablero poco a poco. CronÃ³metro: 78s. 16 cartas.",
+      "description": "Desafío máximo. Cronómetro: 78s. 16 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 120
@@ -1789,10 +1811,12 @@
       "pairs": 12,
       "timeSec": 103,
       "mechanics": [
-        "frozen"
+        "ghost",
+        "chameleon",
+        "darkness"
       ],
       "difficulty": "hard",
-      "description": "Boss: 24 cartas, ghost + chameleon, crono 103s.",
+      "description": "Boss extremo. Cronómetro: 103s. 24 cartas.",
       "isBoss": true,
       "rewards": {
         "coins": 180
@@ -1810,7 +1834,7 @@
         "ghost"
       ],
       "difficulty": "medium",
-      "description": "Evita bombas: piensa rÃ¡pido. Sin cronÃ³metro. 12 cartas.",
+      "description": "Desafío intenso. Cronómetro: 60s. 12 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 60
@@ -1828,7 +1852,7 @@
         "bomb"
       ],
       "difficulty": "medium",
-      "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 6 cartas.",
+      "description": "Prueba extrema. Cronómetro: 60s. 8 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 15
@@ -1846,7 +1870,7 @@
         "chameleon"
       ],
       "difficulty": "medium",
-      "description": "Evita bombas: piensa rÃ¡pido. Sin cronÃ³metro. 4 cartas.",
+      "description": "Nivel brutal. Cronómetro: 60s. 8 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 20
@@ -1864,7 +1888,7 @@
         "bomb"
       ],
       "difficulty": "hard",
-      "description": "El tablero rota de vez en cuando. CronÃ³metro: 67s. 14 cartas.",
+      "description": "Desafío máximo. Cronómetro: 67s. 14 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 105
@@ -1882,13 +1906,13 @@
         "trio"
       ],
       "difficulty": "medium",
-      "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 12 cartas.",
+      "description": "Nivel extremo. Cronómetro: 60s. 18 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 30
       },
       "seed": 1105060,
-      "setSize": 2
+      "setSize": 3
     },
     {
       "id": 106,
@@ -1900,7 +1924,7 @@
         "darkness"
       ],
       "difficulty": "hard",
-      "description": "La oscuridad cubre el tablero poco a poco. Sin cronÃ³metro. 24 cartas.",
+      "description": "Desafío intenso. Cronómetro: 60s. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 180
@@ -1918,13 +1942,13 @@
         "trio"
       ],
       "difficulty": "medium",
-      "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 8 cartas.",
+      "description": "Prueba extrema. Cronómetro: 60s. 12 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 20
       },
       "seed": 1107040,
-      "setSize": 2
+      "setSize": 3
     },
     {
       "id": 108,
@@ -1936,13 +1960,13 @@
         "trio"
       ],
       "difficulty": "medium",
-      "description": "Las cartas cambian de valor. CronÃ³metro: 44s. 10 cartas.",
+      "description": "Nivel brutal. Cronómetro: 44s. 15 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 50
       },
       "seed": 1108094,
-      "setSize": 2
+      "setSize": 3
     },
     {
       "id": 109,
@@ -1954,7 +1978,7 @@
         "ghost"
       ],
       "difficulty": "medium",
-      "description": "Nivel clÃ¡sico sin trucos. CronÃ³metro: 69s. 14 cartas.",
+      "description": "Desafío máximo. Cronómetro: 69s. 14 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 70
@@ -1972,7 +1996,7 @@
         "rotation"
       ],
       "difficulty": "hard",
-      "description": "Nivel clÃ¡sico sin trucos. CronÃ³metro: 99s. 20 cartas.",
+      "description": "Nivel extremo. Cronómetro: 99s. 20 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 150
@@ -1990,7 +2014,7 @@
         "bomb"
       ],
       "difficulty": "medium",
-      "description": "Cartas que se congelan temporalmente. Sin cronÃ³metro. 8 cartas.",
+      "description": "Desafío intenso. Cronómetro: 60s. 8 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 40
@@ -2008,7 +2032,7 @@
         "chameleon"
       ],
       "difficulty": "medium",
-      "description": "Niebla ligera: observa con atenciÃ³n. CronÃ³metro: 85s. 16 cartas.",
+      "description": "Prueba extrema. Cronómetro: 85s. 16 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 80
@@ -2026,7 +2050,7 @@
         "fog"
       ],
       "difficulty": "hard",
-      "description": "Las cartas cambian de valor. CronÃ³metro: 82s. 18 cartas.",
+      "description": "Nivel brutal. Cronómetro: 82s. 18 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 135
@@ -2044,13 +2068,13 @@
         "chameleon"
       ],
       "difficulty": "hard",
-      "description": "Encuentra trÃ­os idÃ©nticos. Sin cronÃ³metro. 24 cartas.",
+      "description": "Desafío máximo. Cronómetro: 60s. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 180
       },
       "seed": 1114120,
-      "setSize": 3
+      "setSize": 2
     },
     {
       "id": 115,
@@ -2062,7 +2086,7 @@
         "rotation"
       ],
       "difficulty": "medium",
-      "description": "Cartas fantasma aparecen y desaparecen. CronÃ³metro: 42s. 10 cartas.",
+      "description": "Nivel extremo. Cronómetro: 42s. 10 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 50
@@ -2074,13 +2098,13 @@
       "id": 116,
       "phase": 3,
       "theme": "space",
-      "pairs": 12,
+      "pairs": 8,
       "timeSec": 60,
       "mechanics": [
         "trio"
       ],
       "difficulty": "hard",
-      "description": "Encuentra trÃ­os idÃ©nticos. Sin cronÃ³metro. 24 cartas.",
+      "description": "Desafío intenso. Cronómetro: 60s. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 180
@@ -2098,7 +2122,7 @@
         "rotation"
       ],
       "difficulty": "hard",
-      "description": "Cartas fantasma aparecen y desaparecen. CronÃ³metro: 84s. 18 cartas.",
+      "description": "Prueba extrema. Cronómetro: 84s. 18 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 135
@@ -2116,13 +2140,13 @@
         "darkness"
       ],
       "difficulty": "hard",
-      "description": "Encuentra trÃ­os idÃ©nticos. Sin cronÃ³metro. 24 cartas.",
+      "description": "Nivel brutal. Cronómetro: 60s. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 180
       },
       "seed": 1118120,
-      "setSize": 3
+      "setSize": 2
     },
     {
       "id": 119,
@@ -2134,7 +2158,7 @@
         "fog"
       ],
       "difficulty": "hard",
-      "description": "La oscuridad cubre el tablero poco a poco. Sin cronÃ³metro. 20 cartas.",
+      "description": "Desafío máximo. Cronómetro: 60s. 20 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 150
@@ -2152,7 +2176,7 @@
         "ghost"
       ],
       "difficulty": "medium",
-      "description": "Niebla ligera: observa con atenciÃ³n. CronÃ³metro: 66s. 14 cartas.",
+      "description": "Nivel extremo. Cronómetro: 66s. 14 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 70
@@ -2170,7 +2194,7 @@
         "bomb"
       ],
       "difficulty": "medium",
-      "description": "El tablero rota de vez en cuando. Sin cronÃ³metro. 14 cartas.",
+      "description": "Desafío intenso. Cronómetro: 60s. 14 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 70
@@ -2188,7 +2212,7 @@
         "rotation"
       ],
       "difficulty": "medium",
-      "description": "Cartas fantasma aparecen y desaparecen. CronÃ³metro: 78s. 14 cartas.",
+      "description": "Prueba extrema. Cronómetro: 78s. 14 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 70
@@ -2206,7 +2230,7 @@
         "frozen"
       ],
       "difficulty": "hard",
-      "description": "La oscuridad cubre el tablero poco a poco. CronÃ³metro: 99s. 24 cartas.",
+      "description": "Nivel brutal. Cronómetro: 99s. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 180
@@ -2224,7 +2248,7 @@
         "fog"
       ],
       "difficulty": "medium",
-      "description": "Niebla ligera: observa con atenciÃ³n. Sin cronÃ³metro. 10 cartas.",
+      "description": "Desafío máximo. Cronómetro: 60s. 10 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 25
@@ -2242,7 +2266,7 @@
         "frozen"
       ],
       "difficulty": "medium",
-      "description": "El tablero rota de vez en cuando. Sin cronÃ³metro. 12 cartas.",
+      "description": "Nivel extremo. Cronómetro: 60s. 12 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 60
@@ -2260,7 +2284,7 @@
         "rotation"
       ],
       "difficulty": "medium",
-      "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 6 cartas.",
+      "description": "Desafío intenso. Cronómetro: 60s. 8 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 15
@@ -2278,7 +2302,7 @@
         "ghost"
       ],
       "difficulty": "hard",
-      "description": "La oscuridad cubre el tablero poco a poco. CronÃ³metro: 102s. 20 cartas.",
+      "description": "Prueba extrema. Cronómetro: 102s. 20 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 150
@@ -2296,7 +2320,7 @@
         "frozen"
       ],
       "difficulty": "medium",
-      "description": "Evita bombas: piensa rÃ¡pido. Sin cronÃ³metro. 4 cartas.",
+      "description": "Nivel brutal. Cronómetro: 60s. 8 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 20
@@ -2311,10 +2335,10 @@
       "pairs": 6,
       "timeSec": 62,
       "mechanics": [
-        "basic"
+        "bomb"
       ],
       "difficulty": "medium",
-      "description": "Las cartas cambian de valor. CronÃ³metro: 62s. 12 cartas.",
+      "description": "Desafío máximo. Cronómetro: 62s. 12 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 60
@@ -2332,7 +2356,7 @@
         "ghost"
       ],
       "difficulty": "medium",
-      "description": "Nivel clÃ¡sico sin trucos. CronÃ³metro: 78s. 16 cartas.",
+      "description": "Nivel extremo. Cronómetro: 78s. 16 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 80
@@ -2350,13 +2374,13 @@
         "rotation"
       ],
       "difficulty": "hard",
-      "description": "Encuentra trÃ­os idÃ©nticos. Sin cronÃ³metro. 24 cartas.",
+      "description": "Desafío intenso. Cronómetro: 60s. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 180
       },
       "seed": 1131120,
-      "setSize": 3
+      "setSize": 2
     },
     {
       "id": 132,
@@ -2368,7 +2392,7 @@
         "rotation"
       ],
       "difficulty": "medium",
-      "description": "Cartas fantasma aparecen y desaparecen. Sin cronÃ³metro. 10 cartas.",
+      "description": "Prueba extrema. Cronómetro: 60s. 10 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 25
@@ -2386,7 +2410,7 @@
         "fog"
       ],
       "difficulty": "medium",
-      "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 6 cartas.",
+      "description": "Nivel brutal. Cronómetro: 60s. 8 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 15
@@ -2404,7 +2428,7 @@
         "darkness"
       ],
       "difficulty": "hard",
-      "description": "Las cartas cambian de valor. CronÃ³metro: 98s. 20 cartas.",
+      "description": "Desafío máximo. Cronómetro: 98s. 20 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 150
@@ -2422,7 +2446,7 @@
         "rotation"
       ],
       "difficulty": "hard",
-      "description": "Cartas que se congelan temporalmente. Sin cronÃ³metro. 18 cartas.",
+      "description": "Nivel extremo. Cronómetro: 60s. 18 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 135
@@ -2440,7 +2464,7 @@
         "frozen"
       ],
       "difficulty": "hard",
-      "description": "Las cartas cambian de valor. CronÃ³metro: 111s. 24 cartas.",
+      "description": "Desafío intenso. Cronómetro: 111s. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 180
@@ -2458,7 +2482,7 @@
         "frozen"
       ],
       "difficulty": "hard",
-      "description": "Evita bombas: piensa rÃ¡pido. CronÃ³metro: 66s. 14 cartas.",
+      "description": "Prueba extrema. Cronómetro: 66s. 14 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 105
@@ -2473,10 +2497,10 @@
       "pairs": 6,
       "timeSec": 60,
       "mechanics": [
-        "basic"
+        "bomb"
       ],
       "difficulty": "medium",
-      "description": "Nivel clÃ¡sico sin trucos. CronÃ³metro: 60s. 12 cartas.",
+      "description": "Nivel brutal. Cronómetro: 60s. 12 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 60
@@ -2494,7 +2518,7 @@
         "bomb"
       ],
       "difficulty": "medium",
-      "description": "Las cartas cambian de valor. Sin cronÃ³metro. 10 cartas.",
+      "description": "Desafío máximo. Cronómetro: 60s. 10 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 50
@@ -2512,7 +2536,7 @@
         "rotation"
       ],
       "difficulty": "medium",
-      "description": "Evita bombas: piensa rÃ¡pido. Sin cronÃ³metro. 14 cartas.",
+      "description": "Nivel extremo. Cronómetro: 60s. 14 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 70
@@ -2530,13 +2554,13 @@
         "rotation"
       ],
       "difficulty": "medium",
-      "description": "Encuentra trÃ­os idÃ©nticos. Sin cronÃ³metro. 12 cartas.",
+      "description": "Desafío intenso. Cronómetro: 60s. 12 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 30
       },
       "seed": 1141060,
-      "setSize": 3
+      "setSize": 2
     },
     {
       "id": 142,
@@ -2548,7 +2572,7 @@
         "darkness"
       ],
       "difficulty": "medium",
-      "description": "Cartas que se congelan temporalmente. Sin cronÃ³metro. 8 cartas.",
+      "description": "Prueba extrema. Cronómetro: 60s. 8 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 40
@@ -2566,13 +2590,13 @@
         "trio"
       ],
       "difficulty": "medium",
-      "description": "Cartas fantasma aparecen y desaparecen. Sin cronÃ³metro. 10 cartas.",
+      "description": "Nivel brutal. Cronómetro: 60s. 15 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 25
       },
       "seed": 1143050,
-      "setSize": 2
+      "setSize": 3
     },
     {
       "id": 144,
@@ -2584,7 +2608,7 @@
         "ghost"
       ],
       "difficulty": "medium",
-      "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 4 cartas.",
+      "description": "Desafío máximo. Cronómetro: 60s. 8 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 10
@@ -2602,7 +2626,7 @@
         "darkness"
       ],
       "difficulty": "medium",
-      "description": "Las cartas cambian de valor. CronÃ³metro: 50s. 10 cartas.",
+      "description": "Nivel extremo. Cronómetro: 50s. 10 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 50
@@ -2617,10 +2641,10 @@
       "pairs": 12,
       "timeSec": 60,
       "mechanics": [
-        "basic"
+        "bomb"
       ],
       "difficulty": "medium",
-      "description": "juega normalmente. Sin cronÃ³metro. 24 cartas.",
+      "description": "Desafío intenso. Cronómetro: 60s. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 120
@@ -2638,7 +2662,7 @@
         "fog"
       ],
       "difficulty": "medium",
-      "description": "Cartas fantasma aparecen y desaparecen. Sin cronÃ³metro. 10 cartas.",
+      "description": "Prueba extrema. Cronómetro: 60s. 10 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 25
@@ -2656,7 +2680,7 @@
         "bomb"
       ],
       "difficulty": "hard",
-      "description": "El tablero rota de vez en cuando. CronÃ³metro: 73s. 16 cartas.",
+      "description": "Nivel brutal. Cronómetro: 73s. 16 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 120
@@ -2668,19 +2692,19 @@
       "id": 149,
       "phase": 3,
       "theme": "space",
-      "pairs": 10,
+      "pairs": 8,
       "timeSec": 103,
       "mechanics": [
         "trio"
       ],
       "difficulty": "hard",
-      "description": "La oscuridad cubre el tablero poco a poco. CronÃ³metro: 103s. 20 cartas.",
+      "description": "Desafío máximo. Cronómetro: 103s. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 150
       },
       "seed": 1149203,
-      "setSize": 2
+      "setSize": 3
     },
     {
       "id": 150,
@@ -2689,10 +2713,12 @@
       "pairs": 12,
       "timeSec": 111,
       "mechanics": [
+        "fog",
+        "rotation",
         "bomb"
       ],
       "difficulty": "hard",
-      "description": "Boss: 24 cartas, frozen + chameleon, crono 111s.",
+      "description": "Boss extremo. Cronómetro: 111s. 24 cartas.",
       "isBoss": true,
       "rewards": {
         "coins": 180
@@ -2710,7 +2736,7 @@
         "darkness"
       ],
       "difficulty": "medium",
-      "description": "Cartas fantasma aparecen y desaparecen. Sin cronÃ³metro. 8 cartas.",
+      "description": "Desafío intenso. Cronómetro: 60s. 8 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 20
@@ -2728,7 +2754,7 @@
         "darkness"
       ],
       "difficulty": "hard",
-      "description": "Evita bombas: piensa rÃ¡pido. Sin cronÃ³metro. 20 cartas.",
+      "description": "Prueba extrema. Cronómetro: 60s. 20 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 150
@@ -2746,13 +2772,13 @@
         "trio"
       ],
       "difficulty": "medium",
-      "description": "La oscuridad cubre el tablero poco a poco. Sin cronÃ³metro. 16 cartas.",
+      "description": "Nivel brutal. Cronómetro: 60s. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 80
       },
       "seed": 1153080,
-      "setSize": 2
+      "setSize": 3
     },
     {
       "id": 154,
@@ -2764,7 +2790,7 @@
         "rotation"
       ],
       "difficulty": "medium",
-      "description": "Niebla ligera: observa con atenciÃ³n. CronÃ³metro: 70s. 14 cartas.",
+      "description": "Desafío máximo. Cronómetro: 70s. 14 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 70
@@ -2782,7 +2808,7 @@
         "rotation"
       ],
       "difficulty": "hard",
-      "description": "Cartas que se congelan temporalmente. CronÃ³metro: 78s. 14 cartas.",
+      "description": "Nivel extremo. Cronómetro: 78s. 14 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 105
@@ -2800,7 +2826,7 @@
         "bomb"
       ],
       "difficulty": "medium",
-      "description": "Las cartas cambian de valor. Sin cronÃ³metro. 12 cartas.",
+      "description": "Desafío intenso. Cronómetro: 60s. 12 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 60
@@ -2818,7 +2844,7 @@
         "chameleon"
       ],
       "difficulty": "medium",
-      "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 10 cartas.",
+      "description": "Prueba extrema. Cronómetro: 60s. 10 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 25
@@ -2836,7 +2862,7 @@
         "rotation"
       ],
       "difficulty": "medium",
-      "description": "Las cartas cambian de valor. CronÃ³metro: 65s. 12 cartas.",
+      "description": "Nivel brutal. Cronómetro: 65s. 12 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 60
@@ -2851,10 +2877,10 @@
       "pairs": 4,
       "timeSec": 60,
       "mechanics": [
-        "basic"
+        "bomb"
       ],
       "difficulty": "medium",
-      "description": "El tablero rota de vez en cuando. Sin cronÃ³metro. 4 cartas.",
+      "description": "Desafío máximo. Cronómetro: 60s. 8 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 20
@@ -2872,7 +2898,7 @@
         "darkness"
       ],
       "difficulty": "medium",
-      "description": "Cartas fantasma aparecen y desaparecen. Sin cronÃ³metro. 10 cartas.",
+      "description": "Nivel extremo. Cronómetro: 60s. 10 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 25
@@ -2890,7 +2916,7 @@
         "bomb"
       ],
       "difficulty": "medium",
-      "description": "Niebla ligera: observa con atenciÃ³n. CronÃ³metro: 74s. 14 cartas.",
+      "description": "Desafío intenso. Cronómetro: 74s. 14 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 70
@@ -2908,7 +2934,7 @@
         "darkness"
       ],
       "difficulty": "medium",
-      "description": "Nivel clÃ¡sico sin trucos. CronÃ³metro: 78s. 16 cartas.",
+      "description": "Prueba extrema. Cronómetro: 78s. 16 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 80
@@ -2926,7 +2952,7 @@
         "chameleon"
       ],
       "difficulty": "medium",
-      "description": "Las cartas cambian de valor. Sin cronÃ³metro. 10 cartas.",
+      "description": "Nivel brutal. Cronómetro: 60s. 10 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 50
@@ -2944,7 +2970,7 @@
         "rotation"
       ],
       "difficulty": "medium",
-      "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 16 cartas.",
+      "description": "Desafío máximo. Cronómetro: 60s. 16 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 80
@@ -2962,7 +2988,7 @@
         "ghost"
       ],
       "difficulty": "hard",
-      "description": "Evita bombas: piensa rÃ¡pido. Sin cronÃ³metro. 18 cartas.",
+      "description": "Nivel extremo. Cronómetro: 60s. 18 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 135
@@ -2980,7 +3006,7 @@
         "fog"
       ],
       "difficulty": "medium",
-      "description": "Nivel clÃ¡sico sin trucos. CronÃ³metro: 62s. 14 cartas.",
+      "description": "Desafío intenso. Cronómetro: 62s. 14 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 70
@@ -2998,7 +3024,7 @@
         "frozen"
       ],
       "difficulty": "medium",
-      "description": "Evita bombas: piensa rÃ¡pido. CronÃ³metro: 66s. 12 cartas.",
+      "description": "Prueba extrema. Cronómetro: 66s. 12 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 60
@@ -3016,7 +3042,7 @@
         "chameleon"
       ],
       "difficulty": "medium",
-      "description": "juega normalmente. Sin cronÃ³metro. 16 cartas.",
+      "description": "Nivel brutal. Cronómetro: 60s. 16 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 80
@@ -3034,7 +3060,7 @@
         "bomb"
       ],
       "difficulty": "medium",
-      "description": "Evita bombas: piensa rÃ¡pido. Sin cronÃ³metro. 14 cartas.",
+      "description": "Desafío máximo. Cronómetro: 60s. 14 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 70
@@ -3049,10 +3075,10 @@
       "pairs": 8,
       "timeSec": 75,
       "mechanics": [
-        "basic"
+        "bomb"
       ],
       "difficulty": "hard",
-      "description": "Cartas que se congelan temporalmente. CronÃ³metro: 75s. 16 cartas.",
+      "description": "Nivel extremo. Cronómetro: 75s. 16 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 120
@@ -3070,7 +3096,7 @@
         "rotation"
       ],
       "difficulty": "medium",
-      "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 10 cartas.",
+      "description": "Desafío intenso. Cronómetro: 60s. 10 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 25
@@ -3088,7 +3114,7 @@
         "fog"
       ],
       "difficulty": "hard",
-      "description": "Nivel clÃ¡sico sin trucos. CronÃ³metro: 96s. 20 cartas.",
+      "description": "Prueba extrema. Cronómetro: 96s. 20 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 150
@@ -3106,13 +3132,13 @@
         "trio"
       ],
       "difficulty": "medium",
-      "description": "las cartas pueden rotar. CronÃ³metro: 86s. 16 cartas.",
+      "description": "Nivel brutal. Cronómetro: 86s. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 80
       },
       "seed": 1173166,
-      "setSize": 2
+      "setSize": 3
     },
     {
       "id": 174,
@@ -3124,7 +3150,7 @@
         "rotation"
       ],
       "difficulty": "medium",
-      "description": "Nivel clÃ¡sico sin trucos. CronÃ³metro: 55s. 10 cartas.",
+      "description": "Desafío máximo. Cronómetro: 55s. 10 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 50
@@ -3142,7 +3168,7 @@
         "ghost"
       ],
       "difficulty": "medium",
-      "description": "juega normalmente. Sin cronÃ³metro. 24 cartas.",
+      "description": "Nivel extremo. Cronómetro: 60s. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 120
@@ -3160,7 +3186,7 @@
         "ghost"
       ],
       "difficulty": "medium",
-      "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 18 cartas.",
+      "description": "Desafío intenso. Cronómetro: 60s. 18 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 90
@@ -3178,7 +3204,7 @@
         "frozen"
       ],
       "difficulty": "medium",
-      "description": "El tablero rota de vez en cuando. Sin cronÃ³metro. 10 cartas.",
+      "description": "Prueba extrema. Cronómetro: 60s. 10 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 50
@@ -3196,7 +3222,7 @@
         "darkness"
       ],
       "difficulty": "medium",
-      "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 16 cartas.",
+      "description": "Nivel brutal. Cronómetro: 60s. 16 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 80
@@ -3214,7 +3240,7 @@
         "frozen"
       ],
       "difficulty": "medium",
-      "description": "Cartas fantasma aparecen y desaparecen. Sin cronÃ³metro. 4 cartas.",
+      "description": "Desafío máximo. Cronómetro: 60s. 8 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 10
@@ -3232,7 +3258,7 @@
         "bomb"
       ],
       "difficulty": "medium",
-      "description": "Cartas que se congelan temporalmente. Sin cronÃ³metro. 16 cartas.",
+      "description": "Nivel extremo. Cronómetro: 60s. 16 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 80
@@ -3250,7 +3276,7 @@
         "bomb"
       ],
       "difficulty": "medium",
-      "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 24 cartas.",
+      "description": "Desafío intenso. Cronómetro: 60s. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 120
@@ -3268,13 +3294,13 @@
         "trio"
       ],
       "difficulty": "hard",
-      "description": "Evita bombas: piensa rÃ¡pido. CronÃ³metro: 73s. 14 cartas.",
+      "description": "Prueba extrema. Cronómetro: 73s. 21 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 105
       },
       "seed": 1182143,
-      "setSize": 2
+      "setSize": 3
     },
     {
       "id": 183,
@@ -3283,10 +3309,10 @@
       "pairs": 6,
       "timeSec": 65,
       "mechanics": [
-        "basic"
+        "bomb"
       ],
       "difficulty": "medium",
-      "description": "Cartas fantasma aparecen y desaparecen. CronÃ³metro: 65s. 12 cartas.",
+      "description": "Nivel brutal. Cronómetro: 65s. 12 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 60
@@ -3304,7 +3330,7 @@
         "ghost"
       ],
       "difficulty": "medium",
-      "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 4 cartas.",
+      "description": "Desafío máximo. Cronómetro: 60s. 8 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 10
@@ -3322,7 +3348,7 @@
         "darkness"
       ],
       "difficulty": "hard",
-      "description": "Cartas fantasma aparecen y desaparecen. CronÃ³metro: 95s. 22 cartas.",
+      "description": "Nivel extremo. Cronómetro: 95s. 22 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 165
@@ -3340,7 +3366,7 @@
         "rotation"
       ],
       "difficulty": "hard",
-      "description": "La oscuridad cubre el tablero poco a poco. CronÃ³metro: 94s. 20 cartas.",
+      "description": "Desafío intenso. Cronómetro: 94s. 20 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 150
@@ -3358,7 +3384,7 @@
         "fog"
       ],
       "difficulty": "medium",
-      "description": "Cartas fantasma aparecen y desaparecen. CronÃ³metro: 80s. 16 cartas.",
+      "description": "Prueba extrema. Cronómetro: 80s. 16 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 80
@@ -3376,13 +3402,13 @@
         "trio"
       ],
       "difficulty": "medium",
-      "description": "El tablero rota de vez en cuando. Sin cronÃ³metro. 8 cartas.",
+      "description": "Nivel brutal. Cronómetro: 60s. 12 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 40
       },
       "seed": 1188040,
-      "setSize": 2
+      "setSize": 3
     },
     {
       "id": 189,
@@ -3394,7 +3420,7 @@
         "rotation"
       ],
       "difficulty": "medium",
-      "description": "Evita bombas: piensa rÃ¡pido. Sin cronÃ³metro. 10 cartas.",
+      "description": "Desafío máximo. Cronómetro: 60s. 10 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 50
@@ -3412,7 +3438,7 @@
         "darkness"
       ],
       "difficulty": "medium",
-      "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 10 cartas.",
+      "description": "Nivel extremo. Cronómetro: 60s. 10 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 25
@@ -3427,10 +3453,10 @@
       "pairs": 7,
       "timeSec": 77,
       "mechanics": [
-        "basic"
+        "bomb"
       ],
       "difficulty": "medium",
-      "description": "Cartas fantasma aparecen y desaparecen. CronÃ³metro: 77s. 14 cartas.",
+      "description": "Desafío intenso. Cronómetro: 77s. 14 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 70
@@ -3448,13 +3474,13 @@
         "darkness"
       ],
       "difficulty": "medium",
-      "description": "Encuentra trÃ­os idÃ©nticos. Sin cronÃ³metro. 6 cartas.",
+      "description": "Prueba extrema. Cronómetro: 60s. 6 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 15
       },
       "seed": 1192030,
-      "setSize": 3
+      "setSize": 2
     },
     {
       "id": 193,
@@ -3463,10 +3489,10 @@
       "pairs": 4,
       "timeSec": 60,
       "mechanics": [
-        "basic"
+        "bomb"
       ],
       "difficulty": "medium",
-      "description": "Las cartas cambian de valor. Sin cronÃ³metro. 6 cartas.",
+      "description": "Nivel brutal. Cronómetro: 60s. 8 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 30
@@ -3484,7 +3510,7 @@
         "bomb"
       ],
       "difficulty": "medium",
-      "description": "Cartas fantasma aparecen y desaparecen. Sin cronÃ³metro. 10 cartas.",
+      "description": "Desafío máximo. Cronómetro: 60s. 10 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 25
@@ -3502,13 +3528,13 @@
         "trio"
       ],
       "difficulty": "medium",
-      "description": "Niebla ligera: observa con atenciÃ³n. Sin cronÃ³metro. 6 cartas.",
+      "description": "Nivel extremo. Cronómetro: 60s. 12 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 15
       },
       "seed": 1195030,
-      "setSize": 2
+      "setSize": 3
     },
     {
       "id": 196,
@@ -3520,13 +3546,13 @@
         "trio"
       ],
       "difficulty": "medium",
-      "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 10 cartas.",
+      "description": "Desafío intenso. Cronómetro: 60s. 15 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 25
       },
       "seed": 1196050,
-      "setSize": 2
+      "setSize": 3
     },
     {
       "id": 197,
@@ -3538,7 +3564,7 @@
         "frozen"
       ],
       "difficulty": "hard",
-      "description": "Las cartas cambian de valor. CronÃ³metro: 83s. 16 cartas.",
+      "description": "Prueba extrema. Cronómetro: 83s. 16 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 120
@@ -3556,7 +3582,7 @@
         "fog"
       ],
       "difficulty": "medium",
-      "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 10 cartas.",
+      "description": "Nivel brutal. Cronómetro: 60s. 10 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 25
@@ -3574,7 +3600,7 @@
         "ghost"
       ],
       "difficulty": "medium",
-      "description": "Cartas fantasma aparecen y desaparecen. Sin cronÃ³metro. 12 cartas.",
+      "description": "Desafío máximo. Cronómetro: 60s. 12 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 30
@@ -3589,10 +3615,12 @@
       "pairs": 12,
       "timeSec": 99,
       "mechanics": [
+        "ghost",
+        "darkness",
         "frozen"
       ],
       "difficulty": "hard",
-      "description": "Boss: 24 cartas, bomb + frozen, crono 99s.",
+      "description": "Boss extremo. Cronómetro: 99s. 24 cartas.",
       "isBoss": true,
       "rewards": {
         "coins": 180
@@ -3610,7 +3638,7 @@
         "rotation"
       ],
       "difficulty": "medium",
-      "description": "juega normalmente. Sin cronÃ³metro. 20 cartas.",
+      "description": "Desafío intenso. Cronómetro: 60s. 20 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 100
@@ -3628,7 +3656,7 @@
         "frozen"
       ],
       "difficulty": "medium",
-      "description": "Niebla ligera: observa con atenciÃ³n. Sin cronÃ³metro. 10 cartas.",
+      "description": "Prueba extrema. Cronómetro: 60s. 10 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 25
@@ -3643,10 +3671,10 @@
       "pairs": 10,
       "timeSec": 87,
       "mechanics": [
-        "basic"
+        "bomb"
       ],
       "difficulty": "hard",
-      "description": "algunas cartas explotan si fallas. CronÃ³metro: 87s. 20 cartas.",
+      "description": "Nivel brutal. Cronómetro: 87s. 20 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 150
@@ -3664,7 +3692,7 @@
         "frozen"
       ],
       "difficulty": "medium",
-      "description": "Evita bombas: piensa rÃ¡pido. Sin cronÃ³metro. 12 cartas.",
+      "description": "Desafío máximo. Cronómetro: 60s. 12 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 60
@@ -3682,7 +3710,7 @@
         "darkness"
       ],
       "difficulty": "hard",
-      "description": "La oscuridad cubre el tablero poco a poco. CronÃ³metro: 76s. 16 cartas.",
+      "description": "Nivel extremo. Cronómetro: 76s. 16 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 120
@@ -3694,19 +3722,19 @@
       "id": 206,
       "phase": 5,
       "theme": "city",
-      "pairs": 10,
+      "pairs": 8,
       "timeSec": 60,
       "mechanics": [
         "trio"
       ],
       "difficulty": "medium",
-      "description": "juega normalmente. Sin cronÃ³metro. 20 cartas.",
+      "description": "Desafío intenso. Cronómetro: 60s. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 100
       },
       "seed": 1206100,
-      "setSize": 2
+      "setSize": 3
     },
     {
       "id": 207,
@@ -3718,7 +3746,7 @@
         "chameleon"
       ],
       "difficulty": "medium",
-      "description": "Nivel clÃ¡sico sin trucos. CronÃ³metro: 44s. 10 cartas.",
+      "description": "Prueba extrema. Cronómetro: 44s. 10 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 50
@@ -3736,7 +3764,7 @@
         "chameleon"
       ],
       "difficulty": "medium",
-      "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 12 cartas.",
+      "description": "Nivel brutal. Cronómetro: 60s. 12 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 30
@@ -3754,7 +3782,7 @@
         "darkness"
       ],
       "difficulty": "hard",
-      "description": "Evita bombas: piensa rÃ¡pido. Sin cronÃ³metro. 24 cartas.",
+      "description": "Desafío máximo. Cronómetro: 60s. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 180
@@ -3772,7 +3800,7 @@
         "ghost"
       ],
       "difficulty": "medium",
-      "description": "Cartas que se congelan temporalmente. Sin cronÃ³metro. 6 cartas.",
+      "description": "Nivel extremo. Cronómetro: 60s. 8 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 30
@@ -3790,7 +3818,7 @@
         "rotation"
       ],
       "difficulty": "hard",
-      "description": "Las cartas cambian de valor. CronÃ³metro: 77s. 14 cartas.",
+      "description": "Desafío intenso. Cronómetro: 77s. 14 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 105
@@ -3808,7 +3836,7 @@
         "bomb"
       ],
       "difficulty": "medium",
-      "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 8 cartas.",
+      "description": "Prueba extrema. Cronómetro: 60s. 8 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 20
@@ -3823,10 +3851,10 @@
       "pairs": 4,
       "timeSec": 60,
       "mechanics": [
-        "basic"
+        "bomb"
       ],
       "difficulty": "medium",
-      "description": "Cartas fantasma aparecen y desaparecen. Sin cronÃ³metro. 8 cartas.",
+      "description": "Nivel brutal. Cronómetro: 60s. 8 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 20
@@ -3841,10 +3869,10 @@
       "pairs": 9,
       "timeSec": 60,
       "mechanics": [
-        "basic"
+        "bomb"
       ],
       "difficulty": "medium",
-      "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 18 cartas.",
+      "description": "Desafío máximo. Cronómetro: 60s. 18 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 90
@@ -3862,7 +3890,7 @@
         "darkness"
       ],
       "difficulty": "medium",
-      "description": "El tablero rota de vez en cuando. Sin cronÃ³metro. 6 cartas.",
+      "description": "Nivel extremo. Cronómetro: 60s. 8 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 30
@@ -3880,7 +3908,7 @@
         "trio"
       ],
       "difficulty": "medium",
-      "description": "Encuentra trÃ­os idÃ©nticos. Sin cronÃ³metro. 12 cartas.",
+      "description": "Desafío intenso. Cronómetro: 60s. 18 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 30
@@ -3898,7 +3926,7 @@
         "frozen"
       ],
       "difficulty": "medium",
-      "description": "las cartas estÃ¡n parcialmente ocultas. CronÃ³metro: 87s. 16 cartas.",
+      "description": "Prueba extrema. Cronómetro: 87s. 16 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 80
@@ -3916,7 +3944,7 @@
         "fog"
       ],
       "difficulty": "hard",
-      "description": "La oscuridad cubre el tablero poco a poco. CronÃ³metro: 77s. 16 cartas.",
+      "description": "Nivel brutal. Cronómetro: 77s. 16 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 120
@@ -3928,19 +3956,19 @@
       "id": 219,
       "phase": 5,
       "theme": "city",
-      "pairs": 10,
+      "pairs": 8,
       "timeSec": 101,
       "mechanics": [
         "trio"
       ],
       "difficulty": "hard",
-      "description": "las cartas pueden rotar. CronÃ³metro: 101s. 20 cartas.",
+      "description": "Desafío máximo. Cronómetro: 101s. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 150
       },
       "seed": 1219201,
-      "setSize": 2
+      "setSize": 3
     },
     {
       "id": 220,
@@ -3952,7 +3980,7 @@
         "bomb"
       ],
       "difficulty": "medium",
-      "description": "Niebla ligera: observa con atenciÃ³n. Sin cronÃ³metro. 4 cartas.",
+      "description": "Nivel extremo. Cronómetro: 60s. 8 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 10
@@ -3970,7 +3998,7 @@
         "frozen"
       ],
       "difficulty": "medium",
-      "description": "las cartas pueden rotar. CronÃ³metro: 88s. 16 cartas.",
+      "description": "Desafío intenso. Cronómetro: 88s. 16 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 80
@@ -3988,7 +4016,7 @@
         "darkness"
       ],
       "difficulty": "hard",
-      "description": "Evita bombas: piensa rÃ¡pido. CronÃ³metro: 100s. 24 cartas.",
+      "description": "Prueba extrema. Cronómetro: 100s. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 180
@@ -4006,7 +4034,7 @@
         "fog"
       ],
       "difficulty": "medium",
-      "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 22 cartas.",
+      "description": "Nivel brutal. Cronómetro: 60s. 22 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 110
@@ -4024,7 +4052,7 @@
         "chameleon"
       ],
       "difficulty": "hard",
-      "description": "Evita bombas: piensa rÃ¡pido. CronÃ³metro: 73s. 14 cartas.",
+      "description": "Desafío máximo. Cronómetro: 73s. 14 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 105
@@ -4042,7 +4070,7 @@
         "ghost"
       ],
       "difficulty": "medium",
-      "description": "El tablero rota de vez en cuando. Sin cronÃ³metro. 8 cartas.",
+      "description": "Nivel extremo. Cronómetro: 60s. 8 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 40
@@ -4060,7 +4088,7 @@
         "chameleon"
       ],
       "difficulty": "medium",
-      "description": "Evita bombas: piensa rÃ¡pido. Sin cronÃ³metro. 10 cartas.",
+      "description": "Desafío intenso. Cronómetro: 60s. 10 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 50
@@ -4078,13 +4106,13 @@
         "bomb"
       ],
       "difficulty": "hard",
-      "description": "Encuentra trÃ­os idÃ©nticos. Sin cronÃ³metro. 24 cartas.",
+      "description": "Prueba extrema. Cronómetro: 60s. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 180
       },
       "seed": 1227120,
-      "setSize": 3
+      "setSize": 2
     },
     {
       "id": 228,
@@ -4096,7 +4124,7 @@
         "frozen"
       ],
       "difficulty": "medium",
-      "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 8 cartas.",
+      "description": "Nivel brutal. Cronómetro: 60s. 8 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 20
@@ -4114,7 +4142,7 @@
         "rotation"
       ],
       "difficulty": "medium",
-      "description": "Evita bombas: piensa rÃ¡pido. Sin cronÃ³metro. 16 cartas.",
+      "description": "Desafío máximo. Cronómetro: 60s. 16 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 80
@@ -4132,7 +4160,7 @@
         "rotation"
       ],
       "difficulty": "hard",
-      "description": "Nivel clÃ¡sico sin trucos. CronÃ³metro: 98s. 18 cartas.",
+      "description": "Nivel extremo. Cronómetro: 98s. 18 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 135
@@ -4150,7 +4178,7 @@
         "darkness"
       ],
       "difficulty": "medium",
-      "description": "Cartas fantasma aparecen y desaparecen. Sin cronÃ³metro. 10 cartas.",
+      "description": "Desafío intenso. Cronómetro: 60s. 10 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 25
@@ -4168,7 +4196,7 @@
         "ghost"
       ],
       "difficulty": "hard",
-      "description": "las cartas estÃ¡n parcialmente ocultas. CronÃ³metro: 107s. 24 cartas.",
+      "description": "Prueba extrema. Cronómetro: 107s. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 180
@@ -4186,7 +4214,7 @@
         "darkness"
       ],
       "difficulty": "hard",
-      "description": "La oscuridad cubre el tablero poco a poco. CronÃ³metro: 88s. 16 cartas.",
+      "description": "Nivel brutal. Cronómetro: 88s. 16 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 120
@@ -4204,7 +4232,7 @@
         "ghost"
       ],
       "difficulty": "hard",
-      "description": "El tablero rota de vez en cuando. CronÃ³metro: 81s. 16 cartas.",
+      "description": "Desafío máximo. Cronómetro: 81s. 16 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 120
@@ -4222,7 +4250,7 @@
         "rotation"
       ],
       "difficulty": "medium",
-      "description": "Cartas que se congelan temporalmente. Sin cronÃ³metro. 12 cartas.",
+      "description": "Nivel extremo. Cronómetro: 60s. 12 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 60
@@ -4240,7 +4268,7 @@
         "frozen"
       ],
       "difficulty": "medium",
-      "description": "Nivel clÃ¡sico sin trucos. CronÃ³metro: 53s. 12 cartas.",
+      "description": "Desafío intenso. Cronómetro: 53s. 12 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 60
@@ -4258,7 +4286,7 @@
         "frozen"
       ],
       "difficulty": "medium",
-      "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 10 cartas.",
+      "description": "Prueba extrema. Cronómetro: 60s. 10 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 25
@@ -4276,13 +4304,13 @@
         "rotation"
       ],
       "difficulty": "hard",
-      "description": "Encuentra trÃ­os idÃ©nticos. Sin cronÃ³metro. 24 cartas.",
+      "description": "Nivel brutal. Cronómetro: 60s. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 180
       },
       "seed": 1238120,
-      "setSize": 3
+      "setSize": 2
     },
     {
       "id": 239,
@@ -4294,7 +4322,7 @@
         "ghost"
       ],
       "difficulty": "medium",
-      "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 4 cartas.",
+      "description": "Desafío máximo. Cronómetro: 60s. 8 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 10
@@ -4312,13 +4340,13 @@
         "trio"
       ],
       "difficulty": "medium",
-      "description": "Cartas fantasma aparecen y desaparecen. Sin cronÃ³metro. 14 cartas.",
+      "description": "Nivel extremo. Cronómetro: 60s. 21 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 70
       },
       "seed": 1240070,
-      "setSize": 2
+      "setSize": 3
     },
     {
       "id": 241,
@@ -4330,7 +4358,7 @@
         "fog"
       ],
       "difficulty": "hard",
-      "description": "El tablero rota de vez en cuando. Sin cronÃ³metro. 24 cartas.",
+      "description": "Desafío intenso. Cronómetro: 60s. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 180
@@ -4342,19 +4370,19 @@
       "id": 242,
       "phase": 5,
       "theme": "city",
-      "pairs": 10,
+      "pairs": 8,
       "timeSec": 87,
       "mechanics": [
         "trio"
       ],
       "difficulty": "hard",
-      "description": "La oscuridad cubre el tablero poco a poco. CronÃ³metro: 87s. 20 cartas.",
+      "description": "Prueba extrema. Cronómetro: 87s. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 150
       },
       "seed": 1242187,
-      "setSize": 2
+      "setSize": 3
     },
     {
       "id": 243,
@@ -4366,7 +4394,7 @@
         "darkness"
       ],
       "difficulty": "medium",
-      "description": "Nivel clÃ¡sico sin trucos. CronÃ³metro: 53s. 12 cartas.",
+      "description": "Nivel brutal. Cronómetro: 53s. 12 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 60
@@ -4384,13 +4412,13 @@
         "trio"
       ],
       "difficulty": "medium",
-      "description": "Cartas fantasma aparecen y desaparecen. Sin cronÃ³metro. 4 cartas.",
+      "description": "Desafío máximo. Cronómetro: 60s. 12 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 10
       },
       "seed": 1244020,
-      "setSize": 2
+      "setSize": 3
     },
     {
       "id": 245,
@@ -4402,7 +4430,7 @@
         "darkness"
       ],
       "difficulty": "medium",
-      "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 8 cartas.",
+      "description": "Nivel extremo. Cronómetro: 60s. 8 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 20
@@ -4417,10 +4445,10 @@
       "pairs": 12,
       "timeSec": 112,
       "mechanics": [
-        "basic"
+        "bomb"
       ],
       "difficulty": "hard",
-      "description": "Evita bombas: piensa rÃ¡pido. CronÃ³metro: 112s. 24 cartas.",
+      "description": "Desafío intenso. Cronómetro: 112s. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 180
@@ -4438,7 +4466,7 @@
         "frozen"
       ],
       "difficulty": "medium",
-      "description": "Niebla ligera: observa con atenciÃ³n. Sin cronÃ³metro. 10 cartas.",
+      "description": "Prueba extrema. Cronómetro: 60s. 10 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 25
@@ -4453,10 +4481,10 @@
       "pairs": 7,
       "timeSec": 60,
       "mechanics": [
-        "basic"
+        "bomb"
       ],
       "difficulty": "medium",
-      "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 14 cartas.",
+      "description": "Nivel brutal. Cronómetro: 60s. 14 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 70
@@ -4474,7 +4502,7 @@
         "chameleon"
       ],
       "difficulty": "medium",
-      "description": "Niebla ligera: observa con atenciÃ³n. Sin cronÃ³metro. 6 cartas.",
+      "description": "Desafío máximo. Cronómetro: 60s. 8 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 15
@@ -4486,13 +4514,15 @@
       "id": 250,
       "phase": 5,
       "theme": "city",
-      "pairs": 12,
+      "pairs": 8,
       "timeSec": 98,
       "mechanics": [
-        "trio"
+        "rotation",
+        "bomb",
+        "chameleon"
       ],
       "difficulty": "hard",
-      "description": "Boss: 24 cartas, darkness + bomb, crono 98s.",
+      "description": "Boss extremo. Cronómetro: 98s. 16 cartas.",
       "isBoss": true,
       "rewards": {
         "coins": 180
@@ -4510,7 +4540,7 @@
         "darkness"
       ],
       "difficulty": "medium",
-      "description": "Cartas que se congelan temporalmente. Sin cronÃ³metro. 14 cartas.",
+      "description": "Desafío intenso. Cronómetro: 60s. 14 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 70
@@ -4528,7 +4558,7 @@
         "fog"
       ],
       "difficulty": "medium",
-      "description": "Las cartas cambian de valor. Sin cronÃ³metro. 6 cartas.",
+      "description": "Prueba extrema. Cronómetro: 60s. 8 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 30
@@ -4546,13 +4576,13 @@
         "rotation"
       ],
       "difficulty": "hard",
-      "description": "Encuentra trÃ­os idÃ©nticos. Sin cronÃ³metro. 18 cartas.",
+      "description": "Nivel brutal. Cronómetro: 60s. 18 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 135
       },
       "seed": 1253090,
-      "setSize": 3
+      "setSize": 2
     },
     {
       "id": 254,
@@ -4564,13 +4594,13 @@
         "trio"
       ],
       "difficulty": "medium",
-      "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 12 cartas.",
+      "description": "Desafío máximo. Cronómetro: 60s. 18 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 30
       },
       "seed": 1254060,
-      "setSize": 2
+      "setSize": 3
     },
     {
       "id": 255,
@@ -4582,7 +4612,7 @@
         "fog"
       ],
       "difficulty": "hard",
-      "description": "La oscuridad cubre el tablero poco a poco. CronÃ³metro: 97s. 24 cartas.",
+      "description": "Nivel extremo. Cronómetro: 97s. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 180
@@ -4600,7 +4630,7 @@
         "ghost"
       ],
       "difficulty": "hard",
-      "description": "Las cartas cambian de valor. CronÃ³metro: 64s. 14 cartas.",
+      "description": "Desafío intenso. Cronómetro: 64s. 14 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 105
@@ -4618,7 +4648,7 @@
         "fog"
       ],
       "difficulty": "hard",
-      "description": "Evita bombas: piensa rÃ¡pido. CronÃ³metro: 102s. 24 cartas.",
+      "description": "Prueba extrema. Cronómetro: 102s. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 180
@@ -4636,7 +4666,7 @@
         "ghost"
       ],
       "difficulty": "medium",
-      "description": "Las cartas cambian de valor. Sin cronÃ³metro. 8 cartas.",
+      "description": "Nivel brutal. Cronómetro: 60s. 8 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 40
@@ -4654,7 +4684,7 @@
         "chameleon"
       ],
       "difficulty": "medium",
-      "description": "Niebla ligera: observa con atenciÃ³n. CronÃ³metro: 73s. 14 cartas.",
+      "description": "Desafío máximo. Cronómetro: 73s. 14 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 70
@@ -4666,19 +4696,19 @@
       "id": 260,
       "phase": 6,
       "theme": "desert",
-      "pairs": 10,
+      "pairs": 8,
       "timeSec": 60,
       "mechanics": [
         "trio"
       ],
       "difficulty": "medium",
-      "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 20 cartas.",
+      "description": "Nivel extremo. Cronómetro: 60s. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 100
       },
       "seed": 1260100,
-      "setSize": 2
+      "setSize": 3
     },
     {
       "id": 261,
@@ -4690,7 +4720,7 @@
         "darkness"
       ],
       "difficulty": "medium",
-      "description": "las cartas estÃ¡n parcialmente ocultas. CronÃ³metro: 74s. 16 cartas.",
+      "description": "Desafío intenso. Cronómetro: 74s. 16 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 80
@@ -4705,16 +4735,16 @@
       "pairs": 6,
       "timeSec": 60,
       "mechanics": [
-        "basic"
+        "bomb"
       ],
       "difficulty": "medium",
-      "description": "Encuentra trÃ­os idÃ©nticos. Sin cronÃ³metro. 12 cartas.",
+      "description": "Prueba extrema. Cronómetro: 60s. 12 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 30
       },
       "seed": 1262060,
-      "setSize": 3
+      "setSize": 2
     },
     {
       "id": 263,
@@ -4726,13 +4756,13 @@
         "trio"
       ],
       "difficulty": "medium",
-      "description": "Las cartas cambian de valor. Sin cronÃ³metro. 10 cartas.",
+      "description": "Nivel brutal. Cronómetro: 60s. 15 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 50
       },
       "seed": 1263050,
-      "setSize": 2
+      "setSize": 3
     },
     {
       "id": 264,
@@ -4744,7 +4774,7 @@
         "darkness"
       ],
       "difficulty": "medium",
-      "description": "El tablero rota de vez en cuando. Sin cronÃ³metro. 4 cartas.",
+      "description": "Desafío máximo. Cronómetro: 60s. 8 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 20
@@ -4762,13 +4792,13 @@
         "trio"
       ],
       "difficulty": "medium",
-      "description": "La oscuridad cubre el tablero poco a poco. Sin cronÃ³metro. 16 cartas.",
+      "description": "Nivel extremo. Cronómetro: 60s. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 80
       },
       "seed": 1265080,
-      "setSize": 2
+      "setSize": 3
     },
     {
       "id": 266,
@@ -4780,7 +4810,7 @@
         "darkness"
       ],
       "difficulty": "medium",
-      "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 12 cartas.",
+      "description": "Desafío intenso. Cronómetro: 60s. 12 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 30
@@ -4798,7 +4828,7 @@
         "rotation"
       ],
       "difficulty": "medium",
-      "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 14 cartas.",
+      "description": "Prueba extrema. Cronómetro: 60s. 14 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 70
@@ -4810,13 +4840,13 @@
       "id": 268,
       "phase": 6,
       "theme": "desert",
-      "pairs": 12,
+      "pairs": 8,
       "timeSec": 60,
       "mechanics": [
         "trio"
       ],
       "difficulty": "hard",
-      "description": "Encuentra trÃ­os idÃ©nticos. Sin cronÃ³metro. 24 cartas.",
+      "description": "Nivel brutal. Cronómetro: 60s. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 180
@@ -4834,7 +4864,7 @@
         "ghost"
       ],
       "difficulty": "medium",
-      "description": "Nivel clÃ¡sico sin trucos. CronÃ³metro: 87s. 16 cartas.",
+      "description": "Desafío máximo. Cronómetro: 87s. 16 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 80
@@ -4852,7 +4882,7 @@
         "frozen"
       ],
       "difficulty": "medium",
-      "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 14 cartas.",
+      "description": "Nivel extremo. Cronómetro: 60s. 14 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 70
@@ -4864,19 +4894,19 @@
       "id": 271,
       "phase": 6,
       "theme": "desert",
-      "pairs": 10,
+      "pairs": 8,
       "timeSec": 60,
       "mechanics": [
         "trio"
       ],
       "difficulty": "hard",
-      "description": "La oscuridad cubre el tablero poco a poco. Sin cronÃ³metro. 20 cartas.",
+      "description": "Desafío intenso. Cronómetro: 60s. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 150
       },
       "seed": 1271100,
-      "setSize": 2
+      "setSize": 3
     },
     {
       "id": 272,
@@ -4885,10 +4915,10 @@
       "pairs": 6,
       "timeSec": 60,
       "mechanics": [
-        "basic"
+        "bomb"
       ],
       "difficulty": "medium",
-      "description": "Las cartas cambian de valor. Sin cronÃ³metro. 12 cartas.",
+      "description": "Prueba extrema. Cronómetro: 60s. 12 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 60
@@ -4906,7 +4936,7 @@
         "frozen"
       ],
       "difficulty": "medium",
-      "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 16 cartas.",
+      "description": "Nivel brutal. Cronómetro: 60s. 16 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 80
@@ -4924,7 +4954,7 @@
         "frozen"
       ],
       "difficulty": "medium",
-      "description": "El tablero rota de vez en cuando. Sin cronÃ³metro. 6 cartas.",
+      "description": "Desafío máximo. Cronómetro: 60s. 8 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 30
@@ -4942,7 +4972,7 @@
         "bomb"
       ],
       "difficulty": "hard",
-      "description": "Cartas que se congelan temporalmente. CronÃ³metro: 105s. 24 cartas.",
+      "description": "Nivel extremo. Cronómetro: 105s. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 180
@@ -4960,7 +4990,7 @@
         "rotation"
       ],
       "difficulty": "medium",
-      "description": "Evita bombas: piensa rÃ¡pido. Sin cronÃ³metro. 10 cartas.",
+      "description": "Desafío intenso. Cronómetro: 60s. 10 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 50
@@ -4978,7 +5008,7 @@
         "fog"
       ],
       "difficulty": "medium",
-      "description": "Niebla ligera: observa con atenciÃ³n. CronÃ³metro: 56s. 10 cartas.",
+      "description": "Prueba extrema. Cronómetro: 56s. 10 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 50
@@ -4993,10 +5023,10 @@
       "pairs": 10,
       "timeSec": 91,
       "mechanics": [
-        "basic"
+        "bomb"
       ],
       "difficulty": "hard",
-      "description": "las cartas pueden rotar. CronÃ³metro: 91s. 20 cartas.",
+      "description": "Nivel brutal. Cronómetro: 91s. 20 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 150
@@ -5011,10 +5041,10 @@
       "pairs": 6,
       "timeSec": 60,
       "mechanics": [
-        "basic"
+        "bomb"
       ],
       "difficulty": "medium",
-      "description": "Las cartas cambian de valor. Sin cronÃ³metro. 12 cartas.",
+      "description": "Desafío máximo. Cronómetro: 60s. 12 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 60
@@ -5032,7 +5062,7 @@
         "frozen"
       ],
       "difficulty": "medium",
-      "description": "Evita bombas: piensa rÃ¡pido. Sin cronÃ³metro. 16 cartas.",
+      "description": "Nivel extremo. Cronómetro: 60s. 16 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 80
@@ -5050,7 +5080,7 @@
         "bomb"
       ],
       "difficulty": "medium",
-      "description": "las cartas estÃ¡n parcialmente ocultas. CronÃ³metro: 75s. 16 cartas.",
+      "description": "Desafío intenso. Cronómetro: 75s. 16 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 80
@@ -5068,7 +5098,7 @@
         "darkness"
       ],
       "difficulty": "medium",
-      "description": "Nivel clÃ¡sico sin trucos. CronÃ³metro: 66s. 14 cartas.",
+      "description": "Prueba extrema. Cronómetro: 66s. 14 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 70
@@ -5086,7 +5116,7 @@
         "trio"
       ],
       "difficulty": "medium",
-      "description": "Encuentra trÃ­os idÃ©nticos. Sin cronÃ³metro. 12 cartas.",
+      "description": "Nivel brutal. Cronómetro: 60s. 18 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 30
@@ -5104,7 +5134,7 @@
         "chameleon"
       ],
       "difficulty": "medium",
-      "description": "Cartas fantasma aparecen y desaparecen. Sin cronÃ³metro. 10 cartas.",
+      "description": "Desafío máximo. Cronómetro: 60s. 10 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 25
@@ -5119,10 +5149,10 @@
       "pairs": 9,
       "timeSec": 91,
       "mechanics": [
-        "basic"
+        "bomb"
       ],
       "difficulty": "hard",
-      "description": "Nivel clÃ¡sico sin trucos. CronÃ³metro: 91s. 18 cartas.",
+      "description": "Nivel extremo. Cronómetro: 91s. 18 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 135
@@ -5140,7 +5170,7 @@
         "frozen"
       ],
       "difficulty": "medium",
-      "description": "Evita bombas: piensa rÃ¡pido. CronÃ³metro: 49s. 10 cartas.",
+      "description": "Desafío intenso. Cronómetro: 49s. 10 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 50
@@ -5158,7 +5188,7 @@
         "rotation"
       ],
       "difficulty": "medium",
-      "description": "Cartas que se congelan temporalmente. Sin cronÃ³metro. 14 cartas.",
+      "description": "Prueba extrema. Cronómetro: 60s. 14 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 70
@@ -5176,7 +5206,7 @@
         "frozen"
       ],
       "difficulty": "medium",
-      "description": "Las cartas cambian de valor. Sin cronÃ³metro. 14 cartas.",
+      "description": "Nivel brutal. Cronómetro: 60s. 14 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 70
@@ -5191,10 +5221,10 @@
       "pairs": 9,
       "timeSec": 87,
       "mechanics": [
-        "basic"
+        "bomb"
       ],
       "difficulty": "hard",
-      "description": "Cartas fantasma aparecen y desaparecen. CronÃ³metro: 87s. 18 cartas.",
+      "description": "Desafío máximo. Cronómetro: 87s. 18 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 135
@@ -5209,10 +5239,10 @@
       "pairs": 12,
       "timeSec": 60,
       "mechanics": [
-        "basic"
+        "bomb"
       ],
       "difficulty": "hard",
-      "description": "Cartas que se congelan temporalmente. Sin cronÃ³metro. 24 cartas.",
+      "description": "Nivel extremo. Cronómetro: 60s. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 180
@@ -5230,7 +5260,7 @@
         "ghost"
       ],
       "difficulty": "hard",
-      "description": "Evita bombas: piensa rÃ¡pido. CronÃ³metro: 97s. 18 cartas.",
+      "description": "Desafío intenso. Cronómetro: 97s. 18 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 135
@@ -5248,7 +5278,7 @@
         "bomb"
       ],
       "difficulty": "medium",
-      "description": "Cartas fantasma aparecen y desaparecen. Sin cronÃ³metro. 4 cartas.",
+      "description": "Prueba extrema. Cronómetro: 60s. 8 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 10
@@ -5266,13 +5296,13 @@
         "rotation"
       ],
       "difficulty": "medium",
-      "description": "Encuentra trÃ­os idÃ©nticos. Sin cronÃ³metro. 12 cartas.",
+      "description": "Nivel brutal. Cronómetro: 60s. 12 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 30
       },
       "seed": 1293060,
-      "setSize": 3
+      "setSize": 2
     },
     {
       "id": 294,
@@ -5284,13 +5314,13 @@
         "trio"
       ],
       "difficulty": "medium",
-      "description": "Las cartas cambian de valor. Sin cronÃ³metro. 14 cartas.",
+      "description": "Desafío máximo. Cronómetro: 60s. 21 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 70
       },
       "seed": 1294070,
-      "setSize": 2
+      "setSize": 3
     },
     {
       "id": 295,
@@ -5302,7 +5332,7 @@
         "darkness"
       ],
       "difficulty": "medium",
-      "description": "juega normalmente. Sin cronÃ³metro. 16 cartas.",
+      "description": "Nivel extremo. Cronómetro: 60s. 16 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 80
@@ -5320,7 +5350,7 @@
         "rotation"
       ],
       "difficulty": "medium",
-      "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 12 cartas.",
+      "description": "Desafío intenso. Cronómetro: 60s. 12 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 30
@@ -5338,13 +5368,13 @@
         "trio"
       ],
       "difficulty": "medium",
-      "description": "Niebla ligera: observa con atenciÃ³n. CronÃ³metro: 44s. 10 cartas.",
+      "description": "Prueba extrema. Cronómetro: 44s. 15 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 50
       },
       "seed": 1297094,
-      "setSize": 2
+      "setSize": 3
     },
     {
       "id": 298,
@@ -5356,7 +5386,7 @@
         "darkness"
       ],
       "difficulty": "medium",
-      "description": "Cartas que se congelan temporalmente. Sin cronÃ³metro. 14 cartas.",
+      "description": "Nivel brutal. Cronómetro: 60s. 14 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 70
@@ -5374,31 +5404,33 @@
         "trio"
       ],
       "difficulty": "medium",
-      "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 10 cartas.",
+      "description": "Desafío máximo. Cronómetro: 60s. 15 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 25
       },
       "seed": 1299050,
-      "setSize": 2
+      "setSize": 3
     },
     {
       "id": 300,
       "phase": 6,
       "theme": "desert",
-      "pairs": 12,
+      "pairs": 8,
       "timeSec": 109,
       "mechanics": [
-        "trio"
+        "trio",
+        "rotation",
+        "darkness"
       ],
       "difficulty": "hard",
-      "description": "Boss: 24 cartas, chameleon + darkness, crono 109s.",
+      "description": "Boss extremo. Cronómetro: 109s. 24 cartas.",
       "isBoss": true,
       "rewards": {
         "coins": 180
       },
       "seed": 1300229,
-      "setSize": 2
+      "setSize": 3
     },
     {
       "id": 301,
@@ -5410,7 +5442,7 @@
         "frozen"
       ],
       "difficulty": "medium",
-      "description": "Evita bombas: piensa rÃ¡pido. Sin cronÃ³metro. 6 cartas.",
+      "description": "Desafío intenso. Cronómetro: 60s. 8 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 30
@@ -5428,7 +5460,7 @@
         "fog"
       ],
       "difficulty": "hard",
-      "description": "La oscuridad cubre el tablero poco a poco. CronÃ³metro: 85s. 16 cartas.",
+      "description": "Prueba extrema. Cronómetro: 85s. 16 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 120
@@ -5446,13 +5478,13 @@
         "bomb"
       ],
       "difficulty": "hard",
-      "description": "Encuentra trÃ­os idÃ©nticos. Sin cronÃ³metro. 24 cartas.",
+      "description": "Nivel brutal. Cronómetro: 60s. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 180
       },
       "seed": 1303120,
-      "setSize": 3
+      "setSize": 2
     },
     {
       "id": 304,
@@ -5464,13 +5496,13 @@
         "trio"
       ],
       "difficulty": "medium",
-      "description": "Las cartas cambian de valor. Sin cronÃ³metro. 10 cartas.",
+      "description": "Desafío máximo. Cronómetro: 60s. 15 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 50
       },
       "seed": 1304050,
-      "setSize": 2
+      "setSize": 3
     },
     {
       "id": 305,
@@ -5482,7 +5514,7 @@
         "fog"
       ],
       "difficulty": "medium",
-      "description": "Evita bombas: piensa rÃ¡pido. Sin cronÃ³metro. 12 cartas.",
+      "description": "Nivel extremo. Cronómetro: 60s. 12 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 60
@@ -5500,7 +5532,7 @@
         "ghost"
       ],
       "difficulty": "medium",
-      "description": "El tablero rota de vez en cuando. Sin cronÃ³metro. 10 cartas.",
+      "description": "Desafío intenso. Cronómetro: 60s. 10 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 50
@@ -5518,7 +5550,7 @@
         "rotation"
       ],
       "difficulty": "hard",
-      "description": "Nivel clÃ¡sico sin trucos. CronÃ³metro: 94s. 18 cartas.",
+      "description": "Prueba extrema. Cronómetro: 94s. 18 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 135
@@ -5536,7 +5568,7 @@
         "fog"
       ],
       "difficulty": "medium",
-      "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 16 cartas.",
+      "description": "Nivel brutal. Cronómetro: 60s. 16 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 80
@@ -5551,10 +5583,10 @@
       "pairs": 12,
       "timeSec": 99,
       "mechanics": [
-        "basic"
+        "bomb"
       ],
       "difficulty": "hard",
-      "description": "El tablero rota de vez en cuando. CronÃ³metro: 99s. 24 cartas.",
+      "description": "Desafío máximo. Cronómetro: 99s. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 180
@@ -5572,7 +5604,7 @@
         "trio"
       ],
       "difficulty": "medium",
-      "description": "Encuentra trÃ­os idÃ©nticos. Sin cronÃ³metro. 6 cartas.",
+      "description": "Nivel extremo. Cronómetro: 60s. 9 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 15
@@ -5587,10 +5619,10 @@
       "pairs": 6,
       "timeSec": 64,
       "mechanics": [
-        "basic"
+        "bomb"
       ],
       "difficulty": "medium",
-      "description": "Nivel clÃ¡sico sin trucos. CronÃ³metro: 64s. 12 cartas.",
+      "description": "Desafío intenso. Cronómetro: 64s. 12 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 60
@@ -5605,10 +5637,10 @@
       "pairs": 7,
       "timeSec": 60,
       "mechanics": [
-        "basic"
+        "bomb"
       ],
       "difficulty": "medium",
-      "description": "Evita bombas: piensa rÃ¡pido. Sin cronÃ³metro. 14 cartas.",
+      "description": "Prueba extrema. Cronómetro: 60s. 14 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 70
@@ -5623,10 +5655,10 @@
       "pairs": 9,
       "timeSec": 60,
       "mechanics": [
-        "basic"
+        "bomb"
       ],
       "difficulty": "medium",
-      "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 18 cartas.",
+      "description": "Nivel brutal. Cronómetro: 60s. 18 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 90
@@ -5644,7 +5676,7 @@
         "fog"
       ],
       "difficulty": "medium",
-      "description": "Cartas que se congelan temporalmente. Sin cronÃ³metro. 14 cartas.",
+      "description": "Desafío máximo. Cronómetro: 60s. 14 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 70
@@ -5662,7 +5694,7 @@
         "rotation"
       ],
       "difficulty": "medium",
-      "description": "Cartas fantasma aparecen y desaparecen. CronÃ³metro: 56s. 12 cartas.",
+      "description": "Nivel extremo. Cronómetro: 56s. 12 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 60
@@ -5680,7 +5712,7 @@
         "rotation"
       ],
       "difficulty": "medium",
-      "description": "Niebla ligera: observa con atenciÃ³n. Sin cronÃ³metro. 12 cartas.",
+      "description": "Desafío intenso. Cronómetro: 60s. 12 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 30
@@ -5695,10 +5727,10 @@
       "pairs": 6,
       "timeSec": 62,
       "mechanics": [
-        "basic"
+        "bomb"
       ],
       "difficulty": "medium",
-      "description": "Las cartas cambian de valor. CronÃ³metro: 62s. 12 cartas.",
+      "description": "Prueba extrema. Cronómetro: 62s. 12 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 60
@@ -5716,7 +5748,7 @@
         "ghost"
       ],
       "difficulty": "hard",
-      "description": "La oscuridad cubre el tablero poco a poco. CronÃ³metro: 89s. 20 cartas.",
+      "description": "Nivel brutal. Cronómetro: 89s. 20 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 150
@@ -5734,7 +5766,7 @@
         "rotation"
       ],
       "difficulty": "medium",
-      "description": "Nivel clÃ¡sico sin trucos. CronÃ³metro: 43s. 10 cartas.",
+      "description": "Desafío máximo. Cronómetro: 43s. 10 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 50
@@ -5752,7 +5784,7 @@
         "rotation"
       ],
       "difficulty": "medium",
-      "description": "El tablero rota de vez en cuando. Sin cronÃ³metro. 16 cartas.",
+      "description": "Nivel extremo. Cronómetro: 60s. 16 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 80
@@ -5770,7 +5802,7 @@
         "rotation"
       ],
       "difficulty": "medium",
-      "description": "Evita bombas: piensa rÃ¡pido. Sin cronÃ³metro. 4 cartas.",
+      "description": "Desafío intenso. Cronómetro: 60s. 8 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 20
@@ -5782,19 +5814,19 @@
       "id": 322,
       "phase": 7,
       "theme": "arctic",
-      "pairs": 12,
+      "pairs": 8,
       "timeSec": 60,
       "mechanics": [
         "trio"
       ],
       "difficulty": "medium",
-      "description": "juega normalmente. Sin cronÃ³metro. 24 cartas.",
+      "description": "Prueba extrema. Cronómetro: 60s. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 120
       },
       "seed": 1322120,
-      "setSize": 2
+      "setSize": 3
     },
     {
       "id": 323,
@@ -5806,7 +5838,7 @@
         "rotation"
       ],
       "difficulty": "medium",
-      "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 12 cartas.",
+      "description": "Nivel brutal. Cronómetro: 60s. 12 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 30
@@ -5824,13 +5856,13 @@
         "fog"
       ],
       "difficulty": "hard",
-      "description": "Encuentra trÃ­os idÃ©nticos. Sin cronÃ³metro. 18 cartas.",
+      "description": "Desafío máximo. Cronómetro: 60s. 18 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 135
       },
       "seed": 1324090,
-      "setSize": 3
+      "setSize": 2
     },
     {
       "id": 325,
@@ -5842,7 +5874,7 @@
         "bomb"
       ],
       "difficulty": "hard",
-      "description": "El tablero rota de vez en cuando. CronÃ³metro: 97s. 18 cartas.",
+      "description": "Nivel extremo. Cronómetro: 97s. 18 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 135
@@ -5860,13 +5892,13 @@
         "trio"
       ],
       "difficulty": "medium",
-      "description": "juega normalmente. Sin cronÃ³metro. 16 cartas.",
+      "description": "Desafío intenso. Cronómetro: 60s. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 80
       },
       "seed": 1326080,
-      "setSize": 2
+      "setSize": 3
     },
     {
       "id": 327,
@@ -5878,7 +5910,7 @@
         "ghost"
       ],
       "difficulty": "medium",
-      "description": "Niebla ligera: observa con atenciÃ³n. Sin cronÃ³metro. 12 cartas.",
+      "description": "Prueba extrema. Cronómetro: 60s. 12 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 30
@@ -5890,19 +5922,19 @@
       "id": 328,
       "phase": 7,
       "theme": "arctic",
-      "pairs": 12,
+      "pairs": 8,
       "timeSec": 112,
       "mechanics": [
         "trio"
       ],
       "difficulty": "hard",
-      "description": "Cartas que se congelan temporalmente. CronÃ³metro: 112s. 24 cartas.",
+      "description": "Nivel brutal. Cronómetro: 112s. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 180
       },
       "seed": 1328232,
-      "setSize": 2
+      "setSize": 3
     },
     {
       "id": 329,
@@ -5911,10 +5943,10 @@
       "pairs": 8,
       "timeSec": 60,
       "mechanics": [
-        "basic"
+        "bomb"
       ],
       "difficulty": "medium",
-      "description": "Niebla ligera: observa con atenciÃ³n. Sin cronÃ³metro. 16 cartas.",
+      "description": "Desafío máximo. Cronómetro: 60s. 16 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 80
@@ -5932,7 +5964,7 @@
         "ghost"
       ],
       "difficulty": "medium",
-      "description": "Evita bombas: piensa rÃ¡pido. Sin cronÃ³metro. 8 cartas.",
+      "description": "Nivel extremo. Cronómetro: 60s. 8 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 40
@@ -5950,7 +5982,7 @@
         "darkness"
       ],
       "difficulty": "medium",
-      "description": "Cartas fantasma aparecen y desaparecen. Sin cronÃ³metro. 14 cartas.",
+      "description": "Desafío intenso. Cronómetro: 60s. 14 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 70
@@ -5968,7 +6000,7 @@
         "chameleon"
       ],
       "difficulty": "medium",
-      "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 24 cartas.",
+      "description": "Prueba extrema. Cronómetro: 60s. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 120
@@ -5986,7 +6018,7 @@
         "bomb"
       ],
       "difficulty": "medium",
-      "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 10 cartas.",
+      "description": "Nivel brutal. Cronómetro: 60s. 10 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 25
@@ -6004,7 +6036,7 @@
         "fog"
       ],
       "difficulty": "medium",
-      "description": "Niebla ligera: observa con atenciÃ³n. Sin cronÃ³metro. 10 cartas.",
+      "description": "Desafío máximo. Cronómetro: 60s. 10 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 25
@@ -6022,7 +6054,7 @@
         "rotation"
       ],
       "difficulty": "medium",
-      "description": "Cartas fantasma aparecen y desaparecen. Sin cronÃ³metro. 12 cartas.",
+      "description": "Nivel extremo. Cronómetro: 60s. 12 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 30
@@ -6040,7 +6072,7 @@
         "frozen"
       ],
       "difficulty": "medium",
-      "description": "Cartas que se congelan temporalmente. Sin cronÃ³metro. 14 cartas.",
+      "description": "Desafío intenso. Cronómetro: 60s. 14 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 70
@@ -6058,7 +6090,7 @@
         "chameleon"
       ],
       "difficulty": "medium",
-      "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 12 cartas.",
+      "description": "Prueba extrema. Cronómetro: 60s. 12 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 30
@@ -6076,7 +6108,7 @@
         "chameleon"
       ],
       "difficulty": "hard",
-      "description": "Cartas que se congelan temporalmente. CronÃ³metro: 87s. 16 cartas.",
+      "description": "Nivel brutal. Cronómetro: 87s. 16 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 120
@@ -6094,7 +6126,7 @@
         "rotation"
       ],
       "difficulty": "hard",
-      "description": "Nivel clÃ¡sico sin trucos. CronÃ³metro: 100s. 24 cartas.",
+      "description": "Desafío máximo. Cronómetro: 100s. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 180
@@ -6112,7 +6144,7 @@
         "fog"
       ],
       "difficulty": "medium",
-      "description": "Cartas fantasma aparecen y desaparecen. Sin cronÃ³metro. 8 cartas.",
+      "description": "Nivel extremo. Cronómetro: 60s. 8 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 20
@@ -6130,7 +6162,7 @@
         "trio"
       ],
       "difficulty": "medium",
-      "description": "Encuentra trÃ­os idÃ©nticos. Sin cronÃ³metro. 12 cartas.",
+      "description": "Desafío intenso. Cronómetro: 60s. 18 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 30
@@ -6148,13 +6180,13 @@
         "trio"
       ],
       "difficulty": "medium",
-      "description": "juega normalmente. Sin cronÃ³metro. 16 cartas.",
+      "description": "Prueba extrema. Cronómetro: 60s. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 80
       },
       "seed": 1342080,
-      "setSize": 2
+      "setSize": 3
     },
     {
       "id": 343,
@@ -6166,7 +6198,7 @@
         "frozen"
       ],
       "difficulty": "medium",
-      "description": "Cartas fantasma aparecen y desaparecen. Sin cronÃ³metro. 10 cartas.",
+      "description": "Nivel brutal. Cronómetro: 60s. 10 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 25
@@ -6184,7 +6216,7 @@
         "ghost"
       ],
       "difficulty": "hard",
-      "description": "El tablero rota de vez en cuando. CronÃ³metro: 98s. 24 cartas.",
+      "description": "Desafío máximo. Cronómetro: 98s. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 180
@@ -6202,7 +6234,7 @@
         "ghost"
       ],
       "difficulty": "medium",
-      "description": "Nivel clÃ¡sico sin trucos. CronÃ³metro: 71s. 14 cartas.",
+      "description": "Nivel extremo. Cronómetro: 71s. 14 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 70
@@ -6220,7 +6252,7 @@
         "ghost"
       ],
       "difficulty": "hard",
-      "description": "Evita bombas: piensa rÃ¡pido. CronÃ³metro: 97s. 20 cartas.",
+      "description": "Desafío intenso. Cronómetro: 97s. 20 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 150
@@ -6238,7 +6270,7 @@
         "frozen"
       ],
       "difficulty": "medium",
-      "description": "La oscuridad cubre el tablero poco a poco. Sin cronÃ³metro. 16 cartas.",
+      "description": "Prueba extrema. Cronómetro: 60s. 16 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 80
@@ -6256,7 +6288,7 @@
         "frozen"
       ],
       "difficulty": "hard",
-      "description": "Evita bombas: piensa rÃ¡pido. CronÃ³metro: 76s. 14 cartas.",
+      "description": "Nivel brutal. Cronómetro: 76s. 14 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 105
@@ -6274,7 +6306,7 @@
         "fog"
       ],
       "difficulty": "medium",
-      "description": "juega normalmente. Sin cronÃ³metro. 24 cartas.",
+      "description": "Desafío máximo. Cronómetro: 60s. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 120
@@ -6289,10 +6321,13 @@
       "pairs": 12,
       "timeSec": 107,
       "mechanics": [
-        "basic"
+        "bomb",
+        "frozen",
+        "chameleon",
+        "fog"
       ],
       "difficulty": "hard",
-      "description": "Boss: 24 cartas, frozen + darkness, crono 107s.",
+      "description": "Boss extremo. Cronómetro: 107s. 24 cartas.",
       "isBoss": true,
       "rewards": {
         "coins": 180
@@ -6310,7 +6345,7 @@
         "fog"
       ],
       "difficulty": "medium",
-      "description": "Niebla ligera: observa con atenciÃ³n. CronÃ³metro: 85s. 16 cartas.",
+      "description": "Desafío intenso. Cronómetro: 85s. 16 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 80
@@ -6328,13 +6363,13 @@
         "ghost"
       ],
       "difficulty": "medium",
-      "description": "Encuentra trÃ­os idÃ©nticos. Sin cronÃ³metro. 12 cartas.",
+      "description": "Prueba extrema. Cronómetro: 60s. 12 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 30
       },
       "seed": 1352060,
-      "setSize": 3
+      "setSize": 2
     },
     {
       "id": 353,
@@ -6346,7 +6381,7 @@
         "rotation"
       ],
       "difficulty": "hard",
-      "description": "El tablero rota de vez en cuando. CronÃ³metro: 67s. 14 cartas.",
+      "description": "Nivel brutal. Cronómetro: 67s. 14 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 105
@@ -6364,7 +6399,7 @@
         "bomb"
       ],
       "difficulty": "medium",
-      "description": "Niebla ligera: observa con atenciÃ³n. Sin cronÃ³metro. 10 cartas.",
+      "description": "Desafío máximo. Cronómetro: 60s. 10 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 25
@@ -6382,7 +6417,7 @@
         "bomb"
       ],
       "difficulty": "medium",
-      "description": "Las cartas cambian de valor. Sin cronÃ³metro. 10 cartas.",
+      "description": "Nivel extremo. Cronómetro: 60s. 10 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 50
@@ -6397,10 +6432,10 @@
       "pairs": 12,
       "timeSec": 109,
       "mechanics": [
-        "basic"
+        "bomb"
       ],
       "difficulty": "hard",
-      "description": "La oscuridad cubre el tablero poco a poco. CronÃ³metro: 109s. 24 cartas.",
+      "description": "Desafío intenso. Cronómetro: 109s. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 180
@@ -6418,7 +6453,7 @@
         "rotation"
       ],
       "difficulty": "medium",
-      "description": "Nivel clÃ¡sico sin trucos. CronÃ³metro: 73s. 16 cartas.",
+      "description": "Prueba extrema. Cronómetro: 73s. 16 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 80
@@ -6436,7 +6471,7 @@
         "rotation"
       ],
       "difficulty": "medium",
-      "description": "Cartas que se congelan temporalmente. Sin cronÃ³metro. 14 cartas.",
+      "description": "Nivel brutal. Cronómetro: 60s. 14 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 70
@@ -6454,7 +6489,7 @@
         "fog"
       ],
       "difficulty": "medium",
-      "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 12 cartas.",
+      "description": "Desafío máximo. Cronómetro: 60s. 12 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 30
@@ -6472,7 +6507,7 @@
         "frozen"
       ],
       "difficulty": "medium",
-      "description": "Cartas fantasma aparecen y desaparecen. Sin cronÃ³metro. 10 cartas.",
+      "description": "Nivel extremo. Cronómetro: 60s. 10 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 25
@@ -6490,7 +6525,7 @@
         "rotation"
       ],
       "difficulty": "medium",
-      "description": "las cartas estÃ¡n parcialmente ocultas. CronÃ³metro: 74s. 16 cartas.",
+      "description": "Desafío intenso. Cronómetro: 74s. 16 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 80
@@ -6505,10 +6540,10 @@
       "pairs": 7,
       "timeSec": 60,
       "mechanics": [
-        "basic"
+        "bomb"
       ],
       "difficulty": "medium",
-      "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 14 cartas.",
+      "description": "Prueba extrema. Cronómetro: 60s. 14 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 70
@@ -6526,7 +6561,7 @@
         "rotation"
       ],
       "difficulty": "hard",
-      "description": "La oscuridad cubre el tablero poco a poco. CronÃ³metro: 90s. 20 cartas.",
+      "description": "Nivel brutal. Cronómetro: 90s. 20 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 150
@@ -6544,7 +6579,7 @@
         "frozen"
       ],
       "difficulty": "medium",
-      "description": "Cartas que se congelan temporalmente. Sin cronÃ³metro. 16 cartas.",
+      "description": "Desafío máximo. Cronómetro: 60s. 16 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 80
@@ -6562,7 +6597,7 @@
         "frozen"
       ],
       "difficulty": "medium",
-      "description": "Niebla ligera: observa con atenciÃ³n. Sin cronÃ³metro. 6 cartas.",
+      "description": "Nivel extremo. Cronómetro: 60s. 8 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 15
@@ -6580,13 +6615,13 @@
         "fog"
       ],
       "difficulty": "hard",
-      "description": "Encuentra trÃ­os idÃ©nticos. Sin cronÃ³metro. 18 cartas.",
+      "description": "Desafío intenso. Cronómetro: 60s. 18 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 135
       },
       "seed": 1366090,
-      "setSize": 3
+      "setSize": 2
     },
     {
       "id": 367,
@@ -6598,7 +6633,7 @@
         "bomb"
       ],
       "difficulty": "medium",
-      "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 12 cartas.",
+      "description": "Prueba extrema. Cronómetro: 60s. 12 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 30
@@ -6616,7 +6651,7 @@
         "rotation"
       ],
       "difficulty": "medium",
-      "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 16 cartas.",
+      "description": "Nivel brutal. Cronómetro: 60s. 16 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 80
@@ -6634,7 +6669,7 @@
         "chameleon"
       ],
       "difficulty": "medium",
-      "description": "Niebla ligera: observa con atenciÃ³n. Sin cronÃ³metro. 4 cartas.",
+      "description": "Desafío máximo. Cronómetro: 60s. 8 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 10
@@ -6652,7 +6687,7 @@
         "darkness"
       ],
       "difficulty": "hard",
-      "description": "Evita bombas: piensa rÃ¡pido. Sin cronÃ³metro. 18 cartas.",
+      "description": "Nivel extremo. Cronómetro: 60s. 18 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 135
@@ -6670,7 +6705,7 @@
         "rotation"
       ],
       "difficulty": "medium",
-      "description": "Cartas fantasma aparecen y desaparecen. Sin cronÃ³metro. 10 cartas.",
+      "description": "Desafío intenso. Cronómetro: 60s. 10 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 25
@@ -6688,7 +6723,7 @@
         "bomb"
       ],
       "difficulty": "medium",
-      "description": "Cartas que se congelan temporalmente. Sin cronÃ³metro. 8 cartas.",
+      "description": "Prueba extrema. Cronómetro: 60s. 8 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 40
@@ -6706,7 +6741,7 @@
         "chameleon"
       ],
       "difficulty": "medium",
-      "description": "Las cartas cambian de valor. Sin cronÃ³metro. 8 cartas.",
+      "description": "Nivel brutal. Cronómetro: 60s. 8 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 40
@@ -6724,7 +6759,7 @@
         "frozen"
       ],
       "difficulty": "medium",
-      "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 24 cartas.",
+      "description": "Desafío máximo. Cronómetro: 60s. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 120
@@ -6736,19 +6771,19 @@
       "id": 375,
       "phase": 8,
       "theme": "jungle",
-      "pairs": 10,
+      "pairs": 8,
       "timeSec": 91,
       "mechanics": [
         "trio"
       ],
       "difficulty": "hard",
-      "description": "La oscuridad cubre el tablero poco a poco. CronÃ³metro: 91s. 20 cartas.",
+      "description": "Nivel extremo. Cronómetro: 91s. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 150
       },
       "seed": 1375191,
-      "setSize": 2
+      "setSize": 3
     },
     {
       "id": 376,
@@ -6760,7 +6795,7 @@
         "frozen"
       ],
       "difficulty": "medium",
-      "description": "Niebla ligera: observa con atenciÃ³n. Sin cronÃ³metro. 12 cartas.",
+      "description": "Desafío intenso. Cronómetro: 60s. 12 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 30
@@ -6778,7 +6813,7 @@
         "rotation"
       ],
       "difficulty": "medium",
-      "description": "Evita bombas: piensa rÃ¡pido. Sin cronÃ³metro. 12 cartas.",
+      "description": "Prueba extrema. Cronómetro: 60s. 12 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 60
@@ -6796,7 +6831,7 @@
         "ghost"
       ],
       "difficulty": "medium",
-      "description": "Cartas que se congelan temporalmente. Sin cronÃ³metro. 8 cartas.",
+      "description": "Nivel brutal. Cronómetro: 60s. 8 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 40
@@ -6814,7 +6849,7 @@
         "rotation"
       ],
       "difficulty": "medium",
-      "description": "Niebla ligera: observa con atenciÃ³n. Sin cronÃ³metro. 12 cartas.",
+      "description": "Desafío máximo. Cronómetro: 60s. 12 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 30
@@ -6832,7 +6867,7 @@
         "ghost"
       ],
       "difficulty": "medium",
-      "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 16 cartas.",
+      "description": "Nivel extremo. Cronómetro: 60s. 16 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 80
@@ -6850,7 +6885,7 @@
         "ghost"
       ],
       "difficulty": "medium",
-      "description": "Evita bombas: piensa rÃ¡pido. Sin cronÃ³metro. 16 cartas.",
+      "description": "Desafío intenso. Cronómetro: 60s. 16 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 80
@@ -6865,10 +6900,10 @@
       "pairs": 7,
       "timeSec": 69,
       "mechanics": [
-        "basic"
+        "bomb"
       ],
       "difficulty": "medium",
-      "description": "Niebla ligera: observa con atenciÃ³n. CronÃ³metro: 69s. 14 cartas.",
+      "description": "Prueba extrema. Cronómetro: 69s. 14 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 70
@@ -6886,13 +6921,13 @@
         "trio"
       ],
       "difficulty": "medium",
-      "description": "las cartas pueden rotar. CronÃ³metro: 86s. 16 cartas.",
+      "description": "Nivel brutal. Cronómetro: 86s. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 80
       },
       "seed": 1383166,
-      "setSize": 2
+      "setSize": 3
     },
     {
       "id": 384,
@@ -6904,7 +6939,7 @@
         "frozen"
       ],
       "difficulty": "medium",
-      "description": "Evita bombas: piensa rÃ¡pido. Sin cronÃ³metro. 12 cartas.",
+      "description": "Desafío máximo. Cronómetro: 60s. 12 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 60
@@ -6922,7 +6957,7 @@
         "chameleon"
       ],
       "difficulty": "medium",
-      "description": "Niebla ligera: observa con atenciÃ³n. Sin cronÃ³metro. 10 cartas.",
+      "description": "Nivel extremo. Cronómetro: 60s. 10 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 25
@@ -6940,7 +6975,7 @@
         "chameleon"
       ],
       "difficulty": "medium",
-      "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 12 cartas.",
+      "description": "Desafío intenso. Cronómetro: 60s. 12 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 30
@@ -6958,7 +6993,7 @@
         "chameleon"
       ],
       "difficulty": "medium",
-      "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 24 cartas.",
+      "description": "Prueba extrema. Cronómetro: 60s. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 120
@@ -6973,10 +7008,10 @@
       "pairs": 6,
       "timeSec": 58,
       "mechanics": [
-        "basic"
+        "bomb"
       ],
       "difficulty": "medium",
-      "description": "Las cartas cambian de valor. CronÃ³metro: 58s. 12 cartas.",
+      "description": "Nivel brutal. Cronómetro: 58s. 12 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 60
@@ -6994,7 +7029,7 @@
         "frozen"
       ],
       "difficulty": "hard",
-      "description": "Cartas que se congelan temporalmente. Sin cronÃ³metro. 22 cartas.",
+      "description": "Desafío máximo. Cronómetro: 60s. 22 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 165
@@ -7012,7 +7047,7 @@
         "chameleon"
       ],
       "difficulty": "medium",
-      "description": "Nivel clÃ¡sico sin trucos. CronÃ³metro: 51s. 10 cartas.",
+      "description": "Nivel extremo. Cronómetro: 51s. 10 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 50
@@ -7030,7 +7065,7 @@
         "bomb"
       ],
       "difficulty": "medium",
-      "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 14 cartas.",
+      "description": "Desafío intenso. Cronómetro: 60s. 14 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 70
@@ -7048,7 +7083,7 @@
         "fog"
       ],
       "difficulty": "medium",
-      "description": "Cartas que se congelan temporalmente. Sin cronÃ³metro. 4 cartas.",
+      "description": "Prueba extrema. Cronómetro: 60s. 8 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 20
@@ -7066,7 +7101,7 @@
         "bomb"
       ],
       "difficulty": "medium",
-      "description": "Nivel clÃ¡sico sin trucos. CronÃ³metro: 57s. 12 cartas.",
+      "description": "Nivel brutal. Cronómetro: 57s. 12 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 60
@@ -7084,13 +7119,13 @@
         "trio"
       ],
       "difficulty": "medium",
-      "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 8 cartas.",
+      "description": "Desafío máximo. Cronómetro: 60s. 12 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 20
       },
       "seed": 1394040,
-      "setSize": 2
+      "setSize": 3
     },
     {
       "id": 395,
@@ -7102,7 +7137,7 @@
         "ghost"
       ],
       "difficulty": "medium",
-      "description": "Cartas fantasma aparecen y desaparecen. Sin cronÃ³metro. 16 cartas.",
+      "description": "Nivel extremo. Cronómetro: 60s. 16 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 80
@@ -7117,10 +7152,10 @@
       "pairs": 4,
       "timeSec": 60,
       "mechanics": [
-        "basic"
+        "bomb"
       ],
       "difficulty": "medium",
-      "description": "Las cartas cambian de valor. Sin cronÃ³metro. 8 cartas.",
+      "description": "Desafío intenso. Cronómetro: 60s. 8 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 40
@@ -7138,7 +7173,7 @@
         "fog"
       ],
       "difficulty": "hard",
-      "description": "El tablero rota de vez en cuando. CronÃ³metro: 110s. 24 cartas.",
+      "description": "Prueba extrema. Cronómetro: 110s. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 180
@@ -7156,7 +7191,7 @@
         "ghost"
       ],
       "difficulty": "medium",
-      "description": "Niebla ligera: observa con atenciÃ³n. CronÃ³metro: 67s. 12 cartas.",
+      "description": "Nivel brutal. Cronómetro: 67s. 12 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 60
@@ -7174,7 +7209,7 @@
         "darkness"
       ],
       "difficulty": "medium",
-      "description": "Nivel clÃ¡sico sin trucos. CronÃ³metro: 60s. 12 cartas.",
+      "description": "Desafío máximo. Cronómetro: 60s. 12 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 60
@@ -7189,10 +7224,14 @@
       "pairs": 12,
       "timeSec": 108,
       "mechanics": [
-        "chameleon"
+        "fog",
+        "ghost",
+        "darkness",
+        "rotation",
+        "bomb"
       ],
       "difficulty": "hard",
-      "description": "Boss: 24 cartas, chameleon + ghost, crono 108s.",
+      "description": "Boss extremo. Cronómetro: 108s. 24 cartas.",
       "isBoss": true,
       "rewards": {
         "coins": 180
@@ -7207,10 +7246,10 @@
       "pairs": 7,
       "timeSec": 60,
       "mechanics": [
-        "basic"
+        "bomb"
       ],
       "difficulty": "medium",
-      "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 14 cartas.",
+      "description": "Desafío intenso. Cronómetro: 60s. 14 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 70
@@ -7228,7 +7267,7 @@
         "ghost"
       ],
       "difficulty": "medium",
-      "description": "El tablero rota de vez en cuando. Sin cronÃ³metro. 12 cartas.",
+      "description": "Prueba extrema. Cronómetro: 60s. 12 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 60
@@ -7246,7 +7285,7 @@
         "ghost"
       ],
       "difficulty": "medium",
-      "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 14 cartas.",
+      "description": "Nivel brutal. Cronómetro: 60s. 14 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 70
@@ -7261,10 +7300,10 @@
       "pairs": 10,
       "timeSec": 60,
       "mechanics": [
-        "basic"
+        "bomb"
       ],
       "difficulty": "medium",
-      "description": "juega normalmente. Sin cronÃ³metro. 20 cartas.",
+      "description": "Desafío máximo. Cronómetro: 60s. 20 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 100
@@ -7282,7 +7321,7 @@
         "darkness"
       ],
       "difficulty": "hard",
-      "description": "La oscuridad cubre el tablero poco a poco. Sin cronÃ³metro. 24 cartas.",
+      "description": "Nivel extremo. Cronómetro: 60s. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 180
@@ -7300,7 +7339,7 @@
         "chameleon"
       ],
       "difficulty": "medium",
-      "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 10 cartas.",
+      "description": "Desafío intenso. Cronómetro: 60s. 10 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 25
@@ -7318,7 +7357,7 @@
         "darkness"
       ],
       "difficulty": "medium",
-      "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 10 cartas.",
+      "description": "Prueba extrema. Cronómetro: 60s. 10 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 25
@@ -7336,7 +7375,7 @@
         "ghost"
       ],
       "difficulty": "medium",
-      "description": "Las cartas cambian de valor. Sin cronÃ³metro. 10 cartas.",
+      "description": "Nivel brutal. Cronómetro: 60s. 10 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 50
@@ -7354,13 +7393,13 @@
         "ghost"
       ],
       "difficulty": "medium",
-      "description": "Encuentra trÃ­os idÃ©nticos. Sin cronÃ³metro. 6 cartas.",
+      "description": "Desafío máximo. Cronómetro: 60s. 6 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 15
       },
       "seed": 1409030,
-      "setSize": 3
+      "setSize": 2
     },
     {
       "id": 410,
@@ -7369,10 +7408,10 @@
       "pairs": 5,
       "timeSec": 60,
       "mechanics": [
-        "basic"
+        "bomb"
       ],
       "difficulty": "medium",
-      "description": "Niebla ligera: observa con atenciÃ³n. Sin cronÃ³metro. 10 cartas.",
+      "description": "Nivel extremo. Cronómetro: 60s. 10 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 25
@@ -7390,7 +7429,7 @@
         "darkness"
       ],
       "difficulty": "medium",
-      "description": "Evita bombas: piensa rÃ¡pido. Sin cronÃ³metro. 6 cartas.",
+      "description": "Desafío intenso. Cronómetro: 60s. 8 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 30
@@ -7408,31 +7447,31 @@
         "frozen"
       ],
       "difficulty": "hard",
-      "description": "Encuentra trÃ­os idÃ©nticos. Sin cronÃ³metro. 24 cartas.",
+      "description": "Prueba extrema. Cronómetro: 60s. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 180
       },
       "seed": 1412120,
-      "setSize": 3
+      "setSize": 2
     },
     {
       "id": 413,
       "phase": 9,
       "theme": "volcano",
-      "pairs": 10,
+      "pairs": 8,
       "timeSec": 103,
       "mechanics": [
         "trio"
       ],
       "difficulty": "hard",
-      "description": "Niebla ligera: observa con atenciÃ³n. CronÃ³metro: 103s. 20 cartas.",
+      "description": "Nivel brutal. Cronómetro: 103s. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 150
       },
       "seed": 1413203,
-      "setSize": 2
+      "setSize": 3
     },
     {
       "id": 414,
@@ -7444,7 +7483,7 @@
         "frozen"
       ],
       "difficulty": "hard",
-      "description": "Nivel clÃ¡sico sin trucos. CronÃ³metro: 109s. 24 cartas.",
+      "description": "Desafío máximo. Cronómetro: 109s. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 180
@@ -7462,7 +7501,7 @@
         "rotation"
       ],
       "difficulty": "medium",
-      "description": "El tablero rota de vez en cuando. Sin cronÃ³metro. 14 cartas.",
+      "description": "Nivel extremo. Cronómetro: 60s. 14 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 70
@@ -7480,7 +7519,7 @@
         "frozen"
       ],
       "difficulty": "medium",
-      "description": "algunas cartas explotan si fallas. CronÃ³metro: 88s. 16 cartas.",
+      "description": "Desafío intenso. Cronómetro: 88s. 16 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 80
@@ -7498,7 +7537,7 @@
         "bomb"
       ],
       "difficulty": "medium",
-      "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 14 cartas.",
+      "description": "Prueba extrema. Cronómetro: 60s. 14 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 70
@@ -7516,7 +7555,7 @@
         "bomb"
       ],
       "difficulty": "medium",
-      "description": "Niebla ligera: observa con atenciÃ³n. CronÃ³metro: 55s. 10 cartas.",
+      "description": "Nivel brutal. Cronómetro: 55s. 10 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 50
@@ -7534,13 +7573,13 @@
         "trio"
       ],
       "difficulty": "medium",
-      "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 14 cartas.",
+      "description": "Desafío máximo. Cronómetro: 60s. 21 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 70
       },
       "seed": 1419070,
-      "setSize": 2
+      "setSize": 3
     },
     {
       "id": 420,
@@ -7552,7 +7591,7 @@
         "darkness"
       ],
       "difficulty": "medium",
-      "description": "Cartas que se congelan temporalmente. Sin cronÃ³metro. 14 cartas.",
+      "description": "Nivel extremo. Cronómetro: 60s. 14 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 70
@@ -7570,7 +7609,7 @@
         "bomb"
       ],
       "difficulty": "medium",
-      "description": "Niebla ligera: observa con atenciÃ³n. Sin cronÃ³metro. 18 cartas.",
+      "description": "Desafío intenso. Cronómetro: 60s. 18 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 90
@@ -7588,7 +7627,7 @@
         "ghost"
       ],
       "difficulty": "medium",
-      "description": "Cartas fantasma aparecen y desaparecen. Sin cronÃ³metro. 14 cartas.",
+      "description": "Prueba extrema. Cronómetro: 60s. 14 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 70
@@ -7606,7 +7645,7 @@
         "rotation"
       ],
       "difficulty": "medium",
-      "description": "Niebla ligera: observa con atenciÃ³n. Sin cronÃ³metro. 10 cartas.",
+      "description": "Nivel brutal. Cronómetro: 60s. 10 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 25
@@ -7624,7 +7663,7 @@
         "rotation"
       ],
       "difficulty": "medium",
-      "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 14 cartas.",
+      "description": "Desafío máximo. Cronómetro: 60s. 14 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 70
@@ -7642,7 +7681,7 @@
         "fog"
       ],
       "difficulty": "medium",
-      "description": "Cartas que se congelan temporalmente. Sin cronÃ³metro. 14 cartas.",
+      "description": "Nivel extremo. Cronómetro: 60s. 14 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 70
@@ -7660,13 +7699,13 @@
         "chameleon"
       ],
       "difficulty": "hard",
-      "description": "Encuentra trÃ­os idÃ©nticos. Sin cronÃ³metro. 18 cartas.",
+      "description": "Desafío intenso. Cronómetro: 60s. 18 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 135
       },
       "seed": 1426090,
-      "setSize": 3
+      "setSize": 2
     },
     {
       "id": 427,
@@ -7678,7 +7717,7 @@
         "frozen"
       ],
       "difficulty": "medium",
-      "description": "Cartas fantasma aparecen y desaparecen. CronÃ³metro: 79s. 16 cartas.",
+      "description": "Prueba extrema. Cronómetro: 79s. 16 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 80
@@ -7696,13 +7735,13 @@
         "frozen"
       ],
       "difficulty": "medium",
-      "description": "Encuentra trÃ­os idÃ©nticos. Sin cronÃ³metro. 12 cartas.",
+      "description": "Nivel brutal. Cronómetro: 60s. 12 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 30
       },
       "seed": 1428060,
-      "setSize": 3
+      "setSize": 2
     },
     {
       "id": 429,
@@ -7714,7 +7753,7 @@
         "ghost"
       ],
       "difficulty": "hard",
-      "description": "El tablero rota de vez en cuando. CronÃ³metro: 69s. 14 cartas.",
+      "description": "Desafío máximo. Cronómetro: 69s. 14 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 105
@@ -7732,7 +7771,7 @@
         "fog"
       ],
       "difficulty": "medium",
-      "description": "Las cartas cambian de valor. Sin cronÃ³metro. 12 cartas.",
+      "description": "Nivel extremo. Cronómetro: 60s. 12 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 60
@@ -7750,7 +7789,7 @@
         "bomb"
       ],
       "difficulty": "medium",
-      "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 10 cartas.",
+      "description": "Desafío intenso. Cronómetro: 60s. 10 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 25
@@ -7768,7 +7807,7 @@
         "chameleon"
       ],
       "difficulty": "medium",
-      "description": "Cartas que se congelan temporalmente. Sin cronÃ³metro. 10 cartas.",
+      "description": "Prueba extrema. Cronómetro: 60s. 10 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 50
@@ -7786,7 +7825,7 @@
         "darkness"
       ],
       "difficulty": "medium",
-      "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 4 cartas.",
+      "description": "Nivel brutal. Cronómetro: 60s. 8 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 10
@@ -7804,7 +7843,7 @@
         "frozen"
       ],
       "difficulty": "medium",
-      "description": "Niebla ligera: observa con atenciÃ³n. Sin cronÃ³metro. 12 cartas.",
+      "description": "Desafío máximo. Cronómetro: 60s. 12 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 30
@@ -7822,13 +7861,13 @@
         "ghost"
       ],
       "difficulty": "medium",
-      "description": "Encuentra trÃ­os idÃ©nticos. Sin cronÃ³metro. 6 cartas.",
+      "description": "Nivel extremo. Cronómetro: 60s. 6 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 15
       },
       "seed": 1435030,
-      "setSize": 3
+      "setSize": 2
     },
     {
       "id": 436,
@@ -7840,7 +7879,7 @@
         "ghost"
       ],
       "difficulty": "medium",
-      "description": "juega normalmente. Sin cronÃ³metro. 24 cartas.",
+      "description": "Desafío intenso. Cronómetro: 60s. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 120
@@ -7855,10 +7894,10 @@
       "pairs": 8,
       "timeSec": 60,
       "mechanics": [
-        "basic"
+        "bomb"
       ],
       "difficulty": "medium",
-      "description": "Cartas fantasma aparecen y desaparecen. Sin cronÃ³metro. 16 cartas.",
+      "description": "Prueba extrema. Cronómetro: 60s. 16 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 80
@@ -7876,7 +7915,7 @@
         "chameleon"
       ],
       "difficulty": "medium",
-      "description": "Las cartas cambian de valor. Sin cronÃ³metro. 12 cartas.",
+      "description": "Nivel brutal. Cronómetro: 60s. 12 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 60
@@ -7891,10 +7930,10 @@
       "pairs": 6,
       "timeSec": 60,
       "mechanics": [
-        "basic"
+        "bomb"
       ],
       "difficulty": "medium",
-      "description": "Cartas fantasma aparecen y desaparecen. Sin cronÃ³metro. 12 cartas.",
+      "description": "Desafío máximo. Cronómetro: 60s. 12 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 30
@@ -7912,7 +7951,7 @@
         "darkness"
       ],
       "difficulty": "hard",
-      "description": "El tablero rota de vez en cuando. CronÃ³metro: 96s. 18 cartas.",
+      "description": "Nivel extremo. Cronómetro: 96s. 18 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 135
@@ -7930,13 +7969,13 @@
         "rotation"
       ],
       "difficulty": "medium",
-      "description": "Encuentra trÃ­os idÃ©nticos. Sin cronÃ³metro. 12 cartas.",
+      "description": "Desafío intenso. Cronómetro: 60s. 12 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 30
       },
       "seed": 1441060,
-      "setSize": 3
+      "setSize": 2
     },
     {
       "id": 442,
@@ -7948,7 +7987,7 @@
         "fog"
       ],
       "difficulty": "hard",
-      "description": "Cartas que se congelan temporalmente. CronÃ³metro: 112s. 24 cartas.",
+      "description": "Prueba extrema. Cronómetro: 112s. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 180
@@ -7966,13 +8005,13 @@
         "chameleon"
       ],
       "difficulty": "medium",
-      "description": "Encuentra trÃ­os idÃ©nticos. Sin cronÃ³metro. 6 cartas.",
+      "description": "Nivel brutal. Cronómetro: 60s. 6 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 15
       },
       "seed": 1443030,
-      "setSize": 3
+      "setSize": 2
     },
     {
       "id": 444,
@@ -7984,7 +8023,7 @@
         "chameleon"
       ],
       "difficulty": "medium",
-      "description": "Cartas que se congelan temporalmente. Sin cronÃ³metro. 14 cartas.",
+      "description": "Desafío máximo. Cronómetro: 60s. 14 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 70
@@ -8002,7 +8041,7 @@
         "ghost"
       ],
       "difficulty": "hard",
-      "description": "Las cartas cambian de valor. CronÃ³metro: 87s. 20 cartas.",
+      "description": "Nivel extremo. Cronómetro: 87s. 20 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 150
@@ -8020,7 +8059,7 @@
         "fog"
       ],
       "difficulty": "medium",
-      "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 10 cartas.",
+      "description": "Desafío intenso. Cronómetro: 60s. 10 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 25
@@ -8038,13 +8077,13 @@
         "darkness"
       ],
       "difficulty": "medium",
-      "description": "Encuentra trÃ­os idÃ©nticos. Sin cronÃ³metro. 12 cartas.",
+      "description": "Prueba extrema. Cronómetro: 60s. 12 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 30
       },
       "seed": 1447060,
-      "setSize": 3
+      "setSize": 2
     },
     {
       "id": 448,
@@ -8056,7 +8095,7 @@
         "darkness"
       ],
       "difficulty": "medium",
-      "description": "Cartas que se congelan temporalmente. Sin cronÃ³metro. 12 cartas.",
+      "description": "Nivel brutal. Cronómetro: 60s. 12 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 60
@@ -8074,7 +8113,7 @@
         "frozen"
       ],
       "difficulty": "medium",
-      "description": "Niebla ligera: observa con atenciÃ³n. CronÃ³metro: 73s. 14 cartas.",
+      "description": "Desafío máximo. Cronómetro: 73s. 14 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 70
@@ -8089,10 +8128,13 @@
       "pairs": 12,
       "timeSec": 101,
       "mechanics": [
-        "darkness"
+        "frozen",
+        "chameleon",
+        "fog",
+        "trio"
       ],
       "difficulty": "hard",
-      "description": "Boss: 24 cartas, peeked_card + chameleon, crono 101s.",
+      "description": "Boss extremo. Cronómetro: 101s. 24 cartas.",
       "isBoss": true,
       "rewards": {
         "coins": 180
@@ -8110,7 +8152,7 @@
         "frozen"
       ],
       "difficulty": "medium",
-      "description": "Cartas que se congelan temporalmente. Sin cronÃ³metro. 12 cartas.",
+      "description": "Desafío intenso. Cronómetro: 60s. 12 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 60
@@ -8128,7 +8170,7 @@
         "chameleon"
       ],
       "difficulty": "hard",
-      "description": "El tablero rota de vez en cuando. CronÃ³metro: 73s. 14 cartas.",
+      "description": "Prueba extrema. Cronómetro: 73s. 14 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 105
@@ -8146,7 +8188,7 @@
         "chameleon"
       ],
       "difficulty": "medium",
-      "description": "Cartas fantasma aparecen y desaparecen. CronÃ³metro: 81s. 16 cartas.",
+      "description": "Nivel brutal. Cronómetro: 81s. 16 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 80
@@ -8161,10 +8203,10 @@
       "pairs": 7,
       "timeSec": 60,
       "mechanics": [
-        "basic"
+        "bomb"
       ],
       "difficulty": "medium",
-      "description": "Cartas que se congelan temporalmente. Sin cronÃ³metro. 14 cartas.",
+      "description": "Desafío máximo. Cronómetro: 60s. 14 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 70
@@ -8182,7 +8224,7 @@
         "chameleon"
       ],
       "difficulty": "hard",
-      "description": "Nivel clÃ¡sico sin trucos. CronÃ³metro: 85s. 18 cartas.",
+      "description": "Nivel extremo. Cronómetro: 85s. 18 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 135
@@ -8200,7 +8242,7 @@
         "bomb"
       ],
       "difficulty": "hard",
-      "description": "Niebla ligera: observa con atenciÃ³n. CronÃ³metro: 97s. 24 cartas.",
+      "description": "Desafío intenso. Cronómetro: 97s. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 180
@@ -8218,7 +8260,7 @@
         "fog"
       ],
       "difficulty": "medium",
-      "description": "Cartas que se congelan temporalmente. Sin cronÃ³metro. 16 cartas.",
+      "description": "Prueba extrema. Cronómetro: 60s. 16 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 80
@@ -8236,13 +8278,13 @@
         "trio"
       ],
       "difficulty": "medium",
-      "description": "Nivel clÃ¡sico sin trucos. CronÃ³metro: 68s. 12 cartas.",
+      "description": "Nivel brutal. Cronómetro: 68s. 18 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 60
       },
       "seed": 1458128,
-      "setSize": 2
+      "setSize": 3
     },
     {
       "id": 459,
@@ -8254,7 +8296,7 @@
         "ghost"
       ],
       "difficulty": "medium",
-      "description": "Las cartas cambian de valor. CronÃ³metro: 68s. 12 cartas.",
+      "description": "Desafío máximo. Cronómetro: 68s. 12 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 60
@@ -8272,7 +8314,7 @@
         "frozen"
       ],
       "difficulty": "medium",
-      "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 6 cartas.",
+      "description": "Nivel extremo. Cronómetro: 60s. 8 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 15
@@ -8290,7 +8332,7 @@
         "darkness"
       ],
       "difficulty": "hard",
-      "description": "algunas cartas explotan si fallas. CronÃ³metro: 107s. 24 cartas.",
+      "description": "Desafío intenso. Cronómetro: 107s. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 180
@@ -8308,7 +8350,7 @@
         "rotation"
       ],
       "difficulty": "medium",
-      "description": "Nivel clÃ¡sico sin trucos. CronÃ³metro: 45s. 10 cartas.",
+      "description": "Prueba extrema. Cronómetro: 45s. 10 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 50
@@ -8326,7 +8368,7 @@
         "fog"
       ],
       "difficulty": "medium",
-      "description": "Cartas fantasma aparecen y desaparecen. Sin cronÃ³metro. 10 cartas.",
+      "description": "Nivel brutal. Cronómetro: 60s. 10 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 25
@@ -8341,10 +8383,10 @@
       "pairs": 9,
       "timeSec": 60,
       "mechanics": [
-        "basic"
+        "bomb"
       ],
       "difficulty": "medium",
-      "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 18 cartas.",
+      "description": "Desafío máximo. Cronómetro: 60s. 18 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 90
@@ -8362,7 +8404,7 @@
         "fog"
       ],
       "difficulty": "hard",
-      "description": "Las cartas cambian de valor. Sin cronÃ³metro. 24 cartas.",
+      "description": "Nivel extremo. Cronómetro: 60s. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 180
@@ -8377,10 +8419,10 @@
       "pairs": 10,
       "timeSec": 95,
       "mechanics": [
-        "basic"
+        "bomb"
       ],
       "difficulty": "hard",
-      "description": "las cartas estÃ¡n parcialmente ocultas. CronÃ³metro: 95s. 20 cartas.",
+      "description": "Desafío intenso. Cronómetro: 95s. 20 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 150
@@ -8395,10 +8437,10 @@
       "pairs": 12,
       "timeSec": 104,
       "mechanics": [
-        "basic"
+        "bomb"
       ],
       "difficulty": "hard",
-      "description": "La oscuridad cubre el tablero poco a poco. CronÃ³metro: 104s. 24 cartas.",
+      "description": "Prueba extrema. Cronómetro: 104s. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 180
@@ -8416,7 +8458,7 @@
         "frozen"
       ],
       "difficulty": "medium",
-      "description": "algunas cartas explotan si fallas. CronÃ³metro: 77s. 16 cartas.",
+      "description": "Nivel brutal. Cronómetro: 77s. 16 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 80
@@ -8434,7 +8476,7 @@
         "chameleon"
       ],
       "difficulty": "medium",
-      "description": "Evita bombas: piensa rÃ¡pido. Sin cronÃ³metro. 4 cartas.",
+      "description": "Desafío máximo. Cronómetro: 60s. 8 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 20
@@ -8452,7 +8494,7 @@
         "darkness"
       ],
       "difficulty": "hard",
-      "description": "las cartas pueden rotar. CronÃ³metro: 89s. 20 cartas.",
+      "description": "Nivel extremo. Cronómetro: 89s. 20 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 150
@@ -8470,7 +8512,7 @@
         "darkness"
       ],
       "difficulty": "hard",
-      "description": "Cartas que se congelan temporalmente. CronÃ³metro: 78s. 16 cartas.",
+      "description": "Desafío intenso. Cronómetro: 78s. 16 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 120
@@ -8488,7 +8530,7 @@
         "frozen"
       ],
       "difficulty": "hard",
-      "description": "El tablero rota de vez en cuando. CronÃ³metro: 107s. 24 cartas.",
+      "description": "Prueba extrema. Cronómetro: 107s. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 180
@@ -8506,7 +8548,7 @@
         "chameleon"
       ],
       "difficulty": "medium",
-      "description": "Las cartas cambian de valor. Sin cronÃ³metro. 14 cartas.",
+      "description": "Nivel brutal. Cronómetro: 60s. 14 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 70
@@ -8524,7 +8566,7 @@
         "rotation"
       ],
       "difficulty": "medium",
-      "description": "Evita bombas: piensa rÃ¡pido. Sin cronÃ³metro. 12 cartas.",
+      "description": "Desafío máximo. Cronómetro: 60s. 12 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 60
@@ -8542,7 +8584,7 @@
         "darkness"
       ],
       "difficulty": "hard",
-      "description": "las cartas pueden rotar. CronÃ³metro: 93s. 20 cartas.",
+      "description": "Nivel extremo. Cronómetro: 93s. 20 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 150
@@ -8560,7 +8602,7 @@
         "rotation"
       ],
       "difficulty": "hard",
-      "description": "La oscuridad cubre el tablero poco a poco. CronÃ³metro: 105s. 24 cartas.",
+      "description": "Desafío intenso. Cronómetro: 105s. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 180
@@ -8578,7 +8620,7 @@
         "chameleon"
       ],
       "difficulty": "hard",
-      "description": "Cartas que se congelan temporalmente. CronÃ³metro: 78s. 14 cartas.",
+      "description": "Prueba extrema. Cronómetro: 78s. 14 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 105
@@ -8596,7 +8638,7 @@
         "rotation"
       ],
       "difficulty": "medium",
-      "description": "Cartas fantasma aparecen y desaparecen. Sin cronÃ³metro. 14 cartas.",
+      "description": "Nivel brutal. Cronómetro: 60s. 14 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 70
@@ -8614,13 +8656,13 @@
         "trio"
       ],
       "difficulty": "medium",
-      "description": "Cartas que se congelan temporalmente. Sin cronÃ³metro. 4 cartas.",
+      "description": "Desafío máximo. Cronómetro: 60s. 12 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 20
       },
       "seed": 1479020,
-      "setSize": 2
+      "setSize": 3
     },
     {
       "id": 480,
@@ -8632,13 +8674,13 @@
         "trio"
       ],
       "difficulty": "medium",
-      "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 14 cartas.",
+      "description": "Nivel extremo. Cronómetro: 60s. 21 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 70
       },
       "seed": 1480070,
-      "setSize": 2
+      "setSize": 3
     },
     {
       "id": 481,
@@ -8650,7 +8692,7 @@
         "rotation"
       ],
       "difficulty": "medium",
-      "description": "Las cartas cambian de valor. Sin cronÃ³metro. 14 cartas.",
+      "description": "Desafío intenso. Cronómetro: 60s. 14 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 70
@@ -8668,7 +8710,7 @@
         "frozen"
       ],
       "difficulty": "medium",
-      "description": "El tablero rota de vez en cuando. Sin cronÃ³metro. 8 cartas.",
+      "description": "Prueba extrema. Cronómetro: 60s. 8 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 40
@@ -8686,7 +8728,7 @@
         "ghost"
       ],
       "difficulty": "medium",
-      "description": "Cartas que se congelan temporalmente. Sin cronÃ³metro. 10 cartas.",
+      "description": "Nivel brutal. Cronómetro: 60s. 10 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 50
@@ -8704,7 +8746,7 @@
         "bomb"
       ],
       "difficulty": "hard",
-      "description": "Evita bombas: piensa rÃ¡pido. CronÃ³metro: 98s. 20 cartas.",
+      "description": "Desafío máximo. Cronómetro: 98s. 20 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 150
@@ -8722,13 +8764,13 @@
         "trio"
       ],
       "difficulty": "medium",
-      "description": "Niebla ligera: observa con atenciÃ³n. CronÃ³metro: 74s. 14 cartas.",
+      "description": "Nivel extremo. Cronómetro: 74s. 21 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 70
       },
       "seed": 1485144,
-      "setSize": 2
+      "setSize": 3
     },
     {
       "id": 486,
@@ -8737,10 +8779,10 @@
       "pairs": 4,
       "timeSec": 60,
       "mechanics": [
-        "basic"
+        "bomb"
       ],
       "difficulty": "medium",
-      "description": "Evita bombas: piensa rÃ¡pido. Sin cronÃ³metro. 8 cartas.",
+      "description": "Desafío intenso. Cronómetro: 60s. 8 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 40
@@ -8758,13 +8800,13 @@
         "trio"
       ],
       "difficulty": "medium",
-      "description": "Niebla ligera: observa con atenciÃ³n. Sin cronÃ³metro. 12 cartas.",
+      "description": "Prueba extrema. Cronómetro: 60s. 18 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 30
       },
       "seed": 1487060,
-      "setSize": 2
+      "setSize": 3
     },
     {
       "id": 488,
@@ -8776,7 +8818,7 @@
         "bomb"
       ],
       "difficulty": "hard",
-      "description": "Las cartas cambian de valor. CronÃ³metro: 102s. 24 cartas.",
+      "description": "Nivel brutal. Cronómetro: 102s. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 180
@@ -8794,13 +8836,13 @@
         "bomb"
       ],
       "difficulty": "medium",
-      "description": "Encuentra trÃ­os idÃ©nticos. Sin cronÃ³metro. 12 cartas.",
+      "description": "Desafío máximo. Cronómetro: 60s. 12 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 30
       },
       "seed": 1489060,
-      "setSize": 3
+      "setSize": 2
     },
     {
       "id": 490,
@@ -8812,7 +8854,7 @@
         "ghost"
       ],
       "difficulty": "medium",
-      "description": "juega normalmente. Sin cronÃ³metro. 20 cartas.",
+      "description": "Nivel extremo. Cronómetro: 60s. 20 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 100
@@ -8824,19 +8866,19 @@
       "id": 491,
       "phase": 10,
       "theme": "crystal",
-      "pairs": 9,
+      "pairs": 8,
       "timeSec": 60,
       "mechanics": [
         "trio"
       ],
       "difficulty": "medium",
-      "description": "Niebla ligera: observa con atenciÃ³n. Sin cronÃ³metro. 18 cartas.",
+      "description": "Desafío intenso. Cronómetro: 60s. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 90
       },
       "seed": 1491090,
-      "setSize": 2
+      "setSize": 3
     },
     {
       "id": 492,
@@ -8848,7 +8890,7 @@
         "frozen"
       ],
       "difficulty": "medium",
-      "description": "Evita bombas: piensa rÃ¡pido. Sin cronÃ³metro. 4 cartas.",
+      "description": "Prueba extrema. Cronómetro: 60s. 8 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 20
@@ -8866,7 +8908,7 @@
         "chameleon"
       ],
       "difficulty": "medium",
-      "description": "Cartas fantasma aparecen y desaparecen. Sin cronÃ³metro. 12 cartas.",
+      "description": "Nivel brutal. Cronómetro: 60s. 12 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 30
@@ -8884,13 +8926,13 @@
         "fog"
       ],
       "difficulty": "hard",
-      "description": "Encuentra trÃ­os idÃ©nticos. Sin cronÃ³metro. 18 cartas.",
+      "description": "Desafío máximo. Cronómetro: 60s. 18 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 135
       },
       "seed": 1494090,
-      "setSize": 3
+      "setSize": 2
     },
     {
       "id": 495,
@@ -8902,7 +8944,7 @@
         "darkness"
       ],
       "difficulty": "hard",
-      "description": "las cartas estÃ¡n parcialmente ocultas. CronÃ³metro: 113s. 24 cartas.",
+      "description": "Nivel extremo. Cronómetro: 113s. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 180
@@ -8917,10 +8959,10 @@
       "pairs": 7,
       "timeSec": 60,
       "mechanics": [
-        "basic"
+        "bomb"
       ],
       "difficulty": "medium",
-      "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 14 cartas.",
+      "description": "Desafío intenso. Cronómetro: 60s. 14 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 70
@@ -8938,7 +8980,7 @@
         "frozen"
       ],
       "difficulty": "medium",
-      "description": "Evita bombas: piensa rÃ¡pido. Sin cronÃ³metro. 12 cartas.",
+      "description": "Prueba extrema. Cronómetro: 60s. 12 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 60
@@ -8953,10 +8995,10 @@
       "pairs": 4,
       "timeSec": 60,
       "mechanics": [
-        "basic"
+        "bomb"
       ],
       "difficulty": "medium",
-      "description": "El tablero rota de vez en cuando. Sin cronÃ³metro. 8 cartas.",
+      "description": "Nivel brutal. Cronómetro: 60s. 8 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 40
@@ -8974,13 +9016,13 @@
         "chameleon"
       ],
       "difficulty": "hard",
-      "description": "Encuentra trÃ­os idÃ©nticos. Sin cronÃ³metro. 24 cartas.",
+      "description": "Desafío máximo. Cronómetro: 60s. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 180
       },
       "seed": 1499120,
-      "setSize": 3
+      "setSize": 2
     },
     {
       "id": 500,
@@ -8989,10 +9031,15 @@
       "pairs": 12,
       "timeSec": 110,
       "mechanics": [
-        "rotation"
+        "fog",
+        "ghost",
+        "darkness",
+        "rotation",
+        "bomb",
+        "frozen"
       ],
       "difficulty": "hard",
-      "description": "Boss: 24 cartas, peeked_card + bomb, crono 110s.",
+      "description": "Boss extremo. Cronómetro: 110s. 24 cartas.",
       "isBoss": true,
       "rewards": {
         "coins": 180
@@ -9007,10 +9054,10 @@
       "pairs": 7,
       "timeSec": 60,
       "mechanics": [
-        "basic"
+        "bomb"
       ],
       "difficulty": "medium",
-      "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 14 cartas.",
+      "description": "Desafío intenso. Cronómetro: 60s. 14 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 70
@@ -9028,7 +9075,7 @@
         "fog"
       ],
       "difficulty": "medium",
-      "description": "Cartas que se congelan temporalmente. Sin cronÃ³metro. 10 cartas.",
+      "description": "Prueba extrema. Cronómetro: 60s. 10 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 50
@@ -9046,7 +9093,7 @@
         "darkness"
       ],
       "difficulty": "medium",
-      "description": "El tablero rota de vez en cuando. Sin cronÃ³metro. 14 cartas.",
+      "description": "Nivel brutal. Cronómetro: 60s. 14 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 70
@@ -9064,7 +9111,7 @@
         "frozen"
       ],
       "difficulty": "medium",
-      "description": "Las cartas cambian de valor. Sin cronÃ³metro. 10 cartas.",
+      "description": "Desafío máximo. Cronómetro: 60s. 10 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 50
@@ -9082,7 +9129,7 @@
         "chameleon"
       ],
       "difficulty": "medium",
-      "description": "Evita bombas: piensa rÃ¡pido. Sin cronÃ³metro. 14 cartas.",
+      "description": "Nivel extremo. Cronómetro: 60s. 14 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 70
@@ -9100,13 +9147,13 @@
         "trio"
       ],
       "difficulty": "hard",
-      "description": "Cartas que se congelan temporalmente. CronÃ³metro: 83s. 16 cartas.",
+      "description": "Desafío intenso. Cronómetro: 83s. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 120
       },
       "seed": 1506163,
-      "setSize": 2
+      "setSize": 3
     },
     {
       "id": 507,
@@ -9118,7 +9165,7 @@
         "darkness"
       ],
       "difficulty": "medium",
-      "description": "Niebla ligera: observa con atenciÃ³n. Sin cronÃ³metro. 6 cartas.",
+      "description": "Prueba extrema. Cronómetro: 60s. 8 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 15
@@ -9136,7 +9183,7 @@
         "bomb"
       ],
       "difficulty": "hard",
-      "description": "La oscuridad cubre el tablero poco a poco. CronÃ³metro: 98s. 20 cartas.",
+      "description": "Nivel brutal. Cronómetro: 98s. 20 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 150
@@ -9154,7 +9201,7 @@
         "rotation"
       ],
       "difficulty": "medium",
-      "description": "Cartas fantasma aparecen y desaparecen. Sin cronÃ³metro. 4 cartas.",
+      "description": "Desafío máximo. Cronómetro: 60s. 8 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 10
@@ -9172,13 +9219,13 @@
         "trio"
       ],
       "difficulty": "medium",
-      "description": "juega normalmente. Sin cronÃ³metro. 16 cartas.",
+      "description": "Nivel extremo. Cronómetro: 60s. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 80
       },
       "seed": 1510080,
-      "setSize": 2
+      "setSize": 3
     },
     {
       "id": 511,
@@ -9190,7 +9237,7 @@
         "bomb"
       ],
       "difficulty": "hard",
-      "description": "La oscuridad cubre el tablero poco a poco. CronÃ³metro: 74s. 16 cartas.",
+      "description": "Desafío intenso. Cronómetro: 74s. 16 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 120
@@ -9208,7 +9255,7 @@
         "trio"
       ],
       "difficulty": "medium",
-      "description": "Encuentra trÃ­os idÃ©nticos. Sin cronÃ³metro. 6 cartas.",
+      "description": "Prueba extrema. Cronómetro: 60s. 9 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 15
@@ -9223,10 +9270,10 @@
       "pairs": 6,
       "timeSec": 60,
       "mechanics": [
-        "basic"
+        "bomb"
       ],
       "difficulty": "medium",
-      "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 12 cartas.",
+      "description": "Nivel brutal. Cronómetro: 60s. 12 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 30
@@ -9244,7 +9291,7 @@
         "chameleon"
       ],
       "difficulty": "hard",
-      "description": "La oscuridad cubre el tablero poco a poco. CronÃ³metro: 81s. 16 cartas.",
+      "description": "Desafío máximo. Cronómetro: 81s. 16 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 120
@@ -9262,7 +9309,7 @@
         "fog"
       ],
       "difficulty": "medium",
-      "description": "El tablero rota de vez en cuando. Sin cronÃ³metro. 10 cartas.",
+      "description": "Nivel extremo. Cronómetro: 60s. 10 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 50
@@ -9280,7 +9327,7 @@
         "ghost"
       ],
       "difficulty": "medium",
-      "description": "Evita bombas: piensa rÃ¡pido. Sin cronÃ³metro. 12 cartas.",
+      "description": "Desafío intenso. Cronómetro: 60s. 12 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 60
@@ -9298,7 +9345,7 @@
         "darkness"
       ],
       "difficulty": "medium",
-      "description": "Niebla ligera: observa con atenciÃ³n. Sin cronÃ³metro. 6 cartas.",
+      "description": "Prueba extrema. Cronómetro: 60s. 8 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 15
@@ -9316,7 +9363,7 @@
         "fog"
       ],
       "difficulty": "hard",
-      "description": "Cartas que se congelan temporalmente. CronÃ³metro: 97s. 18 cartas.",
+      "description": "Nivel brutal. Cronómetro: 97s. 18 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 135
@@ -9334,13 +9381,13 @@
         "fog"
       ],
       "difficulty": "medium",
-      "description": "Encuentra trÃ­os idÃ©nticos. Sin cronÃ³metro. 6 cartas.",
+      "description": "Desafío máximo. Cronómetro: 60s. 6 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 15
       },
       "seed": 1519030,
-      "setSize": 3
+      "setSize": 2
     },
     {
       "id": 520,
@@ -9349,10 +9396,10 @@
       "pairs": 4,
       "timeSec": 60,
       "mechanics": [
-        "basic"
+        "bomb"
       ],
       "difficulty": "medium",
-      "description": "Evita bombas: piensa rÃ¡pido. Sin cronÃ³metro. 8 cartas.",
+      "description": "Nivel extremo. Cronómetro: 60s. 8 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 40
@@ -9370,7 +9417,7 @@
         "rotation"
       ],
       "difficulty": "hard",
-      "description": "La oscuridad cubre el tablero poco a poco. CronÃ³metro: 103s. 20 cartas.",
+      "description": "Desafío intenso. Cronómetro: 103s. 20 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 150
@@ -9388,13 +9435,13 @@
         "frozen"
       ],
       "difficulty": "hard",
-      "description": "Encuentra trÃ­os idÃ©nticos. Sin cronÃ³metro. 24 cartas.",
+      "description": "Prueba extrema. Cronómetro: 60s. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 180
       },
       "seed": 1522120,
-      "setSize": 3
+      "setSize": 2
     },
     {
       "id": 523,
@@ -9406,7 +9453,7 @@
         "frozen"
       ],
       "difficulty": "medium",
-      "description": "las cartas pueden rotar. CronÃ³metro: 72s. 16 cartas.",
+      "description": "Nivel brutal. Cronómetro: 72s. 16 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 80
@@ -9424,7 +9471,7 @@
         "chameleon"
       ],
       "difficulty": "medium",
-      "description": "El tablero rota de vez en cuando. Sin cronÃ³metro. 14 cartas.",
+      "description": "Desafío máximo. Cronómetro: 60s. 14 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 70
@@ -9442,7 +9489,7 @@
         "rotation"
       ],
       "difficulty": "hard",
-      "description": "Cartas que se congelan temporalmente. Sin cronÃ³metro. 20 cartas.",
+      "description": "Nivel extremo. Cronómetro: 60s. 20 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 150
@@ -9460,7 +9507,7 @@
         "chameleon"
       ],
       "difficulty": "hard",
-      "description": "Cartas fantasma aparecen y desaparecen. CronÃ³metro: 106s. 24 cartas.",
+      "description": "Desafío intenso. Cronómetro: 106s. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 180
@@ -9478,7 +9525,7 @@
         "frozen"
       ],
       "difficulty": "hard",
-      "description": "Cartas que se congelan temporalmente. Sin cronÃ³metro. 20 cartas.",
+      "description": "Prueba extrema. Cronómetro: 60s. 20 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 150
@@ -9496,7 +9543,7 @@
         "chameleon"
       ],
       "difficulty": "medium",
-      "description": "El tablero rota de vez en cuando. Sin cronÃ³metro. 12 cartas.",
+      "description": "Nivel brutal. Cronómetro: 60s. 12 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 60
@@ -9514,7 +9561,7 @@
         "fog"
       ],
       "difficulty": "medium",
-      "description": "Nivel clÃ¡sico sin trucos. CronÃ³metro: 83s. 16 cartas.",
+      "description": "Desafío máximo. Cronómetro: 83s. 16 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 80
@@ -9529,10 +9576,10 @@
       "pairs": 10,
       "timeSec": 90,
       "mechanics": [
-        "basic"
+        "bomb"
       ],
       "difficulty": "hard",
-      "description": "algunas cartas explotan si fallas. CronÃ³metro: 90s. 20 cartas.",
+      "description": "Nivel extremo. Cronómetro: 90s. 20 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 150
@@ -9550,7 +9597,7 @@
         "ghost"
       ],
       "difficulty": "medium",
-      "description": "Las cartas cambian de valor. Sin cronÃ³metro. 12 cartas.",
+      "description": "Desafío intenso. Cronómetro: 60s. 12 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 60
@@ -9568,13 +9615,13 @@
         "trio"
       ],
       "difficulty": "medium",
-      "description": "Cartas fantasma aparecen y desaparecen. Sin cronÃ³metro. 8 cartas.",
+      "description": "Prueba extrema. Cronómetro: 60s. 12 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 20
       },
       "seed": 1532040,
-      "setSize": 2
+      "setSize": 3
     },
     {
       "id": 533,
@@ -9586,7 +9633,7 @@
         "chameleon"
       ],
       "difficulty": "medium",
-      "description": "La oscuridad cubre el tablero poco a poco. Sin cronÃ³metro. 16 cartas.",
+      "description": "Nivel brutal. Cronómetro: 60s. 16 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 80
@@ -9604,7 +9651,7 @@
         "bomb"
       ],
       "difficulty": "medium",
-      "description": "Cartas fantasma aparecen y desaparecen. Sin cronÃ³metro. 18 cartas.",
+      "description": "Desafío máximo. Cronómetro: 60s. 18 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 90
@@ -9622,7 +9669,7 @@
         "chameleon"
       ],
       "difficulty": "medium",
-      "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 12 cartas.",
+      "description": "Nivel extremo. Cronómetro: 60s. 12 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 30
@@ -9640,7 +9687,7 @@
         "fog"
       ],
       "difficulty": "hard",
-      "description": "La oscuridad cubre el tablero poco a poco. CronÃ³metro: 93s. 20 cartas.",
+      "description": "Desafío intenso. Cronómetro: 93s. 20 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 150
@@ -9658,7 +9705,7 @@
         "frozen"
       ],
       "difficulty": "medium",
-      "description": "Cartas fantasma aparecen y desaparecen. Sin cronÃ³metro. 8 cartas.",
+      "description": "Prueba extrema. Cronómetro: 60s. 8 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 20
@@ -9676,7 +9723,7 @@
         "frozen"
       ],
       "difficulty": "medium",
-      "description": "algunas cartas explotan si fallas. CronÃ³metro: 75s. 16 cartas.",
+      "description": "Nivel brutal. Cronómetro: 75s. 16 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 80
@@ -9694,7 +9741,7 @@
         "ghost"
       ],
       "difficulty": "hard",
-      "description": "Cartas que se congelan temporalmente. Sin cronÃ³metro. 18 cartas.",
+      "description": "Desafío máximo. Cronómetro: 60s. 18 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 135
@@ -9712,13 +9759,13 @@
         "trio"
       ],
       "difficulty": "medium",
-      "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 6 cartas.",
+      "description": "Nivel extremo. Cronómetro: 60s. 12 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 15
       },
       "seed": 1540030,
-      "setSize": 2
+      "setSize": 3
     },
     {
       "id": 541,
@@ -9730,7 +9777,7 @@
         "ghost"
       ],
       "difficulty": "hard",
-      "description": "El tablero rota de vez en cuando. CronÃ³metro: 80s. 16 cartas.",
+      "description": "Desafío intenso. Cronómetro: 80s. 16 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 120
@@ -9748,7 +9795,7 @@
         "rotation"
       ],
       "difficulty": "medium",
-      "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 10 cartas.",
+      "description": "Prueba extrema. Cronómetro: 60s. 10 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 25
@@ -9766,7 +9813,7 @@
         "ghost"
       ],
       "difficulty": "medium",
-      "description": "Niebla ligera: observa con atenciÃ³n. CronÃ³metro: 82s. 16 cartas.",
+      "description": "Nivel brutal. Cronómetro: 82s. 16 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 80
@@ -9784,7 +9831,7 @@
         "chameleon"
       ],
       "difficulty": "medium",
-      "description": "Evita bombas: piensa rÃ¡pido. Sin cronÃ³metro. 4 cartas.",
+      "description": "Desafío máximo. Cronómetro: 60s. 8 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 20
@@ -9802,7 +9849,7 @@
         "fog"
       ],
       "difficulty": "hard",
-      "description": "La oscuridad cubre el tablero poco a poco. CronÃ³metro: 87s. 20 cartas.",
+      "description": "Nivel extremo. Cronómetro: 87s. 20 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 150
@@ -9817,10 +9864,10 @@
       "pairs": 8,
       "timeSec": 60,
       "mechanics": [
-        "basic"
+        "bomb"
       ],
       "difficulty": "medium",
-      "description": "Cartas fantasma aparecen y desaparecen. Sin cronÃ³metro. 16 cartas.",
+      "description": "Desafío intenso. Cronómetro: 60s. 16 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 80
@@ -9838,7 +9885,7 @@
         "darkness"
       ],
       "difficulty": "hard",
-      "description": "Cartas que se congelan temporalmente. CronÃ³metro: 80s. 16 cartas.",
+      "description": "Prueba extrema. Cronómetro: 80s. 16 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 120
@@ -9856,13 +9903,13 @@
         "trio"
       ],
       "difficulty": "medium",
-      "description": "Niebla ligera: observa con atenciÃ³n. Sin cronÃ³metro. 4 cartas.",
+      "description": "Nivel brutal. Cronómetro: 60s. 12 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 10
       },
       "seed": 1548020,
-      "setSize": 2
+      "setSize": 3
     },
     {
       "id": 549,
@@ -9874,7 +9921,7 @@
         "darkness"
       ],
       "difficulty": "hard",
-      "description": "Cartas fantasma aparecen y desaparecen. CronÃ³metro: 109s. 24 cartas.",
+      "description": "Desafío máximo. Cronómetro: 109s. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 180
@@ -9889,10 +9936,13 @@
       "pairs": 12,
       "timeSec": 102,
       "mechanics": [
-        "bomb"
+        "chameleon",
+        "fog",
+        "trio",
+        "ghost"
       ],
       "difficulty": "hard",
-      "description": "Boss: 24 cartas, darkness + chameleon, crono 102s.",
+      "description": "Boss extremo. Cronómetro: 102s. 24 cartas.",
       "isBoss": true,
       "rewards": {
         "coins": 180
@@ -9910,7 +9960,7 @@
         "fog"
       ],
       "difficulty": "hard",
-      "description": "La oscuridad cubre el tablero poco a poco. CronÃ³metro: 88s. 16 cartas.",
+      "description": "Desafío intenso. Cronómetro: 88s. 16 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 120
@@ -9928,7 +9978,7 @@
         "frozen"
       ],
       "difficulty": "medium",
-      "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 18 cartas.",
+      "description": "Prueba extrema. Cronómetro: 60s. 18 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 90
@@ -9946,7 +9996,7 @@
         "ghost"
       ],
       "difficulty": "medium",
-      "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 8 cartas.",
+      "description": "Nivel brutal. Cronómetro: 60s. 8 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 20
@@ -9964,7 +10014,7 @@
         "chameleon"
       ],
       "difficulty": "hard",
-      "description": "las cartas estÃ¡n parcialmente ocultas. CronÃ³metro: 102s. 20 cartas.",
+      "description": "Desafío máximo. Cronómetro: 102s. 20 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 150
@@ -9979,10 +10029,10 @@
       "pairs": 5,
       "timeSec": 60,
       "mechanics": [
-        "basic"
+        "bomb"
       ],
       "difficulty": "medium",
-      "description": "Niebla ligera: observa con atenciÃ³n. Sin cronÃ³metro. 10 cartas.",
+      "description": "Nivel extremo. Cronómetro: 60s. 10 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 25
@@ -10000,7 +10050,7 @@
         "rotation"
       ],
       "difficulty": "medium",
-      "description": "Las cartas cambian de valor. Sin cronÃ³metro. 10 cartas.",
+      "description": "Desafío intenso. Cronómetro: 60s. 10 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 50
@@ -10018,7 +10068,7 @@
         "ghost"
       ],
       "difficulty": "hard",
-      "description": "Evita bombas: piensa rÃ¡pido. CronÃ³metro: 100s. 24 cartas.",
+      "description": "Prueba extrema. Cronómetro: 100s. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 180
@@ -10036,7 +10086,7 @@
         "rotation"
       ],
       "difficulty": "hard",
-      "description": "Cartas que se congelan temporalmente. CronÃ³metro: 71s. 14 cartas.",
+      "description": "Nivel brutal. Cronómetro: 71s. 14 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 105
@@ -10054,7 +10104,7 @@
         "chameleon"
       ],
       "difficulty": "hard",
-      "description": "Las cartas cambian de valor. Sin cronÃ³metro. 18 cartas.",
+      "description": "Desafío máximo. Cronómetro: 60s. 18 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 135
@@ -10072,7 +10122,7 @@
         "bomb"
       ],
       "difficulty": "medium",
-      "description": "juega normalmente. Sin cronÃ³metro. 16 cartas.",
+      "description": "Nivel extremo. Cronómetro: 60s. 16 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 80
@@ -10090,13 +10140,13 @@
         "trio"
       ],
       "difficulty": "medium",
-      "description": "Cartas que se congelan temporalmente. Sin cronÃ³metro. 10 cartas.",
+      "description": "Desafío intenso. Cronómetro: 60s. 15 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 50
       },
       "seed": 1561050,
-      "setSize": 2
+      "setSize": 3
     },
     {
       "id": 562,
@@ -10105,10 +10155,10 @@
       "pairs": 8,
       "timeSec": 60,
       "mechanics": [
-        "basic"
+        "bomb"
       ],
       "difficulty": "medium",
-      "description": "La oscuridad cubre el tablero poco a poco. Sin cronÃ³metro. 16 cartas.",
+      "description": "Prueba extrema. Cronómetro: 60s. 16 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 80
@@ -10126,13 +10176,13 @@
         "trio"
       ],
       "difficulty": "medium",
-      "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 8 cartas.",
+      "description": "Nivel brutal. Cronómetro: 60s. 12 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 20
       },
       "seed": 1563040,
-      "setSize": 2
+      "setSize": 3
     },
     {
       "id": 564,
@@ -10144,7 +10194,7 @@
         "darkness"
       ],
       "difficulty": "medium",
-      "description": "juega normalmente. Sin cronÃ³metro. 16 cartas.",
+      "description": "Desafío máximo. Cronómetro: 60s. 16 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 80
@@ -10162,7 +10212,7 @@
         "chameleon"
       ],
       "difficulty": "medium",
-      "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 14 cartas.",
+      "description": "Nivel extremo. Cronómetro: 60s. 14 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 70
@@ -10180,7 +10230,7 @@
         "frozen"
       ],
       "difficulty": "medium",
-      "description": "El tablero rota de vez en cuando. Sin cronÃ³metro. 6 cartas.",
+      "description": "Desafío intenso. Cronómetro: 60s. 8 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 30
@@ -10198,13 +10248,13 @@
         "rotation"
       ],
       "difficulty": "hard",
-      "description": "Encuentra trÃ­os idÃ©nticos. Sin cronÃ³metro. 18 cartas.",
+      "description": "Prueba extrema. Cronómetro: 60s. 18 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 135
       },
       "seed": 1567090,
-      "setSize": 3
+      "setSize": 2
     },
     {
       "id": 568,
@@ -10213,10 +10263,10 @@
       "pairs": 8,
       "timeSec": 60,
       "mechanics": [
-        "basic"
+        "bomb"
       ],
       "difficulty": "medium",
-      "description": "Cartas que se congelan temporalmente. Sin cronÃ³metro. 16 cartas.",
+      "description": "Nivel brutal. Cronómetro: 60s. 16 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 80
@@ -10234,7 +10284,7 @@
         "fog"
       ],
       "difficulty": "medium",
-      "description": "Evita bombas: piensa rÃ¡pido. CronÃ³metro: 47s. 10 cartas.",
+      "description": "Desafío máximo. Cronómetro: 47s. 10 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 50
@@ -10252,13 +10302,13 @@
         "rotation"
       ],
       "difficulty": "hard",
-      "description": "Encuentra trÃ­os idÃ©nticos. Sin cronÃ³metro. 24 cartas.",
+      "description": "Nivel extremo. Cronómetro: 60s. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 180
       },
       "seed": 1570120,
-      "setSize": 3
+      "setSize": 2
     },
     {
       "id": 571,
@@ -10267,10 +10317,10 @@
       "pairs": 9,
       "timeSec": 83,
       "mechanics": [
-        "basic"
+        "bomb"
       ],
       "difficulty": "hard",
-      "description": "El tablero rota de vez en cuando. CronÃ³metro: 83s. 18 cartas.",
+      "description": "Desafío intenso. Cronómetro: 83s. 18 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 135
@@ -10288,7 +10338,7 @@
         "frozen"
       ],
       "difficulty": "medium",
-      "description": "Niebla ligera: observa con atenciÃ³n. Sin cronÃ³metro. 6 cartas.",
+      "description": "Prueba extrema. Cronómetro: 60s. 8 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 15
@@ -10306,13 +10356,13 @@
         "trio"
       ],
       "difficulty": "medium",
-      "description": "Las cartas cambian de valor. Sin cronÃ³metro. 4 cartas.",
+      "description": "Nivel brutal. Cronómetro: 60s. 12 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 20
       },
       "seed": 1573020,
-      "setSize": 2
+      "setSize": 3
     },
     {
       "id": 574,
@@ -10324,7 +10374,7 @@
         "frozen"
       ],
       "difficulty": "hard",
-      "description": "Nivel clÃ¡sico sin trucos. CronÃ³metro: 97s. 24 cartas.",
+      "description": "Desafío máximo. Cronómetro: 97s. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 180
@@ -10342,7 +10392,7 @@
         "fog"
       ],
       "difficulty": "medium",
-      "description": "algunas cartas explotan si fallas. CronÃ³metro: 85s. 16 cartas.",
+      "description": "Nivel extremo. Cronómetro: 85s. 16 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 80
@@ -10360,7 +10410,7 @@
         "frozen"
       ],
       "difficulty": "medium",
-      "description": "Cartas fantasma aparecen y desaparecen. Sin cronÃ³metro. 14 cartas.",
+      "description": "Desafío intenso. Cronómetro: 60s. 14 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 70
@@ -10378,7 +10428,7 @@
         "ghost"
       ],
       "difficulty": "hard",
-      "description": "El tablero rota de vez en cuando. CronÃ³metro: 97s. 20 cartas.",
+      "description": "Prueba extrema. Cronómetro: 97s. 20 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 150
@@ -10396,7 +10446,7 @@
         "ghost"
       ],
       "difficulty": "hard",
-      "description": "algunas cartas explotan si fallas. CronÃ³metro: 97s. 24 cartas.",
+      "description": "Nivel brutal. Cronómetro: 97s. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 180
@@ -10414,7 +10464,7 @@
         "darkness"
       ],
       "difficulty": "medium",
-      "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 8 cartas.",
+      "description": "Desafío máximo. Cronómetro: 60s. 8 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 20
@@ -10429,10 +10479,10 @@
       "pairs": 12,
       "timeSec": 107,
       "mechanics": [
-        "basic"
+        "bomb"
       ],
       "difficulty": "hard",
-      "description": "algunas cartas explotan si fallas. CronÃ³metro: 107s. 24 cartas.",
+      "description": "Nivel extremo. Cronómetro: 107s. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 180
@@ -10447,16 +10497,16 @@
       "pairs": 3,
       "timeSec": 60,
       "mechanics": [
-        "basic"
+        "bomb"
       ],
       "difficulty": "medium",
-      "description": "Encuentra trÃ­os idÃ©nticos. Sin cronÃ³metro. 6 cartas.",
+      "description": "Desafío intenso. Cronómetro: 60s. 6 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 15
       },
       "seed": 1581030,
-      "setSize": 3
+      "setSize": 2
     },
     {
       "id": 582,
@@ -10468,13 +10518,13 @@
         "trio"
       ],
       "difficulty": "medium",
-      "description": "El tablero rota de vez en cuando. Sin cronÃ³metro. 14 cartas.",
+      "description": "Prueba extrema. Cronómetro: 60s. 21 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 70
       },
       "seed": 1582070,
-      "setSize": 2
+      "setSize": 3
     },
     {
       "id": 583,
@@ -10486,7 +10536,7 @@
         "ghost"
       ],
       "difficulty": "medium",
-      "description": "las cartas estÃ¡n parcialmente ocultas. CronÃ³metro: 87s. 16 cartas.",
+      "description": "Nivel brutal. Cronómetro: 87s. 16 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 80
@@ -10504,7 +10554,7 @@
         "ghost"
       ],
       "difficulty": "medium",
-      "description": "Nivel clÃ¡sico sin trucos. CronÃ³metro: 79s. 16 cartas.",
+      "description": "Desafío máximo. Cronómetro: 79s. 16 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 80
@@ -10522,7 +10572,7 @@
         "bomb"
       ],
       "difficulty": "hard",
-      "description": "Cartas fantasma aparecen y desaparecen. CronÃ³metro: 103s. 20 cartas.",
+      "description": "Nivel extremo. Cronómetro: 103s. 20 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 150
@@ -10540,7 +10590,7 @@
         "darkness"
       ],
       "difficulty": "medium",
-      "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 16 cartas.",
+      "description": "Desafío intenso. Cronómetro: 60s. 16 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 80
@@ -10558,7 +10608,7 @@
         "rotation"
       ],
       "difficulty": "hard",
-      "description": "Evita bombas: piensa rÃ¡pido. Sin cronÃ³metro. 18 cartas.",
+      "description": "Prueba extrema. Cronómetro: 60s. 18 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 135
@@ -10576,7 +10626,7 @@
         "frozen"
       ],
       "difficulty": "medium",
-      "description": "Niebla ligera: observa con atenciÃ³n. Sin cronÃ³metro. 10 cartas.",
+      "description": "Nivel brutal. Cronómetro: 60s. 10 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 25
@@ -10588,13 +10638,13 @@
       "id": 589,
       "phase": 12,
       "theme": "underwater",
-      "pairs": 12,
+      "pairs": 8,
       "timeSec": 60,
       "mechanics": [
         "trio"
       ],
       "difficulty": "hard",
-      "description": "Encuentra trÃ­os idÃ©nticos. Sin cronÃ³metro. 24 cartas.",
+      "description": "Desafío máximo. Cronómetro: 60s. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 180
@@ -10612,7 +10662,7 @@
         "darkness"
       ],
       "difficulty": "medium",
-      "description": "juega normalmente. Sin cronÃ³metro. 16 cartas.",
+      "description": "Nivel extremo. Cronómetro: 60s. 16 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 80
@@ -10630,7 +10680,7 @@
         "ghost"
       ],
       "difficulty": "medium",
-      "description": "El tablero rota de vez en cuando. Sin cronÃ³metro. 4 cartas.",
+      "description": "Desafío intenso. Cronómetro: 60s. 8 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 20
@@ -10645,10 +10695,10 @@
       "pairs": 12,
       "timeSec": 104,
       "mechanics": [
-        "basic"
+        "bomb"
       ],
       "difficulty": "hard",
-      "description": "Las cartas cambian de valor. CronÃ³metro: 104s. 24 cartas.",
+      "description": "Prueba extrema. Cronómetro: 104s. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 180
@@ -10666,13 +10716,13 @@
         "chameleon"
       ],
       "difficulty": "medium",
-      "description": "Encuentra trÃ­os idÃ©nticos. Sin cronÃ³metro. 12 cartas.",
+      "description": "Nivel brutal. Cronómetro: 60s. 12 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 30
       },
       "seed": 1593060,
-      "setSize": 3
+      "setSize": 2
     },
     {
       "id": 594,
@@ -10684,7 +10734,7 @@
         "fog"
       ],
       "difficulty": "hard",
-      "description": "La oscuridad cubre el tablero poco a poco. CronÃ³metro: 80s. 16 cartas.",
+      "description": "Desafío máximo. Cronómetro: 80s. 16 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 120
@@ -10702,7 +10752,7 @@
         "bomb"
       ],
       "difficulty": "hard",
-      "description": "Evita bombas: piensa rÃ¡pido. CronÃ³metro: 87s. 16 cartas.",
+      "description": "Nivel extremo. Cronómetro: 87s. 16 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 120
@@ -10720,13 +10770,13 @@
         "bomb"
       ],
       "difficulty": "hard",
-      "description": "Encuentra trÃ­os idÃ©nticos. Sin cronÃ³metro. 24 cartas.",
+      "description": "Desafío intenso. Cronómetro: 60s. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 180
       },
       "seed": 1596120,
-      "setSize": 3
+      "setSize": 2
     },
     {
       "id": 597,
@@ -10738,7 +10788,7 @@
         "rotation"
       ],
       "difficulty": "medium",
-      "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 4 cartas.",
+      "description": "Prueba extrema. Cronómetro: 60s. 8 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 10
@@ -10756,7 +10806,7 @@
         "bomb"
       ],
       "difficulty": "medium",
-      "description": "Niebla ligera: observa con atenciÃ³n. CronÃ³metro: 76s. 16 cartas.",
+      "description": "Nivel brutal. Cronómetro: 76s. 16 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 80
@@ -10774,7 +10824,7 @@
         "fog"
       ],
       "difficulty": "hard",
-      "description": "El tablero rota de vez en cuando. CronÃ³metro: 62s. 14 cartas.",
+      "description": "Desafío máximo. Cronómetro: 62s. 14 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 105
@@ -10789,10 +10839,15 @@
       "pairs": 12,
       "timeSec": 101,
       "mechanics": [
-        "bomb"
+        "darkness",
+        "rotation",
+        "bomb",
+        "frozen",
+        "chameleon",
+        "fog"
       ],
       "difficulty": "hard",
-      "description": "Boss: 24 cartas, ghost + chameleon, crono 101s.",
+      "description": "Boss extremo. Cronómetro: 101s. 24 cartas.",
       "isBoss": true,
       "rewards": {
         "coins": 180
@@ -10810,7 +10865,7 @@
         "bomb"
       ],
       "difficulty": "medium",
-      "description": "juega normalmente. Sin cronÃ³metro. 20 cartas.",
+      "description": "Desafío intenso. Cronómetro: 60s. 20 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 100
@@ -10828,7 +10883,7 @@
         "bomb"
       ],
       "difficulty": "medium",
-      "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 10 cartas.",
+      "description": "Prueba extrema. Cronómetro: 60s. 10 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 25
@@ -10846,7 +10901,7 @@
         "fog"
       ],
       "difficulty": "medium",
-      "description": "Niebla ligera: observa con atenciÃ³n. Sin cronÃ³metro. 14 cartas.",
+      "description": "Nivel brutal. Cronómetro: 60s. 14 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 70
@@ -10864,13 +10919,13 @@
         "trio"
       ],
       "difficulty": "medium",
-      "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 8 cartas.",
+      "description": "Desafío máximo. Cronómetro: 60s. 12 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 20
       },
       "seed": 1604040,
-      "setSize": 2
+      "setSize": 3
     },
     {
       "id": 605,
@@ -10882,7 +10937,7 @@
         "rotation"
       ],
       "difficulty": "medium",
-      "description": "Niebla ligera: observa con atenciÃ³n. Sin cronÃ³metro. 4 cartas.",
+      "description": "Nivel extremo. Cronómetro: 60s. 8 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 10
@@ -10900,7 +10955,7 @@
         "frozen"
       ],
       "difficulty": "hard",
-      "description": "Nivel clÃ¡sico sin trucos. CronÃ³metro: 87s. 20 cartas.",
+      "description": "Desafío intenso. Cronómetro: 87s. 20 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 150
@@ -10918,7 +10973,7 @@
         "bomb"
       ],
       "difficulty": "medium",
-      "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 14 cartas.",
+      "description": "Prueba extrema. Cronómetro: 60s. 14 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 70
@@ -10936,7 +10991,7 @@
         "chameleon"
       ],
       "difficulty": "medium",
-      "description": "Cartas fantasma aparecen y desaparecen. Sin cronÃ³metro. 12 cartas.",
+      "description": "Nivel brutal. Cronómetro: 60s. 12 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 30
@@ -10954,7 +11009,7 @@
         "darkness"
       ],
       "difficulty": "medium",
-      "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 20 cartas.",
+      "description": "Desafío máximo. Cronómetro: 60s. 20 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 100
@@ -10972,7 +11027,7 @@
         "fog"
       ],
       "difficulty": "medium",
-      "description": "Cartas fantasma aparecen y desaparecen. Sin cronÃ³metro. 10 cartas.",
+      "description": "Nivel extremo. Cronómetro: 60s. 10 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 25
@@ -10990,7 +11045,7 @@
         "fog"
       ],
       "difficulty": "medium",
-      "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 4 cartas.",
+      "description": "Desafío intenso. Cronómetro: 60s. 8 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 10
@@ -11008,7 +11063,7 @@
         "rotation"
       ],
       "difficulty": "medium",
-      "description": "El tablero rota de vez en cuando. CronÃ³metro: 56s. 10 cartas.",
+      "description": "Prueba extrema. Cronómetro: 56s. 10 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 50
@@ -11026,7 +11081,7 @@
         "bomb"
       ],
       "difficulty": "hard",
-      "description": "las cartas estÃ¡n parcialmente ocultas. CronÃ³metro: 109s. 24 cartas.",
+      "description": "Nivel brutal. Cronómetro: 109s. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 180
@@ -11044,7 +11099,7 @@
         "darkness"
       ],
       "difficulty": "medium",
-      "description": "Cartas que se congelan temporalmente. Sin cronÃ³metro. 12 cartas.",
+      "description": "Desafío máximo. Cronómetro: 60s. 12 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 60
@@ -11062,7 +11117,7 @@
         "darkness"
       ],
       "difficulty": "hard",
-      "description": "Evita bombas: piensa rÃ¡pido. CronÃ³metro: 98s. 18 cartas.",
+      "description": "Nivel extremo. Cronómetro: 98s. 18 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 135
@@ -11080,7 +11135,7 @@
         "chameleon"
       ],
       "difficulty": "medium",
-      "description": "El tablero rota de vez en cuando. Sin cronÃ³metro. 14 cartas.",
+      "description": "Desafío intenso. Cronómetro: 60s. 14 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 70
@@ -11098,7 +11153,7 @@
         "bomb"
       ],
       "difficulty": "medium",
-      "description": "Cartas fantasma aparecen y desaparecen. Sin cronÃ³metro. 6 cartas.",
+      "description": "Prueba extrema. Cronómetro: 60s. 8 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 15
@@ -11116,7 +11171,7 @@
         "chameleon"
       ],
       "difficulty": "medium",
-      "description": "Cartas que se congelan temporalmente. Sin cronÃ³metro. 14 cartas.",
+      "description": "Nivel brutal. Cronómetro: 60s. 14 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 70
@@ -11134,7 +11189,7 @@
         "ghost"
       ],
       "difficulty": "medium",
-      "description": "El tablero rota de vez en cuando. Sin cronÃ³metro. 12 cartas.",
+      "description": "Desafío máximo. Cronómetro: 60s. 12 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 60
@@ -11146,19 +11201,19 @@
       "id": 620,
       "phase": 13,
       "theme": "laboratory",
-      "pairs": 10,
+      "pairs": 8,
       "timeSec": 99,
       "mechanics": [
         "trio"
       ],
       "difficulty": "hard",
-      "description": "La oscuridad cubre el tablero poco a poco. CronÃ³metro: 99s. 20 cartas.",
+      "description": "Nivel extremo. Cronómetro: 99s. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 150
       },
       "seed": 1620199,
-      "setSize": 2
+      "setSize": 3
     },
     {
       "id": 621,
@@ -11170,7 +11225,7 @@
         "fog"
       ],
       "difficulty": "medium",
-      "description": "Cartas fantasma aparecen y desaparecen. Sin cronÃ³metro. 12 cartas.",
+      "description": "Desafío intenso. Cronómetro: 60s. 12 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 30
@@ -11188,7 +11243,7 @@
         "fog"
       ],
       "difficulty": "hard",
-      "description": "las cartas estÃ¡n parcialmente ocultas. CronÃ³metro: 105s. 24 cartas.",
+      "description": "Prueba extrema. Cronómetro: 105s. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 180
@@ -11206,7 +11261,7 @@
         "fog"
       ],
       "difficulty": "hard",
-      "description": "La oscuridad cubre el tablero poco a poco. CronÃ³metro: 91s. 20 cartas.",
+      "description": "Nivel brutal. Cronómetro: 91s. 20 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 150
@@ -11224,7 +11279,7 @@
         "frozen"
       ],
       "difficulty": "medium",
-      "description": "Nivel clÃ¡sico sin trucos. CronÃ³metro: 77s. 16 cartas.",
+      "description": "Desafío máximo. Cronómetro: 77s. 16 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 80
@@ -11242,7 +11297,7 @@
         "ghost"
       ],
       "difficulty": "medium",
-      "description": "Las cartas cambian de valor. Sin cronÃ³metro. 14 cartas.",
+      "description": "Nivel extremo. Cronómetro: 60s. 14 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 70
@@ -11260,7 +11315,7 @@
         "darkness"
       ],
       "difficulty": "medium",
-      "description": "Evita bombas: piensa rÃ¡pido. Sin cronÃ³metro. 14 cartas.",
+      "description": "Desafío intenso. Cronómetro: 60s. 14 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 70
@@ -11278,7 +11333,7 @@
         "bomb"
       ],
       "difficulty": "medium",
-      "description": "Niebla ligera: observa con atenciÃ³n. Sin cronÃ³metro. 10 cartas.",
+      "description": "Prueba extrema. Cronómetro: 60s. 10 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 25
@@ -11296,7 +11351,7 @@
         "darkness"
       ],
       "difficulty": "medium",
-      "description": "Cartas que se congelan temporalmente. Sin cronÃ³metro. 8 cartas.",
+      "description": "Nivel brutal. Cronómetro: 60s. 8 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 40
@@ -11314,13 +11369,13 @@
         "darkness"
       ],
       "difficulty": "medium",
-      "description": "Encuentra trÃ­os idÃ©nticos. Sin cronÃ³metro. 12 cartas.",
+      "description": "Desafío máximo. Cronómetro: 60s. 12 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 30
       },
       "seed": 1629060,
-      "setSize": 3
+      "setSize": 2
     },
     {
       "id": 630,
@@ -11332,7 +11387,7 @@
         "chameleon"
       ],
       "difficulty": "hard",
-      "description": "La oscuridad cubre el tablero poco a poco. Sin cronÃ³metro. 20 cartas.",
+      "description": "Nivel extremo. Cronómetro: 60s. 20 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 150
@@ -11350,7 +11405,7 @@
         "chameleon"
       ],
       "difficulty": "hard",
-      "description": "Nivel clÃ¡sico sin trucos. CronÃ³metro: 112s. 24 cartas.",
+      "description": "Desafío intenso. Cronómetro: 112s. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 180
@@ -11368,7 +11423,7 @@
         "chameleon"
       ],
       "difficulty": "medium",
-      "description": "Las cartas cambian de valor. Sin cronÃ³metro. 14 cartas.",
+      "description": "Prueba extrema. Cronómetro: 60s. 14 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 70
@@ -11386,13 +11441,13 @@
         "fog"
       ],
       "difficulty": "medium",
-      "description": "Encuentra trÃ­os idÃ©nticos. Sin cronÃ³metro. 12 cartas.",
+      "description": "Nivel brutal. Cronómetro: 60s. 12 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 30
       },
       "seed": 1633060,
-      "setSize": 3
+      "setSize": 2
     },
     {
       "id": 634,
@@ -11404,7 +11459,7 @@
         "frozen"
       ],
       "difficulty": "hard",
-      "description": "El tablero rota de vez en cuando. CronÃ³metro: 96s. 18 cartas.",
+      "description": "Desafío máximo. Cronómetro: 96s. 18 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 135
@@ -11422,7 +11477,7 @@
         "chameleon"
       ],
       "difficulty": "medium",
-      "description": "Nivel clÃ¡sico sin trucos. CronÃ³metro: 75s. 14 cartas.",
+      "description": "Nivel extremo. Cronómetro: 75s. 14 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 70
@@ -11437,16 +11492,16 @@
       "pairs": 3,
       "timeSec": 60,
       "mechanics": [
-        "basic"
+        "bomb"
       ],
       "difficulty": "medium",
-      "description": "Encuentra trÃ­os idÃ©nticos. Sin cronÃ³metro. 6 cartas.",
+      "description": "Desafío intenso. Cronómetro: 60s. 6 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 15
       },
       "seed": 1636030,
-      "setSize": 3
+      "setSize": 2
     },
     {
       "id": 637,
@@ -11458,7 +11513,7 @@
         "ghost"
       ],
       "difficulty": "medium",
-      "description": "Cartas que se congelan temporalmente. Sin cronÃ³metro. 10 cartas.",
+      "description": "Prueba extrema. Cronómetro: 60s. 10 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 50
@@ -11476,13 +11531,13 @@
         "ghost"
       ],
       "difficulty": "medium",
-      "description": "Encuentra trÃ­os idÃ©nticos. Sin cronÃ³metro. 12 cartas.",
+      "description": "Nivel brutal. Cronómetro: 60s. 12 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 30
       },
       "seed": 1638060,
-      "setSize": 3
+      "setSize": 2
     },
     {
       "id": 639,
@@ -11494,7 +11549,7 @@
         "bomb"
       ],
       "difficulty": "hard",
-      "description": "Las cartas cambian de valor. CronÃ³metro: 89s. 20 cartas.",
+      "description": "Desafío máximo. Cronómetro: 89s. 20 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 150
@@ -11512,7 +11567,7 @@
         "frozen"
       ],
       "difficulty": "hard",
-      "description": "algunas cartas explotan si fallas. CronÃ³metro: 113s. 24 cartas.",
+      "description": "Nivel extremo. Cronómetro: 113s. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 180
@@ -11530,7 +11585,7 @@
         "bomb"
       ],
       "difficulty": "medium",
-      "description": "Niebla ligera: observa con atenciÃ³n. Sin cronÃ³metro. 6 cartas.",
+      "description": "Desafío intenso. Cronómetro: 60s. 8 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 15
@@ -11548,7 +11603,7 @@
         "frozen"
       ],
       "difficulty": "medium",
-      "description": "Cartas que se congelan temporalmente. Sin cronÃ³metro. 12 cartas.",
+      "description": "Prueba extrema. Cronómetro: 60s. 12 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 60
@@ -11566,7 +11621,7 @@
         "bomb"
       ],
       "difficulty": "medium",
-      "description": "La oscuridad cubre el tablero poco a poco. Sin cronÃ³metro. 16 cartas.",
+      "description": "Nivel brutal. Cronómetro: 60s. 16 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 80
@@ -11581,10 +11636,10 @@
       "pairs": 10,
       "timeSec": 99,
       "mechanics": [
-        "basic"
+        "bomb"
       ],
       "difficulty": "hard",
-      "description": "algunas cartas explotan si fallas. CronÃ³metro: 99s. 20 cartas.",
+      "description": "Desafío máximo. Cronómetro: 99s. 20 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 150
@@ -11602,7 +11657,7 @@
         "frozen"
       ],
       "difficulty": "medium",
-      "description": "Cartas fantasma aparecen y desaparecen. Sin cronÃ³metro. 6 cartas.",
+      "description": "Nivel extremo. Cronómetro: 60s. 8 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 15
@@ -11620,7 +11675,7 @@
         "bomb"
       ],
       "difficulty": "medium",
-      "description": "Nivel clÃ¡sico sin trucos. CronÃ³metro: 66s. 12 cartas.",
+      "description": "Desafío intenso. Cronómetro: 66s. 12 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 60
@@ -11638,13 +11693,13 @@
         "trio"
       ],
       "difficulty": "medium",
-      "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 14 cartas.",
+      "description": "Prueba extrema. Cronómetro: 60s. 21 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 70
       },
       "seed": 1647070,
-      "setSize": 2
+      "setSize": 3
     },
     {
       "id": 648,
@@ -11656,7 +11711,7 @@
         "fog"
       ],
       "difficulty": "medium",
-      "description": "algunas cartas explotan si fallas. CronÃ³metro: 73s. 16 cartas.",
+      "description": "Nivel brutal. Cronómetro: 73s. 16 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 80
@@ -11674,7 +11729,7 @@
         "fog"
       ],
       "difficulty": "medium",
-      "description": "Evita bombas: piensa rÃ¡pido. Sin cronÃ³metro. 10 cartas.",
+      "description": "Desafío máximo. Cronómetro: 60s. 10 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 50
@@ -11689,10 +11744,16 @@
       "pairs": 12,
       "timeSec": 105,
       "mechanics": [
-        "rotation"
+        "fog",
+        "ghost",
+        "darkness",
+        "rotation",
+        "bomb",
+        "frozen",
+        "chameleon"
       ],
       "difficulty": "hard",
-      "description": "Boss: 24 cartas, ghost + peeked_card, crono 105s.",
+      "description": "Boss extremo. Cronómetro: 105s. 24 cartas.",
       "isBoss": true,
       "rewards": {
         "coins": 180
@@ -11710,7 +11771,7 @@
         "fog"
       ],
       "difficulty": "medium",
-      "description": "Cartas fantasma aparecen y desaparecen. Sin cronÃ³metro. 10 cartas.",
+      "description": "Desafío intenso. Cronómetro: 60s. 10 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 25
@@ -11728,7 +11789,7 @@
         "fog"
       ],
       "difficulty": "hard",
-      "description": "Cartas que se congelan temporalmente. CronÃ³metro: 74s. 14 cartas.",
+      "description": "Prueba extrema. Cronómetro: 74s. 14 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 105
@@ -11743,16 +11804,16 @@
       "pairs": 6,
       "timeSec": 60,
       "mechanics": [
-        "basic"
+        "bomb"
       ],
       "difficulty": "medium",
-      "description": "Encuentra trÃ­os idÃ©nticos. Sin cronÃ³metro. 12 cartas.",
+      "description": "Nivel brutal. Cronómetro: 60s. 12 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 30
       },
       "seed": 1653060,
-      "setSize": 3
+      "setSize": 2
     },
     {
       "id": 654,
@@ -11764,7 +11825,7 @@
         "bomb"
       ],
       "difficulty": "medium",
-      "description": "juega normalmente. Sin cronÃ³metro. 20 cartas.",
+      "description": "Desafío máximo. Cronómetro: 60s. 20 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 100
@@ -11782,7 +11843,7 @@
         "fog"
       ],
       "difficulty": "medium",
-      "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 18 cartas.",
+      "description": "Nivel extremo. Cronómetro: 60s. 18 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 90
@@ -11800,7 +11861,7 @@
         "rotation"
       ],
       "difficulty": "hard",
-      "description": "Niebla ligera: observa con atenciÃ³n. CronÃ³metro: 107s. 24 cartas.",
+      "description": "Desafío intenso. Cronómetro: 107s. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 180
@@ -11818,7 +11879,7 @@
         "bomb"
       ],
       "difficulty": "medium",
-      "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 8 cartas.",
+      "description": "Prueba extrema. Cronómetro: 60s. 8 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 20
@@ -11833,10 +11894,10 @@
       "pairs": 10,
       "timeSec": 101,
       "mechanics": [
-        "basic"
+        "bomb"
       ],
       "difficulty": "hard",
-      "description": "Nivel clÃ¡sico sin trucos. CronÃ³metro: 101s. 20 cartas.",
+      "description": "Nivel brutal. Cronómetro: 101s. 20 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 150
@@ -11854,7 +11915,7 @@
         "frozen"
       ],
       "difficulty": "medium",
-      "description": "Las cartas cambian de valor. Sin cronÃ³metro. 4 cartas.",
+      "description": "Desafío máximo. Cronómetro: 60s. 8 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 20
@@ -11872,7 +11933,7 @@
         "ghost"
       ],
       "difficulty": "medium",
-      "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 18 cartas.",
+      "description": "Nivel extremo. Cronómetro: 60s. 18 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 90
@@ -11890,7 +11951,7 @@
         "rotation"
       ],
       "difficulty": "medium",
-      "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 18 cartas.",
+      "description": "Desafío intenso. Cronómetro: 60s. 18 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 90
@@ -11908,13 +11969,13 @@
         "chameleon"
       ],
       "difficulty": "medium",
-      "description": "Encuentra trÃ­os idÃ©nticos. Sin cronÃ³metro. 6 cartas.",
+      "description": "Prueba extrema. Cronómetro: 60s. 6 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 15
       },
       "seed": 1662030,
-      "setSize": 3
+      "setSize": 2
     },
     {
       "id": 663,
@@ -11926,7 +11987,7 @@
         "rotation"
       ],
       "difficulty": "hard",
-      "description": "Nivel clÃ¡sico sin trucos. CronÃ³metro: 85s. 18 cartas.",
+      "description": "Nivel brutal. Cronómetro: 85s. 18 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 135
@@ -11944,7 +12005,7 @@
         "chameleon"
       ],
       "difficulty": "hard",
-      "description": "Nivel clÃ¡sico sin trucos. CronÃ³metro: 105s. 24 cartas.",
+      "description": "Desafío máximo. Cronómetro: 105s. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 180
@@ -11962,7 +12023,7 @@
         "bomb"
       ],
       "difficulty": "hard",
-      "description": "Cartas que se congelan temporalmente. CronÃ³metro: 66s. 14 cartas.",
+      "description": "Nivel extremo. Cronómetro: 66s. 14 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 105
@@ -11980,7 +12041,7 @@
         "bomb"
       ],
       "difficulty": "medium",
-      "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 16 cartas.",
+      "description": "Desafío intenso. Cronómetro: 60s. 16 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 80
@@ -11998,7 +12059,7 @@
         "frozen"
       ],
       "difficulty": "hard",
-      "description": "El tablero rota de vez en cuando. CronÃ³metro: 70s. 14 cartas.",
+      "description": "Prueba extrema. Cronómetro: 70s. 14 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 105
@@ -12016,7 +12077,7 @@
         "chameleon"
       ],
       "difficulty": "medium",
-      "description": "Las cartas cambian de valor. Sin cronÃ³metro. 8 cartas.",
+      "description": "Nivel brutal. Cronómetro: 60s. 8 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 40
@@ -12034,7 +12095,7 @@
         "chameleon"
       ],
       "difficulty": "medium",
-      "description": "Niebla ligera: observa con atenciÃ³n. Sin cronÃ³metro. 10 cartas.",
+      "description": "Desafío máximo. Cronómetro: 60s. 10 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 25
@@ -12052,7 +12113,7 @@
         "rotation"
       ],
       "difficulty": "medium",
-      "description": "Evita bombas: piensa rÃ¡pido. Sin cronÃ³metro. 8 cartas.",
+      "description": "Nivel extremo. Cronómetro: 60s. 8 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 40
@@ -12067,10 +12128,10 @@
       "pairs": 4,
       "timeSec": 60,
       "mechanics": [
-        "basic"
+        "bomb"
       ],
       "difficulty": "medium",
-      "description": "Cartas que se congelan temporalmente. Sin cronÃ³metro. 6 cartas.",
+      "description": "Desafío intenso. Cronómetro: 60s. 8 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 30
@@ -12088,7 +12149,7 @@
         "chameleon"
       ],
       "difficulty": "medium",
-      "description": "Cartas fantasma aparecen y desaparecen. Sin cronÃ³metro. 10 cartas.",
+      "description": "Prueba extrema. Cronómetro: 60s. 10 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 25
@@ -12106,7 +12167,7 @@
         "bomb"
       ],
       "difficulty": "medium",
-      "description": "Evita bombas: piensa rÃ¡pido. Sin cronÃ³metro. 8 cartas.",
+      "description": "Nivel brutal. Cronómetro: 60s. 8 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 40
@@ -12124,7 +12185,7 @@
         "darkness"
       ],
       "difficulty": "medium",
-      "description": "Cartas fantasma aparecen y desaparecen. Sin cronÃ³metro. 8 cartas.",
+      "description": "Desafío máximo. Cronómetro: 60s. 8 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 20
@@ -12142,13 +12203,13 @@
         "ghost"
       ],
       "difficulty": "medium",
-      "description": "Encuentra trÃ­os idÃ©nticos. Sin cronÃ³metro. 6 cartas.",
+      "description": "Nivel extremo. Cronómetro: 60s. 6 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 15
       },
       "seed": 1675030,
-      "setSize": 3
+      "setSize": 2
     },
     {
       "id": 676,
@@ -12160,7 +12221,7 @@
         "fog"
       ],
       "difficulty": "hard",
-      "description": "algunas cartas explotan si fallas. CronÃ³metro: 97s. 20 cartas.",
+      "description": "Desafío intenso. Cronómetro: 97s. 20 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 150
@@ -12178,7 +12239,7 @@
         "ghost"
       ],
       "difficulty": "hard",
-      "description": "La oscuridad cubre el tablero poco a poco. CronÃ³metro: 81s. 16 cartas.",
+      "description": "Prueba extrema. Cronómetro: 81s. 16 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 120
@@ -12193,10 +12254,10 @@
       "pairs": 4,
       "timeSec": 60,
       "mechanics": [
-        "basic"
+        "bomb"
       ],
       "difficulty": "medium",
-      "description": "Cartas que se congelan temporalmente. Sin cronÃ³metro. 6 cartas.",
+      "description": "Nivel brutal. Cronómetro: 60s. 8 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 30
@@ -12211,10 +12272,10 @@
       "pairs": 12,
       "timeSec": 110,
       "mechanics": [
-        "basic"
+        "bomb"
       ],
       "difficulty": "hard",
-      "description": "La oscuridad cubre el tablero poco a poco. CronÃ³metro: 110s. 24 cartas.",
+      "description": "Desafío máximo. Cronómetro: 110s. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 180
@@ -12232,7 +12293,7 @@
         "fog"
       ],
       "difficulty": "medium",
-      "description": "Evita bombas: piensa rÃ¡pido. CronÃ³metro: 57s. 12 cartas.",
+      "description": "Nivel extremo. Cronómetro: 57s. 12 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 60
@@ -12250,7 +12311,7 @@
         "bomb"
       ],
       "difficulty": "medium",
-      "description": "Cartas fantasma aparecen y desaparecen. Sin cronÃ³metro. 10 cartas.",
+      "description": "Desafío intenso. Cronómetro: 60s. 10 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 25
@@ -12268,7 +12329,7 @@
         "bomb"
       ],
       "difficulty": "medium",
-      "description": "Las cartas cambian de valor. Sin cronÃ³metro. 10 cartas.",
+      "description": "Prueba extrema. Cronómetro: 60s. 10 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 50
@@ -12283,10 +12344,10 @@
       "pairs": 5,
       "timeSec": 60,
       "mechanics": [
-        "basic"
+        "bomb"
       ],
       "difficulty": "medium",
-      "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 10 cartas.",
+      "description": "Nivel brutal. Cronómetro: 60s. 10 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 25
@@ -12304,7 +12365,7 @@
         "chameleon"
       ],
       "difficulty": "hard",
-      "description": "La oscuridad cubre el tablero poco a poco. CronÃ³metro: 78s. 16 cartas.",
+      "description": "Desafío máximo. Cronómetro: 78s. 16 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 120
@@ -12322,7 +12383,7 @@
         "darkness"
       ],
       "difficulty": "hard",
-      "description": "Las cartas cambian de valor. CronÃ³metro: 75s. 16 cartas.",
+      "description": "Nivel extremo. Cronómetro: 75s. 16 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 120
@@ -12340,7 +12401,7 @@
         "frozen"
       ],
       "difficulty": "medium",
-      "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 20 cartas.",
+      "description": "Desafío intenso. Cronómetro: 60s. 20 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 100
@@ -12358,7 +12419,7 @@
         "fog"
       ],
       "difficulty": "medium",
-      "description": "Las cartas cambian de valor. Sin cronÃ³metro. 6 cartas.",
+      "description": "Prueba extrema. Cronómetro: 60s. 8 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 30
@@ -12376,7 +12437,7 @@
         "rotation"
       ],
       "difficulty": "medium",
-      "description": "Cartas que se congelan temporalmente. Sin cronÃ³metro. 12 cartas.",
+      "description": "Nivel brutal. Cronómetro: 60s. 12 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 60
@@ -12394,7 +12455,7 @@
         "chameleon"
       ],
       "difficulty": "medium",
-      "description": "Cartas fantasma aparecen y desaparecen. CronÃ³metro: 78s. 14 cartas.",
+      "description": "Desafío máximo. Cronómetro: 78s. 14 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 70
@@ -12412,7 +12473,7 @@
         "ghost"
       ],
       "difficulty": "medium",
-      "description": "Niebla ligera: observa con atenciÃ³n. CronÃ³metro: 75s. 16 cartas.",
+      "description": "Nivel extremo. Cronómetro: 75s. 16 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 80
@@ -12430,13 +12491,13 @@
         "trio"
       ],
       "difficulty": "medium",
-      "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 14 cartas.",
+      "description": "Desafío intenso. Cronómetro: 60s. 21 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 70
       },
       "seed": 1691070,
-      "setSize": 2
+      "setSize": 3
     },
     {
       "id": 692,
@@ -12448,7 +12509,7 @@
         "chameleon"
       ],
       "difficulty": "hard",
-      "description": "Cartas que se congelan temporalmente. CronÃ³metro: 75s. 14 cartas.",
+      "description": "Prueba extrema. Cronómetro: 75s. 14 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 105
@@ -12466,13 +12527,13 @@
         "trio"
       ],
       "difficulty": "medium",
-      "description": "Niebla ligera: observa con atenciÃ³n. Sin cronÃ³metro. 6 cartas.",
+      "description": "Nivel brutal. Cronómetro: 60s. 12 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 15
       },
       "seed": 1693030,
-      "setSize": 2
+      "setSize": 3
     },
     {
       "id": 694,
@@ -12484,7 +12545,7 @@
         "darkness"
       ],
       "difficulty": "hard",
-      "description": "Las cartas cambian de valor. CronÃ³metro: 79s. 16 cartas.",
+      "description": "Desafío máximo. Cronómetro: 79s. 16 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 120
@@ -12502,7 +12563,7 @@
         "darkness"
       ],
       "difficulty": "hard",
-      "description": "Cartas fantasma aparecen y desaparecen. CronÃ³metro: 107s. 22 cartas.",
+      "description": "Nivel extremo. Cronómetro: 107s. 22 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 165
@@ -12517,10 +12578,10 @@
       "pairs": 12,
       "timeSec": 98,
       "mechanics": [
-        "basic"
+        "bomb"
       ],
       "difficulty": "hard",
-      "description": "algunas cartas explotan si fallas. CronÃ³metro: 98s. 24 cartas.",
+      "description": "Desafío intenso. Cronómetro: 98s. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 180
@@ -12538,7 +12599,7 @@
         "bomb"
       ],
       "difficulty": "medium",
-      "description": "Cartas que se congelan temporalmente. Sin cronÃ³metro. 6 cartas.",
+      "description": "Prueba extrema. Cronómetro: 60s. 8 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 30
@@ -12556,13 +12617,13 @@
         "trio"
       ],
       "difficulty": "medium",
-      "description": "Evita bombas: piensa rÃ¡pido. Sin cronÃ³metro. 16 cartas.",
+      "description": "Nivel brutal. Cronómetro: 60s. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 80
       },
       "seed": 1698080,
-      "setSize": 2
+      "setSize": 3
     },
     {
       "id": 699,
@@ -12571,10 +12632,10 @@
       "pairs": 8,
       "timeSec": 60,
       "mechanics": [
-        "basic"
+        "bomb"
       ],
       "difficulty": "medium",
-      "description": "El tablero rota de vez en cuando. Sin cronÃ³metro. 16 cartas.",
+      "description": "Desafío máximo. Cronómetro: 60s. 16 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 80
@@ -12589,10 +12650,15 @@
       "pairs": 12,
       "timeSec": 102,
       "mechanics": [
+        "fog",
+        "trio",
+        "ghost",
+        "darkness",
+        "rotation",
         "bomb"
       ],
       "difficulty": "hard",
-      "description": "Boss: 24 cartas, frozen + chameleon, crono 102s.",
+      "description": "Boss extremo. Cronómetro: 102s. 24 cartas.",
       "isBoss": true,
       "rewards": {
         "coins": 180
@@ -12610,7 +12676,7 @@
         "darkness"
       ],
       "difficulty": "medium",
-      "description": "El tablero rota de vez en cuando. Sin cronÃ³metro. 16 cartas.",
+      "description": "Desafío intenso. Cronómetro: 60s. 16 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 80
@@ -12628,7 +12694,7 @@
         "rotation"
       ],
       "difficulty": "hard",
-      "description": "Cartas fantasma aparecen y desaparecen. CronÃ³metro: 94s. 20 cartas.",
+      "description": "Prueba extrema. Cronómetro: 94s. 20 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 150
@@ -12646,7 +12712,7 @@
         "fog"
       ],
       "difficulty": "hard",
-      "description": "La oscuridad cubre el tablero poco a poco. CronÃ³metro: 84s. 16 cartas.",
+      "description": "Nivel brutal. Cronómetro: 84s. 16 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 120
@@ -12664,7 +12730,7 @@
         "frozen"
       ],
       "difficulty": "hard",
-      "description": "El tablero rota de vez en cuando. CronÃ³metro: 82s. 16 cartas.",
+      "description": "Desafío máximo. Cronómetro: 82s. 16 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 120
@@ -12682,7 +12748,7 @@
         "fog"
       ],
       "difficulty": "hard",
-      "description": "Cartas que se congelan temporalmente. Sin cronÃ³metro. 24 cartas.",
+      "description": "Nivel extremo. Cronómetro: 60s. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 180
@@ -12700,7 +12766,7 @@
         "fog"
       ],
       "difficulty": "hard",
-      "description": "Niebla ligera: observa con atenciÃ³n. CronÃ³metro: 100s. 20 cartas.",
+      "description": "Desafío intenso. Cronómetro: 100s. 20 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 150
@@ -12718,7 +12784,7 @@
         "darkness"
       ],
       "difficulty": "hard",
-      "description": "La oscuridad cubre el tablero poco a poco. CronÃ³metro: 86s. 16 cartas.",
+      "description": "Prueba extrema. Cronómetro: 86s. 16 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 120
@@ -12736,13 +12802,13 @@
         "rotation"
       ],
       "difficulty": "medium",
-      "description": "Encuentra trÃ­os idÃ©nticos. Sin cronÃ³metro. 12 cartas.",
+      "description": "Nivel brutal. Cronómetro: 60s. 12 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 30
       },
       "seed": 1708060,
-      "setSize": 3
+      "setSize": 2
     },
     {
       "id": 709,
@@ -12751,10 +12817,10 @@
       "pairs": 8,
       "timeSec": 73,
       "mechanics": [
-        "basic"
+        "bomb"
       ],
       "difficulty": "hard",
-      "description": "La oscuridad cubre el tablero poco a poco. CronÃ³metro: 73s. 16 cartas.",
+      "description": "Desafío máximo. Cronómetro: 73s. 16 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 120
@@ -12772,7 +12838,7 @@
         "chameleon"
       ],
       "difficulty": "medium",
-      "description": "Evita bombas: piensa rÃ¡pido. CronÃ³metro: 57s. 12 cartas.",
+      "description": "Nivel extremo. Cronómetro: 57s. 12 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 60
@@ -12790,7 +12856,7 @@
         "bomb"
       ],
       "difficulty": "medium",
-      "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 18 cartas.",
+      "description": "Desafío intenso. Cronómetro: 60s. 18 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 90
@@ -12808,7 +12874,7 @@
         "fog"
       ],
       "difficulty": "medium",
-      "description": "Cartas que se congelan temporalmente. Sin cronÃ³metro. 10 cartas.",
+      "description": "Prueba extrema. Cronómetro: 60s. 10 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 50
@@ -12826,7 +12892,7 @@
         "ghost"
       ],
       "difficulty": "hard",
-      "description": "Evita bombas: piensa rÃ¡pido. Sin cronÃ³metro. 24 cartas.",
+      "description": "Nivel brutal. Cronómetro: 60s. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 180
@@ -12844,7 +12910,7 @@
         "frozen"
       ],
       "difficulty": "medium",
-      "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 10 cartas.",
+      "description": "Desafío máximo. Cronómetro: 60s. 10 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 25
@@ -12862,7 +12928,7 @@
         "bomb"
       ],
       "difficulty": "medium",
-      "description": "Cartas fantasma aparecen y desaparecen. Sin cronÃ³metro. 22 cartas.",
+      "description": "Nivel extremo. Cronómetro: 60s. 22 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 110
@@ -12880,7 +12946,7 @@
         "frozen"
       ],
       "difficulty": "hard",
-      "description": "Las cartas cambian de valor. Sin cronÃ³metro. 18 cartas.",
+      "description": "Desafío intenso. Cronómetro: 60s. 18 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 135
@@ -12898,7 +12964,7 @@
         "ghost"
       ],
       "difficulty": "medium",
-      "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 14 cartas.",
+      "description": "Prueba extrema. Cronómetro: 60s. 14 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 70
@@ -12916,7 +12982,7 @@
         "rotation"
       ],
       "difficulty": "hard",
-      "description": "algunas cartas explotan si fallas. CronÃ³metro: 102s. 20 cartas.",
+      "description": "Nivel brutal. Cronómetro: 102s. 20 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 150
@@ -12934,7 +13000,7 @@
         "chameleon"
       ],
       "difficulty": "medium",
-      "description": "Niebla ligera: observa con atenciÃ³n. Sin cronÃ³metro. 4 cartas.",
+      "description": "Desafío máximo. Cronómetro: 60s. 8 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 10
@@ -12952,7 +13018,7 @@
         "frozen"
       ],
       "difficulty": "medium",
-      "description": "La oscuridad cubre el tablero poco a poco. Sin cronÃ³metro. 16 cartas.",
+      "description": "Nivel extremo. Cronómetro: 60s. 16 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 80
@@ -12964,19 +13030,19 @@
       "id": 721,
       "phase": 15,
       "theme": "palace",
-      "pairs": 10,
+      "pairs": 8,
       "timeSec": 95,
       "mechanics": [
         "trio"
       ],
       "difficulty": "hard",
-      "description": "Niebla ligera: observa con atenciÃ³n. CronÃ³metro: 95s. 20 cartas.",
+      "description": "Desafío intenso. Cronómetro: 95s. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 150
       },
       "seed": 1721195,
-      "setSize": 2
+      "setSize": 3
     },
     {
       "id": 722,
@@ -12988,7 +13054,7 @@
         "rotation"
       ],
       "difficulty": "medium",
-      "description": "Nivel clÃ¡sico sin trucos. CronÃ³metro: 74s. 14 cartas.",
+      "description": "Prueba extrema. Cronómetro: 74s. 14 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 70
@@ -13006,7 +13072,7 @@
         "frozen"
       ],
       "difficulty": "medium",
-      "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 14 cartas.",
+      "description": "Nivel brutal. Cronómetro: 60s. 14 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 70
@@ -13024,7 +13090,7 @@
         "ghost"
       ],
       "difficulty": "hard",
-      "description": "La oscuridad cubre el tablero poco a poco. Sin cronÃ³metro. 20 cartas.",
+      "description": "Desafío máximo. Cronómetro: 60s. 20 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 150
@@ -13042,7 +13108,7 @@
         "frozen"
       ],
       "difficulty": "medium",
-      "description": "juega normalmente. Sin cronÃ³metro. 24 cartas.",
+      "description": "Nivel extremo. Cronómetro: 60s. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 120
@@ -13057,10 +13123,10 @@
       "pairs": 8,
       "timeSec": 83,
       "mechanics": [
-        "basic"
+        "bomb"
       ],
       "difficulty": "hard",
-      "description": "Evita bombas: piensa rÃ¡pido. CronÃ³metro: 83s. 16 cartas.",
+      "description": "Desafío intenso. Cronómetro: 83s. 16 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 120
@@ -13075,16 +13141,16 @@
       "pairs": 6,
       "timeSec": 60,
       "mechanics": [
-        "basic"
+        "bomb"
       ],
       "difficulty": "medium",
-      "description": "Encuentra trÃ­os idÃ©nticos. Sin cronÃ³metro. 12 cartas.",
+      "description": "Prueba extrema. Cronómetro: 60s. 12 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 30
       },
       "seed": 1727060,
-      "setSize": 3
+      "setSize": 2
     },
     {
       "id": 728,
@@ -13096,7 +13162,7 @@
         "darkness"
       ],
       "difficulty": "medium",
-      "description": "Nivel clÃ¡sico sin trucos. CronÃ³metro: 73s. 16 cartas.",
+      "description": "Nivel brutal. Cronómetro: 73s. 16 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 80
@@ -13114,7 +13180,7 @@
         "ghost"
       ],
       "difficulty": "medium",
-      "description": "juega normalmente. Sin cronÃ³metro. 16 cartas.",
+      "description": "Desafío máximo. Cronómetro: 60s. 16 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 80
@@ -13132,7 +13198,7 @@
         "fog"
       ],
       "difficulty": "hard",
-      "description": "La oscuridad cubre el tablero poco a poco. CronÃ³metro: 95s. 20 cartas.",
+      "description": "Nivel extremo. Cronómetro: 95s. 20 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 150
@@ -13150,7 +13216,7 @@
         "darkness"
       ],
       "difficulty": "medium",
-      "description": "El tablero rota de vez en cuando. Sin cronÃ³metro. 12 cartas.",
+      "description": "Desafío intenso. Cronómetro: 60s. 12 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 60
@@ -13168,7 +13234,7 @@
         "fog"
       ],
       "difficulty": "medium",
-      "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 18 cartas.",
+      "description": "Prueba extrema. Cronómetro: 60s. 18 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 90
@@ -13186,7 +13252,7 @@
         "rotation"
       ],
       "difficulty": "medium",
-      "description": "El tablero rota de vez en cuando. Sin cronÃ³metro. 4 cartas.",
+      "description": "Nivel brutal. Cronómetro: 60s. 8 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 20
@@ -13204,7 +13270,7 @@
         "fog"
       ],
       "difficulty": "hard",
-      "description": "Cartas que se congelan temporalmente. CronÃ³metro: 84s. 16 cartas.",
+      "description": "Desafío máximo. Cronómetro: 84s. 16 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 120
@@ -13222,13 +13288,13 @@
         "darkness"
       ],
       "difficulty": "hard",
-      "description": "Encuentra trÃ­os idÃ©nticos. Sin cronÃ³metro. 18 cartas.",
+      "description": "Nivel extremo. Cronómetro: 60s. 18 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 135
       },
       "seed": 1735090,
-      "setSize": 3
+      "setSize": 2
     },
     {
       "id": 736,
@@ -13240,7 +13306,7 @@
         "bomb"
       ],
       "difficulty": "medium",
-      "description": "Niebla ligera: observa con atenciÃ³n. Sin cronÃ³metro. 4 cartas.",
+      "description": "Desafío intenso. Cronómetro: 60s. 8 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 10
@@ -13258,7 +13324,7 @@
         "rotation"
       ],
       "difficulty": "medium",
-      "description": "juega normalmente. Sin cronÃ³metro. 16 cartas.",
+      "description": "Prueba extrema. Cronómetro: 60s. 16 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 80
@@ -13276,7 +13342,7 @@
         "fog"
       ],
       "difficulty": "medium",
-      "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 14 cartas.",
+      "description": "Nivel brutal. Cronómetro: 60s. 14 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 70
@@ -13294,13 +13360,13 @@
         "fog"
       ],
       "difficulty": "medium",
-      "description": "Encuentra trÃ­os idÃ©nticos. Sin cronÃ³metro. 6 cartas.",
+      "description": "Desafío máximo. Cronómetro: 60s. 6 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 15
       },
       "seed": 1739030,
-      "setSize": 3
+      "setSize": 2
     },
     {
       "id": 740,
@@ -13312,7 +13378,7 @@
         "chameleon"
       ],
       "difficulty": "medium",
-      "description": "Cartas que se congelan temporalmente. Sin cronÃ³metro. 16 cartas.",
+      "description": "Nivel extremo. Cronómetro: 60s. 16 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 80
@@ -13330,7 +13396,7 @@
         "bomb"
       ],
       "difficulty": "hard",
-      "description": "La oscuridad cubre el tablero poco a poco. CronÃ³metro: 76s. 16 cartas.",
+      "description": "Desafío intenso. Cronómetro: 76s. 16 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 120
@@ -13345,10 +13411,10 @@
       "pairs": 8,
       "timeSec": 74,
       "mechanics": [
-        "basic"
+        "bomb"
       ],
       "difficulty": "medium",
-      "description": "las cartas estÃ¡n parcialmente ocultas. CronÃ³metro: 74s. 16 cartas.",
+      "description": "Prueba extrema. Cronómetro: 74s. 16 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 80
@@ -13366,7 +13432,7 @@
         "bomb"
       ],
       "difficulty": "medium",
-      "description": "Cartas fantasma aparecen y desaparecen. Sin cronÃ³metro. 12 cartas.",
+      "description": "Nivel brutal. Cronómetro: 60s. 12 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 30
@@ -13384,7 +13450,7 @@
         "bomb"
       ],
       "difficulty": "medium",
-      "description": "Cartas que se congelan temporalmente. Sin cronÃ³metro. 8 cartas.",
+      "description": "Desafío máximo. Cronómetro: 60s. 8 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 40
@@ -13402,7 +13468,7 @@
         "frozen"
       ],
       "difficulty": "medium",
-      "description": "Evita bombas: piensa rÃ¡pido. Sin cronÃ³metro. 8 cartas.",
+      "description": "Nivel extremo. Cronómetro: 60s. 8 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 40
@@ -13420,7 +13486,7 @@
         "ghost"
       ],
       "difficulty": "hard",
-      "description": "El tablero rota de vez en cuando. Sin cronÃ³metro. 18 cartas.",
+      "description": "Desafío intenso. Cronómetro: 60s. 18 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 135
@@ -13432,13 +13498,13 @@
       "id": 747,
       "phase": 15,
       "theme": "palace",
-      "pairs": 12,
+      "pairs": 8,
       "timeSec": 60,
       "mechanics": [
         "trio"
       ],
       "difficulty": "hard",
-      "description": "Encuentra trÃ­os idÃ©nticos. Sin cronÃ³metro. 24 cartas.",
+      "description": "Prueba extrema. Cronómetro: 60s. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 180
@@ -13456,7 +13522,7 @@
         "ghost"
       ],
       "difficulty": "medium",
-      "description": "El tablero rota de vez en cuando. Sin cronÃ³metro. 14 cartas.",
+      "description": "Nivel brutal. Cronómetro: 60s. 14 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 70
@@ -13474,7 +13540,7 @@
         "darkness"
       ],
       "difficulty": "hard",
-      "description": "Las cartas cambian de valor. CronÃ³metro: 84s. 18 cartas.",
+      "description": "Desafío máximo. Cronómetro: 84s. 18 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 135
@@ -13486,19 +13552,24 @@
       "id": 750,
       "phase": 15,
       "theme": "palace",
-      "pairs": 12,
+      "pairs": 8,
       "timeSec": 113,
       "mechanics": [
-        "trio"
+        "frozen",
+        "chameleon",
+        "fog",
+        "trio",
+        "ghost",
+        "darkness"
       ],
       "difficulty": "hard",
-      "description": "Boss: 24 cartas, bomb + fog, crono 113s.",
+      "description": "Boss extremo. Cronómetro: 113s. 24 cartas.",
       "isBoss": true,
       "rewards": {
         "coins": 180
       },
       "seed": 1750233,
-      "setSize": 2
+      "setSize": 3
     },
     {
       "id": 751,
@@ -13510,7 +13581,7 @@
         "ghost"
       ],
       "difficulty": "medium",
-      "description": "Nivel clÃ¡sico sin trucos. CronÃ³metro: 76s. 16 cartas.",
+      "description": "Desafío intenso. Cronómetro: 76s. 16 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 80
@@ -13528,7 +13599,7 @@
         "darkness"
       ],
       "difficulty": "hard",
-      "description": "La oscuridad cubre el tablero poco a poco. Sin cronÃ³metro. 24 cartas.",
+      "description": "Prueba extrema. Cronómetro: 60s. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 180
@@ -13546,13 +13617,13 @@
         "trio"
       ],
       "difficulty": "medium",
-      "description": "Niebla ligera: observa con atenciÃ³n. Sin cronÃ³metro. 4 cartas.",
+      "description": "Nivel brutal. Cronómetro: 60s. 12 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 10
       },
       "seed": 1753020,
-      "setSize": 2
+      "setSize": 3
     },
     {
       "id": 754,
@@ -13564,7 +13635,7 @@
         "bomb"
       ],
       "difficulty": "medium",
-      "description": "Nivel clÃ¡sico sin trucos. CronÃ³metro: 69s. 14 cartas.",
+      "description": "Desafío máximo. Cronómetro: 69s. 14 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 70
@@ -13582,7 +13653,7 @@
         "chameleon"
       ],
       "difficulty": "medium",
-      "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 16 cartas.",
+      "description": "Nivel extremo. Cronómetro: 60s. 16 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 80
@@ -13600,7 +13671,7 @@
         "frozen"
       ],
       "difficulty": "hard",
-      "description": "La oscuridad cubre el tablero poco a poco. CronÃ³metro: 88s. 16 cartas.",
+      "description": "Desafío intenso. Cronómetro: 88s. 16 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 120
@@ -13618,7 +13689,7 @@
         "chameleon"
       ],
       "difficulty": "medium",
-      "description": "El tablero rota de vez en cuando. Sin cronÃ³metro. 6 cartas.",
+      "description": "Prueba extrema. Cronómetro: 60s. 8 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 30
@@ -13633,10 +13704,10 @@
       "pairs": 6,
       "timeSec": 60,
       "mechanics": [
-        "basic"
+        "bomb"
       ],
       "difficulty": "medium",
-      "description": "Cartas que se congelan temporalmente. Sin cronÃ³metro. 12 cartas.",
+      "description": "Nivel brutal. Cronómetro: 60s. 12 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 60
@@ -13654,7 +13725,7 @@
         "bomb"
       ],
       "difficulty": "medium",
-      "description": "Niebla ligera: observa con atenciÃ³n. CronÃ³metro: 80s. 16 cartas.",
+      "description": "Desafío máximo. Cronómetro: 80s. 16 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 80
@@ -13669,10 +13740,10 @@
       "pairs": 6,
       "timeSec": 60,
       "mechanics": [
-        "basic"
+        "bomb"
       ],
       "difficulty": "medium",
-      "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 12 cartas.",
+      "description": "Nivel extremo. Cronómetro: 60s. 12 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 30
@@ -13690,13 +13761,13 @@
         "trio"
       ],
       "difficulty": "medium",
-      "description": "Cartas que se congelan temporalmente. Sin cronÃ³metro. 8 cartas.",
+      "description": "Desafío intenso. Cronómetro: 60s. 12 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 40
       },
       "seed": 1761040,
-      "setSize": 2
+      "setSize": 3
     },
     {
       "id": 762,
@@ -13708,7 +13779,7 @@
         "fog"
       ],
       "difficulty": "medium",
-      "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 16 cartas.",
+      "description": "Prueba extrema. Cronómetro: 60s. 16 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 80
@@ -13726,7 +13797,7 @@
         "bomb"
       ],
       "difficulty": "medium",
-      "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 16 cartas.",
+      "description": "Nivel brutal. Cronómetro: 60s. 16 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 80
@@ -13744,7 +13815,7 @@
         "fog"
       ],
       "difficulty": "medium",
-      "description": "Las cartas cambian de valor. Sin cronÃ³metro. 14 cartas.",
+      "description": "Desafío máximo. Cronómetro: 60s. 14 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 70
@@ -13762,7 +13833,7 @@
         "rotation"
       ],
       "difficulty": "medium",
-      "description": "Niebla ligera: observa con atenciÃ³n. Sin cronÃ³metro. 18 cartas.",
+      "description": "Nivel extremo. Cronómetro: 60s. 18 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 90
@@ -13780,7 +13851,7 @@
         "bomb"
       ],
       "difficulty": "medium",
-      "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 24 cartas.",
+      "description": "Desafío intenso. Cronómetro: 60s. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 120
@@ -13798,7 +13869,7 @@
         "frozen"
       ],
       "difficulty": "medium",
-      "description": "La oscuridad cubre el tablero poco a poco. Sin cronÃ³metro. 16 cartas.",
+      "description": "Prueba extrema. Cronómetro: 60s. 16 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 80
@@ -13816,7 +13887,7 @@
         "frozen"
       ],
       "difficulty": "hard",
-      "description": "El tablero rota de vez en cuando. CronÃ³metro: 108s. 24 cartas.",
+      "description": "Nivel brutal. Cronómetro: 108s. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 180
@@ -13834,7 +13905,7 @@
         "darkness"
       ],
       "difficulty": "medium",
-      "description": "Niebla ligera: observa con atenciÃ³n. CronÃ³metro: 75s. 16 cartas.",
+      "description": "Desafío máximo. Cronómetro: 75s. 16 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 80
@@ -13849,10 +13920,10 @@
       "pairs": 8,
       "timeSec": 60,
       "mechanics": [
-        "basic"
+        "bomb"
       ],
       "difficulty": "medium",
-      "description": "juega normalmente. Sin cronÃ³metro. 16 cartas.",
+      "description": "Nivel extremo. Cronómetro: 60s. 16 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 80
@@ -13870,7 +13941,7 @@
         "chameleon"
       ],
       "difficulty": "medium",
-      "description": "El tablero rota de vez en cuando. CronÃ³metro: 55s. 12 cartas.",
+      "description": "Desafío intenso. Cronómetro: 55s. 12 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 60
@@ -13888,13 +13959,13 @@
         "ghost"
       ],
       "difficulty": "medium",
-      "description": "Encuentra trÃ­os idÃ©nticos. Sin cronÃ³metro. 12 cartas.",
+      "description": "Prueba extrema. Cronómetro: 60s. 12 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 30
       },
       "seed": 1772060,
-      "setSize": 3
+      "setSize": 2
     },
     {
       "id": 773,
@@ -13906,7 +13977,7 @@
         "bomb"
       ],
       "difficulty": "hard",
-      "description": "Niebla ligera: observa con atenciÃ³n. CronÃ³metro: 103s. 20 cartas.",
+      "description": "Nivel brutal. Cronómetro: 103s. 20 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 150
@@ -13924,13 +13995,13 @@
         "trio"
       ],
       "difficulty": "medium",
-      "description": "Cartas que se congelan temporalmente. Sin cronÃ³metro. 8 cartas.",
+      "description": "Desafío máximo. Cronómetro: 60s. 12 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 40
       },
       "seed": 1774040,
-      "setSize": 2
+      "setSize": 3
     },
     {
       "id": 775,
@@ -13942,7 +14013,7 @@
         "frozen"
       ],
       "difficulty": "medium",
-      "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 6 cartas.",
+      "description": "Nivel extremo. Cronómetro: 60s. 8 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 15
@@ -13957,10 +14028,10 @@
       "pairs": 8,
       "timeSec": 73,
       "mechanics": [
-        "basic"
+        "bomb"
       ],
       "difficulty": "medium",
-      "description": "Nivel clÃ¡sico sin trucos. CronÃ³metro: 73s. 16 cartas.",
+      "description": "Desafío intenso. Cronómetro: 73s. 16 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 80
@@ -13978,7 +14049,7 @@
         "darkness"
       ],
       "difficulty": "hard",
-      "description": "La oscuridad cubre el tablero poco a poco. Sin cronÃ³metro. 20 cartas.",
+      "description": "Prueba extrema. Cronómetro: 60s. 20 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 150
@@ -13993,10 +14064,10 @@
       "pairs": 8,
       "timeSec": 78,
       "mechanics": [
-        "basic"
+        "bomb"
       ],
       "difficulty": "hard",
-      "description": "Cartas que se congelan temporalmente. CronÃ³metro: 78s. 16 cartas.",
+      "description": "Nivel brutal. Cronómetro: 78s. 16 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 120
@@ -14014,7 +14085,7 @@
         "chameleon"
       ],
       "difficulty": "medium",
-      "description": "juega normalmente. Sin cronÃ³metro. 16 cartas.",
+      "description": "Desafío máximo. Cronómetro: 60s. 16 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 80
@@ -14032,7 +14103,7 @@
         "darkness"
       ],
       "difficulty": "medium",
-      "description": "La oscuridad cubre el tablero poco a poco. Sin cronÃ³metro. 16 cartas.",
+      "description": "Nivel extremo. Cronómetro: 60s. 16 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 80
@@ -14047,10 +14118,10 @@
       "pairs": 6,
       "timeSec": 60,
       "mechanics": [
-        "basic"
+        "bomb"
       ],
       "difficulty": "medium",
-      "description": "Evita bombas: piensa rÃ¡pido. Sin cronÃ³metro. 12 cartas.",
+      "description": "Desafío intenso. Cronómetro: 60s. 12 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 60
@@ -14068,13 +14139,13 @@
         "trio"
       ],
       "difficulty": "hard",
-      "description": "La oscuridad cubre el tablero poco a poco. CronÃ³metro: 87s. 16 cartas.",
+      "description": "Prueba extrema. Cronómetro: 87s. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 120
       },
       "seed": 1782167,
-      "setSize": 2
+      "setSize": 3
     },
     {
       "id": 783,
@@ -14086,7 +14157,7 @@
         "ghost"
       ],
       "difficulty": "medium",
-      "description": "Cartas fantasma aparecen y desaparecen. Sin cronÃ³metro. 14 cartas.",
+      "description": "Nivel brutal. Cronómetro: 60s. 14 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 70
@@ -14104,7 +14175,7 @@
         "rotation"
       ],
       "difficulty": "medium",
-      "description": "Nivel clÃ¡sico sin trucos. CronÃ³metro: 63s. 14 cartas.",
+      "description": "Desafío máximo. Cronómetro: 63s. 14 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 70
@@ -14122,7 +14193,7 @@
         "darkness"
       ],
       "difficulty": "hard",
-      "description": "Las cartas cambian de valor. CronÃ³metro: 104s. 24 cartas.",
+      "description": "Nivel extremo. Cronómetro: 104s. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 180
@@ -14140,13 +14211,13 @@
         "frozen"
       ],
       "difficulty": "hard",
-      "description": "Encuentra trÃ­os idÃ©nticos. Sin cronÃ³metro. 18 cartas.",
+      "description": "Desafío intenso. Cronómetro: 60s. 18 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 135
       },
       "seed": 1786090,
-      "setSize": 3
+      "setSize": 2
     },
     {
       "id": 787,
@@ -14158,13 +14229,13 @@
         "trio"
       ],
       "difficulty": "medium",
-      "description": "Cartas que se congelan temporalmente. CronÃ³metro: 45s. 10 cartas.",
+      "description": "Prueba extrema. Cronómetro: 45s. 15 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 50
       },
       "seed": 1787095,
-      "setSize": 2
+      "setSize": 3
     },
     {
       "id": 788,
@@ -14176,7 +14247,7 @@
         "bomb"
       ],
       "difficulty": "medium",
-      "description": "Cartas fantasma aparecen y desaparecen. Sin cronÃ³metro. 8 cartas.",
+      "description": "Nivel brutal. Cronómetro: 60s. 8 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 20
@@ -14194,7 +14265,7 @@
         "rotation"
       ],
       "difficulty": "medium",
-      "description": "Evita bombas: piensa rÃ¡pido. Sin cronÃ³metro. 12 cartas.",
+      "description": "Desafío máximo. Cronómetro: 60s. 12 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 60
@@ -14209,10 +14280,10 @@
       "pairs": 9,
       "timeSec": 60,
       "mechanics": [
-        "basic"
+        "bomb"
       ],
       "difficulty": "medium",
-      "description": "Cartas fantasma aparecen y desaparecen. Sin cronÃ³metro. 18 cartas.",
+      "description": "Nivel extremo. Cronómetro: 60s. 18 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 90
@@ -14227,10 +14298,10 @@
       "pairs": 7,
       "timeSec": 60,
       "mechanics": [
-        "basic"
+        "bomb"
       ],
       "difficulty": "medium",
-      "description": "Evita bombas: piensa rÃ¡pido. Sin cronÃ³metro. 14 cartas.",
+      "description": "Desafío intenso. Cronómetro: 60s. 14 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 70
@@ -14248,31 +14319,31 @@
         "trio"
       ],
       "difficulty": "medium",
-      "description": "Niebla ligera: observa con atenciÃ³n. CronÃ³metro: 68s. 12 cartas.",
+      "description": "Prueba extrema. Cronómetro: 68s. 18 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 60
       },
       "seed": 1792128,
-      "setSize": 2
+      "setSize": 3
     },
     {
       "id": 793,
       "phase": 16,
       "theme": "mine",
-      "pairs": 12,
+      "pairs": 8,
       "timeSec": 110,
       "mechanics": [
         "trio"
       ],
       "difficulty": "hard",
-      "description": "La oscuridad cubre el tablero poco a poco. CronÃ³metro: 110s. 24 cartas.",
+      "description": "Nivel brutal. Cronómetro: 110s. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 180
       },
       "seed": 1793230,
-      "setSize": 2
+      "setSize": 3
     },
     {
       "id": 794,
@@ -14284,7 +14355,7 @@
         "darkness"
       ],
       "difficulty": "medium",
-      "description": "Cartas fantasma aparecen y desaparecen. CronÃ³metro: 59s. 12 cartas.",
+      "description": "Desafío máximo. Cronómetro: 59s. 12 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 60
@@ -14302,7 +14373,7 @@
         "chameleon"
       ],
       "difficulty": "medium",
-      "description": "Evita bombas: piensa rÃ¡pido. Sin cronÃ³metro. 6 cartas.",
+      "description": "Nivel extremo. Cronómetro: 60s. 8 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 30
@@ -14320,7 +14391,7 @@
         "ghost"
       ],
       "difficulty": "medium",
-      "description": "El tablero rota de vez en cuando. Sin cronÃ³metro. 8 cartas.",
+      "description": "Desafío intenso. Cronómetro: 60s. 8 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 40
@@ -14338,7 +14409,7 @@
         "frozen"
       ],
       "difficulty": "medium",
-      "description": "Niebla ligera: observa con atenciÃ³n. Sin cronÃ³metro. 24 cartas.",
+      "description": "Prueba extrema. Cronómetro: 60s. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 120
@@ -14356,13 +14427,13 @@
         "bomb"
       ],
       "difficulty": "medium",
-      "description": "Encuentra trÃ­os idÃ©nticos. Sin cronÃ³metro. 12 cartas.",
+      "description": "Nivel brutal. Cronómetro: 60s. 12 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 30
       },
       "seed": 1798060,
-      "setSize": 3
+      "setSize": 2
     },
     {
       "id": 799,
@@ -14374,7 +14445,7 @@
         "chameleon"
       ],
       "difficulty": "hard",
-      "description": "Las cartas cambian de valor. Sin cronÃ³metro. 18 cartas.",
+      "description": "Desafío máximo. Cronómetro: 60s. 18 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 135
@@ -14389,10 +14460,15 @@
       "pairs": 12,
       "timeSec": 98,
       "mechanics": [
-        "ghost"
+        "rotation",
+        "bomb",
+        "frozen",
+        "chameleon",
+        "fog",
+        "trio"
       ],
       "difficulty": "hard",
-      "description": "Boss: 24 cartas, fog + darkness, crono 98s.",
+      "description": "Boss extremo. Cronómetro: 98s. 24 cartas.",
       "isBoss": true,
       "rewards": {
         "coins": 180
@@ -14410,7 +14486,7 @@
         "darkness"
       ],
       "difficulty": "medium",
-      "description": "Niebla ligera: observa con atenciÃ³n. Sin cronÃ³metro. 14 cartas.",
+      "description": "Desafío intenso. Cronómetro: 60s. 14 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 70
@@ -14428,7 +14504,7 @@
         "frozen"
       ],
       "difficulty": "medium",
-      "description": "Cartas fantasma aparecen y desaparecen. Sin cronÃ³metro. 8 cartas.",
+      "description": "Prueba extrema. Cronómetro: 60s. 8 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 20
@@ -14446,13 +14522,13 @@
         "trio"
       ],
       "difficulty": "hard",
-      "description": "El tablero rota de vez en cuando. CronÃ³metro: 84s. 16 cartas.",
+      "description": "Nivel brutal. Cronómetro: 84s. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 120
       },
       "seed": 1803164,
-      "setSize": 2
+      "setSize": 3
     },
     {
       "id": 804,
@@ -14464,7 +14540,7 @@
         "frozen"
       ],
       "difficulty": "medium",
-      "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 12 cartas.",
+      "description": "Desafío máximo. Cronómetro: 60s. 12 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 30
@@ -14482,7 +14558,7 @@
         "frozen"
       ],
       "difficulty": "medium",
-      "description": "El tablero rota de vez en cuando. Sin cronÃ³metro. 10 cartas.",
+      "description": "Nivel extremo. Cronómetro: 60s. 10 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 50
@@ -14500,13 +14576,13 @@
         "trio"
       ],
       "difficulty": "medium",
-      "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 10 cartas.",
+      "description": "Desafío intenso. Cronómetro: 60s. 15 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 25
       },
       "seed": 1806050,
-      "setSize": 2
+      "setSize": 3
     },
     {
       "id": 807,
@@ -14518,7 +14594,7 @@
         "chameleon"
       ],
       "difficulty": "hard",
-      "description": "Las cartas cambian de valor. CronÃ³metro: 85s. 18 cartas.",
+      "description": "Prueba extrema. Cronómetro: 85s. 18 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 135
@@ -14530,19 +14606,19 @@
       "id": 808,
       "phase": 17,
       "theme": "temple",
-      "pairs": 9,
+      "pairs": 8,
       "timeSec": 84,
       "mechanics": [
         "trio"
       ],
       "difficulty": "hard",
-      "description": "Nivel clÃ¡sico sin trucos. CronÃ³metro: 84s. 18 cartas.",
+      "description": "Nivel brutal. Cronómetro: 84s. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 135
       },
       "seed": 1808174,
-      "setSize": 2
+      "setSize": 3
     },
     {
       "id": 809,
@@ -14554,7 +14630,7 @@
         "ghost"
       ],
       "difficulty": "medium",
-      "description": "Cartas que se congelan temporalmente. Sin cronÃ³metro. 8 cartas.",
+      "description": "Desafío máximo. Cronómetro: 60s. 8 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 40
@@ -14572,7 +14648,7 @@
         "rotation"
       ],
       "difficulty": "medium",
-      "description": "juega normalmente. Sin cronÃ³metro. 20 cartas.",
+      "description": "Nivel extremo. Cronómetro: 60s. 20 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 100
@@ -14587,10 +14663,10 @@
       "pairs": 4,
       "timeSec": 60,
       "mechanics": [
-        "basic"
+        "bomb"
       ],
       "difficulty": "medium",
-      "description": "Las cartas cambian de valor. Sin cronÃ³metro. 8 cartas.",
+      "description": "Desafío intenso. Cronómetro: 60s. 8 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 40
@@ -14608,7 +14684,7 @@
         "fog"
       ],
       "difficulty": "hard",
-      "description": "Cartas que se congelan temporalmente. CronÃ³metro: 76s. 14 cartas.",
+      "description": "Prueba extrema. Cronómetro: 76s. 14 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 105
@@ -14626,7 +14702,7 @@
         "ghost"
       ],
       "difficulty": "medium",
-      "description": "Evita bombas: piensa rÃ¡pido. Sin cronÃ³metro. 14 cartas.",
+      "description": "Nivel brutal. Cronómetro: 60s. 14 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 70
@@ -14644,7 +14720,7 @@
         "frozen"
       ],
       "difficulty": "medium",
-      "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 24 cartas.",
+      "description": "Desafío máximo. Cronómetro: 60s. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 120
@@ -14662,7 +14738,7 @@
         "frozen"
       ],
       "difficulty": "medium",
-      "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 10 cartas.",
+      "description": "Nivel extremo. Cronómetro: 60s. 10 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 25
@@ -14680,7 +14756,7 @@
         "darkness"
       ],
       "difficulty": "medium",
-      "description": "Cartas fantasma aparecen y desaparecen. CronÃ³metro: 64s. 14 cartas.",
+      "description": "Desafío intenso. Cronómetro: 64s. 14 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 70
@@ -14698,7 +14774,7 @@
         "darkness"
       ],
       "difficulty": "medium",
-      "description": "Niebla ligera: observa con atenciÃ³n. Sin cronÃ³metro. 6 cartas.",
+      "description": "Prueba extrema. Cronómetro: 60s. 8 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 15
@@ -14716,7 +14792,7 @@
         "rotation"
       ],
       "difficulty": "hard",
-      "description": "El tablero rota de vez en cuando. Sin cronÃ³metro. 18 cartas.",
+      "description": "Nivel brutal. Cronómetro: 60s. 18 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 135
@@ -14734,7 +14810,7 @@
         "bomb"
       ],
       "difficulty": "medium",
-      "description": "Cartas que se congelan temporalmente. Sin cronÃ³metro. 12 cartas.",
+      "description": "Desafío máximo. Cronómetro: 60s. 12 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 60
@@ -14752,7 +14828,7 @@
         "rotation"
       ],
       "difficulty": "hard",
-      "description": "Cartas fantasma aparecen y desaparecen. CronÃ³metro: 88s. 18 cartas.",
+      "description": "Nivel extremo. Cronómetro: 88s. 18 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 135
@@ -14770,13 +14846,13 @@
         "trio"
       ],
       "difficulty": "medium",
-      "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 16 cartas.",
+      "description": "Desafío intenso. Cronómetro: 60s. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 80
       },
       "seed": 1821080,
-      "setSize": 2
+      "setSize": 3
     },
     {
       "id": 822,
@@ -14788,7 +14864,7 @@
         "darkness"
       ],
       "difficulty": "hard",
-      "description": "El tablero rota de vez en cuando. CronÃ³metro: 99s. 24 cartas.",
+      "description": "Prueba extrema. Cronómetro: 99s. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 180
@@ -14806,7 +14882,7 @@
         "fog"
       ],
       "difficulty": "medium",
-      "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 14 cartas.",
+      "description": "Nivel brutal. Cronómetro: 60s. 14 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 70
@@ -14824,7 +14900,7 @@
         "bomb"
       ],
       "difficulty": "medium",
-      "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 8 cartas.",
+      "description": "Desafío máximo. Cronómetro: 60s. 8 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 20
@@ -14839,10 +14915,10 @@
       "pairs": 7,
       "timeSec": 62,
       "mechanics": [
-        "basic"
+        "bomb"
       ],
       "difficulty": "medium",
-      "description": "Cartas fantasma aparecen y desaparecen. CronÃ³metro: 62s. 14 cartas.",
+      "description": "Nivel extremo. Cronómetro: 62s. 14 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 70
@@ -14860,7 +14936,7 @@
         "rotation"
       ],
       "difficulty": "hard",
-      "description": "Las cartas cambian de valor. CronÃ³metro: 92s. 20 cartas.",
+      "description": "Desafío intenso. Cronómetro: 92s. 20 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 150
@@ -14878,13 +14954,13 @@
         "trio"
       ],
       "difficulty": "medium",
-      "description": "Nivel clÃ¡sico sin trucos. CronÃ³metro: 88s. 16 cartas.",
+      "description": "Prueba extrema. Cronómetro: 88s. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 80
       },
       "seed": 1827168,
-      "setSize": 2
+      "setSize": 3
     },
     {
       "id": 828,
@@ -14896,7 +14972,7 @@
         "darkness"
       ],
       "difficulty": "hard",
-      "description": "Las cartas cambian de valor. Sin cronÃ³metro. 18 cartas.",
+      "description": "Nivel brutal. Cronómetro: 60s. 18 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 135
@@ -14914,31 +14990,31 @@
         "trio"
       ],
       "difficulty": "medium",
-      "description": "Niebla ligera: observa con atenciÃ³n. Sin cronÃ³metro. 8 cartas.",
+      "description": "Desafío máximo. Cronómetro: 60s. 12 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 20
       },
       "seed": 1829040,
-      "setSize": 2
+      "setSize": 3
     },
     {
       "id": 830,
       "phase": 17,
       "theme": "temple",
-      "pairs": 10,
+      "pairs": 8,
       "timeSec": 60,
       "mechanics": [
         "trio"
       ],
       "difficulty": "medium",
-      "description": "juega normalmente. Sin cronÃ³metro. 20 cartas.",
+      "description": "Nivel extremo. Cronómetro: 60s. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 100
       },
       "seed": 1830100,
-      "setSize": 2
+      "setSize": 3
     },
     {
       "id": 831,
@@ -14950,7 +15026,7 @@
         "chameleon"
       ],
       "difficulty": "medium",
-      "description": "Nivel clÃ¡sico sin trucos. CronÃ³metro: 62s. 14 cartas.",
+      "description": "Desafío intenso. Cronómetro: 62s. 14 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 70
@@ -14968,7 +15044,7 @@
         "chameleon"
       ],
       "difficulty": "medium",
-      "description": "Cartas que se congelan temporalmente. Sin cronÃ³metro. 6 cartas.",
+      "description": "Prueba extrema. Cronómetro: 60s. 8 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 30
@@ -14986,7 +15062,7 @@
         "fog"
       ],
       "difficulty": "medium",
-      "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 6 cartas.",
+      "description": "Nivel brutal. Cronómetro: 60s. 8 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 15
@@ -15004,7 +15080,7 @@
         "fog"
       ],
       "difficulty": "medium",
-      "description": "Nivel clÃ¡sico sin trucos. CronÃ³metro: 63s. 12 cartas.",
+      "description": "Desafío máximo. Cronómetro: 63s. 12 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 60
@@ -15022,7 +15098,7 @@
         "rotation"
       ],
       "difficulty": "hard",
-      "description": "Las cartas cambian de valor. CronÃ³metro: 94s. 20 cartas.",
+      "description": "Nivel extremo. Cronómetro: 94s. 20 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 150
@@ -15040,31 +15116,31 @@
         "bomb"
       ],
       "difficulty": "hard",
-      "description": "Encuentra trÃ­os idÃ©nticos. Sin cronÃ³metro. 24 cartas.",
+      "description": "Desafío intenso. Cronómetro: 60s. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 180
       },
       "seed": 1836120,
-      "setSize": 3
+      "setSize": 2
     },
     {
       "id": 837,
       "phase": 17,
       "theme": "temple",
-      "pairs": 10,
+      "pairs": 8,
       "timeSec": 92,
       "mechanics": [
         "trio"
       ],
       "difficulty": "hard",
-      "description": "Nivel clÃ¡sico sin trucos. CronÃ³metro: 92s. 20 cartas.",
+      "description": "Prueba extrema. Cronómetro: 92s. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 150
       },
       "seed": 1837192,
-      "setSize": 2
+      "setSize": 3
     },
     {
       "id": 838,
@@ -15073,10 +15149,10 @@
       "pairs": 4,
       "timeSec": 60,
       "mechanics": [
-        "basic"
+        "bomb"
       ],
       "difficulty": "medium",
-      "description": "El tablero rota de vez en cuando. Sin cronÃ³metro. 8 cartas.",
+      "description": "Nivel brutal. Cronómetro: 60s. 8 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 40
@@ -15091,10 +15167,10 @@
       "pairs": 8,
       "timeSec": 60,
       "mechanics": [
-        "basic"
+        "bomb"
       ],
       "difficulty": "medium",
-      "description": "La oscuridad cubre el tablero poco a poco. Sin cronÃ³metro. 16 cartas.",
+      "description": "Desafío máximo. Cronómetro: 60s. 16 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 80
@@ -15112,7 +15188,7 @@
         "chameleon"
       ],
       "difficulty": "medium",
-      "description": "Cartas fantasma aparecen y desaparecen. Sin cronÃ³metro. 8 cartas.",
+      "description": "Nivel extremo. Cronómetro: 60s. 8 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 20
@@ -15130,7 +15206,7 @@
         "frozen"
       ],
       "difficulty": "hard",
-      "description": "Nivel clÃ¡sico sin trucos. CronÃ³metro: 92s. 22 cartas.",
+      "description": "Desafío intenso. Cronómetro: 92s. 22 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 165
@@ -15148,7 +15224,7 @@
         "ghost"
       ],
       "difficulty": "hard",
-      "description": "La oscuridad cubre el tablero poco a poco. Sin cronÃ³metro. 24 cartas.",
+      "description": "Prueba extrema. Cronómetro: 60s. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 180
@@ -15166,7 +15242,7 @@
         "darkness"
       ],
       "difficulty": "hard",
-      "description": "Las cartas cambian de valor. CronÃ³metro: 83s. 16 cartas.",
+      "description": "Nivel brutal. Cronómetro: 83s. 16 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 120
@@ -15184,7 +15260,7 @@
         "ghost"
       ],
       "difficulty": "medium",
-      "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 16 cartas.",
+      "description": "Desafío máximo. Cronómetro: 60s. 16 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 80
@@ -15202,7 +15278,7 @@
         "bomb"
       ],
       "difficulty": "medium",
-      "description": "El tablero rota de vez en cuando. Sin cronÃ³metro. 14 cartas.",
+      "description": "Nivel extremo. Cronómetro: 60s. 14 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 70
@@ -15220,7 +15296,7 @@
         "rotation"
       ],
       "difficulty": "medium",
-      "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 12 cartas.",
+      "description": "Desafío intenso. Cronómetro: 60s. 12 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 30
@@ -15238,13 +15314,13 @@
         "darkness"
       ],
       "difficulty": "medium",
-      "description": "Encuentra trÃ­os idÃ©nticos. Sin cronÃ³metro. 12 cartas.",
+      "description": "Prueba extrema. Cronómetro: 60s. 12 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 30
       },
       "seed": 1847060,
-      "setSize": 3
+      "setSize": 2
     },
     {
       "id": 848,
@@ -15256,7 +15332,7 @@
         "rotation"
       ],
       "difficulty": "medium",
-      "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 16 cartas.",
+      "description": "Nivel brutal. Cronómetro: 60s. 16 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 80
@@ -15274,7 +15350,7 @@
         "darkness"
       ],
       "difficulty": "medium",
-      "description": "Niebla antes del Boss. Sin cronÃ³metro. 4 cartas.",
+      "description": "Desafío máximo. Cronómetro: 60s. 8 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 20
@@ -15286,19 +15362,26 @@
       "id": 850,
       "phase": 17,
       "theme": "temple",
-      "pairs": 12,
+      "pairs": 8,
       "timeSec": 113,
       "mechanics": [
+        "ghost",
+        "darkness",
+        "rotation",
+        "bomb",
+        "frozen",
+        "chameleon",
+        "fog",
         "trio"
       ],
       "difficulty": "hard",
-      "description": "Boss: 24 cartas, rotation + bomb, crono 113s.",
+      "description": "Boss extremo. Cronómetro: 113s. 24 cartas.",
       "isBoss": true,
       "rewards": {
         "coins": 180
       },
       "seed": 1850233,
-      "setSize": 2
+      "setSize": 3
     },
     {
       "id": 851,
@@ -15310,7 +15393,7 @@
         "fog"
       ],
       "difficulty": "hard",
-      "description": "La oscuridad cubre el tablero poco a poco. CronÃ³metro: 87s. 16 cartas.",
+      "description": "Desafío intenso. Cronómetro: 87s. 16 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 120
@@ -15328,7 +15411,7 @@
         "fog"
       ],
       "difficulty": "hard",
-      "description": "Nivel clÃ¡sico sin trucos. CronÃ³metro: 102s. 22 cartas.",
+      "description": "Prueba extrema. Cronómetro: 102s. 22 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 165
@@ -15346,7 +15429,7 @@
         "bomb"
       ],
       "difficulty": "medium",
-      "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 8 cartas.",
+      "description": "Nivel brutal. Cronómetro: 60s. 8 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 20
@@ -15361,10 +15444,10 @@
       "pairs": 8,
       "timeSec": 60,
       "mechanics": [
-        "basic"
+        "bomb"
       ],
       "difficulty": "medium",
-      "description": "El tablero rota de vez en cuando. Sin cronÃ³metro. 16 cartas.",
+      "description": "Desafío máximo. Cronómetro: 60s. 16 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 80
@@ -15382,7 +15465,7 @@
         "bomb"
       ],
       "difficulty": "medium",
-      "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 16 cartas.",
+      "description": "Nivel extremo. Cronómetro: 60s. 16 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 80
@@ -15400,7 +15483,7 @@
         "rotation"
       ],
       "difficulty": "medium",
-      "description": "las cartas estÃ¡n parcialmente ocultas. CronÃ³metro: 85s. 16 cartas.",
+      "description": "Desafío intenso. Cronómetro: 85s. 16 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 80
@@ -15418,7 +15501,7 @@
         "darkness"
       ],
       "difficulty": "medium",
-      "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 8 cartas.",
+      "description": "Prueba extrema. Cronómetro: 60s. 8 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 20
@@ -15436,7 +15519,7 @@
         "frozen"
       ],
       "difficulty": "medium",
-      "description": "Niebla ligera: observa con atenciÃ³n. Sin cronÃ³metro. 8 cartas.",
+      "description": "Nivel brutal. Cronómetro: 60s. 8 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 20
@@ -15454,7 +15537,7 @@
         "ghost"
       ],
       "difficulty": "medium",
-      "description": "Cartas que se congelan temporalmente. Sin cronÃ³metro. 10 cartas.",
+      "description": "Desafío máximo. Cronómetro: 60s. 10 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 50
@@ -15472,7 +15555,7 @@
         "frozen"
       ],
       "difficulty": "medium",
-      "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 16 cartas.",
+      "description": "Nivel extremo. Cronómetro: 60s. 16 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 80
@@ -15490,7 +15573,7 @@
         "rotation"
       ],
       "difficulty": "medium",
-      "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 12 cartas.",
+      "description": "Desafío intenso. Cronómetro: 60s. 12 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 30
@@ -15508,7 +15591,7 @@
         "fog"
       ],
       "difficulty": "medium",
-      "description": "Cartas fantasma aparecen y desaparecen. Sin cronÃ³metro. 10 cartas.",
+      "description": "Prueba extrema. Cronómetro: 60s. 10 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 25
@@ -15526,7 +15609,7 @@
         "darkness"
       ],
       "difficulty": "medium",
-      "description": "Cartas que se congelan temporalmente. Sin cronÃ³metro. 16 cartas.",
+      "description": "Nivel brutal. Cronómetro: 60s. 16 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 80
@@ -15544,7 +15627,7 @@
         "bomb"
       ],
       "difficulty": "medium",
-      "description": "Cartas fantasma aparecen y desaparecen. Sin cronÃ³metro. 12 cartas.",
+      "description": "Desafío máximo. Cronómetro: 60s. 12 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 30
@@ -15562,13 +15645,13 @@
         "trio"
       ],
       "difficulty": "medium",
-      "description": "las cartas pueden rotar. CronÃ³metro: 80s. 16 cartas.",
+      "description": "Nivel extremo. Cronómetro: 80s. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 80
       },
       "seed": 1865160,
-      "setSize": 2
+      "setSize": 3
     },
     {
       "id": 866,
@@ -15577,10 +15660,10 @@
       "pairs": 9,
       "timeSec": 60,
       "mechanics": [
-        "basic"
+        "bomb"
       ],
       "difficulty": "hard",
-      "description": "Evita bombas: piensa rÃ¡pido. Sin cronÃ³metro. 18 cartas.",
+      "description": "Desafío intenso. Cronómetro: 60s. 18 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 135
@@ -15598,7 +15681,7 @@
         "rotation"
       ],
       "difficulty": "medium",
-      "description": "El tablero rota de vez en cuando. Sin cronÃ³metro. 14 cartas.",
+      "description": "Prueba extrema. Cronómetro: 60s. 14 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 70
@@ -15616,7 +15699,7 @@
         "chameleon"
       ],
       "difficulty": "hard",
-      "description": "La oscuridad cubre el tablero poco a poco. CronÃ³metro: 82s. 16 cartas.",
+      "description": "Nivel brutal. Cronómetro: 82s. 16 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 120
@@ -15634,13 +15717,13 @@
         "trio"
       ],
       "difficulty": "medium",
-      "description": "Evita bombas: piensa rÃ¡pido. Sin cronÃ³metro. 12 cartas.",
+      "description": "Desafío máximo. Cronómetro: 60s. 18 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 60
       },
       "seed": 1869060,
-      "setSize": 2
+      "setSize": 3
     },
     {
       "id": 870,
@@ -15652,7 +15735,7 @@
         "chameleon"
       ],
       "difficulty": "hard",
-      "description": "Cartas fantasma aparecen y desaparecen. CronÃ³metro: 91s. 20 cartas.",
+      "description": "Nivel extremo. Cronómetro: 91s. 20 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 150
@@ -15667,16 +15750,16 @@
       "pairs": 12,
       "timeSec": 60,
       "mechanics": [
-        "basic"
+        "bomb"
       ],
       "difficulty": "hard",
-      "description": "Encuentra trÃ­os idÃ©nticos. Sin cronÃ³metro. 24 cartas.",
+      "description": "Desafío intenso. Cronómetro: 60s. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 180
       },
       "seed": 1871120,
-      "setSize": 3
+      "setSize": 2
     },
     {
       "id": 872,
@@ -15688,7 +15771,7 @@
         "bomb"
       ],
       "difficulty": "medium",
-      "description": "juega normalmente. Sin cronÃ³metro. 16 cartas.",
+      "description": "Prueba extrema. Cronómetro: 60s. 16 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 80
@@ -15706,7 +15789,7 @@
         "darkness"
       ],
       "difficulty": "medium",
-      "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 12 cartas.",
+      "description": "Nivel brutal. Cronómetro: 60s. 12 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 30
@@ -15724,7 +15807,7 @@
         "ghost"
       ],
       "difficulty": "medium",
-      "description": "Cartas que se congelan temporalmente. Sin cronÃ³metro. 14 cartas.",
+      "description": "Desafío máximo. Cronómetro: 60s. 14 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 70
@@ -15742,7 +15825,7 @@
         "darkness"
       ],
       "difficulty": "hard",
-      "description": "las cartas pueden rotar. CronÃ³metro: 102s. 24 cartas.",
+      "description": "Nivel extremo. Cronómetro: 102s. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 180
@@ -15754,19 +15837,19 @@
       "id": 876,
       "phase": 18,
       "theme": "castle",
-      "pairs": 10,
+      "pairs": 8,
       "timeSec": 60,
       "mechanics": [
         "trio"
       ],
       "difficulty": "medium",
-      "description": "Cartas fantasma aparecen y desaparecen. Sin cronÃ³metro. 20 cartas.",
+      "description": "Desafío intenso. Cronómetro: 60s. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 100
       },
       "seed": 1876100,
-      "setSize": 2
+      "setSize": 3
     },
     {
       "id": 877,
@@ -15778,7 +15861,7 @@
         "trio"
       ],
       "difficulty": "medium",
-      "description": "Encuentra trÃ­os idÃ©nticos. Sin cronÃ³metro. 12 cartas.",
+      "description": "Prueba extrema. Cronómetro: 60s. 18 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 30
@@ -15793,10 +15876,10 @@
       "pairs": 7,
       "timeSec": 76,
       "mechanics": [
-        "basic"
+        "bomb"
       ],
       "difficulty": "hard",
-      "description": "El tablero rota de vez en cuando. CronÃ³metro: 76s. 14 cartas.",
+      "description": "Nivel brutal. Cronómetro: 76s. 14 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 105
@@ -15811,10 +15894,10 @@
       "pairs": 12,
       "timeSec": 105,
       "mechanics": [
-        "basic"
+        "bomb"
       ],
       "difficulty": "hard",
-      "description": "Niebla ligera: observa con atenciÃ³n. CronÃ³metro: 105s. 24 cartas.",
+      "description": "Desafío máximo. Cronómetro: 105s. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 180
@@ -15832,7 +15915,7 @@
         "bomb"
       ],
       "difficulty": "medium",
-      "description": "Nivel clÃ¡sico sin trucos. CronÃ³metro: 79s. 16 cartas.",
+      "description": "Nivel extremo. Cronómetro: 79s. 16 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 80
@@ -15847,10 +15930,10 @@
       "pairs": 4,
       "timeSec": 60,
       "mechanics": [
-        "basic"
+        "bomb"
       ],
       "difficulty": "medium",
-      "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 8 cartas.",
+      "description": "Desafío intenso. Cronómetro: 60s. 8 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 20
@@ -15868,7 +15951,7 @@
         "chameleon"
       ],
       "difficulty": "medium",
-      "description": "Las cartas cambian de valor. Sin cronÃ³metro. 4 cartas.",
+      "description": "Prueba extrema. Cronómetro: 60s. 8 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 20
@@ -15886,7 +15969,7 @@
         "rotation"
       ],
       "difficulty": "medium",
-      "description": "Evita bombas: piensa rÃ¡pido. Sin cronÃ³metro. 12 cartas.",
+      "description": "Nivel brutal. Cronómetro: 60s. 12 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 60
@@ -15904,7 +15987,7 @@
         "chameleon"
       ],
       "difficulty": "hard",
-      "description": "La oscuridad cubre el tablero poco a poco. CronÃ³metro: 80s. 16 cartas.",
+      "description": "Desafío máximo. Cronómetro: 80s. 16 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 120
@@ -15922,7 +16005,7 @@
         "ghost"
       ],
       "difficulty": "medium",
-      "description": "Nivel clÃ¡sico sin trucos. CronÃ³metro: 72s. 14 cartas.",
+      "description": "Nivel extremo. Cronómetro: 72s. 14 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 70
@@ -15940,7 +16023,7 @@
         "darkness"
       ],
       "difficulty": "medium",
-      "description": "Cartas que se congelan temporalmente. Sin cronÃ³metro. 8 cartas.",
+      "description": "Desafío intenso. Cronómetro: 60s. 8 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 40
@@ -15955,10 +16038,10 @@
       "pairs": 8,
       "timeSec": 72,
       "mechanics": [
-        "basic"
+        "bomb"
       ],
       "difficulty": "hard",
-      "description": "Evita bombas: piensa rÃ¡pido. CronÃ³metro: 72s. 16 cartas.",
+      "description": "Prueba extrema. Cronómetro: 72s. 16 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 120
@@ -15976,7 +16059,7 @@
         "fog"
       ],
       "difficulty": "medium",
-      "description": "Cartas fantasma aparecen y desaparecen. Sin cronÃ³metro. 16 cartas.",
+      "description": "Nivel brutal. Cronómetro: 60s. 16 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 80
@@ -15994,7 +16077,7 @@
         "chameleon"
       ],
       "difficulty": "medium",
-      "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 14 cartas.",
+      "description": "Desafío máximo. Cronómetro: 60s. 14 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 70
@@ -16012,7 +16095,7 @@
         "frozen"
       ],
       "difficulty": "medium",
-      "description": "Cartas fantasma aparecen y desaparecen. CronÃ³metro: 72s. 16 cartas.",
+      "description": "Nivel extremo. Cronómetro: 72s. 16 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 80
@@ -16030,7 +16113,7 @@
         "darkness"
       ],
       "difficulty": "medium",
-      "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 14 cartas.",
+      "description": "Desafío intenso. Cronómetro: 60s. 14 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 70
@@ -16048,13 +16131,13 @@
         "ghost"
       ],
       "difficulty": "medium",
-      "description": "Encuentra trÃ­os idÃ©nticos. Sin cronÃ³metro. 12 cartas.",
+      "description": "Prueba extrema. Cronómetro: 60s. 12 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 30
       },
       "seed": 1892060,
-      "setSize": 3
+      "setSize": 2
     },
     {
       "id": 893,
@@ -16066,7 +16149,7 @@
         "chameleon"
       ],
       "difficulty": "medium",
-      "description": "Niebla ligera: observa con atenciÃ³n. Sin cronÃ³metro. 4 cartas.",
+      "description": "Nivel brutal. Cronómetro: 60s. 8 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 10
@@ -16084,7 +16167,7 @@
         "rotation"
       ],
       "difficulty": "medium",
-      "description": "La oscuridad cubre el tablero poco a poco. Sin cronÃ³metro. 16 cartas.",
+      "description": "Desafío máximo. Cronómetro: 60s. 16 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 80
@@ -16102,13 +16185,13 @@
         "bomb"
       ],
       "difficulty": "hard",
-      "description": "Encuentra trÃ­os idÃ©nticos. Sin cronÃ³metro. 24 cartas.",
+      "description": "Nivel extremo. Cronómetro: 60s. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 180
       },
       "seed": 1895120,
-      "setSize": 3
+      "setSize": 2
     },
     {
       "id": 896,
@@ -16120,7 +16203,7 @@
         "frozen"
       ],
       "difficulty": "medium",
-      "description": "juega normalmente. Sin cronÃ³metro. 16 cartas.",
+      "description": "Desafío intenso. Cronómetro: 60s. 16 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 80
@@ -16138,13 +16221,13 @@
         "frozen"
       ],
       "difficulty": "medium",
-      "description": "Encuentra trÃ­os idÃ©nticos. Sin cronÃ³metro. 12 cartas.",
+      "description": "Prueba extrema. Cronómetro: 60s. 12 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 30
       },
       "seed": 1897060,
-      "setSize": 3
+      "setSize": 2
     },
     {
       "id": 898,
@@ -16156,7 +16239,7 @@
         "frozen"
       ],
       "difficulty": "hard",
-      "description": "las cartas estÃ¡n parcialmente ocultas. CronÃ³metro: 101s. 24 cartas.",
+      "description": "Nivel brutal. Cronómetro: 101s. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 180
@@ -16174,7 +16257,7 @@
         "fog"
       ],
       "difficulty": "medium",
-      "description": "Nivel clÃ¡sico sin trucos. CronÃ³metro: 72s. 14 cartas.",
+      "description": "Desafío máximo. Cronómetro: 72s. 14 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 70
@@ -16189,10 +16272,17 @@
       "pairs": 12,
       "timeSec": 113,
       "mechanics": [
-        "chameleon"
+        "fog",
+        "ghost",
+        "darkness",
+        "rotation",
+        "bomb",
+        "frozen",
+        "chameleon",
+        "trio"
       ],
       "difficulty": "hard",
-      "description": "Boss: 24 cartas, ghost + darkness, crono 113s.",
+      "description": "Boss extremo. Cronómetro: 113s. 24 cartas.",
       "isBoss": true,
       "rewards": {
         "coins": 180
@@ -16210,7 +16300,7 @@
         "frozen"
       ],
       "difficulty": "medium",
-      "description": "El tablero rota de vez en cuando. Sin cronÃ³metro. 14 cartas.",
+      "description": "Desafío intenso. Cronómetro: 60s. 14 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 70
@@ -16228,13 +16318,13 @@
         "trio"
       ],
       "difficulty": "medium",
-      "description": "Cartas fantasma aparecen y desaparecen. Sin cronÃ³metro. 6 cartas.",
+      "description": "Prueba extrema. Cronómetro: 60s. 12 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 15
       },
       "seed": 1902030,
-      "setSize": 2
+      "setSize": 3
     },
     {
       "id": 903,
@@ -16246,7 +16336,7 @@
         "ghost"
       ],
       "difficulty": "hard",
-      "description": "El tablero rota de vez en cuando. CronÃ³metro: 87s. 16 cartas.",
+      "description": "Nivel brutal. Cronómetro: 87s. 16 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 120
@@ -16264,7 +16354,7 @@
         "fog"
       ],
       "difficulty": "hard",
-      "description": "Cartas que se congelan temporalmente. CronÃ³metro: 82s. 16 cartas.",
+      "description": "Desafío máximo. Cronómetro: 82s. 16 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 120
@@ -16282,7 +16372,7 @@
         "fog"
       ],
       "difficulty": "medium",
-      "description": "Cartas fantasma aparecen y desaparecen. Sin cronÃ³metro. 16 cartas.",
+      "description": "Nivel extremo. Cronómetro: 60s. 16 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 80
@@ -16300,7 +16390,7 @@
         "ghost"
       ],
       "difficulty": "medium",
-      "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 18 cartas.",
+      "description": "Desafío intenso. Cronómetro: 60s. 18 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 90
@@ -16318,7 +16408,7 @@
         "bomb"
       ],
       "difficulty": "hard",
-      "description": "Nivel clÃ¡sico sin trucos. CronÃ³metro: 107s. 24 cartas.",
+      "description": "Prueba extrema. Cronómetro: 107s. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 180
@@ -16333,10 +16423,10 @@
       "pairs": 4,
       "timeSec": 60,
       "mechanics": [
-        "basic"
+        "bomb"
       ],
       "difficulty": "medium",
-      "description": "Cartas fantasma aparecen y desaparecen. Sin cronÃ³metro. 8 cartas.",
+      "description": "Nivel brutal. Cronómetro: 60s. 8 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 20
@@ -16354,7 +16444,7 @@
         "chameleon"
       ],
       "difficulty": "medium",
-      "description": "Niebla ligera: observa con atenciÃ³n. CronÃ³metro: 45s. 10 cartas.",
+      "description": "Desafío máximo. Cronómetro: 45s. 10 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 50
@@ -16372,7 +16462,7 @@
         "bomb"
       ],
       "difficulty": "hard",
-      "description": "las cartas pueden rotar. CronÃ³metro: 92s. 20 cartas.",
+      "description": "Nivel extremo. Cronómetro: 92s. 20 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 150
@@ -16390,7 +16480,7 @@
         "bomb"
       ],
       "difficulty": "medium",
-      "description": "Cartas que se congelan temporalmente. Sin cronÃ³metro. 14 cartas.",
+      "description": "Desafío intenso. Cronómetro: 60s. 14 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 70
@@ -16405,10 +16495,10 @@
       "pairs": 4,
       "timeSec": 60,
       "mechanics": [
-        "basic"
+        "bomb"
       ],
       "difficulty": "medium",
-      "description": "Cartas fantasma aparecen y desaparecen. Sin cronÃ³metro. 6 cartas.",
+      "description": "Prueba extrema. Cronómetro: 60s. 8 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 15
@@ -16426,7 +16516,7 @@
         "rotation"
       ],
       "difficulty": "medium",
-      "description": "Cartas que se congelan temporalmente. Sin cronÃ³metro. 12 cartas.",
+      "description": "Nivel brutal. Cronómetro: 60s. 12 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 60
@@ -16441,10 +16531,10 @@
       "pairs": 8,
       "timeSec": 60,
       "mechanics": [
-        "basic"
+        "bomb"
       ],
       "difficulty": "medium",
-      "description": "La oscuridad cubre el tablero poco a poco. Sin cronÃ³metro. 16 cartas.",
+      "description": "Desafío máximo. Cronómetro: 60s. 16 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 80
@@ -16462,7 +16552,7 @@
         "ghost"
       ],
       "difficulty": "medium",
-      "description": "Cartas que se congelan temporalmente. Sin cronÃ³metro. 6 cartas.",
+      "description": "Nivel extremo. Cronómetro: 60s. 8 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 30
@@ -16480,13 +16570,13 @@
         "fog"
       ],
       "difficulty": "medium",
-      "description": "Encuentra trÃ­os idÃ©nticos. Sin cronÃ³metro. 12 cartas.",
+      "description": "Desafío intenso. Cronómetro: 60s. 12 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 30
       },
       "seed": 1916060,
-      "setSize": 3
+      "setSize": 2
     },
     {
       "id": 917,
@@ -16498,7 +16588,7 @@
         "fog"
       ],
       "difficulty": "medium",
-      "description": "juega normalmente. Sin cronÃ³metro. 20 cartas.",
+      "description": "Prueba extrema. Cronómetro: 60s. 20 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 100
@@ -16516,7 +16606,7 @@
         "rotation"
       ],
       "difficulty": "medium",
-      "description": "Niebla ligera: observa con atenciÃ³n. Sin cronÃ³metro. 16 cartas.",
+      "description": "Nivel brutal. Cronómetro: 60s. 16 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 80
@@ -16534,7 +16624,7 @@
         "fog"
       ],
       "difficulty": "medium",
-      "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 16 cartas.",
+      "description": "Desafío máximo. Cronómetro: 60s. 16 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 80
@@ -16552,7 +16642,7 @@
         "rotation"
       ],
       "difficulty": "medium",
-      "description": "El tablero rota de vez en cuando. Sin cronÃ³metro. 8 cartas.",
+      "description": "Nivel extremo. Cronómetro: 60s. 8 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 40
@@ -16564,13 +16654,13 @@
       "id": 921,
       "phase": 19,
       "theme": "dimension",
-      "pairs": 12,
+      "pairs": 8,
       "timeSec": 60,
       "mechanics": [
         "trio"
       ],
       "difficulty": "hard",
-      "description": "Encuentra trÃ­os idÃ©nticos. Sin cronÃ³metro. 24 cartas.",
+      "description": "Desafío intenso. Cronómetro: 60s. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 180
@@ -16588,7 +16678,7 @@
         "frozen"
       ],
       "difficulty": "medium",
-      "description": "Las cartas cambian de valor. Sin cronÃ³metro. 4 cartas.",
+      "description": "Prueba extrema. Cronómetro: 60s. 8 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 20
@@ -16606,13 +16696,13 @@
         "ghost"
       ],
       "difficulty": "medium",
-      "description": "Encuentra trÃ­os idÃ©nticos. Sin cronÃ³metro. 6 cartas.",
+      "description": "Nivel brutal. Cronómetro: 60s. 6 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 15
       },
       "seed": 1923030,
-      "setSize": 3
+      "setSize": 2
     },
     {
       "id": 924,
@@ -16624,7 +16714,7 @@
         "rotation"
       ],
       "difficulty": "hard",
-      "description": "Evita bombas: piensa rÃ¡pido. CronÃ³metro: 82s. 16 cartas.",
+      "description": "Desafío máximo. Cronómetro: 82s. 16 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 120
@@ -16642,13 +16732,13 @@
         "trio"
       ],
       "difficulty": "medium",
-      "description": "El tablero rota de vez en cuando. Sin cronÃ³metro. 8 cartas.",
+      "description": "Nivel extremo. Cronómetro: 60s. 12 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 40
       },
       "seed": 1925040,
-      "setSize": 2
+      "setSize": 3
     },
     {
       "id": 926,
@@ -16660,7 +16750,7 @@
         "darkness"
       ],
       "difficulty": "medium",
-      "description": "juega normalmente. Sin cronÃ³metro. 20 cartas.",
+      "description": "Desafío intenso. Cronómetro: 60s. 20 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 100
@@ -16678,7 +16768,7 @@
         "rotation"
       ],
       "difficulty": "hard",
-      "description": "Nivel clÃ¡sico sin trucos. CronÃ³metro: 93s. 22 cartas.",
+      "description": "Prueba extrema. Cronómetro: 93s. 22 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 165
@@ -16696,7 +16786,7 @@
         "bomb"
       ],
       "difficulty": "hard",
-      "description": "La oscuridad cubre el tablero poco a poco. CronÃ³metro: 101s. 20 cartas.",
+      "description": "Nivel brutal. Cronómetro: 101s. 20 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 150
@@ -16714,13 +16804,13 @@
         "trio"
       ],
       "difficulty": "hard",
-      "description": "Las cartas cambian de valor. CronÃ³metro: 75s. 16 cartas.",
+      "description": "Desafío máximo. Cronómetro: 75s. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 120
       },
       "seed": 1929155,
-      "setSize": 2
+      "setSize": 3
     },
     {
       "id": 930,
@@ -16732,7 +16822,7 @@
         "ghost"
       ],
       "difficulty": "medium",
-      "description": "Niebla ligera: observa con atenciÃ³n. Sin cronÃ³metro. 24 cartas.",
+      "description": "Nivel extremo. Cronómetro: 60s. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 120
@@ -16750,7 +16840,7 @@
         "fog"
       ],
       "difficulty": "medium",
-      "description": "Evita bombas: piensa rÃ¡pido. CronÃ³metro: 66s. 12 cartas.",
+      "description": "Desafío intenso. Cronómetro: 66s. 12 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 60
@@ -16768,7 +16858,7 @@
         "rotation"
       ],
       "difficulty": "medium",
-      "description": "El tablero rota de vez en cuando. Sin cronÃ³metro. 16 cartas.",
+      "description": "Prueba extrema. Cronómetro: 60s. 16 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 80
@@ -16786,7 +16876,7 @@
         "fog"
       ],
       "difficulty": "hard",
-      "description": "La oscuridad cubre el tablero poco a poco. Sin cronÃ³metro. 20 cartas.",
+      "description": "Nivel brutal. Cronómetro: 60s. 20 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 150
@@ -16804,7 +16894,7 @@
         "frozen"
       ],
       "difficulty": "hard",
-      "description": "El tablero rota de vez en cuando. CronÃ³metro: 78s. 14 cartas.",
+      "description": "Desafío máximo. Cronómetro: 78s. 14 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 105
@@ -16822,7 +16912,7 @@
         "frozen"
       ],
       "difficulty": "medium",
-      "description": "Nivel clÃ¡sico sin trucos. CronÃ³metro: 59s. 12 cartas.",
+      "description": "Nivel extremo. Cronómetro: 59s. 12 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 60
@@ -16840,7 +16930,7 @@
         "rotation"
       ],
       "difficulty": "medium",
-      "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 10 cartas.",
+      "description": "Desafío intenso. Cronómetro: 60s. 10 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 25
@@ -16858,7 +16948,7 @@
         "fog"
       ],
       "difficulty": "medium",
-      "description": "Cartas fantasma aparecen y desaparecen. Sin cronÃ³metro. 14 cartas.",
+      "description": "Prueba extrema. Cronómetro: 60s. 14 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 70
@@ -16873,10 +16963,10 @@
       "pairs": 4,
       "timeSec": 60,
       "mechanics": [
-        "basic"
+        "bomb"
       ],
       "difficulty": "medium",
-      "description": "Cartas que se congelan temporalmente. Sin cronÃ³metro. 4 cartas.",
+      "description": "Nivel brutal. Cronómetro: 60s. 8 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 20
@@ -16894,7 +16984,7 @@
         "rotation"
       ],
       "difficulty": "medium",
-      "description": "Evita bombas: piensa rÃ¡pido. Sin cronÃ³metro. 12 cartas.",
+      "description": "Desafío máximo. Cronómetro: 60s. 12 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 60
@@ -16912,7 +17002,7 @@
         "rotation"
       ],
       "difficulty": "hard",
-      "description": "las cartas estÃ¡n parcialmente ocultas. CronÃ³metro: 98s. 24 cartas.",
+      "description": "Nivel extremo. Cronómetro: 98s. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 180
@@ -16930,7 +17020,7 @@
         "darkness"
       ],
       "difficulty": "medium",
-      "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 18 cartas.",
+      "description": "Desafío intenso. Cronómetro: 60s. 18 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 90
@@ -16948,7 +17038,7 @@
         "ghost"
       ],
       "difficulty": "medium",
-      "description": "juega normalmente. Sin cronÃ³metro. 16 cartas.",
+      "description": "Prueba extrema. Cronómetro: 60s. 16 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 80
@@ -16966,7 +17056,7 @@
         "darkness"
       ],
       "difficulty": "medium",
-      "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 10 cartas.",
+      "description": "Nivel brutal. Cronómetro: 60s. 10 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 25
@@ -16984,7 +17074,7 @@
         "rotation"
       ],
       "difficulty": "medium",
-      "description": "Evita bombas: piensa rÃ¡pido. Sin cronÃ³metro. 12 cartas.",
+      "description": "Desafío máximo. Cronómetro: 60s. 12 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 60
@@ -17002,7 +17092,7 @@
         "ghost"
       ],
       "difficulty": "medium",
-      "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 18 cartas.",
+      "description": "Nivel extremo. Cronómetro: 60s. 18 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 90
@@ -17020,7 +17110,7 @@
         "frozen"
       ],
       "difficulty": "hard",
-      "description": "La oscuridad cubre el tablero poco a poco. CronÃ³metro: 75s. 16 cartas.",
+      "description": "Desafío intenso. Cronómetro: 75s. 16 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 120
@@ -17038,7 +17128,7 @@
         "ghost"
       ],
       "difficulty": "medium",
-      "description": "El tablero rota de vez en cuando. Sin cronÃ³metro. 4 cartas.",
+      "description": "Prueba extrema. Cronómetro: 60s. 8 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 20
@@ -17056,7 +17146,7 @@
         "chameleon"
       ],
       "difficulty": "medium",
-      "description": "Las cartas cambian de valor. Sin cronÃ³metro. 12 cartas.",
+      "description": "Nivel brutal. Cronómetro: 60s. 12 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 60
@@ -17074,13 +17164,13 @@
         "trio"
       ],
       "difficulty": "medium",
-      "description": "Evita bombas: piensa rÃ¡pido. Sin cronÃ³metro. 8 cartas.",
+      "description": "Desafío máximo. Cronómetro: 60s. 12 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 40
       },
       "seed": 1949040,
-      "setSize": 2
+      "setSize": 3
     },
     {
       "id": 950,
@@ -17089,10 +17179,17 @@
       "pairs": 12,
       "timeSec": 101,
       "mechanics": [
-        "chameleon"
+        "fog",
+        "ghost",
+        "darkness",
+        "rotation",
+        "bomb",
+        "frozen",
+        "chameleon",
+        "trio"
       ],
       "difficulty": "hard",
-      "description": "Boss: 24 cartas, fog + rotation, crono 101s.",
+      "description": "Boss extremo. Cronómetro: 101s. 24 cartas.",
       "isBoss": true,
       "rewards": {
         "coins": 180
@@ -17110,13 +17207,13 @@
         "rotation"
       ],
       "difficulty": "medium",
-      "description": "Encuentra trÃ­os idÃ©nticos. Sin cronÃ³metro. 6 cartas.",
+      "description": "Desafío intenso. Cronómetro: 60s. 6 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 15
       },
       "seed": 1951030,
-      "setSize": 3
+      "setSize": 2
     },
     {
       "id": 952,
@@ -17128,7 +17225,7 @@
         "fog"
       ],
       "difficulty": "medium",
-      "description": "La oscuridad cubre el tablero poco a poco. Sin cronÃ³metro. 16 cartas.",
+      "description": "Prueba extrema. Cronómetro: 60s. 16 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 80
@@ -17143,10 +17240,10 @@
       "pairs": 8,
       "timeSec": 80,
       "mechanics": [
-        "basic"
+        "bomb"
       ],
       "difficulty": "hard",
-      "description": "Evita bombas: piensa rÃ¡pido. CronÃ³metro: 80s. 16 cartas.",
+      "description": "Nivel brutal. Cronómetro: 80s. 16 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 120
@@ -17164,7 +17261,7 @@
         "rotation"
       ],
       "difficulty": "medium",
-      "description": "Nivel clÃ¡sico sin trucos. CronÃ³metro: 77s. 16 cartas.",
+      "description": "Desafío máximo. Cronómetro: 77s. 16 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 80
@@ -17176,19 +17273,19 @@
       "id": 955,
       "phase": 20,
       "theme": "final",
-      "pairs": 10,
+      "pairs": 8,
       "timeSec": 60,
       "mechanics": [
         "trio"
       ],
       "difficulty": "hard",
-      "description": "Las cartas cambian de valor. Sin cronÃ³metro. 20 cartas.",
+      "description": "Nivel extremo. Cronómetro: 60s. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 150
       },
       "seed": 1955100,
-      "setSize": 2
+      "setSize": 3
     },
     {
       "id": 956,
@@ -17200,7 +17297,7 @@
         "darkness"
       ],
       "difficulty": "medium",
-      "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 12 cartas.",
+      "description": "Desafío intenso. Cronómetro: 60s. 12 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 30
@@ -17218,7 +17315,7 @@
         "fog"
       ],
       "difficulty": "medium",
-      "description": "las cartas estÃ¡n parcialmente ocultas. CronÃ³metro: 72s. 16 cartas.",
+      "description": "Prueba extrema. Cronómetro: 72s. 16 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 80
@@ -17236,7 +17333,7 @@
         "rotation"
       ],
       "difficulty": "medium",
-      "description": "Cartas fantasma aparecen y desaparecen. Sin cronÃ³metro. 18 cartas.",
+      "description": "Nivel brutal. Cronómetro: 60s. 18 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 90
@@ -17254,7 +17351,7 @@
         "darkness"
       ],
       "difficulty": "medium",
-      "description": "Cartas que se congelan temporalmente. Sin cronÃ³metro. 8 cartas.",
+      "description": "Desafío máximo. Cronómetro: 60s. 8 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 40
@@ -17272,7 +17369,7 @@
         "chameleon"
       ],
       "difficulty": "medium",
-      "description": "El tablero rota de vez en cuando. Sin cronÃ³metro. 12 cartas.",
+      "description": "Nivel extremo. Cronómetro: 60s. 12 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 60
@@ -17290,7 +17387,7 @@
         "ghost"
       ],
       "difficulty": "medium",
-      "description": "Las cartas cambian de valor. Sin cronÃ³metro. 8 cartas.",
+      "description": "Desafío intenso. Cronómetro: 60s. 8 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 40
@@ -17308,7 +17405,7 @@
         "darkness"
       ],
       "difficulty": "medium",
-      "description": "El tablero rota de vez en cuando. Sin cronÃ³metro. 10 cartas.",
+      "description": "Prueba extrema. Cronómetro: 60s. 10 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 50
@@ -17326,7 +17423,7 @@
         "bomb"
       ],
       "difficulty": "medium",
-      "description": "Evita bombas: piensa rÃ¡pido. Sin cronÃ³metro. 8 cartas.",
+      "description": "Nivel brutal. Cronómetro: 60s. 8 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 40
@@ -17344,7 +17441,7 @@
         "chameleon"
       ],
       "difficulty": "medium",
-      "description": "Las cartas cambian de valor. Sin cronÃ³metro. 12 cartas.",
+      "description": "Desafío máximo. Cronómetro: 60s. 12 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 60
@@ -17362,7 +17459,7 @@
         "bomb"
       ],
       "difficulty": "hard",
-      "description": "La oscuridad cubre el tablero poco a poco. CronÃ³metro: 93s. 20 cartas.",
+      "description": "Nivel extremo. Cronómetro: 93s. 20 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 150
@@ -17380,7 +17477,7 @@
         "bomb"
       ],
       "difficulty": "medium",
-      "description": "Evita bombas: piensa rÃ¡pido. CronÃ³metro: 63s. 12 cartas.",
+      "description": "Desafío intenso. Cronómetro: 63s. 12 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 60
@@ -17398,7 +17495,7 @@
         "ghost"
       ],
       "difficulty": "medium",
-      "description": "Cartas fantasma aparecen y desaparecen. Sin cronÃ³metro. 12 cartas.",
+      "description": "Prueba extrema. Cronómetro: 60s. 12 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 30
@@ -17416,7 +17513,7 @@
         "bomb"
       ],
       "difficulty": "medium",
-      "description": "juega normalmente. Sin cronÃ³metro. 20 cartas.",
+      "description": "Nivel brutal. Cronómetro: 60s. 20 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 100
@@ -17434,7 +17531,7 @@
         "fog"
       ],
       "difficulty": "medium",
-      "description": "Niebla ligera: observa con atenciÃ³n. Sin cronÃ³metro. 4 cartas.",
+      "description": "Desafío máximo. Cronómetro: 60s. 8 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 10
@@ -17446,19 +17543,19 @@
       "id": 970,
       "phase": 20,
       "theme": "final",
-      "pairs": 10,
+      "pairs": 8,
       "timeSec": 92,
       "mechanics": [
         "trio"
       ],
       "difficulty": "hard",
-      "description": "Cartas que se congelan temporalmente. CronÃ³metro: 92s. 20 cartas.",
+      "description": "Nivel extremo. Cronómetro: 92s. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 150
       },
       "seed": 1970192,
-      "setSize": 2
+      "setSize": 3
     },
     {
       "id": 971,
@@ -17467,10 +17564,10 @@
       "pairs": 4,
       "timeSec": 60,
       "mechanics": [
-        "basic"
+        "bomb"
       ],
       "difficulty": "medium",
-      "description": "Niebla ligera: observa con atenciÃ³n. Sin cronÃ³metro. 8 cartas.",
+      "description": "Desafío intenso. Cronómetro: 60s. 8 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 20
@@ -17488,7 +17585,7 @@
         "chameleon"
       ],
       "difficulty": "medium",
-      "description": "Cartas que se congelan temporalmente. Sin cronÃ³metro. 16 cartas.",
+      "description": "Prueba extrema. Cronómetro: 60s. 16 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 80
@@ -17506,7 +17603,7 @@
         "bomb"
       ],
       "difficulty": "hard",
-      "description": "El tablero rota de vez en cuando. CronÃ³metro: 84s. 16 cartas.",
+      "description": "Nivel brutal. Cronómetro: 84s. 16 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 120
@@ -17524,13 +17621,13 @@
         "frozen"
       ],
       "difficulty": "medium",
-      "description": "Encuentra trÃ­os idÃ©nticos. Sin cronÃ³metro. 6 cartas.",
+      "description": "Desafío máximo. Cronómetro: 60s. 6 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 15
       },
       "seed": 1974030,
-      "setSize": 3
+      "setSize": 2
     },
     {
       "id": 975,
@@ -17542,7 +17639,7 @@
         "fog"
       ],
       "difficulty": "medium",
-      "description": "Niebla ligera: observa con atenciÃ³n. Sin cronÃ³metro. 14 cartas.",
+      "description": "Nivel extremo. Cronómetro: 60s. 14 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 70
@@ -17557,10 +17654,10 @@
       "pairs": 5,
       "timeSec": 60,
       "mechanics": [
-        "basic"
+        "bomb"
       ],
       "difficulty": "medium",
-      "description": "El tablero rota de vez en cuando. Sin cronÃ³metro. 10 cartas.",
+      "description": "Desafío intenso. Cronómetro: 60s. 10 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 50
@@ -17578,7 +17675,7 @@
         "frozen"
       ],
       "difficulty": "medium",
-      "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 12 cartas.",
+      "description": "Prueba extrema. Cronómetro: 60s. 12 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 30
@@ -17596,7 +17693,7 @@
         "ghost"
       ],
       "difficulty": "medium",
-      "description": "Cartas que se congelan temporalmente. Sin cronÃ³metro. 6 cartas.",
+      "description": "Nivel brutal. Cronómetro: 60s. 8 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 30
@@ -17614,13 +17711,13 @@
         "fog"
       ],
       "difficulty": "hard",
-      "description": "Encuentra trÃ­os idÃ©nticos. Sin cronÃ³metro. 18 cartas.",
+      "description": "Desafío máximo. Cronómetro: 60s. 18 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 135
       },
       "seed": 1979090,
-      "setSize": 3
+      "setSize": 2
     },
     {
       "id": 980,
@@ -17632,7 +17729,7 @@
         "ghost"
       ],
       "difficulty": "medium",
-      "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 16 cartas.",
+      "description": "Nivel extremo. Cronómetro: 60s. 16 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 80
@@ -17650,7 +17747,7 @@
         "darkness"
       ],
       "difficulty": "hard",
-      "description": "Nivel clÃ¡sico sin trucos. CronÃ³metro: 97s. 18 cartas.",
+      "description": "Desafío intenso. Cronómetro: 97s. 18 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 135
@@ -17668,13 +17765,13 @@
         "trio"
       ],
       "difficulty": "medium",
-      "description": "las cartas pueden rotar. CronÃ³metro: 76s. 16 cartas.",
+      "description": "Prueba extrema. Cronómetro: 76s. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 80
       },
       "seed": 1982156,
-      "setSize": 2
+      "setSize": 3
     },
     {
       "id": 983,
@@ -17686,7 +17783,7 @@
         "ghost"
       ],
       "difficulty": "medium",
-      "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 8 cartas.",
+      "description": "Nivel brutal. Cronómetro: 60s. 8 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 20
@@ -17704,13 +17801,13 @@
         "trio"
       ],
       "difficulty": "medium",
-      "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 16 cartas.",
+      "description": "Desafío máximo. Cronómetro: 60s. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 80
       },
       "seed": 1984080,
-      "setSize": 2
+      "setSize": 3
     },
     {
       "id": 985,
@@ -17722,7 +17819,7 @@
         "fog"
       ],
       "difficulty": "medium",
-      "description": "Evita bombas: piensa rÃ¡pido. Sin cronÃ³metro. 12 cartas.",
+      "description": "Nivel extremo. Cronómetro: 60s. 12 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 60
@@ -17740,7 +17837,7 @@
         "chameleon"
       ],
       "difficulty": "hard",
-      "description": "Nivel clÃ¡sico sin trucos. CronÃ³metro: 88s. 18 cartas.",
+      "description": "Desafío intenso. Cronómetro: 88s. 18 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 135
@@ -17755,10 +17852,10 @@
       "pairs": 6,
       "timeSec": 60,
       "mechanics": [
-        "basic"
+        "bomb"
       ],
       "difficulty": "medium",
-      "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 12 cartas.",
+      "description": "Prueba extrema. Cronómetro: 60s. 12 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 30
@@ -17776,7 +17873,7 @@
         "chameleon"
       ],
       "difficulty": "medium",
-      "description": "Evita bombas: piensa rÃ¡pido. Sin cronÃ³metro. 14 cartas.",
+      "description": "Nivel brutal. Cronómetro: 60s. 14 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 70
@@ -17794,7 +17891,7 @@
         "frozen"
       ],
       "difficulty": "medium",
-      "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 4 cartas.",
+      "description": "Desafío máximo. Cronómetro: 60s. 8 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 10
@@ -17812,7 +17909,7 @@
         "darkness"
       ],
       "difficulty": "medium",
-      "description": "Nivel clÃ¡sico sin trucos. Sin cronÃ³metro. 14 cartas.",
+      "description": "Nivel extremo. Cronómetro: 60s. 14 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 70
@@ -17830,7 +17927,7 @@
         "ghost"
       ],
       "difficulty": "medium",
-      "description": "Evita bombas: piensa rÃ¡pido. Sin cronÃ³metro. 6 cartas.",
+      "description": "Desafío intenso. Cronómetro: 60s. 8 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 30
@@ -17848,13 +17945,13 @@
         "bomb"
       ],
       "difficulty": "hard",
-      "description": "Encuentra trÃ­os idÃ©nticos. Sin cronÃ³metro. 18 cartas.",
+      "description": "Prueba extrema. Cronómetro: 60s. 18 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 135
       },
       "seed": 1992090,
-      "setSize": 3
+      "setSize": 2
     },
     {
       "id": 993,
@@ -17866,7 +17963,7 @@
         "frozen"
       ],
       "difficulty": "medium",
-      "description": "Cartas que se congelan temporalmente. Sin cronÃ³metro. 10 cartas.",
+      "description": "Nivel brutal. Cronómetro: 60s. 10 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 50
@@ -17884,7 +17981,7 @@
         "ghost"
       ],
       "difficulty": "medium",
-      "description": "Evita bombas: piensa rÃ¡pido. Sin cronÃ³metro. 8 cartas.",
+      "description": "Desafío máximo. Cronómetro: 60s. 8 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 40
@@ -17902,7 +17999,7 @@
         "frozen"
       ],
       "difficulty": "medium",
-      "description": "Niebla ligera: observa con atenciÃ³n. Sin cronÃ³metro. 12 cartas.",
+      "description": "Nivel extremo. Cronómetro: 60s. 12 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 30
@@ -17920,7 +18017,7 @@
         "ghost"
       ],
       "difficulty": "hard",
-      "description": "La oscuridad cubre el tablero poco a poco. CronÃ³metro: 111s. 24 cartas.",
+      "description": "Desafío intenso. Cronómetro: 111s. 24 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 180
@@ -17938,7 +18035,7 @@
         "ghost"
       ],
       "difficulty": "medium",
-      "description": "El tablero rota de vez en cuando. Sin cronÃ³metro. 14 cartas.",
+      "description": "Prueba extrema. Cronómetro: 60s. 14 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 70
@@ -17956,7 +18053,7 @@
         "darkness"
       ],
       "difficulty": "hard",
-      "description": "Niebla ligera: observa con atenciÃ³n. CronÃ³metro: 86s. 18 cartas.",
+      "description": "Nivel brutal. Cronómetro: 86s. 18 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 135
@@ -17974,13 +18071,13 @@
         "trio"
       ],
       "difficulty": "medium",
-      "description": "Cartas que se congelan temporalmente. Sin cronÃ³metro. 8 cartas.",
+      "description": "Desafío máximo. Cronómetro: 60s. 12 cartas.",
       "isBoss": false,
       "rewards": {
         "coins": 40
       },
       "seed": 1999040,
-      "setSize": 2
+      "setSize": 3
     },
     {
       "id": 1000,
@@ -17989,10 +18086,17 @@
       "pairs": 12,
       "timeSec": 113,
       "mechanics": [
-        "rotation"
+        "fog",
+        "ghost",
+        "darkness",
+        "rotation",
+        "bomb",
+        "frozen",
+        "chameleon",
+        "trio"
       ],
       "difficulty": "hard",
-      "description": "Boss: 24 cartas, rotation + darkness, crono 113s.",
+      "description": "Boss extremo. Cronómetro: 113s. 24 cartas.",
       "isBoss": true,
       "rewards": {
         "coins": 180
